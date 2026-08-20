@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import type { CefrLevel, GrammarTopic } from '../types'
-import { GRAMMAR_TOPICS } from '../data/grammar'
+import { GRAMMAR_TOPICS, grammarTopic } from '../data/grammar'
 import { CASE_TABLE } from '../data/caseTable'
 import LevelPill from '../components/LevelPill'
 import { useFinnishSpeech } from '../lib/tts'
@@ -18,12 +19,23 @@ function groupByCategory(topics: GrammarTopic[]): [string, GrammarTopic[]][] {
 }
 
 export default function Grammar() {
+  const [searchParams] = useSearchParams()
+  const deepLinkId = searchParams.get('topic')
+
   const [levelFilter, setLevelFilter] = useState<CefrLevel | 'all'>('all')
   const [categoryFilter, setCategoryFilter] = useState<string | 'all'>('all')
   const [query, setQuery] = useState('')
-  const [openId, setOpenId] = useState<string | null>(null)
+  const [openId, setOpenId] = useState<string | null>(deepLinkId)
   const [showCaseTable, setShowCaseTable] = useState(true)
   const { play, speaking, supported } = useFinnishSpeech()
+
+  useEffect(() => {
+    if (!deepLinkId || !grammarTopic(deepLinkId)) return
+    setOpenId(deepLinkId)
+    const el = document.getElementById(deepLinkId)
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [deepLinkId])
 
   const categories = useMemo(() => [...new Set(GRAMMAR_TOPICS.map((t) => t.category))].sort(), [])
 

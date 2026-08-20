@@ -1,11 +1,14 @@
 import { useRef, type ChangeEvent } from 'react'
+import { Link } from 'react-router-dom'
 import { useProgress } from '../context/ProgressContext'
 import { VOCAB_BANK } from '../data/vocab'
 import { loadCustomVocab, loadMockExamResults } from '../lib/customContent'
 import { exportProgressBlob } from '../lib/progress'
 import { saveJSON } from '../lib/storage'
+import { computeWeakSpots } from '../lib/weakSpots'
 import type { ProgressState } from '../types'
 import ProgressBar from '../components/ProgressBar'
+import LevelPill from '../components/LevelPill'
 
 const SKILL_META: Record<string, { label: string; icon: string }> = {
   reading: { label: 'Lukeminen', icon: '📖' },
@@ -56,6 +59,8 @@ export default function Progress() {
     e.target.value = ''
   }
 
+  const weakSpots = computeWeakSpots(state)
+
   const skillCounts = state.exerciseResults.reduce<Record<string, { count: number; scoreSum: number; scored: number }>>((acc, r) => {
     acc[r.skill] ??= { count: 0, scoreSum: 0, scored: 0 }
     acc[r.skill].count += 1
@@ -100,6 +105,30 @@ export default function Progress() {
           })}
         </div>
       </section>
+
+      {weakSpots.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-semibold text-slate-800">Heikot kohdat</h2>
+          <p className="mt-1 text-xs text-slate-500">
+            Kielioppiaiheet, joita sisältävät harjoitukset ovat menneet sinulla heikoiten — kannattaa kerrata näitä ensin.
+          </p>
+          <div className="mt-3 space-y-2">
+            {weakSpots.map((spot) => (
+              <Link
+                key={spot.topicId}
+                to={`/grammar?topic=${spot.topicId}`}
+                className="flex items-center gap-3 rounded-lg border border-slate-100 px-3 py-2 hover:border-blue-300"
+              >
+                <LevelPill level={spot.level} />
+                <span className="flex-1 text-sm font-medium text-slate-800">{spot.title}</span>
+                <span className="text-xs text-slate-500">
+                  {Math.round(spot.avgScore * 100)}% · {spot.attempts} suoritusta
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {mockExams.length > 0 && (
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

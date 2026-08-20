@@ -8,6 +8,7 @@ import { week6Listening, week6Reading, week6Speaking, week6Writing } from './wee
 import { week7Listening, week7Reading, week7Speaking, week7Writing } from './week7'
 import { week8Listening, week8Reading, week8Speaking, week8Writing } from './week8'
 import { week9Listening, week9Reading, week9Speaking, week9Writing } from './week9'
+import { week10Listening, week10Reading, week10Speaking, week10Writing } from './week10'
 import { week11Listening, week11Reading, week11Speaking, week11Writing } from './week11'
 import { week12Listening, week12Reading, week12Speaking, week12Writing } from './week12'
 import { week13Listening, week13Reading, week13Speaking, week13Writing } from './week13'
@@ -19,6 +20,7 @@ import { week18Listening, week18Reading, week18Speaking, week18Writing } from '.
 import { week19Listening, week19Reading, week19Speaking, week19Writing } from './week19'
 import { week20Listening, week20Reading, week20Speaking, week20Writing } from './week20'
 import { week21Listening, week21Reading, week21Speaking, week21Writing } from './week21'
+import { week22Listening, week22Reading, week22Speaking, week22Writing } from './week22'
 import { week23Listening, week23Reading, week23Speaking, week23Writing } from './week23'
 import { week24Listening, week24Reading, week24Speaking, week24Writing } from './week24'
 import { week25Listening, week25Reading, week25Speaking, week25Writing } from './week25'
@@ -26,6 +28,7 @@ import { week26Listening, week26Reading, week26Speaking, week26Writing } from '.
 import { week27Listening, week27Reading, week27Speaking, week27Writing } from './week27'
 import { week28Listening, week28Reading, week28Speaking, week28Writing } from './week28'
 import { week29Listening, week29Reading, week29Speaking, week29Writing } from './week29'
+import { week30Listening, week30Reading, week30Speaking, week30Writing } from './week30'
 
 export const READING_BY_WEEK: Record<number, ReadingExercise> = {
   1: week1Reading,
@@ -37,6 +40,7 @@ export const READING_BY_WEEK: Record<number, ReadingExercise> = {
   7: week7Reading,
   8: week8Reading,
   9: week9Reading,
+  10: week10Reading,
   11: week11Reading,
   12: week12Reading,
   13: week13Reading,
@@ -48,6 +52,7 @@ export const READING_BY_WEEK: Record<number, ReadingExercise> = {
   19: week19Reading,
   20: week20Reading,
   21: week21Reading,
+  22: week22Reading,
   23: week23Reading,
   24: week24Reading,
   25: week25Reading,
@@ -55,6 +60,7 @@ export const READING_BY_WEEK: Record<number, ReadingExercise> = {
   27: week27Reading,
   28: week28Reading,
   29: week29Reading,
+  30: week30Reading,
 }
 
 export const LISTENING_BY_WEEK: Record<number, ListeningExercise> = {
@@ -67,6 +73,7 @@ export const LISTENING_BY_WEEK: Record<number, ListeningExercise> = {
   7: week7Listening,
   8: week8Listening,
   9: week9Listening,
+  10: week10Listening,
   11: week11Listening,
   12: week12Listening,
   13: week13Listening,
@@ -78,6 +85,7 @@ export const LISTENING_BY_WEEK: Record<number, ListeningExercise> = {
   19: week19Listening,
   20: week20Listening,
   21: week21Listening,
+  22: week22Listening,
   23: week23Listening,
   24: week24Listening,
   25: week25Listening,
@@ -85,6 +93,7 @@ export const LISTENING_BY_WEEK: Record<number, ListeningExercise> = {
   27: week27Listening,
   28: week28Listening,
   29: week29Listening,
+  30: week30Listening,
 }
 
 export const WRITING_BY_WEEK: Record<number, WritingPrompt> = {
@@ -97,6 +106,7 @@ export const WRITING_BY_WEEK: Record<number, WritingPrompt> = {
   7: week7Writing,
   8: week8Writing,
   9: week9Writing,
+  10: week10Writing,
   11: week11Writing,
   12: week12Writing,
   13: week13Writing,
@@ -108,6 +118,7 @@ export const WRITING_BY_WEEK: Record<number, WritingPrompt> = {
   19: week19Writing,
   20: week20Writing,
   21: week21Writing,
+  22: week22Writing,
   23: week23Writing,
   24: week24Writing,
   25: week25Writing,
@@ -115,6 +126,7 @@ export const WRITING_BY_WEEK: Record<number, WritingPrompt> = {
   27: week27Writing,
   28: week28Writing,
   29: week29Writing,
+  30: week30Writing,
 }
 
 export const SPEAKING_BY_WEEK: Record<number, SpeakingPrompt> = {
@@ -127,6 +139,7 @@ export const SPEAKING_BY_WEEK: Record<number, SpeakingPrompt> = {
   7: week7Speaking,
   8: week8Speaking,
   9: week9Speaking,
+  10: week10Speaking,
   11: week11Speaking,
   12: week12Speaking,
   13: week13Speaking,
@@ -138,6 +151,7 @@ export const SPEAKING_BY_WEEK: Record<number, SpeakingPrompt> = {
   19: week19Speaking,
   20: week20Speaking,
   21: week21Speaking,
+  22: week22Speaking,
   23: week23Speaking,
   24: week24Speaking,
   25: week25Speaking,
@@ -145,6 +159,7 @@ export const SPEAKING_BY_WEEK: Record<number, SpeakingPrompt> = {
   27: week27Speaking,
   28: week28Speaking,
   29: week29Speaking,
+  30: week30Speaking,
 }
 
 export function weekHasFullContent(weekId: number): boolean {

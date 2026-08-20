@@ -9,6 +9,7 @@ export default function Templates() {
   const [searchParams] = useSearchParams()
   const [tab, setTab] = useState<Tab>(searchParams.get('tab') === 'speaking' ? 'speaking' : 'writing')
   const [openId, setOpenId] = useState<string | null>(null)
+  const [showLevelGuide, setShowLevelGuide] = useState(true)
   const { play, speaking, supported } = useFinnishSpeech()
 
   return (
@@ -20,6 +21,37 @@ export default function Templates() {
           samaa rakennetta uuteen aiheeseen vaihtamalla vain sanaston — vaikka et ymmärtäisi kysymyksen jokaista sanaa.
         </p>
       </div>
+
+      <section className="rounded-2xl border border-blue-200 bg-blue-50 shadow-sm">
+        <button onClick={() => setShowLevelGuide((s) => !s)} className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left">
+          <span className="font-semibold text-blue-900">🎯 Tavoitteena taitotaso 4</span>
+          <span className="text-blue-400">{showLevelGuide ? '−' : '+'}</span>
+        </button>
+        {showLevelGuide && (
+          <div className="space-y-2 border-t border-blue-100 px-4 py-4 text-sm text-blue-900">
+            <p>
+              YKI-koe arvioi jokaisen osa-alueen taitotasolla 1–6. Keskitason koe kattaa tasot 3–6, ja taitotaso 4 (suunnilleen
+              CEFR-tasoa B1.2–B2) on yleisin vaadittu taso esimerkiksi työelämässä ja kansalaisuushakemuksissa. Tämä ei ole
+              virallinen arviointiohje, vaan yleinen suuntaviiva siitä, mihin sovellus pyrkii valmentamaan sinua.
+            </p>
+            <p>Tyypillisesti taitotasolla 4 arvioija odottaa tekstiltä/puheelta:</p>
+            <ul className="list-inside list-disc space-y-1">
+              <li>Selkeää rakennetta: johdanto, kehittely useammalla perustellulla näkökulmalla, lopetus.</li>
+              <li>Laajaa rakennevalikoimaa — ei vain preesensiä, vaan myös sivulauseita, passiivia, konditionaalia ja tarvittaessa referointia tai partisiippirakenteita.</li>
+              <li>Melko sujuvaa ja tarkkaa kielenkäyttöä: pienet virheet eivät haittaa ymmärrettävyyttä.</li>
+              <li>Kykyä käsitellä sekä arkisia että hieman abstraktimpia aiheita (esim. mielipiteet, yhteiskunnalliset teemat).</li>
+              <li>Konnektoreiden käyttöä (toisaalta, kuitenkin, näin ollen) tekstin sitomiseksi yhtenäiseksi kokonaisuudeksi.</li>
+            </ul>
+            <p className="text-blue-700">
+              এই মানদণ্ড অফিসিয়াল রুব্রিক নয়, বরং সাধারণ দিকনির্দেশনা — টাইটোতাসো ৪ মানে মোটামুটি B1.2–B2 স্তরের সাবলীল, সুগঠিত ভাষা।
+            </p>
+            <p className="text-xs text-blue-600">
+              Mallivastaukset koko sovelluksessa (viikkojen kirjoitus-/puhetehtävät, koepaketit ja mallipohjat alla) on
+              kirjoitettu tätä tasoa silmällä pitäen — käytä niitä vertailukohtana omalle vastauksellesi.
+            </p>
+          </div>
+        )}
+      </section>
 
       <div className="flex gap-2">
         <button

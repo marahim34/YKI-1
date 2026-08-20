@@ -96,7 +96,16 @@ You don't need to touch this to keep learning day-to-day, though — the
 **My Books** page is the fast path for adding your own vocabulary straight
 from whatever chapter you're reading.
 
+## Installing on your phone (PWA)
+
+The site is an installable Progressive Web App. On Android/desktop Chrome,
+open the deployed site and use "Install app" / "Add to Home screen" from the
+browser menu — it'll behave like a native app icon and works offline after
+the first visit (service worker precaches the app shell). iOS Safari's
+home-screen icon support is more limited (no offline caching there), but the
+site still works fine as a regular bookmark.
+
 ## Tech
 
-Vite + React + TypeScript + Tailwind CSS v4 + React Router (hash mode). No
-backend. No analytics. No accounts.
+Vite + React + TypeScript + Tailwind CSS v4 + React Router (hash mode) +
+vite-plugin-pwa. No backend. No analytics. No accounts.

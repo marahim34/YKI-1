@@ -102,6 +102,16 @@ export default function HowToUse() {
         </ol>
       </section>
 
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <h2 className="text-sm font-semibold text-slate-900">🎯 Tavoitteena taitotaso 4</h2>
+        <p className="mt-1 text-sm text-slate-600">
+          Sovellus on kalibroitu tähtäämään YKI:n taitotasoon 4 (suunnilleen B1.2–B2) — se on yleisin vaadittu taso mm.
+          työelämässä ja kansalaisuushakemuksissa. Katso <Link to="/templates" className="font-semibold text-blue-700 hover:underline">Mallipohjat</Link>-sivun
+          alusta lyhyt selitys siitä, mitä taitotasolla 4 tyypillisesti odotetaan, ja vertaa omia vastauksiasi sovelluksen
+          mallivastauksiin.
+        </p>
+      </section>
+
       <div className="space-y-3">
         {SECTIONS.map((s) => (
           <section key={s.title} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
