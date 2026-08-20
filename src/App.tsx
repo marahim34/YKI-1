@@ -10,6 +10,7 @@ import Progress from './pages/Progress'
 import Grammar from './pages/Grammar'
 import BookPractice from './pages/BookPractice'
 import HowToUse from './pages/HowToUse'
+import Templates from './pages/Templates'
 import Reading from './pages/exercises/Reading'
 import Listening from './pages/exercises/Listening'
 import Writing from './pages/exercises/Writing'
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/my-books" element={<MyBooks />} />
         <Route path="/grammar" element={<Grammar />} />
         <Route path="/books" element={<BookPractice />} />
+        <Route path="/templates" element={<Templates />} />
         <Route path="/exam" element={<MockExam />} />
         <Route path="/progress" element={<Progress />} />
       </Route>

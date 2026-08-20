@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import { SPEAKING_BY_WEEK } from '../../data/content'
 import { getWeek } from '../../data/curriculum'
 import { useProgress } from '../../context/ProgressContext'
@@ -95,6 +95,9 @@ export default function Speaking() {
             </span>
           ))}
         </div>
+        <Link to="/templates?tab=speaking" className="mt-3 inline-block text-xs font-semibold text-blue-700 hover:underline">
+          🗣️ Katso puhumisen kysymyskaavat ja vastausrungot →
+        </Link>
       </div>
 
       <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center">

@@ -147,6 +147,44 @@ export interface GrammarTopic {
   tips?: string[]
 }
 
+// Writing task templates: a reusable structural skeleton (opening/body/closing)
+// for one YKI writing task type, shown with the same skeleton filled in for
+// several different topics — so recognizing the TASK TYPE lets you reuse one
+// pattern across many prompts instead of needing a unique approach each time.
+export interface TemplateSwap {
+  topic: string
+  topicBn?: string
+  filled: string
+}
+
+export interface WritingTemplate {
+  id: string
+  taskType: string
+  taskTypeBn?: string
+  whenUsed: string
+  opening: string
+  body: string
+  closing: string
+  swaps: TemplateSwap[]
+  tips: string[]
+}
+
+// Speaking question patterns: how to recognize a common YKI speaking
+// question shape (by its Finnish question words/structure) and a reusable
+// answer-template sentence frame for it — the "trick" being that once you
+// recognize the pattern, you can answer confidently even without fully
+// parsing the specific vocabulary in a new question.
+export interface SpeakingPattern {
+  id: string
+  patternName: string
+  patternNameBn?: string
+  recognizeBy: string[]
+  answerTemplate: string
+  filledExample: string
+  filledExampleBn?: string
+  tips: string[]
+}
+
 export interface BookPracticeVocabItem {
   question: string
   options: string[]
