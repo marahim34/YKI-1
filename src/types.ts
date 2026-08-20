@@ -88,6 +88,21 @@ export interface SpeakingPrompt {
   helpfulPhrases: string[]
 }
 
+// A standalone full practice test modeled on the real YKI keskitaso exam
+// format — mixed everyday/work/society topics in one set, not tied to any
+// single curriculum week's theme, the way a genuine past exam paper mixes
+// subjects across its four sections. Original content only.
+export interface ExamSet {
+  id: string
+  title: string
+  titleBn?: string
+  level: [CefrLevel, CefrLevel]
+  reading: ReadingExercise
+  listening: ListeningExercise
+  writing: WritingPrompt
+  speaking: SpeakingPrompt
+}
+
 // --- Spaced repetition (progress persisted per vocab item id) ---
 export interface SrsCard {
   itemId: string

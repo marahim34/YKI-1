@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react'
 import type { ListeningExercise } from '../types'
 import { READING_BY_WEEK, LISTENING_BY_WEEK, WRITING_BY_WEEK, SPEAKING_BY_WEEK } from '../data/content'
+import { EXAM_SETS } from '../data/examSets'
 import { getWeek } from '../data/curriculum'
 import { useProgress } from '../context/ProgressContext'
 import { useFinnishSpeech } from '../lib/tts'
@@ -11,9 +12,12 @@ import McqQuiz from '../components/McqQuiz'
 const AVAILABLE_WEEKS = Object.keys(READING_BY_WEEK).map(Number)
 const STEPS = ['reading', 'listening', 'writing', 'speaking', 'finished'] as const
 type Step = (typeof STEPS)[number]
+type Mode = 'examSet' | 'week'
 
 export default function MockExam() {
   const { recordResult } = useProgress()
+  const [mode, setMode] = useState<Mode>('examSet')
+  const [examSetId, setExamSetId] = useState<string>(EXAM_SETS[0]?.id ?? '')
   const [weekId, setWeekId] = useState<number>(AVAILABLE_WEEKS[0])
   const [started, setStarted] = useState(false)
   const [stepIndex, setStepIndex] = useState(0)
@@ -21,11 +25,13 @@ export default function MockExam() {
   const [startedAt, setStartedAt] = useState<number>(0)
 
   const step: Step = STEPS[stepIndex]
-  const week = getWeek(weekId)
-  const reading = READING_BY_WEEK[weekId]
-  const listening = LISTENING_BY_WEEK[weekId]
-  const writing = WRITING_BY_WEEK[weekId]
-  const speaking = SPEAKING_BY_WEEK[weekId]
+  const examSet = EXAM_SETS.find((s) => s.id === examSetId)
+
+  const title = mode === 'examSet' ? examSet?.title : `Viikko ${weekId}: ${getWeek(weekId)?.titleFi ?? ''}`
+  const reading = mode === 'examSet' ? examSet?.reading : READING_BY_WEEK[weekId]
+  const listening = mode === 'examSet' ? examSet?.listening : LISTENING_BY_WEEK[weekId]
+  const writing = mode === 'examSet' ? examSet?.writing : WRITING_BY_WEEK[weekId]
+  const speaking = mode === 'examSet' ? examSet?.speaking : SPEAKING_BY_WEEK[weekId]
 
   function begin() {
     setScores({})
@@ -47,7 +53,13 @@ export default function MockExam() {
       },
     })
     recordResult(
-      { exerciseId: `exam-${Date.now()}`, skill: 'reading', weekId, completedAt: new Date().toISOString(), notes: `Koekierros, ${elapsedMin} min` },
+      {
+        exerciseId: `exam-${Date.now()}`,
+        skill: 'reading',
+        weekId: mode === 'week' ? weekId : 0,
+        completedAt: new Date().toISOString(),
+        notes: `Koekierros (${mode === 'examSet' ? examSet?.title : `viikko ${weekId}`}), ${elapsedMin} min`,
+      },
       40,
     )
     setStepIndex(4)
@@ -59,24 +71,67 @@ export default function MockExam() {
         <h1 className="text-xl font-bold text-slate-900">Koekierros</h1>
         <p className="text-sm text-slate-600">
           Harjoittele YKI-kokeen neljä osiota (lukeminen, kuunteleminen, kirjoittaminen, puhuminen) peräkkäin, ajanotolla —
-          niin kuin oikeassa kokeessa. Valitse, minkä viikon materiaalilla haluat harjoitella.
+          niin kuin oikeassa kokeessa.
         </p>
+
+        <div className="flex gap-2">
+          <button
+            onClick={() => setMode('examSet')}
+            className={`flex-1 rounded-lg py-2 text-sm font-semibold ${mode === 'examSet' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
+          >
+            📝 Koepaketit
+          </button>
+          <button
+            onClick={() => setMode('week')}
+            className={`flex-1 rounded-lg py-2 text-sm font-semibold ${mode === 'week' ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
+          >
+            📅 Viikon materiaali
+          </button>
+        </div>
+
         <div className="rounded-2xl border border-slate-200 bg-white p-5">
-          <label className="text-sm font-medium text-slate-700">
-            Viikko
-            <select
-              value={weekId}
-              onChange={(e) => setWeekId(Number(e.target.value))}
-              className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
-            >
-              {AVAILABLE_WEEKS.map((id) => (
-                <option key={id} value={id}>
-                  Viikko {id}: {getWeek(id)?.titleFi}
-                </option>
-              ))}
-            </select>
-          </label>
-          <button onClick={begin} className="mt-4 w-full rounded-lg bg-blue-600 py-3 text-sm font-semibold text-white hover:bg-blue-700">
+          {mode === 'examSet' ? (
+            <>
+              <p className="text-xs text-slate-500">
+                Täysimittaiset, sekoitetuilla aiheilla olevat harjoituskokeet — samaan tapaan kuin oikeassa YKI-kokeessa,
+                jossa jokainen osio käsittelee eri aihetta. Alkuperäistä materiaalia, ei kopioitu mistään oikeasta kokeesta.
+              </p>
+              <label className="mt-3 block text-sm font-medium text-slate-700">
+                Koepaketti
+                <select
+                  value={examSetId}
+                  onChange={(e) => setExamSetId(e.target.value)}
+                  className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+                >
+                  {EXAM_SETS.map((s) => (
+                    <option key={s.id} value={s.id}>
+                      {s.title} {s.titleBn ? `· ${s.titleBn}` : ''} ({s.level[0]}–{s.level[1]})
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </>
+          ) : (
+            <label className="text-sm font-medium text-slate-700">
+              Viikko
+              <select
+                value={weekId}
+                onChange={(e) => setWeekId(Number(e.target.value))}
+                className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+              >
+                {AVAILABLE_WEEKS.map((id) => (
+                  <option key={id} value={id}>
+                    Viikko {id}: {getWeek(id)?.titleFi}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          <button
+            onClick={begin}
+            disabled={mode === 'examSet' && !examSet}
+            className="mt-4 w-full rounded-lg bg-blue-600 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:bg-slate-300"
+          >
             Aloita koekierros
           </button>
         </div>
@@ -87,7 +142,7 @@ export default function MockExam() {
   return (
     <div className="mx-auto max-w-xl space-y-4">
       <div className="flex items-center justify-between">
-        <h1 className="text-lg font-bold text-slate-900">Koekierros · Viikko {weekId}</h1>
+        <h1 className="text-lg font-bold text-slate-900">Koekierros · {title}</h1>
         <span className="text-xs font-semibold text-slate-500">Osio {Math.min(stepIndex + 1, 4)}/4</span>
       </div>
 
@@ -122,7 +177,7 @@ export default function MockExam() {
         </StepCard>
       )}
 
-      {step === 'finished' && week && (
+      {step === 'finished' && (
         <StepCard title="🏁 Koekierros valmis!">
           <div className="space-y-2 text-sm text-slate-700">
             <p>
