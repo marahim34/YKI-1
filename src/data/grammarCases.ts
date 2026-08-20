@@ -222,6 +222,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
       'Numbers two and above always pair with a singular partitive noun in the counting position — "kaksi taloa", never "kaksi taloja".',
       'Once the whole number+noun phrase is case-marked for something other than plain counting, both words switch together into that case: "viidessä talossa" (in five houses).',
       'Ordinal numbers are just adjectives — remember to make them agree in case and number with the noun they describe, same as any other adjective.',
+      'For the full number system (0 to a billion, ordinals, and this rule laid out with more examples) see the dedicated Numerot page in the app.',
     ],
   },
   {
