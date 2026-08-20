@@ -4,6 +4,7 @@ import { READING_BY_WEEK, LISTENING_BY_WEEK, WRITING_BY_WEEK, SPEAKING_BY_WEEK, 
 import { vocabForWeek } from '../data/vocab'
 import { useProgress } from '../context/ProgressContext'
 import LevelPill from '../components/LevelPill'
+import GrammarPanel from '../components/GrammarPanel'
 
 const SKILLS = [
   { key: 'reading', label: 'Lukeminen', icon: '📖' },
@@ -43,25 +44,61 @@ export default function WeekDetail() {
         <LevelPill level={week.levelRange[0]} />
       </div>
 
-      {!hasContent && (
+      {week.isExamWeek && (
+        <section className="rounded-2xl border border-blue-200 bg-blue-50 p-5">
+          <h2 className="text-sm font-semibold text-blue-900">⏱️ Koeviikko</h2>
+          <p className="mt-1 text-sm text-blue-800">
+            Tällä viikolla ei ole uutta sisältöä opeteltavaksi — aika ajaa täysi YKI-tyylinen koekierros kaikista
+            neljästä osa-alueesta ajanotolla. Käytä myös sanaston kertausta ja kielioppiopasta viimeistelyyn.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link to="/exam" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">
+              Aloita koekierros →
+            </Link>
+            <Link to="/grammar" className="rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-100">
+              Kielioppiopas
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {week.isReviewWeek && (
+        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-5">
+          <h2 className="text-sm font-semibold text-amber-900">🔁 Kertausviikko</h2>
+          <p className="mt-1 text-sm text-amber-800">
+            Ei uutta kielioppia tai sanastoa — kertaa tämän vaiheen tärkeimmät asiat alta, kertaa sanastoa ja tee
+            halutessasi lyhyt koekierros nähdäksesi, missä olet vahva ja mitä kannattaa vielä harjoitella.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link to="/vocab" className="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700">
+              Kertaa sanastoa →
+            </Link>
+            <Link to="/exam" className="rounded-lg border border-amber-300 px-4 py-2 text-sm font-semibold text-amber-800 hover:bg-amber-100">
+              Koekierros
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {!hasContent && !week.isReviewWeek && !week.isExamWeek && (
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
           Tämän viikon 4 taito-osion valmiit harjoitukset ovat vielä tulossa. Voit silti kerrata sanastoa alta, lukea
           kielioppipainotukset, ja lisätä omaa materiaalia kirjoistasi <Link to="/my-books" className="font-semibold underline">Omat kirjat</Link> -sivulla.
         </div>
       )}
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-        <h2 className="text-sm font-semibold text-slate-800">Kieliopin painopisteet</h2>
-        {week.grammarFocus.length > 0 ? (
+      {week.grammarFocus.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-semibold text-slate-800">Kieliopin painopisteet</h2>
           <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-600">
             {week.grammarFocus.map((g) => (
               <li key={g}>{g}</li>
             ))}
           </ul>
-        ) : (
-          <p className="mt-2 text-sm text-slate-500">Ei uutta kielioppia — keskity kertaukseen ja harjoitteluun.</p>
-        )}
-      </section>
+        </section>
+      )}
+
+      <GrammarPanel topicIds={week.grammarTopicIds} />
 
       {week.bookRefs.length > 0 && (
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

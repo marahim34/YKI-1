@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { LISTENING_BY_WEEK } from '../../data/content'
+import { getWeek } from '../../data/curriculum'
 import { useProgress } from '../../context/ProgressContext'
 import { useFinnishSpeech } from '../../lib/tts'
 import ExerciseHeader from '../../components/ExerciseHeader'
 import McqQuiz from '../../components/McqQuiz'
+import GrammarPanel from '../../components/GrammarPanel'
 
 export default function Listening() {
   const { weekId } = useParams()
@@ -19,6 +21,8 @@ export default function Listening() {
   return (
     <div className="space-y-4">
       <ExerciseHeader weekId={exercise.weekId} icon="🎧" title={exercise.title} level={exercise.level} />
+
+      <GrammarPanel topicIds={getWeek(exercise.weekId)?.grammarTopicIds ?? []} />
 
       <div className="rounded-xl border border-slate-200 bg-white p-5">
         {!supported && (

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { WRITING_BY_WEEK } from '../../data/content'
+import { getWeek } from '../../data/curriculum'
 import { useProgress } from '../../context/ProgressContext'
 import { loadJSON, saveJSON } from '../../lib/storage'
 import { useCountdown, formatSeconds } from '../../lib/timer'
 import ExerciseHeader from '../../components/ExerciseHeader'
+import GrammarPanel from '../../components/GrammarPanel'
 
 function wordCount(text: string): number {
   return text.trim().split(/\s+/).filter(Boolean).length
@@ -45,6 +47,8 @@ export default function Writing() {
   return (
     <div className="space-y-4">
       <ExerciseHeader weekId={exercise.weekId} icon="✍️" title={exercise.title} level={exercise.level} />
+
+      <GrammarPanel topicIds={getWeek(exercise.weekId)?.grammarTopicIds ?? []} />
 
       <div className="rounded-xl border border-slate-200 bg-white p-5">
         <p className="text-sm text-slate-700">{exercise.instructions}</p>

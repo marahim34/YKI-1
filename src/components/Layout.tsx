@@ -5,6 +5,8 @@ const NAV_ITEMS = [
   { to: '/', label: 'Koti', icon: '🏠' },
   { to: '/roadmap', label: 'Polku', icon: '🗺️' },
   { to: '/vocab', label: 'Sanasto', icon: '🧠' },
+  { to: '/grammar', label: 'Kielioppi', icon: '📐' },
+  { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
   { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
   { to: '/exam', label: 'Koekierros', icon: '⏱️' },
   { to: '/progress', label: 'Edistyminen', icon: '📈' },
@@ -40,7 +42,7 @@ export default function Layout() {
             </div>
           </div>
         </div>
-        <nav className="mx-auto hidden max-w-5xl gap-1 px-4 pb-2 sm:flex">
+        <nav className="mx-auto hidden max-w-5xl flex-wrap gap-1 px-4 pb-2 sm:flex">
           {NAV_ITEMS.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === '/'} className={({ isActive }) => navLinkClass(isActive)}>
               <span>{item.icon}</span>
@@ -54,11 +56,11 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <nav className="fixed inset-x-0 bottom-0 z-20 flex justify-between border-t border-slate-200 bg-white/95 px-1 py-1.5 backdrop-blur sm:hidden">
+      <nav className="fixed inset-x-0 bottom-0 z-20 flex gap-1 overflow-x-auto border-t border-slate-200 bg-white/95 px-2 py-1.5 backdrop-blur sm:hidden">
         {NAV_ITEMS.map((item) => (
-          <NavLink key={item.to} to={item.to} end={item.to === '/'} className={({ isActive }) => navLinkClass(isActive) + ' flex-1'}>
+          <NavLink key={item.to} to={item.to} end={item.to === '/'} className={({ isActive }) => navLinkClass(isActive) + ' shrink-0 min-w-16'}>
             <span>{item.icon}</span>
-            <span>{item.label}</span>
+            <span className="whitespace-nowrap">{item.label}</span>
           </NavLink>
         ))}
       </nav>

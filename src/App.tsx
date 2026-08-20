@@ -7,6 +7,8 @@ import Vocab from './pages/Vocab'
 import MyBooks from './pages/MyBooks'
 import MockExam from './pages/MockExam'
 import Progress from './pages/Progress'
+import Grammar from './pages/Grammar'
+import BookPractice from './pages/BookPractice'
 import Reading from './pages/exercises/Reading'
 import Listening from './pages/exercises/Listening'
 import Writing from './pages/exercises/Writing'
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="/week/:weekId/speaking" element={<Speaking />} />
         <Route path="/vocab" element={<Vocab />} />
         <Route path="/my-books" element={<MyBooks />} />
+        <Route path="/grammar" element={<Grammar />} />
+        <Route path="/books" element={<BookPractice />} />
         <Route path="/exam" element={<MockExam />} />
         <Route path="/progress" element={<Progress />} />
       </Route>

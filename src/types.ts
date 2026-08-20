@@ -16,6 +16,7 @@ export interface Week {
   titleFi: string
   titleEn: string
   grammarFocus: string[]
+  grammarTopicIds: string[]
   vocabThemes: string[]
   bookRefs: BookRef[]
   isReviewWeek?: boolean
@@ -124,4 +125,47 @@ export interface MockExamResult {
   id: string
   date: string
   scores: Partial<Record<Skill, number>>
+}
+
+export interface GrammarExample {
+  fi: string
+  en: string
+  note?: string
+}
+
+export interface GrammarTopic {
+  id: string
+  title: string
+  level: CefrLevel
+  category: string
+  summary: string
+  explanation: string[]
+  examples: GrammarExample[]
+  tips?: string[]
+}
+
+export interface BookPracticeVocabItem {
+  question: string
+  options: string[]
+  correctIndex: number
+}
+
+export interface BookPracticeDrillItem {
+  prompt: string
+  answer: string
+  hint?: string
+}
+
+export interface BookPracticeChapter {
+  id: string
+  book: string
+  chapterLabel: string
+  level: CefrLevel
+  topic: string
+  vocabQuiz: BookPracticeVocabItem[]
+  grammarDrill: {
+    instructions: string
+    items: BookPracticeDrillItem[]
+  }
+  grammarTopicIds: string[]
 }

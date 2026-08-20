@@ -1,0 +1,74 @@
+import { useState } from 'react'
+import { BOOK_NAMES, chaptersForBook } from '../data/bookPractice'
+import LevelPill from '../components/LevelPill'
+import BookVocabQuiz from '../components/BookVocabQuiz'
+import FillInDrill from '../components/FillInDrill'
+import GrammarPanel from '../components/GrammarPanel'
+
+export default function BookPractice() {
+  const [book, setBook] = useState<string>(BOOK_NAMES[0])
+  const [openChapterId, setOpenChapterId] = useState<string | null>(null)
+  const chapters = chaptersForBook(book)
+
+  return (
+    <div className="space-y-5">
+      <div>
+        <h1 className="text-xl font-bold text-slate-900">Kirjaharjoitukset</h1>
+        <p className="text-sm text-slate-500">
+          Lyhyitä alkuperäisiä harjoituksia rinnalle, kun luet omaa Suomen mestari- tai Oma suomi -kirjaasi luku
+          kerrallaan. Nämä eivät korvaa kirjaa, vaan täydentävät sitä sanasto- ja kielioppiharjoituksilla.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap gap-2">
+        {BOOK_NAMES.map((b) => (
+          <button
+            key={b}
+            onClick={() => {
+              setBook(b)
+              setOpenChapterId(null)
+            }}
+            className={`rounded-full px-3 py-1.5 text-sm font-medium ${
+              book === b ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+            }`}
+          >
+            {b}
+          </button>
+        ))}
+      </div>
+
+      <div className="space-y-3">
+        {chapters.map((chapter) => {
+          const open = openChapterId === chapter.id
+          return (
+            <div key={chapter.id} className="rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <button onClick={() => setOpenChapterId(open ? null : chapter.id)} className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left">
+                <span className="flex flex-1 items-center gap-2">
+                  <LevelPill level={chapter.level} />
+                  <span>
+                    <span className="block font-semibold text-slate-900">{chapter.chapterLabel}</span>
+                    <span className="block text-xs text-slate-500">{chapter.topic}</span>
+                  </span>
+                </span>
+                <span className="text-slate-400">{open ? '−' : '+'}</span>
+              </button>
+              {open && (
+                <div className="space-y-4 border-t border-slate-100 px-4 py-4">
+                  <div>
+                    <h3 className="mb-2 text-sm font-semibold text-slate-800">Sanastotesti</h3>
+                    <BookVocabQuiz items={chapter.vocabQuiz} />
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-sm font-semibold text-slate-800">Kielioppiharjoitus</h3>
+                    <FillInDrill instructions={chapter.grammarDrill.instructions} items={chapter.grammarDrill.items} />
+                  </div>
+                  <GrammarPanel topicIds={chapter.grammarTopicIds} />
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}

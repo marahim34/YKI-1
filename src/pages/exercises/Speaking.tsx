@@ -1,9 +1,11 @@
 import { useRef, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { SPEAKING_BY_WEEK } from '../../data/content'
+import { getWeek } from '../../data/curriculum'
 import { useProgress } from '../../context/ProgressContext'
 import { useCountdown, formatSeconds } from '../../lib/timer'
 import ExerciseHeader from '../../components/ExerciseHeader'
+import GrammarPanel from '../../components/GrammarPanel'
 
 type Phase = 'idle' | 'prep' | 'speaking' | 'done'
 
@@ -81,6 +83,8 @@ export default function Speaking() {
   return (
     <div className="space-y-4">
       <ExerciseHeader weekId={exercise.weekId} icon="🗣️" title={exercise.title} level={exercise.level} />
+
+      <GrammarPanel topicIds={getWeek(exercise.weekId)?.grammarTopicIds ?? []} />
 
       <div className="rounded-xl border border-slate-200 bg-white p-5">
         <p className="text-sm text-slate-700">{exercise.instructions}</p>
