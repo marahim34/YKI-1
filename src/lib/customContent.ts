@@ -15,8 +15,10 @@ export function saveCustomVocab(items: UserVocabItem[]): void {
 export interface NewCustomVocabInput {
   fi: string
   en: string
+  bn?: string
   example: string
   exampleEn: string
+  exampleBn?: string
   theme: string
   level: CefrLevel
   bookSource: string

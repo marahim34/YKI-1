@@ -3,6 +3,7 @@ import { useProgress } from '../context/ProgressContext'
 
 const NAV_ITEMS = [
   { to: '/', label: 'Koti', icon: '🏠' },
+  { to: '/how-to-use', label: 'Ohjeet', icon: '❓' },
   { to: '/roadmap', label: 'Polku', icon: '🗺️' },
   { to: '/vocab', label: 'Sanasto', icon: '🧠' },
   { to: '/grammar', label: 'Kielioppi', icon: '📐' },

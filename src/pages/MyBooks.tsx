@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import type { CefrLevel } from '../types'
 import { addCustomVocabItem, deleteCustomVocabItem, loadCustomVocab, type NewCustomVocabInput } from '../lib/customContent'
+import { useFinnishSpeech } from '../lib/tts'
 
 const LEVELS: CefrLevel[] = ['A1', 'A2', 'B1', 'B2']
 const BOOK_SUGGESTIONS = ['Suomen mestari 1', 'Suomen mestari 2', 'Suomen mestari 3', 'Oma suomi 1', 'Oma suomi 2', 'Muu']
@@ -8,8 +9,10 @@ const BOOK_SUGGESTIONS = ['Suomen mestari 1', 'Suomen mestari 2', 'Suomen mestar
 const emptyForm: NewCustomVocabInput = {
   fi: '',
   en: '',
+  bn: '',
   example: '',
   exampleEn: '',
+  exampleBn: '',
   theme: '',
   level: 'A1',
   bookSource: 'Suomen mestari 1',
@@ -19,6 +22,7 @@ const emptyForm: NewCustomVocabInput = {
 export default function MyBooks() {
   const [items, setItems] = useState(loadCustomVocab)
   const [form, setForm] = useState<NewCustomVocabInput>(emptyForm)
+  const { play, speaking, supported } = useFinnishSpeech()
 
   function update<K extends keyof NewCustomVocabInput>(key: K, value: NewCustomVocabInput[K]) {
     setForm((f) => ({ ...f, [key]: value }))
@@ -77,6 +81,15 @@ export default function MyBooks() {
             />
           </label>
           <label className="text-sm sm:col-span-2">
+            <span className="font-medium text-slate-700">অর্থ (বাংলায়) — Bangla meaning</span>
+            <input
+              value={form.bn}
+              onChange={(e) => update('bn', e.target.value)}
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+              placeholder="যেমন: গ্রন্থাগার"
+            />
+          </label>
+          <label className="text-sm sm:col-span-2">
             <span className="font-medium text-slate-700">Esimerkkilause (suomeksi)</span>
             <input
               value={form.example}
@@ -92,6 +105,15 @@ export default function MyBooks() {
               onChange={(e) => update('exampleEn', e.target.value)}
               className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
               placeholder="e.g. I go to the library to read."
+            />
+          </label>
+          <label className="text-sm sm:col-span-2">
+            <span className="font-medium text-slate-700">উদাহরণ বাক্য (বাংলায়) — Bangla example</span>
+            <input
+              value={form.exampleBn}
+              onChange={(e) => update('exampleBn', e.target.value)}
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+              placeholder="যেমন: আমি পড়তে গ্রন্থাগারে যাই।"
             />
           </label>
           <label className="text-sm">
@@ -161,10 +183,25 @@ export default function MyBooks() {
             {bookItems.map((item) => (
               <div key={item.id} className="flex items-start justify-between gap-2 rounded-xl border border-slate-200 bg-white p-3">
                 <div>
-                  <p className="font-medium text-slate-900">
-                    {item.fi} <span className="text-slate-400">· {item.en}</span>
-                  </p>
+                  <div className="flex items-center gap-1.5">
+                    <p className="font-medium text-slate-900">
+                      {item.fi} <span className="text-slate-400">· {item.en}</span>
+                    </p>
+                    {supported && (
+                      <button
+                        onClick={() => play(item.fi)}
+                        disabled={speaking}
+                        aria-label="Kuuntele ääntäminen"
+                        title="Kuuntele ääntäminen"
+                        className="rounded-full bg-blue-50 px-1.5 py-0.5 text-xs text-blue-700 hover:bg-blue-100 disabled:opacity-50"
+                      >
+                        🔊
+                      </button>
+                    )}
+                  </div>
+                  {item.bn && <p className="text-sm text-emerald-700">{item.bn}</p>}
                   {item.example && <p className="text-xs italic text-slate-500">{item.example}</p>}
+                  {item.exampleBn && <p className="text-xs text-slate-400">{item.exampleBn}</p>}
                   <p className="mt-1 text-xs text-slate-400">
                     {item.level} · {item.theme}
                     {item.chapter ? ` · ${item.chapter}` : ''}

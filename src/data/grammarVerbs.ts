@@ -10,6 +10,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Verbit',
     summary: 'A close look at all six Finnish verb-conjugation types, with one full example verb per type and the rule for recognizing a type from its infinitive ending.',
+    summaryBn: 'ফিনিশ ভাষার ছয়টি ক্রিয়া-শ্রেণির বিস্তারিত পর্যালোচনা, প্রতিটির একটি সম্পূর্ণ উদাহরণসহ এবং ইনফিনিটিভ রূপ দেখে শ্রেণি চেনার নিয়ম।',
     explanation: [
       'Every Finnish verb belongs to one of six conjugation "types", and the type is almost always predictable just from how the dictionary (infinitive) form ends. Once you can classify a verb correctly, you automatically know how to build its present tense, because each type adds personal endings to the stem in a fixed, regular way.',
       'Type 1 covers verbs ending in a vowel + -a/-ä (puhua, katsoa, kysyä) — drop the ending and add -n/-t/-Ø/-mme/-tte/-vat: puhun, puhut, puhuu. Type 2 covers verbs ending in -da/-dä (syödä, juoda, voida) — drop -da/-dä the same way: syön, syöt, syö. Type 3 covers verbs ending in -la/-lä, -na/-nä, -ra/-rä or -sta/-stä (tulla, mennä, purra, nousta) — keep the whole stem and insert -e- before the personal ending: tulen, tulet, tulee.',
@@ -39,6 +40,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The present perfect — "olen tehnyt" (I have done) — for past actions whose exact time is unspecified or whose result still matters now.',
+    summaryBn: 'প্রেজেন্ট পারফেক্ট কাল — "olen tehnyt" (আমি করেছি) — যে অতীত কাজের সঠিক সময় অনির্দিষ্ট বা যার ফলাফল এখনো গুরুত্বপূর্ণ, তার জন্য ব্যবহৃত।',
     explanation: [
       'The perfekti is built from "olla" in the present tense plus the NUT/TUT-participle of the main verb: olen tehnyt (I have done), olet käynyt (you have visited), on syönyt (he/she has eaten). The participle agrees in number with the subject — singular -nut/-nyt, plural -neet: olemme tehneet (we have done), he ovat käyneet (they have visited).',
       'The choice between perfekti and imperfekti is one of the most common stumbling blocks for learners, because English "I have done" and "I did" don\'t map cleanly onto the same split. Use perfekti when the exact time isn\'t stated or doesn\'t matter, when a past action still has a bearing on the present situation, or for life-experience questions ("have you ever..."). Use imperfekti when a specific past moment is named or clearly implied by context.',
@@ -68,6 +70,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The past perfect — "olin tehnyt" (I had done) — for an action completed before another point in the past.',
+    summaryBn: 'পাস্ট পারফেক্ট কাল — "olin tehnyt" (আমি করেছিলাম) — অতীতের অন্য একটি ঘটনার আগে সম্পন্ন হওয়া কাজের জন্য।',
     explanation: [
       'The pluskvamperfekti is built the same way as the perfekti, but with "olla" in the imperfekti instead of the present: olin tehnyt (I had done), olimme käyneet (we had visited). It is "the past of the past" — it places one event before another already-past event, the way English "had done" does.',
       'This tense almost never stands alone; it needs a second, later past-tense clause to be relative to. The classic pattern is a kun-clause: "Kun saavuin asemalle, juna oli jo lähtenyt" — When I arrived at the station, the train had already left. The arrival (imperfekti: saavuin) is the reference point in the past; the train\'s departure (pluskvamperfekti: oli lähtenyt) happened even earlier than that.',
@@ -97,6 +100,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Verbit',
     summary: 'Combining the passive voice with perfect aspect — "on tehty" (it has been done), "oli tehty" (it had been done) — using the passive TU/TY-participle.',
+    summaryBn: 'প্যাসিভ কণ্ঠস্বর ও পারফেক্ট কাল একত্রে — "on tehty" (করা হয়েছে), "oli tehty" (করা হয়েছিল) — প্যাসিভ TU/TY-কৃদন্ত ব্যবহার করে।',
     explanation: [
       'Just as the active perfect combines "olla" with the NUT-participle, the passive perfect combines "olla" with the passive past participle, the TU/TY-participle: tehty (done/made), rakennettu (built), päätetty (decided). Present passive perfect uses on/ei ole + participle: on tehty, ei ole päätetty. Past passive perfect (pluskvamperfekti) uses oli/ei ollut + participle: oli rakennettu, ei ollut lukittu.',
       'Unlike the active perfect, the passive participle never changes form — there is no number to agree with, since the passive has no grammatical subject. "On tehty" stays "on tehty" no matter what is being talked about; only "on" versus "oli" versus the negative forms change.',
@@ -126,6 +130,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'Causative/inchoative verb pairs — one verb causes something to happen to someone else, the other describes that same change happening to the subject itself.',
+    summaryBn: 'কজেটিভ/ইনকোয়েটিভ ক্রিয়া-জোড়া — একটি ক্রিয়া অন্য কারও ওপর কিছু ঘটায়, অন্যটি একই পরিবর্তন নিজের ওপর ঘটা বর্ণনা করে।',
     explanation: [
       'Finnish has many verb pairs built from the same root where one member is transitive and "causes" a change (someone does X to someone/something else) and the other is intransitive and describes that change happening to the subject itself, often translated with a reflexive or "become" meaning in English. Recognizing these pairs is a powerful vocabulary shortcut: learn one member and you can often guess the other.',
       'The causative half frequently carries the suffix -ttaa/-ttää (sometimes -uttaa/-yttää): herättää (to wake someone up), pysäyttää (to stop something), pelästyttää (to scare someone). The intransitive/inchoative half is often shorter or uses -ta/-tä, -eta/-etä, -ua/-yä or -utua/-ytyä: herätä (to wake up oneself), pysähtyä (to come to a stop), pelästyä (to become scared).',
@@ -156,6 +161,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Verbit',
     summary: 'Two families of derivational suffixes that add nuance to a verb\'s action: repeated/aimless action (-ele-/-skele-) and a single sudden instance (-ahta-/-ähtä-).',
+    summaryBn: 'দুই ধরনের প্রত্যয় যা ক্রিয়ার কাজে সূক্ষ্মতা যোগ করে: পুনরাবৃত্ত/উদ্দেশ্যহীন কাজ (-ele-/-skele-) এবং একবারের হঠাৎ কাজ (-ahta-/-ähtä-)।',
     explanation: [
       'Beyond the causative pairs, Finnish has two more families of verb-derivation suffixes that shift a verb\'s meaning along the axis of "how the action happens" rather than "who causes it". These are advanced, nuance-adding forms — treat this topic as recognition vocabulary for reading and listening, not something you need to actively produce yet.',
       'Frequentative suffixes (-ele-, -skele-, and their relatives like -ntele-) turn a verb into one describing a repeated, habitual, or aimless version of the same action: juosta (to run) → juoksennella (to run around/about, with no particular destination), katsoa (to look) → katsella (to watch/look at for a while, unfocused), soittaa (to call) → soitella (to call now and then). Many of these frequentatives are extremely common everyday words in their own right, not just literary flourishes.',
@@ -185,6 +191,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Lauserakenne',
     summary: 'Finnish word order is relatively free because case endings — not position — carry the grammatical roles, but moving an element to the front is a deliberate way to add emphasis.',
+    summaryBn: 'ফিনিশ ভাষার শব্দক্রম তুলনামূলকভাবে মুক্ত, কারণ অবস্থান নয় বরং কারক-প্রত্যয় ব্যাকরণগত ভূমিকা বহন করে — তবে কোনো অংশ সামনে আনা জোর দেওয়ার একটি ইচ্ছাকৃত উপায়।',
     explanation: [
       'Because Finnish marks a word\'s grammatical role with case endings rather than its position in the sentence, word order is far more flexible than in English. Even so, "flexible" doesn\'t mean random: neutral, everyday statements default to subject–verb–object (SVO) order, the same as English, and that\'s the safe default to reach for when there\'s no special emphasis involved.',
       'Moving an element away from its neutral position is not a mistake — it\'s a normal stylistic tool for adding emphasis or marking what the sentence is "about" (its topic). Fronting a word pulls extra attention onto it: "Minä en tiedä" (neutral: I don\'t know) versus "En minä tiedä" (emphatic: *I* certainly don\'t know [maybe someone else does]) — moving the negation word ahead of the subject sharpens the contrast.',
@@ -215,6 +222,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Sanasto ja rakenteet',
     summary: 'Five high-value derivational suffixes for expanding vocabulary systematically: -inen, -llinen, -ton/-tön, -uus/-yys, and -sti.',
+    summaryBn: 'শব্দভাণ্ডার পদ্ধতিগতভাবে বাড়ানোর জন্য পাঁচটি অত্যন্ত কার্যকর প্রত্যয়: -inen, -llinen, -ton/-tön, -uus/-yys, এবং -sti।',
     explanation: [
       'A small set of derivational suffixes lets you build large numbers of new words from ones you already know, without memorizing each one separately. This topic covers five of the most useful ones for everyday and B1-level vocabulary; it complements — and doesn\'t repeat — the -minen nominalization suffix covered elsewhere, which turns verbs into abstract nouns.',
       '-inen forms a relational adjective meaning roughly "made of / like / pertaining to X": puu (wood) → puinen (wooden), muovi (plastic) → muovinen (plastic, adj.). Its very common variant -lainen/-läinen specifically marks nationality or origin: Suomi → suomalainen (Finnish), Ruotsi → ruotsalainen (Swedish). -llinen builds an adjective meaning "having the quality of X": hyöty (benefit) → hyödyllinen (useful), vaara (danger) → vaarallinen (dangerous).',
@@ -245,6 +253,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Lauserakenne',
     summary: 'The existential clause pattern for stating that something exists or is located somewhere: LOCATION + olla + SUBJECT, with the subject\'s case depending on whether the amount is definite or not.',
+    summaryBn: 'কোনো কিছু কোথাও আছে বা অবস্থিত তা বলার বাক্যগঠন: স্থান + olla + কর্তা, যেখানে কর্তার কারক নির্ভর করে পরিমাণ নির্দিষ্ট কিনা তার ওপর।',
     explanation: [
       'When a Finnish sentence introduces new information — announcing that something exists in a place, rather than describing something already known — it typically flips the normal subject-first order: the location comes first, then the verb "olla", then the subject. "Pöydällä on kirja" (There\'s a book on the table) leads with the location because "a book" is new information being introduced, not the topic the sentence is already about.',
       'The case of the subject in this pattern depends on whether the amount is definite/whole or not, exactly as with the basic nominative/partitive contrast: "Pöydällä on kirja" (nominative — one specific, whole book) versus "Pöydällä on kirjoja" (partitive plural — some indefinite number of books). Uncountable nouns and quantity words behave the same way: "Kadulla on paljon ihmisiä" (There are a lot of people on the street) uses partitive plural because paljon is an unspecified quantity.',
@@ -275,6 +284,7 @@ export const VERB_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Rekisteri',
     summary: 'The gap between standard written Finnish (kirjakieli) and everyday colloquial spoken Finnish (puhekieli) — essential for the YKI listening section, which uses natural spoken registers.',
+    summaryBn: 'প্রমিত লিখিত ফিনিশ (kirjakieli) এবং দৈনন্দিন কথ্য ফিনিশ (puhekieli)-এর মধ্যে ফারাক — YKI শ্রবণ পরীক্ষার জন্য অপরিহার্য, যা স্বাভাবিক কথ্য ভাষা ব্যবহার করে।',
     explanation: [
       'Kirjakieli — standard written Finnish — is what textbooks teach, what YKI reading texts use, and what you should write in for the YKI writing section. Puhekieli — everyday colloquial spoken Finnish — is what Finns actually say to each other, and it differs from kirjakieli enough that a learner who only knows the written standard can struggle badly with real conversation and with the YKI listening section, which deliberately uses natural spoken material.',
       'The most basic shift is the pronouns: minä → mä, sinä → sä, and their possessive/object forms shorten too (minun → mun, minulla → mulla/mul). The written third person plural "he" is very often replaced by "ne" (the pronoun for "they/those [things]") when talking about people in casual speech: "he tekevät" (kirjakieli) becomes "ne tekee" (puhekieli) — note the verb also drops its plural ending and looks like a singular form.',

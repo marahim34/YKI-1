@@ -13,6 +13,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Sijamuodot',
     summary: 'The genitive case (-n): possession, and the base form almost every postposition and necessity structure builds on.',
+    summaryBn: 'জেনেটিভ কারক (-n): মালিকানা বোঝায় এবং প্রায় প্রতিটি postposition ও প্রয়োজনীয়তা-বাচক গঠনের ভিত্তি।',
     explanation: [
       'The genitive singular is formed by adding -n to the noun stem: kissa → kissan, auto → auton, kirja → kirjan. It usually shares its stem with the illative (talo → talon / taloon), so if you can already form one you can often work out the other. Consonant gradation applies normally: pöytä → pöydän, kauppa → kaupan.',
       'The core use is attributive possession: the possessor in the genitive comes directly before the thing possessed, mirroring English \'s but in the opposite word order — "kissan ruoka" (the cat\'s food), "isän auto" (dad\'s car). This is a different grammatical job from the omistusliitteet (possessive suffixes) covered elsewhere, which mark "my/your/his" on the possessed noun itself — the two often combine: "minun kissani ruoka" (my cat\'s food).',
@@ -43,6 +44,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Sijamuodot',
     summary: 'The essive case for a temporary state, role, or condition — "as" or "being" something, not identity.',
+    summaryBn: 'এসিভ কারক ব্যবহৃত হয় সাময়িক অবস্থা, ভূমিকা বা পরিস্থিতি বোঝাতে — স্থায়ী পরিচয় নয়, বরং সাময়িকভাবে কিছু "হিসেবে" থাকা বোঝাতে।',
     explanation: [
       'The essive is formed with -na/-nä (vowel harmony) added to the same stem as the genitive: opettaja → opettajana, tulkki → tulkkina, sairas → sairaana (sairas has the stem sairaa-, so it looks like it just doubles the vowel). It behaves like a normal case ending, including consonant gradation where it applies.',
       'Its main job is marking a temporary state, role, or condition rather than a permanent identity: "Työskentelen opettajana" (I work as a teacher — a role, possibly one that changes) is different in flavor from simply "Olen opettaja" (I am a teacher — stating what you are). It is the natural case after verbs like toimia (to serve/act as), työskennellä (to work as), and the construction pitää jotakuta jonakin (to consider someone as something): "Häntä pidetään hyvänä opettajana" (He/she is considered a good teacher).',
@@ -73,6 +75,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Sijamuodot',
     summary: 'The translative case for becoming or changing into a state, and for "for/intended as" — the mirror image of the essive.',
+    summaryBn: 'ট্রান্সলাটিভ কারক ব্যবহৃত হয় কোনো অবস্থায় "পরিণত হওয়া" বা পরিবর্তন বোঝাতে, এবং "উদ্দেশ্যে/জন্য" অর্থে — এসিভের বিপরীত রূপ।',
     explanation: [
       'The translative is formed with -ksi added to the genitive stem: kuuluisa → kuuluisaksi, sairaanhoitaja → sairaanhoitajaksi, presidentti → presidentiksi. Where the essive marks an already-existing state, the translative marks movement INTO a state — becoming, changing, or being made into something.',
       'It appears after verbs of change and outcome: tulla (Hän tuli kuuluisaksi — He/she became famous), muuttua (Sää muuttui kylmemmäksi — The weather turned colder), valmistua (Valmistuin lääkäriksi — I graduated as a doctor), ryhtyä (to take up/become), and passive appointment/election verbs: valita/nimittää joksikin (to elect/appoint someone as something) — "Hänet valittiin puheenjohtajaksi" (He/she was elected chairperson).',
@@ -103,6 +106,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Sijamuodot',
     summary: 'Three rare, low-frequency cases grouped together — recognize them when reading formal or literary text; you will rarely need to produce them yourself.',
+    summaryBn: 'তিনটি বিরল, কম ব্যবহৃত কারক একসাথে — এগুলো আনুষ্ঠানিক বা সাহিত্যিক লেখায় চিনতে পারা দরকার, নিজে ব্যবহার করার প্রয়োজন কমই হবে।',
     explanation: [
       'Finnish has fifteen cases in total, but most learning material focuses on around twelve productive ones. The remaining three — abessive, comitative, and instructive — are grammatically real but marginal: each is individually low-frequency, largely confined to fixed expressions, formal/written registers, or one specific productive pattern. They are grouped here for exactly that reason: treat this topic as reading-comprehension vocabulary rather than a case system to actively drill.',
       'Abessiivi (-tta/-ttä) means "without". On ordinary nouns it survives mainly in a handful of set phrases — luvatta (without permission), rahatta (without money) — but the place you will actually meet it often is as the abessive form of the third infinitive (-matta/-mättä): tietämättä (without knowing), sanomatta (without saying), nukkumatta (without sleeping). This infinitive pattern is genuinely useful and worth learning to produce, since "without doing X" comes up regularly.',
@@ -133,6 +137,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Adjektiivit',
     summary: 'An attributive adjective must match the case and number of the noun it modifies — unlike English, where adjectives never change.',
+    summaryBn: 'বিশেষণকে অবশ্যই যে বিশেষ্যকে বিশেষায়িত করছে তার কারক ও বচনের সাথে মিলতে হয় — ইংরেজির মতো নয়, যেখানে বিশেষণ কখনো পরিবর্তিত হয় না।',
     explanation: [
       'In Finnish, an adjective directly modifying a noun agrees with that noun in both case and number. If the noun takes an inessive plural ending, the adjective in front of it takes the same inessive plural ending. English adjectives never inflect this way ("big houses", never "bigs houses"), which makes this rule one of the easiest things for English speakers to forget under pressure.',
       'Concretely: iso talo (nominative singular, big house) becomes isossa talossa (inessive singular, in a big house) — both words take -ssa. Isot talot (nominative plural, big houses) becomes isoja taloja (partitive plural) — both words take the plural partitive marker. Whatever happens to the noun\'s ending happens to the adjective\'s ending too, in parallel.',
@@ -163,6 +168,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Pronominit',
     summary: 'The demonstrative pronouns (tämä/tuo/se, this/that/it) and the core indefinite pronouns (joku, jokin, kukaan, kaikki...), all of which decline like ordinary nouns.',
+    summaryBn: 'নির্দেশক সর্বনাম (tämä/tuo/se — এটি/ওটা/সেটি) এবং মূল অনির্দিষ্ট সর্বনাম (joku, jokin, kukaan, kaikki...), যেগুলো সাধারণ বিশেষ্যের মতোই রূপ পরিবর্তন করে।',
     explanation: [
       'Finnish has three demonstrative pronouns: tämä (this, near the speaker), tuo (that, visible or pointed to, more distant), and se (it/that, already mentioned, out of sight, or referring back to something already stated). Their plurals are nämä, nuo, and ne respectively. All of them decline through the full case system exactly like nouns: tässä (in this), tuossa (in that), siinä (in it/there), and plural näissä, noissa, niissä.',
       'In everyday spoken Finnish, se and ne are also extremely commonly used to refer to people, standing in for hän and he — "Mä näin sen eilen" (I saw him/her yesterday). This is considered too casual for careful writing, where hän/he are expected, but it is near-universal in speech and worth recognizing.',
@@ -193,6 +199,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Sanasto ja rakenteet',
     summary: 'Cardinal and ordinal numbers, and the key rule that a number above one takes a singular partitive noun — "kolme kirjaa", never "kolme kirjoja".',
+    summaryBn: 'গণনাবাচক ও ক্রমবাচক সংখ্যা, এবং মূল নিয়ম — এক-এর বেশি সংখ্যার পর বিশেষ্য একবচন পার্টিটিভ রূপে থাকে — "kolme kirjaa", কখনো "kolme kirjoja" নয়।',
     explanation: [
       'The basic cardinal numbers are yksi, kaksi, kolme, neljä, viisi, kuusi, seitsemän, kahdeksan, yhdeksän, kymmenen, then compounds like yksitoista (11) and kaksikymmentä (20). Yksi (one) behaves like a normal adjective and agrees with its noun in case and number ("yksi kirja", "yhdessä kirjassa"), but from kaksi (two) upward the pattern changes.',
       'The core rule: any cardinal number greater than one is followed by a noun in the partitive singular, no matter how large the number is — kolme kirjaa (three books, not kirjoja), sata euroa (a hundred euros), tuhat ihmistä (a thousand people). This is one of the most distinctive structures in Finnish, since English simply pluralizes the noun after any number two or more, and it trips learners up long after everything else about the numbers feels comfortable.',
@@ -223,6 +230,7 @@ export const CASE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Sanasto ja rakenteet',
     summary: 'Finnish mostly places relational words AFTER the noun (postpositions + genitive) rather than before it — with a small, memorable set of true prepositions as the exception.',
+    summaryBn: 'ফিনিশ ভাষায় সাধারণত সম্পর্কসূচক শব্দ বিশেষ্যের আগে নয়, পরে বসে (postposition + জেনেটিভ) — শুধু অল্প কিছু প্রকৃত preposition ব্যতিক্রম।',
     explanation: [
       'Where English uses prepositions before a noun (under the table, in front of the house), Finnish overwhelmingly uses postpositions, placed AFTER a noun in the genitive case: pöydän alla (under the table, literally "table\'s under"), talon edessä (in front of the house), kadun varrella (along the street). This reversed order is one of the more noticeable structural differences learners have to adjust to.',
       'Common postpositions taking the genitive include alla/alle/alta (under, stationary/to/from), edessä/eteen/edestä (in front of), takana/taakse/takaa (behind), vieressä/viereen/vierestä (next to), välissä/väliin/välistä (between), luona/luo/luota (at/near a person or place), and kanssa (with). Several of these come in three directional forms mirroring the location-case system (static / to / from), and kanssa fuses irregularly with personal pronouns — minun kanssani, sinun kanssasi, hänen kanssaan — rather than following the ordinary genitive-pronoun + kanssa pattern predictably.',

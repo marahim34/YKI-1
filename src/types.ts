@@ -28,8 +28,10 @@ export interface VocabItem {
   id: string
   fi: string
   en: string
+  bn?: string
   example: string
   exampleEn: string
+  exampleBn?: string
   theme: string
   level: CefrLevel
   weekId?: number
@@ -139,6 +141,7 @@ export interface GrammarTopic {
   level: CefrLevel
   category: string
   summary: string
+  summaryBn?: string
   explanation: string[]
   examples: GrammarExample[]
   tips?: string[]

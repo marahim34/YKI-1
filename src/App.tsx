@@ -9,6 +9,7 @@ import MockExam from './pages/MockExam'
 import Progress from './pages/Progress'
 import Grammar from './pages/Grammar'
 import BookPractice from './pages/BookPractice'
+import HowToUse from './pages/HowToUse'
 import Reading from './pages/exercises/Reading'
 import Listening from './pages/exercises/Listening'
 import Writing from './pages/exercises/Writing'
@@ -19,6 +20,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/how-to-use" element={<HowToUse />} />
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/week/:weekId" element={<WeekDetail />} />
         <Route path="/week/:weekId/reading" element={<Reading />} />

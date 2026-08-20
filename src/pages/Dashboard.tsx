@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { loadJSON, saveJSON } from '../lib/storage'
 import { useProgress } from '../context/ProgressContext'
 import { WEEKS, PHASE_INFO } from '../data/curriculum'
 import { READING_BY_WEEK, LISTENING_BY_WEEK, WRITING_BY_WEEK, SPEAKING_BY_WEEK, weekHasFullContent } from '../data/content'
@@ -26,6 +28,7 @@ function weekSkillExerciseIds(weekId: number) {
 
 export default function Dashboard() {
   const { state } = useProgress()
+  const [howToDismissed, setHowToDismissed] = useState(() => loadJSON('how-to-banner-dismissed', false))
 
   const contentWeeks = WEEKS.filter((w) => weekHasFullContent(w.id))
   const nextWeek =
@@ -47,6 +50,24 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-6">
+      {!howToDismissed && (
+        <div className="flex items-center justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-800">
+          <Link to="/how-to-use" className="flex items-center gap-2 font-medium hover:underline">
+            ❓ Uusi täällä? Katso, miten sovellus toimii · নতুন এসেছেন? অ্যাপটি কীভাবে ব্যবহার করবেন দেখুন →
+          </Link>
+          <button
+            onClick={() => {
+              setHowToDismissed(true)
+              saveJSON('how-to-banner-dismissed', true)
+            }}
+            aria-label="Piilota"
+            className="shrink-0 text-amber-600 hover:text-amber-900"
+          >
+            ✕
+          </button>
+        </div>
+      )}
+
       <section className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-6 text-white shadow-sm">
         <p className="text-sm font-medium text-blue-100">Tavoite: YKI keskitaso (B1–B2)</p>
         <h1 className="mt-1 text-2xl font-bold">Moi! Jatketaan matkaa suomen kieleen. 🇫🇮</h1>

@@ -12,6 +12,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Verbit',
     summary: 'The personal pronouns and the verb "olla" (to be) — the first thing every learner needs.',
+    summaryBn: 'ব্যক্তিবাচক সর্বনাম এবং "olla" (হওয়া) ক্রিয়া — প্রতিটি শিক্ষার্থীর প্রথমে যা শেখা দরকার।',
     explanation: [
       'Finnish personal pronouns are minä (I), sinä (you), hän (he/she), me (we), te (you pl.), he (they). In casual speech minä/sinä often shorten to mä/sä, but written and formal Finnish uses the full forms. Note that hän covers both "he" and "she" — Finnish has no grammatical gender at all, not even in pronouns.',
       '"Olla" (to be) is irregular and worth memorizing on its own: olen, olet, on, olemme, olette, ovat. Because the verb ending already shows who is doing the action, the pronoun is often dropped in casual speech — "Olen opiskelija" and "Mä oon opiskelija" both mean "I am a student."',
@@ -42,6 +43,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Sijamuodot',
     summary: 'The two most common cases: the "dictionary form" (nominative) and the partitive, used for amounts and negation.',
+    summaryBn: 'সবচেয়ে বেশি ব্যবহৃত দুটি কারক: মূল রূপ (নমিনেটিভ) এবং পার্টিটিভ, যা পরিমাণ ও নেতিবাচক বাক্যে ব্যবহৃত হয়।',
     explanation: [
       'The nominative is the basic dictionary form of a word (kissa, talo, kirja) and is used for subjects and for "a/the" objects in general statements.',
       'The partitive (usually -a/-ä, or -ta/-tä, or -tta/-ttä depending on the word) is used for unspecified amounts ("some"), after numbers above one, after negation, and with many verbs like "pitää" (to like) or "rakastaa" (to love). It is one of the most-used cases in everyday Finnish.',
@@ -72,6 +74,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Lauserakenne',
     summary: 'How to ask questions: question words, and the -ko/-kö question ending.',
+    summaryBn: 'প্রশ্ন করার নিয়ম: প্রশ্নবাচক শব্দ এবং -ko/-kö প্রশ্ন-প্রত্যয়।',
     explanation: [
       'Question words go at the start of the sentence: kuka (who), mikä/mitä (what), missä (where), milloin (when), miksi (why), miten/kuinka (how), kuka/ketkä (who, plural).',
       'For yes/no questions with no question word, attach -ko or -kö (vowel harmony: -ko with a/o/u, -kö with ä/ö/y/e/i) to the first word, usually the verb, and move that word to the front.',
@@ -102,6 +105,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Sijamuodot',
     summary: 'Possessive suffixes attached to the end of a noun instead of (or alongside) a possessive pronoun.',
+    summaryBn: 'বিশেষ্যের শেষে যুক্ত অধিকারবাচক প্রত্যয়, যা মালিকানা (আমার/তোমার/তার...) বোঝায়।',
     explanation: [
       'Finnish marks "my/your/his..." with a suffix on the noun itself: -ni (my), -si (your), -nsa/-nsä (his/her/their own), -mme (our), -nne (your, pl.), -nsa/-nsä (their). In speech, people often add the possessive pronoun (minun, sinun...) too for clarity, especially with -nsa forms which can be ambiguous.',
       'The most common ones to know cold are -ni and -si, since "my" and "your" come up constantly when introducing yourself and your family.',
@@ -132,6 +136,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Sijamuodot',
     summary: 'The three "inside" location cases: inessive (in), elative (out of), illative (into).',
+    summaryBn: 'তিনটি "ভেতরের" স্থানবাচক কারক: ভেতরে (ইনেসিভ), থেকে বের হওয়া (এলাটিভ), ভেতরে প্রবেশ (ইল্লাটিভ)।',
     explanation: [
       'These three cases answer "where at / where from / where to" when something is inside a place: inessive -ssa/-ssä ("in"), elative -sta/-stä ("out of/from"), illative — the trickiest one, usually a doubled vowel + n (talo → taloon), but -Vn, -hVn or -seen depending on the word.',
       'Which set of location cases a word takes (these "inside" ones, or the "outside" ones like -lla/-lta/-lle) is mostly a matter of convention per word/place, though it often follows logic — "talossa" (in the house) but "pöydällä" (on the table).',
@@ -162,6 +167,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Verbit',
     summary: 'The present tense, and the 6 verb types that determine how a verb conjugates.',
+    summaryBn: 'বর্তমান কাল এবং ৬টি ক্রিয়া-শ্রেণি যা ক্রিয়াপদের রূপ নির্ধারণ করে।',
     explanation: [
       'Finnish verbs fall into six conjugation "types" based on their dictionary (infinitive) ending: Type 1 (puhua → puhun), Type 2 (syödä → syön), Type 3 (tulla → tulen), Type 4 (haluta → haluan), Type 5 (tarvita → tarvitsen), Type 6 (vanheta → vanhenen). Type 1 covers the vast majority of verbs you meet early on.',
       'To conjugate in the present tense, drop the infinitive ending and add the personal ending: -n (minä), -t (sinä), -Ø/vowel change (hän), -mme (me), -tte (te), -vat/-vät (he). Recognizing the type quickly becomes automatic with practice — it just takes seeing enough examples.',
@@ -191,6 +197,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Verbit',
     summary: 'Negation: "en, et, ei..." plus the connegative form of the verb.',
+    summaryBn: 'নেতিবাচক বাক্য গঠন: en, et, ei... এবং ক্রিয়ার বিশেষ (কনেগেটিভ) রূপ।',
     explanation: [
       'Finnish negates a verb with a separate negation word that conjugates by person (en, et, ei, emme, ette, eivät), followed by the verb in a special unchanging "connegative" form — which usually looks like the hän-form of the present tense minus the final vowel/consonant, or the imperfect stem for past negation.',
       'Object case also often changes under negation: a partial or total object in the accusative becomes partitive when the sentence is negative.',
@@ -221,6 +228,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A1',
     category: 'Sanasto ja rakenteet',
     summary: 'Telling the time and common time expressions.',
+    summaryBn: 'সময় বলা এবং সাধারণ সময়-সম্পর্কিত বাক্যাংশ।',
     explanation: [
       'The formal way to say a time uses ordinal numbers: "Kello on kolme" (it\'s three o\'clock), "Kello on puoli neljä" (half past three — literally "half four", pointing forward to the next hour, the reverse of English logic).',
       'Common time-of-day expressions take the adessive case: aamulla (in the morning), päivällä (during the day), illalla (in the evening), yöllä (at night) — but viikonloppuna (on the weekend) uses the essive.',
@@ -253,6 +261,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Sijamuodot',
     summary: 'The three "outside/on" location cases: adessive (on/at, or "with"), ablative (off of/from), allative (onto/to).',
+    summaryBn: 'তিনটি "উপরে/বাইরের" স্থানবাচক কারক: উপরে/কাছে (আদেসিভ), থেকে সরানো (আবলাটিভ), উপরে/দিকে (আল্লাটিভ)।',
     explanation: [
       'These mirror the sisäpaikallissijat but for surfaces, open areas, people, and events: adessive -lla/-llä ("on/at", also used for "having" and for means of transport), ablative -lta/-ltä ("off of/from"), allative -lle ("onto/to").',
       'The adessive is also how Finnish expresses possession, since there is no verb "to have": "Minulla on auto" literally means "on me there is a car."',
@@ -283,6 +292,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Verbit',
     summary: 'The simple past tense, for completed actions with a clear time in the past.',
+    summaryBn: 'সাধারণ অতীত কাল, নির্দিষ্ট সময়ে সম্পন্ন হওয়া কাজের জন্য ব্যবহৃত হয়।',
     explanation: [
       'The imperfect is formed by inserting -i- (sometimes changing the stem vowel) between the verb stem and the personal ending: puhu-i-n (I spoke), sö-i-n (I ate), ol-i-n (I was). Many common verbs have small irregularities worth learning by exposure rather than rule.',
       'Use the imperfect for a specific, completed past event ("Eilen menin kauppaan" — Yesterday I went to the shop), as opposed to the perfect tense (which this reference doesn\'t cover separately) for past actions relevant to now.',
@@ -313,6 +323,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Äänne-ja muoto-oppi',
     summary: 'Consonant gradation: certain consonants (k, p, t and their combinations) alternate between a "strong" and "weak" grade depending on the syllable structure.',
+    summaryBn: 'ব্যঞ্জনধ্বনির পরিবর্তন (আস্তেভাইহতেলু): শব্দাংশের গঠন অনুযায়ী কিছু ব্যঞ্জনধ্বনি "শক্তিশালী" ও "দুর্বল" রূপের মধ্যে পরিবর্তিত হয়।',
     explanation: [
       'Many Finnish words alternate their consonants when a case ending or verb ending is added — most famously kk→k, pp→p, tt→t, but also k→(disappears), p→v, t→d, and several consonant-cluster patterns like nt→nn, nk→ng. This is not optional or stylistic; it is a required part of correct inflection.',
       'The pattern is largely predictable from syllable structure (a closed syllable usually triggers the weak grade), but the fastest way to internalize it is repetition with common words rather than trying to memorize the rule table first.',
@@ -342,6 +353,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Adjektiivit',
     summary: 'Comparing adjectives: "bigger" (comparative) and "biggest" (superlative).',
+    summaryBn: 'বিশেষণের তুলনা: তুলনামূলক (comparative) "বড়" এবং সর্বোচ্চ (superlative) "সবচেয়ে বড়" রূপ।',
     explanation: [
       'The comparative is formed by adding -mpi to the adjective stem (isompi — bigger), and the superlative with -in (isoin — biggest). Both then take normal case endings like any adjective.',
       '"Than" is expressed either with the partitive case on the compared-to noun ("isompi kuin talo" or simply "taloa isompi") or with the word "kuin".',
@@ -372,6 +384,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Verbit',
     summary: 'The modal verbs of ability, permission/possibility, want, and necessity.',
+    summaryBn: 'সামর্থ্য, অনুমতি/সম্ভাবনা, ইচ্ছা এবং প্রয়োজনীয়তা প্রকাশক সহায়ক ক্রিয়া (modal verbs)।',
     explanation: [
       'osata = to know how to (a learned skill), voida = can/may (possibility or permission), haluta = to want. All three are followed by the basic (A-)infinitive.',
       'Necessity works differently: täytyy and pitää ("must/have to") are impersonal and take the person in the genitive case, not as the subject: "Minun täytyy lähteä" (literally "of-me it-is-necessary to-leave").',
@@ -402,6 +415,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Sijamuodot',
     summary: 'How Finnish marks a whole/complete object (accusative/genitive-like -n, or nominative in plural/imperative) versus a partial or ongoing one (partitive).',
+    summaryBn: 'ফিনিশ ভাষা কীভাবে সম্পূর্ণ কর্ম (accusative/genitive-এর মতো -n) এবং আংশিক বা চলমান কর্ম (partitive) আলাদাভাবে চিহ্নিত করে।',
     explanation: [
       'If the action is completed and the whole object is affected, the object usually takes the "total object" form — for singular nouns this looks like the genitive (-n): "Luin kirjan" (I read the [whole] book, finished it).',
       'If the action is ongoing, repeated, partial, or the object is an uncountable/unspecified amount, the object takes the partitive: "Luin kirjaa" (I was reading the book / reading some of it). Negation always forces partitive, regardless of completeness.',
@@ -432,6 +446,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'A2',
     category: 'Sijamuodot',
     summary: 'Forming the plural: nominative plural (-t) and partitive plural (-a/-ä/-ia/-iä, with gradation).',
+    summaryBn: 'বহুবচন গঠন: নমিনেটিভ বহুবচন (-t) এবং পার্টিটিভ বহুবচন (-a/-ä/-ia/-iä, ধ্বনি পরিবর্তনসহ)।',
     explanation: [
       'The nominative plural adds -t to the singular stem: kissa → kissat (cats), talo → talot (houses). It is used for plural subjects and definite plural objects.',
       'The partitive plural is more irregular — it usually inserts -i- before the partitive ending, and often triggers vowel and consonant changes: kissoja, taloja, kirjoja. Case endings in the plural are added after this same -i- marker (e.g. taloissa — in the houses).',
@@ -464,6 +479,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The conditional mood: "would" — for hypotheticals, polite requests, and wishes.',
+    summaryBn: 'শর্তসাপেক্ষ ভাব (conditional): "হতো/করতাম" — কাল্পনিক পরিস্থিতি, ভদ্র অনুরোধ ও ইচ্ছা প্রকাশে ব্যবহৃত।',
     explanation: [
       'Formed by inserting -isi- into the verb stem: puhua → puhuisin (I would speak), olla → olisin (I would be). It combines with normal personal endings.',
       'Very common in polite requests ("Voisitko auttaa?" — Could you help?) and in if-then hypotheticals, often paired with "jos" (if): "Jos minulla olisi aikaa, matkustaisin enemmän" (If I had time, I would travel more).',
@@ -494,6 +510,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The present passive — "one does / it is done" — Finnish\'s way of describing an action without naming who does it.',
+    summaryBn: 'বর্তমান কালের প্যাসিভ (কর্মবাচ্য) — কে করছে তা না বলে কাজটি বর্ণনা করার ফিনিশ পদ্ধতি।',
     explanation: [
       'The passive present is formed with a special ending that varies by verb type but is consistent within each type (e.g. type 1: puhutaan, type 3: tullaan). It has no specific grammatical subject — it corresponds to English "it is done" or the colloquial "we ..." in spoken Finnish.',
       'In everyday spoken Finnish, the passive is very often used instead of the "me" (we) form: "Me mennään" (We\'re going) uses passive morphology even though it means "we", not a true impersonal passive — an important quirk to recognize when listening.',
@@ -524,6 +541,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The past passive — the same impersonal construction, but describing something that already happened.',
+    summaryBn: 'অতীত কালের প্যাসিভ — একই নিয়ম, তবে আগেই ঘটে যাওয়া কিছু বর্ণনা করে।',
     explanation: [
       'Built the same way as the present passive but with the imperfect passive marker (-tiin/-ttiin depending on the verb): puhuttiin (it was spoken / people spoke), tehtiin (it was done). Recognize it by the -ttiin/-tiin ending on an otherwise passive-looking verb form.',
       'Used constantly in narration and news to describe events without naming an actor, e.g. describing what "was decided" or "was announced" at a meeting.',
@@ -554,6 +572,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Lauserakenne',
     summary: 'Relative clauses — "who/which/that" — connecting a description back to a noun.',
+    summaryBn: 'সম্বন্ধসূচক বাক্যাংশ (relative clauses) — "যে/যা/যিনি" — একটি বর্ণনাকে পূর্বের বিশেষ্যের সাথে যুক্ত করে।',
     explanation: [
       '"Joka" (singular) and "jotka" (plural) introduce a relative clause and refer back to a noun mentioned earlier. Crucially, joka/jotka itself takes whatever case its role inside the relative clause requires — not the case of the noun it refers to.',
       'Word order inside the relative clause is normal Finnish word order; the clause is usually set off by commas in writing.',
@@ -584,6 +603,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The third ("MA") infinitive, used for purpose, ongoing action, and after certain structures like "varten" and "jotta".',
+    summaryBn: 'তৃতীয় ("MA") ইনফিনিটিভ রূপ, উদ্দেশ্য, চলমান কাজ এবং "varten", "jotta"-এর মতো গঠনে ব্যবহৃত।',
     explanation: [
       'Formed by adding -ma/-mä to the verb stem, then a case ending depending on meaning: illative (-maan/-mään) for "in order to / going to do", inessive (-massa/-mässä) for "in the middle of doing", elative (-masta/-mästä) for "from doing", and others.',
       '"Jotta" (in order that) introduces a purpose clause with a normal finite verb (often in the conditional), while "varten" (for the purpose of) is a postposition that pairs with a genitive + the MA-infinitive in illative when describing why something exists.',
@@ -614,6 +634,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'The imperative — commands and instructions.',
+    summaryBn: 'আদেশসূচক বাক্য (imperative) — নির্দেশ ও আদেশ প্রকাশে ব্যবহৃত।',
     explanation: [
       'The singular "you" command is simply the verb stem with no ending (Puhu! — Speak!), or with -a/-ä for some verb types. The plural/formal "you" command adds -kaa/-kää to the stem.',
       'Negative commands use älä (singular) or älkää (plural) plus the connegative form of the verb — the same bare stem-like form used in other negations.',
@@ -644,6 +665,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Verbit',
     summary: 'Finnish has no separate future tense — the present tense does double duty, helped by time words or specific structures.',
+    summaryBn: 'ফিনিশ ভাষায় আলাদা ভবিষ্যৎ কাল নেই — বর্তমান কালই সময়-শব্দ বা বিশেষ গঠনের সাহায্যে ভবিষ্যতের কাজ বোঝায়।',
     explanation: [
       'Usually the present tense plus a future time expression is enough: "Huomenna menen kouttiin" (Tomorrow I go/will go to school). Context and adverbs like huomenna, ensi viikolla, pian carry the future meaning.',
       'For a stronger sense of intention or a change of state that will happen, Finnish uses "aion" + basic infinitive ("I intend to...") or "tulen" + MA-infinitive illative ("tulen tekemään" — I will do), the latter feeling slightly more formal/written.',
@@ -674,6 +696,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B1',
     category: 'Lauserakenne',
     summary: 'The core subordinating conjunctions for building complex sentences.',
+    summaryBn: 'জটিল বাক্য গঠনের মূল অধীনস্থ সংযোজক (subordinating conjunctions)।',
     explanation: [
       'koska (because) gives a reason; että (that) reports/links a statement, often after verbs like sanoa, ajatella, luulla; kun (when) marks a time or condition; vaikka (although/even though) marks a concession/contrast.',
       'In writing, a comma separates the main clause from the subordinate clause. Word order inside the subordinate clause stays regular Finnish word order (subject-verb-object), unlike some languages that invert it.',
@@ -706,6 +729,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Lauserakenne',
     summary: 'Reported speech — relaying what someone else said, asked, or thought, without quoting them directly.',
+    summaryBn: 'পরোক্ষ উক্তি (reported speech) — কারো কথা, প্রশ্ন বা চিন্তা সরাসরি উদ্ধৃত না করে জানানো।',
     explanation: [
       'Statements are reported with "että": "Hän sanoi, että hän tulee huomenna" (He/she said that he/she is coming tomorrow) — note Finnish does NOT usually shift tense backward the way English does; the reported clause often keeps the tense the original speaker used.',
       'Reported yes/no questions use "-ko/-kö" embedded in the clause ("Hän kysyi, tulenko huomenna" — He/she asked whether I\'m coming tomorrow); reported wh-questions keep the original question word ("Hän kysyi, missä asun" — He/she asked where I live).',
@@ -736,6 +760,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Partisiipit',
     summary: 'The past active participle (-nut/-nyt, plural -neet) — "having done", used both as an adjective and to build compound past tenses.',
+    summaryBn: 'অতীত সক্রিয় কৃদন্ত (-nut/-nyt, বহুবচনে -neet) — "করেছে/করা হয়েছে", বিশেষণ হিসেবে এবং যৌগিক অতীত কাল গঠনে ব্যবহৃত।',
     explanation: [
       'As an adjective, the NUT-participle describes a noun by what it (or its subject) has done: "kuollut puu" (a dead/died tree), "väsynyt opiskelija" (a tired/having-tired-out student).',
       'It is also the participle used in the perfect and pluperfect tenses (olen tehnyt — I have done; olin tehnyt — I had done), and appears in temporal/participial constructions replacing a "after ... " clause: "Syötyään hän lähti" (Having eaten, he/she left / After he/she had eaten, he/she left).',
@@ -766,6 +791,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Partisiipit',
     summary: 'The present active participle (-va/-vä) — "doing/that does", describing an ongoing or characteristic action.',
+    summaryBn: 'বর্তমান সক্রিয় কৃদন্ত (-va/-vä) — "করছে এমন", চলমান বা বৈশিষ্ট্যসূচক কাজ বর্ণনা করে।',
     explanation: [
       'Formed from the present tense stem plus -va/-vä: kasvava (growing), tuleva (coming/upcoming), kehittyvä (developing). It functions as an adjective describing something mid-action or characterized by that action.',
       'It is common in more formal/written registers — news, reports, official text — where English might use a relative clause ("that is growing") instead of a single adjective.',
@@ -796,6 +822,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Verbit',
     summary: 'Combining the passive with the conditional — "it would be done" — common in formal proposals and hedged suggestions.',
+    summaryBn: 'প্যাসিভ ও কন্ডিশনাল একত্রে — "করা হতো" — আনুষ্ঠানিক প্রস্তাব ও নরম পরামর্শে সাধারণ।',
     explanation: [
       'Take the passive stem and add the conditional -isi- marker before the passive personal ending: tehtäisiin (it would be done), voitaisiin (one/it could), päätettäisiin (it would be decided). This is a workhorse construction in formal writing, meeting minutes, and policy discussion.',
       'It is especially useful for hedged, non-committal suggestions where you want to propose something without asserting it as fact — very natural in B2-level argumentative or workplace Finnish.',
@@ -826,6 +853,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Sanasto ja rakenteet',
     summary: 'Turning a verb into an abstract noun with the -minen suffix, extremely common in written/formal Finnish.',
+    summaryBn: '-minen প্রত্যয় দিয়ে ক্রিয়াকে বিমূর্ত বিশেষ্যে রূপান্তর, লিখিত/আনুষ্ঠানিক ফিনিশ ভাষায় অত্যন্ত সাধারণ।',
     explanation: [
       'Almost any verb can become an abstract "-ing"-like noun with -minen: ymmärtää → ymmärtäminen (understanding), kehittyä → kehittyminen (developing/development), päättää → päättäminen (deciding). These nouns then decline like any other noun.',
       'Formal and written Finnish leans heavily on nominalization where English might keep a verb — "kielen oppiminen on tärkeää" (learning the language is important) reads far more naturally in Finnish than trying to keep "oppia" as a verb in that sentence position.',
@@ -856,6 +884,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Lauserakenne',
     summary: 'Non-finite clause substitutes — compact structures that replace a full subordinate clause, typical of fluent written Finnish.',
+    summaryBn: 'অ-সসীম (non-finite) বাক্যাংশ বিকল্প — সাবলীল লিখিত ফিনিশ ভাষার বৈশিষ্ট্য, যা পুরো অধীনস্থ বাক্যাংশের বদলে ব্যবহৃত হয়।',
     explanation: [
       'Instead of "kun hän tuli kotiin" (when he/she came home), fluent Finnish often compresses this into a single participial phrase: "tultuaan kotiin" (having come home) — using the same temporal NUT-participle construction mentioned above, or the referatiivirakenne (reporting construction) to compress "että"-clauses.',
       'The reporting construction replaces "sanoi, että hän tulee" with "sanoi tulevansa" (said he/she is coming) — the VA-participle plus a possessive suffix agreeing with the subject. These compressed forms are a hallmark of advanced, natural-sounding written Finnish and worth recognizing even before you produce them fluently yourself.',
@@ -886,6 +915,7 @@ export const CORE_GRAMMAR_TOPICS: GrammarTopic[] = [
     level: 'B2',
     category: 'Sanasto ja rakenteet',
     summary: 'The connector vocabulary that structures an argument, essay, or opinion piece — the glue of B2 writing.',
+    summaryBn: 'যুক্তি, প্রবন্ধ বা মতামতমূলক লেখার কাঠামো তৈরির সংযোজক শব্দভাণ্ডার — B2 স্তরের লেখার মূল হাতিয়ার।',
     explanation: [
       'Good B2 argumentative writing signals its structure explicitly with connectors: toisaalta...toisaalta (on one hand...on the other), kuitenkin (however), sen sijaan (instead), lisäksi (in addition), toisin sanoen (in other words), näin ollen (therefore/consequently), vaikka(kin) (even though).',
       'A strong opinion text usually states a clear position, uses "toisaalta" to acknowledge a counter-argument fairly, then returns to the writer\'s position with "kuitenkin" or "silti" (still) — this on-one-hand/on-the-other-hand/but-ultimately shape is exactly what YKI writing raters look for at this level.',

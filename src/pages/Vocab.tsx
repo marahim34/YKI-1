@@ -4,9 +4,11 @@ import { loadCustomVocab } from '../lib/customContent'
 import { useProgress } from '../context/ProgressContext'
 import { dueCardIds } from '../lib/srs'
 import type { Grade } from '../lib/srs'
+import { useFinnishSpeech } from '../lib/tts'
 
 export default function Vocab() {
   const { state, gradeVocab } = useProgress()
+  const { play, speaking, supported } = useFinnishSpeech()
   const allItems = useMemo(() => [...VOCAB_BANK, ...loadCustomVocab()], [])
   const itemsById = useMemo(() => new Map(allItems.map((v) => [v.id, v])), [allItems])
 
@@ -67,22 +69,43 @@ export default function Vocab() {
         </span>
       </div>
 
-      <button
+      <div
         onClick={() => setFlipped((f) => !f)}
-        className="flex min-h-56 w-full flex-col items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm"
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === 'Enter' && setFlipped((f) => !f)}
+        className="flex min-h-56 w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm"
       >
         <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-500">{current.theme}</span>
-        <p className="text-2xl font-bold text-slate-900">{current.fi}</p>
+        <div className="flex items-center gap-2">
+          <p className="text-2xl font-bold text-slate-900">{current.fi}</p>
+          {supported && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                play(current.fi)
+              }}
+              disabled={speaking}
+              aria-label="Kuuntele ääntäminen"
+              title="Kuuntele ääntäminen"
+              className="rounded-full bg-blue-50 p-2 text-blue-700 hover:bg-blue-100 disabled:opacity-50"
+            >
+              🔊
+            </button>
+          )}
+        </div>
         {flipped ? (
           <div className="space-y-2">
             <p className="text-lg text-blue-700">{current.en}</p>
+            {current.bn && <p className="text-lg text-emerald-700">{current.bn}</p>}
             <p className="text-sm italic text-slate-500">{current.example}</p>
             <p className="text-xs text-slate-400">{current.exampleEn}</p>
+            {current.exampleBn && <p className="text-xs text-slate-400">{current.exampleBn}</p>}
           </div>
         ) : (
           <p className="text-sm text-slate-400">Napauta nähdäksesi käännöksen</p>
         )}
-      </button>
+      </div>
 
       {flipped ? (
         <div className="grid grid-cols-3 gap-2">
