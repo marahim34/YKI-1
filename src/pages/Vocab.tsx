@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { VOCAB_BANK } from '../data/vocab'
 import { loadCustomVocab } from '../lib/customContent'
 import { useProgress } from '../context/ProgressContext'
@@ -68,6 +69,13 @@ export default function Vocab() {
           {cursor + 1} / {queue.length}
         </span>
       </div>
+
+      <Link
+        to="/basics"
+        className="block rounded-lg bg-amber-50 px-3 py-2 text-center text-xs font-medium text-amber-800 hover:bg-amber-100"
+      >
+        🌻 Selaa perussanastoa kategorioittain (kuukaudet, värit, ruoka...) →
+      </Link>
 
       <div
         onClick={() => setFlipped((f) => !f)}

@@ -423,6 +423,105 @@ const ROWS: Row[] = [
   ['kostea', 'humid/damp', 'আর্দ্র', 'Ilma on tänään kostea.', 'The air is humid today.', 'আজ বাতাস আর্দ্র।', 'weather more', 'B1'],
   ['kuiva', 'dry', 'শুষ্ক', 'Kesä oli tänä vuonna hyvin kuiva.', 'The summer was very dry this year.', 'এই বছর গ্রীষ্মকাল খুবই শুষ্ক ছিল।', 'weather more', 'A2'],
   ['lämmin', 'warm', 'উষ্ণ / গরম', 'Toivottavasti huomenna on lämmin ilma.', 'Hopefully tomorrow the weather will be warm.', 'আশা করি আগামীকাল আবহাওয়া উষ্ণ থাকবে।', 'weather more', 'A1'],
+
+  // months
+  ['tammikuu', 'January', 'জানুয়ারি', 'Tammikuussa on usein kylmä ja luminen.', "In January it's often cold and snowy.", 'জানুয়ারিতে প্রায়ই ঠান্ডা ও তুষারময় থাকে।', 'months', 'A1'],
+  ['helmikuu', 'February', 'ফেব্রুয়ারি', 'Helmikuussa on vain kaksikymmentäkahdeksan tai -yhdeksän päivää.', 'February has only twenty-eight or twenty-nine days.', 'ফেব্রুয়ারিতে মাত্র আটাশ বা ঊনত্রিশ দিন থাকে।', 'months', 'A1'],
+  ['maaliskuu', 'March', 'মার্চ', 'Maaliskuussa kevät alkaa lähestyä.', 'In March spring starts to approach.', 'মার্চে বসন্ত ঘনিয়ে আসতে শুরু করে।', 'months', 'A1'],
+  ['huhtikuu', 'April', 'এপ্রিল', 'Huhtikuussa lumi alkaa sulaa.', 'In April the snow starts to melt.', 'এপ্রিলে বরফ গলতে শুরু করে।', 'months', 'A1'],
+  ['toukokuu', 'May', 'মে', 'Toukokuussa luonto muuttuu vihreäksi.', 'In May nature turns green.', 'মে মাসে প্রকৃতি সবুজ হয়ে ওঠে।', 'months', 'A1'],
+  ['kesäkuu', 'June', 'জুন', 'Kesäkuussa vietämme juhannusta.', 'In June we celebrate Midsummer.', 'জুনে আমরা মিডসামার উদযাপন করি।', 'months', 'A1'],
+  ['heinäkuu', 'July', 'জুলাই', "Heinäkuu on Suomen lämpimin kuukausi.", "July is Finland's warmest month.", 'জুলাই ফিনল্যান্ডের সবচেয়ে উষ্ণ মাস।', 'months', 'A1'],
+  ['elokuu', 'August', 'আগস্ট', 'Koulu alkaa yleensä elokuussa.', 'School usually starts in August.', 'সাধারণত আগস্টে স্কুল শুরু হয়।', 'months', 'A1'],
+  ['syyskuu', 'September', 'সেপ্টেম্বর', 'Syyskuussa lehdet alkavat muuttua keltaisiksi.', 'In September the leaves start turning yellow.', 'সেপ্টেম্বরে পাতা হলুদ হতে শুরু করে।', 'months', 'A1'],
+  ['lokakuu', 'October', 'অক্টোবর', 'Lokakuussa sää on usein sateinen.', 'In October the weather is often rainy.', 'অক্টোবরে আবহাওয়া প্রায়ই বৃষ্টিবহুল থাকে।', 'months', 'A1'],
+  ['marraskuu', 'November', 'নভেম্বর', 'Marraskuu on vuoden pimein kuukausi.', 'November is the darkest month of the year.', 'নভেম্বর বছরের সবচেয়ে অন্ধকার মাস।', 'months', 'A1'],
+  ['joulukuu', 'December', 'ডিসেম্বর', 'Joulukuussa vietämme joulua.', 'In December we celebrate Christmas.', 'ডিসেম্বরে আমরা বড়দিন উদযাপন করি।', 'months', 'A1'],
+
+  // weekdays
+  ['maanantai', 'Monday', 'সোমবার', 'Käyn kuntosalilla maanantaisin.', 'I go to the gym on Mondays.', 'আমি সোমবারে জিমে যাই।', 'weekdays', 'A1'],
+  ['tiistai', 'Tuesday', 'মঙ্গলবার', 'Meillä on suomen kurssi tiistaisin.', 'We have a Finnish course on Tuesdays.', 'আমাদের মঙ্গলবারে ফিনিশ কোর্স থাকে।', 'weekdays', 'A1'],
+  ['keskiviikko', 'Wednesday', 'বুধবার', 'Käyn kaupassa keskiviikkoisin.', 'I go grocery shopping on Wednesdays.', 'আমি বুধবারে বাজার করতে যাই।', 'weekdays', 'A1'],
+  ['torstai', 'Thursday', 'বৃহস্পতিবার', "Torstaisin on usein kokous töissä.", "On Thursdays there's often a meeting at work.", 'বৃহস্পতিবারে প্রায়ই অফিসে মিটিং থাকে।', 'weekdays', 'A1'],
+  ['perjantai', 'Friday', 'শুক্রবার', 'Perjantai on viikon paras päivä.', 'Friday is the best day of the week.', 'শুক্রবার সপ্তাহের সেরা দিন।', 'weekdays', 'A1'],
+  ['lauantai', 'Saturday', 'শনিবার', 'Lauantaina nukun pitkään.', 'On Saturday I sleep in.', 'শনিবারে আমি বেশি সময় ঘুমাই।', 'weekdays', 'A1'],
+  ['sunnuntai', 'Sunday', 'রবিবার', 'Sunnuntaina vietämme aikaa perheen kanssa.', 'On Sunday we spend time with family.', 'রবিবারে আমরা পরিবারের সাথে সময় কাটাই।', 'weekdays', 'A1'],
+
+  // colors (more)
+  ['vaaleanpunainen', 'pink', 'গোলাপি', 'Tytöllä on vaaleanpunainen reppu.', 'The girl has a pink backpack.', 'মেয়েটির একটি গোলাপি ব্যাগ আছে।', 'colors', 'A2'],
+  ['turkoosi', 'turquoise', 'ফিরোজা', 'Meri näytti turkoosilta auringonpaisteessa.', 'The sea looked turquoise in the sunshine.', 'রোদে সমুদ্রকে ফিরোজা রঙের দেখাচ্ছিল।', 'colors', 'B1'],
+  ['kultainen', 'golden', 'সোনালি', 'Syksyllä puiden lehdet ovat kultaisia.', 'In autumn the leaves of the trees are golden.', 'শরৎকালে গাছের পাতা সোনালি রঙের হয়।', 'colors', 'A2'],
+  ['hopeanvärinen', 'silver-colored', 'রূপালি', 'Hänellä on hopeanvärinen kello.', 'He/she has a silver-colored watch.', 'তার একটি রূপালি রঙের ঘড়ি আছে।', 'colors', 'A2'],
+  ['beige', 'beige', 'বেইজ', 'Osta beigenvärinen sohva olohuoneeseen.', 'Buy a beige-colored sofa for the living room.', 'বসার ঘরের জন্য বেইজ রঙের সোফা কেনো।', 'colors', 'B1'],
+
+  // weather (more)
+  ['aurinkoinen', 'sunny', 'রৌদ্রোজ্জ্বল', 'Huomenna on aurinkoinen päivä.', 'Tomorrow will be a sunny day.', 'আগামীকাল রৌদ্রোজ্জ্বল দিন হবে।', 'weather', 'A1'],
+  ['sateinen', 'rainy', 'বৃষ্টিবহুল', 'Syksy on Suomessa usein sateinen.', 'Autumn in Finland is often rainy.', 'ফিনল্যান্ডে শরৎকাল প্রায়ই বৃষ্টিবহুল হয়।', 'weather', 'A2'],
+  ['poutainen', 'dry (no rain)', 'বৃষ্টিহীন (শুষ্ক আবহাওয়া)', 'Viikonloppuna sää on poutainen.', 'The weather will be dry (no rain) this weekend.', 'সপ্তাহান্তে আবহাওয়া শুষ্ক থাকবে।', 'weather', 'B1'],
+
+  // flowers
+  ['kukka', 'flower', 'ফুল', 'Ostin äidille kauniin kukan.', 'I bought a beautiful flower for mom.', 'আমি মায়ের জন্য একটি সুন্দর ফুল কিনেছি।', 'flowers', 'A1'],
+  ['ruusu', 'rose', 'গোলাপ', "Sain punaisen ruusun ystävänpäivänä.", "I got a red rose on Valentine's Day.", 'ভ্যালেন্টাইন দিবসে আমি একটি লাল গোলাপ পেয়েছি।', 'flowers', 'A2'],
+  ['tulppaani', 'tulip', 'টিউলিপ', 'Puutarhassa kasvaa keltaisia tulppaaneja.', 'Yellow tulips grow in the garden.', 'বাগানে হলুদ টিউলিপ ফুল জন্মে।', 'flowers', 'A2'],
+  ['auringonkukka', 'sunflower', 'সূর্যমুখী ফুল', 'Auringonkukka kääntyy auringon mukaan.', 'The sunflower turns to follow the sun.', 'সূর্যমুখী ফুল সূর্যের দিকে ঘুরে যায়।', 'flowers', 'B1'],
+  ['voikukka', 'dandelion', 'ড্যান্ডেলিয়ন', 'Nurmikolla kasvaa paljon voikukkia keväällä.', 'Many dandelions grow on the lawn in spring.', 'বসন্তে ঘাসের মাঠে অনেক ড্যান্ডেলিয়ন ফুল জন্মে।', 'flowers', 'A2'],
+  ['kielo', 'lily of the valley', 'লিলি অফ দ্য ভ্যালি', "Kielo on Suomen kansalliskukka.", "Lily of the valley is Finland's national flower.", 'লিলি অফ দ্য ভ্যালি ফিনল্যান্ডের জাতীয় ফুল।', 'flowers', 'B1'],
+
+  // fruits
+  ['hedelmä', 'fruit', 'ফল', 'Syön joka päivä hedelmiä.', 'I eat fruit every day.', 'আমি প্রতিদিন ফল খাই।', 'fruits', 'A1'],
+  ['omena', 'apple', 'আপেল', 'Otan omenan välipalaksi.', 'I take an apple as a snack.', 'আমি নাস্তা হিসেবে একটি আপেল নিই।', 'fruits', 'A1'],
+  ['banaani', 'banana', 'কলা', 'Lapsi pitää banaaneista.', 'The child likes bananas.', 'শিশুটি কলা পছন্দ করে।', 'fruits', 'A1'],
+  ['appelsiini', 'orange (fruit)', 'কমলালেবু', 'Puristan tuoretta appelsiinimehua aamulla.', 'I squeeze fresh orange juice in the morning.', 'আমি সকালে তাজা কমলার রস তৈরি করি।', 'fruits', 'A1'],
+  ['mansikka', 'strawberry', 'স্ট্রবেরি', 'Kesällä ostamme mansikoita torilta.', 'In summer we buy strawberries from the market.', 'গ্রীষ্মকালে আমরা বাজার থেকে স্ট্রবেরি কিনি।', 'fruits', 'A1'],
+  ['mustikka', 'blueberry', 'ব্লুবেরি', 'Suomalaiset poimivat mustikoita metsästä.', 'Finns pick blueberries from the forest.', 'ফিনরা বন থেকে ব্লুবেরি সংগ্রহ করে।', 'fruits', 'A2'],
+  ['vadelma', 'raspberry', 'রাস্পবেরি', 'Leivon kakun vadelmilla.', 'I bake a cake with raspberries.', 'আমি রাস্পবেরি দিয়ে কেক তৈরি করি।', 'fruits', 'A2'],
+  ['päärynä', 'pear', 'নাশপাতি', 'Tämä päärynä on hyvin makea.', 'This pear is very sweet.', 'এই নাশপাতিটি খুব মিষ্টি।', 'fruits', 'A2'],
+  ['viinirypäle', 'grape', 'আঙুর', 'Ostin rypäleitä kaupasta.', 'I bought grapes from the store.', 'আমি দোকান থেকে আঙুর কিনেছি।', 'fruits', 'A2'],
+  ['sitruuna', 'lemon', 'লেবু', 'Laitan sitruunaa teehen.', 'I put lemon in my tea.', 'আমি চায়ে লেবু দিই।', 'fruits', 'A2'],
+
+  // vegetables
+  ['vihannes', 'vegetable', 'সবজি', 'Syön vihanneksia joka aterialla.', 'I eat vegetables with every meal.', 'আমি প্রতিটি খাবারের সাথে সবজি খাই।', 'vegetables', 'A1'],
+  ['porkkana', 'carrot', 'গাজর', 'Pilkon porkkanan keittoon.', 'I chop a carrot into the soup.', 'আমি স্যুপে গাজর কেটে দিই।', 'vegetables', 'A1'],
+  ['peruna', 'potato', 'আলু', 'Keitämme perunoita illalliseksi.', 'We boil potatoes for dinner.', 'আমরা রাতের খাবারের জন্য আলু সেদ্ধ করি।', 'vegetables', 'A1'],
+  ['sipuli', 'onion', 'পেঁয়াজ', 'Paistan sipulia pannulla.', 'I fry onion in the pan.', 'আমি প্যানে পেঁয়াজ ভাজি।', 'vegetables', 'A1'],
+  ['kurkku', 'cucumber', 'শসা', 'Lisään kurkkua salaattiin.', 'I add cucumber to the salad.', 'আমি সালাদে শসা যোগ করি।', 'vegetables', 'A1'],
+  ['tomaatti', 'tomato', 'টমেটো', 'Kasvatan tomaatteja parvekkeella.', 'I grow tomatoes on the balcony.', 'আমি বারান্দায় টমেটো চাষ করি।', 'vegetables', 'A1'],
+  ['paprika', 'bell pepper', 'ক্যাপসিকাম', 'Punainen paprika on makea.', 'Red bell pepper is sweet.', 'লাল ক্যাপসিকাম মিষ্টি।', 'vegetables', 'A2'],
+  ['kaali', 'cabbage', 'বাঁধাকপি', 'Äiti tekee kaalikeittoa.', 'Mom makes cabbage soup.', 'মা বাঁধাকপির স্যুপ তৈরি করেন।', 'vegetables', 'A2'],
+  ['salaatti', 'lettuce / salad', 'লেটুস / সালাদ', 'Teen vihreää salaattia lounaaksi.', 'I make a green salad for lunch.', 'আমি দুপুরের খাবারের জন্য সবুজ সালাদ তৈরি করি।', 'vegetables', 'A1'],
+  ['valkosipuli', 'garlic', 'রসুন', 'Ruokaan tarvitaan kaksi kynttä valkosipulia.', 'The dish needs two cloves of garlic.', 'রান্নার জন্য দুই কোয়া রসুন দরকার।', 'vegetables', 'A2'],
+
+  // home: rooms
+  ['talo', 'house', 'বাড়ি', 'He asuvat isossa talossa.', 'They live in a big house.', 'তারা একটি বড় বাড়িতে থাকে।', 'home', 'A1'],
+  ['asunto', 'apartment / dwelling', 'অ্যাপার্টমেন্ট / বাসস্থান', 'Vuokraamme pientä asuntoa keskustassa.', 'We rent a small apartment downtown.', 'আমরা শহরের কেন্দ্রে একটি ছোট অ্যাপার্টমেন্ট ভাড়া নিই।', 'home', 'A1'],
+  ['olohuone', 'living room', 'বসার ঘর', 'Katsomme televisiota olohuoneessa.', 'We watch TV in the living room.', 'আমরা বসার ঘরে টিভি দেখি।', 'home', 'A1'],
+  ['makuuhuone', 'bedroom', 'শোবার ঘর', 'Makuuhuoneessa on iso sänky.', 'There is a big bed in the bedroom.', 'শোবার ঘরে একটি বড় খাট আছে।', 'home', 'A1'],
+  ['kylpyhuone', 'bathroom', 'বাথরুম', 'Peseydyn kylpyhuoneessa joka aamu.', 'I wash up in the bathroom every morning.', 'আমি প্রতিদিন সকালে বাথরুমে গোসল করি।', 'home', 'A1'],
+  ['eteinen', 'hallway / entryway', 'প্রবেশপথ', 'Riisun kengät eteisessä.', 'I take off my shoes in the entryway.', 'আমি প্রবেশপথে জুতা খুলি।', 'home', 'A2'],
+  ['parveke', 'balcony', 'বারান্দা', 'Juon aamukahvin parvekkeella.', 'I drink my morning coffee on the balcony.', 'আমি বারান্দায় সকালের কফি পান করি।', 'home', 'A2'],
+  ['piha', 'yard / courtyard', 'উঠান', 'Lapset leikkivät pihalla.', 'The children play in the yard.', 'শিশুরা উঠানে খেলছে।', 'home', 'A1'],
+
+  // furniture
+  ['huonekalu', 'furniture', 'আসবাবপত্র', 'Ostimme uusia huonekaluja uuteen kotiin.', 'We bought new furniture for the new home.', 'আমরা নতুন বাড়ির জন্য নতুন আসবাবপত্র কিনেছি।', 'furniture', 'A2'],
+  ['sänky', 'bed', 'খাট / বিছানা', 'Petaan sängyn joka aamu.', 'I make the bed every morning.', 'আমি প্রতিদিন সকালে বিছানা গোছাই।', 'furniture', 'A1'],
+  ['tuoli', 'chair', 'চেয়ার', 'Istun tuolilla ja luen kirjaa.', 'I sit on a chair and read a book.', 'আমি চেয়ারে বসে বই পড়ি।', 'furniture', 'A1'],
+  ['pöytä', 'table', 'টেবিল', 'Ruoka on pöydällä.', 'The food is on the table.', 'খাবার টেবিলে আছে।', 'furniture', 'A1'],
+  ['sohva', 'sofa / couch', 'সোফা', 'Nukahdin sohvalle elokuvan aikana.', 'I fell asleep on the sofa during the movie.', 'সিনেমা দেখার সময় আমি সোফায় ঘুমিয়ে পড়েছিলাম।', 'furniture', 'A1'],
+  ['kaappi', 'cupboard / closet', 'আলমারি', 'Vaatteet ovat kaapissa.', 'The clothes are in the closet.', 'কাপড়গুলো আলমারিতে আছে।', 'furniture', 'A1'],
+  ['hylly', 'shelf', 'তাক', 'Kirjat ovat hyllyllä.', 'The books are on the shelf.', 'বইগুলো তাকে আছে।', 'furniture', 'A2'],
+  ['lamppu', 'lamp', 'বাতি', 'Sytytän lampun, kun on pimeä.', 'I turn on the lamp when it is dark.', 'অন্ধকার হলে আমি বাতি জ্বালাই।', 'furniture', 'A1'],
+
+  // clothing (more)
+  ['mekko', 'dress', 'ফ্রক / জামা', 'Hänellä on kaunis sininen mekko.', 'She is wearing a beautiful blue dress.', 'তার একটি সুন্দর নীল জামা আছে।', 'clothing', 'A1'],
+  ['huivi', 'scarf', 'স্কার্ফ', 'Käytän huivia kaulassa talvella.', 'I wear a scarf around my neck in winter.', 'শীতকালে আমি গলায় স্কার্ফ পরি।', 'clothing', 'A2'],
+  ['saappaat', 'boots', 'বুট জুতা', 'Käytän kumisaappaita sateella.', 'I wear rubber boots in the rain.', 'বৃষ্টিতে আমি রাবারের বুট জুতা পরি।', 'clothing', 'A2'],
+
+  // nature: land & water
+  ['meri', 'sea', 'সমুদ্র', "Suomen rannikko rajoittuu mereen.", "Finland's coast borders the sea.", 'ফিনল্যান্ডের উপকূল সমুদ্রের সাথে সীমাবদ্ধ।', 'nature', 'A1'],
+  ['joki', 'river', 'নদী', 'Joki virtaa kaupungin läpi.', 'The river flows through the city.', 'নদীটি শহরের মধ্য দিয়ে বয়ে যায়।', 'nature', 'A1'],
+  ['ranta', 'shore / beach', 'সৈকত / তীর', 'Kävelemme rannalla illalla.', 'We walk on the beach in the evening.', 'আমরা সন্ধ্যায় সৈকতে হাঁটি।', 'nature', 'A1'],
+  ['saari', 'island', 'দ্বীপ', 'Suomessa on tuhansia saaria.', 'Finland has thousands of islands.', 'ফিনল্যান্ডে হাজার হাজার দ্বীপ আছে।', 'nature', 'A2'],
+  ['vuori', 'mountain', 'পর্বত', "Lapissa on tuntureita, ei korkeita vuoria.", "Lapland has fells, not high mountains.", 'ল্যাপল্যান্ডে পাহাড় আছে, উঁচু পর্বত নেই।', 'nature', 'B1'],
 ]
 
 export const VOCAB_BANK: VocabItem[] = ROWS.map(([fi, en, bn, example, exampleEn, exampleBn, theme, level], i) => ({

@@ -14,6 +14,7 @@ const PRIMARY_NAV = [
 const MORE_NAV = [
   { to: '/grammar', label: 'Kielioppi', icon: '📐' },
   { to: '/numbers', label: 'Numerot', icon: '🔢' },
+  { to: '/basics', label: 'Perussanasto', icon: '🌻' },
   { to: '/templates', label: 'Mallipohjat', icon: '📋' },
   { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
   { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
