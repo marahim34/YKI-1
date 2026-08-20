@@ -1,17 +1,25 @@
+import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useProgress } from '../context/ProgressContext'
+import FoxMascot from './FoxMascot'
 
-const NAV_ITEMS = [
+const PRIMARY_NAV = [
   { to: '/', label: 'Koti', icon: '🏠' },
-  { to: '/how-to-use', label: 'Ohjeet', icon: '❓' },
   { to: '/roadmap', label: 'Polku', icon: '🗺️' },
   { to: '/vocab', label: 'Sanasto', icon: '🧠' },
-  { to: '/grammar', label: 'Kielioppi', icon: '📐' },
-  { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
-  { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
   { to: '/exam', label: 'Koekierros', icon: '⏱️' },
   { to: '/progress', label: 'Edistyminen', icon: '📈' },
 ]
+
+const MORE_NAV = [
+  { to: '/grammar', label: 'Kielioppi', icon: '📐' },
+  { to: '/templates', label: 'Mallipohjat', icon: '📋' },
+  { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
+  { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
+  { to: '/how-to-use', label: 'Ohjeet', icon: '❓' },
+]
+
+const ALL_NAV = [...PRIMARY_NAV, ...MORE_NAV]
 
 function navLinkClass(isActive: boolean) {
   return [
@@ -22,13 +30,14 @@ function navLinkClass(isActive: boolean) {
 
 export default function Layout() {
   const { state } = useProgress()
+  const [moreOpen, setMoreOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-[#f7f6f2] pb-20 sm:pb-0">
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="text-xl">🇫🇮</span>
+            <FoxMascot className="h-9 w-9 shrink-0" />
             <div>
               <p className="text-sm font-semibold leading-tight text-slate-900">Matka YKI:hin</p>
               <p className="text-[11px] leading-tight text-slate-500">A1 → YKI keskitaso</p>
@@ -44,7 +53,7 @@ export default function Layout() {
           </div>
         </div>
         <nav className="mx-auto hidden max-w-5xl flex-wrap gap-1 px-4 pb-2 sm:flex">
-          {NAV_ITEMS.map((item) => (
+          {ALL_NAV.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === '/'} className={({ isActive }) => navLinkClass(isActive)}>
               <span>{item.icon}</span>
               <span>{item.label}</span>
@@ -57,13 +66,42 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <nav className="fixed inset-x-0 bottom-0 z-20 flex gap-1 overflow-x-auto border-t border-slate-200 bg-white/95 px-2 py-1.5 backdrop-blur sm:hidden">
-        {NAV_ITEMS.map((item) => (
-          <NavLink key={item.to} to={item.to} end={item.to === '/'} className={({ isActive }) => navLinkClass(isActive) + ' shrink-0 min-w-16'}>
-            <span>{item.icon}</span>
-            <span className="whitespace-nowrap">{item.label}</span>
-          </NavLink>
-        ))}
+      {moreOpen && (
+        <button
+          aria-label="Sulje valikko"
+          onClick={() => setMoreOpen(false)}
+          className="fixed inset-0 z-20 bg-slate-900/30 sm:hidden"
+        />
+      )}
+
+      <nav className="fixed inset-x-0 bottom-0 z-30 sm:hidden">
+        {moreOpen && (
+          <div className="grid grid-cols-3 gap-2 border-t border-slate-200 bg-white p-3">
+            {MORE_NAV.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                onClick={() => setMoreOpen(false)}
+                className={({ isActive }) => navLinkClass(isActive) + ' !flex-col border border-slate-100 py-2'}
+              >
+                <span className="text-lg">{item.icon}</span>
+                <span className="whitespace-nowrap">{item.label}</span>
+              </NavLink>
+            ))}
+          </div>
+        )}
+        <div className="flex gap-1 border-t border-slate-200 bg-white/95 px-2 py-1.5 backdrop-blur">
+          {PRIMARY_NAV.map((item) => (
+            <NavLink key={item.to} to={item.to} end={item.to === '/'} onClick={() => setMoreOpen(false)} className={({ isActive }) => navLinkClass(isActive) + ' flex-1'}>
+              <span>{item.icon}</span>
+              <span className="whitespace-nowrap">{item.label}</span>
+            </NavLink>
+          ))}
+          <button onClick={() => setMoreOpen((o) => !o)} className={navLinkClass(moreOpen) + ' flex-1'}>
+            <span>{moreOpen ? '✕' : '⋯'}</span>
+            <span className="whitespace-nowrap">Lisää</span>
+          </button>
+        </div>
       </nav>
     </div>
   )

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { loadJSON, saveJSON } from '../lib/storage'
 import { useProgress } from '../context/ProgressContext'
 import { WEEKS, PHASE_INFO } from '../data/curriculum'
@@ -9,6 +9,17 @@ import { loadCustomVocab } from '../lib/customContent'
 import { dueCardIds } from '../lib/srs'
 import ProgressBar from '../components/ProgressBar'
 import LevelPill from '../components/LevelPill'
+import FoxMascot from '../components/FoxMascot'
+
+function pickGreeting(streak: number, dueCount: number, totalDone: number): string {
+  if (totalDone === 0) return 'Moi! Mukava kun aloitat matkasi kanssani. Otetaan ensimmäinen viikko käsittelyyn! 🦊'
+  if (streak >= 30) return `${streak} päivän putki — olet aivan uskomaton! En olisi uskonut ketun laskevan näin pitkälle. 🏆`
+  if (streak >= 14) return `${streak} päivän putki! Olet tosi hyvässä vauhdissa, jatka samaan malliin. 🔥`
+  if (streak >= 7) return `Viikko putkeen — hienoa työtä! Pieni ja päivittäinen voittaa aina. ✨`
+  if (streak >= 2) return `${streak} päivää peräkkäin, kiva nähdä sinut taas! Jatketaan siitä mihin jäimme. 🦊`
+  if (dueCount > 15) return `Sanastoa on kertynyt vähän jonoon (${dueCount} sanaa) — aloitetaanko tänään sieltä? 🧠`
+  return 'Moi taas! Jatketaan matkaa suomen kieleen yhdessä. 🇫🇮'
+}
 
 const SKILL_LABELS: Record<'reading' | 'listening' | 'writing' | 'speaking', { label: string; icon: string; path: string }> = {
   reading: { label: 'Lukeminen', icon: '📖', path: 'reading' },
@@ -47,6 +58,7 @@ export default function Dashboard() {
   }, 0)
 
   const nextIds = nextWeek ? weekSkillExerciseIds(nextWeek.id) : null
+  const greeting = useMemo(() => pickGreeting(state.streakCount, dueCount, totalDone), [state.streakCount, dueCount, totalDone])
 
   return (
     <div className="space-y-6">
@@ -69,8 +81,13 @@ export default function Dashboard() {
       )}
 
       <section className="rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 p-6 text-white shadow-sm">
-        <p className="text-sm font-medium text-blue-100">Tavoite: YKI keskitaso (B1–B2)</p>
-        <h1 className="mt-1 text-2xl font-bold">Moi! Jatketaan matkaa suomen kieleen. 🇫🇮</h1>
+        <div className="flex items-start gap-3">
+          <FoxMascot className="h-14 w-14 shrink-0 rounded-full bg-white/15 p-1" />
+          <div>
+            <p className="text-sm font-medium text-blue-100">Tavoite: YKI keskitaso (B1–B2)</p>
+            <h1 className="mt-1 text-xl font-bold sm:text-2xl">{greeting}</h1>
+          </div>
+        </div>
         <div className="mt-4 flex flex-wrap gap-4 text-sm">
           <div className="rounded-lg bg-white/10 px-3 py-2">
             🔥 <span className="font-semibold">{state.streakCount}</span> päivän putki

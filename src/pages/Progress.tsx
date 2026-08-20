@@ -6,6 +6,7 @@ import { loadCustomVocab, loadMockExamResults } from '../lib/customContent'
 import { exportProgressBlob } from '../lib/progress'
 import { saveJSON } from '../lib/storage'
 import { computeWeakSpots } from '../lib/weakSpots'
+import { computeAchievements } from '../lib/achievements'
 import type { ProgressState } from '../types'
 import ProgressBar from '../components/ProgressBar'
 import LevelPill from '../components/LevelPill'
@@ -60,6 +61,8 @@ export default function Progress() {
   }
 
   const weakSpots = computeWeakSpots(state)
+  const achievements = computeAchievements(state, learnedVocab, mockExams.length)
+  const unlockedCount = achievements.filter((a) => a.unlocked).length
 
   const skillCounts = state.exerciseResults.reduce<Record<string, { count: number; scoreSum: number; scored: number }>>((acc, r) => {
     acc[r.skill] ??= { count: 0, scoreSum: 0, scored: 0 }
@@ -80,6 +83,30 @@ export default function Progress() {
         <StatCard label="XP" value={String(state.xp)} icon="⭐" />
         <StatCard label="Harjoitukset" value={String(state.completedExerciseIds.length)} icon="✅" />
         <StatCard label="Opitut sanat" value={`${learnedVocab}/${totalVocab}`} icon="🧠" />
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-slate-800">Saavutukset</h2>
+          <span className="text-xs text-slate-500">
+            {unlockedCount}/{achievements.length}
+          </span>
+        </div>
+        <div className="mt-3 grid grid-cols-3 gap-2 sm:grid-cols-4">
+          {achievements.map((a) => (
+            <div
+              key={a.id}
+              title={`${a.description}${a.progressText ? ` (${a.progressText})` : ''}`}
+              className={`flex flex-col items-center gap-1 rounded-xl border p-3 text-center ${
+                a.unlocked ? 'border-amber-200 bg-amber-50' : 'border-slate-100 bg-slate-50 opacity-50 grayscale'
+              }`}
+            >
+              <span className="text-2xl">{a.icon}</span>
+              <span className="text-[11px] font-medium leading-tight text-slate-800">{a.title}</span>
+              {a.progressText && <span className="text-[10px] text-slate-500">{a.progressText}</span>}
+            </div>
+          ))}
+        </div>
       </section>
 
       <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
