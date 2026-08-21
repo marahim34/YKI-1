@@ -1475,6 +1475,834 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       { fi: 'Milloin pääsen katsomaan?', en: 'When can I come to view (it)?' },
     ],
   },
+  {
+    id: 'yki-ch3',
+    number: 3,
+    titleFi: 'Kauppa ja palvelut',
+    titleEn: 'Shops and Services',
+    pages: '72-106',
+    theme: 'Ostokset, asiakaspalvelu, valitukset, palaute, pankkiasiat ja erilaiset palvelut',
+    reading: {
+      vocabWarmup: {
+        instructionsFi: 'Osaatko asiakaspalautteeseen liittyvää sanastoa? Ymmärrätkö seuraavat fraasit?',
+        items: [
+          { fi: 'Haluaisin antaa palautetta.', en: 'I would like to give feedback. (Neutral)' },
+          { fi: 'Olen erittäin tyytyväinen tuotteisiinne.', en: 'I am very satisfied with your products. (Positive)' },
+          { fi: 'Ravintolailtamme meni pilalle.', en: 'Our restaurant evening was ruined. (Negative)' },
+          { fi: 'Olen pettynyt asiakaspalveluun.', en: 'I am disappointed in the customer service. (Negative)' },
+          { fi: 'En ole koskaan ennen saanut näin loistavaa palvelua.', en: 'I have never received such great service before. (Positive)' },
+          { fi: 'Uudet tilat ovat todella viihtyisät.', en: 'The new premises are really cozy. (Positive)' },
+          { fi: 'Haluaisin keskustella esihenkilösi kanssa.', en: 'I would like to speak with your supervisor. (Negative)' },
+          { fi: 'Jouduimme odottamaan yli tunnin.', en: 'We had to wait over an hour. (Negative)' },
+          { fi: 'Hotellihuone oli likainen.', en: 'The hotel room was dirty. (Negative)' },
+          { fi: 'Myyjä oli töykeä.', en: 'The salesperson was rude. (Negative)' },
+        ],
+        note: {
+          title: 'VINKKI: Aloita avokysymyksistä ja vastaa omin sanoin',
+          body: [
+            'Lukemisen ymmärtämisen kokeessa kannattaa tehdä avoimet kysymykset ensin. Jos aika loppuu kesken, muihin tehtäviin voi arvata, mutta avoimiin kysymyksiin ei voi arvata.',
+            'Kaksi tärkeää sääntöä: Etsi vastaus aina tekstistä – älä mieti, mitä itse ajattelet tai uskot, vaan katso, mitä teksti sanoo.',
+            'Älä kopioi vastaustasi suoraan tekstistä – kerro se omin sanoin.',
+          ],
+        },
+      },
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Valitus ravintolakäynnistä',
+          titleEn: 'Complaint about a Restaurant Visit',
+          textFi:
+            'Hei\n\nHaluaisin antaa palautetta ravintolanne toiminnasta. Olen yleensä saanut teillä syödessäni erinomaista palvelua, mutta tällä kertaa meni valitettavasti hiukan pieleen. Sain nimittäin oman annokseni vasta yli puoli tuntia sen jälkeen, kun muu pöytäseurue oli saanut omansa. Jouduin ensin odottamaan nälkäisenä paljon kauemmin kuin muut ja sitten syömään ruokani loppuun yksin, kun lounasseuralaiseni joutuivat jo lähtemään takaisin töihin. Kun mainitsin asiasta tarjoilijalle, hän vain kivahti minulle, että tänään on kauhea kiire, eikä tarjonnut mitään hyvitystä. Siispä lähestyn nyt teitä. Toivoisin, että voisitte vastata palautteeseeni ja varmistaa, että näin ei tapahtuisi jatkossa, sillä mielelläni ruokailisin ravintolassanne jatkossakin!\n\nYstävällisin terveisin Helena Kortelainen',
+          open: [
+            {
+              id: 'rp1-o1',
+              questionFi: 'Millaista palvelu on yleensä?',
+              sampleAnswerFi: 'Hyvää / Erinomaista / Loistavaa.',
+            },
+            {
+              id: 'rp1-o2',
+              questionFi: 'Mikä on Helenan valituksen aihe? Mistä Helena valittaa ravintolalle?',
+              sampleAnswerFi: 'Hän sai ruokansa myöhässä / puoli tuntia muita myöhemmin, ja tarjoilija oli töykeä.',
+            },
+            {
+              id: 'rp1-o3',
+              questionFi: 'Mitä ravintolan pitäisi Helenan mielestä tehdä? (2 asiaa)',
+              sampleAnswerFi: 'Vastata palautteeseen ja varmistaa, ettei näin tapahdu jatkossa.',
+            },
+          ],
+        },
+        {
+          id: 'reading-practice-2',
+          titleFi: 'Ravintolan vastaus',
+          titleEn: "Restaurant's Response",
+          textFi:
+            'Hei Helena\n\nKiitos viestistäsi! Pyrimme jatkuvasti kehittämään toimintaamme, ja siksi palautteesi on meille erittäin tärkeä.\n\nPahoittelen, että käyntinne meillä ei ollut onnistunut, emmekä tällä kertaa pystyneet palvelemaan teitä parhaalla mahdollisella tavalla. Todella ikävää, että annosten kanssa on nyt käynyt näin. Tarkoituksemme on toimia niin, että annokset valmistetaan ja tuodaan pöytään yhtä aikaa, jotta koko pöytäseurue voi ruokailla yhdessä. Kerron palautteesi henkilökunnallemme, ja yritämme huolehtia siitä, että näin ei käy enää uudelleen.\n\nKaunista syksyä!\n\nYstävällisin terveisin\nElina vuoropäällikkö\nRavintola Minnan muona',
+          tip: {
+            title: 'VINKKI: Reklamaatio',
+            body: [
+              'Reklamaatio on valitus, jossa asiakas kertoo yritykselle, mikä tuotteessa tai palvelussa on vialla ja miten sen voisi korjata tai hyvittää.',
+            ],
+          },
+          open: [
+            {
+              id: 'rp2-o1',
+              questionFi: 'Mitä Elina ajattelee Helenan palautteesta?',
+              sampleAnswerFi: 'Hän pitää palautetta tärkeänä ja pahoittelee tapahtunutta.',
+            },
+            {
+              id: 'rp2-o2',
+              questionFi: 'Mitä Elina lupaa tehdä?',
+              sampleAnswerFi: 'Kertoa palautteen henkilökunnalle ja huolehtia, ettei näin käy uudelleen.',
+            },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'reading-test-1',
+          titleFi: 'Reseptit ruokakassien helmenä',
+          titleEn: 'Recipes as the Gem of Food Boxes',
+          source: 'Jaakko Jokela, pointti.fi (lyhennetty ja muokattu)',
+          textFi:
+            'Ruokakassipalveluiden käyttö on yleistynyt nopeasti. Nyt markkinoilla on jo useampia yrityksiä, jotka toimittavat sekä ruoka-ainekset että reseptit suoraan asiakkaan kotiovelle. Kaupunkiuutiset testasi yhtä ruokakassipalvelua.\n\nRuokalaatikkopalvelun kautta nelihenkinen lahtelaisperhe tilasi perhelaatikon, jossa oli neljä eri ateriaa. Perheeseen kuuluu vanhempien lisäksi 3-vuotias poika ja 5-vuotias tyttö. Palvelun kautta voi tilata myös vegaani- tai kasvisruokalaatikon.\n\nRuokalaatikon annokset olivat uunilohta ja perunamuussia, hapanimeläkanaa ja riisiä, fetajuustopastaa sekä hampurilaiset bataattiranskalaisilla.\n\nAinekset ja ohjeet toimitetaan kätevästi kotiovelle asti. Ruokalaatikon annoksiin on merkitty muun muassa valmistusaika, mikä helpottaa sopivan ruoan valitsemista arjen kiireessä.\n\nLasten suosikkeja olivat uunilohi ja hapanimeläkana, joiden pääraaka-aineet olivat heille jo ennestään tuttuja. Molemmissa annoksissa oli lasten mielestä sopivasti makua, mutta ei liikaa mausteita.\n\nKasvisruoka-annos sisälsi pehmeäksi kypsennettyä fetajuustoa, kirsikkatomaatteja ja pastaa. Annos oli nopea valmistaa ja maistui koko perheelle. Hampurilaisistakin tykättiin, mutta ne olisivat maistuneet varmasti vielä paremmin vähän vanhemmille lapsille.\n\nRuokakassipalvelun etuna oli helppous. Eri vaihtoehdoista sai valita sopivan ruuan kullekin päivälle maun tai valmistusajan mukaan.\n\nRuokakassi säästi myös reilusti aikaa, kun ei tarvinnut käydä kaupassa eikä miettiä viikon ruokia.\n\nHienoa ruokakassipalvelussa oli myös se, että ainakin osa annoksista jäi pysyvästi asiakkaiden ruokalistalle. Selkeiden reseptien mukaan samat annokset voi valmistaa myöhemmin itse hankkimalla kaupasta tarvittavat raaka-aineet.\n\nRuoka-annokset olivat isoja. Ainekset olivat tuoreita ja pääosin kotimaisia. Miinuksena voidaan pitää sitä, että tiettyjä aineksia piti olla valmiiksi kaapissa. Jos nämä ainekset olisivat tiedossa ennen ruokien saapumista, ne voisi hankkia jo etukäteen.',
+          mcq: [
+            {
+              id: 'rt1-q1',
+              question: 'Mitä ruokakassipalveluyritykset toimittavat?',
+              options: ['lääkereseptejä', 'ruokien raaka-aineita', 'kangaskasseja'],
+              correctIndex: 1,
+              explanation: 'Vastaus: ruokien raaka-aineita.',
+            },
+            {
+              id: 'rt1-q2',
+              question: 'Mistä ruoista lapset pitivät eniten?',
+              options: ['kalasta ja broilerista', 'perunamuussista ja riisistä', 'fetajuustopastasta ja hampurilaisista'],
+              correctIndex: 0,
+              explanation: 'Vastaus: kalasta ja broilerista (uunilohi ja hapanimeläkana).',
+            },
+            {
+              id: 'rt1-q3',
+              question: 'Mitä huonoja puolia ruokakassipalveluissa oli?',
+              options: [
+                'Ruokakassi ei sisältänyt kaikkia ateriaan tarvittavia aineksia.',
+                'Ruoka-ainekset eivät olleet riittävän kotimaisia.',
+                'Annokset olivat liian isoja.',
+              ],
+              correctIndex: 0,
+              explanation: 'Vastaus: Ruokakassi ei sisältänyt kaikkia ateriaan tarvittavia aineksia.',
+            },
+          ],
+        },
+        {
+          id: 'reading-test-2',
+          titleFi: 'Myynnissä vene',
+          titleEn: 'Boat for Sale',
+          textFi:
+            'Myynnissä vene\n\nMyydään hyväkuntoinen, käytetty moottorivene ajanpuutteen vuoksi. Vene on vuosimallia 2021, mutta otettu käyttöön 2022. Kulkee nätisti kelissä kuin kelissä ja viihtyy niin merellä kuin sisävesissä. Veneessä on kaksitahdimoottori, joka on reilu 10 vuotta vanha, mutta toimii edelleen kuin uusi.\n\nLisähinnasta saa trailerin, joka on kolme vuotta vanha, ja jolla on vedetty venettä vain muutama sata kilometriä. Vene on ollut kahdella omistajalla.\n\nLisätietoa vain soittamalla.\n\nPasi Kanninen 050 123 3255',
+          trueFalse: [
+            {
+              id: 'rt2-tf1',
+              statementFi: 'Ilmoittajalla ei ole riittävästi aikaa veneilyyn.',
+              answer: true,
+              explanation: 'Teksti sanoo: "ajanpuutteen vuoksi".',
+            },
+            {
+              id: 'rt2-tf2',
+              statementFi: 'Veneellä on ajettu jo vuonna 2021.',
+              answer: false,
+              explanation: 'Teksti sanoo: "vuosimallia 2021, mutta otettu käyttöön 2022".',
+            },
+            {
+              id: 'rt2-tf3',
+              statementFi: 'Veneellä voi ajaa vain hyvällä säällä.',
+              answer: false,
+              explanation: 'Teksti sanoo: "Kulkee nätisti kelissä kuin kelissä".',
+            },
+            {
+              id: 'rt2-tf4',
+              statementFi: 'Moottori ei ole uusi.',
+              answer: true,
+              explanation: 'Teksti sanoo: "kaksitahdimoottori, joka on reilu 10 vuotta vanha".',
+            },
+            {
+              id: 'rt2-tf5',
+              statementFi: 'Kaupan päälle saa trailerin.',
+              answer: false,
+              explanation: 'Teksti sanoo: "Lisähinnasta saa trailerin" – siis se maksaa lisää, ei tule kaupan päälle.',
+            },
+            {
+              id: 'rt2-tf6',
+              statementFi: 'Myyjälle ei voi lähettää sähköpostia.',
+              answer: true,
+              explanation: 'Teksti sanoo: "Lisätietoa vain soittamalla".',
+            },
+          ],
+        },
+        {
+          id: 'reading-test-3',
+          titleFi: 'Lukukoirat',
+          titleEn: 'Reading Dogs',
+          source: 'Vaara-kirjastot (lyhennetty ja muokattu)',
+          textFi:
+            'Lukukoirat ovat kuuntelemisen ammattilaisia. Lukukoirille voivat käydä lukemassa juuri lukemaan oppineet, lukemista jännittävät tai muuten vain ääneenlukua treenaavat lukijat. Lukukoiria työskentelee useissa Lukemo-kirjastojen toimipisteissä. Kysy lisää lukukoirailusta kirjastostasi! Nyt esittelemme kaksi Lukemo-kirjastojen lukukoiraa:\n\nSuomenlapinkoira Hertta on Kennelliiton lukukoirakurssin käynyt lukukoira, joka tykkää ihmisistä ja rapsuttelusta. Hertta vastaanottaa lukijoita Pähkäneen pääkirjastossa parittomien viikkojen tiistaisin klo 15.00-16.30. Varaa lukuaika kirjastosta paikan päällä tai soittamalla numeroon 040 123 3132. Lukuaika on 20 min/lukija. Tervetuloa lukemaan!\n\nNukka on porokoirauros, joka toimii Järvelän kirjastossa lukukoirana. Luonteeltaan Nukka on ystävällinen, rauhallinen ja lapsirakas. Nukka rakastaa rapsutuksia. Nukan mukana on aina oma ohjaaja, joka huolehtii siitä, että koiran ja lukijoiden on turvallista työskennellä yhdessä. Nukalla on ruoka-aineallergioita, joten omia makupaloja sille ei voi tuoda, mutta ohjaajalla on sille sopivia herkkupaloja aina mukana. Nukalle voi varata noin 15 minuutin lukuaikoja kirjastosta puhelinnumerosta 040 542 9987 tai sähköpostitse osoitteesta jarvelan.kirjasto@jarvela.fi.',
+          open: [
+            {
+              id: 'rt3-o1',
+              questionFi: 'Kenelle lukukoirista on apua?',
+              sampleAnswerFi: 'Juuri lukemaan oppineille, lukemista jännittäville tai ääneenlukua treenaaville lukijoille.',
+            },
+            { id: 'rt3-o2', questionFi: 'Kuinka kauan Hertalle voi lukea?', sampleAnswerFi: '20 minuuttia.' },
+            {
+              id: 'rt3-o3',
+              questionFi: 'Mitä Nukalle ei saa antaa? Miksi?',
+              sampleAnswerFi: 'Omia makupaloja, koska Nukalla on ruoka-aineallergioita.',
+            },
+            {
+              id: 'rt3-o4',
+              questionFi: 'Mitä täytyy tehdä, jos haluaa mennä lukemaan Nukalle?',
+              sampleAnswerFi: 'Varata aika kirjastosta puhelimitse tai sähköpostitse.',
+            },
+          ],
+        },
+      ],
+    },
+    writing: {
+      tip: {
+        title: 'VINKKI: Muodollinen viesti',
+        body: [
+          'Muodollinen viesti on viesti, joka lähetetään jollekulle, jota et tunne.',
+          'Muodollisen viestin piirteitä: Alku: Hei tai Hei! Loppu: Ystävällisin terveisin.',
+          'Suomeksi ei käytetä titteleitä, arvonimiä tai hellittelynimiä.',
+          '"Hei" on yksinään riittävän kohtelias aloitus.',
+          'Verbit ovat usein konditionaalissa (-isi) – kohtelias verbimuoto: Haluaisin, Toivoisin, Voisitte.',
+        ],
+      },
+      freewrite: {
+        instructionsFi:
+          'Etsi hyödyllisiä fraaseja aiemmista lukemisen ymmärtämisen teksteistä. Kirjoita ylös hyödyllisiä fraaseja näihin kysymyksiin:',
+        rules: [
+          'Miten kuvailet vikaa tai ongelmaa?',
+          'Miten kerrot, että olet pettynyt?',
+          'Miten ehdotat ratkaisua ongelmaan?',
+        ],
+        topics: [
+          'Valitettavasti... (Unfortunately...)',
+          'Huomasin, että... (I noticed that...)',
+          'Olen pettynyt, koska... (I am disappointed because...)',
+          'Toivoisin, että... (I would hope that...)',
+          'Voisitteko... (Could you...)',
+          'Pyydän, että... (I request that...)',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Keskustele luokkatovereiden kanssa löytämistäsi fraaseista.',
+        questions: [
+          'Lukekaa toistenne fraasit.',
+          'Miettikää muita samankaltaisia fraaseja. Miten muuten saman asian voisi sanoa?',
+          'Kirjoittakaa ylös fraasit, joista keskustelitte ja joita ette olleet vielä kirjoittaneet.',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Tutki muodollisia viestejä ja kirjoita valitus',
+          instructionsFi:
+            'a) Katso uudelleen tekstit "Valitus ravintolakäynnistä" ja ravintolan vastaus. b) Aseta ajastin 15 minuuttiin. Kirjoita valitusviesti seuraavasta aiheesta: Tilasit tuotteen verkosta. Kun avasit paketin, huomasit, että tuote on viallinen. Keksi itse, mikä vika on. Kerro ostopäivä, tuotteen nimi, merkki ja malli. Kuvaile ongelma ja ehdota ratkaisua.',
+          bulletsFi: [
+            'Millainen alkutervehdys viesteissä on?',
+            'Millainen lopetus viesteissä on?',
+            'Mitä muuta huomaat, mikä kertoo, että viesti on muodollinen?',
+          ],
+          exampleTitleFi: 'Havainnot:',
+          exampleFi:
+            'Alkutervehdys: "Hei" (muodollinen mutta ystävällinen). Lopetus: "Ystävällisin terveisin". Konditionaalin käyttö: "Haluaisin", "toivoisin", "voisitte". Kohtelias sävy koko viestissä.',
+          sampleFi:
+            'Hei!\n\nTilasin teidän verkkokaupastanne 15.3.2024 [product name], [brand] [model]. Valitettavasti kun avasin paketin, huomasin, että tuote on viallinen. [Describe the fault].\n\nOlen pettynyt, koska odotin laadukasta tuotetta. Toivoisin, että voisitte vaihtaa tuotteen uuteen toimivaan kappaleeseen tai palauttaa rahani.\n\nLiitän mukaan kuitin ja kuvat viasta.\n\nYstävällisin terveisin,\n[Your name]',
+        },
+      ],
+      openingClosingTip: {
+        title: 'VINKKI: Kohteliaisuus muodollisessa viestissä',
+        body: [
+          'Muista: muodollisessa viestissä ei käytetä titteleitä tai hellittelynimiä – "Hei" riittää yksinään.',
+          'Käytä konditionaalia kohteliaisuuden merkkinä: Haluaisin, Toivoisin, Voisitte.',
+          'Lopeta viesti fraasilla "Ystävällisin terveisin".',
+        ],
+      },
+      informalTasks: [
+        {
+          id: 'writing-test-informal-1',
+          titleFi: 'Suositteluviesti ystävälle',
+          instructionsFi: 'Alueellesi on avattu uusi parturi-kampaamo. Kävit siellä ja olit todella tyytyväinen. Kirjoita viesti, jossa suosittelet sitä. Kerro, miksi pidit siitä.',
+        },
+        {
+          id: 'writing-test-informal-2',
+          titleFi: 'Kysymys perheenjäsenelle',
+          instructionsFi:
+            'Olet pyytänyt tarjouksia kotivakuutuksesta useilta vakuutusyhtiöiltä. Yllätyit isoista eroista. Kirjoita perheenjäsenelle, kerro mielipiteesi ja kysy hänen mielipidettään.',
+        },
+        {
+          id: 'writing-test-informal-3',
+          titleFi: 'Avunpyyntö sukulaiselle',
+          instructionsFi: 'Olet vaihtanut puhelinta, etkä saa pankkisovellusta toimimaan. Kirjoita teknologiaa hyvin osaavalle sukulaiselle.',
+        },
+        {
+          id: 'writing-test-informal-4',
+          titleFi: 'Viesti kaverille',
+          instructionsFi: 'Käyt usein uimahallissa kaverisi kanssa. Luit, että kertamaksu nousee merkittävästi. Kirjoita kaverille asiasta.',
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-test-formal-1',
+          titleFi: 'Reklamaatio ruokakauppaan',
+          instructionsFi:
+            'Ostit riisiä kaupasta. Viikko myöhemmin huomasit, että riisikoisia oli levinnyt kaappiisi. Nyt kaappi on täynnä hyönteisiä. Kirjoita valitus. Kerro, mitä ja milloin ostit. Kuvaile ongelma ja pyydä hyvitystä.',
+        },
+        {
+          id: 'writing-test-formal-2',
+          titleFi: 'Valitus verkkokauppaan',
+          instructionsFi:
+            'Ostit vaatteita verkosta. Kotona huomasit vian. Keksi itse, mikä vika on. Kerro, milloin ja mistä ostit, tuotteen nimi, merkki ja malli.',
+        },
+        {
+          id: 'writing-test-formal-3',
+          titleFi: 'Palaute hierojalle',
+          instructionsFi:
+            'Ikääntynyt sukulaisesi kävi hierojalla ja oli erittäin tyytyväinen. Hänellä on huono näkö ja hän liikkuu epävarmasti, mutta hieroja otti tämän hyvin huomioon. Kirjoita positiivinen palaute hänen puolestaan.',
+        },
+        {
+          id: 'writing-test-formal-4',
+          titleFi: 'Varausviesti ravintolaan',
+          instructionsFi:
+            'Teet varauksen isänpäivälounaalle. Yhdellä perheenjäsenellä on ruokarajoitteita. Kirjoita viesti, jossa kerrot, milloin tulette, kuinka monta ja rajoitteet.',
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Kauppojen asiakaspalvelu ja aukiolot',
+          options: ['A. Itsepalvelukassojen hyödyt ja haitat', 'B. Pitääkö kauppojen olla yölläkin auki?'],
+        },
+        {
+          id: 'writing-opinion-2',
+          titleFi: 'Pankkipalvelut',
+          options: ['Riittääkö verkkopankki, vai tarvitaanko vielä pankkikonttoreita?'],
+        },
+        {
+          id: 'writing-opinion-3',
+          titleFi: 'Muita aiheita',
+          options: [
+            'Kannattaako ottaa vakuutus?',
+            'Pitääkö Suomessa saada palvelua suomeksi?',
+            'Suomalaiset asiakaspalvelijat ovat epäkohteliaita',
+          ],
+        },
+      ],
+    },
+    listening: {
+      tip: {
+        title: 'VINKKI: Sinun ei tarvitse ymmärtää kaikkea',
+        body: [
+          'Älä panikoi, jos et ymmärrä kaikkea. Sinun ei tarvitse ymmärtää jokaista sanaa. Jos kuulet uuden sanan, jota et ymmärrä, jatka vain kuuntelua. Yritä keskittyä pääasioihin.',
+          'Yleensä sinun täytyy vastata perusarvokysymyksiin: Mitä? Missä? Milloin? Miksi? Miten?',
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Kuulutukset kauppakeskuksessa',
+          titleEn: 'Announcements in a Shopping Center',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            {
+              id: 'lp1-o1',
+              questionFi: 'Kenelle tämä kuulutus on tarkoitettu? Mitä heidän täytyy tehdä?',
+              sampleAnswerFi: 'Asiakkaille / ostoksille. Heidän täytyy mennä kassalle.',
+            },
+            {
+              id: 'lp1-mcq1',
+              questionFi: 'Mitä tapahtuu kassalla kolme?',
+              sampleAnswerFi: 'c) Kassa avautuu.',
+            },
+            {
+              id: 'lp1-mcq2',
+              questionFi: 'Mitä tapahtuu kassalla kaksi?',
+              sampleAnswerFi: 'a) Kassa meni vahingossa lukkoon.',
+            },
+            {
+              id: 'lp1-o4',
+              questionFi: 'Keille tämä kuulutus on tarkoitettu? Mitä heidän täytyy tehdä?',
+              sampleAnswerFi: 'Auton omistajille / asiakkaille. Heidän täytyy siirtää autonsa.',
+            },
+            {
+              id: 'lp1-o5',
+              questionFi: 'Mikä on ongelma? Mitä täytyy tehdä? Mikä on rekisterinumero?',
+              sampleAnswerFi: 'Auto on väärällä paikalla. Se täytyy siirtää. Rekisterinumero kerrotaan äänitteellä.',
+            },
+            {
+              id: 'lp1-o6a',
+              questionFi: 'Minä päivänä kauppakeskus Stara on auki klo 10-20?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o6b',
+              questionFi: 'Mihin aikaan kauppakeskuksen hypermarketit menevät kiinni aatonaattona?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o6c',
+              questionFi: 'Mihin aikaan kauppakeskuksen kaupat aukeavat juhannusaattona?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o6d',
+              questionFi: 'Mitkä kaupat ovat kiinni juhannuspäivänä?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o6e',
+              questionFi: 'Millaiset aukioloajat hypermarketeilla on juhannuspäivänä?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o7a',
+              questionFi: 'Millainen uusi liike kauppakeskukseen on avattu?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o7b',
+              questionFi: 'Millainen tarjous siellä on juuri nyt?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o7c',
+              questionFi: 'Missä päin kauppakeskusta liike on?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+          ],
+        },
+        {
+          id: 'listening-practice-2',
+          titleFi: 'Vuotava venttiili',
+          titleEn: 'Leaking Valve',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            { id: 'lp2-o1', questionFi: 'Kuka soittaja on?', sampleAnswerFi: 'Lilli / Lilli soittaa.' },
+            { id: 'lp2-o2', questionFi: 'Kenelle hän soittaa?', sampleAnswerFi: 'Kauppaan / asiakaspalveluun.' },
+            { id: 'lp2-o3', questionFi: 'Mitä tuotetta puhelu koskee?', sampleAnswerFi: 'Venttiiliä / varaosaa.' },
+            { id: 'lp2-o4', questionFi: 'Millainen vika tuotteessa on?', sampleAnswerFi: 'Se vuotaa.' },
+            {
+              id: 'lp2-o5',
+              questionFi: 'Mitä maahantuoja on kertonut kaupalle?',
+              sampleAnswerFi: 'Viallinen tuote vaihdetaan uuteen.',
+            },
+            {
+              id: 'lp2-o6',
+              questionFi: 'Millaista hyvitystä kauppa tarjoaa asiakkaalle?',
+              sampleAnswerFi: 'Uuden tuotteen / hyvitystä.',
+            },
+            {
+              id: 'lp2-o7',
+              questionFi: 'Mitä asiakkaan täytyy tuoda mukanaan, kun hän tulee kauppaan?',
+              sampleAnswerFi: 'Kuitin ja vanhan tuotteen.',
+            },
+            {
+              id: 'lp2-o8',
+              questionFi: 'Miten asiakas suhtautuu vaivaan, joka hänelle aiheutuu viallisesta tuotteesta?',
+              sampleAnswerFi: 'Hän on ymmärtäväinen / pettynyt.',
+            },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'listening-test-1',
+          titleFi: 'Riittävän iso läppäri',
+          titleEn: 'Big Enough Laptop',
+          textFi: NO_TRANSCRIPT_NOTE,
+          mcq: [
+            {
+              id: 'lt1-q1',
+              question: 'Mitä asiakas on ostamassa?',
+              options: ['ulkoista kovalevyä', 'kannettavaa tietokonetta', 'puhelinta'],
+              correctIndex: 1,
+              explanation: 'Vastaus: kannettavaa tietokonetta.',
+            },
+            {
+              id: 'lt1-q2',
+              question: 'Mikä ominaisuus tuotteessa on asiakkaan mielestä tärkeä?',
+              options: ['näytön riittävä koko', 'hyvä muistikapasiteetti', 'iso, liikkuva kuva'],
+              correctIndex: 0,
+              explanation: 'Vastaus: näytön riittävä koko.',
+            },
+            {
+              id: 'lt1-q3',
+              question: 'Millaisia tiedostoja asiakas pääasiassa käsittelee laitteella?',
+              options: ['valokuvia', 'videoita', 'tekstitiedostoja'],
+              correctIndex: 0,
+              explanation: 'Vastaus: valokuvia.',
+            },
+            {
+              id: 'lt1-q4',
+              question: 'Miksi laitteen saa nyt edullisesti?',
+              options: ['Se on tarjouksessa.', 'Sitä ei ole juuri nyt varastossa.', 'Se on mallikappale.'],
+              correctIndex: 2,
+              explanation: 'Vastaus: Se on mallikappale.',
+            },
+            {
+              id: 'lt1-q5',
+              question: 'Mikä asia palvelussa on asiakkaan mielestä hyvä?',
+              options: [
+                'Muovipussin saa kaupan päälle.',
+                'Kuitti lähetetään myös sähköisesti.',
+                'Samalla pystyy liittymään kanta-asiakkaaksi.',
+              ],
+              correctIndex: 1,
+              explanation: 'Vastaus: Kuitti lähetetään myös sähköisesti.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-2',
+          titleFi: 'Kauppakeskus',
+          titleEn: 'Shopping Center',
+          textFi: NO_TRANSCRIPT_NOTE,
+          trueFalse: [
+            {
+              id: 'lt2-tf1',
+              statementFi: 'Kauppakeskuksen kaikki palvelut avautuvat 5. lokakuuta.',
+              answer: true,
+              explanation: 'Kaikki palvelut avautuvat 5. lokakuuta.',
+            },
+            {
+              id: 'lt2-tf2',
+              statementFi: 'Kauppakeskuksessa on yksi pullonpalautusautomaatti.',
+              answer: false,
+              explanation: 'Kauppakeskuksessa on useampia pullonpalautusautomaatteja.',
+            },
+            {
+              id: 'lt2-tf3',
+              statementFi: 'Kauppakeskuksessa pääsee myöhemmin myös hammaslääkärille.',
+              answer: true,
+              explanation: 'Hammaslääkäripalvelut ovat tulossa myöhemmin.',
+            },
+            {
+              id: 'lt2-tf4',
+              statementFi: 'Terveysasemalla on kahdeksan lääkäriä.',
+              answer: false,
+              explanation: 'Terveysasemalla ei ole kahdeksaa lääkäriä – äänitteellä mainitaan eri määrä.',
+            },
+            {
+              id: 'lt2-tf5',
+              statementFi: 'Kaupunkikulttuurikeskus on toisessa kerroksessa.',
+              answer: false,
+              explanation: 'Kaupunkikulttuurikeskus ei ole toisessa kerroksessa.',
+            },
+            {
+              id: 'lt2-tf6',
+              statementFi: 'Kauppakeskuksella on yli 300 pysäköintipaikkaa.',
+              answer: true,
+              explanation: 'Kauppakeskuksella on yli 300 pysäköintipaikkaa.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-3',
+          titleFi: 'Asiamiespostin palvelut avautuvat Rantolassa',
+          titleEn: 'Agency Post Services Opening in Rantola',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            {
+              id: 'lt3-o1',
+              questionFi: 'Miten postin toiminta Rantolassa muuttuu?',
+              sampleAnswerFi: 'Postin omat palvelut sulkeutuvat ja asiamiesposti avautuu.',
+            },
+            {
+              id: 'lt3-o2',
+              questionFi: 'Miksi asia ei ole uusi kauppiaspariskunnalle?',
+              sampleAnswerFi: 'He ovat hoitaneet postiasioita jo aiemmin.',
+            },
+            {
+              id: 'lt3-o3',
+              questionFi: 'Mitä monille Postin omille toimipisteille on tapahtunut?',
+              sampleAnswerFi: 'Ne ovat sulkeutuneet.',
+            },
+            {
+              id: 'lt3-o4',
+              questionFi: 'Millaisia palveluita asiamiespostissa on?',
+              sampleAnswerFi: 'Postin peruspalvelut: kirjeet, paketit, maksupalvelut.',
+            },
+          ],
+        },
+      ],
+    },
+    speaking: {
+      tip: {
+        title: 'VINKKI: Kohteliaisuus asiakaspalvelutilanteessa',
+        body: [
+          'Ollaksesi kohtelias, voit käyttää konditionaalia (-isi): "Anteeksi, voisitko auttaa minua?", "Anteeks, mä tarvitsisin vähän apua.", "Ehtisiks sä auttaa mua vähän?"',
+          '-han/-hän-liitepartikkeli: "Anteeks, onkohan teillä alkoholitonta viiniä?", "Anteeks, missähän täällä on vessa?"',
+          'Muista sanat "anteeksi" ja "kiitos": "Anteeksi, onkohan teillä isompaa kokoa?", "Kiitos paljon! Paljon kiitoksia!"',
+          'Imperfekti nykyhetken tilanteissa: "Missäs teillä olikaan...?"',
+        ],
+      },
+      repeatPhrases: {
+        instructionsFi: 'Harjoittele kohteliaita asiakaspalvelufraaseja. Kuuntele lause ja toista se.',
+        phrases: [
+          'Anteeksi, voisitko auttaa minua?',
+          'Anteeks, mä tarvitsisin vähän apua.',
+          'Onkohan teillä isompaa kokoa?',
+          'Missä teillä olikaan kassat?',
+          'Kiitos paljon avusta!',
+        ],
+      },
+      groupIntro: {
+        instructionsFi:
+          'Tee asiakaspalveludialogi parin kanssa. Valitkaa yksi palvelupaikka. Toinen teistä on työntekijä, toinen asiakas. Esimerkkejä palvelupaikoista:',
+        questions: [
+          'ruokakauppa (grocery store)',
+          'apteekki (pharmacy)',
+          'kirjasto (library)',
+          'pankki (bank)',
+          'vakuutusyhtiö (insurance company)',
+        ],
+      },
+      practiceConversationTasks: [
+        {
+          id: 'speaking-practice-conv-1',
+          titleFi: 'Rikkinäinen puhelin',
+          scenarioFi: 'Ostit uuden, kalliin puhelimen, mutta se ei toimi kunnolla. Soita elektroniikkaliikkeeseen.',
+          turns: [
+            { instructionFi: 'Esittäydy ja kuvaile ongelma.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            { instructionFi: 'Vastaa myöntävästi ja kerro, milloin tulet käymään.', seconds: 15 },
+            { instructionFi: 'Reagoi sopivalla tavalla ja hyvästele.', seconds: 15 },
+          ],
+        },
+      ],
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Tärkeä palvelu tai yritys',
+          titleEn: 'An Important Service or Business',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Missä se sijaitsee?',
+            'Kuinka usein käyt siellä tai käytät palvelua?',
+            'Miksi se on sinulle tärkeä?',
+            'Mikä on paras asia tässä paikassa? Miksi?',
+          ],
+        },
+        {
+          id: 'speaking-test-2',
+          titleFi: 'Huono kokemus asiakaspalvelusta',
+          titleEn: 'Bad Experience with Customer Service',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: ['Mitä tapahtui?', 'Miksi kokemus oli huono?', 'Mitä asiakaspalvelijan olisi pitänyt tehdä toisella tavalla?'],
+        },
+        {
+          id: 'speaking-test-3',
+          titleFi: 'Arkeni palvelut',
+          titleEn: 'My Everyday Services',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Missä kaupoissa käyt tai mitä palveluita käytät säännöllisesti?',
+            'Mitä palveluita asuinalueellasi on? Puuttuuko jotain?',
+            'Mitä palveluita käytät verkossa?',
+            'Mitkä palvelut ovat sinulle kaikkein tärkeimpiä?',
+            'Mitä palveluita pitäisi olla jokaisen kodin lähellä?',
+          ],
+        },
+      ],
+      conversationTasks: [
+        {
+          id: 'speaking-conv-1',
+          titleFi: 'Puhelu pankkiin',
+          scenarioFi: 'Soitat pankkiin avataksesi uuden tilin.',
+          turns: [
+            { instructionFi: 'Kerro, kuka olet ja miksi soitat.', seconds: 15 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
+            { instructionFi: 'Kysy hintaa.', seconds: 15 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
+            { instructionFi: 'Hyvästele.', seconds: 5 },
+          ],
+        },
+        {
+          id: 'speaking-conv-2',
+          titleFi: 'Kadonnut kirjaston kirja',
+          scenarioFi: 'Lainasit kirjaston kirjan ja hukkasit sen. Mene kirjastoon.',
+          turns: [
+            { instructionFi: 'Kerro, mitä on tapahtunut.', seconds: 25 },
+            { instructionFi: 'Vastaa kieltävästi ja kerro, miksi.', seconds: 25 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+          ],
+        },
+      ],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1-1',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Kadotit pankkikorttisi. Soita pankkiin ja selitä asia.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-1-2',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Haluat uuden matkavakuutuksen, koska vanha ei riitä. Soita vakuutusyhtiöön.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-3',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Haluat varata työtilan kirjastosta harrastustasi varten. Kerro kirjastonhoitajalle, millaisen tilan tarvitset ja kuinka monelle hengelle.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-4',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Haluat varata pöydän ravintolasta pientä juhlaa varten. Soita ravintolaan.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-5',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Olet erittäin tyytyväinen ravintolaan, jossa pidit juhlat. Anna palautetta.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-1',
+          setLabel: 'Tilanteet 2',
+          scenarioFi:
+            'Olet ravintolassa kaverin kanssa. Pyydä tarjoilijaa tuomaan lasku. Kun sinulta kysytään, oliko ruoka hyvää, kerro, mikä oli hyvää ja mistä et pitänyt.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-2',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Haluat liittyä kaupan kanta-asiakasohjelmaan. Kysy infopisteeltä, miten se onnistuu.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-3',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Haluat ajokortin, mutta et voi maksaa autokoulua kerralla. Kysy osamaksusta.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-4',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Palautat pulloja pullonpalautusautomaattiin. Painat kuittinappia, mutta kuittia ei tule. Selitä asia kassalle.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-5',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Ostat ison huonekalun. Sinulla ei ole autoa. Kysy kotiinkuljetuksesta.',
+          seconds: 30,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Hintataso',
+          titleEn: 'Price Level',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Maksavatko vaatteet, tavarat ja ruoka mielestäsi liikaa, sopivasti vai liian vähän?',
+            'Miksi ajattelet näin?',
+            'Mihin sinulla kuluu eniten rahaa?',
+            'Miten voit säästää rahaa?',
+            'Mitä hyviä ja huonoja puolia on korkeissa hinnoissa? Matalissa hinnoissa?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-2',
+          titleFi: 'Uutta vai käytettyä?',
+          titleEn: 'New or Used?',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Ostatko mieluummin tavarat ja vaatteet uusina vai käytettyinä?',
+            'Mitä hyviä puolia on uuden tavaran ostamisessa?',
+            'Mitä hyviä puolia on käytetyn tavaran ostamisessa?',
+            'Onko sinun helppo löytää sopivia tavaroita käytettynä?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-3',
+          titleFi: 'Asiakaspalvelukulttuuri ja kirjastot',
+          titleEn: 'Customer Service Culture and Libraries',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Valitse A tai B.'],
+          subChoices: [
+            {
+              label: 'A. Asiakaspalvelu',
+              questions: [
+                'Millaisia kokemuksia sinulla on asiakaspalvelusta Suomessa?',
+                'Millaista on mielestäsi hyvä palvelu? Entä huono?',
+                'Mitä kieltä asiakaspalvelijoiden pitäisi puhua?',
+                'Pitäisikö asiakaspalvelijoiden sinutella vai teititellä?',
+              ],
+            },
+            {
+              label: 'B. Kirjasto',
+              questions: [
+                'Käytkö kirjastossa? Onko sinulla kirjastokortti?',
+                'Kirjastot ovat Suomessa maksuttomia. Pitäisikö niiden olla maksullisia?',
+                'Suomessa kirjastoissa voi tehdä paljon muitakin asioita kuin lainata kirjoja. Onko tämä hyvä vai huono?',
+                'Pitäisikö verorahoja käyttää kirjastojen kehittämiseen?',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'kauppa', en: 'store/shop' },
+      { fi: 'asiakas', en: 'customer' },
+      { fi: 'asiakaspalvelu', en: 'customer service' },
+      { fi: 'myyjä', en: 'salesperson' },
+      { fi: 'palaute', en: 'feedback' },
+      { fi: 'reklamaatio', en: 'complaint' },
+      { fi: 'kuitti', en: 'receipt' },
+      { fi: 'takuu', en: 'warranty' },
+      { fi: 'vaihto', en: 'exchange' },
+      { fi: 'hyvitys', en: 'compensation' },
+      { fi: 'tyytyväinen', en: 'satisfied' },
+      { fi: 'pettynyt', en: 'disappointed' },
+      { fi: 'kassalla', en: 'at the checkout' },
+      { fi: 'tarjous', en: 'offer/sale' },
+      { fi: 'aukioloajat', en: 'opening hours' },
+      { fi: 'verkkokauppa', en: 'online store' },
+      { fi: 'vakuutus', en: 'insurance' },
+      { fi: 'pankki', en: 'bank' },
+      { fi: 'kirjasto', en: 'library' },
+      { fi: 'apteekki', en: 'pharmacy' },
+    ],
+    usefulPhrases: [
+      { fi: 'Haluaisin antaa palautetta.', en: 'I would like to give feedback.' },
+      { fi: 'Olen tyytyväinen/pettynyt.', en: 'I am satisfied/dissatisfied.' },
+      { fi: 'Valitettavasti...', en: 'Unfortunately...' },
+      { fi: 'Toivoisin, että...', en: 'I would hope that...' },
+      { fi: 'Voisitteko...', en: 'Could you...' },
+      { fi: 'Pyydän, että...', en: 'I request that...' },
+      { fi: 'Kiitos paljon!', en: 'Thank you very much!' },
+      { fi: 'Anteeksi, voisitko auttaa?', en: 'Excuse me, could you help?' },
+      { fi: 'Onkohan teillä...', en: 'Do you happen to have...' },
+      { fi: 'Paljonko tämä maksaa?', en: 'How much does this cost?' },
+    ],
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {

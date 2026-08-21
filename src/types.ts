@@ -351,6 +351,7 @@ export interface YkiWritingPrompt {
   starterFi?: string
   exampleTitleFi?: string
   exampleFi?: string
+  sampleFi?: string
 }
 
 export interface YkiOpinionTopic {
@@ -425,10 +426,12 @@ export interface YkiAgeVocabTip {
 export interface YkiSubtestSpeaking {
   tip?: YkiTipBox
   selfIntro?: YkiSpeakingSelfIntro
+  repeatPhrases?: { instructionsFi: string; phrases: string[] }
   groupIntro: YkiGroupTask
   truthTip?: YkiTipBox
   practiceLongTask?: YkiSpeakingLongTask & { reflectionPrompt?: string; speakDontWriteTip?: YkiTipBox }
   practiceSituationalTasks?: YkiSituationalTask[]
+  practiceConversationTasks?: YkiConversationTask[]
   dontMemorizeTip?: YkiTipBox
   conversationVocab?: { fi: string; en: string }[]
   testLongTasks: YkiSpeakingLongTask[]

@@ -240,18 +240,31 @@ export default function YkiPrep() {
           </div>
 
           <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele: Epämuodollinen viesti</h2>
+            <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
             <div className="space-y-3">
               {chapter.writing.practiceTasks.map((t) => (
                 <div key={t.id} className="rounded-lg border border-slate-200 bg-white p-3">
                   <p className="text-sm font-semibold text-slate-900">{t.titleFi}</p>
                   <p className="mt-1 text-sm text-slate-700">{t.instructionsFi}</p>
+                  {t.bulletsFi && t.bulletsFi.length > 0 && (
+                    <ul className="mt-1.5 list-inside list-disc space-y-0.5 text-sm text-slate-600">
+                      {t.bulletsFi.map((b, i) => (
+                        <li key={i}>{b}</li>
+                      ))}
+                    </ul>
+                  )}
                   {t.starterFi && <p className="mt-2 text-sm italic text-slate-500">{t.starterFi}</p>}
                   {t.exampleFi && (
                     <div className="mt-3 rounded-lg bg-slate-50 p-3">
                       {t.exampleTitleFi && <p className="mb-1 text-xs font-semibold text-slate-500">{t.exampleTitleFi}</p>}
                       <p className="whitespace-pre-line text-sm text-slate-700">{t.exampleFi}</p>
                     </div>
+                  )}
+                  {t.sampleFi && (
+                    <details className="mt-3 text-sm">
+                      <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+                      <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.sampleFi}</p>
+                    </details>
                   )}
                 </div>
               ))}
@@ -405,6 +418,18 @@ export default function YkiPrep() {
             </div>
           )}
 
+          {chapter.speaking.repeatPhrases && (
+            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+              <p className="text-sm font-semibold text-slate-800">Lämmittele: Kuuntele ja toista lauseita</p>
+              <p className="mt-1 text-sm text-slate-600">{chapter.speaking.repeatPhrases.instructionsFi}</p>
+              <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-700">
+                {chapter.speaking.repeatPhrases.phrases.map((p, i) => (
+                  <li key={i}>{p}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           <div className="rounded-2xl border border-slate-200 bg-white p-4">
             <p className="text-sm font-semibold text-slate-800">Lämmittele yhdessä kaverin kanssa</p>
             <p className="mt-1 text-sm text-slate-600">{chapter.speaking.groupIntro.instructionsFi}</p>
@@ -448,6 +473,28 @@ export default function YkiPrep() {
                         <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.modelAnswerFi}</p>
                       </details>
                     )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {chapter.speaking.practiceConversationTasks && chapter.speaking.practiceConversationTasks.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele: Keskustelutehtävät</h2>
+              <div className="space-y-3">
+                {chapter.speaking.practiceConversationTasks.map((t) => (
+                  <div key={t.id} className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <p className="font-semibold text-slate-900">{t.titleFi}</p>
+                    <p className="text-sm text-slate-600">{t.scenarioFi}</p>
+                    <ul className="list-inside list-decimal space-y-0.5 text-xs text-slate-500">
+                      {t.turns.map((turn, i) => (
+                        <li key={i}>
+                          {turn.instructionFi} <span className="text-slate-400">({turn.seconds} s)</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <SequentialTimer steps={t.turns.map((turn) => ({ label: turn.instructionFi, seconds: turn.seconds }))} idleLabel="Aloita keskustelu" />
                   </div>
                 ))}
               </div>
