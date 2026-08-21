@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
+import RouteErrorBoundary from './components/RouteErrorBoundary'
 import ScrollToTop from './components/ScrollToTop'
 import { routePatterns } from './routes'
 
@@ -43,33 +44,35 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <Suspense fallback={<PageLoading />}>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path={routePatterns.home} element={<Dashboard />} />
-            <Route path={routePatterns.howToUse} element={<HowToUse />} />
-            <Route path={routePatterns.roadmap} element={<Roadmap />} />
-            <Route path={routePatterns.weekDetail} element={<WeekDetail />} />
-            <Route path={routePatterns.weekReading} element={<Reading />} />
-            <Route path={routePatterns.weekListening} element={<Listening />} />
-            <Route path={routePatterns.weekWriting} element={<Writing />} />
-            <Route path={routePatterns.weekSpeaking} element={<Speaking />} />
-            <Route path={routePatterns.vocab} element={<Vocab />} />
-            <Route path={routePatterns.myBooks} element={<MyBooks />} />
-            <Route path={routePatterns.grammar} element={<Grammar />} />
-            <Route path={routePatterns.books} element={<BookPractice />} />
-            <Route path={routePatterns.templates} element={<Templates />} />
-            <Route path={routePatterns.numbers} element={<Numbers />} />
-            <Route path={routePatterns.basics} element={<BasicVocab />} />
-            <Route path={routePatterns.daily} element={<DailyPractice />} />
-            <Route path={routePatterns.conversations} element={<ConversationPractice />} />
-            <Route path={routePatterns.ykiValmennus} element={<YkiPrep />} />
-            <Route path={routePatterns.exam} element={<MockExam />} />
-            <Route path={routePatterns.progress} element={<Progress />} />
-            <Route path={routePatterns.notFound} element={<NotFound />} />
-          </Route>
-        </Routes>
-      </Suspense>
+      <RouteErrorBoundary>
+        <Suspense fallback={<PageLoading />}>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path={routePatterns.home} element={<Dashboard />} />
+              <Route path={routePatterns.howToUse} element={<HowToUse />} />
+              <Route path={routePatterns.roadmap} element={<Roadmap />} />
+              <Route path={routePatterns.weekDetail} element={<WeekDetail />} />
+              <Route path={routePatterns.weekReading} element={<Reading />} />
+              <Route path={routePatterns.weekListening} element={<Listening />} />
+              <Route path={routePatterns.weekWriting} element={<Writing />} />
+              <Route path={routePatterns.weekSpeaking} element={<Speaking />} />
+              <Route path={routePatterns.vocab} element={<Vocab />} />
+              <Route path={routePatterns.myBooks} element={<MyBooks />} />
+              <Route path={routePatterns.grammar} element={<Grammar />} />
+              <Route path={routePatterns.books} element={<BookPractice />} />
+              <Route path={routePatterns.templates} element={<Templates />} />
+              <Route path={routePatterns.numbers} element={<Numbers />} />
+              <Route path={routePatterns.basics} element={<BasicVocab />} />
+              <Route path={routePatterns.daily} element={<DailyPractice />} />
+              <Route path={routePatterns.conversations} element={<ConversationPractice />} />
+              <Route path={routePatterns.ykiValmennus} element={<YkiPrep />} />
+              <Route path={routePatterns.exam} element={<MockExam />} />
+              <Route path={routePatterns.progress} element={<Progress />} />
+              <Route path={routePatterns.notFound} element={<NotFound />} />
+            </Route>
+          </Routes>
+        </Suspense>
+      </RouteErrorBoundary>
     </>
   )
 }
