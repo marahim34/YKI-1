@@ -4876,6 +4876,253 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       { fi: 'Voisitko auttaa?', en: 'Could you help?' },
     ],
   },
+  {
+    id: 'yki-ch8',
+    number: 8,
+    titleFi: 'Ympäristö',
+    titleEn: 'Environment',
+    pages: '216-243',
+    theme: 'Ympäristö, luonto, kierrätys, ilmastonmuutos, kestävä kehitys ja ympäristönsuojelu',
+    reading: {
+      vocabWarmup: {
+        instructionsFi: 'Osaatko ympäristöön liittyvää sanastoa? Selvitä, mitä seuraavat sanat tarkoittavat.',
+        items: [
+          { fi: 'ympäristö', en: 'environment' },
+          { fi: 'luonto', en: 'nature' },
+          { fi: 'ilmasto', en: 'climate' },
+          { fi: 'ilmastonmuutos', en: 'climate change' },
+          { fi: 'saastuminen', en: 'pollution' },
+          { fi: 'jäte', en: 'waste' },
+          { fi: 'kierrättää', en: 'to recycle' },
+          { fi: 'lajitella', en: 'to sort' },
+          { fi: 'biojäte', en: 'biowaste' },
+          { fi: 'sekajäte', en: 'mixed waste' },
+          { fi: 'energiansäästö', en: 'energy saving' },
+          { fi: 'uusiutuva energia', en: 'renewable energy' },
+          { fi: 'kestävä kehitys', en: 'sustainable development' },
+          { fi: 'luonnonvarat', en: 'natural resources' },
+          { fi: 'ympäristönsuojelu', en: 'environmental protection' },
+          { fi: 'ekologinen', en: 'ecological' },
+          { fi: 'hiilijalanjälki', en: 'carbon footprint' },
+          { fi: 'jätteiden lajittelu', en: 'waste sorting' },
+          { fi: 'pullonpalautus', en: 'bottle return' },
+          { fi: 'kierrätyspiste', en: 'recycling point' },
+          { fi: 'komposti', en: 'compost' },
+          { fi: 'sähköauto', en: 'electric car' },
+          { fi: 'julkinen liikenne', en: 'public transport' },
+          { fi: 'lähiruoka', en: 'local food' },
+          { fi: 'luomuruoka', en: 'organic food' },
+          { fi: 'kertakäyttö', en: 'disposable' },
+          { fi: 'muovipussi', en: 'plastic bag' },
+          { fi: 'kangaskassi', en: 'cloth bag' },
+          { fi: 'vedensäästö', en: 'water saving' },
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Ympäristöteemat',
+          titleEn: 'Environmental Themes',
+          textFi: NO_ARTICLE_NOTE,
+          open: [
+            {
+              id: 'rp1-o1',
+              questionFi: 'Miksi jätteiden lajittelu on tärkeää?',
+              sampleAnswerFi: 'Se vähentää ympäristön kuormitusta ja säästää luonnonvaroja.',
+            },
+            {
+              id: 'rp1-o2',
+              questionFi: 'Mitä hyötyä kierrättämisestä on?',
+              sampleAnswerFi: 'Kierrättäminen vähentää jätteen määrää ja säästää energiaa.',
+            },
+            {
+              id: 'rp1-o3',
+              questionFi: 'Miten ihmiset voivat vähentää ilmastonmuutosta?',
+              sampleAnswerFi: 'Käyttämällä vähemmän autoa, säästämällä energiaa ja kierrättämällä.',
+            },
+          ],
+        },
+      ],
+      testPassages: [],
+    },
+    writing: {
+      freewrite: {
+        instructionsFi: 'Kertaa ympäristösanastoa ennen kirjoittamista.',
+        rules: [],
+        topics: [
+          'ympäristö (environment)',
+          'luonto (nature)',
+          'ilmastonmuutos (climate change)',
+          'jäte (waste)',
+          'kierrättää (to recycle)',
+          'lajitella (to sort)',
+          'kestävä kehitys (sustainable development)',
+          'hiilijalanjälki (carbon footprint)',
+          'uusiutuva energia (renewable energy)',
+          'kertakäyttö (disposable)',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Tässä luvussa harjoitellaan näitä viestityyppejä:',
+        questions: [
+          'Epämuodollinen viesti: viesti ystävälle ympäristöteoista; kierrätys- tai energiansäästövinkkien ehdottaminen.',
+          'Muodollinen viesti: valitus ympäristöongelmista naapurustossa; ehdotus kaupungille ympäristöparannuksista.',
+          'Mielipide: Pitäisikö kaikkien kierrättää? Ilmastonmuutos - mitä voimme tehdä? Ovatko sähköautot ratkaisu? Pitäisikö muovipussit kieltää?',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Viesti ystävälle',
+          instructionsFi: 'Olet aloittanut jätteiden lajittelun ja kierrättämisen. Haluat kannustaa ystävääsi. Kirjoita viesti.',
+          sampleFi:
+            'Hei [name]!\n\nMä aloitin viime viikolla jätteiden lajittelun ja kierrättämisen. Se on tosi helppoa! Nyt mä lajittelen biojätteen, muovin, kartongin ja lasin. Suosittelen, että aloitat sinäkin. Se on hyväksi ympäristölle.\n\nTerveisin, [your name]',
+        },
+        {
+          id: 'writing-practice-2',
+          titleFi: 'Ehdotus kaupungille',
+          instructionsFi: 'Olet sitä mieltä, että alueellasi pitäisi olla enemmän kierrätyspisteitä. Kirjoita kaupungille.',
+          sampleFi:
+            'Hei!\n\nAsun [area] ja olen huomannut, että tällä alueella on liian vähän kierrätyspisteitä. Asukkaita on paljon, mutta lähin kierrätyspiste on kaukana. Toivoisin, että kaupunki lisäisi kierrätyspisteitä tällä alueella.\n\nYstävällisin terveisin,\n[Your name]',
+        },
+        {
+          id: 'writing-practice-3',
+          titleFi: 'Mielipide: Muovin käyttöä pitäisi vähentää',
+          instructionsFi: 'Kirjoita mielipideteksti aiheesta: muovin käyttöä pitäisi vähentää.',
+          sampleFi:
+            'Mielestäni muovin käyttöä pitäisi vähentää, koska muovi saastuttaa luontoa ja valtameriä. Muovi hajoaa hyvin hitaasti, ja se on vaarallista eläimille.\n\nVoimme vähentää muovin käyttöä monella tavalla: käyttämällä kangaskasseja muovipussien sijaan, ostamalla tuotteita, joissa on vähemmän pakkausta, ja kierrättämällä muovit.\n\nMyös kaupat ja yritykset voivat vähentää muovin käyttöä. Monet kaupat ovat jo vähentäneet muovipusseja, mutta vielä voitaisiin tehdä enemmän.\n\nMuovin vähentäminen on jokaisen vastuu. Pienet teot, kuten oman kahvikupin käyttö, voivat tehdä suuren eron.',
+        },
+      ],
+      informalTasks: [
+        {
+          id: 'writing-informal-1',
+          titleFi: 'Epämuodolliset viestiaiheet',
+          instructionsFi: 'Tämän luvun epämuodollisissa viesteissä harjoitellaan esimerkiksi:',
+          bulletsFi: ['Viesti ystävälle ympäristöteoista', 'Kierrätys- tai energiansäästövinkkien ehdottaminen'],
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-formal-1',
+          titleFi: 'Muodolliset viestiaiheet',
+          instructionsFi: 'Tämän luvun muodollisissa viesteissä harjoitellaan esimerkiksi:',
+          bulletsFi: ['Valitus ympäristöongelmista naapurustossa', 'Ehdotus kaupungille ympäristöparannuksista'],
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Mielipideaiheita',
+          options: ['Pitäisikö kaikkien kierrättää?', 'Ilmastonmuutos - mitä voimme tehdä?', 'Ovatko sähköautot ratkaisu?', 'Pitäisikö muovipussit kieltää?'],
+        },
+      ],
+    },
+    listening: {
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Kuuntelutehtävien sanasto ja aiheet',
+          titleEn: 'Listening Task Vocabulary and Topics',
+          textFi:
+            'Tämän luvun kuuntelutehtäviä ei sisältynyt saatuun lähdemateriaaliin äänitteineen ja vastauksineen. Harjoittele omatoimisesti kuuntelemalla ympäristöaiheisia keskusteluja, esimerkiksi näistä aiheista: uutinen ilmastonmuutoksesta, keskustelu kierrätyksestä, mainos ympäristöystävällisistä tuotteista, haastattelu ympäristöaktivistin kanssa, kaupungin tiedote jätehuollosta.',
+          predictVocab: [
+            { fi: 'kierrätys', en: 'recycling' },
+            { fi: 'ympäristöystävällinen', en: 'environmentally friendly' },
+            { fi: 'saasteet', en: 'emissions/pollutants' },
+            { fi: 'kasvihuoneilmiö', en: 'greenhouse effect' },
+            { fi: 'luonnon monimuotoisuus', en: 'biodiversity' },
+            { fi: 'ekosysteemi', en: 'ecosystem' },
+            { fi: 'ilmastopolitiikka', en: 'climate policy' },
+            { fi: 'hiilineutraali', en: 'carbon neutral' },
+          ],
+        },
+      ],
+      testPassages: [],
+    },
+    speaking: {
+      groupIntro: {
+        instructionsFi: 'Tässä luvussa harjoitellaan näitä puhumisen aihepiirejä:',
+        questions: [
+          'Kertominen: Miten kierrätät kotona?; Millainen on sinun ympäristöystävällisyytesi?; Kerro suomalaisesta luonnosta.',
+          'Keskustelu: Keskustelu ympäristöasioista; Keskustelu kierrätyksestä.',
+          'Tilannetehtävät: Kerro naapurille, miten jätteet lajitellaan; Ehdota ystävälle, miten voi säästää energiaa.',
+          'Mielipide: Pitäisikö kaikkien kierrättää?; Ilmastonmuutos - mitä voimme tehdä?; Ovatko sähköautot ratkaisu?',
+        ],
+      },
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Miten kierrätät kotona?',
+          titleEn: 'How Do You Recycle at Home?',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Lajitteletko jätteitä kotona?',
+            'Millaisia jätteitä lajittelet?',
+            'Miksi kierrätys on tärkeää?',
+            'Haluaisitko tehdä enemmän ympäristön hyväksi?',
+          ],
+        },
+      ],
+      conversationTasks: [],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1',
+          scenarioFi: 'Kerro naapurille, miten jätteet lajitellaan.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2',
+          scenarioFi: 'Ehdota ystävälle, miten voi säästää energiaa.',
+          seconds: 20,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Ilmastonmuutos on suurin uhka maapallolle',
+          titleEn: 'Climate Change Is the Biggest Threat to the Planet',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Oletko samaa mieltä?', 'Miksi ilmastonmuutos on vaarallinen?', 'Mitä ihmiset voivat tehdä?', 'Pitäisikö hallitusten tehdä enemmän?'],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'ympäristö', en: 'environment' },
+      { fi: 'luonto', en: 'nature' },
+      { fi: 'ilmasto', en: 'climate' },
+      { fi: 'ilmastonmuutos', en: 'climate change' },
+      { fi: 'saastuminen', en: 'pollution' },
+      { fi: 'jäte', en: 'waste' },
+      { fi: 'kierrättää', en: 'to recycle' },
+      { fi: 'lajitella', en: 'to sort' },
+      { fi: 'biojäte', en: 'biowaste' },
+      { fi: 'sekajäte', en: 'mixed waste' },
+      { fi: 'energia', en: 'energy' },
+      { fi: 'uusiutuva', en: 'renewable' },
+      { fi: 'kestävä', en: 'sustainable' },
+      { fi: 'suojella', en: 'to protect' },
+      { fi: 'luonnonvarat', en: 'natural resources' },
+      { fi: 'hiilijalanjälki', en: 'carbon footprint' },
+      { fi: 'ekologinen', en: 'ecological' },
+      { fi: 'ympäristöystävällinen', en: 'environmentally friendly' },
+      { fi: 'komposti', en: 'compost' },
+      { fi: 'kertakäyttö', en: 'disposable' },
+      { fi: 'lähiruoka', en: 'local food' },
+      { fi: 'luomuruoka', en: 'organic food' },
+    ],
+    usefulPhrases: [
+      { fi: 'On tärkeää suojella luontoa.', en: "It's important to protect nature." },
+      { fi: 'Kierrätys on helppoa.', en: 'Recycling is easy.' },
+      { fi: 'Lajittelen jätteet kotona.', en: 'I sort waste at home.' },
+      { fi: 'Meidän pitäisi vähentää muovin käyttöä.', en: 'We should reduce plastic use.' },
+      { fi: 'Olen ympäristötietoinen.', en: 'I am environmentally conscious.' },
+      { fi: 'Käytän kangaskasseja.', en: 'I use cloth bags.' },
+      { fi: 'Säästän energiaa sammuttamalla valot.', en: 'I save energy by turning off lights.' },
+      { fi: 'Ilmastonmuutos on vakava ongelma.', en: 'Climate change is a serious problem.' },
+    ],
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {
