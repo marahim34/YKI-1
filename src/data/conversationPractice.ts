@@ -2261,6 +2261,282 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
       { fi: 'doping', en: 'doping' },
     ],
   },
+  {
+    id: 'conv-ch6',
+    titleFi: 'Luku 6: Yhteiskunta',
+    titleEn: 'Chapter 6: Society',
+    level: 'B1',
+    warmup: [
+      {
+        id: 'w-1',
+        scenarioFi: 'Milloin kävit viimeksi Migrissä?',
+        scenarioEn: 'When did you last visit Migri (the Finnish Immigration Service)?',
+        sampleFi: 'Kävin Migrissä viimeksi kuusi kuukautta sitten hakemassa oleskelulupaa. Jouduin odottamaan kaksi tuntia, mutta asia hoitui lopulta hyvin.',
+      },
+      {
+        id: 'w-2',
+        scenarioFi: 'Milloin kävit viimeksi Kelassa?',
+        scenarioEn: 'When did you last visit Kela (the Social Insurance Institution)?',
+        sampleFi: 'Kävin Kelassa viimeksi kolme kuukautta sitten. Menin hakemaan sairauspäivärahaa. Sain ajan ja palvelu oli ystävällistä.',
+      },
+      {
+        id: 'w-3',
+        scenarioFi: 'Milloin kävit viimeksi poliisiasemalla?',
+        scenarioEn: 'When did you last visit the police station?',
+        sampleFi: 'Kävin poliisiasemalla vuosi sitten hakemassa passia. Jonotin noin tunnin, mutta prosessi oli sujuva.',
+      },
+      {
+        id: 'w-4',
+        scenarioFi: 'Milloin kävit viimeksi vakuutusyhtiössä?',
+        scenarioEn: 'When did you last visit an insurance company?',
+        sampleFi: 'Kävin vakuutusyhtiössä viime kuussa tekemässä kotivakuutusta. Asioin heidän verkkosivuillaan, enkä käynyt paikan päällä.',
+      },
+      {
+        id: 'w-5',
+        scenarioFi: 'Milloin kävit viimeksi verotoimistossa?',
+        scenarioEn: 'When did you last visit the tax office?',
+        sampleFi: 'Kävin verotoimistossa viimeksi keväällä veroilmoituksen takia. Tarvitsin apua verokortin päivittämisessä.',
+      },
+      {
+        id: 'w-6',
+        scenarioFi: 'Milloin kävit viimeksi maistraatissa?',
+        scenarioEn: 'When did you last visit the Local Register Office?',
+        sampleFi: 'Kävin maistraatissa kaksi vuotta sitten, kun vaihdoin osoitteen. Nykyään osoitteen voi vaihtaa netissä.',
+      },
+      {
+        id: 'w-7',
+        scenarioFi: 'Milloin kävit viimeksi suurlähetystössä?',
+        scenarioEn: 'When did you last visit the embassy?',
+        sampleFi: 'Kävin suurlähetystössä vuosi sitten hakemassa uutta passia. Jouduin varaamaan ajan etukäteen.',
+      },
+    ],
+    dialogues: [
+      {
+        id: 'd1',
+        titleFi: 'Avioliiton rekisteröinti maistraatissa',
+        titleEn: 'Registering a marriage at the Local Register Office',
+        turns: [
+          { speaker: 'Virkailija', fi: 'Hei, miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Haluaisimme rekisteröidä avioliiton.' },
+          { speaker: 'Virkailija', fi: 'Asia selvä. Ovatko molemmat osapuolet täysi-ikäisiä?' },
+          { speaker: 'Sinä', fi: 'Kyllä, molemmat ovat yli 18-vuotiaita.' },
+          { speaker: 'Virkailija', fi: 'Ja kumpikaan ei ole naimisissa, rekisteröidyssä parisuhteessa tai sukulaisia keskenään?' },
+          { speaker: 'Sinä', fi: 'Ei, kumpikaan ei ole naimisissa, eikä meillä ole sukulaisuussuhdetta.' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Sitten voidaan aloittaa esteiden tutkinta. Maistraatin nettisivulla on tutkintapyyntölomake, jonka voi printata ja täyttää. Voin myös tulostaa sen tässä, jos haluat.',
+          },
+          { speaker: 'Sinä', fi: 'Kiitos, voisitteko tulostaa lomakkeen?' },
+          { speaker: 'Virkailija', fi: 'Sanotko sun henkilötunnuksen? Tarvitsen sen tähän.' },
+          { speaker: 'Sinä', fi: 'Henkilötunnukseni on [number].' },
+          { speaker: 'Virkailija', fi: 'Kiitos. Kun olet täyttänyt lomakkeen, tuo se tänne ja sitten voidaan varata aika rekisteröinnille.' },
+          { speaker: 'Sinä', fi: 'Paljonko rekisteröinti maksaa?' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Rekisteröinti täällä maistraatissa ei maksa mitään, mutta jos haluatte, että se rekisteröidään muualla, tulee matkakustannukset teidän maksettavaksi.',
+          },
+          { speaker: 'Sinä', fi: 'Kiitos! Täytän lomakkeen ja tuon sen pian.' },
+        ],
+      },
+      {
+        id: 'd2',
+        titleFi: 'Kotivakuutus ja korvaus',
+        titleEn: 'Home insurance and compensation',
+        turns: [
+          { speaker: 'Virkailija', fi: 'Vakuutusyhtiö Turvanasi, miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Haluaisin hakea korvausta kotivakuutuksesta. Kodissani oli vesivahinko.' },
+          { speaker: 'Virkailija', fi: 'Oi voi, sepä ikävää. Milloin ja miten huomasit asian?' },
+          { speaker: 'Sinä', fi: 'Huomasin eilen, kun pesukone vuoti vettä keittiön lattialle. Vesi levisi myös eteiseen.' },
+          { speaker: 'Virkailija', fi: 'Selvä. Sanotko vielä sun nimen ja osoitteen, niin etsin vakuutustiedot.' },
+          { speaker: 'Sinä', fi: 'Nimeni on [name] ja osoite [address].' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Kiitos, löysin tiedot. Kuulkaa, nyt on käynyt niin ikävästi, että teillä on viimeinen kotivakuutuksen lasku maksamatta, joten kotivakuutus ei ole enää ollut pariin kuukauteen voimassa.',
+          },
+          { speaker: 'Sinä', fi: 'Mitä? Miten se on mahdollista? En ole saanut laskua!' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Niinkö? Meillä on täällä tieto, että lasku on lähtenyt tasan kaksi kuukautta sitten ja sitten muistutusmaksu siitä kolmen viikon kuluttua.',
+          },
+          {
+            speaker: 'Sinä',
+            fi: 'Teillä on varmasti virhe. Minulla on ollut ongelmia postin kanssa. Olen saanut vain muutaman postin viime aikoina.',
+          },
+          {
+            speaker: 'Virkailija',
+            fi: 'Ai jaa. No posti on kyllä ollut tosi epäluotettava viime aikoina. Multakin on hävinnyt monta pakettia. Mä myös näen täältä, että olet ollut meidän asiakas jo kymmenen vuotta ja aina maksanut laskut ajallaan, joten yritetään korjata tämä asia, että saadaan kotivakuutuksesta sulle korvaus. Tätä asiaa ei kuitenkaan voida hoitaa näin puhelimessa, niin pääsetkö käymään täällä meidän toimistolla?',
+          },
+          { speaker: 'Sinä', fi: 'Kyllä, voin tulla. Milloin teille sopii?' },
+          { speaker: 'Virkailija', fi: 'Selvä juttu. Mä merkitsen tähän kalenteriin. Nähdään silloin.' },
+          { speaker: 'Sinä', fi: 'Kiitos avusta! Nähdään!' },
+        ],
+      },
+    ],
+    reactions: [
+      {
+        id: 'r1',
+        scenarioFi: 'Sinulla on jokin ongelma oleskeluluvan kanssa (keksi itse, mikä). Soita Migriin.',
+        sampleFi:
+          'Hei! Soitan Migriin. Minulla on ongelma oleskeluluvan kanssa. Olen odottanut päätöstä jo kolme kuukautta, mutta en ole kuullut mitään. Haluaisin kysyä, mikä tilanne on ja milloin voin saada päätöksen.',
+      },
+      {
+        id: 'r2',
+        scenarioFi: 'Olet saanut YKI-testin tulokset. Haluat hakea kansalaisuutta, mutta sinulla on kysymyksiä. Soita Migriin.',
+        sampleFi:
+          'Hei! Olen saanut YKI-testin tulokset ja läpäissyt sen. Nyt haluaisin hakea kansalaisuutta. Minulla on kysymyksiä hakemuksesta: mitä papereita tarvitaan ja kuinka kauan käsittely kestää? Voisitteko auttaa?',
+      },
+      {
+        id: 'r3',
+        scenarioFi: 'Olet odottanut Suomen passia jo 16 kuukautta. Haluat kysyä lisää. Soita Migriin.',
+        sampleFi:
+          'Hei! Olen hakenut Suomen passia 16 kuukautta sitten, enkä ole saanut sitä vielä. Käsittelyaika on todella pitkä. Voitteko kertoa, missä vaiheessa hakemukseni on? Tarvitsen passia matkustamista varten.',
+      },
+      {
+        id: 'r4',
+        scenarioFi:
+          'Presidentin kansliasta soitetaan sinulle ja saat kutsun 6.12. itsenäisyyspäivän juhlaan, koska olet ollut tosi ahkera suomen kielen opiskelija. Mitä sanot?',
+        sampleFi: 'Vau! Tämä on aivan uskomatonta! Olen todella otettu ja kiitollinen! Totta kai tulen juhlaan! Tämä on minulle suuri kunnia. Kiitos todella paljon!',
+      },
+      {
+        id: 'r5',
+        scenarioFi: 'Sinun kännykkä on mennyt rikki (keksi itse, miten). Kysyt, korvaako kotivakuutus sen.',
+        sampleFi: 'Hei! Kännykkäni putosi lattialle ja näyttö meni rikki. Korvaako kotivakuutus tämän? Minulla on kotivakuutus, ja haluaisin tietää, saanko korvausta.',
+      },
+      {
+        id: 'r6',
+        scenarioFi: 'Sinun työtilanteesi on muuttunut (keksi itse, miten) ja sinun täytyy muuttaa veroprosenttiasi. Soita verotoimistoon.',
+        sampleFi:
+          'Hei! Työtilanteeni on muuttunut. Aloitan uudessa työssä ensi kuussa, ja palkka on korkeampi. Minun täytyy muuttaa veroprosenttiani. Voitteko auttaa minua laskemaan uuden veroprosentin?',
+      },
+      {
+        id: 'r7',
+        scenarioFi: 'Sinulla on jokin ongelma Kelan kanssa (keksi itse, mikä). Soita Kelaan.',
+        sampleFi:
+          'Hei! Soitan Kelasta saamastani päätöksestä. Hain sairauspäivärahaa, mutta sain hylkäävän päätöksen. En ymmärrä, miksi hakemus hylättiin. Voitteko kertoa, mitä tietoja puuttuu?',
+      },
+      {
+        id: 'r8',
+        scenarioFi: 'Olet joutunut rikoksen uhriksi (keksi itse, mitä on tapahtunut). Ilmoita asiasta poliisille.',
+        sampleFi:
+          'Hei! Haluan ilmoittaa rikoksesta. Minun lompakkoni varastettiin eilen kaupungilla. Se tapahtui kello 16.00. Haluaisin tehdä rikosilmoituksen. Mitä tietoja tarvitsette?',
+      },
+    ],
+    longSpeaking: [
+      {
+        id: 'k-a',
+        titleFi: 'Minulle on tärkeää, mistä olen kotoisin',
+        titleEn: 'Where I come from is important to me',
+        instructionsFi: 'Mitä kansalaisuus sinulle merkitsee? Mikä on sinun kotimaa? Miksi ajattelet niin? Mitä suomalaisuus sinulle merkitsee?',
+        sampleFi:
+          'Kansalaisuus on minulle tärkeä, koska se kertoo, mistä olen kotoisin. Kotimaani on [country]. Siellä on minun juureni, perheeni ja kulttuurini. Vaikka asun Suomessa, kotimaani on aina osa minua.\n\nSuomalaisuus merkitsee minulle rehellisyyttä, luotettavuutta ja rauhaa. Suomalaiset ovat usein hiljaisia ja ujoja, mutta myös ystävällisiä ja auttavaisia. Suomessa arvostetaan luontoa, tasa-arvoa ja koulutusta.\n\nOn tärkeää, että säilytän oman kulttuurini, mutta samalla haluan oppia suomalaisista tavoista. Uskon, että jokainen voi olla ylpeä omasta taustastaan ja samalla kunnioittaa toisten kulttuureja.',
+      },
+      {
+        id: 'k-b',
+        titleFi: 'Suomalaiset ystäväni',
+        titleEn: 'My Finnish friends',
+        instructionsFi:
+          'Onko sinulla suomalaisia ystäviä? Millaisia he ovat? Miten olet tutustunut heihin? Sanotaan, että suomalaiset ovat ujoja ja hiljaisia. Mitä mieltä olet? Mikä on hyvä tapa tutustua uusiin ihmisiin?',
+        sampleFi:
+          'Minulla on muutamia suomalaisia ystäviä. He ovat ystävällisiä, luotettavia ja rehellisiä. He eivät puhu paljon, mutta kun he puhuvat, he tarkoittavat sitä.\n\nTutustuin heihin työpaikalla ja harrastusten kautta. Menin mukaan liikuntaryhmään, ja siellä tapasin uusia ihmisiä. Yhteiset harrastukset auttavat tutustumaan.\n\nSanotaan, että suomalaiset ovat ujoja ja hiljaisia. Se on osittain totta. Suomalaiset eivät pidä turhanpäiväisestä jutustelusta, mutta kun he tutustuvat, he ovat lämpimiä ja luotettavia. He arvostavat syvällisiä keskusteluja.\n\nHyvä tapa tutustua uusiin ihmisiin on mennä mukaan yhteisiin aktiviteetteihin: harrastuksiin, kursseille, työpaikan tapahtumiin. Kannattaa olla avoin ja kärsivällinen. Ystävyys ei synny hetkessä, vaan ajan kanssa.',
+      },
+    ],
+    opinions: [
+      {
+        id: 'm-a',
+        titleFi: 'Suomi ei ole tasa-arvoinen maa',
+        titleEn: 'Finland is not an equal country',
+        instructionsFi: 'Miten Suomen tasa-arvo/epätasa-arvo näkyy? Ketkä ovat tasa-arvoisia? Missä asioissa Suomi ei ole tasa-arvoinen?',
+        sampleFi:
+          'Suomi on melko tasa-arvoinen maa verrattuna moneen muuhun maahan. Täällä naisilla ja miehillä on samat oikeudet, koulutus on ilmaista ja kaikilla on mahdollisuus terveydenhuoltoon.\n\nKuitenkin Suomessa on epätasa-arvoa. Eriarvoisuutta näkyy esimerkiksi tuloissa, asuinalueilla ja maahanmuuttajien asemassa. Joillakin aloilla, kuten tekniikan alalla, on vähemmän naisia. Palkkaerot naisten ja miesten välillä ovat olemassa.\n\nMaahanmuuttajat kokevat usein syrjintää työnhaussa ja arjessa. Se on epäreilua. Tasa-arvo tarkoittaa, että kaikilla on samat mahdollisuudet, riippumatta taustasta.\n\nSuomi on hyvä maa, mutta tasa-arvotyötä pitää tehdä jatkuvasti. Tasa-arvo ei ole itsestäänselvyys, ja jokainen voi omalla toiminnallaan edistää sitä.',
+      },
+      {
+        id: 'm-b',
+        titleFi: 'Nykyään ihmiset eivät välitä toisista',
+        titleEn: "Nowadays people don't care about each other",
+        instructionsFi: 'Jos näet kadulla ihmisen makaamassa, autatko häntä? Ketkä ihmiset ovat sinulle tärkeitä? Miten autat muita ihmisiä?',
+        sampleFi:
+          'Jos näen kadulla ihmisen makaamassa, autan häntä. Soitan ambulanssin tai kysyn, onko hän kunnossa. Mielestäni on tärkeää auttaa toisia.\n\nMinulle tärkeitä ihmisiä ovat perhe, ystävät ja työkaverit. Heidän kanssaan on hyvä jakaa ilot ja surut. Tärkeintä on, että on ihmisiä, joihin voi luottaa.\n\nAutan muita ihmisiä monella tavalla: kuuntelen, annan neuvoja, autan käytännön asioissa ja olen läsnä. Pienetkin teot merkitsevät paljon. Mielestäni ihmiset välittävät toisistaan, mutta kiireessä se unohtuu. On tärkeää muistaa pysähtyä ja auttaa.',
+      },
+      {
+        id: 'm-c',
+        titleFi: 'Suomessa on liian vähän maahanmuuttajia poliitikkoina',
+        titleEn: 'Finland has too few immigrants as politicians',
+        instructionsFi: 'Mitä asioita maahanmuuttajat voivat edistää? Miksi olisi hyvä, että maahanmuuttajat osallistuisivat aktiivisemmin politiikkaan?',
+        sampleFi:
+          'Suomessa on liian vähän maahanmuuttajia poliitikkoina. Se on ongelma, koska maahanmuuttajilla on omia kokemuksia ja näkökulmia, joita tarvitaan päätöksenteossa.\n\nMaahanmuuttajat voivat edistää esimerkiksi kotoutumista, kielikoulutusta, työllisyyttä ja yhdenvertaisuutta. He tietävät, millaisia haasteita maahanmuuttajat kohtaavat. He voivat tuoda esiin asioita, jotka kantasuomalaiset eivät välttämättä huomaa.\n\nOlisi hyvä, että maahanmuuttajat osallistuisivat aktiivisemmin politiikkaan, koska se lisää monimuotoisuutta ja edustavuutta. Se auttaisi rakentamaan yhteiskuntaa, jossa kaikki tuntevat olevansa mukana.\n\nMyös puolueiden pitäisi rohkaista maahanmuuttajia ehdokkaiksi. Tarvitaan lisää erilaisia ääniä päätöksenteossa.',
+      },
+      {
+        id: 'm-d',
+        titleFi: 'Suomen verot ovat liian korkeat',
+        titleEn: 'Finnish taxes are too high',
+        instructionsFi: 'Mitä mieltä olet Suomen verotuksesta? Millainen Suomen verotus on kotimaasi verotukseen verrattuna?',
+        sampleFi:
+          'Suomen verot ovat korkeat verrattuna moniin muihin maihin. Ansiotulovero, arvonlisävero ja muut verot tekevät elämästä kallista. Kuitenkin verorahat menevät hyviin asioihin: koulutukseen, terveydenhuoltoon, sosiaaliturvaan ja infrastruktuuriin.\n\nKotimaassani verot ovat alemmat, mutta julkiset palvelut ovat heikompia. Suomessa verot maksavat hyvästä elämänlaadusta. Täällä on ilmainen koulutus ja terveydenhuolto, mitä monessa maassa ei ole.\n\nVerot voisivat olla kohtuullisemmat, mutta on tärkeää, että verorahat käytetään tehokkaasti. Jos verot laskisivat liikaa, palvelut heikkenisivät.\n\nMielestäni verotus on Suomessa oikeudenmukaista: enemmän tienaavat maksavat enemmän. Se on osa suomalaista hyvinvointivaltiota.',
+      },
+    ],
+    writingTasks: [
+      {
+        id: 'w1',
+        titleFi: 'Viesti ystävälle',
+        instructionsFi:
+          'Ulkomaalainen ystäväsi haluaa muuttaa Suomeen. Lähetä hänelle viesti, mitä hänen pitää tehdä, että voi muuttaa. Kerro myös, mitä hänen on tärkeää tietää Suomesta ennen muuttoa.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei [name]!\n\nKuulin, että harkitset muuttamista Suomeen. Se on mahtava idea! Kerron nyt, mitä sinun pitää tehdä ja tietää ennen muuttoa.\n\nMitä pitää tehdä:\n- Hae oleskelulupaa Migristä. Tarvitset työpaikan tai opiskelupaikan.\n- Hanki henkilötunnus ja kirjaudu maistraatissa.\n- Avaa pankkitili ja hanki verokortti.\n- Jos et puhu suomea, opiskele kieltä. Se auttaa arjessa ja työnhaussa.\n\nTärkeää tietää Suomesta:\n- Ilma on kylmä, erityisesti talvella. Ota lämpimiä vaatteita!\n- Suomalaiset ovat rauhallisia ja arvostavat omaa tilaa. Ole kärsivällinen.\n- Julkinen liikenne toimii hyvin. Auto ei ole pakollinen kaupungissa.\n- Byrokratia on sujuvaa, mutta varaudu paperityöhön.\n- Suomi on turvallinen ja luonnonkaunis maa.\n\nToivottavasti nämä vinkit auttavat! Kysy, jos haluat lisätietoja.\n\nTerveisin,\n[Your name]',
+      },
+      {
+        id: 'w2',
+        titleFi: 'Valitus',
+        instructionsFi:
+          'Olet hakenut suomen kielen jatkokurssille, mutta et ole päässyt, koska virkailijan mukaan sinun kielitaito riittää. Kirjoita virkailijalle valitus, jossa kerrot: miksi sinun pitäisi saada jatkaa kielikoulutusta, mitä teet, kun kielitaitosi on parempi, miten hylätty päätös vaikuttaa sinun elämääsi.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei!\n\nOlen [name], ja haen suomen kielen jatkokurssille. Valitettavasti hakemukseni hylättiin, koska virkailijan mukaan kielitaitoni on riittävä. Olen eri mieltä tästä päätöksestä.\n\nMiksi tarvitsen jatkokurssia:\n- Kirjoitustaitoni ei ole vielä tarpeeksi hyvä. Tarvitsen lisää harjoitusta.\n- Tarvitsen parempaa puheen sujuvuutta työssäni.\n- Koen, että kielitaitoni on välitasoa, enkä vielä pärjää kaikissa tilanteissa.\n\nMitä teen, kun kielitaitoni on parempi:\n- Pystyn kommunikoimaan sujuvammin työssä ja arjessa.\n- Voin osallistua enemmän suomalaiseen yhteiskuntaan.\n- Minulla on paremmat mahdollisuudet edetä urallani.\n\nMiten hylätty päätös vaikuttaa minuun:\n- Kielitaitoni ei kehity tarpeeksi nopeasti.\n- Jatkokurssi on ainoa mahdollisuus saada opetusta.\n- Ilman kurssia minun on vaikea integroitua ja saada töitä.\n\nToivon, että voitte harkita päätöstä uudelleen ja päästää minut kurssille.\n\nYstävällisin terveisin,\n[Your name]',
+      },
+      {
+        id: 'w3',
+        titleFi: 'Mielipide: valitse A tai B',
+        instructionsFi:
+          'A. Maahanmuuttajat lähtevät pois Suomesta, koska eivät saa töitä. / B. Oma auto on liian kallis. Valitse toinen ja kirjoita mielipidekirjoitus.',
+        bulletsFi: [],
+        sampleFi:
+          'A. Maahanmuuttajat lähtevät pois Suomesta, koska eivät saa töitä.\n\nTämä on valitettavasti totta monille maahanmuuttajille. Monet heistä lähtevät pois Suomesta, koska eivät löydä töitä. Syitä on useita.\n\nEnsinnäkin, kielitaito on iso este. Vaikka maahanmuuttaja osaisi englantia, suomea tarvitaan useimmissa työpaikoissa. Toiseksi, työnantajat saattavat syrjiä maahanmuuttajia. He saattavat ajatella, että maahanmuuttajilla on vähemmän kokemusta tai he eivät sovi työyhteisöön.\n\nMyös tutkintojen tunnustaminen on ongelma. Monen maahanmuuttajan koulutus ei kelpaa Suomessa, ja he joutuvat tekemään matalapalkkatöitä.\n\nSuomi tarvitsee lisää työntekijöitä, joten ongelma pitäisi ratkaista. Maahanmuuttajille pitäisi tarjota enemmän kielikoulutusta, työnantajia pitäisi kouluttaa syrjinnän vähentämiseksi ja tutkintojen tunnustamista pitäisi helpottaa.\n\nJos maahanmuuttajat saavat töitä, he jäävät Suomeen ja rikastuttavat yhteiskuntaa. Se on hyväksi kaikille.\n\nB. Oma auto on liian kallis.\n\nOlen samaa mieltä siitä, että auton omistaminen on kallista Suomessa. Auton hankinta, polttoaine, vakuutus, huolto, verot ja parkkimaksut tekevät siitä kalliin.\n\nAuton hinta on usein korkea, ja siihen tarvitaan lainaa. Bensa maksaa noin 2 euroa litralta, mikä on paljon. Auton veroja on useita, kuten käyttövoimavero ja ajoneuvovero. Vakuutuksetkin maksavat satoja euroja vuodessa.\n\nKaupungeissa auto ei ole edes tarpeellinen, koska julkinen liikenne toimii hyvin. Pienemmillä paikkakunnilla auto on välttämätön, koska etäisyydet ovat pitkiä.\n\nMielestäni julkinen liikenne pitäisi tehdä halvemmaksi ja kattavammaksi, jotta ihmiset voisivat luopua autoista. Se säästäisi rahaa ja vähentäisi saasteita.\n\nItse käytän bussia ja pyörää, koska se on halvempaa ja ympäristöystävällisempää. Auto on liian kallis minun budjetilleni.',
+      },
+    ],
+    vocabSummary: [
+      { fi: 'yhteiskunta', en: 'society' },
+      { fi: 'kansalaisuus', en: 'citizenship' },
+      { fi: 'oleskelulupa', en: 'residence permit' },
+      { fi: 'Migri', en: 'Finnish Immigration Service' },
+      { fi: 'Kela', en: 'Social Insurance Institution' },
+      { fi: 'verotoimisto', en: 'tax office' },
+      { fi: 'maistraatti', en: 'Local Register Office' },
+      { fi: 'poliisi', en: 'police' },
+      { fi: 'vakuutus', en: 'insurance' },
+      { fi: 'kotivakuutus', en: 'home insurance' },
+      { fi: 'korvaus', en: 'compensation' },
+      { fi: 'avioliitto', en: 'marriage' },
+      { fi: 'rekisteröidä', en: 'to register' },
+      { fi: 'henkilötunnus', en: 'personal identity number' },
+      { fi: 'verokortti', en: 'tax card' },
+      { fi: 'veroprosentti', en: 'tax percentage' },
+      { fi: 'tasa-arvo', en: 'equality' },
+      { fi: 'syrjintä', en: 'discrimination' },
+      { fi: 'maahanmuuttaja', en: 'immigrant' },
+      { fi: 'kotoutuminen', en: 'integration' },
+      { fi: 'kielikoulutus', en: 'language education' },
+      { fi: 'byrokratia', en: 'bureaucracy' },
+      { fi: 'päätös', en: 'decision' },
+      { fi: 'hakemus', en: 'application' },
+      { fi: 'käsittelyaika', en: 'processing time' },
+      { fi: 'rikosilmoitus', en: 'crime report' },
+      { fi: 'suurlähetystö', en: 'embassy' },
+      { fi: 'valitus', en: 'complaint' },
+      { fi: 'poliitikko', en: 'politician' },
+      { fi: 'äänestäminen', en: 'voting' },
+      { fi: 'hyvinvointivaltio', en: 'welfare state' },
+    ],
+  },
 ]
 
 export function conversationChapter(id: string): ConversationChapter | undefined {
