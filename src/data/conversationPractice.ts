@@ -1383,6 +1383,440 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
       { fi: 'kansallispuisto', en: 'national park' },
     ],
   },
+  {
+    id: 'conv-ch4',
+    titleFi: 'Luku 4: Työ ja koulutus',
+    titleEn: 'Chapter 4: Work and education',
+    level: 'B1',
+    warmup: [
+      {
+        id: 'w-1',
+        scenarioFi: 'Mikä on sinun ammattisi?',
+        scenarioEn: 'What is your profession?',
+        sampleFi: 'Olen [ammattisi, esim. insinööri / opettaja / sairaanhoitaja / kokki]. Työskentelen [yrityksen/paikan nimi].',
+      },
+      {
+        id: 'w-2',
+        scenarioFi: 'Missä olet töissä / koulussa?',
+        scenarioEn: 'Where do you work / study?',
+        sampleFi: 'Olen töissä [yrityksen nimi]:ssa. / Opiskelen [koulu/yliopisto]:ssa.',
+      },
+      {
+        id: 'w-3',
+        scenarioFi: 'Mitä kieltä sinä puhut töissä?',
+        scenarioEn: 'What language do you speak at work?',
+        sampleFi: 'Puhun töissä suomea ja englantia. Työkaverit ovat eri maista, joten käytämme usein englantia.',
+      },
+      {
+        id: 'w-4',
+        scenarioFi: 'Mitä ammatteja sinun kotimaassa on?',
+        scenarioEn: 'What professions are there in your home country?',
+        sampleFi:
+          'Kotimaassani on monia ammatteja: lääkäreitä, opettajia, insinöörejä, maanviljelijöitä, kalastajia ja käsityöläisiä. Maaseudulla on paljon maataloustöitä, kaupungeissa taas palvelualan töitä.',
+      },
+      {
+        id: 'w-5',
+        scenarioFi: 'Mikä ammatti on arvostettu kotimaassasi?',
+        scenarioEn: 'What profession is respected in your home country?',
+        sampleFi: 'Kotimaassani arvostetaan erityisesti lääkäreitä, insinöörejä ja opettajia. Myös lakimiehet ja poliitikot ovat arvostettuja.',
+      },
+      {
+        id: 'w-6',
+        scenarioFi: 'Millaisia töitä sinun ystävät / perhe tekevät?',
+        scenarioEn: 'What kind of work do your friends/family do?',
+        sampleFi: 'Äitini on opettaja ja isäni on insinööri. Ystäväni ovat eri aloilla: yksi on sairaanhoitaja, toinen on myyjä ja kolmas on opiskelija.',
+      },
+      {
+        id: 'w-7',
+        scenarioFi: 'Millaista on työelämän kielitaito?',
+        scenarioEn: 'What is work-life language proficiency like?',
+        sampleFi:
+          'Työelämässä tarvitaan hyvää kielitaitoa. Pitää osata puhua, kirjoittaa ja ymmärtää ammattisanastoa. Suomessa tarvitaan usein suomea, mutta myös englantia tarvitaan kansainvälisissä tehtävissä.',
+      },
+      {
+        id: 'w-8',
+        scenarioFi: 'Millaista kieltä töissä tarvitaan?',
+        scenarioEn: 'What kind of language is needed at work?',
+        sampleFi:
+          'Töissä tarvitaan sekä arkikieltä että ammattikieltä. Pitää osata kommunikoida työkavereiden, asiakkaiden ja pomon kanssa. Tarvitaan myös sähköpostien kirjoittamista ja kokouksissa puhumista.',
+      },
+      {
+        id: 'w-9',
+        scenarioFi: 'Mikä on riittävä kielitaito?',
+        scenarioEn: 'What is sufficient language proficiency?',
+        sampleFi:
+          'Riittävä kielitaito tarkoittaa, että pystyy hoitamaan työtehtävät, ymmärtää ohjeet ja pystyy kommunikoimaan työyhteisössä. Taso B1-B2 on usein riittävä.',
+      },
+      {
+        id: 'w-10',
+        scenarioFi: "Käytä ilmausta 'perusteella' (on the basis of / by) kolmessa esimerkkilauseessa.",
+        scenarioEn: "Use the phrase 'perusteella' (on the basis of) in three example sentences.",
+        sampleFi:
+          "Millä perusteella sinä luulet, että minä en puhu totta? (On what basis do you think I'm not telling the truth?)\nPäätös tehtiin hakemuksen perusteella. (The decision was made based on the application.)\nHän valittiin työhön kokemuksen perusteella. (He was chosen for the job based on experience.)",
+      },
+      {
+        id: 'w-11',
+        scenarioFi: "Käytä ilmausta 'syystä tai toisesta' (for one reason or another) kolmessa esimerkkilauseessa.",
+        scenarioEn: "Use the phrase 'syystä tai toisesta' (for one reason or another) in three example sentences.",
+        sampleFi:
+          "Syystä tai toisesta Pekka ei tullut palaveriin. (For one reason or another, Pekka didn't come to the meeting.)\nSyystä tai toisesta en saanut työtä. (For one reason or another, I didn't get the job.)\nSyystä tai toisesta kone ei toimi. (For one reason or another, the machine doesn't work.)",
+      },
+      {
+        id: 'w-12',
+        scenarioFi: "Käytä ilmausta 'omaksi ilokseen' (for one's own enjoyment) kolmessa esimerkkilauseessa.",
+        scenarioEn: "Use the phrase 'omaksi ilokseen' (for one's own enjoyment) in three example sentences.",
+        sampleFi:
+          "Lidia opiskelee omaksi ilokseen. (Lidia studies for her own enjoyment.)\nHän soittaa pianoa omaksi ilokseen. (He plays piano for his own enjoyment.)\nOpettelen suomea omaksi ilokseni, vaikka en tarvitse sitä töissä. (I study Finnish for my own enjoyment, even though I don't need it at work.)",
+      },
+    ],
+    dialogues: [
+      {
+        id: 'd1',
+        titleFi: 'Ilmoitus sairaudesta pomolle',
+        titleEn: 'Informing the boss about illness',
+        turns: [
+          { speaker: 'Sinä', fi: '[Soitat ja pomo vastaa]', en: 'You call and boss answers', isPlaceholder: true },
+          { speaker: 'Pomo', fi: 'Nieminen.' },
+          { speaker: 'Sinä', fi: 'Hei, tässä [nimesi]. Soitan, koska olen sairas enkä pääse töihin tänään.' },
+          { speaker: 'Pomo', fi: 'Ahaa... no ei sille sitten mitään voi. Oletko soittanut jo työterveyteen?' },
+          { speaker: 'Sinä', fi: 'Kyllä, soitin juuri ja sain ajan lääkärille tänään kello 14.' },
+          { speaker: 'Pomo', fi: 'Selvä. Oliko sulla jotain sellaisia tärkeitä hommia kesken, että tarvitset sijaisen?' },
+          { speaker: 'Sinä', fi: 'Minulla on muutama tärkeä sähköposti lähetettävänä. Voisinko lähettää ne kotoa, jos jaksan?' },
+          { speaker: 'Pomo', fi: 'Selvä juttu. Nyt pikaista paranemista. Ilmoita sitten, kun tiedät, kuinka pitkä sairausloma sulle tuli.' },
+          { speaker: 'Sinä', fi: 'Kiitos! Ilmoitan heti kun tiedän. Nähdään pian.' },
+        ],
+      },
+      {
+        id: 'd2',
+        titleFi: 'Seminaarissa kollegan kanssa',
+        titleEn: 'At a seminar with a colleague',
+        turns: [
+          { speaker: 'Kollega', fi: 'Olipa hyvä esitys se toinen tänään! Tykkäsitkö sä?' },
+          { speaker: 'Sinä', fi: 'Kyllä tykkäsin! Se oli todella mielenkiintoinen ja puhuja oli hyvä.' },
+          { speaker: 'Kollega', fi: 'Mä en muista hänen nimeä. Katsotaan ohjelmasta. Odotas. Muistatko mihin aikaan hänen esitys oli?' },
+          { speaker: 'Sinä', fi: 'Hänen esitys oli kello 11. Hän puhui digitaalisesta markkinoinnista.' },
+          { speaker: 'Kollega', fi: 'Joo, tässä! Helena Roihu. Hän on todella hyvä puhuja! Mukaansatempaava. Mä ainakin inspiroiduin, kun kuuntelin. Entä sä?' },
+          { speaker: 'Sinä', fi: 'Kyllä, minäkin inspiroiduin! Hänellä oli hyviä esimerkkejä ja selkeä tapa puhua.' },
+          { speaker: 'Kollega', fi: 'Se kolmas puhuja oli myös hyvä, mutta teema ei ollut niin kiinnostava.' },
+          { speaker: 'Sinä', fi: 'Olen samaa mieltä. Hän puhui teknisistä yksityiskohdista, jotka eivät olleet kovin kiinnostavia.' },
+          { speaker: 'Kollega', fi: 'Kyllä! Ootas, se on tuolla salissa 3. Esitys alkaa viiden minuutin kuluttua. Haetaanko kahvit mukaan sinne?' },
+          { speaker: 'Sinä', fi: 'Hyvä idea! Haetaan kahvit ja mennään sitten saliin 3.' },
+        ],
+      },
+      {
+        id: 'd3',
+        titleFi: 'Tapaamisen sopiminen',
+        titleEn: 'Scheduling a meeting',
+        turns: [
+          { speaker: 'Kollega', fi: 'Kuule, meidän pitäs tavata ja jutella tästä hankkeesta. Milloin sulla olisi aikaa?' },
+          { speaker: 'Sinä', fi: 'Katsotaanpa kalenterista. Milloin sinulla olisi aikaa?' },
+          {
+            speaker: 'Kollega',
+            fi: 'Mulla on kalenteri ihan täynnä, mutta ootas mä tarkistan. Hmmm. Se ei onnistu. Sopisko sulle perjantaina aamupäivällä? Mulle sopis silloin mihin aikaan vaan.',
+          },
+          { speaker: 'Sinä', fi: 'Valitettavasti perjantai ei sovi minulle. Minulla on palaveri koko aamupäivän.' },
+          { speaker: 'Kollega', fi: 'Voi hitto. No sitten se menee väkisin parilla viikolla eteenpäin. Mites sitten toi tiistai kahdeskymmenesviides päivä?' },
+          { speaker: 'Sinä', fi: 'Kyllä, se sopii hyvin. Mihin aikaan?' },
+          { speaker: 'Kollega', fi: 'Juu se sopii. Onpa vaikea löytää yhteistä aikaa. Taitaa olla kiireisin aika vuodesta.' },
+          { speaker: 'Sinä', fi: 'Kyllä, näyttää siltä. Entä kello 14? Sopiiko se sinulle?' },
+          { speaker: 'Kollega', fi: 'No just näin se on. Mutta hyvä, että nyt on ainakin aika kalenterissa varattu. Mä varaan meille neukkarin ja laitan vaikka sulle viestin sitten, missä tavataan.' },
+          { speaker: 'Sinä', fi: 'Hyvä! Odotan viestiäsi. Nähdään tiistaina!' },
+        ],
+      },
+      {
+        id: 'd4',
+        titleFi: 'Työmatkasta keskustelu',
+        titleEn: 'Discussing a business trip',
+        turns: [
+          { speaker: 'Työkaveri', fi: 'No moi hei, pitkästä aikaa! Ei ole näkynyt. Missä sä oot ollut?' },
+          { speaker: 'Sinä', fi: 'Hei! Mä olin työmatkalla Berliinissä viikon.' },
+          { speaker: 'Työkaveri', fi: 'Jaa jaa. No miten reissu meni?' },
+          { speaker: 'Sinä', fi: 'Reissu meni hyvin. Tapasin asiakkaita ja pidin esityksen uudesta tuotteesta.' },
+          { speaker: 'Työkaveri', fi: 'Niin justiinsa. No oliko hyvät järjestelyt? Hotellit ja muut?' },
+          { speaker: 'Sinä', fi: 'Hotelli oli hyvä ja sijainti oli keskustassa. Kaikki sujui hyvin.' },
+          { speaker: 'Työkaveri', fi: 'Kuulostaa hyvältä! Millainen aamupala hotellissa oli?' },
+          { speaker: 'Sinä', fi: 'Aamupala oli mahtava! Siellä oli paljon vaihtoehtoja: leipää, hedelmiä, jugurttia ja lämmintä ruokaa.' },
+          { speaker: 'Työkaveri', fi: 'Se on välillä kiva käydä reissussa, mutta on ne työmatkat aika raskaita myös. Mikä fiilis sulla nyt on?' },
+          { speaker: 'Sinä', fi: 'Olen vähän väsynyt, mutta tyytyväinen. Työmatka onnistui hyvin, vaikka se oli raskas.' },
+          { speaker: 'Työkaveri', fi: 'Jep jep. Mut nyt pitää mennä jatkamaan hommia. Kiva nähdä taas.' },
+          { speaker: 'Sinä', fi: 'Kiitos, samoin! Nähdään myöhemmin!' },
+        ],
+      },
+    ],
+    reactions: [
+      {
+        id: 'r1',
+        scenarioFi: 'Sinulla on asiaa työkaverillesi ja menet tapaamaan häntä. Hän ei kuitenkaan ole työpisteellään. Lähetä hänelle WhatsAppilla ääniviesti, jossa kerrot asiasi.',
+        scenarioEn: "Your colleague isn't at their desk. Leave them a WhatsApp voice message.",
+        sampleFi: 'Hei, tässä [nimi]. Mä tulin sun työpisteelle, mutta sä et ole täällä. Mulla olisi asiaa siitä projektista, josta puhuttiin. Soita mulle, kun voit, niin jutellaan. Kiitos!',
+      },
+      {
+        id: 'r2',
+        scenarioFi: 'Sinun työpaikalle on tullut uusi työntekijä. Hän ei tiedä, mitä tehdä. Auta häntä.',
+        scenarioEn: "A new employee doesn't know what to do. Help them.",
+        sampleFi: 'Hei ja tervetuloa! Mä näytän sulle, miten tämä homma toimii. Tässä on sun työpiste, ja tässä on tietokone. Täältä löydät ohjelmat. Jos tarvitset apua, kysy vaan!',
+      },
+      {
+        id: 'r3',
+        scenarioFi: 'Olet ollut työhaastattelussa. Soitat haastattelijalle, koska haluat vielä kysyä jotakin (keksi itse, mitä).',
+        scenarioEn: 'After a job interview, call the interviewer with a follow-up question.',
+        sampleFi: 'Hei, tässä [nimi]. Kiitos vielä eilisestä haastattelusta. Mulla olisi yksi kysymys: milloin voisin kuulla päätöksen? Ja minkälainen työaikataulu teillä on? Kiitos!',
+      },
+      {
+        id: 'r4',
+        scenarioFi: 'Sinun palkassa on virhe (keksi itse, mikä). Soitat palkanlaskijalle.',
+        scenarioEn: 'There is an error in your salary. Call payroll.',
+        sampleFi: 'Hei, tässä [nimi]. Huomasin, että palkassani on virhe. Minulta puuttuu 100 euroa tästä kuukauden palkasta. Voisitteko tarkistaa asian?',
+      },
+      {
+        id: 'r5',
+        scenarioFi: 'Työkaverisi täyttää pian 50 vuotta. Sinä haluat järjestää ohjelmaa. Ehdota työkavereille, miten voitte juhlia.',
+        scenarioEn: "A colleague is turning 50 soon. Suggest to coworkers how to celebrate.",
+        sampleFi: 'Hei kaikki! Maija täyttää pian 50 vuotta. Ehdotan, että järjestetään yllätysjuhlat kahvihuoneessa. Tuon kakun, ja voitte tuoda jotain pientä syötävää. Mitä mieltä olette?',
+      },
+      {
+        id: 'r6',
+        scenarioFi: 'Olet saanut uuden työpaikan ja sinun täytyy irtisanoutua. Kerro pomolle tilanne.',
+        scenarioEn: 'You got a new job and need to resign. Tell your boss.',
+        sampleFi: 'Hei, mulla olisi asiaa. Olen saanut uuden työpaikan, joten minun täytyy irtisanoutua. Olen todella kiitollinen teillä saamastani kokemuksesta. Irtisanoutumisaikani on kuukausi.',
+      },
+      {
+        id: 'r7',
+        scenarioFi: 'Tiedät todella hyvän työntekijän sinun projektiin. Suosittele häntä sinun pomolle.',
+        scenarioEn: 'You know a great employee for your project. Recommend them to your boss.',
+        sampleFi:
+          'Hei, mä haluaisin suositella kollegaani Liisaa projektiin. Hän on todella ammattitaitoinen, työskentelee tehokkaasti ja tulee hyvin toimeen ihmisten kanssa. Hän sopisi erinomaisesti tähän projektiin.',
+      },
+      {
+        id: 'r8',
+        scenarioFi: 'Sinun täytyy varata neuvotteluhuone. Kerro, milloin tarvitset sitä ja kuinka ison neuvotteluhuoneen tarvitset.',
+        scenarioEn: 'You need to book a meeting room. State when and how big a room you need.',
+        sampleFi: 'Hei, haluaisin varata neuvotteluhuoneen ensi viikon tiistaille kello 10-12. Tarvitsemme tilaa 6 hengelle ja videoneuvottelulaitteet. Onko huonetta vapaana?',
+      },
+      {
+        id: 'r9',
+        scenarioFi: 'Työkaverisi ei ole tehnyt sovittua asiaa (keksi itse, mitä). Olet hänelle vihainen. Kerro, mitä mieltä olet siitä, että hän ei tehnyt, mitä oli sovittu.',
+        scenarioEn: "A colleague didn't do what was agreed. Tell them how you feel about it.",
+        sampleFi: 'Hei, mä olen pettynyt. Sanoit, että hoidat raportin, mutta et ole tehnyt sitä. Nyt mulla on kiire, ja joudun tekemään sen itse. Olisit voinut kertoa aiemmin, ettet ehtinyt.',
+      },
+      {
+        id: 'r10',
+        scenarioFi: 'Sinulla on liikaa töitä ja olet tosi väsynyt. Ehdota sinun pomolle, miten sinun töitä voi helpottaa.',
+        scenarioEn: "You're overworked and tired. Suggest to your boss how your workload could be eased.",
+        sampleFi: 'Hei, mä olen todella väsynyt, koska mulla on liikaa töitä. Voisiko osa töistä siirtää toiselle? Tai voisimmeko palkata harjoittelijan auttamaan? Tarvitsen apua.',
+      },
+      {
+        id: 'r11',
+        scenarioFi: 'Työkaverisi jää äitiyslomalle. Mitä sanot?',
+        scenarioEn: "A colleague is going on maternity leave. What do you say?",
+        sampleFi: 'Onneksi olkoon! Mahtava uutinen! Olen todella iloinen puolestasi. Nauti äitiyslomasta ja vauvan kanssa olemisesta. Pidämme sinuun yhteyttä!',
+      },
+      {
+        id: 'r12',
+        scenarioFi: 'Sinun ystävä on saanut potkut. Mitä sanot?',
+        scenarioEn: "Your friend got fired. What do you say?",
+        sampleFi: 'Voi ei! Olen todella pahoillani kuullessani tämän. Se on varmasti vaikeaa. Tarvitsetko apua työnhaussa? Voimme yhdessä katsoa työpaikkailmoituksia.',
+      },
+      {
+        id: 'r13',
+        scenarioFi: 'Sinun ystävä on saanut uuden, tosi hyvän työpaikan. Mitä sanot?',
+        scenarioEn: 'Your friend got a great new job. What do you say?',
+        sampleFi: 'Onneksi olkoon! Tämä on hienoa! Olen todella iloinen puolestasi. Millainen se työ on? Kerro lisää!',
+      },
+      {
+        id: 'r14',
+        scenarioFi: 'Sinun pomo ilmoittaa, että tulee iso muutos organisaatiossa ja henkilökunnasta irtisanotaan 20%. Kerro työkaverille, mitä ajattelet asiasta.',
+        scenarioEn: 'Your boss announces 20% layoffs. Tell a colleague what you think.',
+        sampleFi:
+          'Tämä on todella huono uutinen. 20% irtisanomiset on iso määrä. Olen huolissani omasta paikastani. Pelkään, että moni menettää työpaikkansa. Tämä vaikuttaa koko työyhteisöön.',
+      },
+      {
+        id: 'r15',
+        scenarioFi: 'Sinun palkkasi on mielestäsi liian pieni. Perustele pomolle, miksi tarvitset palkankorotuksen.',
+        scenarioEn: 'You think your salary is too low. Argue to your boss why you need a raise.',
+        sampleFi:
+          'Hei, haluaisin keskustella palkastani. Olen työskennellyt täällä jo kaksi vuotta ja hoitanut vastuualueitani hyvin. Olen myös saanut positiivista palautetta asiakkailta. Uskon, että ansaitsisin palkankorotuksen.',
+      },
+      {
+        id: 'r16',
+        scenarioFi: 'Haluat osallistua koulutukseen (keksi itse, mihin). Kerro pomolle, mitä hyötyä koulutuksesta on.',
+        scenarioEn: 'You want to attend training. Tell your boss the benefits.',
+        sampleFi:
+          'Hei, haluaisin osallistua digitaalisen markkinoinnin koulutukseen. Se auttaisi minua kehittämään taitojani ja tuo uusia ideoita meidän tiimiin. Koulutus kestää kolme päivää.',
+      },
+      {
+        id: 'r17',
+        scenarioFi: 'Lapsesi tulee kotiin ja itkee. Koulussa on tapahtunut jotakin pahaa (keksi itse, mitä). Selitä asia opettajalle.',
+        scenarioEn: 'Your child comes home crying about something at school. Explain to the teacher.',
+        sampleFi: 'Hei, poikani tuli kotiin itkien. Hän kertoi, että joku kiusasi häntä koulussa tänään. Haluaisin tietää, mitä tapahtui ja miten voimme ratkaista tämän.',
+      },
+      {
+        id: 'r18',
+        scenarioFi: 'Sinä näit, kun koulun pihalla joku lapsi kiusasi toista lasta. Soitat kouluun rehtorille ja kerrot asiasta.',
+        scenarioEn: 'You saw bullying at a schoolyard. Call the principal to report it.',
+        sampleFi: 'Hei, tässä [nimi]. Näin tänään koulun pihalla, kun yksi lapsi kiusasi toista. Haluaisin ilmoittaa tästä, jotta koulu voi puuttua asiaan. Kiusaaminen ei ole hyväksyttävää.',
+      },
+    ],
+    longSpeaking: [
+      {
+        id: 'k-a',
+        titleFi: 'Koulu kotimaassani',
+        titleEn: 'School in my home country',
+        instructionsFi:
+          'Kuvaile kotimaasi koulujärjestelmää, sen hyviä ja huonoja puolia. Mikä on erilaista sinun kotimaassasi koulussa ja Suomessa? Mitä tiedät? Mitä haluaisit tuoda sinun kotimaan koulusta Suomeen?',
+        sampleFi:
+          'Kotimaassani koulujärjestelmä on erilainen kuin Suomessa. Koulu alkaa 7-vuotiaana ja kestää 12 vuotta. Koulupäivät ovat pitkiä, noin kello 8-16. Luokat ovat suuria, jopa 30-40 oppilasta.\n\nHyviä puolia kotimaan koulussa on, että oppilaat oppivat ahkeruutta ja kurinalaisuutta. Koulussa on paljon kotitehtäviä ja kokeita. Huonoja puolia on, että koulu on kilpailullinen ja stressaava.\n\nSuomessa koulu on rennompi. Täällä on vähemmän kotitehtäviä, ja oppilaita kannustetaan itsenäisyyteen. Koulupäivät ovat lyhyempiä ja lounas on ilmainen.\n\nHaluaisin tuoda kotimaastani Suomeen vahvan oppimiskulttuurin ja kunnioituksen opettajia kohtaan. Suomesta haluaisin tuoda kotimaahani rennomman ilmapiirin ja yksilöllisen tuen.',
+      },
+      {
+        id: 'k-b',
+        titleFi: 'Minä koulussa',
+        titleEn: 'Me at school',
+        instructionsFi:
+          'Millainen koululainen sinä olit? Mikä on paras koulumuistosi? Mitä inhosit koulussa? Mistä pidit? Millainen oli sinun paras opettaja? Miksi?',
+        sampleFi:
+          "Olin koulussa ahkera ja utelias oppilas. Pidin erityisesti matematiikasta ja kielistä. Paras koulumuistoni on, kun voitin matematiikkakilpailun koulussa. Se oli hieno hetki, koska sain tunnustusta.\n\nInhosin koulussa liikuntatunteja, koska en ollut hyvä urheilussa. Pidin kirjallisuudesta ja piirtämisestä. Paras opettajani oli äidinkielen opettaja. Hän oli kannustava ja uskoi minuun. Hän sanoi aina: 'Sinä pystyt parempaan.' Hän auttoi minua löytämään intohimon kirjoittamiseen.\n\nKoulu oli minulle tärkeä paikka, vaikka se oli joskus vaikeaa. Opin siellä paljon elämästä ja itsestäni.",
+      },
+      {
+        id: 'k-c',
+        titleFi: 'Ensimmäinen työpaikkani',
+        titleEn: 'My first job',
+        instructionsFi: 'Mikä oli sinun ensimmäinen työpaikkasi? Millaista työtä teit? Piditkö siitä? Miksi / miksi et? Miten sait työn? Millainen palkka oli?',
+        sampleFi:
+          'Ensimmäinen työpaikkani oli kesätyö ravintolassa. Olin 16-vuotias. Työskentelin tarjoilijana ja tiskarin apulaisena. Työ oli fyysisesti raskasta: kannoin astioita, pesin tiskiä ja siivosin pöytiä.\n\nPidin työstä, koska sain omaa rahaa ja opin paljon. Opin työskentelemään nopeasti ja huolellisesti. Opin myös, miten asiakkaiden kanssa puhutaan.\n\nSain työn ystävän suosituksesta. Palkka oli pieni, noin 7 euroa tunnissa, mutta se oli hyvä ensimmäiseksi työksi. Työ opetti minulle ahkeruutta ja vastuullisuutta. Se oli arvokas kokemus.',
+      },
+      {
+        id: 'k-d',
+        titleFi: 'Normaali työpäiväni',
+        titleEn: 'My typical workday',
+        instructionsFi: 'Millainen on sinun tavallinen työpäivä? Mitä teet töissä? Milloin sinulla on tauko? Mistä pidät työssäsi? Mistä et?',
+        sampleFi:
+          'Normaali työpäiväni alkaa kello 8. Menen töihin bussilla. Aamulla tarkistan sähköpostit ja teen päivän suunnitelman. Sitten pidän palavereita tiimin kanssa.\n\nTyössäni suunnittelen markkinointikampanjoita ja kirjoitan tekstejä. Pidän lounastauon kello 12. Lounaan jälkeen jatkan töitä. Iltaisin kello 16 lähden kotiin.\n\nPidän työssäni luovuudesta ja siitä, että saan tehdä erilaisia asioita. En pidä siitä, että välillä on liikaa kiirettä ja stressiä. Pidän myös työkavereista, he ovat mukavia.\n\nTyö on mielenkiintoista ja haastavaa. Se sopii minulle hyvin.',
+      },
+    ],
+    opinions: [
+      {
+        id: 'm-a',
+        titleFi: 'Työn pitää olla hauskaa',
+        titleEn: 'Work should be fun',
+        instructionsFi: 'Pitääkö työstä nauttia vai onko se vain tapa saada rahaa? Miksi/miksi ei työn pitäisi olla hauskaa? Millaisesta työstä sinä nautit? Mikä on tylsää?',
+        sampleFi:
+          'Mielestäni työn pitäisi olla sekä hauskaa että mielekästä, mutta tiedän, että kaikki työ ei voi olla hauskaa. Työ on tapa saada rahaa, mutta se on myös iso osa elämää. Vietämme paljon aikaa töissä, joten on tärkeää, että työ on mielenkiintoista.\n\nTyöstä pitäisi nauttia, koska se vaikuttaa hyvinvointiin. Jos työ on tylsää ja ikävää, se voi aiheuttaa stressiä ja masennusta. On kuitenkin realistista ymmärtää, että kaikilla ei ole mahdollisuutta tehdä unelmatyötä.\n\nNautin työstä, jossa saan olla luova, auttaa muita ja oppia uutta. Tylsää on rutiinityö, jossa ei ole haasteita. Paras työ on sellainen, jossa voi kehittyä ja tuntea itsensä hyödylliseksi.',
+      },
+      {
+        id: 'm-b',
+        titleFi: 'Opiskelu kannattaa aina',
+        titleEn: 'Studying is always worthwhile',
+        instructionsFi: 'Miksi opiskelu on/ei ole tärkeää? Millaisia asioita on hyvä opiskella? Mikä on turhaa? Maailma muuttuu. Muuttuuko koulu?',
+        sampleFi:
+          'Opiskelu on aina tärkeää, koska se kehittää taitoja ja avaa ovia. Ilman opiskelua on vaikea menestyä työelämässä. Opiskelu antaa itseluottamusta ja auttaa ymmärtämään maailmaa.\n\nOn hyvä opiskella asioita, jotka kiinnostavat ja joista on hyötyä työelämässä. Kielet, matematiikka, tietotekniikka ja viestintä ovat tärkeitä. Turhaa on opiskella asioita, joita ei koskaan käytä.\n\nMaailma muuttuu nopeasti, ja koulun pitää muuttua mukana. Nykyään tarvitaan enemmän digitaalisia taitoja ja ongelmanratkaisukykyä. Koulun pitäisi opettaa myös elämäntaitoja, kuten talouden hallintaa ja ihmissuhdetaitoja.\n\nOpiskelu kannattaa aina, koska se on investointi itseen. Se maksaa itsensä takaisin.',
+      },
+      {
+        id: 'm-c',
+        titleFi: 'Nykyään kaikilla on aina kiire',
+        titleEn: 'Nowadays everyone is always busy',
+        instructionsFi: 'Onko ihmisten ajankäyttö muuttunut? Miten? Miksi näyttää siltä, että kaikilla on kiire? Mitä haittaa/hyötyä kiireestä on?',
+        sampleFi:
+          'Kyllä, ihmisten ajankäyttö on muuttunut. Nykyään kaikilla on kiire, koska elämä on nopeampaa ja vaatimukset ovat korkeammat. Työt vievät paljon aikaa, ja monilla on myös perhe, harrastukset ja sosiaalinen elämä.\n\nKiire voi johtua siitä, että yritämme tehdä liikaa samaan aikaan. Teknologia, kuten puhelimet ja sähköposti, tekee työstä jatkuvaa. On vaikea olla tavoitettavissa koko ajan.\n\nKiireestä on haittaa: se lisää stressiä, väsymystä ja sairauksia. Se voi vahingoittaa ihmissuhteita, koska ei ole aikaa olla läsnä.\n\nKiireellä voi olla myös hyötyä: se voi lisätä tehokkuutta ja motivoida. Mutta on tärkeää löytää tasapaino. Joskus pitää hidastaa ja nauttia elämästä.',
+      },
+      {
+        id: 'm-d',
+        titleFi: 'Tulevaisuudessa robotit tekevät ihmisten työt',
+        titleEn: "In the future, robots will do people's work",
+        instructionsFi:
+          'Uskotko, että robotit tekevät ihmisten työt? Miksi / miksi et? Mitä hyötyä ja haittaa automaatiosta on töissä? Miten tekoäly (AI) voi auttaa meitä? Mitä riskejä tekoälyssä on?',
+        sampleFi:
+          'Uskon, että robotit ja tekoäly tekevät yhä enemmän töitä tulevaisuudessa. Ne korvaavat erityisesti rutiinitehtäviä ja fyysistä työtä. Esimerkiksi tehtaissa ja logistiikassa robotit jo tekevät paljon.\n\nAutomaation hyötyjä ovat tehokkuus, tarkkuus ja turvallisuus. Robotit eivät väsy ja tekevät vähemmän virheitä kuin ihmiset. Haitat ovat, että monet työpaikat voivat kadota ja ihmiset joutuvat kouluttautumaan uudelleen.\n\nTekoäly voi auttaa meitä monella tavalla: lääketieteessä, liikenteessä, asiakaspalvelussa ja tutkimuksessa. Se voi tehdä elämästä helpompaa.\n\nRiskejä tekoälyssä on, että se voi olla epäeettistä tai syrjivää, jos sitä ei ohjata oikein. On tärkeää, että ihmiset valvovat tekoälyä ja sen päätöksiä.',
+      },
+      {
+        id: 'm-e',
+        titleFi: 'Koulupuku on hyvä asia',
+        titleEn: 'School uniform is a good thing',
+        instructionsFi: 'Onko sinun kotimaassa koulupuku? Mitä haittaa ja hyötyä siitä on? Millainen pukeutuminen sopii kouluun?',
+        sampleFi:
+          'Kotimaassani on koulupuku. Oppilaat käyttävät valkoisia paitoja ja tummia housuja tai hameita. Se on pakollinen kaikissa kouluissa.\n\nKoulupuvussa on hyötyä: se luo yhdenvertaisuutta, koska kaikki näyttävät samalta. Se vähentää vertailua ja kiusaamista. Se myös säästää aikaa, kun ei tarvitse miettiä pukeutumista.\n\nHaitat ovat, että se rajoittaa yksilöllisyyttä ja voi olla epämukava. Jotkut oppilaat eivät pidä siitä, että heidän pitää pukeutua tietyllä tavalla.\n\nSuomessa ei ole koulupukua. Oppilaat pukeutuvat rennosti ja oman tyylinsä mukaan. Mielestäni kouluun sopii siisti ja mukava pukeutuminen. Tärkeintä on, että vaatteet eivät häiritse opiskelua.',
+      },
+      {
+        id: 'm-f',
+        titleFi: 'Lasten kasvatus Suomessa on hyvä / huono',
+        titleEn: 'Child rearing in Finland is good/bad',
+        instructionsFi: 'Onko tavassa kasvattaa lapsia Suomessa / sinun kotimaassa eroja? Mitä hyviä ja huonoja puolia molemmissa on?',
+        sampleFi:
+          'Suomessa ja kotimaassani on eroja lasten kasvatuksessa. Suomessa kasvatus on vapaampaa ja lapsia kannustetaan itsenäisyyteen. Lapsilla on paljon vapautta ja he saavat tehdä omia päätöksiä.\n\nKotimaassani kasvatus on kurinalaisempaa. Lapsilta odotetaan kuuliaisuutta ja kunnioitusta aikuisia kohtaan. Vanhemmat ovat tiukempia ja asettavat selkeät säännöt.\n\nSuomalaisessa kasvatuksessa hyvää on, että lapset oppivat itsenäisyyttä ja luovuutta. He uskaltavat sanoa mielipiteensä. Huonoa voi olla, että rajat ovat välillä liian löysät.\n\nKotimaani kasvatuksessa hyvää on, että lapset oppivat kunnioittamaan vanhempiaan ja auktoriteetteja. Huonoa on, että lapset eivät aina uskalla ilmaista itseään.',
+      },
+      {
+        id: 'm-g',
+        titleFi: 'Suomi tarvitsee lisää työntekijöitä ulkomailta',
+        titleEn: 'Finland needs more workers from abroad',
+        instructionsFi:
+          'Miten Suomeen voisi houkutella lisää ihmisiä töihin? Millaisiin töihin Suomeen tarvitaan lisää ihmisiä? Mitä haasteita tai ongelmia on siinä, että palkataan ihmisiä suoraan ulkomailta?',
+        sampleFi:
+          'Suomi tarvitsee lisää työntekijöitä ulkomailta, koska väestö vanhenee ja tietyillä aloilla on työvoimapulaa. Erityisesti hoitoalalla, rakennusalalla ja teknologia-alalla tarvitaan osaajia.\n\nSuomeen voisi houkutella työntekijöitä parantamalla maahanmuuttoprosesseja, tarjoamalla kielikoulutusta ja helpottamalla työlupia. Myös asumisen ja perheen tukeminen on tärkeää.\n\nHaasteita on: kieli on vaikea oppia, työkulttuuri on erilainen ja byrokratia voi olla hidasta. Myös syrjintä ja ennakkoluulot voivat olla esteitä.\n\nOn tärkeää, että ulkomailta tulevat työntekijät saavat riittävää tukea ja koulutusta. Suomi tarvitsee heitä, joten meidän pitää olla avoimia ja ystävällisiä.',
+      },
+    ],
+    writingTasks: [
+      {
+        id: 'w1',
+        titleFi: 'Viesti',
+        instructionsFi:
+          'Haluat vaihtaa vuoroa työkaverin kanssa. Hän ei ole nyt paikalla, mutta sinulla on kiire, etkä tiedä hänen puhelinnumeroaan. Jätät hänen työpöydälle viestin. Aloita ja lopeta viesti sopivalla tavalla.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei [nimi]!\n\nMinulla olisi pyyntö: voisimmeko vaihtaa vuoroja? Minulla olisi tärkeä lääkäriaika ensi perjantaina kello 10, joten en pääse töihin silloin.\n\nVoisitko ottaa minun perjantaivuoroni? Voin tehdä sinun maanantai- tai keskiviikkopäivän. Mikä sinulle sopisi?\n\nOlisin todella kiitollinen, jos voisit auttaa. Ota minuun yhteyttä, kun tulet töihin, niin sovitaan yksityiskohdat.\n\nKiitos jo etukäteen!\n\nTerveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w2',
+        titleFi: 'Kirje opettajalle',
+        instructionsFi: 'Haluat lähettää kiitoskirjeen omalle tai lapsesi opettajalle.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei [opettajan nimi]!\n\nHaluan lähettää teille kiitoskirjeen. Olette ollut lapseni opettajana tänä vuonna, ja haluan kiittää teitä kaikesta työstä.\n\nOlette opettanut lapselleni paljon: matematiikkaa, lukemista ja kirjoittamista. Tärkeintä on, että olette opettanut häntä olemaan itsevarma ja utelias. Olette aina kannustanut häntä ja uskonut häneen.\n\nMielestäni olette erinomainen opettaja. Olette kärsivällinen, ystävällinen ja innostava. Lapseni rakastaa teidän tunteja, ja hän on oppinut paljon.\n\nToivon, että te muistatte minut ja lapseni. Toivottavasti näemme vielä.\n\nKiitos vielä kerran kaikesta!\n\nYstävällisin terveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w3',
+        titleFi: 'Mielipide',
+        instructionsFi: 'Valitse A tai B ja kirjoita mielipidekirjoitus.',
+        bulletsFi: [
+          'A. Suomalainen koulu on maailman paras. (The Finnish school is the best in the world.)',
+          'B. Suomessa on pakko osata suomea. (In Finland, you must know Finnish.)',
+        ],
+        sampleFi:
+          'A. Suomalainen koulu on maailman paras.\n\nOlen melko samaa mieltä siitä, että suomalainen koulu on yksi maailman parhaista. Suomessa koulutus on ilmaista ja kaikilla on yhtäläinen mahdollisuus oppia.\n\nSuomalainen koulu on rennompi kuin monissa muissa maissa. Oppilailla on vähemmän kotitehtäviä ja kokeita, mutta oppimistulokset ovat hyviä. Opettajat ovat korkeasti koulutettuja ja ammattitaitoisia.\n\nKoulussa panostetaan yksilölliseen tukeen. Jokainen oppilas saa apua, jos hän tarvitsee sitä. Myös kouluruoka on ilmainen ja terveellinen.\n\nTietysti mikään koulu ei ole täydellinen. Suomalaisessa koulussa voisi olla enemmän liikuntaa ja taideaineita. Myös digitaalisia taitoja voisi opettaa enemmän.\n\nKaiken kaikkiaan suomalainen koulu on erinomainen. Se on tasa-arvoinen, kannustava ja laadukas.\n\n---\n\nB. Suomessa on pakko osata suomea.\n\nOlen samaa mieltä siitä, että Suomessa on tärkeää osata suomea. Suomi on maan virallinen kieli, ja sitä käytetään arjessa, töissä ja virastoissa.\n\nIlman suomen kielen taitoa on vaikea saada työtä, varsinkin jos työ vaatii asiakaspalvelua tai kommunikaatiota. Myös byrokratia on helpompaa, jos ymmärtää suomea.\n\nSuomea tarvitaan myös sosiaalisessa elämässä. Suomalaiset puhuvat mielellään suomea, vaikka he osaavat usein englantia. Kielitaito auttaa ystävystymään ja integroitumaan yhteiskuntaan.\n\nTietysti on mahdollista pärjätä englannilla esimerkiksi kansainvälisissä yrityksissä tai yliopistoissa. Mutta pitkällä aikavälillä suomen kielen osaaminen on välttämätöntä.\n\nSuomi on kaksikielinen maa, ja ruotsilla pärjää tietyillä alueilla. Mutta yleisesti ottaen suomen kielen taito on avain onnistuneeseen elämään Suomessa.',
+      },
+    ],
+    vocabSummary: [
+      { fi: 'työ', en: 'work/job' },
+      { fi: 'koulu', en: 'school' },
+      { fi: 'ammatti', en: 'profession' },
+      { fi: 'koulutus', en: 'education/training' },
+      { fi: 'työpaikka', en: 'workplace' },
+      { fi: 'työkaveri', en: 'colleague' },
+      { fi: 'pomo', en: 'boss' },
+      { fi: 'palkka', en: 'salary' },
+      { fi: 'palkankorotus', en: 'pay raise' },
+      { fi: 'työhaastattelu', en: 'job interview' },
+      { fi: 'irtisanoutua', en: 'to resign' },
+      { fi: 'työmatka', en: 'business trip' },
+      { fi: 'palaveri', en: 'meeting' },
+      { fi: 'esitys', en: 'presentation' },
+      { fi: 'projekti', en: 'project' },
+      { fi: 'kielitaito', en: 'language skills' },
+      { fi: 'opiskella', en: 'to study' },
+      { fi: 'oppilas', en: 'student' },
+      { fi: 'opettaja', en: 'teacher' },
+      { fi: 'kokous', en: 'meeting' },
+      { fi: 'sairausloma', en: 'sick leave' },
+      { fi: 'äitiysloma', en: 'maternity leave' },
+      { fi: 'kokemus', en: 'experience' },
+      { fi: 'vastuu', en: 'responsibility' },
+      { fi: 'tiimi', en: 'team' },
+      { fi: 'työelämä', en: 'working life' },
+      { fi: 'työvoima', en: 'workforce' },
+      { fi: 'koulupuku', en: 'school uniform' },
+      { fi: 'tekoäly', en: 'AI / artificial intelligence' },
+      { fi: 'automaatio', en: 'automation' },
+      { fi: 'tasa-arvo', en: 'equality' },
+    ],
+  },
 ]
 
 export function conversationChapter(id: string): ConversationChapter | undefined {
