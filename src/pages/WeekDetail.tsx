@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { getWeek } from '../data/curriculum'
 import { READING_BY_WEEK, LISTENING_BY_WEEK, WRITING_BY_WEEK, SPEAKING_BY_WEEK, weekHasFullContent } from '../data/content'
@@ -5,6 +6,7 @@ import { vocabForWeek } from '../data/vocab'
 import { useProgress } from '../context/ProgressContext'
 import LevelPill from '../components/LevelPill'
 import GrammarPanel from '../components/GrammarPanel'
+import VocabPracticeTabs from '../components/VocabPracticeTabs'
 
 const SKILLS = [
   { key: 'reading', label: 'Lukeminen', icon: '📖' },
@@ -17,6 +19,7 @@ export default function WeekDetail() {
   const { weekId } = useParams()
   const { state } = useProgress()
   const week = getWeek(Number(weekId))
+  const [gameOpen, setGameOpen] = useState(false)
 
   if (!week) return <Navigate to="/roadmap" replace />
 
@@ -128,6 +131,20 @@ export default function WeekDetail() {
           ))}
         </div>
       </section>
+
+      {vocab.length > 0 && (
+        <section className="rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <button onClick={() => setGameOpen((o) => !o)} className="flex w-full items-center justify-between gap-3 px-5 py-3 text-left">
+            <span className="text-sm font-semibold text-slate-800">🎮 Harjoittele viikon sanastoa pelinä</span>
+            <span className="text-slate-400">{gameOpen ? '−' : '+'}</span>
+          </button>
+          {gameOpen && (
+            <div className="border-t border-slate-100 px-5 py-4">
+              <VocabPracticeTabs items={vocab} />
+            </div>
+          )}
+        </section>
+      )}
 
       <section className="grid gap-3 sm:grid-cols-2">
         {SKILLS.map(({ key, label, icon }) => {
