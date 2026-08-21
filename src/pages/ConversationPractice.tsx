@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { CONVERSATION_CHAPTERS } from '../data/conversationPractice'
 import LevelPill from '../components/LevelPill'
 import BookVocabQuiz from '../components/BookVocabQuiz'
@@ -23,9 +23,10 @@ function ListenButton({ text }: { text: string }) {
   )
 }
 
-type Section = 'sanasto' | 'dialogit' | 'reagointi' | 'kertominen' | 'mielipide' | 'kirjoittaminen' | 'sanastolista'
+type Section = 'lammittely' | 'sanasto' | 'dialogit' | 'reagointi' | 'kertominen' | 'mielipide' | 'kirjoittaminen' | 'sanastolista'
 
-const SECTIONS: { key: Section; label: string; icon: string }[] = [
+const ALL_SECTIONS: { key: Section; label: string; icon: string }[] = [
+  { key: 'lammittely', label: 'Lämmittely', icon: '🔥' },
   { key: 'sanasto', label: 'Sanasto', icon: '📖' },
   { key: 'dialogit', label: 'Dialogit', icon: '💬' },
   { key: 'reagointi', label: 'Reagointi', icon: '⚡' },
@@ -37,8 +38,21 @@ const SECTIONS: { key: Section; label: string; icon: string }[] = [
 
 export default function ConversationPractice() {
   const [chapterId, setChapterId] = useState(CONVERSATION_CHAPTERS[0].id)
-  const [section, setSection] = useState<Section>('sanasto')
   const chapter = CONVERSATION_CHAPTERS.find((c) => c.id === chapterId) ?? CONVERSATION_CHAPTERS[0]
+
+  const hasSanasto = Boolean(chapter.vocabQuiz?.length || chapter.crossword?.length || chapter.discussionQuestions?.length)
+  const sections = ALL_SECTIONS.filter((s) => {
+    if (s.key === 'lammittely') return Boolean(chapter.warmup?.length)
+    if (s.key === 'sanasto') return hasSanasto
+    return true
+  })
+
+  const [section, setSection] = useState<Section>(sections[0].key)
+
+  useEffect(() => {
+    setSection(sections[0].key)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [chapterId])
 
   return (
     <div className="space-y-5">
@@ -71,7 +85,7 @@ export default function ConversationPractice() {
       </div>
 
       <div className="flex flex-wrap gap-1.5">
-        {SECTIONS.map((s) => (
+        {sections.map((s) => (
           <button
             key={s.key}
             onClick={() => setSection(s.key)}
@@ -84,30 +98,47 @@ export default function ConversationPractice() {
         ))}
       </div>
 
+      {section === 'lammittely' && chapter.warmup && (
+        <div>
+          <p className="mb-3 text-sm text-slate-500">Lämmittelykysymyksiä ja -tehtäviä aiheesta. Warm-up questions and tasks on the topic.</p>
+          <div className="space-y-3">
+            {chapter.warmup.map((w) => (
+              <RevealPrompt key={w.id} promptFi={w.scenarioFi} promptEn={w.scenarioEn} sampleFi={w.sampleFi} revealLabel="Näytä mallivastaus →" />
+            ))}
+          </div>
+        </div>
+      )}
+
       {section === 'sanasto' && (
         <div className="space-y-5">
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Sanastotesti</h2>
-            <BookVocabQuiz items={chapter.vocabQuiz} />
-          </div>
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Ristikko: Mikä sana?</h2>
-            <FillInDrill instructions="Lue vihjeet ja keksi oikea sana." items={chapter.crossword} />
-          </div>
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Keskustelukysymykset</h2>
-            <div className="space-y-2">
-              {chapter.discussionQuestions.map((q, i) => (
-                <div key={i} className="rounded-lg border border-slate-200 bg-white p-3 text-sm">
-                  <p className="inline-flex items-center font-medium text-slate-800">
-                    {q.fi}
-                    <ListenButton text={q.fi} />
-                  </p>
-                  <p className="text-xs text-slate-400">{q.en}</p>
-                </div>
-              ))}
+          {chapter.vocabQuiz && chapter.vocabQuiz.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Sanastotesti</h2>
+              <BookVocabQuiz items={chapter.vocabQuiz} />
             </div>
-          </div>
+          )}
+          {chapter.crossword && chapter.crossword.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Ristikko: Mikä sana?</h2>
+              <FillInDrill instructions="Lue vihjeet ja keksi oikea sana." items={chapter.crossword} />
+            </div>
+          )}
+          {chapter.discussionQuestions && chapter.discussionQuestions.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Keskustelukysymykset</h2>
+              <div className="space-y-2">
+                {chapter.discussionQuestions.map((q, i) => (
+                  <div key={i} className="rounded-lg border border-slate-200 bg-white p-3 text-sm">
+                    <p className="inline-flex items-center font-medium text-slate-800">
+                      {q.fi}
+                      <ListenButton text={q.fi} />
+                    </p>
+                    <p className="text-xs text-slate-400">{q.en}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
 

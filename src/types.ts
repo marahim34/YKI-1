@@ -261,9 +261,10 @@ export interface ConversationChapter {
   titleFi: string
   titleEn: string
   level: CefrLevel
-  vocabQuiz: BookPracticeVocabItem[]
-  discussionQuestions: { fi: string; en: string }[]
-  crossword: BookPracticeDrillItem[]
+  warmup?: ReactionPrompt[]
+  vocabQuiz?: BookPracticeVocabItem[]
+  discussionQuestions?: { fi: string; en: string }[]
+  crossword?: BookPracticeDrillItem[]
   dialogues: DialogueScenario[]
   reactions: ReactionPrompt[]
   longSpeaking: EssayTask[]

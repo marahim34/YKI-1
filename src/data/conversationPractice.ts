@@ -594,6 +594,447 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
       { fi: 'sukulainen', en: 'relative' },
     ],
   },
+  {
+    id: 'conv-ch2',
+    titleFi: 'Luku 2: Ostokset, palvelut ja arki',
+    titleEn: 'Chapter 2: Shopping, services and everyday life',
+    level: 'B1',
+    warmup: [
+      { id: 'w-1', scenarioFi: 'Mitä normaalisti ostat kaupasta?', scenarioEn: 'What do you normally buy from the store?', sampleFi: 'Normaalisti ostan ruokaa, kuten leipää, maitoa, juustoa, hedelmiä ja vihanneksia. Ostan myös kahvia ja teetä. Joskus ostan makeisia, jos tekee mieli jotain hyvää.' },
+      { id: 'w-2', scenarioFi: 'Mitä et ikinä osta kaupasta?', scenarioEn: 'What do you never buy from the store?', sampleFi: 'En ikinä osta valmisruokia, kuten mikroaterioita. En myöskään osta energiajuomia, koska ne eivät ole terveellisiä.' },
+      {
+        id: 'w-3',
+        scenarioFi: 'Mikä on sinulle tärkeää, kun valitset kaupan?',
+        scenarioEn: 'What is important to you when choosing a store?',
+        sampleFi: 'Minulle on tärkeää, että kauppa on lähellä ja siellä on hyvä valikoima. Hinta on myös tärkeä. Arvostan myös tuoreita tuotteita ja ystävällistä palvelua.',
+      },
+      { id: 'w-4', scenarioFi: 'Miten valitset?', scenarioEn: 'How do you choose?', sampleFi: 'Vertailen hintoja ja katson, mitä tuotteita on tarjouksessa. Luen myös tuoteselosteita, erityisesti jos ostan uusia tuotteita.' },
+      {
+        id: 'w-5',
+        scenarioFi: 'Mihin asioihin kiinnität huomiota?',
+        scenarioEn: 'What things do you pay attention to?',
+        sampleFi: 'Kiinnitän huomiota tuotteiden laatuun, hintaan ja alkuperämaahan. Ostan mielelläni kotimaisia tuotteita. Katson myös parasta ennen -päiväyksiä.',
+      },
+      {
+        id: 'w-6',
+        scenarioFi: 'Mitä eroja on Suomen ja sinun kotimaan kaupoissa?',
+        scenarioEn: 'What differences are there between Finnish shops and shops in your home country?',
+        sampleFi:
+          'Suomen kaupoissa on laaja valikoima, mutta hinnat ovat korkeammat kuin kotimaassani. Suomessa on paljon valmiiksi pakattuja tuotteita. Kotimaassani kaupoissa on enemmän tuoreita tuotteita irtotavarana.',
+      },
+      {
+        id: 'w-7',
+        scenarioFi: 'Teetkö kauppalistan?',
+        scenarioEn: 'Do you make a shopping list?',
+        sampleFi: 'Kyllä, teen aina kauppalistan, jotta en unohda mitään. Se säästää aikaa ja rahaa, koska en osta turhia asioita.',
+      },
+      {
+        id: 'w-8',
+        scenarioFi: 'Haluatko kuitin?',
+        scenarioEn: 'Do you want the receipt?',
+        sampleFi: 'Kyllä, haluan aina kuitin, koska haluan tarkistaa ostokset. Joskus tarvitsen kuittia, jos joudun palauttamaan tuotteen.',
+      },
+      {
+        id: 'w-9',
+        scenarioFi: 'Miten maksat?',
+        scenarioEn: 'How do you pay?',
+        sampleFi: 'Maksan yleensä pankkikortilla. Joskus käytän myös mobiilimaksua, kuten MobilePaytä. Käteistä käytän harvoin.',
+      },
+      {
+        id: 'w-10',
+        scenarioFi: 'Mikä on hyvä ruokakauppa sinun kotikaupungissa?',
+        scenarioEn: 'What is a good grocery store in your hometown?',
+        sampleFi: 'Minun kotikaupungissa on hyvä K-Market, jossa on laaja valikoima ja ystävällinen henkilökunta. Siellä on myös hyvät tarjoukset.',
+      },
+      {
+        id: 'w-11',
+        scenarioFi: 'Onko sinulla joku etukortti?',
+        scenarioEn: 'Do you have a loyalty card?',
+        sampleFi: 'Kyllä, minulla on S-kortti ja Plussa-kortti. Ne ovat hyviä, koska saan bonusta ja alennuksia. Kortit säästävät rahaa pitkässä juoksussa.',
+      },
+      {
+        id: 'w-12',
+        scenarioFi: 'Onko jotain, mitä sä aina unohdat ostaa kaupasta?',
+        scenarioEn: 'Is there something you always forget to buy at the store?',
+        sampleFi: 'Unohdan aina ostaa maitoa ja leipää. Joskus unohdan myös vessapaperin, vaikka se on tärkeä.',
+      },
+      {
+        id: 'w-13',
+        scenarioFi: 'Onko jotain, mitä sä et koskaan muista ostaa kaupasta?',
+        scenarioEn: 'Is there something you never remember to buy at the store?',
+        sampleFi: 'En koskaan muista ostaa mausteita, kuten suolaa tai pippuria. Myös hammastahna jää usein ostamatta.',
+      },
+      {
+        id: 'w-14',
+        scenarioFi: 'Minä kuluttajana: Piirrä kuva itsestäsi kuluttajana ja kerro siitä.',
+        scenarioEn: 'Me as a consumer: draw a picture of yourself as a consumer and tell about it.',
+        sampleFi:
+          'Tässä on kuva minusta kuluttajana. Ostan ruokaa noin kolme kertaa viikossa lähi-S-marketista. Käytän S-korttia ja kerään bonusta. Vaatteita ostan harvoin, ehkä kerran kuukaudessa. Ostan usein verkkokaupoista, koska ne ovat halvempia. Raha menee eniten ruokaan, vuokraan ja bussilippuihin. Olen aika säästäväinen, mutta ostan mielelläni laadukkaita tuotteita. Haluaisin säästää enemmän rahaa matkustamista varten.',
+      },
+    ],
+    dialogues: [
+      {
+        id: 'd1',
+        titleFi: 'Unohtunut tavara liikuntahallilla',
+        titleEn: 'Forgotten item at the gym',
+        turns: [
+          { speaker: 'Nainen', fi: 'Liikuntakeskus Ilona, miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Soitan, koska unohdin tavaran teidän liikuntahallille eilen. Onko löytynyt sellaista?' },
+          { speaker: 'Nainen', fi: 'Voi harmi! Kerrotko tarkemmin, millainen se oli?' },
+          { speaker: 'Sinä', fi: 'Se on musta urheilukassi, jossa on valkoinen logo. Sisällä oli lenkkarit ja pyyhe.' },
+          { speaker: 'Nainen', fi: 'Hmm. Ainakaan tähän respaan ei ole nyt tuotu sellaista tavaraa. Milloin sä kadotit sen?' },
+          { speaker: 'Sinä', fi: 'Unohdin sen eilen kello 18 jälkeen, kun olin salilla.' },
+          {
+            speaker: 'Nainen',
+            fi: 'Okei, no voihan se vielä löytyä. Mä voin kyllä laittaa tohon ilmoitustaululle lapun, että tällainen on kadonnut. Sopisko se sulle? Keneen otetaan yhteyttä, jos laitetaan?',
+          },
+          { speaker: 'Sinä', fi: 'Sopii hyvin! Ottakaa yhteyttä tähän numeroon. Tässä on minun nimeni.' },
+          { speaker: 'Nainen', fi: 'Selvä juttu. Mä laitan ilmoituksen ja toivotaan, että löytyy.' },
+          { speaker: 'Sinä', fi: 'Kiitos paljon avusta! Kuulen pian teiltä, toivottavasti.' },
+        ],
+      },
+      {
+        id: 'd2',
+        titleFi: 'Parturi-kampaamossa',
+        titleEn: 'At the hair salon',
+        turns: [
+          { speaker: 'Kampaaja', fi: 'Moi! Sulla tais olla aika mulle varattu. Tuu tänne istumaan. Oletko sä meillä ensimmäistä kertaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Kyllä, tämä on ensimmäinen kerta teillä. Sain suosituksen ystävältäni.' },
+          { speaker: 'Kampaaja', fi: 'No niin. Mitäs sitten ajattelit, että tänään tehdään?' },
+          { speaker: 'Sinä', fi: 'Haluaisin leikata hiukset lyhyemmiksi ja värjätä ne vaaleammiksi.' },
+          { speaker: 'Kampaaja', fi: 'Okei, katotaas. Tässä olis tällänen esimerkki tässä lehdessä. Oisko tää hyvä?' },
+          { speaker: 'Sinä', fi: 'Hmm, ei oikein. Minulla on pyöreät kasvot, joten tuo tyyli ei sovi minulle. Onko muita ehdotuksia?' },
+          { speaker: 'Kampaaja', fi: 'Ahaa, joo. Nyt mä luulen, että ymmärsin idean. Mitäs, haluaisitko juoda jotain?' },
+          { speaker: 'Sinä', fi: 'Kiitos, voisin ottaa kupin kahvia.' },
+          { speaker: 'Kampaaja', fi: 'Selvä. Tuossa pöydällä on lehtiä, joita voi lukea ja meillä on täällä myös Wi-Fi, jos haluat surffata.' },
+          { speaker: 'Sinä', fi: 'Kiitos, luen mielelläni lehtiä.' },
+          { speaker: 'Kampaaja', fi: 'Kyllä kyllä. Mä meen hakemaan vähän tarvikkeita ja sitten aloitellaan.' },
+          { speaker: 'Sinä', fi: 'Hyvä, odotan innolla!' },
+        ],
+      },
+      {
+        id: 'd3',
+        titleFi: 'Valitus kahvilassa',
+        titleEn: 'Complaint at a café',
+        turns: [
+          { speaker: 'Myyjä', fi: 'Hei! Maistuuko kahvi?' },
+          { speaker: 'Sinä', fi: 'Valitettavasti ei. Tämä kahvi on todella kylmää.' },
+          { speaker: 'Myyjä', fi: 'Ai jaa, voi että! Mä oon pahoillani. Mä voin totta kai vaihtaa sen kahvin ja antaa sulle uuden kahvin tilalle.' },
+          { speaker: 'Sinä', fi: 'Kiitos, mutta haluaisin mieluummin jotain muuta. Olen pettynyt.' },
+          { speaker: 'Myyjä', fi: 'No juu, se on tietysti ihan ymmärrettävää. Olisko jokin toinen juoma parempi?' },
+          { speaker: 'Sinä', fi: 'Voisinko saada kaakaon tilalle?' },
+          {
+            speaker: 'Myyjä',
+            fi: 'Selvä, laitetaan sellainen. Vitsi, olen kyllä tosi pahoillani nyt tästä kahvista. Meillä ois täällä tuoretta pullaa myös, jos mä antaisin sellaisen sulle myös kaupan päälle?',
+          },
+          { speaker: 'Sinä', fi: 'Kiitos, se olisi mukavaa. Arvostan sitä.' },
+          { speaker: 'Myyjä', fi: 'No niin, tässä olis tää toinen juoma. Ja vielä kerran pahoittelut tapahtuneesta.' },
+          { speaker: 'Sinä', fi: 'Kiitos. Ymmärrän, että vahinkoja sattuu.' },
+          {
+            speaker: 'Myyjä',
+            fi: 'Kiitos sulle, että sanoit. Monet asiakkaat vaan juo sen pahan kahvin, ja sitten ei koskaan enää tule takaisin, tai puhuu pahaa kahvilasta muille. Asiakaspalaute on meille tosi tärkeää.',
+          },
+          { speaker: 'Sinä', fi: 'Kiitos, että otitte palautteen tosissaan. Tämä on hyvä kahvila, ja tulen varmasti uudelleen.' },
+        ],
+      },
+      {
+        id: 'd4',
+        titleFi: 'Eksynyt vieraassa kaupungissa',
+        titleEn: 'Lost in an unfamiliar city',
+        turns: [
+          { speaker: 'Sinä', fi: '[Näet miehen kadulla]', en: 'You see a man on the street', isPlaceholder: true },
+          { speaker: 'Mies', fi: '[Hän kävelee]', en: 'He is walking', isPlaceholder: true },
+          { speaker: 'Sinä', fi: 'Anteeksi, voisitteko auttaa?' },
+          { speaker: 'Mies', fi: 'Joo, totta kai. Mihin sä olet menossa?' },
+          { speaker: 'Sinä', fi: 'Etsin Helsingin päärautatieasemaa. Luulen, että olen eksynyt.' },
+          { speaker: 'Mies', fi: 'No sä olet onneksi ihan lähellä. Näetkö tuolla tuon ison rakennuksen?' },
+          { speaker: 'Sinä', fi: 'Tarkoitatko tuota harmaata rakennusta?' },
+          {
+            speaker: 'Mies',
+            fi: 'Joo, just se. Ensin kävele suoraan eteenpäin ihan sinne rakennukselle asti. Sitten käännyt vasemmalle ja kävelet kaksi korttelia suoraan ja olet perillä.',
+          },
+          { speaker: 'Sinä', fi: 'Kiitos! Kuinka kaukana se on?' },
+          { speaker: 'Mies', fi: 'Kyllä sä varmaan löydät sinne. Se ei ole kaukana, ehkä noin puoli kilometriä tästä.' },
+          { speaker: 'Sinä', fi: 'Kiitos todella paljon avusta!' },
+          { speaker: 'Mies', fi: 'Eipä kestä!' },
+        ],
+      },
+      {
+        id: 'd5',
+        titleFi: 'Kodinkoneen palautus',
+        titleEn: 'Returning a faulty appliance',
+        turns: [
+          { speaker: 'Myyjä', fi: 'Voinks mä auttaa jotenkin?' },
+          { speaker: 'Sinä', fi: 'Kyllä! Ostin täältä kahvinkeittimen, mutta se ei toimi kunnolla. Vesi ei lämpene.' },
+          { speaker: 'Myyjä', fi: 'Ai jaa! Onko sulla kuitti tallessa?' },
+          { speaker: 'Sinä', fi: 'Kyllä, tässä se on.' },
+          {
+            speaker: 'Myyjä',
+            fi: 'Joo, kiitos. No tässähän on takuu vielä onneksi voimassa, joten ei ole mitään ongelmaa. Mä voin antaa sulle uuden tuotteen tilalle.',
+          },
+          { speaker: 'Sinä', fi: 'Olisiko mahdollista saada rahat takaisin? Haluaisin ostaa toisen merkin.' },
+          {
+            speaker: 'Myyjä',
+            fi: 'Ahaa. Niin no, ymmärtäähän sen. Valitettavasti rahoja mä en voi tästä palauttaa, mutta olisiko tältä valmistajalta jotakin muuta, mikä sua voisi kiinnostaa?',
+          },
+          { speaker: 'Sinä', fi: 'Onko teillä saman merkin tehokkaampaa kahvinkeitintä?' },
+          { speaker: 'Myyjä', fi: 'Joo, niin kauan, kun kyseessä on sama merkki, vaihto voidaan tehdä. Mennään katsomaan tuonne osastolle, millainen malli olisi hyvä.' },
+          { speaker: 'Sinä', fi: 'Kiitos! Tämä on oikein hyvä palvelu.' },
+        ],
+      },
+    ],
+    reactions: [
+      {
+        id: 'r1',
+        scenarioFi: 'Menet kahvilaan, mutta kaikki pöydät ovat likaisia. Valita asiasta tarjoilijalle.',
+        scenarioEn: 'You go to a café but all the tables are dirty. Complain to the waiter.',
+        sampleFi: 'Anteeksi, voisitteko auttaa? Kaikki pöydät ovat likaisia. Voisitteko pyyhkiä yhden pöydän puhtaaksi, jotta voin istua?',
+      },
+      {
+        id: 'r2',
+        scenarioFi: 'Kaveri on lainannut sinulta autoa. Hän on käyttänyt kaikki bensat ja ei ole tankannut. Kerro kaverille, mitä mieltä olet hänen käytöksestä.',
+        scenarioEn: 'A friend borrowed your car, used all the gas, and never refilled it. Tell them what you think.',
+        sampleFi:
+          'Hei, mä oon vähän pettynyt. Mä lainasin sulle auton, ja sä oot käyttänyt kaikki bensat etkä tankannut. Se on epäkohteliasta. Olisit voinut laittaa bensaa tai ainakin kysyä.',
+      },
+      {
+        id: 'r3',
+        scenarioFi: 'Haluat palkata siivoojan kotiin. Kerro ystävällesi, miksi et enää halua siivota itse.',
+        scenarioEn: 'You want to hire a cleaner. Tell a friend why you no longer want to clean yourself.',
+        sampleFi: 'Mä oon harkinnut siivoojan palkkaamista, koska mulla on niin kiire töissä. En ehdi siivota kunnolla, ja koti on aina sotkuinen. Se auttaisi jaksamaan paremmin.',
+      },
+      {
+        id: 'r4',
+        scenarioFi:
+          'Olet ostanut Ikeasta lampun, joka on pudonnut katosta alas. Jos lamppu olisi pudonnut jonkun päähän, se olisi ollut vaarallista. Valita asiasta Ikeaan ja vaadi korvausta.',
+        scenarioEn: 'A lamp you bought from Ikea fell from the ceiling. Complain and demand compensation.',
+        sampleFi:
+          'Hei, ostin teiltä lampun, mutta se putosi katosta alas. Tämä on erittäin vaarallista! Lamppu olisi voinut satuttaa jonkun. Haluan korvauksen ja haluan tietää, miksi näin tapahtui.',
+      },
+      {
+        id: 'r5',
+        scenarioFi: 'Olet ostanut jonkin huonekalun (keksi itse, minkä). Olet yrittänyt koota sitä, mutta kaikki osat eivät ole pakkauksessa.',
+        scenarioEn: "You bought a piece of furniture but some parts are missing from the package.",
+        sampleFi: 'Hei, ostin teiltä hyllyn, mutta pakkauksesta puuttuu osia. En voi koota sitä. Tarvitsen puuttuvat osat tai haluan palauttaa tuotteen.',
+      },
+      {
+        id: 'r6',
+        scenarioFi: 'Olet Ikeassa ja haluat kokeilla sänkyä. Joku nukkuu sängyssä ja et voi kokeilla sitä. Et myöskään näe sängyn hintaa. Mitä sanot?',
+        scenarioEn: "At Ikea, you want to try a bed but someone is lying on it, and you can't see the price.",
+        sampleFi: 'Anteeksi, että häiritsen. Haluaisin kokeilla tätä sänkyä, mutta joku nukkuu siinä. Onko teillä toinen samanlainen sänky? Ja voitteko kertoa hinnan, koska en näe sitä?',
+      },
+      {
+        id: 'r7',
+        scenarioFi:
+          'Haluat ostaa kaksi samanlaista tuolia. Tuoleja on kuitenkin enää kaksi jäljellä ja toinen tuoli on toisella asiakkaalla. Mitä sanot, että saat tuolin?',
+        scenarioEn: 'You want two matching chairs but another customer has one. What do you say to get it?',
+        sampleFi: 'Anteeksi, tarvitsisin molemmat tuolit. Onko mahdollista, että saisin toisen tuolin, kun olette valmiit? Voin odottaa.',
+      },
+      {
+        id: 'r8',
+        scenarioFi: 'Olet ostamassa jotakin kallista (keksi itse, mitä). Haluat tinkiä tuotteesta. Mitä sanot ja miten perustelet?',
+        scenarioEn: "You're buying something expensive and want to bargain. What do you say?",
+        sampleFi: 'Tämä on vähän kallis. Onko mahdollista saada alennusta? Ostan usein teiltä ja voin suositella teitä ystävilleni.',
+      },
+      {
+        id: 'r9',
+        scenarioFi: 'Menet kukkakauppaan ja haluat ostaa kukkia lahjaksi. Kerro myyjälle, kenelle ja millaiseen tilaisuuteen kukat tulevat.',
+        scenarioEn: "At a flower shop, tell the seller who the flowers are for and the occasion.",
+        sampleFi: 'Hei! Haluaisin ostaa kukkia lahjaksi. Ne ovat äidilleni syntymäpäivälahjaksi. Mitä suosittelisitte? Hän tykkää vaaleanpunaisista kukista.',
+      },
+      {
+        id: 'r10',
+        scenarioFi: 'Olet ravintolassa ja viereisessä pöydässä on lapsiperhe, jonka lapset käyttäytyvät huonosti. Mitä sanot vanhemmille?',
+        scenarioEn: 'At a restaurant, children at the next table are misbehaving. What do you say to the parents?',
+        sampleFi: 'Anteeksi, että häiritsen. Lapset ovat vähän äänekkäitä ja juoksevat. Voisitteko pyytää heitä olemaan vähän rauhallisemmin? Tämä on ravintola, ei leikkipaikka.',
+      },
+      {
+        id: 'r11',
+        scenarioFi: 'Ravintolassa on todella hidas palvelu. Valita asiasta tarjoilijalle.',
+        scenarioEn: 'Service at a restaurant is very slow. Complain to the waiter.',
+        sampleFi: 'Anteeksi, olemme odottaneet ruokaa jo 45 minuuttia. Tämä on todella hidasta. Onko ruoka tulossa? Olemme pettyneitä.',
+      },
+      {
+        id: 'r12',
+        scenarioFi: 'Kaupan parkkipaikalla on koira kuumassa autossa. Kerro mielipiteesi koiran omistajalle.',
+        scenarioEn: "There's a dog in a hot car in a parking lot. Tell the owner what you think.",
+        sampleFi: 'Anteeksi, onko tämä teidän koiranne? Koira on kuumassa autossa, ja ikkunat ovat kiinni. Tämä on vaarallista! Koira voi saada lämpöhalvauksen. Ottakaa koira pois autosta.',
+      },
+      {
+        id: 'r13',
+        scenarioFi: 'Sinun läppärissä on jokin vika. Takuu on vielä voimassa. Soitat liikkeeseen.',
+        scenarioEn: 'Your laptop has a fault and is still under warranty. You call the store.',
+        sampleFi: 'Hei! Ostin teiltä läppärin puoli vuotta sitten. Siinä on ongelma: näyttö välkkyy ja välillä sammuu. Takuu on vielä voimassa. Mitä minun pitäisi tehdä?',
+      },
+      {
+        id: 'r14',
+        scenarioFi: 'Olet nähnyt ilmoituksen käytetystä pesukoneesta. Soita myyjälle ja kysy lisätietoja.',
+        scenarioEn: "You saw an ad for a used washing machine. Call the seller for more information.",
+        sampleFi: 'Hei! Näin ilmoituksenne käytetystä pesukoneesta. Onko se vielä myynnissä? Minkä merkkinen se on? Paljonko se maksaa? Onko siinä takuuta?',
+      },
+      {
+        id: 'r15',
+        scenarioFi: 'Neuvo ystävä sinun kotiin bussilla.',
+        scenarioEn: 'Give a friend directions by bus to your home.',
+        sampleFi: "Sinun kannattaa ottaa bussi 14. Se lähtee keskustasta ja menee suoraan lähelleni. Jää pois pysäkillä 'Kotikatu'. Sitten kävelet 200 metriä eteenpäin, ja olet perillä.",
+      },
+      {
+        id: 'r16',
+        scenarioFi: 'Olet bussissa, mutta et tunne reittiä. Kerro kuljettajalle, missä haluat jäädä pois ja pyydä apua.',
+        scenarioEn: "You're on a bus but don't know the route. Tell the driver where you want to get off and ask for help.",
+        sampleFi: 'Hei, en tunne tätä reittiä. Haluaisin jäädä pois lähellä keskustaa. Voitteko ilmoittaa, kun tulee oikea pysäkki?',
+      },
+    ],
+    longSpeaking: [
+      {
+        id: 'k-a',
+        titleFi: 'Millainen ajankäyttäjä olet?',
+        titleEn: 'What kind of time user are you?',
+        instructionsFi:
+          'Oletko tavallisesti ajoissa vai myöhässä? Tykkäätkö aikatauluista? Miten organisoit aikaasi vai annatko sen olla? Mihin aikasi kuluu? Mihin et halua hukata aikaasi? Mikä on hyvä tapa sopia aikatauluista?',
+        sampleFi:
+          'Olen tavallisesti ajoissa, koska pidän siitä, että asiat ovat järjestyksessä. Tykkään aikatauluista, ne auttavat minua hallitsemaan arkea. Organisoin aikaani kalenterin avulla. Kirjoitan ylös tärkeät tapaamiset ja tehtävät. Aikani kuluu töissä, kotona ja ystävien kanssa. En halua hukata aikaani somessa tai turhaan odottamiseen. Hyvä tapa sopia aikatauluista on sopia tapaamiset etukäteen ja varmistaa, että molemmat muistavat ajan. Joskus on hyvä sopia myös varoaika, jos joku myöhästyy.',
+      },
+      {
+        id: 'k-b',
+        titleFi: 'Millainen riitelijä sinä olet?',
+        titleEn: 'What kind of arguer are you?',
+        instructionsFi:
+          'Kuinka usein riitelet? Mistä suutut? Mikä saa sinut vihaiseksi? Mitä et voi ikinä antaa anteeksi? Miten sinä riitelet? Miten käyttäydyt? Nimeä muutama asia, joista sinun kanssasi voisi helposti riidellä.',
+        sampleFi:
+          'Riitelen harvoin, ehkä kerran kuukaudessa. Suutun, jos joku valehtelee minulle tai on epäoikeudenmukainen. En voi ikinä antaa anteeksi petosta tai luottamuksen rikkomista. Kun riitelen, yritän pysyä rauhallisena ja puhua asioista, en huuda. Käyttäydyn rationaalisesti, vaikka se on joskus vaikeaa. Minun kanssani voisi helposti riidellä siitä, että olen liian järjestelmällinen tai että haluan suunnitella kaiken etukäteen. Myös epäjärjestys ärsyttää minua.',
+      },
+      {
+        id: 'k-c',
+        titleFi: 'Arkipäiväni',
+        titleEn: 'My everyday life',
+        instructionsFi: 'Millainen on tavallinen arkipäiväsi? Mitä rutiineja sinulla on? Pidätkö rutiineista? Miksi / miksi et? Millainen päivä on huono?',
+        sampleFi:
+          'Tavallinen arkipäiväni alkaa kello 7. Herään, pesen hampaat ja syön aamupalan. Lähden töihin kello 8. Työpäivä kestää kello 8-16. Työssä pidän lounastauon kello 12. Illalla kello 17 tulen kotiin, teen ruokaa ja rentoudun. Katson televisiota tai luen kirjaa. Menen nukkumaan kello 23. Rutiinit ovat tärkeitä minulle, koska ne antavat rytmin päivään. Pidän rutiineista, koska ne tekevät elämästä helpompaa. Huono päivä on sellainen, jolloin herään myöhässä, unohdan jotain tärkeää tai olen todella väsynyt.',
+      },
+      {
+        id: 'k-d',
+        titleFi: 'Ravintolat',
+        titleEn: 'Restaurants',
+        instructionsFi:
+          'Käytkö usein ravintolassa? Mikä on hyvä ravintola mielestäsi? Mikä tekee ravintolasta hyvän? Entä huonon? Mitä eroja kotimaasi ja Suomen ravintoloissa on? Millainen atmosfääri ravintolassa pitäisi olla mielestäsi? Mitä toivoisit ravintoloihin lisää?',
+        sampleFi:
+          'Käyn ravintolassa noin kahdesti kuukaudessa. Hyvä ravintola on sellainen, jossa on hyvää ruokaa, ystävällinen palvelu ja kiva tunnelma. Hyvän ravintolan tekee laadukkaat raaka-aineet, hyvät annokset ja ammattitaitoinen henkilökunta. Huono ravintola on sellainen, jossa ruoka on mautonta tai palvelu on hidasta. Kotimaassani ravintolat ovat halvempia ja ruoka on mausteisempaa. Suomessa ravintolat ovat kalliimpia, mutta laatu on yleensä hyvää. Mielestäni ravintolassa pitäisi olla rento ja lämmin atmosfääri. Toivoisin ravintoloihin lisää kasvisvaihtoehtoja ja edullisempia hintoja.',
+      },
+      {
+        id: 'k-e',
+        titleFi: 'Minä liikenteessä',
+        titleEn: 'Me in traffic',
+        instructionsFi: 'Miten kuljet kotoa töihin / kouluun / kauppaan? Käytätkö julkista liikennettä? Miksi / miksi et? Pelkäätkö jotain liikenteessä? Mitä ja miksi?',
+        sampleFi:
+          'Kuljen kotoa töihin bussilla. Bussi on kätevä, koska pysäkki on lähellä kotia. Käytän julkista liikennettä päivittäin, koska se on halvempaa kuin auto. En omista autoa, koska asun keskustassa ja pärjään hyvin bussilla ja metrolla. Julkinen liikenne on ympäristöystävällisempää. Pelkään liikenteessä pyöriä, koska ne tulevat joskus yllättäen ja liikkuvat nopeasti. Pelkään myös, että autoilijat eivät huomaa jalankulkijoita. Siksi olen aina varovainen suojatiellä.',
+      },
+    ],
+    opinions: [
+      {
+        id: 'm-a',
+        titleFi: 'Ketjuyritysten hyödyt ja haitat',
+        titleEn: 'Benefits and drawbacks of chain businesses',
+        instructionsFi:
+          'Mitä hyötyä ja haittaa on siitä, että kauppa / ravintola / huoltoasema kuuluu ketjuun? Ostatko itse mieluummin ketjusta vai itsenäiseltä yrittäjältä? Miksi? Onko globaaleissa ketjuissa riskejä? Mitä?',
+        sampleFi:
+          'Ketjuyrityksissä on sekä hyötyä että haittaa. Hyötyjä ovat tuttuus ja laadun tasaisuus. Tiedän, mitä saan, kun menen ketjuravintolaan. Hinnat ovat usein kohtuullisia. Haitat ovat, että ketjut voivat olla persoonattomia ja ruoka on usein samanlaista. Itsenäiset yrittäjät tarjoavat usein ainutlaatuisia tuotteita ja persoonallista palvelua. Ostan mieluummin itsenäisiltä yrittäjiltä, koska haluan tukea paikallista yritystoimintaa. Globaaleissa ketjuissa on riskejä: ne voivat viedä markkinoita paikallisilta yrityksiltä ja voivat olla vastuuttomia ympäristöasioissa.',
+      },
+      {
+        id: 'm-b',
+        titleFi: 'Alle kouluikäinen ei tarvitse vielä puhelinta',
+        titleEn: "A child under school age doesn't need a phone yet",
+        instructionsFi:
+          'Mikä on sinun mielestäsi sopiva ikä aloittaa kännykän käyttö. Miksi? Mitä hyötyä ja haittaa on siitä, että lapsella on puhelin? Mikä on sopiva puhelinlasku lapselle? Pitäisikö lapsen puhelimen käyttöä rajoittaa? Miten?',
+        sampleFi:
+          'Mielestäni sopiva ikä kännykän käyttöön on noin 10-12 vuotta. Silloin lapsi on tarpeeksi vastuuntuntoinen. Puhelimen hyötyjä ovat, että lapsi voi olla yhteydessä vanhempiin ja hätätilanteissa apu on lähellä. Haitat ovat, että lapsi voi viettää liikaa aikaa puhelimella, pelata tai katsoa sopimatonta sisältöä. Sopiva puhelinlasku lapselle on noin 10-20 euroa kuukaudessa. Vanhempien pitäisi rajoittaa lapsen puhelimen käyttöä esimerkiksi asettamalla aikarajoja ja kieltämällä puhelimen käyttö ruokailun aikana ja nukkumaan mennessä.',
+      },
+      {
+        id: 'm-c',
+        titleFi: 'Arkielämä Suomessa on helppoa',
+        titleEn: 'Everyday life in Finland is easy',
+        instructionsFi:
+          'Millaisia ongelmia sinulla oli arkielämässä, kun tulit Suomeen? Miten ratkaisit ne? Mitkä asiat Suomessa sujuvat helposti? Mikä on vaikeaa? Millaista suomalainen arki on kotimaasi arkeen verrattuna?',
+        sampleFi:
+          'Kun tulin Suomeen, suurin ongelma oli kieli. En ymmärtänyt suomea, ja asiointi oli vaikeaa. Ratkaisin ongelman opiskelemalla suomea ja pyytämällä apua ystäviltä. Suomessa asiat sujuvat helposti: byrokratia on selkeää, palvelut toimivat hyvin ja ihmiset ovat luotettavia. Vaikeaa on talvi, pimeys ja kalliit hinnat. Suomalainen arki on rauhallista ja säännöllistä. Kotimaassani arki on vilkkaampaa ja ihmiset ovat spontaanimpia. Suomessa arvostetaan järjestystä ja ajallaan olemista.',
+      },
+      {
+        id: 'm-d',
+        titleFi: 'Tinkiminen on hauskaa',
+        titleEn: 'Bargaining is fun',
+        instructionsFi:
+          'Tykkäätkö tinkiä hinnoista vai tykkäätkö standardihinnoista? Miksi? Miltä tinkiminen sinusta tuntuu? Mitä ajattelet Suomen tinkimiskulttuurista? Onko sitä? Mistä asioista voi tingata ja mistä ei?',
+        sampleFi:
+          'Tykkään standardihinnoista, koska ne ovat selkeitä. Tinkiminen tuntuu epämukavalta, en ole tottunut siihen. Suomessa ei juuri tingitä, hinnat ovat kiinteitä. Tämä on minulle hyvä asia, koska tiedän aina, mitä maksan. Suomessa tinkimistä ei ole juuri ollenkaan, paitsi kirpputoreilla tai huutokaupoissa. Mielestäni voi tingata käytetyistä tavaroista tai jos ostaa useita tuotteita kerralla, mutta kaupoissa ja ravintoloissa ei tingitä. Se on kohteliasta.',
+      },
+    ],
+    writingTasks: [
+      {
+        id: 'w1',
+        titleFi: 'Vastaus myynti-ilmoitukseen',
+        instructionsFi: 'Olet nähnyt myynti-ilmoituksen tavarasta, jonka haluat ostaa. Lähetä viesti myyjälle ja kysy lisätietoa.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei!\n\nNäin ilmoituksenne Tori.fi:ssä sohvan myynnistä. Olen kiinnostunut ostamaan sen. Onko sohva vielä myynnissä?\n\nHaluaisin kysyä muutamia asioita:\n- Onko sohva hyvässä kunnossa? Onko siinä tahroja tai muita vaurioita?\n- Mitkä ovat sohvan mitat? Mahtuuko se hissiin?\n- Milloin voisin tulla katsomaan sohvaa?\n\nVoitte ottaa minuun yhteyttä tällä numerolla tai sähköpostilla.\n\nYstävällisin terveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w2',
+        titleFi: 'Viesti',
+        instructionsFi: 'Olet saanut ison kukkalähetyksen puolitutulta. Kirjoita viesti kukkien lähettäjälle.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei!\n\nSain tänään valtavan kauniin kukkalähetyksen! Kukat ovat todella kauniita - niissä on ihania vaaleanpunaisia ruusuja ja valkoisia liljoja. Olin todella yllättynyt ja iloinen.\n\nLuulen, että lähetit kukat kiitokseksi siitä, että autin sinua viime viikolla. Se oli todella ystävällistä, mutta sinun ei olisi tarvinnut! Olin iloinen voidessani auttaa.\n\nPyydän kuitenkin kohteliaasti, että et lähetä enää lahjoja. Arvostan ystävyyttäsi, mutta lahjat eivät ole tarpeen. Riittää, että olemme yhteydessä ja tapaamme joskus.\n\nKiitos vielä kerran kauniista kukista!\n\nYstävällisin terveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w3',
+        titleFi: 'Mielipide',
+        instructionsFi: 'Valitse teema A tai B ja kirjoita mielipidekirjoitus.',
+        bulletsFi: [
+          "A. Suomalaiset eivät halua auttaa maahanmuuttajia. (Finns don't want to help immigrants.)",
+          'B. Ravintoloiden pitäisi olla auki myös sunnuntaina ja juhlapyhinä. (Restaurants should be open also on Sundays and holidays.)',
+        ],
+        sampleFi:
+          'A. Suomalaiset eivät halua auttaa maahanmuuttajia.\n\nEn ole täysin samaa mieltä tämän väitteen kanssa. Mielestäni suomalaiset auttavat maahanmuuttajia monella tavalla, mutta joskus he eivät tiedä, miten auttaa.\n\nSuomessa on paljon kursseja ja palveluita maahanmuuttajille. Monet suomalaiset toimivat vapaaehtoisina ja auttavat maahanmuuttajia. Kuitenkin kielimuuri voi olla este. Suomalaiset voivat olla ujoja ja epäröiviä, eivätkä he siksi ota kontaktia.\n\nMielestäni on tärkeää, että maahanmuuttajat itsekin ovat aktiivisia ja kysyvät apua. Suomi on hyvä maa, ja täällä on mahdollista saada apua, jos sitä hakee. Myös suomalaisten pitäisi olla rohkeampia ja avoimempia. Pienet teot, kuten tervehtiminen ja auttaminen, voivat tehdä suuren eron.\n\n---\n\nB. Ravintoloiden pitäisi olla auki myös sunnuntaina ja juhlapyhinä.\n\nMielestäni ravintoloiden pitäisi olla auki myös sunnuntaisin ja juhlapyhinä. Tämä olisi hyvä asia monesta syystä.\n\nEnsinnäkin, turistit ja matkailijat tarvitsevat palveluita myös viikonloppuisin. Toiseksi, monet ihmiset haluavat viettää vapaapäivän ravintolassa perheen tai ystävien kanssa. Kolmanneksi, ravintolatyöntekijät voisivat itse päättää, haluavatko he tehdä töitä juhlapyhinä. Tietysti heille pitäisi maksaa korkeampaa palkkaa.\n\nToisaalta, on tärkeää, että työntekijöillä on vapaa-aikaa perheen kanssa. Kuitenkin monilla aloilla, kuten sairaaloissa ja liikenteessä, työskennellään myös pyhinä. Mielestäni ravintolat voisivat olla auki lyhyempiä aikoja pyhinä, esimerkiksi kello 12-18.\n\nYhteenvetona, ravintoloiden aukiolo pyhinä toisi joustavuutta ja palveluita ihmisille, mutta työntekijöiden oikeuksia pitäisi kunnioittaa.',
+      },
+    ],
+    vocabSummary: [
+      { fi: 'arkielämä', en: 'everyday life' },
+      { fi: 'kauppa', en: 'store/shop' },
+      { fi: 'ostos', en: 'purchase' },
+      { fi: 'kauppalista', en: 'shopping list' },
+      { fi: 'kuitti', en: 'receipt' },
+      { fi: 'maksaa', en: 'to pay' },
+      { fi: 'etukortti', en: 'loyalty card' },
+      { fi: 'alennus', en: 'discount' },
+      { fi: 'tarjous', en: 'offer/sale' },
+      { fi: 'tuote', en: 'product' },
+      { fi: 'palauttaa', en: 'to return' },
+      { fi: 'takuu', en: 'warranty' },
+      { fi: 'unohdettu tavara', en: 'forgotten item' },
+      { fi: 'liikuntahalli', en: 'gym/sports hall' },
+      { fi: 'parturi-kampaamo', en: 'hair salon' },
+      { fi: 'leikata hiukset', en: 'to cut hair' },
+      { fi: 'värjätä hiukset', en: 'to dye hair' },
+      { fi: 'kahvila', en: 'café' },
+      { fi: 'asiakaspalaute', en: 'customer feedback' },
+      { fi: 'eksyä', en: 'to get lost' },
+      { fi: 'neuvoa', en: 'to advise' },
+      { fi: 'kodinkone', en: 'appliance' },
+      { fi: 'valittaa', en: 'to complain' },
+      { fi: 'tinkiä', en: 'to bargain' },
+      { fi: 'siivooja', en: 'cleaner' },
+      { fi: 'kuluttaja', en: 'consumer' },
+      { fi: 'ajankäyttö', en: 'time use' },
+      { fi: 'aikataulu', en: 'schedule' },
+      { fi: 'rutiini', en: 'routine' },
+      { fi: 'ravintola', en: 'restaurant' },
+      { fi: 'joustavuus', en: 'flexibility' },
+      { fi: 'ketjuyritys', en: 'chain business' },
+      { fi: 'itsenäinen yrittäjä', en: 'independent entrepreneur' },
+      { fi: 'julkinen liikenne', en: 'public transport' },
+      { fi: 'tinkiminen', en: 'bargaining' },
+    ],
+  },
 ]
 
 export function conversationChapter(id: string): ConversationChapter | undefined {
