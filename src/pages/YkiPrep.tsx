@@ -6,6 +6,7 @@ import LevelPill from '../components/LevelPill'
 import YkiTip from '../components/YkiTip'
 import YkiPassageCard from '../components/YkiPassageCard'
 import SequentialTimer from '../components/SequentialTimer'
+import DialoguePractice from '../components/DialoguePractice'
 
 type Tab = 'yleiskatsaus' | 'lukeminen' | 'kirjoittaminen' | 'kuunteleminen' | 'puhuminen' | 'sanasto'
 
@@ -190,14 +191,16 @@ export default function YkiPrep() {
             </>
           )}
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
-            <div className="space-y-4">
-              {chapter.reading.practicePassages.map((p) => (
-                <YkiPassageCard key={p.id} passage={p} />
-              ))}
+          {chapter.reading.practicePassages.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
+              <div className="space-y-4">
+                {chapter.reading.practicePassages.map((p) => (
+                  <YkiPassageCard key={p.id} passage={p} />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {chapter.reading.testPassages.length > 0 && (
             <div>
@@ -214,7 +217,7 @@ export default function YkiPrep() {
 
       {tab === 'kirjoittaminen' && (
         <div className="space-y-5">
-          <YkiTip tip={chapter.writing.tip} />
+          {chapter.writing.tip && <YkiTip tip={chapter.writing.tip} />}
 
           <div className="rounded-2xl border border-slate-200 bg-white p-4">
             <p className="text-sm font-semibold text-slate-800">Lämmittele yksin</p>
@@ -343,7 +346,7 @@ export default function YkiPrep() {
 
       {tab === 'kuunteleminen' && (
         <div className="space-y-5">
-          <YkiTip tip={chapter.listening.tip} />
+          {chapter.listening.tip && <YkiTip tip={chapter.listening.tip} />}
 
           {chapter.listening.podcastWarmup && (
             <div className="rounded-2xl border border-slate-200 bg-white p-4">
@@ -371,23 +374,27 @@ export default function YkiPrep() {
             </div>
           )}
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
-            <div className="space-y-4">
-              {chapter.listening.practicePassages.map((p) => (
-                <YkiPassageCard key={p.id} passage={p} />
-              ))}
+          {chapter.listening.practicePassages.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
+              <div className="space-y-4">
+                {chapter.listening.practicePassages.map((p) => (
+                  <YkiPassageCard key={p.id} passage={p} />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa</h2>
-            <div className="space-y-4">
-              {chapter.listening.testPassages.map((p) => (
-                <YkiPassageCard key={p.id} passage={p} />
-              ))}
+          {chapter.listening.testPassages.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa</h2>
+              <div className="space-y-4">
+                {chapter.listening.testPassages.map((p) => (
+                  <YkiPassageCard key={p.id} passage={p} />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
 
@@ -531,6 +538,21 @@ export default function YkiPrep() {
             </div>
           )}
 
+          {chapter.speaking.sampleDialogues && chapter.speaking.sampleDialogues.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Mallidialogeja</h2>
+              <div className="space-y-4">
+                {chapter.speaking.sampleDialogues.map((d) => (
+                  <div key={d.id} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <p className="font-semibold text-slate-900">{d.titleFi}</p>
+                    <p className="mb-3 text-xs text-slate-400">{d.titleEn}</p>
+                    <DialoguePractice dialogue={d} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {chapter.speaking.dontMemorizeTip && <YkiTip tip={chapter.speaking.dontMemorizeTip} />}
 
           {chapter.speaking.conversationVocab && chapter.speaking.conversationVocab.length > 0 && (
@@ -549,25 +571,27 @@ export default function YkiPrep() {
             </div>
           </div>
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa: Keskustelu</h2>
-            <div className="space-y-3">
-              {chapter.speaking.conversationTasks.map((t) => (
-                <div key={t.id} className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                  <p className="font-semibold text-slate-900">{t.titleFi}</p>
-                  <p className="text-sm text-slate-600">{t.scenarioFi}</p>
-                  <ul className="list-inside list-decimal space-y-0.5 text-xs text-slate-500">
-                    {t.turns.map((turn, i) => (
-                      <li key={i}>
-                        {turn.instructionFi} <span className="text-slate-400">({turn.seconds} s)</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <SequentialTimer steps={t.turns.map((turn) => ({ label: turn.instructionFi, seconds: turn.seconds }))} idleLabel="Aloita keskustelu" />
-                </div>
-              ))}
+          {chapter.speaking.conversationTasks.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa: Keskustelu</h2>
+              <div className="space-y-3">
+                {chapter.speaking.conversationTasks.map((t) => (
+                  <div key={t.id} className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <p className="font-semibold text-slate-900">{t.titleFi}</p>
+                    <p className="text-sm text-slate-600">{t.scenarioFi}</p>
+                    <ul className="list-inside list-decimal space-y-0.5 text-xs text-slate-500">
+                      {t.turns.map((turn, i) => (
+                        <li key={i}>
+                          {turn.instructionFi} <span className="text-slate-400">({turn.seconds} s)</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <SequentialTimer steps={t.turns.map((turn) => ({ label: turn.instructionFi, seconds: turn.seconds }))} idleLabel="Aloita keskustelu" />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           <div>
             <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa: Tilannetehtävät</h2>

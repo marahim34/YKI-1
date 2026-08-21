@@ -397,7 +397,7 @@ export interface YkiSubtestReading {
 }
 
 export interface YkiSubtestWriting {
-  tip: YkiTipBox
+  tip?: YkiTipBox
   freewrite: YkiFreewriteTask
   groupIntro: YkiGroupTask
   practiceTasks: YkiWritingPrompt[]
@@ -409,7 +409,7 @@ export interface YkiSubtestWriting {
 }
 
 export interface YkiSubtestListening {
-  tip: YkiTipBox
+  tip?: YkiTipBox
   podcastWarmup?: { instructionsFi: string; keywords: string[] }
   repeatSentences?: { instructionsFi: string; sentences: string[] }
   practicePassages: YkiPassage[]
@@ -433,6 +433,7 @@ export interface YkiSubtestSpeaking {
   practiceLongTask?: YkiSpeakingLongTask & { reflectionPrompt?: string; speakDontWriteTip?: YkiTipBox }
   practiceSituationalTasks?: YkiSituationalTask[]
   practiceConversationTasks?: YkiConversationTask[]
+  sampleDialogues?: DialogueScenario[]
   dontMemorizeTip?: YkiTipBox
   conversationVocab?: { fi: string; en: string }[]
   testLongTasks: YkiSpeakingLongTask[]
