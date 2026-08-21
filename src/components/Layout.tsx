@@ -3,6 +3,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { useProgress } from '../context/ProgressContext'
 import { routes } from '../routes'
 import FoxMascot from './FoxMascot'
+import SelectionSpeaker from './SelectionSpeaker'
 
 const PRIMARY_NAV = [
   { to: routes.home, label: 'Koti', icon: '🏠' },
@@ -40,6 +41,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-[#f7f6f2] pb-20 sm:pb-0">
+      <SelectionSpeaker />
       <header className="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
