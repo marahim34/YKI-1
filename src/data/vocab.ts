@@ -1,5 +1,7 @@
 import type { CefrLevel, VocabItem } from '../types'
 import { SITUATION_ROWS } from './vocabSituations'
+import { BATCH_A_ROWS } from './vocabBatchA'
+import { BATCH_B_ROWS } from './vocabBatchB'
 
 type Row = [fi: string, en: string, bn: string, example: string, exampleEn: string, exampleBn: string, theme: string, level: CefrLevel]
 
@@ -618,7 +620,7 @@ const ROWS: Row[] = [
   ['mehu', 'juice', 'জুস', 'Lapset juovat omenamehua.', 'The children drink apple juice.', 'বাচ্চারা আপেলের জুস পান করে।', 'food', 'A1'],
 ]
 
-export const VOCAB_BANK: VocabItem[] = [...ROWS, ...SITUATION_ROWS].map(([fi, en, bn, example, exampleEn, exampleBn, theme, level], i) => ({
+export const VOCAB_BANK: VocabItem[] = [...ROWS, ...SITUATION_ROWS, ...BATCH_A_ROWS, ...BATCH_B_ROWS].map(([fi, en, bn, example, exampleEn, exampleBn, theme, level], i) => ({
   id: `v${i + 1}`,
   fi,
   en,

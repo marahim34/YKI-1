@@ -1,4 +1,5 @@
 import type { ExamSet } from '../types'
+import { EXTRA_EXAM_SETS } from './examSetsMore'
 
 // Standalone full practice tests modeled on the real YKI keskitaso exam
 // format: each set mixes several unrelated topics across its four sections,
@@ -952,6 +953,7 @@ Ville: Juuri niin. Kokeillaan tätä kuukausi ja katsotaan, toimiiko se meille.`
       ],
     },
   },
+  ...EXTRA_EXAM_SETS,
 ]
 
 export function examSet(id: string): ExamSet | undefined {
