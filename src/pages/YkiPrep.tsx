@@ -180,11 +180,15 @@ export default function YkiPrep() {
 
       {tab === 'lukeminen' && (
         <div className="space-y-5">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4">
-            <p className="mb-2 text-sm text-slate-600">{chapter.reading.vocabWarmup.instructionsFi}</p>
-            <VocabGrid items={chapter.reading.vocabWarmup.items} />
-          </div>
-          {chapter.reading.vocabWarmup.note && <YkiTip tip={chapter.reading.vocabWarmup.note} />}
+          {chapter.reading.vocabWarmup && (
+            <>
+              <div className="rounded-2xl border border-slate-200 bg-white p-4">
+                <p className="mb-2 text-sm text-slate-600">{chapter.reading.vocabWarmup.instructionsFi}</p>
+                <VocabGrid items={chapter.reading.vocabWarmup.items} />
+              </div>
+              {chapter.reading.vocabWarmup.note && <YkiTip tip={chapter.reading.vocabWarmup.note} />}
+            </>
+          )}
 
           <div>
             <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
@@ -427,6 +431,32 @@ export default function YkiPrep() {
                   <li key={i}>{p}</li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {chapter.speaking.phraseTable && (
+            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+              <p className="text-sm font-semibold text-slate-800">{chapter.speaking.phraseTable.titleFi}</p>
+              <div className="mt-3 overflow-x-auto rounded-xl border border-slate-100">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-100 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-400">
+                      <th className="px-3 py-2">Puhekieli</th>
+                      <th className="px-3 py-2">Kirjakieli</th>
+                      <th className="px-3 py-2">English</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {chapter.speaking.phraseTable.rows.map((row) => (
+                      <tr key={row.spoken} className="border-b border-slate-50 last:border-0">
+                        <td className="px-3 py-2 text-slate-700">{row.spoken}</td>
+                        <td className="px-3 py-2 text-slate-700">{row.written}</td>
+                        <td className="px-3 py-2 text-slate-400">{row.en}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           )}
 

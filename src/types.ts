@@ -391,7 +391,7 @@ export interface YkiSituationalTask {
 }
 
 export interface YkiSubtestReading {
-  vocabWarmup: YkiVocabWarmup
+  vocabWarmup?: YkiVocabWarmup
   practicePassages: YkiPassage[]
   testPassages: YkiPassage[]
 }
@@ -427,6 +427,7 @@ export interface YkiSubtestSpeaking {
   tip?: YkiTipBox
   selfIntro?: YkiSpeakingSelfIntro
   repeatPhrases?: { instructionsFi: string; phrases: string[] }
+  phraseTable?: { titleFi: string; rows: { spoken: string; written: string; en: string }[] }
   groupIntro: YkiGroupTask
   truthTip?: YkiTipBox
   practiceLongTask?: YkiSpeakingLongTask & { reflectionPrompt?: string; speakDontWriteTip?: YkiTipBox }

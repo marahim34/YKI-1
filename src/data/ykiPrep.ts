@@ -2303,6 +2303,723 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       { fi: 'Paljonko tämä maksaa?', en: 'How much does this cost?' },
     ],
   },
+  {
+    id: 'yki-ch4',
+    number: 4,
+    titleFi: 'Kulttuuri',
+    titleEn: 'Culture',
+    pages: '108-137',
+    theme: 'Kulttuuri, taide, musiikki, kirjallisuus, teatteri, juhlat ja kulttuuritapahtumat',
+    reading: {
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Jaottele sanat: keksityt lauseet',
+          titleEn: 'Categorize words: made-up sentences',
+          textFi:
+            'Monet virpulit mällettävät lauantaisin konsia.\nHyvin usein sarottaja vaulaa serkin.\nKesäisin helsa karsoo tavallisesti molin.\n\nJaottele alleviivatut sanat: Tekijä (Doer) · Verbi (Verb) · Tekemisen kohde (Object)\nvirpulit – mällettävät – konsia\nsarottaja – vaulaa – serkin\nhelsa – karsoo – molin',
+          tip: {
+            title: 'VINKKI: Älä pelkää uusia sanoja',
+            body: [
+              'Tämän tehtävän tarkoitus: sinun ei tarvitse ymmärtää jokaista sanaa ymmärtääksesi pääasian!',
+              'Sinun ei tarvitse ymmärtää kaikkia sanoja. Voit silti ymmärtää pääasian ja vastata kysymyksiin. Älä panikoi, jos näet uuden sanan, jota et ymmärrä. Jatka lukemista ja luota itseesi!',
+            ],
+          },
+          open: [
+            { id: 'rp1-o1', questionFi: 'Milloin useat virpulit mällettävät konsia?', sampleAnswerFi: 'Lauantaisin.' },
+            { id: 'rp1-o2', questionFi: 'Mikä on sarottajalle tyypillistä toimintaa?', sampleAnswerFi: 'Vaulaa serkin.' },
+            { id: 'rp1-o3', questionFi: 'Mitä helsa yleensä tekee kesäaikaan?', sampleAnswerFi: 'Karsoo molin.' },
+          ],
+        },
+        {
+          id: 'reading-practice-2',
+          titleFi: 'Kulttuurin saivoaminen',
+          titleEn: 'The Evolution of Culture',
+          textFi:
+            'Kulttuuri saivoaa koko ajan, hitaasti mutta varmasti. Kulttuurin saivoaminen näkyy jo muinaisten makorilaisten halena-maalauksissa. Makorilaiset elivät Möytissä noin 5 000 vuotta sitten.\n\nMakorilaiset olivat hyvin taitavia laappaiden juolimisessa ja sirveiden heistämisessä. He juolivat laappaita ja heistivät sirveitä enemmän kuin mikään muu kansa, mutta pikkuhiljaa uusi pasti, nimittäin näkälä, syrjäytti laappaat ja sirveet.\n\nNäkälää alettiin käyttää hiljalleen enemmän kuin laappaita ja sirveitä. Siksi myös makorilaisten keskuudessa alkoi uusi aikakausi, näkäläaika. Näkälää oli helpompi löytää kuin laappaita ja sirveitä, koska sitä kasvoi myös malojen lähellä, toisin kuin laappaita ja sirveitä. Näkälän käyttö teki makorilaisista entistä sahkempia ja väläkkäämpiä.',
+          open: [
+            { id: 'rp2-o1', questionFi: 'Mitä kulttuurille tapahtuu?', sampleAnswerFi: 'Se saivoaa (muuttuu / kehittyy).' },
+            { id: 'rp2-o2', questionFi: 'Missä makorilaiset asuivat?', sampleAnswerFi: 'Möytissä.' },
+            { id: 'rp2-o3', questionFi: 'Mitä makorilaiset osasivat tehdä hyvin?', sampleAnswerFi: 'Juolia laappaita ja heistää sirveitä.' },
+            { id: 'rp2-o4', questionFi: 'Mikä pasti syrjäytti laappaat ja sirveet?', sampleAnswerFi: 'Näkälä.' },
+            {
+              id: 'rp2-o5',
+              questionFi: 'Miksi näkälä oli helpompi löytää kuin laappaita ja sirveitä?',
+              sampleAnswerFi: 'Koska sitä kasvoi myös malojen lähellä.',
+            },
+            {
+              id: 'rp2-o6',
+              questionFi: 'Miten makorilaiset muuttuivat, kun he alkoivat käyttää näkälää?',
+              sampleAnswerFi: 'Heistä tuli sahkempia ja väläkkäämpiä.',
+            },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'reading-test-1',
+          titleFi: 'Koirakiven kesäteatterissa Katri Helena -musiikkinäytelmä',
+          titleEn: 'Summer Theater Musical about Katri Helena',
+          source: 'Koirakiven Nuorisoseura (lyhennetty)',
+          textFi:
+            'Koirakiven kesäteatterissa Katri Helena -musiikkinäytelmä\n\nElämänkerrallinen musiikkinäytelmä kertoo iskelmätaivaan tähdestä, sinivalkoisesta äänestämme, Katri Helenasta. Kesän näytelmä kertoo Katri Helenan elämästä, aina sota-ajan lapsuudesta tähän päivään asti, niin menestyksestä kuin henkilökohtaisen elämän menetyksistä.\n\nKulman Kundit -yhtye huolehtii musiikin laadusta ja äänentoistosta joka esityksessä. Näytelmä valottaa katsojille, miten iskelmälaulajana tunnettu Katri Helena on tehnyt uraa myös musikaali- ja operettiesiintyjänä. Hän on ollut mukana Danny-kiertueella ja edustanut maatamme kahdesti Euroviisuissa.\n\nMonien rakastama artisti on kulkenut kanssamme jo usean sukupolven ajan tunteidemme tulkkina. Kappaleet Puhelinlangat laulaa, Letkis, Katson sineen taivaan, Anna mulle tähtitaivas, Ei kauniimpaa, Mun sydämeni tänne jää sekä paljon muita tuttuja lauluja kuullaan kesän upeassa kesäteatteriesityksessä. Illan aikana yleisö pääsee kuulemaan myös muutamia hieman tuntemattomampia lauluja.\n\nLIPUT: ennakkoon 24 /13 € (5-12v) portilta 26 /15 €, ryhmäliput ennakkoon ja portilta 22 €/hlö (20 hlö minimi).\n\nNettilipun kautta voit maksaa ostoksesi Smartum- sekä ePassi-verkkomaksulla. Maksuvälineenä portilla käyvät myös Smartum- ja Edenred-kulttuurisetelit, ePassi sekä Eazybreak.',
+          mcq: [
+            {
+              id: 'rt1-q1',
+              question: 'Katri Helena, josta esitys kertoo, on',
+              options: ['näyttelijä', 'laulaja', 'tulkki'],
+              correctIndex: 1,
+              explanation: 'Vastaus: laulaja.',
+            },
+            {
+              id: 'rt1-q2',
+              question: 'Esityksessä kuullaan pääasiassa',
+              options: ['operetteja', 'euroviisuja', 'tunnettuja lauluja'],
+              correctIndex: 2,
+              explanation: 'Vastaus: tunnettuja lauluja.',
+            },
+            {
+              id: 'rt1-q3',
+              question: 'Ryhmälipun voi maksaa',
+              options: ['ainoastaan portilla', 'myös etukäteen', 'vain käteisellä tai kulttuurisetelillä'],
+              correctIndex: 1,
+              explanation: 'Vastaus: myös etukäteen.',
+            },
+          ],
+        },
+        {
+          id: 'reading-test-2',
+          titleFi: 'Stand up -esityksen peruuntuminen',
+          titleEn: 'Stand-up Show Cancellation',
+          textFi:
+            'Hei!\n\nValitettavasti stand up -esitys Elämäni sopulina tänään lauantaina 26.3. klo 19 on peruttu sairaustapauksen vuoksi. Toivottavasti tämä tieto tavoittaa teidät ajoissa!\n\nUusi korvaava esitys järjestetään lauantaina 16.4. klo 19. Tämänpäiväisen esityksen liput käyvät uuteen näytökseen sellaisenaan. Jos kuitenkin haluatte mieluummin rahat takaisin, voitte saada hyvityksen tämän päivän lippujen hinnasta tilisiirtona. Siinä tapauksessa pyydämme, että lähetätte sähköpostilla tilinumeronne IBAN-muodossa, niin palautamme lippujen hinnan tilillenne. Vastatkaahan tähän viestiin 10.4. mennessä, kummalla tavalla haluatte toimia.\n\nPahoittelemme kovasti peruuntumisesta aiheutuvaa vaivaa ja harmia!\n\nYstävällisin terveisin\nPaula Sipakko\nasiakaspalveluvastaava\nStand up -areena Nauraittamo',
+          trueFalse: [
+            {
+              id: 'rt2-tf1',
+              statementFi: 'Tämänpäiväinen esitys peruuntuu sairastumisen takia.',
+              answer: true,
+              explanation: 'Teksti sanoo: "peruttu sairaustapauksen vuoksi".',
+            },
+            {
+              id: 'rt2-tf2',
+              statementFi: 'Uuden näytöksen ajankohdasta päätetään asiakkaiden vastausten perusteella.',
+              answer: false,
+              explanation: 'Teksti sanoo, että uusi näytös on jo sovittu 16. huhtikuuta.',
+            },
+            {
+              id: 'rt2-tf3',
+              statementFi: 'Perutun esityksen lipuilla pääsee esitykseen 16. huhtikuuta.',
+              answer: true,
+              explanation: 'Teksti sanoo: "Tämänpäiväisen esityksen liput käyvät uuteen näytökseen".',
+            },
+            {
+              id: 'rt2-tf4',
+              statementFi: 'Lippujen hinnan voi halutessaan saada takaisin palauttamalla peruuntuneen esityksen liput 10. huhtikuuta mennessä.',
+              answer: true,
+              explanation: 'Teksti sanoo: "Vastatkaahan tähän viestiin 10.4. mennessä".',
+            },
+          ],
+        },
+        {
+          id: 'reading-test-3',
+          titleFi: 'Lasten harrastukset rytmittävät arkea',
+          titleEn: "Children's Hobbies Structure Everyday Life",
+          source: 'Ani Kettomäki, Pikka 08/2016 (lyhennetty ja muokattu)',
+          textFi:
+            'Lapsen harrastaminen on iso ilo, mutta lasten treenikalenterista voi tulla vanhemmille myös taakka. Moni vanhempi väsyy jatkuvassa kuskaamis- ja aikataulupaineessa. Onko pakko jaksaa ja milloin liika on liikaa?\n\nLiikuntatieteiden tohtori Arja Sääkslahti muistuttaa, ettei ohjattu harrastustoiminta suinkaan ole välttämätöntä.\n\n"Terveyden ja hyvinvoinnin kannalta tärkeä kokonaisliikkumisen määrä voi kertyä hyvin monella tavalla."\n\nArkiliikunnalla, kuten välimatkojen kävelemisellä, voi pitää hyvin kuntoa yllä. Riittää, jos päivään mahtuu tunti reipasta liikkumista. Moni vanhempi ottaa paineita lastensa harrastusten aloittamisesta jo hyvin varhain. Vauvauinnit, -muskarit ja muut leppoisat ryhmät ovat toki kivaa ajanvietettä, jos sekä lapsi että vanhempi niistä nauttii, mutta harrastamisen ei pidä olla pakkopullaa.\n\n"Alle kolmevuotiaalle lapselle riittää, että arjessa on mahdollista ulkoilla ja olla liikkeellä perheen kanssa."\n\nPienet retket lähellä, puistossa käyminen, pallopelit pihalla ja pyöräily riittävät hyvin vielä leikki-ikäisellekin. Pääasia on, että lapsi saa liikkua ja ulkoilla paljon.\n\nMannerheimin Lastensuojeluliiton ohjelmajohtaja, psykologi Marie Rautava kehottaa miettimään perheen harrastuksia ilon ja mielihyvän näkökulmasta.\n\nHänen mielestään on tärkeintä, että lapsi saa tehdä asioita, joista hän itse on kiinnostunut ja joiden pariin hän lähtee innolla.',
+          open: [
+            { id: 'rt3-o1', questionFi: 'Miksi vanhemmat väsyvät?', sampleAnswerFi: 'Jatkuvassa kuskaamis- ja aikataulupaineessa.' },
+            {
+              id: 'rt3-o2',
+              questionFi: 'Millainen liikunta on sopivaa leikki-ikäiselle? Mainitse kolme asiaa.',
+              sampleAnswerFi: 'Pienet retket lähellä, puistossa käyminen, pallopelit pihalla, pyöräily.',
+            },
+            {
+              id: 'rt3-o3',
+              questionFi: 'Millaisia asioita pitäisi ottaa huomioon, kun lapselle valitaan sopivaa harrastusta?',
+              sampleAnswerFi: 'Lapsen oma kiinnostus ja ilo.',
+            },
+          ],
+        },
+      ],
+    },
+    writing: {
+      tip: {
+        title: 'VINKKI: Kerro mielipidetehtävässä oma mielipiteesi',
+        body: [
+          'Otsikko voi edustaa jonkun toisen vahvaa mielipidettä. Sinun ei tarvitse olla samaa mieltä – voit ajatella asiasta täysin eri tavalla.',
+          'Tärkeintä on, että osaat ilmaista oman mielipiteesi ja perustella sen.',
+        ],
+      },
+      freewrite: {
+        instructionsFi:
+          'Lue alla oleva mielipideteksti. Alleviivaa kaikki sanat ja fraasit, jotka kertovat, että kyseessä on kirjoittajan mielipide.\n\n"Pelailijat pois kaduilta!"\n\nAsun rauhallisella omakoti- ja rivitaloalueella, jolla näin kesäaikaan ovat riesana keskellä katua pelaavat lapset. Minusta on aivan käsittämätöntä, että pihoista raahataan tielle niin sählymaaleja kuin pyörillä siirrettäviä koripallokorejakin.\n\nVälillä omaan pihaan ajaminen on todella hidasta, kun joutuu odottamaan välineiden siirtämistä pois tieltä. Uskon, että tämä häiritsee muitakin autolla liikkujia.\n\nMielestäni katu ei ole oikea paikka pihapeleille. Olen sitä mieltä, että vanhempien kuuluu olla vastuullisia ja ohjata lapsensa harrastamaan pallopelejä niille tarkoitetuille paikoille.\n\nPertti Savola, Hyvinkää',
+        rules: [],
+        topics: [
+          'Alleviivatut mielipidefraasit: Minusta (In my opinion)',
+          'Mielestäni (In my opinion)',
+          'Olen sitä mieltä, että (I am of the opinion that)',
+          'Uskon (I believe)',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Keskustele luokkatovereiden kanssa:',
+        questions: [
+          'Alleviivasitko samat sanat?',
+          'Millä muilla tavoilla mielipiteen voi ilmaista?',
+          'Keskustelkaa, mistä olette samaa/eri mieltä. Käyttäkää mielipidefraaseja.',
+          'Kirjoita kolme lausetta siitä, mistä olet samaa/eri mieltä.',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Analysoi mielipideteksti ja kirjoita oma mielipide',
+          instructionsFi:
+            'Lue teksti "Joululaulujen soittamista ei pitäisi aloittaa liian aikaisin", vastaa kysymyksiin ja kirjoita lopuksi oma mielipidetekstisi samasta aiheesta.\n\n"Olen ihmetellyt, miksi joululaulut eivät joulun aikaan enää kuulosta miltään. Ne eivät tuo enää samanlaista tunnelmaa kuin silloin, kun niiden soittamista odotettiin jouluun asti. Vähän sama kuin söisimme jäätelöä joka päivä. Eihän se sitten enää kesällä maistu miltään ihmeelliseltä, kun sitä on syönyt vuoden ympäri päivästä toiseen.\n\nEn käsitä, miksi kaunis musiikki pitää pilata soittamalla sitä jo paljon ennen itse juhlaa. Entä miltähän mahtaa tuntua joulumusiikki joulunaikaan liikkeiden henkilökunnasta, joka kuuntelee töissä näitä samoja rallatuksia viikkokausia? Samat joululevyt soivat tavarataloissa ja ostoskeskuksissa aamusta iltaan. Ne soitetaan siellä puhki ja pilalle, ja joulun tunnelma häviää.\n\nKauppahan on muutenkin varastanut meiltä joulun: osta, osta, osta joulukrääsää, vaikka velaksi, kunhan vain ostat. Myös joulutunnelman se on varastanut renkuttamalla joululauluja ihan liikaa ja vielä mitä kauheimpia versioita niistä.\n\nJoulumusiikki kuuluu mielestäni kyllä jouluun, mutta marraskuussa ei ole vielä joulu. Pidetään juhla juhlana ja arki arkena eikä sekoiteta niitä. Muuten kaikki on kohta vain samaa, harmaata arkea. Sitäkö me todella haluamme?\n\nPirkko, 78 v."',
+          bulletsFi: [
+            'Mikä kirjoittajan mielestä on epäkohta, eli huono asia?',
+            'Mitä muutosta kirjoittaja toivoo?',
+            'Miten kirjoittaja perustelee mielipiteensä?',
+          ],
+          exampleTitleFi: 'Vastaukset ja huomiot:',
+          exampleFi:
+            'Vastaukset kysymyksiin:\n1. Joululauluja aletaan soittaa liian aikaisin.\n2. Kirjoittaja toivoo, että joululauluja soitetaan vasta joulun aikaan.\n3. Kirjoittaja vertaa joululauluja jäätelön syömiseen joka päivä – se ei enää tunnu erityiseltä.\n\nKirjoittaja käyttää hyvin vähän selkeitä mielipidefraaseja. Silti mielipide käy ilmi: hän toteaa asioita faktoina, käyttää retorisia kysymyksiä, tekee vertailuja ja käyttää voimakasta kieltä ("pilata", "varastanut", "kauheimpia").\n\nSamaa mieltä kirjoittajan kanssa: Joululauluja soitetaan liian aikaisin. Kauppa on kaupallistanut joulun.\nEri mieltä kirjoittajan kanssa: Joulumusiikki ei pilaa joulua. Ihmiset voivat itse päättää, milloin kuuntelevat joululauluja.',
+        },
+      ],
+      openingClosingTip: {
+        title: 'VINKKI: Mielipidefraaseja',
+        body: [
+          'Kun olet samaa/eri mieltä: Olen samaa mieltä. En ole samaa mieltä. Olen eri mieltä. Olen osittain samaa / eri mieltä.',
+          'Kun otsikko on neutraali: Mielestäni... Minusta... Minun mielipiteeni on, että... Ajattelen, että... Luulen, että... Minusta tuntuu, että...',
+          'Kun asiassa on kaksi puolta: Toisaalta..., toisaalta... Positiivinen/negatiivinen puoli tässä on se, että...',
+          'Kokemuksen käyttäminen: Kokemukseni mukaan... Olen huomannut, että...',
+          'Muiden lähteiden käyttäminen: Tutkimusten mukaan... Suositusten mukaan...',
+        ],
+      },
+      informalTasks: [
+        {
+          id: 'writing-test-informal-1',
+          titleFi: 'Kysymys ystävälle',
+          instructionsFi: 'Haluat järjestää naamiaisjuhlat halloweeniksi. Tiedät, että yksi ystävistäsi tykkää järjestää juhlia. Kysy, järjestäisikö hän ne kanssasi.',
+        },
+        {
+          id: 'writing-test-informal-2',
+          titleFi: 'Ehdotus sukulaiselle',
+          instructionsFi: 'Ehdota sukulaiselle, että menisitte yhdessä katsomaan urheilutapahtumaa, teatteriesitystä tai konserttia. Keksi itse, mitä, missä ja milloin.',
+        },
+        {
+          id: 'writing-test-informal-3',
+          titleFi: 'Suosittelu ystävälle',
+          instructionsFi: 'Olet juuri katsonut useita jaksoja tv-sarjasta, joka on todella hyvä. Keksi, millainen sarja se on, ja suosittele sitä.',
+        },
+        {
+          id: 'writing-test-informal-4',
+          titleFi: 'Viesti naapurille',
+          instructionsFi:
+            'Haluaisit antaa lapsesi opettajalle pienen joululahjan, mutta et tiedä, millaisia lahjoja opettajille yleensä annetaan. Kysy naapurilta, jolla on samanikäisiä lapsia.',
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-test-formal-1',
+          titleFi: 'Viesti tapahtumajärjestäjälle',
+          instructionsFi: 'Kävit konsertissa ja olit pettynyt joihinkin järjestelyihin. Kirjoita järjestäjälle, kerro mitä tapahtui ja ehdota parannuksia.',
+        },
+        {
+          id: 'writing-test-formal-2',
+          titleFi: 'Kysymys kuntosalille',
+          instructionsFi:
+            'Sinulla on kuukausittainen kuntosalijäsenyys, mutta lääkäri on kieltänyt liikunnan kuudeksi viikoksi. Haluaisit siirtää jäsenyyden perheenjäsenelle. Kysy, onko se mahdollista.',
+        },
+        {
+          id: 'writing-test-formal-3',
+          titleFi: 'Poissaoloviesti opettajalle',
+          instructionsFi: 'Olet ilmoittautunut suomalaisen perinneruoan kurssille, mutta et pääse ensimmäiselle kerralle. Kirjoita opettajalle.',
+        },
+        {
+          id: 'writing-test-formal-4',
+          titleFi: 'Viesti museon asiakaspalveluun',
+          instructionsFi:
+            'Olet menossa taidenäyttelyyn vanhaan museorakennukseen pyörätuolia käyttävän ystäväsi kanssa. Et tiedä, onko rakennus esteetön. Kysy asiakaspalvelusta.',
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Kulttuuri- ja liikuntasetelit',
+          options: [
+            'A. Kulttuuri- ja liikuntaseteleistä on paljon hyötyä',
+            'B. Kulttuuri- ja liikuntasetelit ilahduttavat vain hyväosaisia',
+          ],
+        },
+        {
+          id: 'writing-opinion-2',
+          titleFi: 'Elokuvateatterien ruoka- ja juomakulttuuri',
+          options: ['Lopettakaa elokuvateatterissa syöminen!'],
+        },
+        {
+          id: 'writing-opinion-3',
+          titleFi: 'Muita aiheita',
+          options: [
+            'Suomalaisessa kulttuurissa ei uskalleta näyttää uskontoa',
+            'Suomalaiset elokuvat ja sarjat - kannattaako niitä katsoa?',
+            'Missä syödään maailman parasta ruokaa?',
+            'E-urheilu: onko tietokonepelien pelaaminen urheilua?',
+            'Yhteiskunnan pitäisi tukea taiteilijoita',
+          ],
+        },
+      ],
+    },
+    listening: {
+      tip: {
+        title: 'VINKKI: Harjoittele ääntämistä',
+        body: [
+          'Yksi tapa ymmärtää puhetta paremmin on harjoitella ääntämistä. Ääntämisen harjoittelu auttaa sekä puhumaan paremmin että ymmärtämään paremmin.',
+          'Kun kuuntelet ja toistat fraaseja, sekä kuunteleminen että puhuminen helpottuvat vähitellen.',
+          'Yhteys: Kun kuulet selkeämmin, osaat ääntää paremmin. Kun ääntäminen sujuu paremmin, osaat kuulla selkeämmin.',
+        ],
+      },
+      repeatSentences: {
+        instructionsFi: 'Kuuntele nämä fraasit ja toista.',
+        sentences: [
+          'Kuulostaa tosi kiinnostavalta!',
+          'Mä oon ymmärtäny, et...',
+          'Ihan samat fiilikset!',
+          'Hei, mä en tiennytkään, et...',
+          'Oli kyl tosi kiinnostava.',
+          'Musta tää on tosi outo juttu.',
+          'Sekin vielä!',
+          'Tällainen käsitys mullakin on.',
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Vieraanvaraisuus',
+          titleEn: 'Hospitality',
+          textFi: NO_TRANSCRIPT_NOTE,
+          trueFalse: [
+            {
+              id: 'lp1-tf1',
+              statementFi: 'Yksi keskustelijoista kertoo, että hän asui lapsena Belgiassa.',
+              answer: true,
+              explanation: '"Missä sä siis asuit ja millon? – Belgiassa, oikeestaan mun koko lapsuuden..."',
+            },
+            {
+              id: 'lp1-tf2',
+              statementFi: 'Suomeen muuttaneelle perheelle oli kulttuurishokki, että Suomessa ei aina tarjota vieraille ruokaa.',
+              answer: true,
+              explanation: 'Keskustelussa käydään läpi, miten Suomessa ei aina tarjota vieraille ruokaa.',
+            },
+            {
+              id: 'lp1-tf3',
+              statementFi: 'Kaikkien keskustelijoiden kotona tarjotaan aina vieraille ruokaa.',
+              answer: false,
+              explanation: 'Keskustelussa käydään läpi eroja vieraanvaraisuudessa.',
+            },
+            {
+              id: 'lp1-tf4',
+              statementFi: 'Keskustelijat vertailevat suomalaista ja ruotsalaista vieraanvaraisuutta keskenään.',
+              answer: false,
+              explanation: 'Keskustelussa vertaillaan suomalaista ja muiden kulttuurien vieraanvaraisuutta, ei nimenomaan ruotsalaista.',
+            },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'listening-test-1',
+          titleFi: 'Neulova mies',
+          titleEn: 'A Man Who Knits',
+          textFi: NO_TRANSCRIPT_NOTE,
+          mcq: [
+            {
+              id: 'lt1-q1',
+              question: 'Jukka aloitti neulomisen, koska',
+              options: [
+                'uuden luominen kaikissa sen muodoissa oli hänen äitinsä mielestä tärkeä taito',
+                'hän ajatteli, että se olisi hieno taito oppia',
+                'hän halusi oppia keskittymään',
+              ],
+              correctIndex: 0,
+              explanation: 'Vastaus: uuden luominen kaikissa sen muodoissa oli hänen äitinsä mielestä tärkeä taito.',
+            },
+            {
+              id: 'lt1-q2',
+              question: 'Jukalta meni melkein vuosi siihen, että hän',
+              options: ['oppi tekemään tilkkuja ja peruslapasia', 'löysi neulemallin, joka ei pelottanut', 'neuloi islantilaisneuleen'],
+              correctIndex: 1,
+              explanation: 'Vastaus: löysi neulemallin, joka ei pelottanut.',
+            },
+            {
+              id: 'lt1-q3',
+              question: 'Jukka tykkää neuloa',
+              options: ['suurikokoisia neuleita', 'neulemalleja, joissa on jotain erikoista', 'sileitä ja yksinkertaisia perusneuleita'],
+              correctIndex: 2,
+              explanation: 'Vastaus: sileitä ja yksinkertaisia perusneuleita.',
+            },
+            {
+              id: 'lt1-q4',
+              question: 'Joskus Jukkaa ärsyttää, että',
+              options: ['neulovia miehiä ihmetellään', 'ideoita ja vinkkejä jaetaan niin vähän', 'normeja haastetaan'],
+              correctIndex: 0,
+              explanation: 'Vastaus: neulovia miehiä ihmetellään.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-2',
+          titleFi: 'Lähetkö mun kaa teatteriin?',
+          titleEn: 'Will You Come to the Theater with Me?',
+          textFi: NO_TRANSCRIPT_NOTE,
+          trueFalse: [
+            {
+              id: 'lt2-tf1',
+              statementFi: 'Antti ehdottaa Sallalle, että he kävisivät katsomassa musikaalia.',
+              answer: true,
+              explanation: 'Antti ehdottaa musikaalia.',
+            },
+            {
+              id: 'lt2-tf2',
+              statementFi: 'Kun Antti kutsuu Sallan, tämä kieltäytyy tulemasta.',
+              answer: false,
+              explanation: 'Salla suostuu tulemaan.',
+            },
+            {
+              id: 'lt2-tf3',
+              statementFi: 'Antti ja Salla sopivat tapaavansa Stockmannilla.',
+              answer: true,
+              explanation: 'He sopivat tapaavansa Stockmannilla.',
+            },
+            {
+              id: 'lt2-tf4',
+              statementFi: 'Salla ja Antti tapaavat 18:30.',
+              answer: false,
+              explanation: 'He tapaavat kello 18:00 tai 19:00, ei 18:30.',
+            },
+            {
+              id: 'lt2-tf5',
+              statementFi: 'Antti pyytää Sallaa pyytämään anteeksi tämän veljeltä.',
+              answer: false,
+              explanation: 'Antti ei pyydä tätä Sallalta.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-3',
+          titleFi: 'Mummi soittaa Inkalle',
+          titleEn: 'Grandma Calls Inka',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            { id: 'lt3-o1', questionFi: 'Miksi mummi soittaa Inkalle?', sampleAnswerFi: 'Hän tarvitsee apua lipun ostamisessa.' },
+            { id: 'lt3-o2', questionFi: 'Mitä mummi haluaa mennä katsomaan?', sampleAnswerFi: 'Jotain teatteriin / konserttiin / näytökseen.' },
+            { id: 'lt3-o3', questionFi: 'Miksi nettisivuilla on kartta?', sampleAnswerFi: 'Näyttämään, missä paikka sijaitsee.' },
+            { id: 'lt3-o4', questionFi: 'Minkä maksuvaihtoehdon mummi valitsee?', sampleAnswerFi: 'Laskun / maksun jälkikäteen.' },
+            {
+              id: 'lt3-o5',
+              questionFi: 'Mitä mummi ajattelee siitä, kuinka helppo tai vaikea tehtävä oli?',
+              sampleAnswerFi: 'Se oli helppo / vaikea.',
+            },
+          ],
+        },
+      ],
+    },
+    speaking: {
+      repeatPhrases: {
+        instructionsFi: 'Kuuntele nämä puhekieliset mielipidefraasit ja kirjoita, mitä kuulet.',
+        phrases: [
+          'Kuulostaa tosi kiinnostavalta!',
+          'Mä oon ymmärtäny, et...',
+          'Ihan samat fiilikset!',
+          'Hei, mä en tiennytkään, et...',
+          'Oli kyl tosi kiinnostava.',
+          'Musta tää on tosi outo juttu.',
+        ],
+      },
+      phraseTable: {
+        titleFi: 'VINKKI: Puhekielisiä mielipidefraaseja',
+        rows: [
+          { spoken: 'Mun mielestä', written: 'Minun mielestäni', en: 'In my opinion' },
+          { spoken: 'Mä ajattelen, että...', written: 'Ajattelen, että...', en: 'I think that...' },
+          { spoken: 'Mä oon eri mieltä', written: 'Olen eri mieltä', en: 'I disagree' },
+          { spoken: 'Mä oon samaa mieltä', written: 'Olen samaa mieltä', en: 'I agree' },
+          { spoken: 'Mä oon sitä mieltä, että...', written: 'Olen sitä mieltä, että...', en: 'I am of the opinion that...' },
+          { spoken: 'Toisaalt... toisaalt...', written: 'Toisaalta... toisaalta...', en: 'On one hand... on the other hand...' },
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Keskustelkaa musiikista parin tai pienen ryhmän kanssa:',
+        questions: [
+          'Kuunteletteko paljon musiikkia?',
+          'Millaisesta musiikista tykkäätte?',
+          'Millaisesta musiikista ette tykkää?',
+          'Kuunteletteko suomalaista musiikkia?',
+          'Soitatteko itse jotain soitinta?',
+          'Musiikkityylejä: klassinen, iskelmä, kansanmusiikki, kantri, blues, jazz, rock, hevi, pop, rap.',
+        ],
+      },
+      practiceLongTask: {
+        id: 'speaking-practice-1',
+        titleFi: 'Suomalainen musiikki - outoa vai upeaa?',
+        titleEn: 'Finnish Music - Weird or Wonderful?',
+        prepSeconds: 120,
+        speakSeconds: 120,
+        questions: [
+          'Kuunteletko suomalaista musiikkia?',
+          'Millaisesta musiikista yleensä tykkäät?',
+          'Mikä tekee musiikista mielestäsi hyvää tai huonoa?',
+          'Oletko valmis maksamaan musiikista?',
+          'Pitäisikö yhteiskunnan tukea musiikkia verorahoilla?',
+        ],
+        speakDontWriteTip: {
+          title: 'VINKKI: Apukysymykset',
+          body: [
+            'YKI-taitotaso 3 (B1): riittää, että annat mielipiteesi konkreettisella tasolla ja perustelet sen hyvin. Aloita helpoimmasta apukysymyksestä ja vastaa niin moneen kuin pystyt. Helpoimmat kysymykset ovat yleensä alussa.',
+            'YKI-taitotaso 4 (B2): tärkeää puhua aiheesta myös yhteiskunnallisella ja abstraktilla tasolla. Viimeiset apukysymykset auttavat tässä eniten. Älä käytä liikaa aikaa helppoihin kysymyksiin – aloita helposta, mutta siirry nopeasti vaikeampiin.',
+          ],
+        },
+      },
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Julkkis',
+          titleEn: 'Celebrity',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Kuka hän on?',
+            'Mitä hän tekee?',
+            'Miksi hän on kuuluisa?',
+            'Ketkä ovat hänen fanejaan?',
+            'Miksi hän on sinulle tärkeä?',
+            'Pitäisikö muidenkin seurata häntä?',
+          ],
+        },
+        {
+          id: 'speaking-test-2',
+          titleFi: 'Juhla',
+          titleEn: 'Celebration',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Mikä juhla se on?',
+            'Milloin, miten ja miksi tätä juhlaa vietetään?',
+            'Miten itse vietät tätä juhlaa?',
+            'Miksi se on sinulle tärkeä?',
+            'Kenelle muulle se on tärkeä?',
+            'Millainen historia ja yhteiskunnallinen merkitys tällä juhlalla on?',
+          ],
+        },
+        {
+          id: 'speaking-test-3',
+          titleFi: 'Viihde',
+          titleEn: 'Entertainment',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Millainen se on?',
+            'Mistä se kertoo?',
+            'Milloin katsot, kuuntelet tai luet sitä?',
+            'Miksi se on sinulle tärkeä?',
+            'Kenelle suosittelisit sitä?',
+          ],
+        },
+      ],
+      conversationTasks: [
+        {
+          id: 'speaking-conv-1',
+          titleFi: 'Haastattelu matkamessuilla',
+          scenarioFi: 'Sinua haastatellaan matkamessuilla.',
+          turns: [
+            { instructionFi: 'Tervehdi ja vastaa myöntävästi.', seconds: 10 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 5 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi ja kerro, millaisissa tapahtumissa käyt.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa kysymykseen. Keksi syy itse.', seconds: 20 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
+          ],
+        },
+        {
+          id: 'speaking-conv-2',
+          titleFi: 'Keskustelu kaverin kanssa',
+          scenarioFi: 'Ystäväsi on yrittänyt tavoittaa sinua, mutta et ole vastannut. Soita hänelle takaisin.',
+          turns: [
+            { instructionFi: 'Tervehdi ja kerro, miksi soitat.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi ja kysy, mitä hänelle kuuluu.', seconds: 10 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            { instructionFi: 'Kerro, että olet kiinnostunut, mutta et vielä ole varma, pääsetkö. Kerro myös, miksi et vielä tiedä.', seconds: 20 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+          ],
+        },
+      ],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1-1',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Olet naapurisi ovella tuomassa joulukukkaa. He ovat iloisia ja kutsuvat sinut sisään kahville. Sinulla on kiire, joten kieltäydy kohteliaasti.',
+          seconds: 15,
+        },
+        {
+          id: 'speaking-situation-1-2',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Kutsu ystäväsi urheilutapahtumaan. Keksi itse, mitä, milloin ja missä.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-3',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Ystäväsi kysyy, millaisista elokuvista pidät. Vastaa.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-4',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Kutsu ystäväsi tupaantuliaisiin uuteen kotiisi. Kerro, millaiset juhlat ovat ja mitä he voisivat tuoda mukanaan.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-5',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Olet juhlissa, joissa tarjoillaan suomalaisia perinneruokia. Joku kysyy, mitä mieltä olet suomalaisesta ruokakulttuurista. Vastaa.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-1',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Työkaverisi on nähnyt kesäteatteriesityksen, joka kiinnostaa sinua. Kysy, kannattaako se nähdä.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-2',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Sinut on kutsuttu hautajaisiin, mutta et ole varma, miten kirkkoon kuuluu pukeutua. Kysy neuvoa ystävältä.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-3',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Kävit konsertissa, joka teki sinuun suuren vaikutuksen. Kuvaile sitä ystävälle.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-4',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Saat lahjakortin lippuihin tapahtumaan. Kiitä lahjan antajaa ja kerro, mihin tapahtumaan käytät sen.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-5',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Olet ravintolassa ystävän kanssa ja haluat maksaa molempien ateriat. Kun ystäväsi sanoo voivansa maksaa itse, selitä, miksi haluat maksaa.',
+          seconds: 30,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Suomalaiset perhejuhlat ovat tylsiä',
+          titleEn: 'Finnish Family Celebrations Are Boring',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Oletko ollut Suomessa perhejuhlissa?',
+            'Jotkut sanovat, että suomalaiset perhejuhlat ovat tylsiä. Oletko samaa vai eri mieltä?',
+            'Miten perhejuhlia juhlitaan muissa sinulle tutuissa maissa?',
+            'Mitä ajattelet suomalaisesta juhlakulttuurista?',
+            'Monissa perheissä uskonnolla on tärkeä rooli perhejuhlissa. Mitä ajattelet tästä?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-2',
+          titleFi: 'Ruokakulttuuri',
+          titleEn: 'Food Culture',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Millaista ruokaa tavallisesti syöt?',
+            'Millaista on mielestäsi hyvä ruoka?',
+            'Pidätkö suomalaisesta ruoasta?',
+            'Onko suomalainen ruokakulttuuri vaikuttanut sinun ruokailutottumuksiisi?',
+            'Mitä eroja olet huomannut eri maiden ruokakulttuurien välillä?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-3',
+          titleFi: 'Urheilu ja museot',
+          titleEn: 'Sports and Museums',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Valitse A tai B.'],
+          subChoices: [
+            {
+              label: 'A. Maailman paras urheilulaji',
+              questions: [
+                'Mikä on mielestäsi paras urheilulaji?',
+                'Mitä urheilua tykkäät itse harrastaa?',
+                'Mitä urheilua tykkäät katsoa?',
+                'Millainen yhteiskunnallinen merkitys urheilulla on?',
+              ],
+            },
+            {
+              label: 'B. Museoiden pitäisi olla ilmaisia',
+              questions: [
+                'Käytkö museoissa?',
+                'Pitäisikö kaikkien käydä museoissa säännöllisesti?',
+                'Pitäisikö taidemuseoiden olla ilmaisia?',
+                'Pitäisikö yhteiskunnan tukea museoita?',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'kulttuuri', en: 'culture' },
+      { fi: 'taide', en: 'art' },
+      { fi: 'musiikki', en: 'music' },
+      { fi: 'kirjallisuus', en: 'literature' },
+      { fi: 'teatteri', en: 'theater' },
+      { fi: 'museo', en: 'museum' },
+      { fi: 'konsertti', en: 'concert' },
+      { fi: 'näyttely', en: 'exhibition' },
+      { fi: 'juhla', en: 'celebration' },
+      { fi: 'laulaja', en: 'singer' },
+      { fi: 'näyttelijä', en: 'actor' },
+      { fi: 'kirjailija', en: 'writer/author' },
+      { fi: 'elokuva', en: 'film/movie' },
+      { fi: 'sarja', en: 'series' },
+      { fi: 'runo', en: 'poem' },
+      { fi: 'maalaus', en: 'painting' },
+      { fi: 'liput', en: 'tickets' },
+      { fi: 'esitys', en: 'performance' },
+      { fi: 'peruuntua', en: 'to be canceled' },
+      { fi: 'korvaava', en: 'replacement' },
+    ],
+    usefulPhrases: [
+      { fi: 'Mielestäni...', en: 'In my opinion...' },
+      { fi: 'Minusta...', en: 'I think...' },
+      { fi: 'Olen samaa mieltä.', en: 'I agree.' },
+      { fi: 'Olen eri mieltä.', en: 'I disagree.' },
+      { fi: 'Toisaalta... toisaalta...', en: 'On one hand... on the other hand...' },
+      { fi: 'Kuulostaa kiinnostavalta!', en: 'Sounds interesting!' },
+      { fi: 'Suosittelen lämpimästi!', en: 'I warmly recommend!' },
+      { fi: 'Kannattaako mennä?', en: 'Is it worth going?' },
+      { fi: 'Millaisesta musiikista tykkäät?', en: 'What kind of music do you like?' },
+      { fi: 'Olen lukenut / nähnyt / kuullut...', en: 'I have read / seen / heard...' },
+    ],
+    learnEverywhereTip: {
+      title: 'VINKKI: Lue paljon',
+      body: [
+        'Testissä ei ole paljon aikaa. Siksi on tärkeää osata lukea nopeasti ja sujuvasti suomeksi.',
+        'Vinkkejä parempaan lukemiseen: lue paljon – sinun ei tarvitse ymmärtää kaikkea. Lue selkokirjoja ja selkokielisiä uutisia. Lue mainoksia.',
+        'Kun katsot elokuvia, laita suomenkieliset tekstitykset päälle. Kun haet tietoa netistä, valitse suomenkielinen versio.',
+        'Lue joka päivä vähän, älä paljon kerran viikossa. Tee lukemisesta päivittäinen tapa.',
+      ],
+    },
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {
