@@ -3809,6 +3809,729 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       ],
     },
   },
+  {
+    id: 'yki-ch6',
+    number: 6,
+    titleFi: 'Terveys ja hyvinvointi',
+    titleEn: 'Health and Wellbeing',
+    pages: '166-196',
+    theme: 'Terveys, hyvinvointi, terveydenhuollon palvelut, terveelliset elämäntavat, sairaudet ja lääketieteelliset tilanteet',
+    reading: {
+      vocabWarmup: {
+        instructionsFi:
+          'Valitse yksi seuraavista aiheista ja etsi siitä tietoa netistä. Käytä myös selkokielisiä sivustoja!',
+        items: [
+          {
+            fi: 'Vaihtoehto 1: Terveellinen ruokavalio',
+            en: 'Mistä terveellinen ruokavalio koostuu? Mitä hyötyä siitä on? Millaisia ongelmia epäterveellinen ruokavalio voi aiheuttaa?',
+          },
+          {
+            fi: 'Vaihtoehto 2: Uni',
+            en: 'Miksi ihmisen täytyy nukkua? Mitä hyötyä riittävästä unesta on? Millaisia ongelmia liian vähäinen uni voi aiheuttaa?',
+          },
+          {
+            fi: 'Vaihtoehto 3: Liikunta',
+            en: 'Kuinka paljon ihmisen pitäisi liikkua? Mitä hyötyä liikunnasta on? Millaisia ongelmia liikkumattomuus voi aiheuttaa?',
+          },
+        ],
+        note: {
+          title: 'VINKKI: Lue tekstejä ympärilläsi',
+          body: [
+            'Paras tapa oppia ymmärtämään tekstejä on lukea mahdollisimman paljon. Lue kylttejä, ilmoituksia, ohjeita, mainoksia, ilmaisjakelulehtiä ja verkkosivuja.',
+            'Yksi tapa lisätä suomenkielistä lukemista on vaihtaa puhelimen tai laitteen kieli suomeksi.',
+          ],
+        },
+      },
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Selkä vetreäksi työergonomialla ja taukojumppalla',
+          titleEn: 'Back Flexibility Through Work Ergonomics and Exercise Breaks',
+          source: 'Verna Julkunen, Terveydeksi 2/2022',
+          textFi:
+            'Selkä ei tykkää paikallaolosta. Lyhyt taukojumppa pari kertaa päivässä pitää selän vetreänä niin kotikonttorissa kuin toimistollakin.\n\nKotona työskentely on heikentänyt monen toimistotyöläisen työergonomiaa. Etäpäivän jälkeen selkä saattaa olla normaaliakin jäykempi. Keho ei pidemmän päälle tykkää työnteosta läppärillä sohvalla tai keittiön pöydän ääressä.\n\nSäännöllistä etätyötä varten kannattaa tehdä pysyvä työpiste, jossa työtaso, näyttö ja työtuoli ovat sopivalla korkeudella ja työskentelyasento on hyvä. Hyvässä työasennossa hartiat ovat rennot, niska on suorassa ja työtuoli tukee ristiselkää.\n\nPidä taukoja työpäivän aikana. Keho jäykistyy nopeasti, jos koneen ääreltä ei päivän aikana liiku mihinkään. Hyväkään ergonomia ei korvaa liikettä. Nouse siis ylös kerran tunnissa, vaihda asentoa ja työskentele välillä seisten.\n\nVaikka istuminen on lihaksille lepotila, liittyy toimistotöissä istumiseen lihasten jännitystä. Istuminen hidastaa aineenvaihduntaa ja kuormittaa selkää. Tauot lisäävät aineenvaihduntaa lihasten ja nivelien lisäksi myös aivoissa. Tauon jälkeen ajatus kulkee usein paremmin ja keskittymiskykykin paranee.\n\nTaukojumppa on parasta lääkettä toimistotyöläisen jäykälle selälle ja niskalle. Jumit ja säryt johtuvat usein liiallisesta paikallaan olosta, jatkuvasta istumisesta tai seisomisesta johtuvasta yksipuolisesta kuormituksesta ja heikoista lihaksista. Lyhyt taukojumppa pari kertaa päivässä kuuluu jokaiseen työpäivään.',
+          predictVocab: [
+            { fi: 'selkä', en: 'back' },
+            { fi: 'ergonomia', en: 'ergonomics' },
+            { fi: 'taukojumppa', en: 'exercise break' },
+            { fi: 'jäykkä', en: 'stiff' },
+            { fi: 'niska', en: 'neck' },
+            { fi: 'hartiat', en: 'shoulders' },
+            { fi: 'ristiselkä', en: 'lower back' },
+            { fi: 'aineenvaihdunta', en: 'metabolism' },
+            { fi: 'jumit', en: 'stiffness/pain' },
+            { fi: 'säryt', en: 'aches' },
+          ],
+          tip: {
+            title: 'VINKKI: Vastaa aina jotain',
+            body: [
+              'Sinun ei tarvitse ymmärtää kaikkea tekstistä – voit silti vastata kysymyksiin oikein. Jos et löydä vastausta, arvaa! Testissä on aina parempi arvata kuin jättää tyhjäksi.',
+            ],
+          },
+          open: [
+            {
+              id: 'rp1-o1',
+              questionFi: 'Miksi toimistotyöläisten työergonomia on huonontunut?',
+              sampleAnswerFi: 'Kotona työskentely on heikentänyt sitä.',
+            },
+            {
+              id: 'rp1-o2',
+              questionFi: 'Miten toimistotyössä voi ehkäistä kehon jäykistymistä? Mainitse kaksi asiaa.',
+              sampleAnswerFi: 'Tekemällä pysyvä työpiste ja pitämällä taukoja / nousemalla ylös kerran tunnissa.',
+            },
+            {
+              id: 'rp1-o3',
+              questionFi: 'Mitä haittaa istumisesta on?',
+              sampleAnswerFi: 'Se hidastaa aineenvaihduntaa ja kuormittaa selkää.',
+            },
+            {
+              id: 'rp1-o4',
+              questionFi: 'Mitä hyötyä tauoista on?',
+              sampleAnswerFi: 'Ne lisäävät aineenvaihduntaa, auttavat keskittymään ja ajatus kulkee paremmin.',
+            },
+            {
+              id: 'rp1-o5',
+              questionFi: 'Mistä toimistotyöläisten selkä- ja niskakivut usein johtuvat?',
+              sampleAnswerFi:
+                'Liiallisesta paikallaan olosta, jatkuvasta istumisesta tai seisomisesta johtuvasta yksipuolisesta kuormituksesta ja heikoista lihaksista.',
+            },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'reading-test-1',
+          titleFi: 'Apteekista kysyttyä',
+          titleEn: 'Asked from the Pharmacy',
+          textFi:
+            'Mitä vanhentuneille lääkkeille pitäisi tehdä?\n\nVanhentuneiden lääkejätteiden kierrättäminen on ympäristön kannalta erittäin tärkeää. Vanhaksi menneet tai käyttämättä jääneet lääkkeet tulee aina palauttaa apteekkiin, josta ne toimitetaan hävitettäväksi. Lääkkeet voi tuoda apteekkiin esimerkiksi muovipussissa. Lääkejätteestä on eroteltava kuitenkin ruiskut ja neulat, elohopeaa sisältävät kuumemittarit sekä jodia sisältävät lääkeaineet. Myös syöpälääkkeet ja solunsalpaajat täytyy erotella muusta lääkejätteestä omaan pussiinsa. Apteekkiin ei tarvitse viedä vitamiineja, perusvoiteita ja tavallisia kuumemittareita ilman paristoa, vaan ne voi hävittää kotitalouden sekajätteen mukana.\n\nMiten lääkkeet tulee säilyttää?\n\nLääkkeet tulisi säilyttää niin, että ne ovat suojassa liialliselta lämmöltä ja kosteudelta. Säilytyspaikaksi kannattaa siis valita viileä ja kuiva paikka, johon aurinko ei paista suoraan. Tilapäinen lämpötilan nousu esimerkiksi kesähelteillä ei kuitenkaan vaikuta lääkkeiden tehoon tai turvallisuuteen. Lääkkeitä säilytetään jääkaapissa vain silloin, kun pakkauksessa näin ohjeistetaan.\n\nLähdin lomalla mökille kauas ihmisten ilmoilta ja unohdin lasten tulehduskipulääkkeet kotiin. Voinko antaa lapselle tarvittaessa pienen annoksen aikuisten kipulääkettä?\n\nPääsääntöisesti lapsille annetaan vain lasten lääkkeitä, mutta jos lääkkeen pakkausselosteessa on annostusohje lapsille iän ja painon mukaan, ne ovat ohjeita noudatettuina turvallisia. Jos lääke ei millään maistu lapselle, voi lääkkeen sekoittaa esim. pieneen määrään hedelmäsosetta.',
+          mcq: [
+            {
+              id: 'rt1-q1',
+              question: 'Vanhentuneet lääkkeet ja muu lääkejäte',
+              options: [
+                'viedään apteekkiin kaikki aina erikseen pussitettuina',
+                'toimitetaan apteekkiin niin, että tietyt lääketyypit, ruiskut/neulat ja elohopealliset kuumemittarit on eroteltu',
+                'hävitetään kotitalousjätteenä sekajätteen mukana',
+              ],
+              correctIndex: 1,
+              explanation:
+                'Vastaus: toimitetaan apteekkiin niin, että tietyt lääketyypit, ruiskut/neulat ja elohopealliset kuumemittarit on eroteltu.',
+            },
+            {
+              id: 'rt1-q2',
+              question: 'Lääkkeet tulee säilyttää',
+              options: ['suojassa auringolta', 'suojattuna viileydeltä ja kuivuudelta', 'kesähelteillä jääkaapissa'],
+              correctIndex: 0,
+              explanation:
+                'Vastaus: suojassa auringolta. Teksti sanoo "suojassa liialliselta lämmöltä ja kosteudelta" – mutta vaihtoehto a) on annetuista lähinnä oikea.',
+            },
+            {
+              id: 'rt1-q3',
+              question: 'Lapsille voi antaa',
+              options: ['tarvittaessa hedelmänmakuista, sosemaista lääkettä', 'ainoastaan lasten lääkkeitä', 'aikuisten lääkkeitä, jos pakkausselosteessa on annostusohje myös lapsille'],
+              correctIndex: 2,
+              explanation: 'Vastaus: aikuisten lääkkeitä, jos pakkausselosteessa on annostusohje myös lapsille.',
+            },
+          ],
+        },
+        {
+          id: 'reading-test-2',
+          titleFi: 'Soita hätäkeskukseen 112',
+          titleEn: 'Call the Emergency Center 112',
+          source: 'sydanturva.fi (lyhennetty)',
+          textFi:
+            'Akuutin tai henkeä uhkaavan sairauden, sairaskohtauksen tai onnettomuuden yhteydessä soita aina yleiseen hätänumeroon 112. Soita hätänumeroon esimerkiksi seuraavissa tapauksissa, joissa tarvitset ambulanssia, palokuntaa tai poliisia:\n\nJoku on sairastunut äkillisesti.\n\nOlet itse joutunut onnettomuuteen tai huomaat onnettomuuden.\n\nRakennus on tulessa tai siitä tulee savua.\n\nHavaitset murron tai ryöstön.\n\nSoita hätänumeroon vain, jos tilanne on vakava. Kun soitat, käytä tervettä järkeä ja valmistaudu antamaan tietoja. Kun soitat hätänumeroon, kerro ensin, kuka olet, missä olet, mitä on tapahtunut ja kuinka monta henkilöä on sairastunut tai loukkaantunut.\n\nPuheluun vastaa hätäkeskuspäivystäjä, joka arvioi, tarvitsetko poliisia, palokuntaa vai ambulanssia. Hän arvioi myös lähetettävän avun kiireellisyyden. Hätäkeskuspäivystäjä ohjaa sinua myös tarvittaessa ensiavun antamisessa siihen asti, kunnes apu saapuu paikalle.',
+          trueFalse: [
+            {
+              id: 'rt2-tf1',
+              statementFi: 'Hätäkeskukseen saa soittaa vain, jos on tapahtunut onnettomuus.',
+              answer: false,
+              explanation: 'Teksti listaa useita syitä: äkillinen sairastuminen, onnettomuus, tulipalo, murto.',
+            },
+            {
+              id: 'rt2-tf2',
+              statementFi: 'Hätäkeskukseen täytyy soittaa, jos tarvitaan poliisia, ambulanssia tai palokuntaa.',
+              answer: true,
+              explanation: 'Teksti sanoo: "tarvitset ambulanssia, palokuntaa tai poliisia".',
+            },
+            {
+              id: 'rt2-tf3',
+              statementFi: 'Soittajan täytyy kertoa, miksi hän soittaa hätäkeskukseen.',
+              answer: true,
+              explanation: 'Teksti sanoo: "kerro ensin... mitä on tapahtunut".',
+            },
+            {
+              id: 'rt2-tf4',
+              statementFi: 'Soittajan täytyy arvioida hätäkeskukselle, kuinka kiireellisesti apua tarvitaan.',
+              answer: false,
+              explanation: 'Hätäkeskuspäivystäjä arvioi kiireellisyyden, ei soittaja.',
+            },
+          ],
+        },
+        {
+          id: 'reading-test-3',
+          titleFi: 'Nukkuminen vaikuttaa muistiin, aivoihin ja mielialaan',
+          titleEn: 'Sleep Affects Memory, Brain, and Mood',
+          textFi:
+            'Jos haluat oppia uutta, muistaa hyvin ja pitää luovuuttasi yllä, huolehdi riittävästä yöunesta. Unen aikana aivosi lajittelevat ja tallentavat tietoa.\n\nSaatamme nukkua lyhyitä yöunia, jotta saisimme päivään lisää tunteja. Pidemmän päälle se ei kuitenkaan kannata. Hyvä yöuni edistää terveyttä ja kokonaisvaltaista hyvinvointia. Uni vaikuttaa esimerkiksi siihen, miten elimistö pitää yllä vastustuskykyä ja torjuu sairauksia, mutta unen merkitys on tärkeä myös aivoille, muistille ja mielialalle.\n\nUnen aikana elimistö lepää, mutta samaan aikaan aivot työskentelevät ahkerasti. Aivot tarvitsevat unta, jotta ne pystyvät käsittelemään edellisenä päivänä tapahtuneita asioita sekä lataamaan energiavarastojaan.\n\nKun nukkuu riittävästi, stressiä on vähemmän kuin väsyneenä. Uni myös auttaa käsittelemään tunteita. Voi sanoa, että hyvä uni palauttaa psyykkisen voiman ja vireyden. Jos nukkuu pitkään huonosti, se lisää monien sairauksien ja erilaisten tapaturmien riskiä, heikentää toimintakykyä ja huonontaa elämänlaatua.',
+          open: [
+            {
+              id: 'rt3-o1',
+              questionFi: 'Miksi uni on oppimisen kannalta tärkeää?',
+              sampleAnswerFi: 'Unen aikana aivot lajittelevat ja tallentavat tietoa.',
+            },
+            {
+              id: 'rt3-o2',
+              questionFi: 'Miten uni vaikuttaa terveyteen?',
+              sampleAnswerFi: 'Uni edistää terveyttä, vaikuttaa vastustuskykyyn ja auttaa torjumaan sairauksia.',
+            },
+            {
+              id: 'rt3-o3',
+              questionFi: 'Mitä aivot tekevät, kun ihminen nukkuu?',
+              sampleAnswerFi: 'Ne käsittelevät edellisenä päivänä tapahtuneita asioita ja lataavat energiavarastoja.',
+            },
+            {
+              id: 'rt3-o4',
+              questionFi: 'Miten uni vaikuttaa mielenterveyteen?',
+              sampleAnswerFi: 'Hyvä uni palauttaa psyykkisen voiman ja vireyden, vähentää stressiä ja auttaa käsittelemään tunteita.',
+            },
+          ],
+        },
+      ],
+    },
+    writing: {
+      tip: {
+        title: 'VINKKI: Kirjoita niin paljon kuin voit',
+        body: [
+          'Kirjoitustehtävissä on tärkeää kirjoittaa tarpeeksi. Vaikka tekstisi olisi virheetön, et voi saada hyvää arvosanaa, jos kirjoitat liian vähän. Kirjoita rohkeasti niin paljon kuin osaat ja tiedät.',
+        ],
+      },
+      freewrite: {
+        instructionsFi:
+          'Harjoittele aloittamista ilman itsekritiikkiä. Älä käytä sanakirjaa tai muita apuvälineitä. Aseta ajastin ja valitse yksi aihe. Kirjoita 5 minuuttia mitä tahansa mieleen tulee.\n\nKirjoitettuasi mieti: Kuinka paljon tekstiä syntyi? Miltä tuntui kirjoittaa ilman suunnittelua?',
+        rules: ['Älä mieti rakennetta.', 'Älä murehdi kielen oikeellisuudesta.', 'Älä poista mitään.'],
+        topics: ['Terveelliset elämäntavat', 'Hyvinvointi', 'Mielenterveys', 'Sairastuminen', 'Hyvä kunto'],
+      },
+      groupIntro: {
+        instructionsFi: 'Käykää läpi tekstejä luokkatovereiden kanssa:',
+        questions: [
+          'Lukekaa toistenne tekstit.',
+          'Älä arvostele – ympyröi vain yksi kiinnostava sana tai fraasi. Mistä haluaisit kuulla lisää?',
+          'Käytä ympyröityä sanaa/fraasia uutena otsikkona ja kirjoita vapaasti vielä 3 minuuttia.',
+          'Vertaa uutta tekstiä ensimmäiseen. Miten se muuttui?',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Luonnostele tekstiä ja etsi uusia näkökulmia',
+          instructionsFi:
+            'Harjoittele tekstin tuottamista, vaikka aihe ei olisi tuttu tai kiinnostava. Ei sanakirjaa.\n\nValitse yksi aihe. Kirjoita 3 minuuttia kuvaillen aihetta: Mikä/mitä/millainen/millaista?\n\nKirjoita 3 minuuttia vertaillen aihetta: Mihin sitä voi verrata ja miten?\n\nKirjoita 3 minuuttia hyvistä ja/tai huonoista puolista: Mitä hyviä tai huonoja puolia asiassa on?\n\nLue kaikki kolmesta näkökulmasta kirjoittamasi. Muokkaa yhdeksi yhtenäiseksi tekstiksi.',
+          bulletsFi: ['Terveellinen ruoka', 'Uni ja lepo', 'Liikunta'],
+        },
+      ],
+      informalTasks: [
+        {
+          id: 'writing-test-informal-1',
+          titleFi: 'Avunpyyntö ystävälle',
+          instructionsFi: 'Olet sairas ja tarvitset apua. Kirjoita viesti, jossa kerrot, mikä on vialla ja miten ystäväsi voisi auttaa.',
+        },
+        {
+          id: 'writing-test-informal-2',
+          titleFi: 'Kysymys työkaverille',
+          instructionsFi: 'Olet aloittanut uuden työpaikan etkä tiedä työterveyshuollosta. Kysy asiasta työkaverilta, joka työskentelee samassa yrityksessä.',
+        },
+        {
+          id: 'writing-test-informal-3',
+          titleFi: 'Viesti sairaalle naapurille',
+          instructionsFi: 'Olet kuullut, että naapuri on sairaana kotona. Kirjoita ja kysy, miten hänellä menee, ja tarjoa apua.',
+        },
+        {
+          id: 'writing-test-informal-4',
+          titleFi: 'Kysymys sukulaiselle',
+          instructionsFi: 'Sinulla on unihäiriöitä ja tiedät, että sukulaisesi kävi unipoliklinikalla. Kysy siitä.',
+        },
+        {
+          id: 'writing-test-informal-5',
+          titleFi: 'Viesti harrastuskaverille',
+          instructionsFi: 'Kävit hierojalla, joka auttoi niska- ja hartiakipuihisi. Suosittele häntä ystävälle.',
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-test-formal-1',
+          titleFi: 'Viesti esihenkilölle',
+          instructionsFi: 'Sinulla on tärkeä kokous, mutta olet sairas. Kirjoita ja selitä, miksi et pääse paikalle ja kuinka pitkään olet poissa.',
+        },
+        {
+          id: 'writing-test-formal-2',
+          titleFi: 'Viesti terveydenhuollon sähköiseen asiointiin',
+          instructionsFi: 'Sinulla on ei-kiireellinen terveysongelma. Kuvaile oireet selkeästi, milloin ne alkoivat, ja kysy ainakin yksi kysymys.',
+        },
+        {
+          id: 'writing-test-formal-3',
+          titleFi: 'Valitus terveydenhuollon toiminnasta',
+          instructionsFi: 'Sait huonoa hoitoa terveysasemalla. Kirjoita ja selitä, mitä tapahtui ja miten haluaisit asian korjattavan.',
+        },
+        {
+          id: 'writing-test-formal-4',
+          titleFi: 'Hammaslääkäriajan peruminen',
+          instructionsFi: 'Sait muistutuksen hammaslääkäriajasta, joka ei sovi sinulle. Peru aika ja kerro haluavasi uuden ajan.',
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Terveydenhuollon palvelut',
+          options: ['A. Suomalaisen terveydenhuollon hyvät ja huonot puolet', 'B. Hammaslääkärille pitäisi päästä nopeammin'],
+        },
+        {
+          id: 'writing-opinion-2',
+          titleFi: 'Terveellinen elämä',
+          options: ['Terveelliset elämäntavat opitaan kotona'],
+        },
+        {
+          id: 'writing-opinion-3',
+          titleFi: 'Muita aiheita',
+          options: [
+            'Ihmisten täytyy syödä terveellisesti',
+            'Liikunta on paras lääke',
+            'Voiko mielenterveyden ongelmista puhua?',
+            'Kaikkien ihmisten pitäisi viettää paljon aikaa luonnossa',
+            'Kaikkien ihmisten pitäisi käydä kuntosalilla',
+          ],
+        },
+      ],
+    },
+    listening: {
+      tip: {
+        title: 'VINKKI: Tunnista avainsanat',
+        body: [
+          'Avainsanat erottuvat muusta puheesta. Ne sanotaan selkeämmin, usein kovempaa ja usein korkeammalla äänenpainolla.',
+        ],
+      },
+      repeatSentences: {
+        instructionsFi: 'Kuuntele nämä lauseet kolme kertaa. Kiinnitä huomiota avainsanoihin.',
+        sentences: [
+          'Minkälaista vaivaa?',
+          'Mua on huimannu aika lailla nyt tässä useemman päivän.',
+          'Ihanko koko ajan?',
+          'No pahinta se on aamulla, kun nousee sängystä.',
+          'Onko oksentavaa oloa, päänsärkyä tai muuta sen tyyppistä?',
+          'Ei oikeestaa.',
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Huimaus - lääkärin ja potilaan keskustelu',
+          titleEn: 'Dizziness - Doctor and Patient Conversation',
+          textFi: NO_TRANSCRIPT_NOTE,
+          predictVocab: [
+            { fi: 'huimaus', en: 'dizziness' },
+            { fi: 'oire', en: 'symptom' },
+            { fi: 'päänsärky', en: 'headache' },
+            { fi: 'aamu', en: 'morning' },
+            { fi: 'lääkäri', en: 'doctor' },
+            { fi: 'tutkimus', en: 'examination' },
+            { fi: 'on huimannut', en: 'has been dizzy' },
+            { fi: 'pahinta', en: 'the worst' },
+            { fi: 'aamulla', en: 'in the morning' },
+            { fi: 'miltä tuntuu', en: 'how does it feel' },
+            { fi: 'ei se nyt varsinaisesti satu', en: "it doesn't really hurt" },
+            { fi: 'mä en nyt näkis tässä mitään hälyttävää', en: "I don't see anything alarming here" },
+            { fi: 'jos ei tällä mee ohi', en: "if this doesn't go away" },
+            { fi: 'tuut sitten vaan uudestaan käymään', en: 'you just come back again' },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'listening-test-1',
+          titleFi: 'Ammattitaudit',
+          titleEn: 'Occupational Diseases',
+          textFi: NO_TRANSCRIPT_NOTE,
+          mcq: [
+            {
+              id: 'lt1-q1',
+              question: 'Kuinka moni työntekijä saa meluvamman vuosittain?',
+              options: ['300', '400', '1000'],
+              correctIndex: 0,
+              explanation: 'Vastaus: 300.',
+            },
+            {
+              id: 'lt1-q2',
+              question: 'Miksi meluvamma on yleinen ammattitauti?',
+              options: [
+                'Työntekijät eivät käytä lainkaan kuulosuojaimia.',
+                'Meluvamma syntyy aina hitaasti.',
+                'Työntekijät eivät noudata työturvallisuusohjeita riittävän tarkasti.',
+              ],
+              correctIndex: 2,
+              explanation: 'Vastaus: Työntekijät eivät noudata työturvallisuusohjeita riittävän tarkasti.',
+            },
+            {
+              id: 'lt1-q3',
+              question: 'Meluvammojen määrä on selvästi vähentynyt',
+              options: ['rakennustyömailla', 'Puolustusvoimissa', 'paperitehtaissa'],
+              correctIndex: 0,
+              explanation: 'Vastaus: rakennustyömailla.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-2',
+          titleFi: 'Hammastapaturma',
+          titleEn: 'Dental Accident',
+          textFi: NO_TRANSCRIPT_NOTE,
+          trueFalse: [
+            {
+              id: 'lt2-tf1',
+              statementFi: 'Asiakas haluaa selvittää, kuuluuko hammashoito hänen työterveyshuoltoonsa.',
+              answer: true,
+              explanation: 'Asiakas haluaa selvittää tämän.',
+            },
+            {
+              id: 'lt2-tf2',
+              statementFi: 'Hammaslääkärikäynti ei onnistu työterveyshuoltoa tarjoavalla lääkäriasemalla.',
+              answer: false,
+              explanation: 'Hammashoito onnistuu työterveyshuoltoa tarjoavalla lääkäriasemalla.',
+            },
+            {
+              id: 'lt2-tf3',
+              statementFi: 'Asiakaspalvelija kyselee lisätietoja hammastapaturmasta ja sen synnystä.',
+              answer: true,
+              explanation: 'Asiakaspalvelija kysyy lisätietoja.',
+            },
+            {
+              id: 'lt2-tf4',
+              statementFi: 'Soittaja on satuttanut hampaansa työpaikalla.',
+              answer: false,
+              explanation: 'Soittaja ei satuttanut hammastaan työpaikalla.',
+            },
+            {
+              id: 'lt2-tf5',
+              statementFi: 'Lääkärikeskus varaa asiakkaan puolesta ajan hammasklinikalle.',
+              answer: true,
+              explanation: 'Lääkärikeskus varaa ajan asiakkaan puolesta.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-3',
+          titleFi: 'Suola ja verenpaine',
+          titleEn: 'Salt and Blood Pressure',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            {
+              id: 'lt3-o1',
+              questionFi: 'Mitä haittaa liiallisesta suolan käytöstä on?',
+              sampleAnswerFi: 'Se nostaa verenpainetta ja lisää sairauksien riskiä.',
+            },
+            {
+              id: 'lt3-o2',
+              questionFi: 'Kuinka suurella osalla yli 30-vuotiaista suomalaisista on kohonnut verenpaine?',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lt3-o3',
+              questionFi: 'Miksi joissakin kulttuureissa ei esiinny verenpainetautia?',
+              sampleAnswerFi: 'Koska ruokavalio on vähäsuolainen.',
+            },
+            {
+              id: 'lt3-o4',
+              questionFi: 'Mitä tapahtuisi, jos kaikki suomalaiset noudattaisivat suolankäyttösuosituksia?',
+              sampleAnswerFi: 'Verenpainetautien määrä vähenisi merkittävästi.',
+            },
+            {
+              id: 'lt3-o5',
+              questionFi: 'Kuinka paljon suolaa saisi syödä päivässä?',
+              sampleAnswerFi: 'Enintään 5 grammaa.',
+            },
+            {
+              id: 'lt3-o6',
+              questionFi: 'Kuinka paljon miehet syövät suolaa keskimäärin päivässä?',
+              sampleAnswerFi: 'Noin 9-10 grammaa.',
+            },
+          ],
+        },
+      ],
+    },
+    speaking: {
+      tip: {
+        title: 'VINKKI: Puhu jotain, vaikka et ymmärtäisi',
+        body: ['Jos et ymmärrä, on parempi sanoa "Anteeksi, en ymmärrä" kuin olla hiljaa. Mutta älä vastaa näin joka kysymykseen!'],
+      },
+      repeatPhrases: {
+        instructionsFi: 'YKI-testissä et aina ymmärrä kaikkea. Harjoittele fraaseja, joita voit käyttää, kun et ymmärrä. Kuuntele ja toista jokainen fraasi kolme kertaa.',
+        phrases: [
+          'Anteeksi, nyt en ymmärrä.',
+          'Anteeks, en ymmärtänyt.',
+          'Anteeks, voitko toistaa?',
+          'Anteeks, voiksä toistaa?',
+          'Nyt en tainnu ihan ymmärtää. Selitätkö vielä?',
+          'Hei nyt mä en tajunnu. Voitsä toistaa?',
+          'Anteeks, mä olin ihan ajatuksissani. Sanotko vielä?',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Keskustelkaa ryhmissä tai pareittain:',
+        questions: [
+          'Mitä olet yleensä tehnyt näissä tilanteissa?',
+          'Miten keskustelukumppanisi on reagoinut?',
+          'Mikä olisi paras strategia?',
+          'Mitä aiot sanoa tulevaisuudessa?',
+        ],
+      },
+      practiceConversationTasks: [
+        {
+          id: 'speaking-practice-conv-1',
+          titleFi: 'Mitä sanot, jos et ymmärrä',
+          scenarioFi: 'Sinulla on todella paha selkäkipu. Olet fysioterapeutilla. Jos et ymmärrä jotain, käytä lämmittelytehtävän fraaseja.',
+          turns: [
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
+            { instructionFi: 'Kerro selkäkivusta.', seconds: 20 },
+            { instructionFi: 'Vastaa. Keksi itse.', seconds: 20 },
+            { instructionFi: 'Vastaa. Keksi itse.', seconds: 15 },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
+            { instructionFi: 'Vastaa. Keksi itse.', seconds: 20 },
+            { instructionFi: 'Vastaa. Keksi itse.', seconds: 20 },
+            { instructionFi: 'Vastaa.', seconds: 20 },
+            { instructionFi: 'Vastaa.', seconds: 15 },
+          ],
+        },
+      ],
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Hyvinvoinnista huolehtiminen',
+          titleEn: 'Taking Care of Wellbeing',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: ['Miten pidät huolta hyvinvoinnistasi?', 'Mikä auttaa sinua voimaan hyvin?', 'Haluaisitko muuttaa elämäntapojasi?'],
+        },
+        {
+          id: 'speaking-test-2',
+          titleFi: 'Suomalainen terveydenhuolto',
+          titleEn: 'Finnish Healthcare',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Oletko käynyt Suomessa lääkärissä, neuvolassa tai apteekissa?',
+            'Millainen kokemus se oli?',
+            'Oletko huomannut eroja Suomen ja muiden maiden välillä?',
+          ],
+        },
+        {
+          id: 'speaking-test-3',
+          titleFi: 'Hyvä lääkäri',
+          titleEn: 'A Good Doctor',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Onko sinulla ollut erityisen hyvä lääkäri?',
+            'Millainen on mielestäsi hyvä lääkäri?',
+            'Mitä tarvitaan, jotta lääkäri voi tehdä työnsä hyvin?',
+          ],
+        },
+      ],
+      conversationTasks: [
+        {
+          id: 'speaking-conv-1',
+          titleFi: 'Terveystarkastuksessa',
+          scenarioFi: 'Olet terveystarkastuksessa.',
+          turns: [
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 30 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+          ],
+        },
+        {
+          id: 'speaking-conv-2',
+          titleFi: 'Soitto hätänumeroon',
+          scenarioFi: 'Soitat numeroon 112, koska olet ensimmäisenä onnettomuuspaikalla - autokolarissa.',
+          turns: [
+            { instructionFi: 'Kerro, kuka olet, missä olet ja miksi soitat.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi. Pyydä lisäohjeita.', seconds: 15 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
+            { instructionFi: 'Sano, että ymmärsit, ja kysy vielä ohjeita verenvuodon suhteen.', seconds: 20 },
+            { instructionFi: 'Reagoi sopivalla tavalla ja hyvästele.', seconds: 10 },
+          ],
+        },
+      ],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1-1',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Sinulla on työpäivä, mutta heräät sairaana. Soita töihin ja selitä.',
+          seconds: 15,
+        },
+        {
+          id: 'speaking-situation-1-2',
+          setLabel: 'Tilanteet 1',
+          scenarioFi:
+            'Olet terveysasemalla. Sinulla on aika kello 9.20, mutta et tiedä lääkärin nimeä tai huonetta. Kysy työntekijältä.',
+          seconds: 15,
+        },
+        {
+          id: 'speaking-situation-1-3',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Odotat laboratoriossa. Vieressäsi istuva henkilö valittaa pitkästä jonotuksesta. Vastaa.',
+          seconds: 10,
+        },
+        {
+          id: 'speaking-situation-1-4',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Käyt hammaslääkärillä. Selitä ongelmasi.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-5',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Lääkäri kysyy, onko sinulla stressiä. Vastaa.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-1',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Sinulla on terveysongelma ja tarvitset lääkettä. Pyydä apua apteekista.',
+          seconds: 15,
+        },
+        {
+          id: 'speaking-situation-2-2',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Ystäväsi on juuri muuttanut Suomeen ja tarvitsee lääkäriajan. Hän ei tiedä, miten se onnistuu. Neuvo häntä.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-3',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Työkaveri kertoo kärsivänsä unettomuudesta. Hän pyytää vinkkejä. Neuvo häntä.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-4',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Ystäväsi kertoo olevansa raskaana. Onnittele ja kysy jokin kysymys.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-5',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Sinulla on kova hammassärky. Soita hammaslääkäripäivystykseen. Kerro, milloin se alkoi ja millaista se on.',
+          seconds: 30,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Terveydenhoidon hinta',
+          titleEn: 'The Cost of Healthcare',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Kuinka paljon itse maksat terveydenhoidosta?',
+            'Onko terveydenhoito mielestäsi liian kallista?',
+            'Pitäisikö terveydenhoidon olla ilmaista?',
+            'Mitä palveluita yhteiskunnan pitäisi tarjota kaikille?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-2',
+          titleFi: 'Ihmiset viettävät liikaa aikaa puhelimella ja muilla älylaitteilla',
+          titleEn: 'People Spend Too Much Time on Phones and Other Smart Devices',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Mitä hyötyjä ja haittoja älylaitteista on?',
+            'Pitäisikö ruutuaikaa vähentää?',
+            'Mikä on sopiva ruutuaika lapselle? Aikuiselle?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-3',
+          titleFi: 'Nukkuminen ja liikkuminen',
+          titleEn: 'Sleep and Exercise',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Valitse A tai B.'],
+          subChoices: [
+            {
+              label: 'A. Ihmisten pitäisi nukkua enemmän',
+              questions: [
+                'Kuinka paljon itse nukut?',
+                'Mikä on sopiva määrä unta?',
+                'Pitäisikö ihmisten nukkua enemmän?',
+                'Arvostetaanko unta tarpeeksi?',
+              ],
+            },
+            {
+              label: 'B. Jokaisen pitäisi harrastaa liikuntaa vähintään tunti päivässä',
+              questions: [
+                'Kuinka paljon itse liikut?',
+                'Mikä on sopiva määrä liikuntaa?',
+                'Mitä yhteiskunta voi tehdä, jotta ihmiset liikkuisivat enemmän?',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'terveys', en: 'health' },
+      { fi: 'hyvinvointi', en: 'wellbeing' },
+      { fi: 'sairaus', en: 'illness' },
+      { fi: 'oire', en: 'symptom' },
+      { fi: 'lääkäri', en: 'doctor' },
+      { fi: 'hoito', en: 'treatment' },
+      { fi: 'lääke', en: 'medicine' },
+      { fi: 'apteekki', en: 'pharmacy' },
+      { fi: 'uni', en: 'sleep' },
+      { fi: 'liikunta', en: 'exercise' },
+      { fi: 'selkä', en: 'back' },
+      { fi: 'niska', en: 'neck' },
+      { fi: 'pääkipu / päänsärky', en: 'headache' },
+      { fi: 'huimaus', en: 'dizziness' },
+      { fi: 'verenpaine', en: 'blood pressure' },
+      { fi: 'kipu', en: 'pain' },
+      { fi: 'sairaala', en: 'hospital' },
+      { fi: 'terveysasema', en: 'health center' },
+      { fi: 'hätäkeskus', en: 'emergency center' },
+      { fi: 'ambulanssi', en: 'ambulance' },
+      { fi: 'työterveys', en: 'occupational health' },
+    ],
+    usefulPhrases: [
+      { fi: 'Minulla on...', en: 'I have...' },
+      { fi: 'Minua särkee...', en: '...hurts (me)' },
+      { fi: 'Minulla on kipua...', en: 'I have pain in...' },
+      { fi: 'Minua huimaa.', en: 'I feel dizzy.' },
+      { fi: 'Minulla on kuumetta.', en: 'I have a fever.' },
+      { fi: 'Olen sairas.', en: 'I am sick.' },
+      { fi: 'Tarvitsen lääkärin.', en: 'I need a doctor.' },
+      { fi: 'Soita hätänumeroon!', en: 'Call the emergency number!' },
+      { fi: 'Anteeksi, en ymmärrä.', en: "Sorry, I don't understand." },
+      { fi: 'Voitko toistaa?', en: 'Can you repeat?' },
+    ],
+    learnEverywhereTip: {
+      title: 'Terveyteen liittyviä vinkkejä testipäivään',
+      body: [
+        'Terveelliset elämäntavat auttavat oppimisessa.',
+        'Uni auttaa muistamaan: nuku riittävästi ennen testiä. Aivot toimivat paremmin hyvin nukuttuna.',
+        'Tauot ja liikkuminen auttavat keskittymään: älä istu monta tuntia paikallasi. Pidä taukoja ja mene ulos.',
+        'Ruoka auttaa jaksamaan: syö säännöllisesti, syö hyvä aamupala ja ota eväät mukaan testipäivänä.',
+      ],
+    },
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {
