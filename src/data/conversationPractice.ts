@@ -1035,6 +1035,354 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
       { fi: 'tinkiminen', en: 'bargaining' },
     ],
   },
+  {
+    id: 'conv-ch3',
+    titleFi: 'Luku 3: Luonto ja ympäristö',
+    titleEn: 'Chapter 3: Nature and environment',
+    level: 'B1',
+    warmup: [
+      {
+        id: 'w-1',
+        scenarioFi: 'Kuinka paljon Suomen pinta-alasta on metsää?',
+        scenarioEn: "How much of Finland's land area is forest?",
+        sampleFi: 'Noin 75-80 % Suomen pinta-alasta on metsää. Suomi on yksi Euroopan metsäisimmistä maista.',
+      },
+      {
+        id: 'w-2',
+        scenarioFi: 'Mikä suo on?',
+        scenarioEn: 'What is a swamp/bog?',
+        sampleFi: 'Suo on kosteikkoalue, jossa maaperä on vetistä ja kasvaa erityisiä kasveja, kuten sammalta, varpuja ja suopursua. Suot ovat tärkeitä luonnon monimuotoisuudelle.',
+      },
+      {
+        id: 'w-3',
+        scenarioFi: 'Miksi ihmiset liikkuvat syksyllä paljon metsässä?',
+        scenarioEn: 'Why do people move a lot in the forest in autumn?',
+        sampleFi: 'Syksyllä ihmiset menevät metsään keräämään marjoja ja sieniä. Suomi on kuuluisa mustikoista, puolukoista ja kantarelleista. Ruska-aika on myös kaunis.',
+      },
+      {
+        id: 'w-4',
+        scenarioFi: 'Mikä on villieläimen ja kesyn eläimen ero?',
+        scenarioEn: 'What is the difference between a wild animal and a tame animal?',
+        sampleFi: 'Villieläin elää luonnossa ilman ihmisen apua, esimerkiksi karhu tai susi. Kesy eläin on kesytetty, esimerkiksi koira tai lehmä.',
+      },
+      {
+        id: 'w-5',
+        scenarioFi: 'Millainen eläin karhu / susi on?',
+        scenarioEn: 'What kind of animal is a bear / wolf?',
+        sampleFi:
+          'Karhu on suuri ja vahva petoeläin. Se on kaikkiruokainen: se syö marjoja, kalaa ja lihaa. Susi on myös petoeläin. Susi elää laumassa ja saalistaa hirviä. Molemmat ovat arkoja ja välttävät ihmisiä.',
+      },
+      {
+        id: 'w-6',
+        scenarioFi: 'Mitkä ovat Suomen kolme tavallista puuta?',
+        scenarioEn: "What are Finland's three common trees?",
+        sampleFi: 'Suomen kolme yleisintä puuta ovat mänty, kuusi ja koivu.',
+      },
+      {
+        id: 'w-7',
+        scenarioFi: 'Mitä täytyy tehdä, jos kyykäärme puree?',
+        scenarioEn: 'What must you do if an adder bites?',
+        sampleFi: 'Jos kyykäärmä puree, täytyy pysyä rauhallisena. Soita hätänumeroon 112. Pidä puremakohta alhaalla ja älä liiku liikaa. Lääkäriin on mentävä nopeasti.',
+      },
+      {
+        id: 'w-8',
+        scenarioFi: 'Milloin hirvi on ihmiselle vaarallinen?',
+        scenarioEn: 'When is a moose dangerous to a person?',
+        sampleFi: 'Hirvi on vaarallinen erityisesti liikenteessä, koska se voi juosta tielle. Myös emohirvi on vaarallinen, jos se suojaa vasojaan.',
+      },
+      {
+        id: 'w-9',
+        scenarioFi: 'Mitä tarkoittaa yötön yö?',
+        scenarioEn: 'What does "nightless night" mean?',
+        sampleFi: 'Yötön yö tarkoittaa, että aurinko ei laske ollenkaan. Tätä tapahtuu kesällä Lapissa, jossa aurinko paistaa koko yön.',
+      },
+      {
+        id: 'w-10',
+        scenarioFi: 'Mitä voi tehdä leirintäalueella?',
+        scenarioEn: 'What can you do at a campsite?',
+        sampleFi: 'Leirintäalueella voi telttailla, grillata, kävellä luonnossa, kalastaa ja uida. Siellä voi myös nauttia luonnon rauhasta.',
+      },
+      {
+        id: 'w-11',
+        scenarioFi: 'Mitä ruokaa luonnosta voi saada?',
+        scenarioEn: 'What food can you get from nature?',
+        sampleFi: 'Luonnosta voi saada marjoja, sieniä, kalaa ja riistaa. Suomessa marjoja ovat mustikka, puolukka, lakka, vadelma ja karpalo.',
+      },
+      {
+        id: 'w-12',
+        scenarioFi: 'Kuinka monta kuukautta talvi voi kestää?',
+        scenarioEn: 'How many months can winter last?',
+        sampleFi: 'Talvi voi kestää 4-6 kuukautta Suomessa. Lapissa talvi voi kestää jopa 7 kuukautta.',
+      },
+      {
+        id: 'w-13',
+        scenarioFi: 'Milloin voit nähdä revontulet?',
+        scenarioEn: 'When can you see the northern lights?',
+        sampleFi: 'Revontulet näkyvät talvella pimeässä, erityisesti Lapissa ja Pohjois-Suomessa. Paras aika on syyskuusta maaliskuuhun.',
+      },
+      {
+        id: 'w-14',
+        scenarioFi: 'Milloin päivä on pisin?',
+        scenarioEn: 'When is the day longest?',
+        sampleFi: 'Pisin päivä on kesäkuussa, juhannuksen aikaan. Silloin aurinko paistaa pitkään, etelässä noin 18-19 tuntia.',
+      },
+      {
+        id: 'w-15',
+        scenarioFi: 'Millainen puu on eri vuodenaikoina?',
+        scenarioEn: 'What is a tree like in different seasons?',
+        sampleFi:
+          'Keväällä puut saavat lehdet ja kukkivat. Kesällä ne ovat vihreitä ja reheviä. Syksyllä lehdet muuttuvat keltaisiksi, punaisiksi ja ruskeiksi. Talvella lehtipuut ovat paljaita, mutta havupuut ovat vihreitä.',
+      },
+      {
+        id: 'w-16',
+        scenarioFi: 'Milloin kevät yleensä alkaa?',
+        scenarioEn: 'When does spring usually begin?',
+        sampleFi: 'Kevät alkaa etelässä maalis-huhtikuussa, kun lumi sulaa ja ensimmäiset kukat, kuten leskenlehdet, puhkeavat. Lapissa kevät alkaa myöhemmin, toukokuussa.',
+      },
+      {
+        id: 'w-17',
+        scenarioFi: 'Mitä tarkoittaa ruska ja kaamos?',
+        scenarioEn: 'What do "ruska" and "kaamos" mean?',
+        sampleFi: 'Ruska on syksyn värikäs aika, kun lehdet muuttuvat värikkäiksi. Kaamos on talven pimeä aika Lapissa, kun aurinko ei nouse ollenkaan.',
+      },
+      {
+        id: 'w-18',
+        scenarioFi: 'Jätteiden lajittelu: kerro, miten jätteet lajitellaan Suomessa.',
+        scenarioEn: 'Waste sorting: explain how waste is sorted in Finland.',
+        sampleFi:
+          'Suomessa lajitellaan jätteet tarkasti. Tärkeimmät jätelajit ovat:\n- Biojäte - ruokajätteet, kahvinporot, hedelmänkuoret\n- Kartonki - maitotölkit, munakotelot, lehdet\n- Lasi - pullot, purkit\n- Metalli - säilykepurkit, folio\n- Muovi - muovipullot, pakkaukset\n- Sekajäte - kaikki, mitä ei voi lajitella\n\nLajittelu on tärkeää, koska se vähentää ympäristön kuormitusta. Kierrätys säästää luonnonvaroja ja energiaa. Suomessa on hyvät kierrätysjärjestelmät, kuten pullonpalautus.',
+      },
+    ],
+    dialogues: [
+      {
+        id: 'd1',
+        titleFi: 'Eksynyt metsässä',
+        titleEn: 'Lost in the forest',
+        turns: [
+          { speaker: 'Ystävä', fi: 'No moi! Mitäs sulle?' },
+          { speaker: 'Sinä', fi: 'Hei! Mulla on hätä. Mä olen eksynyt metsässä!' },
+          { speaker: 'Ystävä', fi: 'Eikä! Missä metsässä sä oot?' },
+          { speaker: 'Sinä', fi: 'Mä olen kävelyllä Nuuksion kansallispuistossa, mutta en löydä takaisin polulle.' },
+          { speaker: 'Ystävä', fi: 'Okei okei, no millä sä menit sinne?' },
+          { speaker: 'Sinä', fi: 'Mä lähdin tänään aamulla patikoimaan. Seurasin sinisiä merkkejä, mutta nyt en näe niitä enää.' },
+          {
+            speaker: 'Ystävä',
+            fi: 'No mut onneks sulla on kännykkä, siitähän voi paikantaa, missä sä oot. Mä soitan nyt hätäkeskukseen, että joku lähtee hakemaan sua. Kai sulla on lämpimästi vaatteita?',
+          },
+          { speaker: 'Sinä', fi: 'Valitettavasti mulla on vain kevyt takki ja shortsit. En varautunut kunnolla.' },
+          { speaker: 'Ystävä', fi: 'Voi ei! No sitten on jo kiire. Mä soitan nyt. Pidä itses lämpimänä ja älä oo huolissas. Joku tulee ihan kohta.' },
+          { speaker: 'Sinä', fi: 'Kiitos! Odotan täällä. Soita nopeasti!' },
+        ],
+      },
+      {
+        id: 'd2',
+        titleFi: 'Kalastusluvan kysyminen',
+        titleEn: 'Asking about a fishing permit',
+        turns: [
+          { speaker: 'Virkailija', fi: 'Metsähallitus, miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Soitan, koska haluaisin kysyä kalastusluvasta.' },
+          { speaker: 'Virkailija', fi: 'Joo, kyllä. Missä päin aiot kalastaa?' },
+          { speaker: 'Sinä', fi: 'Aion kalastaa järvessä Lapin alueella.' },
+          { speaker: 'Virkailija', fi: 'Ahaa. Luvan hinta riippuu myös siitä, missä tarkoituksessa kalastat ja millä välineellä.' },
+          { speaker: 'Sinä', fi: 'Mitä lupa maksaa virkistyskalastukseen?' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Virkistyskalastuslupa yhteen vesistöön on noin 63€ vuosi, mutta sitten tarvitaan viehelupa erikseen, sen hinta riippuu kalastajan iästä. Tämä on aika monimutkainen prosessi näin puhelimessa, mutta luvat saa kyllä ostettua netistä.',
+          },
+          { speaker: 'Sinä', fi: 'Voisitteko kertoa verkkosivun osoitteen?' },
+          { speaker: 'Virkailija', fi: 'Esimerkiksi kalastusluvat.net on ihan hyvä osoite. Sieltä näkee, mitkä välineet ovat maksullisia. Onkiminen ja talvella pilkkiminen eivät vaadi lupaa.' },
+          { speaker: 'Sinä', fi: 'Kiitos paljon avusta! Menen katsomaan nettisivua.' },
+        ],
+      },
+      {
+        id: 'd3',
+        titleFi: 'Keskustelu luonnosta',
+        titleEn: 'Conversation about nature',
+        turns: [
+          { speaker: 'Ystävä', fi: 'Moi! Mitä sä teet tänä viikonloppuna?' },
+          { speaker: 'Sinä', fi: 'Hei! Ajattelin mennä luontoon. Haluaisin nähdä ruskan värit.' },
+          { speaker: 'Ystävä', fi: 'Voi, kuulostaa ihanalta! Minne sä aiot mennä?' },
+          { speaker: 'Sinä', fi: 'Aion mennä retkeilemään kansallispuistoon. Siellä on kauniita metsiä ja järviä.' },
+          { speaker: 'Ystävä', fi: 'Kauanko sä olet siellä?' },
+          { speaker: 'Sinä', fi: 'Viikonlopun yli. Telttailen ja nautin luonnon rauhasta.' },
+          { speaker: 'Ystävä', fi: 'Mitä sä otat mukaan?' },
+          { speaker: 'Sinä', fi: 'Mukaan tulee teltta, makuupussi, ruokaa, vettä, kartta ja kompassi.' },
+          { speaker: 'Ystävä', fi: 'Ole varovainen siellä! Soita, kun tulet takaisin.' },
+          { speaker: 'Sinä', fi: 'Kiitos! Kyllä mä varon. Soitan, kun pääsen kotiin.' },
+        ],
+      },
+    ],
+    reactions: [
+      {
+        id: 'r1',
+        scenarioFi: 'Löydät sohvan, jääkaapin ja paljon roskapusseja metsästä. Soitat kaatopaikalle ja kerrot tilanteesta.',
+        scenarioEn: 'You find a sofa, fridge, and trash bags dumped in the forest. Call the dump and report it.',
+        sampleFi: 'Hei! Olen metsässä ja löysin täältä sohvan, jääkaapin ja paljon roskapusseja. Joku on dumppanut jätteet luontoon. Voitteko tulla hakemaan ne? Tämä on laitonta.',
+      },
+      {
+        id: 'r2',
+        scenarioFi: 'Olet järven rannalla ja siellä on sorsia. Mummo syöttää sorsille suklaata. Mitä sanot mummolle?',
+        scenarioEn: 'An elderly woman is feeding ducks chocolate by a lake. What do you say to her?',
+        sampleFi: 'Anteeksi, mummo! Sorsat eivät voi syödä suklaata, se on niille myrkyllistä. Olkaa hyvä ja syöttäkää niille vaikka leipää tai kauraa, niin ne pysyvät terveinä.',
+      },
+      {
+        id: 'r3',
+        scenarioFi: 'Olet kaupassa ja haluat ostaa hyvät kengät metsään kävelyä varten. Pyydät apua myyjältä.',
+        scenarioEn: "At a store, you want good shoes for forest walks. Ask the salesperson for help.",
+        sampleFi: 'Hei! Etsin hyviä kenkiä metsäkävelyyn. Tarvitsen kengät, jotka ovat vedenpitävät, mukavat ja kestävät. Mitä suosittelisitte?',
+      },
+      {
+        id: 'r4',
+        scenarioFi: 'Olet kävelyllä. Näet, että joku heittää käytetyn jääkaapin metsään. Mitä sanot?',
+        scenarioEn: 'While walking, you see someone dumping a fridge in the forest. What do you say?',
+        sampleFi: 'Hei! Ette voi heittää jääkaappia metsään! Se on laitonta ja saastuttaa luontoa. Jätteet pitää viedä kaatopaikalle tai kierrätykseen.',
+      },
+      {
+        id: 'r5',
+        scenarioFi: 'Olet muuttamassa uuteen kotiin. Haluat lahjoittaa jonkin vanhan tavarasi (keksi itse, minkä) ystävällesi. Mitä sanot?',
+        scenarioEn: "You're moving and want to give an old item of yours to a friend. What do you say?",
+        sampleFi: 'Hei! Mulla on vanha sohva, jota en enää tarvitse. Haluaisin lahjoittaa sen sinulle, jos haluat. Se on hyvässä kunnossa, ja ajattelin, että se sopisi hyvin sun kotiin.',
+      },
+      {
+        id: 'r6',
+        scenarioFi: 'Etsit uutta asuntoa. Välittäjä kysyy, mikä on sinulle tärkeää asuinympäristössä. Mitä sanot?',
+        scenarioEn: 'A real-estate agent asks what matters to you about the living environment.',
+        sampleFi:
+          'Minulle on tärkeää, että asuinympäristö on rauhallinen ja vihreä. Haluaisin asua lähellä metsää tai puistoa, jossa voi kävellä. Myös hyvät kulkuyhteydet ja palvelut lähellä ovat tärkeitä.',
+      },
+      {
+        id: 'r7',
+        scenarioFi: 'Ulkomailla asuva ystäväsi kysyy sinulta, millainen on Suomen luonto. Mitä sanot?',
+        scenarioEn: 'A friend abroad asks what Finnish nature is like.',
+        sampleFi:
+          'Suomen luonto on upea! Täällä on paljon metsiä, järviä ja saaria. Talvella on lunta ja pimeää, kesällä aurinko paistaa pitkään. Luonto on puhdasta ja rauhallista. Suomessa on myös neljä vuodenaikaa, joten maisemat vaihtuvat paljon.',
+      },
+      {
+        id: 'r8',
+        scenarioFi: 'Näet kadulla miehen, joka potkii jotain eläintä (mitä?). Mitä sanot?',
+        scenarioEn: 'You see a man kicking an animal on the street. What do you say?',
+        sampleFi: 'Hei! Lopettakaa heti! Eläinten potkiminen on väärin ja laitonta. Jos teillä on ongelma, voitte soittaa eläinsuojeluun. Antakaa eläimen olla rauhassa.',
+      },
+    ],
+    longSpeaking: [
+      {
+        id: 'k-a',
+        titleFi: 'Luonto ja asuinympäristö',
+        titleEn: 'Nature and living environment',
+        instructionsFi:
+          'Kerro, mitä luonto ja asuinympäristö sinulle merkitsevät. Millaisessa paikassa asut? Millaiset mahdollisuudet siellä on liikkua luonnossa? Mitä luonto ja luonnon läheisyys sinulle merkitsevät? Millaisesta luonnosta/ympäristöstä pidät eniten?',
+        sampleFi:
+          'Luonto on minulle todella tärkeä. Asun lähellä metsää ja järveä, joten minulla on hyvät mahdollisuudet liikkua luonnossa. Käyn usein kävelyllä metsässä ja nautin rauhasta. Luonto auttaa minua rentoutumaan ja unohtamaan arjen stressin.\n\nPidän eniten metsäluonnosta, erityisesti syksyllä, kun ruska on kauneimmillaan. Värit ovat upeita: punaista, keltaista ja oranssia. Myös kesällä on ihanaa, kun voi uida järvessä ja grillata.\n\nLuonnon läheisyys merkitsee minulle vapautta ja rauhaa. Voin hengittää raikasta ilmaa ja kuulla lintujen laulua. Se on parasta lääkettä väsymykseen. Toivon, että voin aina asua luonnon lähellä.',
+      },
+      {
+        id: 'k-b',
+        titleFi: 'Luonnonsuojelu',
+        titleEn: 'Nature conservation',
+        instructionsFi:
+          'Kerro luonnonsuojelusta. Mitä ajattelet luonnon suojelemisesta? Millä tavalla voimme suojella luontoa? Toimitko itse ympäristöystävällisesti? Miten ja missä asioissa?',
+        sampleFi:
+          'Luonnonsuojelu on erittäin tärkeää. Meidän pitää suojella luontoa tuleville sukupolville. Luonto on kaunis ja arvokas, ja se tarjoaa meille ruokaa, vettä ja puhdasta ilmaa.\n\nVoimme suojella luontoa monella tavalla: lajittelemalla jätteet, käyttämällä vähemmän muovia, kierrättämällä, säästämällä energiaa ja käyttämällä julkista liikennettä. Pienet teot voivat tehdä suuren eron.\n\nItse toimin ympäristöystävällisesti. Lajittelen jätteet huolellisesti, käytän kestokasseja muovipussien sijaan ja kierrätän vaatteita. Pyrin ostamaan kotimaisia tuotteita. Käytän bussia auton sijaan. Luonnonsuojelu on jokaisen vastuu.',
+      },
+      {
+        id: 'k-c',
+        titleFi: 'Minun maisemani',
+        titleEn: 'My landscape',
+        instructionsFi:
+          'Ihmisellä voi olla maisema, joka on tärkeä. Yhdelle se voi olla järven ranta, toiselle tärkeä on metsä, kolmannelle miljoonakaupunki. Kuvaile maisemaa, joka on sinulle tärkeä. Kerro myös, miksi se on sinulle tärkeä.',
+        sampleFi:
+          'Minulle tärkein maisema on lapsuuteni kesämökki. Se sijaitsee järven rannalla, ja siellä on vanha puinen mökki, jossa vietin lapsuuden kesät. Järven vesi on kirkasta, ja rannalla on kivinen uimaranta.\n\nMökillä on sauna, ja kun on saunonut, voi uida järvessä. Illalla voi istua terassilla ja katsoa auringonlaskua. Metsä alkaa aivan pihasta, ja siellä on paljon marjoja ja sieniä.\n\nTämä maisema on minulle tärkeä, koska se tuo mieleen rauhan ja onnellisuuden. Siellä ei ole kiirettä, ja voi vain olla. Se on paikka, jossa voi olla oma itsensä. Mökki on minun turvapaikkani.',
+      },
+    ],
+    opinions: [
+      {
+        id: 'm-a',
+        titleFi: 'Pyörä vai auto?',
+        titleEn: 'Bicycle or car?',
+        instructionsFi:
+          'Käytätkö itse enemmän pyörää vai autoa? Miksi? Kumpi on mielestäsi parempi? Miksi? Missä tilanteessa? Mitä hyviä puolia autossa/pyörässä on? Mitä huonoja puolia autossa/pyörässä on? Miksi ihmisten pitäisi käyttää enemmän autoa/pyörää?',
+        sampleFi:
+          'Käytän itse enemmän pyörää, koska asun kaupungissa ja lyhyet matkat ovat helpompia pyörällä. Pyörä on ekologisempi ja halvempi kuin auto. Se on myös terveellistä.\n\nMielestäni pyörä on parempi kaupungissa, mutta auto on tarpeellinen maaseudulla tai pitkillä matkoilla. Autossa on hyvää, että se on nopea ja suojaa säältä. Huonoa autossa on, että se on kallis, saastuttaa ja parkkipaikan löytäminen on vaikeaa.\n\nPyörässä hyvää on, että se on halpa, terveellinen ja ympäristöystävällinen. Huonoa pyörässä on, että sateella tai talvella pyöräily on epämukavaa.\n\nIhmisten pitäisi käyttää enemmän pyörää, koska se vähentää saasteita ja liikennettä. Pyöräily on hyväksi terveydelle. Kaupungeissa pyöräily on usein nopeampaa kuin autolla ajaminen.',
+      },
+      {
+        id: 'm-b',
+        titleFi: 'Ihmiset ostavat liikaa turhaa tavaraa',
+        titleEn: 'People buy too much useless stuff',
+        instructionsFi: 'Ihmisillä on usein paljon tavaroita. Mikä on turhaa ja mikä on tarpeellista? Onko sinulla turhaa tavaraa? Mitä? Miksi ihmiset ostavat turhia tavaroita?',
+        sampleFi:
+          'Mielestäni ihmiset ostavat liikaa tavaraa, jota he eivät oikeasti tarvitse. Tarpeellista tavaraa ovat ruoka, vaatteet, kodinkoneet ja työvälineet. Turhaa tavaraa ovat koriste-esineet, liikaa vaatteita, joita ei koskaan käytä, ja kertakäyttötuotteet.\n\nMinullakin on turhaa tavaraa: vanhoja vaatteita, joita en käytä, ja kirjoja, joita en ole lukenut. Olen yrittänyt vähentää turhaa tavaraa lahjoittamalla ja kierrättämällä.\n\nIhmiset ostavat turhia tavaroita, koska mainonta houkuttelee, ja ostaminen tuottaa hetkellistä iloa. Myös sosiaalinen paine voi vaikuttaa: haluamme näyttää hyvältä ja omistaa uusimpia tuotteita. On tärkeää miettiä, tarvitseeko oikeasti ostaa jotain.',
+      },
+      {
+        id: 'm-c',
+        titleFi: 'Julkisen liikenteen pitäisi olla ilmaista',
+        titleEn: 'Public transport should be free',
+        instructionsFi: 'Mitä mieltä olet julkisen liikenteen (juna, bussi, metro, raitiovaunu) hinnoista Suomessa? Mitä hyötyä olisi siitä, että julkinen liikenne olisi halpaa?',
+        sampleFi:
+          'Julkinen liikenne Suomessa on melko kallista. Esimerkiksi kertalippu Helsingissä maksaa noin 3 euroa, ja kuukausilippu maksaa yli 70 euroa. Opiskelijoille ja eläkeläisille on alennuksia, mutta silti hinnat ovat korkeat.\n\nJos julkinen liikenne olisi halvempaa tai ilmaista, siitä olisi paljon hyötyä. Ensinnäkin, useammat ihmiset käyttäisivät julkista liikennettä, mikä vähentäisi liikennettä ja saasteita. Toiseksi, se auttaisi pienituloisia ihmisiä liikkumaan. Kolmanneksi, se kannustaisi ympäristöystävällisyyteen.\n\nTietysti ilmainen julkinen liikenne maksaisi paljon. Se pitäisi rahoittaa veroilla. Mielestäni lippujen hintoja voisi laskea, mutta ilmainen liikenne on haastavaa. On kuitenkin tärkeää, että julkinen liikenne on kohtuuhintaista ja saavutettavaa kaikille.',
+      },
+    ],
+    writingTasks: [
+      {
+        id: 'w1',
+        titleFi: 'Kutsu',
+        instructionsFi:
+          'Sinun kodin lähellä on leikkipuisto, joka on huonossa kunnossa. Haluat järjestää talkoot ja kutsut kaikki naapurit auttamaan leikkipuiston siivoamisessa ja kunnostamisessa.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei naapurit!\n\nKutsun teidät talkoisiin leikkipuistoon, joka on kadun päässä. Leikkipuisto on valitettavasti huonossa kunnossa. Hiekkalaatikko on täynnä roskia, keinut ovat rikki ja penkit ovat lahoja.\n\nMielestäni meidän pitäisi kunnostaa leikkipuisto, jotta lapset voivat leikkiä turvallisesti. Suunnitelmissa on:\n- Siivota roskat\n- Korjata keinut ja liukumäki\n- Maalata penkit\n- Vaihtaa hiekka hiekkalaatikkoon\n\nVoitte tuoda mukana harjoja, roskapusseja, maalia ja työkaluja. Myös kahvia ja pullaa saa tuoda, jotta jaksamme!\n\nTalkoot järjestetään ensi lauantaina kello 10-14. Tervetuloa kaikki! Yhdessä saamme paljon aikaan.\n\nTerveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w2',
+        titleFi: 'Viesti',
+        instructionsFi: 'Ystäväsi haluaa muuttaa samaan paikkaan kuin sinä. Kuvaile ympäristöä ystävälle ja kerro, mitä hyviä ja huonoja puolia asuinpaikassasi on.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei [ystävän nimi]!\n\nKuulin, että harkitset muuttamista tänne samaan kaupunkiin. Se olisi ihanaa! Kerron nyt vähän tästä paikasta, jotta tiedät, millainen täällä on.\n\nHyviä puolia:\n- Luonto on lähellä: metsä ja järvi ovat vain 10 minuutin kävelymatkan päässä.\n- Täällä on rauhallista ja turvallista.\n- Julkinen liikenne toimii hyvin, bussit menevät usein.\n- Kaupassa ja kirjastossa on hyvät palvelut.\n\nHuonoja puolia:\n- Täällä on aika hiljaista, ei paljon tapahtumia.\n- Talvella lunta on paljon ja tiet voivat olla liukkaat.\n- Keskustaan on matkaa noin 20 minuuttia.\n\nKaiken kaikkiaan tämä on hyvä paikka asua. Toivottavasti muutat tänne, niin voimme nähdä useammin!\n\nTerveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w3',
+        titleFi: 'Mielipide',
+        instructionsFi: 'Valitse teema A tai B ja kirjoita mielipidekirjoitus.',
+        bulletsFi: ['A. Kierrättäminen on vaikeaa. (Recycling is difficult.)', 'B. Muovin käyttämistä täytyy vähentää. (The use of plastic must be reduced.)'],
+        sampleFi:
+          'A. Kierrättäminen on vaikeaa.\n\nEn ole täysin samaa mieltä siitä, että kierrättäminen olisi vaikeaa. Suomessa kierrättäminen on helppoa, koska lajittelupisteet ovat lähellä ja ohjeet ovat selkeät.\n\nMonissa taloyhtiöissä on omat kierrätyspisteet, joissa voi lajitella paperia, lasia, metallia, muovia ja biojätettä. Lisäksi kaupoissa on pullonpalautusautomaatteja. Ohjeet lukevat usein roska-astioiden kyljessä.\n\nToisaalta, jos asuu maaseudulla, kierrätys voi olla vaikeampaa, koska lähin kierrätyspiste voi olla kaukana. Myös kaikki eivät tiedä, miten eri jätteet lajitellaan.\n\nMielestäni kierrättäminen on tärkeää ja kannattavaa. Se ei ole vaikeaa, kun oppii tavat. Kouluissa ja netissä on hyvää tietoa kierrätyksestä. Kun jokainen lajittelee, voimme suojella ympäristöä.\n\n---\n\nB. Muovin käyttämistä täytyy vähentää.\n\nOlen täysin samaa mieltä siitä, että muovin käyttöä täytyy vähentää. Muovi saastuttaa valtameriä ja luontoa, ja se hajoaa todella hitaasti. Muovijäte on suuri ympäristöongelma.\n\nVoimme vähentää muovin käyttöä monella tavalla:\n- Käyttää kestokasseja muovipussien sijaan\n- Ostaa tuotteita, joissa on vähemmän muovipakkauksia\n- Kierrättää muovit\n- Vältetään kertakäyttömuovia, kuten pillit ja muoviset astiat\n- Käyttää juomapulloja uudelleen\n\nMyös kaupat ja yritykset voivat vähentää muovin käyttöä. Monet kaupat ovat jo vähentäneet muovipusseja. Suomessa on hyvä muovinkierrätysjärjestelmä, mutta vielä enemmän voitaisiin tehdä.\n\nMuovin vähentäminen on jokaisen vastuu. Pienet teot, kuten oman kahvikupin käyttö, voivat tehdä suuren eron. Tulevaisuudessa toivottavasti muovia käytetään vähemmän ja korvataan kestävillä materiaaleilla.',
+      },
+    ],
+    vocabSummary: [
+      { fi: 'luonto', en: 'nature' },
+      { fi: 'ympäristö', en: 'environment' },
+      { fi: 'metsä', en: 'forest' },
+      { fi: 'järvi', en: 'lake' },
+      { fi: 'suo', en: 'swamp/bog' },
+      { fi: 'marja', en: 'berry' },
+      { fi: 'sieni', en: 'mushroom' },
+      { fi: 'kala', en: 'fish' },
+      { fi: 'hirvi', en: 'moose/elk' },
+      { fi: 'karhu', en: 'bear' },
+      { fi: 'susi', en: 'wolf' },
+      { fi: 'kyykäärme', en: 'adder/viper' },
+      { fi: 'retki', en: 'trip/excursion' },
+      { fi: 'patikoida', en: 'to hike' },
+      { fi: 'kalastaa', en: 'to fish' },
+      { fi: 'kalastuslupa', en: 'fishing permit' },
+      { fi: 'onkiminen', en: 'angling' },
+      { fi: 'pilkkiminen', en: 'ice fishing' },
+      { fi: 'kierrättää', en: 'to recycle' },
+      { fi: 'lajitella', en: 'to sort' },
+      { fi: 'biojäte', en: 'biowaste' },
+      { fi: 'sekajäte', en: 'mixed waste' },
+      { fi: 'kierrätys', en: 'recycling' },
+      { fi: 'kestävä kehitys', en: 'sustainable development' },
+      { fi: 'saastuttaa', en: 'to pollute' },
+      { fi: 'yötön yö', en: 'nightless night' },
+      { fi: 'kaamos', en: 'polar night' },
+      { fi: 'ruska', en: 'autumn colors' },
+      { fi: 'revontulet', en: 'northern lights' },
+      { fi: 'leirintäalue', en: 'campsite' },
+      { fi: 'telttailla', en: 'to camp' },
+      { fi: 'talkoot', en: 'working bee/volunteer work' },
+      { fi: 'kansallispuisto', en: 'national park' },
+    ],
+  },
 ]
 
 export function conversationChapter(id: string): ConversationChapter | undefined {
