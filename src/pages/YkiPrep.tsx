@@ -8,6 +8,7 @@ import YkiPassageCard from '../components/YkiPassageCard'
 import SequentialTimer from '../components/SequentialTimer'
 import DialoguePractice from '../components/DialoguePractice'
 import GrammarPanel from '../components/GrammarPanel'
+import NextStepButton from '../components/NextStepButton'
 
 type Tab = 'yleiskatsaus' | 'lukeminen' | 'kirjoittaminen' | 'kuunteleminen' | 'puhuminen' | 'sanasto'
 
@@ -84,6 +85,18 @@ export default function YkiPrep() {
   useEffect(() => {
     setTab('yleiskatsaus')
   }, [chapterId])
+
+  const tabIndex = TABS.findIndex((t) => t.key === tab)
+  const chapterIndex = YKI_CHAPTERS.findIndex((c) => c.id === chapterId)
+  const nextStep: { path?: string; onClick?: () => void; label: string } =
+    tabIndex < TABS.length - 1
+      ? { onClick: () => setTab(TABS[tabIndex + 1].key), label: `Seuraava: ${TABS[tabIndex + 1].label}` }
+      : chapterIndex < YKI_CHAPTERS.length - 1
+        ? {
+            onClick: () => setChapterId(YKI_CHAPTERS[chapterIndex + 1].id),
+            label: `Seuraava teema: ${YKI_CHAPTERS[chapterIndex + 1].number}. ${YKI_CHAPTERS[chapterIndex + 1].titleFi}`,
+          }
+        : { path: '/exam', label: 'Kaikki 9 teemaa suoritettu! Koekierros' }
 
   return (
     <div className="space-y-5">
@@ -717,6 +730,8 @@ export default function YkiPrep() {
           {chapter.learnEverywhereTip && <YkiTip tip={chapter.learnEverywhereTip} />}
         </div>
       )}
+
+      <NextStepButton {...nextStep} />
     </div>
   )
 }

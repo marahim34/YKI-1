@@ -7,6 +7,8 @@ import { useProgress } from '../context/ProgressContext'
 import LevelPill from '../components/LevelPill'
 import GrammarPanel from '../components/GrammarPanel'
 import VocabPracticeTabs from '../components/VocabPracticeTabs'
+import NextStepButton from '../components/NextStepButton'
+import { nextAfterWeek } from '../lib/learningPath'
 
 const SKILLS = [
   { key: 'reading', label: 'Lukeminen', icon: '📖' },
@@ -32,6 +34,20 @@ export default function WeekDetail() {
     speaking: SPEAKING_BY_WEEK[week.id],
   }
 
+  const anyDoneThisWeek = SKILLS.some(({ key }) => {
+    const exercise = exercises[key]
+    return exercise && state.completedExerciseIds.includes(exercise.id)
+  })
+  const firstIncomplete = SKILLS.find(({ key }) => {
+    const exercise = exercises[key]
+    return exercise && !state.completedExerciseIds.includes(exercise.id)
+  })
+  const continueTarget = firstIncomplete
+    ? { path: `/week/${week.id}/${firstIncomplete.key}`, label: `${anyDoneThisWeek ? 'Jatka' : 'Aloita'}: ${firstIncomplete.label}` }
+    : hasContent
+      ? { path: `/week/${week.id}/${SKILLS[0].key}`, label: `Kertaa uudelleen: ${SKILLS[0].label}` }
+      : null
+
   return (
     <div className="space-y-6">
       <Link to="/roadmap" className="text-sm text-blue-700 hover:underline">
@@ -46,6 +62,8 @@ export default function WeekDetail() {
         </div>
         <LevelPill level={week.levelRange[0]} />
       </div>
+
+      {continueTarget && <NextStepButton {...continueTarget} />}
 
       {week.isExamWeek && (
         <section className="rounded-2xl border border-blue-200 bg-blue-50 p-5">
@@ -174,6 +192,8 @@ export default function WeekDetail() {
           )
         })}
       </section>
+
+      <NextStepButton {...nextAfterWeek(week.id)} />
     </div>
   )
 }

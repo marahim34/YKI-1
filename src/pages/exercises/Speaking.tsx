@@ -6,6 +6,8 @@ import { useProgress } from '../../context/ProgressContext'
 import { useCountdown, formatSeconds } from '../../lib/timer'
 import ExerciseHeader from '../../components/ExerciseHeader'
 import GrammarPanel from '../../components/GrammarPanel'
+import NextStepButton from '../../components/NextStepButton'
+import { nextAfterSkill } from '../../lib/learningPath'
 
 type Phase = 'idle' | 'prep' | 'speaking' | 'done'
 
@@ -144,6 +146,8 @@ export default function Speaking() {
           </>
         )}
       </div>
+
+      {phase === 'done' && <NextStepButton {...nextAfterSkill(exercise.weekId, 'speaking')} />}
     </div>
   )
 }

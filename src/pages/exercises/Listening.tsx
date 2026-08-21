@@ -7,6 +7,8 @@ import { useFinnishSpeech } from '../../lib/tts'
 import ExerciseHeader from '../../components/ExerciseHeader'
 import McqQuiz from '../../components/McqQuiz'
 import GrammarPanel from '../../components/GrammarPanel'
+import NextStepButton from '../../components/NextStepButton'
+import { nextAfterSkill } from '../../lib/learningPath'
 
 export default function Listening() {
   const { weekId } = useParams()
@@ -79,6 +81,8 @@ export default function Listening() {
           )
         }
       />
+
+      <NextStepButton {...nextAfterSkill(exercise.weekId, 'listening')} />
     </div>
   )
 }

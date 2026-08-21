@@ -7,6 +7,8 @@ import { loadJSON, saveJSON } from '../../lib/storage'
 import { useCountdown, formatSeconds } from '../../lib/timer'
 import ExerciseHeader from '../../components/ExerciseHeader'
 import GrammarPanel from '../../components/GrammarPanel'
+import NextStepButton from '../../components/NextStepButton'
+import { nextAfterSkill } from '../../lib/learningPath'
 
 function wordCount(text: string): number {
   return text.trim().split(/\s+/).filter(Boolean).length
@@ -118,6 +120,7 @@ export default function Writing() {
               {showModel && <p className="mt-2 whitespace-pre-line text-sm text-slate-700">{exercise.modelAnswer}</p>}
             </div>
           )}
+          <NextStepButton {...nextAfterSkill(exercise.weekId, 'writing')} />
         </div>
       )}
     </div>
