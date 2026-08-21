@@ -212,6 +212,13 @@ export interface BookPracticeDrillItem {
   hint?: string
 }
 
+export interface BookPracticeSampleAnswer {
+  promptFi: string
+  promptEn: string
+  textFi: string
+  textEn: string
+}
+
 export interface BookPracticeChapter {
   id: string
   book: string
@@ -224,4 +231,5 @@ export interface BookPracticeChapter {
     items: BookPracticeDrillItem[]
   }
   grammarTopicIds: string[]
+  sampleAnswer?: BookPracticeSampleAnswer
 }

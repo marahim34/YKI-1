@@ -1,11 +1,38 @@
 import { useState } from 'react'
 import { BOOK_NAMES, chaptersForBook } from '../data/bookPractice'
+import type { BookPracticeSampleAnswer } from '../types'
 import LevelPill from '../components/LevelPill'
 import BookVocabQuiz from '../components/BookVocabQuiz'
 import FillInDrill from '../components/FillInDrill'
 import GrammarPanel from '../components/GrammarPanel'
 import MatchGame from '../components/MatchGame'
 import { bookVocabToItems } from '../lib/bookVocabAdapter'
+
+function SampleAnswer({ sample }: { sample: BookPracticeSampleAnswer }) {
+  const [revealed, setRevealed] = useState(false)
+  return (
+    <div>
+      <h3 className="mb-2 text-sm font-semibold text-slate-800">Mallivastaus (taitotaso 4 / B2)</h3>
+      <div className="rounded-lg border border-violet-200 bg-violet-50 p-3">
+        <p className="text-sm font-medium text-violet-900">{sample.promptFi}</p>
+        <p className="text-xs text-violet-600">{sample.promptEn}</p>
+        {revealed ? (
+          <div className="mt-3 space-y-1 border-t border-violet-200 pt-3">
+            <p className="whitespace-pre-line text-sm text-slate-800">{sample.textFi}</p>
+            <p className="whitespace-pre-line text-xs text-slate-500">{sample.textEn}</p>
+          </div>
+        ) : (
+          <button
+            onClick={() => setRevealed(true)}
+            className="mt-3 rounded-md bg-violet-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-violet-700"
+          >
+            Yritä itse ensin, näytä sitten mallivastaus →
+          </button>
+        )}
+      </div>
+    </div>
+  )
+}
 
 export default function BookPractice() {
   const [book, setBook] = useState<string>(BOOK_NAMES[0])
@@ -74,6 +101,7 @@ export default function BookPractice() {
                     <h3 className="mb-2 text-sm font-semibold text-slate-800">Kielioppiharjoitus</h3>
                     <FillInDrill instructions={chapter.grammarDrill.instructions} items={chapter.grammarDrill.items} />
                   </div>
+                  {chapter.sampleAnswer && <SampleAnswer sample={chapter.sampleAnswer} />}
                   <GrammarPanel topicIds={chapter.grammarTopicIds} />
                 </div>
               )}

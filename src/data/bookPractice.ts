@@ -951,6 +951,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'hobby'?", options: ['harrastus', 'työ', 'koulu', 'lepo'], correctIndex: 0 },
       { question: 'Viikonloppuna minulla on ___ aikaa.', options: ['vapaa-aikaa', 'kiireaikaa', 'työaikaa', 'kouluaikaa'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'to relax'?", options: ['rentoutua', 'kiirehtiä', 'väsyä', 'stressata'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to get bored'?", options: ['kyllästyä', 'innostua', 'väsyä', 'rentoutua'], correctIndex: 0 },
+      { question: 'Käyn kuntosalilla ___ kertaa viikossa.', options: ['kolme', 'kolmas', 'kolmea', 'kolmen'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi — näin YKI:n suullinen osio usein kuulostaa.',
@@ -959,9 +961,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Emme mene tänään ulos. → Puhekielellä: Me ___ mennä tänään ulos.', answer: 'ei', hint: 'passiivi korvaa me-muodon puhekielessä: me ei mennä' },
         { prompt: 'Etkö sinä ole vapaana viikonloppuna? → Puhekielellä: ___ sä oo vapaana viikonloppuna?', answer: 'Etks', hint: 'etkö → etks' },
         { prompt: 'Meillä ei ole aikaa. → Puhekielellä: ___ ei oo aikaa.', answer: 'Meil', hint: 'meillä → meil' },
+        { prompt: 'Minä käyn usein elokuvissa. → ___ käyn usein leffassa.', answer: 'Mä', hint: 'minä → mä; elokuvat → leffa on puhekielinen synonyymi' },
+        { prompt: 'Hän ei harrasta mitään. → Se ei ___ mitään.', answer: 'harrasta', hint: 'hän → se puhekielessä, verbimuoto pysyy samana' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli'],
+    sampleAnswer: {
+      promptFi: 'Kerro tyypillisestä arkipäivästäsi ja siitä, miten vietät vapaa-aikaasi.',
+      promptEn: 'Describe a typical weekday of yours and how you spend your free time.',
+      textFi:
+        'Arkipäiväni noudattaa melko vakiintunutta rytmiä. Herään yleensä puoli seitsemältä ja aloitan päivän rauhallisella aamupalalla, koska en jaksa kiirehtiä heti aamusta. Töihin lähden bussilla, ja matka kestää noin kaksikymmentä minuuttia, jonka käytän usein podcastien kuunteluun tai suomen sanaston kertaamiseen. Työpäivän jälkeen pyrin aina varaamaan itselleni edes puoli tuntia liikuntaa varten, sillä olen huomannut, että se auttaa jaksamaan paremmin sekä henkisesti että fyysisesti. Iltaisin vietän aikaa joko lukien tai tapaamalla ystäviä, ja viikonloppuisin yritän tehdä jotain täysin erilaista kuin arkena – esimerkiksi retkeillä luonnossa tai kokeilla uutta harrastusta. Vaikka arkeni saattaa kuulostaa tavalliselta, pidän juuri siitä rutiinista, koska se antaa minulle turvallisuuden tunteen kiireisen elämän keskellä.',
+      textEn:
+        "My weekday follows a fairly established rhythm. I usually wake up at half past six and start the day with a calm breakfast, since I don't have the energy to rush first thing in the morning. I go to work by bus, and the trip takes about twenty minutes, which I often use to listen to podcasts or review Finnish vocabulary. After the workday I always try to reserve at least half an hour for exercise, since I've noticed it helps me cope better both mentally and physically. In the evenings I spend time either reading or meeting friends, and on weekends I try to do something completely different from my weekdays — for example hiking in nature or trying a new hobby. Even though my everyday life might sound ordinary, I like precisely that routine, because it gives me a sense of security amid a busy life.",
+    },
   },
   {
     id: 'yvy-ch2',
@@ -974,6 +986,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'colleague'?", options: ['kollega', 'esimies', 'asiakas', 'kilpailija'], correctIndex: 0 },
       { question: 'Aloitin uuden ___ viime kuussa.', options: ['työpaikan', 'lomani', 'harrastukseni', 'opintoni'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'deadline'?", options: ['määräaika', 'aikataulu', 'tauko', 'palaveri'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'promotion'?", options: ['ylennys', 'irtisanominen', 'loma', 'palkka'], correctIndex: 0 },
+      { question: 'Esimieheni antoi minulle hyvää ___.', options: ['palautetta', 'rahaa', 'lomaa', 'työtä'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
@@ -982,9 +996,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Sinä olet hyvä työntekijä. → ___ oot hyvä työntekijä.', answer: 'Sä', hint: 'sinä → sä' },
         { prompt: 'Me teemme projektin yhdessä. → Me ___ projektin yhdessä.', answer: 'tehdään', hint: 'passiivi korvaa me-muodon: me tehdään' },
         { prompt: 'En minä tiedä vastausta. → En ___ tiedä vastausta.', answer: 'mä', hint: 'minä → mä kielteisessä lauseessa' },
+        { prompt: 'Minä pidän työstäni. → ___ tykkään duunista.', answer: 'Mä', hint: 'minä → mä; työ → duuni on hyvin yleinen puhekielen sana' },
+        { prompt: 'Emme ehtineet valmiiksi ajoissa. → Me ei ___ valmiiksi ajoissa.', answer: 'ehditty', hint: 'puhekielen passiivimuoto: emme ehtineet → me ei ehditty' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli', 'verbien-rektio'],
+    sampleAnswer: {
+      promptFi: 'Kerro nykyisestä työstäsi tai opiskelustasi ja siitä, mikä siinä on parasta ja mikä haastavinta.',
+      promptEn: "Talk about your current job or studies, and what's best and most challenging about it.",
+      textFi:
+        'Työskentelen tällä hetkellä asiakaspalvelussa, ja olen ollut samassa yrityksessä nyt reilun vuoden. Parasta työssäni on ehdottomasti vaihtelevuus – joka päivä tulee eteen erilaisia tilanteita ja ihmisiä, enkä koskaan tiedä etukäteen, millainen päivästä tulee. Pidän myös siitä, että pääsen käyttämään suomen kieltä käytännössä joka päivä, mikä on auttanut minua kehittymään huomattavasti nopeammin kuin pelkkä kielikurssi olisi tehnyt. Haastavinta on toisaalta se, että työ on ajoittain hyvin kiireistä, ja täytyy pystyä tekemään nopeita päätöksiä paineen alla. Olen kuitenkin oppinut, että virheistä ei kannata lannistua, vaan niistä pitää ottaa opiksi ja jatkaa eteenpäin. Tulevaisuudessa toivon pääseväni etenemään urallani ja ehkä jopa kouluttamaan uusia työntekijöitä, sillä koen, että minulla olisi siihen paljon annettavaa.',
+      textEn:
+        "I currently work in customer service, and I've been at the same company for just over a year now. The best part of my job is definitely the variety — every day brings different situations and people, and I never know in advance what the day will be like. I also like that I get to use Finnish in practice every single day, which has helped me develop much faster than a language course alone would have. The most challenging part, on the other hand, is that the work is occasionally very hectic, and you have to be able to make quick decisions under pressure. However, I've learned that there's no point getting discouraged by mistakes — you have to learn from them and move forward. In the future I hope to advance in my career and perhaps even train new employees, since I feel I would have a lot to offer there.",
+    },
   },
   {
     id: 'yvy-ch3',
@@ -997,6 +1021,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'rent (noun)'?", options: ['vuokra', 'lasku', 'palkka', 'hinta'], correctIndex: 0 },
       { question: 'Muutin uuteen ___ viime viikolla.', options: ['asuntoon', 'kaupunkiin', 'maahan', 'kouluun'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'neighbor'?", options: ['naapuri', 'vieras', 'ystävä', 'sukulainen'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to move (house)'?", options: ['muuttaa', 'matkustaa', 'palata', 'lähteä'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'downtown/city center'?", options: ['keskusta', 'esikaupunki', 'maaseutu', 'satama'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
@@ -1005,9 +1031,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Me emme ole kotona. → Me ei ___ kotona.', answer: 'olla', hint: 'emme ole → ei olla (puhekielen passiivimuoto)' },
         { prompt: 'Onko sinulla uusi naapuri? → Onks ___ uusi naapuri?', answer: 'sul', hint: 'sinulla → sul' },
         { prompt: 'Minä pidän tästä asunnosta. → ___ tykkään tästä asunnosta.', answer: 'Mä', hint: 'minä → mä; tykätä on puhekielinen synonyymi verbille pitää' },
+        { prompt: 'Emme viihdy täällä. → Me ei ___ täällä.', answer: 'viihdytä', hint: 'emme viihdy → me ei viihdytä (puhekielen passiivimuoto)' },
+        { prompt: 'Sinä asut kaukana keskustasta. → ___ asut kaukana keskustasta.', answer: 'Sä', hint: 'sinä → sä' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli', 'omistusrakenne'],
+    sampleAnswer: {
+      promptFi: 'Kuvaile kotiasi ja kerro, millainen olisi unelmiesi asunto.',
+      promptEn: 'Describe your home and tell what your dream apartment would be like.',
+      textFi:
+        'Asun tällä hetkellä kaksiossa lähellä keskustaa, ja vaikka asunto on melko pieni, se on kodikas ja sopii minulle hyvin, koska kaikki palvelut ovat kävelymatkan päässä. Suurin haittapuoli on se, ettei asunnossa ole parveketta, minkä vuoksi joudun aina menemään ulos, kun haluan hengittää raikasta ilmaa. Jos saisin valita, unelmieni asunto olisi tilava kolmio, jossa olisi valoisa olohuone, oma työhuone etätöitä varten sekä iso parveke tai jopa pieni piha. Arvostaisin myös rauhallista naapurustoa ja hyviä kulkuyhteyksiä, sillä en halua olla riippuvainen autosta. Vaikka nykyinen kotini ei olekaan täydellinen, olen oppinut arvostamaan sitä, että minulla ylipäätään on turvallinen ja lämmin paikka, jonne palata joka päivän jälkeen.',
+      textEn:
+        "I currently live in a two-room apartment near the city center, and although it's fairly small, it's cozy and suits me well, since all the services are within walking distance. The biggest downside is that the apartment doesn't have a balcony, which means I always have to go outside whenever I want to breathe some fresh air. If I could choose, my dream apartment would be a spacious three-room flat with a bright living room, my own home office for remote work, and a large balcony or even a small yard. I would also value a quiet neighborhood and good transport connections, since I don't want to be dependent on a car. Even though my current home isn't perfect, I've learned to appreciate simply having a safe and warm place to return to after every day.",
+    },
   },
   {
     id: 'yvy-ch4',
@@ -1020,6 +1056,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'stress'?", options: ['stressi', 'rentoutuminen', 'lepo', 'uni'], correctIndex: 0 },
       { question: 'Minun täytyy levätä, koska olen ___.', options: ['väsynyt', 'iloinen', 'terve', 'vahva'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'well-being'?", options: ['hyvinvointi', 'sairaus', 'väsymys', 'huoli'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to recover'?", options: ['toipua', 'sairastua', 'väsyä', 'kärsiä'], correctIndex: 0 },
+      { question: 'Nukun huonosti, jos juon liikaa ___.', options: ['kahvia', 'vettä', 'maitoa', 'mehua'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
@@ -1028,9 +1066,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Sinun pitäisi levätä enemmän. → ___ pitäis levätä enemmän.', answer: 'Sun', hint: 'sinun → sun' },
         { prompt: 'He eivät voi hyvin. → Ne ei ___ hyvin.', answer: 'voi', hint: 'he → ne puhekielessä, verbi pysyy yksikkömuotoisena' },
         { prompt: 'En minä jaksa enää. → En ___ jaksa enää.', answer: 'mä', hint: 'minä → mä kielteisessä lauseessa' },
+        { prompt: 'Minä stressaan liikaa töistä. → ___ stressaan liikaa duunista.', answer: 'Mä', hint: 'minä → mä; työ → duuni' },
+        { prompt: 'Emme käy koskaan lääkärissä. → Me ei ___ koskaan lääkärissä.', answer: 'käydä', hint: 'emme käy → me ei käydä (puhekielen passiivimuoto)' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli'],
+    sampleAnswer: {
+      promptFi: 'Kerro, miten pidät huolta terveydestäsi ja hyvinvoinnistasi arjessa.',
+      promptEn: 'Explain how you take care of your health and well-being in everyday life.',
+      textFi:
+        'Pidän terveyttäni tärkeänä asiana, joten yritän panostaa siihen aktiivisesti arjessani. Pyrin liikkumaan vähintään puoli tuntia päivässä, useimmiten kävelemällä tai pyöräilemällä töihin, koska se on helppo tapa yhdistää liikunta osaksi normaalia päivää. Kiinnitän huomiota myös ruokavalioon ja yritän syödä monipuolisesti, vaikka myönnänkin, että kiireisinä päivinä pikaruoka houkuttelee liikaa. Ehkä tärkeintä on kuitenkin uni – olen huomannut, että jos nukun liian vähän, sekä keskittymiskykyni että mielialani kärsivät selvästi. Viime aikoina olen alkanut kiinnittää enemmän huomiota myös henkiseen hyvinvointiin, esimerkiksi rajaamalla työajan selkeästi ja varaamalla aikaa rentoutumiselle ilman puhelinta. Uskon, että pienet mutta säännölliset teot vaikuttavat pitkällä aikavälillä enemmän kuin yksittäiset suuret muutokset.',
+      textEn:
+        "I consider my health an important matter, so I try to actively invest in it in my everyday life. I aim to move for at least half an hour a day, most often by walking or cycling to work, since it's an easy way to combine exercise with a normal day. I also pay attention to my diet and try to eat in a varied way, although I admit that fast food is too tempting on busy days. Perhaps the most important thing, though, is sleep — I've noticed that if I sleep too little, both my ability to concentrate and my mood clearly suffer. Lately I've also started paying more attention to mental well-being, for example by clearly limiting my working hours and setting aside time to relax without my phone. I believe that small but regular actions matter more in the long run than single big changes.",
+    },
   },
   {
     id: 'yvy-ch5',
@@ -1043,6 +1091,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'citizen'?", options: ['kansalainen', 'asukas', 'turisti', 'virkamies'], correctIndex: 0 },
       { question: 'Kunnan ___ auttavat asukkaita monissa asioissa.', options: ['palvelut', 'lait', 'verot', 'vaalit'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'authority/office'?", options: ['virasto', 'yritys', 'koulu', 'sairaala'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to apply (for something)'?", options: ['hakea', 'saada', 'antaa', 'myöntää'], correctIndex: 0 },
+      { question: 'Kaikilla kansalaisilla on oikeus ___.', options: ['terveydenhuoltoon', 'autoon', 'lomaan', 'asuntoon'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
@@ -1051,9 +1101,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'He eivät tienneet säännöistä. → Ne ei ___ säännöistä.', answer: 'tienny', hint: 'tienneet → tienny (loppu-t katoaa, -ee- lyhenee)' },
         { prompt: 'Minä asioin virastossa eilen. → ___ asioin virastossa eilen.', answer: 'Mä', hint: 'minä → mä' },
         { prompt: 'Emmekö me saa apua? → ___ me saada apua?', answer: 'Eiks', hint: 'emmekö → eiks (kieltokysymys yksinkertaistuu puhekielessä)' },
+        { prompt: 'Minä luotan viranomaisiin. → ___ luotan viranomaisiin.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'He eivät osanneet neuvoa minua. → Ne ei ___ neuvoa mua.', answer: 'osannu', hint: 'osanneet → osannu; minua → mua' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli', 'asiointikieli'],
+    sampleAnswer: {
+      promptFi: 'Kerro kokemuksestasi asioidessasi suomalaisen viranomaisen tai palvelun kanssa.',
+      promptEn: 'Talk about an experience you had dealing with a Finnish authority or service.',
+      textFi:
+        'Kun muutin Suomeen, jouduin asioimaan useiden eri viranomaisten kanssa, ja muistan erityisen hyvin ensimmäisen käyntini Kelan toimistossa. Olin etukäteen hieman jännittynyt, koska en ollut varma, ymmärtäisinkö kaiken virkakieltä, mutta yllätyksekseni virkailija selitti asiat hyvin selkeästi ja oli valmis toistamaan tarvittaessa. Hakemuksen täyttäminen vei jonkin verran aikaa, sillä liitteitä piti kerätä useasta eri paikasta, mutta koko prosessi eteni lopulta sujuvasti. Opin tästä kokemuksesta, että kannattaa aina varata riittävästi aikaa ja ottaa mukaan kaikki mahdolliset asiakirjat etukäteen, jotta asiointi ei viivästy turhaan. Nykyään koen olevani paljon varmempi asioidessani viranomaisten kanssa, koska tiedän suunnilleen, mitä odottaa ja miten prosessi yleensä etenee.',
+      textEn:
+        "When I moved to Finland, I had to deal with several different authorities, and I remember my first visit to the Kela office particularly well. I was a bit nervous beforehand, because I wasn't sure I would understand all the official language, but to my surprise the clerk explained things very clearly and was ready to repeat things if needed. Filling in the application took some time, since I had to gather attachments from several different places, but the whole process eventually went smoothly. I learned from this experience that it's always worth reserving enough time and bringing all possible documents along in advance, so that the process isn't delayed unnecessarily. Nowadays I feel much more confident dealing with authorities, because I roughly know what to expect and how the process usually proceeds.",
+    },
   },
   {
     id: 'yvy-ch6',
@@ -1066,6 +1126,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'to book (a trip)'?", options: ['varata', 'peruuttaa', 'odottaa', 'myöhästyä'], correctIndex: 0 },
       { question: 'Lentomme ___ kaksi tuntia myöhässä.', options: ['oli', 'meni', 'tuli', 'ajoi'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'destination'?", options: ['kohde', 'lähtö', 'paluu', 'reitti'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to get lost'?", options: ['eksyä', 'löytää', 'saapua', 'lähteä'], correctIndex: 0 },
+      { question: 'Ennen matkaa kannattaa tarkistaa ___.', options: ['aikataulut', 'sään huomenna', 'naapurin nimi', 'television ohjelmat'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
@@ -1074,9 +1136,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Emme ehtineet lentokentälle ajoissa. → Me ei ___ lentokentälle ajoissa.', answer: 'ehditty', hint: 'puhekielen passiivimuoto: emme ehtineet → me ei ehditty' },
         { prompt: 'Sinulla on varmasti kiva matka. → ___ on varmasti kiva matka.', answer: 'Sul', hint: 'sinulla → sul' },
         { prompt: 'He eivät löytäneet hotellia. → Ne ei ___ hotellia.', answer: 'löytäny', hint: 'löytäneet → löytäny' },
+        { prompt: 'Minä unohdin passini kotiin. → ___ unohdin passin kotiin.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'He eivät varanneet hotellia etukäteen. → Ne ei ___ hotellia etukäteen.', answer: 'varannu', hint: 'varanneet → varannu' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli'],
+    sampleAnswer: {
+      promptFi: 'Kerro matkasta, joka on jäänyt erityisesti mieleesi, ja miksi.',
+      promptEn: 'Describe a trip that has particularly stuck in your memory, and why.',
+      textFi:
+        'Yksi matkoista, jotka ovat jääneet erityisen hyvin mieleeni, oli reissu Pohjois-Norjaan pari vuotta sitten. Matkustimme ystäväni kanssa autolla useita päiviä, ja vaikka reitti oli pitkä ja välillä väsyttäväkin, maisemat olivat niin upeita, että kaikki vaiva kannatti. Yövyimme muutaman kerran teltassa keskellä ei mitään, ja muistan erityisen hyvin illan, jolloin näimme revontulet ensimmäistä kertaa elämässämme – se oli hetki, jota en unohda koskaan. Matka opetti minulle myös paljon itsestäni, sillä jouduin selviytymään tilanteista, joihin en ollut aiemmin tottunut, kuten navigoimaan tuntemattomilla teillä ilman kunnollista verkkoyhteyttä. Uskon, että juuri tällaiset matkat, joissa kaikki ei mene suunnitelmien mukaan, jäävät parhaiten mieleen ja opettavat eniten. Sen jälkeen olen yrittänyt matkustaa useammin tavalla, joka vie minut hieman pois omalta mukavuusalueeltani.',
+      textEn:
+        "One of the trips that has stuck in my memory particularly well was a trip to Northern Norway a couple of years ago. My friend and I drove for several days, and although the route was long and at times tiring, the scenery was so magnificent that all the effort was worth it. We camped a few times in the middle of nowhere, and I remember especially well the evening when we saw the northern lights for the first time in our lives — a moment I will never forget. The trip also taught me a lot about myself, since I had to cope with situations I wasn't used to before, such as navigating unfamiliar roads without a proper internet connection. I believe that it's precisely trips like this, where not everything goes according to plan, that stay in your memory best and teach you the most. Since then I've tried to travel more often in a way that takes me a little outside my own comfort zone.",
+    },
   },
   {
     id: 'yvy-ch7',
@@ -1089,6 +1161,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'to trust'?", options: ['luottaa', 'epäillä', 'pelätä', 'unohtaa'], correctIndex: 0 },
       { question: 'Meidän ___ on kestänyt jo kymmenen vuotta.', options: ['suhteemme', 'perheemme', 'kotimme', 'työmme'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'conflict/argument'?", options: ['riita', 'sopimus', 'juhla', 'vierailu'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to forgive'?", options: ['antaa anteeksi', 'syyttää', 'epäillä', 'unohtaa'], correctIndex: 0 },
+      { question: 'Hyvässä ystävyydessä on tärkeää ___.', options: ['rehellisyys', 'kilpailu', 'etäisyys', 'salailu'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
@@ -1097,9 +1171,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Emme riitele usein. → Me ei ___ usein.', answer: 'riidellä', hint: 'emme riitele → me ei riidellä (puhekielen passiivimuoto)' },
         { prompt: 'Luuletko sinä, että hän tulee? → Luuleks ___, että se tulee?', answer: 'sä', hint: 'luuletko sinä → luuleks sä; hän → se puhekielessä' },
         { prompt: 'He eivät ymmärtäneet toisiaan. → Ne ei ___ toisiaan.', answer: 'ymmärtäny', hint: 'ymmärtäneet → ymmärtäny' },
+        { prompt: 'Minä luotan sinuun täysin. → ___ luotan suhun täysin.', answer: 'Mä', hint: 'minä → mä; sinuun → suhun on hyvin puhekielinen muoto' },
+        { prompt: 'He eivät puhu enää keskenään. → Ne ei ___ enää keskenään.', answer: 'puhu', hint: 'he → ne, verbimuoto pysyy samana yksikössä' },
       ],
     },
     grammarTopicIds: ['puhekieli-vs-kirjakieli', 'liitepartikkelit'],
+    sampleAnswer: {
+      promptFi: 'Kerro, millainen on mielestäsi hyvä ihmissuhde, ja anna esimerkki omasta elämästäsi.',
+      promptEn: 'Describe what you think makes a good relationship, and give an example from your own life.',
+      textFi:
+        'Mielestäni hyvä ihmissuhde, oli kyse sitten parisuhteesta, ystävyydestä tai perhesuhteesta, rakentuu ennen kaikkea molemminpuoliselle luottamukselle ja avoimelle viestinnälle. Uskon, että erimielisyyksiä syntyy väistämättä kaikissa suhteissa, mutta tärkeintä on se, miten niistä puhutaan ja miten ne ratkaistaan. Omasta elämästäni voin mainita esimerkkinä ystävyyteni lapsuudenystäväni kanssa, joka on kestänyt jo yli kaksikymmentä vuotta huolimatta siitä, että asumme nykyään eri kaupungeissa. Olemme oppineet, että emme voi olla aina samaa mieltä kaikesta, mutta olemme silti aina valmiita kuuntelemaan toisiamme ja tarvittaessa pyytämään anteeksi. Uskon, että juuri tämä valmius nähdä vaivaa suhteen eteen, eikä pelkkä alkuperäinen kemia, on se, mikä pitää ihmissuhteet elossa pitkällä aikavälillä.',
+      textEn:
+        "In my opinion, a good relationship — whether it's a romantic relationship, a friendship, or a family relationship — is built above all on mutual trust and open communication. I believe disagreements inevitably arise in every relationship, but what matters most is how they are talked about and resolved. From my own life I can mention as an example my friendship with a childhood friend, which has lasted more than twenty years despite the fact that we now live in different cities. We've learned that we can't always agree on everything, but we're still always willing to listen to each other and, when needed, to apologize. I believe it's precisely this willingness to put effort into the relationship, rather than just the original chemistry, that keeps relationships alive in the long run.",
+    },
   },
 
   // ───────────────────────────── YKIä kohti ─────────────────────────────
@@ -1119,6 +1203,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä ilmaus tarkoittaa 'to hang out/spend time'?", options: ['viettää aikaa', 'kiirehtiä', 'stressata', 'väsyä'], correctIndex: 0 },
       { question: 'Aamuisin minulla on kiire, mutta illat ovat ___.', options: ['rauhallisia', 'kiireisiä', 'meluisia', 'lyhyitä'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'routine'?", options: ['rutiini', 'yllätys', 'poikkeus', 'muutos'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to plan (a schedule)'?", options: ['suunnitella', 'unohtaa', 'perua', 'muuttaa'], correctIndex: 0 },
+      { question: 'Viikonloppuisin teen usein jotain ___ arjesta.', options: ['erilaista', 'samanlaista', 'tylsempää', 'kiireisempää'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause preesensillä tai sopivalla ajanilmauksella.',
@@ -1127,9 +1213,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Viikonloppuisin ___ (nukkua) pidempään.', answer: 'nukun', hint: 'preesens, minä-muoto' },
         { prompt: 'Käyn lenkillä kolme kertaa ___ (viikko).', answer: 'viikossa', hint: 'sisäpaikallissija ajanilmauksessa: -ssa' },
         { prompt: 'Vapaa-ajallani ___ (lukea) usein kirjoja.', answer: 'luen', hint: 'preesens, minä-muoto' },
+        { prompt: 'Joka aamu minä ___ (juoda) kahvia ennen töitä.', answer: 'juon', hint: 'preesens, minä-muoto' },
+        { prompt: 'Käyn kuntosalilla kaksi kertaa ___ (viikko).', answer: 'viikossa', hint: 'sisäpaikallissija ajanilmauksessa: -ssa' },
       ],
     },
     grammarTopicIds: ['preesens', 'kellonajat'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita lyhyt viesti ystävällesi, jossa kerrot, miten tyypillinen viikkosi menee.',
+      promptEn: 'Write a short message to a friend describing how your typical week goes.',
+      textFi:
+        'Hei! Kysyit, millaista arkeni on nykyään, joten kerron vähän. Maanantaista perjantaihin herään aika aikaisin ja lähden suoraan töihin, joten aamut menevät melko rutiininomaisesti. Keskiviikkoisin käyn suomen kielen kurssilla töiden jälkeen, mikä on ollut todella hyödyllistä, vaikka väsyttääkin joskus pitkän työpäivän päälle. Torstai-iltaisin yritän aina varata aikaa itselleni, esimerkiksi lukemalla tai käymällä lenkillä, koska huomasin, että muuten viikko menee pelkässä työn ja velvollisuuksien pyörityksessä. Viikonloppuisin taas yritän tietoisesti tehdä jotain erilaista kuin arkena, esimerkiksi tavata ystäviä tai lähteä pienelle retkelle luontoon. Millaista sinun viikkosi on ollut viime aikoina?',
+      textEn:
+        "Hi! You asked what my everyday life is like these days, so let me tell you a bit. From Monday to Friday I wake up fairly early and go straight to work, so the mornings go quite routinely. On Wednesdays I go to a Finnish course after work, which has been really useful, even though it's tiring on top of a long workday. On Thursday evenings I always try to reserve time for myself, for example by reading or going for a run, because I noticed that otherwise the week just spins around work and obligations. On weekends, on the other hand, I try to consciously do something different from my weekdays, for example meeting friends or going on a small trip into nature. What has your week been like lately?",
+    },
   },
   {
     id: 'yk-ch2',
@@ -1142,6 +1238,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'to graduate'?", options: ['valmistua', 'aloittaa', 'keskeyttää', 'hakea'], correctIndex: 0 },
       { question: 'Opiskelen iltaisin, koska päivällä olen ___.', options: ['töissä', 'kotona', 'lomalla', 'koulussa'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'skill'?", options: ['taito', 'tieto', 'tehtävä', 'tavoite'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to fail (an exam)'?", options: ['reputtaa', 'läpäistä', 'valmistua', 'opiskella'], correctIndex: 0 },
+      { question: 'Ennen tenttiä on hyvä ___ ajoissa.', options: ['aloittaa lukeminen', 'unohtaa kirjat', 'mennä nukkumaan myöhään', 'lopettaa opiskelu'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause imperfektillä tai konditionaalilla.',
@@ -1150,9 +1248,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Hän ___ (valmistua) yliopistosta kaksi vuotta sitten.', answer: 'valmistui', hint: 'imperfekti' },
         { prompt: '___ (haluta) mieluummin opiskella kuin tehdä töitä juuri nyt.', answer: 'Haluaisin', hint: 'konditionaali' },
         { prompt: 'Jos minulla ___ (olla) enemmän aikaa, opiskelisin lisää kieliä.', answer: 'olisi', hint: 'konditionaali ehtolauseessa' },
+        { prompt: 'Kun olin nuorempi, ___ (haluta) tulla insinööriksi.', answer: 'halusin', hint: 'imperfekti, minä-muoto' },
+        { prompt: 'Jos saisin valita uudelleen, ___ (opiskella) eri alaa.', answer: 'opiskelisin', hint: 'konditionaali' },
       ],
     },
     grammarTopicIds: ['imperfekti', 'konditionaali'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita mielipidekirjoitus siitä, kannattaako aikuisena vaihtaa alaa tai opiskella uudelleen.',
+      promptEn: 'Write an opinion piece on whether it is worth changing careers or studying again as an adult.',
+      textFi:
+        'Mielestäni alan vaihtaminen tai uudelleenkouluttautuminen aikuisena kannattaa hyvin usein, vaikka päätös voikin tuntua aluksi pelottavalta. Ensinnäkin työelämä muuttuu jatkuvasti, ja monet ammatit, jotka olivat suosittuja kymmenen vuotta sitten, eivät välttämättä tarjoa enää samanlaisia mahdollisuuksia tulevaisuudessa. Toisaalta uskon, että aikuisiällä hankittu koulutus on usein tehokkaampaa kuin nuorena hankittu, koska aikuisella on jo selkeämpi käsitys omista vahvuuksistaan ja kiinnostuksen kohteistaan. Joku voisi väittää, että alan vaihtaminen on liian riskialtista, varsinkin jos perheellä on jo taloudellisia velvoitteita, ja tämä huoli on täysin ymmärrettävä. Kuitenkin uskon, että pitkällä aikavälillä työ, joka tuntuu merkitykselliseltä, kannattaa lähes aina enemmän kuin pelkkä taloudellinen turvallisuus lyhyellä aikavälillä. Kaiken kaikkiaan kantani on, että rohkeus opiskella uudelleen aikuisena on usein yksi parhaista päätöksistä, joita ihminen voi tehdä.',
+      textEn:
+        "In my opinion, changing careers or retraining as an adult is very often worth it, even though the decision can initially feel frightening. Firstly, working life is constantly changing, and many professions that were popular ten years ago may no longer offer the same opportunities in the future. On the other hand, I believe that education acquired in adulthood is often more effective than that acquired when young, since an adult already has a clearer understanding of their own strengths and interests. Someone might argue that changing careers is too risky, especially if a family already has financial obligations, and this concern is entirely understandable. However, I believe that in the long run, work that feels meaningful is almost always worth more than mere short-term financial security. All in all, my position is that the courage to study again as an adult is often one of the best decisions a person can make.",
+    },
   },
   {
     id: 'yk-ch3',
@@ -1165,6 +1273,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'view (from a window)'?", options: ['näköala', 'ikkuna', 'ovi', 'seinä'], correctIndex: 0 },
       { question: 'Asuntoni on pieni mutta ___.', options: ['kodikas', 'kylmä', 'pimeä', 'meluisa'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'to decorate'?", options: ['sisustaa', 'siivota', 'remontoida', 'myydä'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to rent out'?", options: ['vuokrata', 'ostaa', 'myydä', 'lainata'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'storage space'?", options: ['säilytystila', 'olohuone', 'näköala', 'remontti'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause sisä- tai ulkopaikallissijalla.',
@@ -1173,9 +1283,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Laitan kirjat ___ (hylly).', answer: 'hyllylle', hint: 'ulkopaikallissija: -lle (mihin?)' },
         { prompt: 'Asun kolmannessa ___ (kerros).', answer: 'kerroksessa', hint: 'sisäpaikallissija: -ssa' },
         { prompt: 'Avaimet ovat ___ (pöytä).', answer: 'pöydällä', hint: 'ulkopaikallissija: -lla (missä?)' },
+        { prompt: 'Vien roskat ___ (piha).', answer: 'pihalle', hint: 'ulkopaikallissija: -lle (mihin?)' },
+        { prompt: 'Vaatteet ovat ___ (kaappi).', answer: 'kaapissa', hint: 'sisäpaikallissija: -ssa (missä?)' },
       ],
     },
     grammarTopicIds: ['sisapaikallissijat', 'ulkopaikallissijat'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita ilmoitus, jossa etsit uutta asuntokaveria.',
+      promptEn: 'Write a notice in which you are looking for a new roommate.',
+      textFi:
+        'Etsin asuntokaveria kolmioon, joka sijaitsee aivan keskustan tuntumassa, hyvien kulkuyhteyksien varrella. Oma huoneesi olisi valoisa ja noin viidentoista neliön kokoinen, ja yhteiskäytössä olisivat keittiö, kylpyhuone sekä pieni parveke. Vuokra on kohtuullinen, ja siihen sisältyvät kaikki peruskulut, kuten vesi ja lämmitys – ainoastaan sähkö ja internet jaetaan erikseen. Toivon asuntokaverilta ennen kaikkea siisteyttä ja rauhallisuutta, sillä käyn itse töissä epäsäännöllisiä aikoja enkä halua asua jatkuvan metelin keskellä. Ei haittaa, vaikka joskus kutsuisit ystäviä kylään, kunhan asiasta sovitaan etukäteen. Jos kiinnostuit, ota rohkeasti yhteyttä – voidaan sopia yhteinen tapaaminen, jossa näytän asunnon ja voimme tutustua toisiimme paremmin.',
+      textEn:
+        "I'm looking for a roommate for a three-room apartment located right near the city center, close to good transport connections. Your own room would be bright and about fifteen square meters, and the kitchen, bathroom, and a small balcony would be shared. The rent is reasonable and includes all basic costs such as water and heating — only electricity and internet are split separately. Above all, I'd hope for a roommate who is tidy and calm, since I myself work irregular hours and don't want to live amid constant noise. It's fine if you sometimes invite friends over, as long as it's agreed on in advance. If you're interested, feel free to get in touch — we could arrange a meeting where I show you the apartment and we can get to know each other better.",
+    },
   },
   {
     id: 'yk-ch4',
@@ -1188,6 +1308,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'to exercise'?", options: ['liikkua', 'levätä', 'nukkua', 'syödä'], correctIndex: 0 },
       { question: 'Terveellinen elämäntapa sisältää liikuntaa ja ___ unta.', options: ['riittävästi', 'vähän', 'liikaa', 'ei ollenkaan'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'mental health'?", options: ['mielenterveys', 'ruumiinlämpö', 'verenpaine', 'unettomuus'], correctIndex: 0 },
+      { question: "Mikä ilmaus tarkoittaa 'to book a doctor's appointment'?", options: ["varata aika lääkärille", 'peruuttaa lääkeresepti', 'mennä apteekkiin', 'ottaa lääkettä'], correctIndex: 0 },
+      { question: 'Terveyskeskuksessa jonotusaika voi olla ___.', options: ['pitkä', 'lyhyt aina', 'olematon', 'ilmainen aina'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause modaaliverbillä tai objektin oikealla sijamuodolla.',
@@ -1196,9 +1318,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: '___ (voida) me liikkua yhdessä useammin?', answer: 'Voisimmeko', hint: 'konditionaali + kysymysliite' },
         { prompt: 'Syön joka päivä ___ (hedelmä).', answer: 'hedelmiä', hint: 'osaobjekti (partitiivi), määrittelemätön määrä' },
         { prompt: 'Join koko ___ (vesi).', answer: 'veden', hint: 'kokonaisobjekti (akkusatiivi), tekeminen valmis' },
+        { prompt: 'Jos ___ (voida) valita, harrastaisin enemmän liikuntaa.', answer: 'voisin', hint: 'konditionaali' },
+        { prompt: 'Söin eilen liikaa ___ (makeinen).', answer: 'makeisia', hint: 'osaobjekti (partitiivi)' },
       ],
     },
     grammarTopicIds: ['modaaliverbit', 'objektin-sijamuodot'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita mielipidekirjoitus siitä, tekevätkö ihmiset nykyään tarpeeksi omasta hyvinvoinnistaan.',
+      promptEn: 'Write an opinion piece on whether people nowadays do enough for their own well-being.',
+      textFi:
+        'Olen sitä mieltä, että moni ihminen tietää nykyään erittäin hyvin, mitä hyvinvointi vaatisi, mutta arjen kiireen keskellä sen toteuttaminen jää usein puolitiehen. Ensimmäinen syy tähän on se, että työelämä on entistä vaativampaa, ja monella ei yksinkertaisesti tunnu riittävän aikaa säännölliseen liikuntaan tai riittävään uneen. Toisaalta joku voisi väittää, että kyse on ennen kaikkea priorisoinnista, ja että jokainen voisi löytää edes puoli tuntia päivässä itselleen, jos todella haluaisi. Kuitenkin uskon, että pelkkä yksilön tahto ei riitä, vaan myös yhteiskunnan ja työpaikkojen pitäisi tukea hyvinvointia paremmin, esimerkiksi joustavammilla työajoilla. Kaiken kaikkiaan kantani on, että ihmiset haluaisivat kyllä pitää parempaa huolta itsestään, mutta rakenteelliset esteet tekevät siitä usein vaikeampaa kuin sen pitäisi olla.',
+      textEn:
+        "I am of the opinion that many people nowadays know very well what well-being would require, but amid the rush of everyday life, actually doing it is often left half-finished. The first reason for this is that working life has become more demanding, and for many there simply doesn't seem to be enough time for regular exercise or sufficient sleep. On the other hand, someone might argue that it's above all a matter of prioritizing, and that everyone could find at least half an hour a day for themselves if they really wanted to. However, I believe that individual willpower alone isn't enough — society and workplaces should also support well-being better, for example through more flexible working hours. All in all, my position is that people would indeed like to take better care of themselves, but structural obstacles often make it harder than it should be.",
+    },
   },
   {
     id: 'yk-ch5',
@@ -1211,6 +1343,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'municipality'?", options: ['kunta', 'valtio', 'maakunta', 'seutu'], correctIndex: 0 },
       { question: 'Kunnan palvelut ___ veronmaksajien rahoilla.', options: ['rahoitetaan', 'myydään', 'suljetaan', 'perutaan'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'equality'?", options: ['tasa-arvo', 'eriarvoisuus', 'köyhyys', 'rikkaus'], correctIndex: 0 },
+      { question: "Mikä ilmaus tarkoittaa 'public service'?", options: ['julkinen palvelu', 'yksityinen yritys', 'harrastus', 'vapaaehtoistyö'], correctIndex: 0 },
+      { question: 'Suomessa koulutus on ___ kansalaisille.', options: ['maksutonta', 'kallista', 'vapaaehtoista', 'harvinaista'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause passiivilla.',
@@ -1219,9 +1353,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Uusi kirjasto ___ (avata) ensi vuonna.', answer: 'avataan', hint: 'passiivi, preesens' },
         { prompt: 'Palvelut ___ (rahoittaa) verovaroilla.', answer: 'rahoitetaan', hint: 'passiivi, preesens' },
         { prompt: 'Kokous ___ (pitää) viime viikolla.', answer: 'pidettiin', hint: 'passiivi, imperfekti' },
+        { prompt: 'Terveyskeskuksessa ___ (hoitaa) potilaita joka päivä.', answer: 'hoidetaan', hint: 'passiivi, preesens' },
+        { prompt: 'Viime vuonna laki ___ (muuttaa).', answer: 'muutettiin', hint: 'passiivi, imperfekti' },
       ],
     },
     grammarTopicIds: ['passiivi-preesens', 'passiivi-imperfekti'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita mielipidekirjoitus siitä, ovatko julkiset palvelut mielestäsi riittäviä Suomessa.',
+      promptEn: 'Write an opinion piece on whether you think public services in Finland are sufficient.',
+      textFi:
+        'Olen sitä mieltä, että Suomen julkiset palvelut ovat kansainvälisesti vertailtuna varsin hyvällä tasolla, mutta niissä on silti parannettavaa. Ensimmäinen syy tähän näkemykseen on se, että esimerkiksi terveyskeskuksissa jonotusajat voivat toisinaan venyä kohtuuttoman pitkiksi, mikä heikentää palvelun laatua käytännössä. Toisaalta on myönnettävä, että verrattuna moniin muihin maihin, Suomessa peruspalvelut ovat kaikkien saatavilla riippumatta tulotasosta, mikä on mielestäni erittäin arvokas asia. Joku voisi väittää, että palveluiden laatu vaihtelee liikaa alueiden välillä, ja tämä huoli on täysin perusteltu, sillä pienemmillä paikkakunnilla palveluita on usein karsittu voimakkaasti. Kuitenkin uskon, että kokonaisuutena suomalainen hyvinvointiyhteiskunta tarjoaa vakaan pohjan, jolle voi rakentaa, kunhan resursseja jaetaan jatkossa nykyistä tasaisemmin. Kaiken kaikkiaan kantani on, että palvelut ovat hyviä, mutta niiden tasa-arvoisuuteen eri alueiden välillä tulisi kiinnittää enemmän huomiota.',
+      textEn:
+        "I am of the opinion that Finland's public services are at a fairly good level by international comparison, but there is still room for improvement. The first reason for this view is that, for example, waiting times at health centers can sometimes stretch unreasonably long, which weakens the quality of the service in practice. On the other hand, it must be admitted that compared to many other countries, basic services in Finland are available to everyone regardless of income level, which I consider a very valuable thing. Someone might argue that the quality of services varies too much between regions, and this concern is entirely justified, since services have often been cut significantly in smaller localities. However, I believe that overall the Finnish welfare society offers a stable foundation to build on, as long as resources are distributed more evenly going forward. All in all, my position is that the services are good, but more attention should be paid to equality between different regions.",
+    },
   },
   {
     id: 'yk-ch6',
@@ -1234,6 +1378,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä sana tarkoittaa 'culture shock'?", options: ['kulttuurishokki', 'koti-ikävä', 'matkapahoinvointi', 'aikaero'], correctIndex: 0 },
       { question: 'Matkustaminen on opettanut minua ___.', options: ['sopeutumaan', 'unohtamaan', 'pelkäämään', 'kiirehtimään'], correctIndex: 0 },
       { question: "Mikä sana tarkoittaa 'unforgettable'?", options: ['unohtumaton', 'tavallinen', 'lyhyt', 'kallis'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to immerse oneself (in a culture)'?", options: ['syventyä', 'etääntyä', 'kiirehtiä', 'unohtaa'], correctIndex: 0 },
+      { question: 'Matkustaminen yksin vaatii enemmän ___.', options: ['itsenäisyyttä', 'seuraa', 'rahaa aina', 'aikaa aina'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause perfektillä tai NUT-partisiipilla.',
@@ -1242,9 +1388,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Emme ole koskaan ___ (käydä) Japanissa.', answer: 'käyneet', hint: 'perfekti, monikko' },
         { prompt: 'Olen matkallani ___ (oppia) paljon uutta kulttuurista.', answer: 'oppinut', hint: 'perfekti' },
         { prompt: 'En ole koskaan ___ (nähdä) niin kauniita maisemia.', answer: 'nähnyt', hint: 'perfekti, NUT-partisiippi' },
+        { prompt: 'Olemme ___ (nähdä) monta mielenkiintoista paikkaa.', answer: 'nähneet', hint: 'perfekti, monikko' },
+        { prompt: 'En ole ikinä ___ (matkustaa) yksin ennen tätä.', answer: 'matkustanut', hint: 'perfekti' },
       ],
     },
     grammarTopicIds: ['perfekti', 'nut-partisiippi'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita blogiteksti siitä, mitä olet oppinut matkustamalla yksin.',
+      promptEn: 'Write a blog post about what you have learned from traveling alone.',
+      textFi:
+        'Kun lähdin ensimmäistä kertaa matkalle täysin yksin, en osannut kuvitella, kuinka paljon se tulisi opettamaan minulle itsestäni. Aluksi ajatus tuntui pelottavalta – kuka auttaisi, jos jokin menisi pieleen, ja miten selviytyisin vieraassa maassa ilman tuttua seuraa? Hyvin nopeasti kuitenkin huomasin, että yksin matkustaminen pakottaa tekemään päätöksiä itsenäisesti ja luottamaan omaan arviointikykyynsä, mikä kasvatti itsevarmuuttani huomattavasti. Olen myös oppinut, että yksin ollessaan on paljon helpompi tutustua paikallisiin ihmisiin, koska ei ole valmista seuraa, johon nojautua joka tilanteessa. Suurin oppi lienee kuitenkin se, että epämukavuusalueelle astuminen kannattaa lähes aina – juuri ne hetket, jotka tuntuivat aluksi pelottavimmilta, ovat jääneet parhaiten mieleeni jälkeenpäin. Suosittelen jokaista kokeilemaan yksin matkustamista ainakin kerran elämässään, sillä se opettaa asioita, joita ei voi oppia millään muulla tavalla.',
+      textEn:
+        "When I first went on a trip completely alone, I couldn't imagine how much it would end up teaching me about myself. At first the thought felt frightening — who would help if something went wrong, and how would I cope in a foreign country without familiar company? Very quickly, however, I noticed that traveling alone forces you to make decisions independently and trust your own judgment, which significantly increased my self-confidence. I've also learned that when you're alone it's much easier to get to know local people, since you don't have ready-made company to lean on in every situation. The biggest lesson, though, is probably that stepping outside your comfort zone is almost always worth it — precisely the moments that initially felt the scariest have stuck in my memory the best afterward. I recommend everyone try traveling alone at least once in their life, since it teaches things you can't learn any other way.",
+    },
   },
   {
     id: 'yk-ch7',
@@ -1257,6 +1413,8 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
       { question: "Mikä ilmaus tarkoittaa 'to compromise'?", options: ['tehdä kompromissi', 'väittää vastaan', 'antaa periksi kokonaan', 'jättää huomiotta'], correctIndex: 0 },
       { question: 'Hyvä parisuhde vaatii ___ ja luottamusta.', options: ['viestintää', 'rahaa', 'aikaa yksin', 'kilpailua'], correctIndex: 0 },
       { question: "Mikä ilmaus tarkoittaa 'to support each other'?", options: ['tukea toisiaan', 'kilpailla toistensa kanssa', 'unohtaa toisensa', 'välttää toisiaan'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'reconciliation'?", options: ['sovinto', 'riita', 'ero', 'epäluottamus'], correctIndex: 0 },
+      { question: 'Perheenjäsenten välinen ___ on tärkeää.', options: ['yhteenkuuluvuus', 'kilpailu', 'etäisyys', 'kateus'], correctIndex: 0 },
     ],
     grammarDrill: {
       instructions: 'Täytä lause relatiivilauseella (joka/jotka) tai referoinnilla.',
@@ -1265,9 +1423,19 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
         { prompt: 'Minulla on ystäviä, ___ tukevat minua.', answer: 'jotka', hint: 'relatiivipronomini monikossa' },
         { prompt: 'Hän sanoi, ___ rakastaa perhettään yli kaiken.', answer: 'että', hint: 'epäsuora esitys: sanoi, että...' },
         { prompt: 'Kysyin häneltä, ___ hän oli onnellinen.', answer: 'oliko', hint: 'epäsuora kysymys: -ko-liite siirtyy sivulauseeseen' },
+        { prompt: 'Tapasin naisen, ___ oli asunut Suomessa jo kauan.', answer: 'joka', hint: 'relatiivipronomini yksikössä' },
+        { prompt: 'Hän kertoi, ___ he olivat muuttaneet ulkomaille.', answer: 'että', hint: 'epäsuora esitys' },
       ],
     },
     grammarTopicIds: ['relatiivilauseet', 'referointi'],
+    sampleAnswer: {
+      promptFi: 'Kirjoita kirje perheenjäsenellesi, jossa kerrot, miten paljon perhe merkitsee sinulle.',
+      promptEn: 'Write a letter to a family member describing how much your family means to you.',
+      textFi:
+        'Hei äiti, halusin kirjoittaa sinulle ja kertoa, kuinka paljon perheemme on minulle merkinnyt viime vuosien aikana. Vaikka asumme nykyään eri maissa ja näemme toisiamme harvemmin kuin haluaisimme, tunnen silti olevani lähellä teitä jokaista, kun puhumme puhelimessa tai videopuhelun välityksellä. Muistan erityisen hyvin, kuinka tuit minua, kun päätin muuttaa ulkomaille opiskelemaan – vaikka päätös varmasti pelotti sinuakin, et koskaan yrittänyt estää minua, vaan kannustit minua seuraamaan omaa polkuani. Juuri tällainen tuki on opettanut minulle, että perhe ei ole vain ihmisiä, joiden kanssa jakaa arki, vaan ennen kaikkea ihmisiä, jotka uskovat sinuun myös silloin, kun et itse ole varma. Toivon, että voisimme pian nähdä toisemme kasvotusten pidemmän aikaa, mutta siihen asti haluan, että tiedät, kuinka kiitollinen olen teistä kaikista. Kiitos, että olette aina olleet tukenani, vaikka välimatka on välillä pitkäkin.',
+      textEn:
+        "Hi mom, I wanted to write to you and tell you how much our family has meant to me over the past few years. Even though we now live in different countries and see each other less often than we'd like, I still feel close to each of you when we talk on the phone or over video call. I remember especially well how you supported me when I decided to move abroad to study — even though the decision surely scared you too, you never tried to stop me, but instead encouraged me to follow my own path. Precisely this kind of support has taught me that family isn't just people you share everyday life with, but above all people who believe in you even when you're not sure of yourself. I hope we can soon see each other face to face for a longer time, but until then I want you to know how grateful I am for all of you. Thank you for always being my support, even though the distance is sometimes long.",
+    },
   },
 ]
 
