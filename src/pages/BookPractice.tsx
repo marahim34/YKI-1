@@ -16,10 +16,12 @@ function SampleAnswer({ sample }: { sample: BookPracticeSampleAnswer }) {
       <div className="rounded-lg border border-violet-200 bg-violet-50 p-3">
         <p className="text-sm font-medium text-violet-900">{sample.promptFi}</p>
         <p className="text-xs text-violet-600">{sample.promptEn}</p>
+        {sample.promptBn && <p className="text-xs text-emerald-700">{sample.promptBn}</p>}
         {revealed ? (
           <div className="mt-3 space-y-1 border-t border-violet-200 pt-3">
             <p className="whitespace-pre-line text-sm text-slate-800">{sample.textFi}</p>
             <p className="whitespace-pre-line text-xs text-slate-500">{sample.textEn}</p>
+            {sample.textBn && <p className="whitespace-pre-line text-xs text-emerald-700">{sample.textBn}</p>}
           </div>
         ) : (
           <button

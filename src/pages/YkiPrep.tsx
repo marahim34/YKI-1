@@ -7,6 +7,7 @@ import YkiTip from '../components/YkiTip'
 import YkiPassageCard from '../components/YkiPassageCard'
 import SequentialTimer from '../components/SequentialTimer'
 import DialoguePractice from '../components/DialoguePractice'
+import GrammarPanel from '../components/GrammarPanel'
 
 type Tab = 'yleiskatsaus' | 'lukeminen' | 'kirjoittaminen' | 'kuunteleminen' | 'puhuminen' | 'sanasto'
 
@@ -19,13 +20,14 @@ const TABS: { key: Tab; label: string; icon: string }[] = [
   { key: 'sanasto', label: 'Sanasto', icon: '📋' },
 ]
 
-function VocabGrid({ items }: { items: { fi: string; en: string }[] }) {
+function VocabGrid({ items }: { items: { fi: string; en: string; bn?: string }[] }) {
   return (
     <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
       {items.map((v, i) => (
         <div key={i} className="rounded-lg border border-slate-100 bg-slate-50 px-3 py-2">
           <p className="font-medium text-slate-900">{v.fi}</p>
           <p className="text-sm text-slate-500">{v.en}</p>
+          {v.bn && <p className="text-sm text-emerald-700">{v.bn}</p>}
         </div>
       ))}
     </div>
@@ -176,6 +178,50 @@ export default function YkiPrep() {
               ))}
             </div>
           </div>
+
+          <div>
+            <h2 className="mb-2 text-sm font-semibold text-slate-800">Sisällön kattavuus lukuluvuittain</h2>
+            <p className="mb-2 text-xs text-slate-400">
+              ✓ = testitason materiaalia löytyy, △ = vain harjoitustason materiaalia. Content coverage — ✓ = test-tier
+              material exists, △ = practice-tier material only.
+            </p>
+            <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-slate-100 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-400">
+                    <th className="px-3 py-2">Luku</th>
+                    <th className="px-3 py-2 text-center">📖</th>
+                    <th className="px-3 py-2 text-center">🎧</th>
+                    <th className="px-3 py-2 text-center">✍️</th>
+                    <th className="px-3 py-2 text-center">🗣️</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {YKI_CHAPTERS.map((c) => (
+                    <tr
+                      key={c.id}
+                      onClick={() => setChapterId(c.id)}
+                      className={`cursor-pointer border-b border-slate-50 last:border-0 hover:bg-slate-50 ${
+                        c.id === chapterId ? 'bg-blue-50' : ''
+                      }`}
+                    >
+                      <td className="px-3 py-2 text-slate-700">
+                        {c.number}. {c.titleFi}
+                      </td>
+                      <td className="px-3 py-2 text-center">{c.reading.testPassages.length > 0 ? '✓' : '△'}</td>
+                      <td className="px-3 py-2 text-center">{c.listening.testPassages.length > 0 ? '✓' : '△'}</td>
+                      <td className="px-3 py-2 text-center">
+                        {c.writing.informalTasks.some((t) => !t.bulletsFi) ? '✓' : '△'}
+                      </td>
+                      <td className="px-3 py-2 text-center">{c.speaking.conversationTasks.length > 0 ? '✓' : '△'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <GrammarPanel topicIds={chapter.grammarTopicIds ?? []} />
         </div>
       )}
 

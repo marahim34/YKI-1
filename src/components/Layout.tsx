@@ -5,23 +5,23 @@ import FoxMascot from './FoxMascot'
 
 const PRIMARY_NAV = [
   { to: '/', label: 'Koti', icon: '🏠' },
+  { to: '/yki-valmennus', label: 'YKI-valmennus', icon: '🎯' },
   { to: '/roadmap', label: 'Polku', icon: '🗺️' },
   { to: '/vocab', label: 'Sanasto', icon: '🧠' },
-  { to: '/exam', label: 'Koekierros', icon: '⏱️' },
   { to: '/progress', label: 'Edistyminen', icon: '📈' },
 ]
 
 const MORE_NAV = [
+  { to: '/how-to-use', label: 'Ohjeet', icon: '❓' },
   { to: '/grammar', label: 'Kielioppi', icon: '📐' },
+  { to: '/exam', label: 'Koekierros', icon: '⏱️' },
   { to: '/numbers', label: 'Numerot', icon: '🔢' },
   { to: '/basics', label: 'Perussanasto', icon: '🌻' },
   { to: '/daily', label: 'Sekoitettu harjoitus', icon: '🎲' },
   { to: '/conversations', label: 'Keskusteluharjoitukset', icon: '💬' },
-  { to: '/yki-valmennus', label: 'YKI-valmennus', icon: '🎯' },
   { to: '/templates', label: 'Mallipohjat', icon: '📋' },
   { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
   { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
-  { to: '/how-to-use', label: 'Ohjeet', icon: '❓' },
 ]
 
 const ALL_NAV = [...PRIMARY_NAV, ...MORE_NAV]

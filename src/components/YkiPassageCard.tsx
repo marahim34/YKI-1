@@ -23,7 +23,11 @@ export default function YkiPassageCard({ passage }: { passage: YkiPassage }) {
           <p className="mb-1.5 text-xs font-semibold text-slate-600">Ennakoi sanastoa ennen kuuntelua:</p>
           <div className="flex flex-wrap gap-1.5">
             {passage.predictVocab.map((v) => (
-              <span key={v.fi} className="rounded-full bg-white px-2.5 py-1 text-xs text-slate-600" title={v.en}>
+              <span
+                key={v.fi}
+                className="rounded-full bg-white px-2.5 py-1 text-xs text-slate-600"
+                title={v.bn ? `${v.en} · ${v.bn}` : v.en}
+              >
                 {v.fi}
               </span>
             ))}

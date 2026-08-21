@@ -215,8 +215,10 @@ export interface BookPracticeDrillItem {
 export interface BookPracticeSampleAnswer {
   promptFi: string
   promptEn: string
+  promptBn?: string
   textFi: string
   textEn: string
+  textBn?: string
 }
 
 export interface DialogueTurn {
@@ -320,7 +322,7 @@ export interface YkiPassage {
   source?: string
   textFi: string
   tip?: YkiTipBox
-  predictVocab?: { fi: string; en: string }[]
+  predictVocab?: { fi: string; en: string; bn?: string }[]
   mcq?: McqQuestion[]
   trueFalse?: TrueFalseQuestion[]
   open?: OpenQuestion[]
@@ -328,7 +330,7 @@ export interface YkiPassage {
 
 export interface YkiVocabWarmup {
   instructionsFi: string
-  items: { fi: string; en: string }[]
+  items: { fi: string; en: string; bn?: string }[]
   note?: YkiTipBox
 }
 
@@ -435,7 +437,7 @@ export interface YkiSubtestSpeaking {
   practiceConversationTasks?: YkiConversationTask[]
   sampleDialogues?: DialogueScenario[]
   dontMemorizeTip?: YkiTipBox
-  conversationVocab?: { fi: string; en: string }[]
+  conversationVocab?: { fi: string; en: string; bn?: string }[]
   testLongTasks: YkiSpeakingLongTask[]
   conversationTasks: YkiConversationTask[]
   situationalTasks: YkiSituationalTask[]
@@ -450,11 +452,12 @@ export interface YkiChapter {
   titleEn: string
   pages: string
   theme: string
+  grammarTopicIds?: string[]
   reading: YkiSubtestReading
   writing: YkiSubtestWriting
   listening: YkiSubtestListening
   speaking: YkiSubtestSpeaking
-  vocabSummary: { fi: string; en: string }[]
-  usefulPhrases: { fi: string; en: string }[]
+  vocabSummary: { fi: string; en: string; bn?: string }[]
+  usefulPhrases: { fi: string; en: string; bn?: string }[]
   learnEverywhereTip?: YkiTipBox
 }

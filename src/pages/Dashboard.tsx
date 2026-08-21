@@ -62,7 +62,47 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-6">
-      {!howToDismissed && (
+      {!howToDismissed && totalDone === 0 && (
+        <div className="rounded-2xl border-2 border-amber-300 bg-amber-50 p-4">
+          <div className="flex items-start justify-between gap-3">
+            <p className="text-sm font-bold text-amber-900">
+              👋 Uusi täällä? 15 osiota voi tuntua paljolta — tässä on mistä aloittaa.
+              <br />
+              <span className="font-normal">নতুন এসেছেন? ১৫টি বিভাগ অনেক মনে হতে পারে — এখান থেকে শুরু করুন।</span>
+            </p>
+            <button
+              onClick={() => {
+                setHowToDismissed(true)
+                saveJSON('how-to-banner-dismissed', true)
+              }}
+              aria-label="Piilota"
+              className="shrink-0 text-amber-600 hover:text-amber-900"
+            >
+              ✕
+            </button>
+          </div>
+          <div className="mt-3 grid gap-2 sm:grid-cols-2">
+            <Link
+              to="/roadmap"
+              className="rounded-lg border border-amber-300 bg-white p-3 text-sm hover:border-amber-500"
+            >
+              <span className="font-semibold text-slate-900">🗺️ Rakenna pohjasta asti</span>
+              <span className="block text-slate-500">32 viikkoa, A1→B2. Aloita viikosta 1.</span>
+            </Link>
+            <Link
+              to="/yki-valmennus"
+              className="rounded-lg border border-amber-300 bg-white p-3 text-sm hover:border-amber-500"
+            >
+              <span className="font-semibold text-slate-900">🎯 Suoraan kokeeseen</span>
+              <span className="block text-slate-500">9 YKI-teemaa, valitse mikä tahansa.</span>
+            </Link>
+          </div>
+          <Link to="/how-to-use" className="mt-2 inline-block text-xs font-semibold text-amber-700 hover:underline">
+            Katso koko opas (kaikki osiot selitettynä) →
+          </Link>
+        </div>
+      )}
+      {!howToDismissed && totalDone > 0 && (
         <div className="flex items-center justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-800">
           <Link to="/how-to-use" className="flex items-center gap-2 font-medium hover:underline">
             ❓ Uusi täällä? Katso, miten sovellus toimii · নতুন এসেছেন? অ্যাপটি কীভাবে ব্যবহার করবেন দেখুন →
@@ -167,6 +207,14 @@ export default function Dashboard() {
       </section>
 
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <Link
+          to="/yki-valmennus"
+          className="rounded-2xl border-2 border-blue-300 bg-blue-50 p-4 shadow-sm hover:border-blue-400"
+        >
+          <p className="text-2xl">🎯</p>
+          <p className="mt-1 font-semibold text-blue-900">YKI-valmennus</p>
+          <p className="text-sm text-blue-700">Kokeen 9 teemaa: lämmittele, harjoittele, testaa.</p>
+        </Link>
         <Link to="/vocab" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">🧠</p>
           <p className="mt-1 font-semibold text-slate-900">Sanaston kertaus</p>
