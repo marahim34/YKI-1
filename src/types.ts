@@ -177,11 +177,29 @@ export interface WritingTemplate {
   taskType: string
   taskTypeBn?: string
   whenUsed: string
+  whenUsedBn?: string
   opening: string
+  openingBn?: string
   body: string
+  bodyBn?: string
   closing: string
+  closingBn?: string
   swaps: TemplateSwap[]
   tips: string[]
+  tipsBn?: string[]
+}
+
+// A minimal-pair example of a verb answered both affirmatively and
+// negatively — used to make the very common "vastaa myöntävästi /
+// vastaa kieltävästi" speaking-task instruction concrete with a
+// side-by-side table instead of just an abstract rule.
+export interface VerbAnswerExample {
+  verb: string
+  verbEn: string
+  positiveFi: string
+  negativeFi: string
+  en: string
+  bn?: string
 }
 
 // Speaking question patterns: how to recognize a common YKI speaking
@@ -194,10 +212,14 @@ export interface SpeakingPattern {
   patternName: string
   patternNameBn?: string
   recognizeBy: string[]
+  recognizeByBn?: string[]
   answerTemplate: string
+  answerTemplateBn?: string
   filledExample: string
   filledExampleBn?: string
   tips: string[]
+  tipsBn?: string[]
+  verbTable?: VerbAnswerExample[]
 }
 
 export interface BookPracticeVocabItem {

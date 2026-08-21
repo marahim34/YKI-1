@@ -20,6 +20,9 @@ export default function Templates() {
           YKI-tehtävät toistavat samoja kysymys- ja tehtävätyyppejä. Opettele yksi runko per tyyppi, niin voit soveltaa
           samaa rakennetta uuteen aiheeseen vaihtamalla vain sanaston — vaikka et ymmärtäisi kysymyksen jokaista sanaa.
         </p>
+        <p className="mt-1.5 text-sm text-emerald-700">
+          প্রতিটি রানকো (কাঠামো)-র নিচে বাংলায় ব্যাখ্যা আছে, যাতে বুঝতে সহজ হয় — শুধু ফিনিশ পড়ে আটকে যাবেন না, নিচে দেখুন! ↓
+        </p>
       </div>
 
       <section className="rounded-2xl border border-blue-200 bg-blue-50 shadow-sm">
@@ -44,6 +47,7 @@ export default function Templates() {
             </ul>
             <p className="text-blue-700">
               এই মানদণ্ড অফিসিয়াল রুব্রিক নয়, বরং সাধারণ দিকনির্দেশনা — টাইটোতাসো ৪ মানে মোটামুটি B1.2–B2 স্তরের সাবলীল, সুগঠিত ভাষা।
+              অর্থাৎ পরীক্ষক আশা করেন স্পষ্ট গঠন, বিভিন্ন ধরনের বাক্য এবং যুক্তিসহ মতামত দেওয়ার ক্ষমতা।
             </p>
             <p className="text-xs text-blue-600">
               Mallivastaukset koko sovelluksessa (viikkojen kirjoitus-/puhetehtävät, koepaketit ja mallipohjat alla) on
@@ -81,22 +85,33 @@ export default function Templates() {
                   </span>
                   <span className="text-slate-400">{open ? '−' : '+'}</span>
                 </button>
-                {!open && <p className="px-4 pb-3 text-sm text-slate-500">{t.whenUsed}</p>}
+                {!open && (
+                  <div className="px-4 pb-3">
+                    <p className="text-sm text-slate-500">{t.whenUsed}</p>
+                    {t.whenUsedBn && <p className="mt-0.5 text-xs text-emerald-700">{t.whenUsedBn}</p>}
+                  </div>
+                )}
                 {open && (
                   <div className="space-y-4 border-t border-slate-100 px-4 py-4">
-                    <p className="text-sm text-slate-600">{t.whenUsed}</p>
+                    <div>
+                      <p className="text-sm text-slate-600">{t.whenUsed}</p>
+                      {t.whenUsedBn && <p className="mt-1 text-sm text-emerald-700">{t.whenUsedBn}</p>}
+                    </div>
 
                     <div className="rounded-lg bg-slate-50 p-3">
                       <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-400">Runko / Template</p>
                       <p className="text-sm text-slate-700">
                         <span className="font-semibold">Aloitus:</span> {t.opening}
                       </p>
-                      <p className="mt-1.5 text-sm text-slate-700">
+                      {t.openingBn && <p className="mt-0.5 text-sm text-emerald-700">{t.openingBn}</p>}
+                      <p className="mt-2 text-sm text-slate-700">
                         <span className="font-semibold">Runko:</span> {t.body}
                       </p>
-                      <p className="mt-1.5 text-sm text-slate-700">
+                      {t.bodyBn && <p className="mt-0.5 text-sm text-emerald-700">{t.bodyBn}</p>}
+                      <p className="mt-2 text-sm text-slate-700">
                         <span className="font-semibold">Lopetus:</span> {t.closing}
                       </p>
+                      {t.closingBn && <p className="mt-0.5 text-sm text-emerald-700">{t.closingBn}</p>}
                     </div>
 
                     <div className="space-y-2">
@@ -111,9 +126,12 @@ export default function Templates() {
                       ))}
                     </div>
 
-                    <ul className="list-inside list-disc space-y-1 text-xs text-slate-500">
+                    <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-500">
                       {t.tips.map((tip, i) => (
-                        <li key={i}>{tip}</li>
+                        <li key={i}>
+                          {tip}
+                          {t.tipsBn?.[i] && <span className="mt-0.5 block pl-4 text-emerald-700">{t.tipsBn[i]}</span>}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -147,9 +165,10 @@ export default function Templates() {
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Tunnista kysymys tästä</p>
                       <div className="mt-1 flex flex-wrap gap-1.5">
-                        {p.recognizeBy.map((r) => (
-                          <span key={r} className="rounded-full bg-amber-50 px-2.5 py-1 text-xs text-amber-800">
-                            {r}
+                        {p.recognizeBy.map((r, i) => (
+                          <span key={r} className="flex flex-col items-start rounded-lg bg-amber-50 px-2.5 py-1.5 text-xs text-amber-800">
+                            <span>{r}</span>
+                            {p.recognizeByBn?.[i] && <span className="mt-0.5 text-[11px] text-emerald-700">{p.recognizeByBn[i]}</span>}
                           </span>
                         ))}
                       </div>
@@ -158,6 +177,7 @@ export default function Templates() {
                     <div className="rounded-lg bg-slate-50 p-3">
                       <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-400">Vastausrunko / Answer template</p>
                       <p className="text-sm text-slate-700">{p.answerTemplate}</p>
+                      {p.answerTemplateBn && <p className="mt-1 text-sm text-emerald-700">{p.answerTemplateBn}</p>}
                     </div>
 
                     <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-3">
@@ -177,9 +197,56 @@ export default function Templates() {
                       {p.filledExampleBn && <p className="mt-1 text-sm text-emerald-800">{p.filledExampleBn}</p>}
                     </div>
 
-                    <ul className="list-inside list-disc space-y-1 text-xs text-slate-500">
+                    {p.verbTable && p.verbTable.length > 0 && (
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                          Myönteinen vs. kielteinen vastaus — esimerkkiverbit
+                        </p>
+                        <p className="mt-0.5 text-xs text-emerald-700">ইতিবাচক বনাম নেতিবাচক উত্তর — উদাহরণ ক্রিয়াপদ</p>
+                        <div className="mt-2 overflow-x-auto rounded-lg border border-slate-200">
+                          <table className="w-full min-w-[560px] text-left text-xs">
+                            <thead>
+                              <tr className="bg-slate-50 text-slate-500">
+                                <th className="px-2.5 py-2 font-semibold">Verbi</th>
+                                <th className="px-2.5 py-2 font-semibold text-emerald-700">✓ Myönteinen (kyllä)</th>
+                                <th className="px-2.5 py-2 font-semibold text-rose-700">✗ Kielteinen (ei)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {p.verbTable.map((v) => (
+                                <tr key={v.verb} className="border-t border-slate-100 align-top">
+                                  <td className="px-2.5 py-2">
+                                    <p className="font-medium text-slate-800">{v.verb}</p>
+                                    <p className="text-slate-400">{v.verbEn}</p>
+                                  </td>
+                                  <td className="bg-emerald-50/40 px-2.5 py-2 text-slate-700">
+                                    <p>{v.positiveFi}</p>
+                                  </td>
+                                  <td className="bg-rose-50/40 px-2.5 py-2 text-slate-700">
+                                    <p>{v.negativeFi}</p>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                        <div className="mt-1.5 space-y-1">
+                          {p.verbTable.map((v) => (
+                            <p key={v.verb} className="text-[11px] text-slate-400">
+                              <span className="font-medium text-slate-500">{v.verb.split(' ')[0]}:</span> {v.en}
+                              {v.bn && <span className="text-emerald-700"> · {v.bn}</span>}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-500">
                       {p.tips.map((tip, i) => (
-                        <li key={i}>{tip}</li>
+                        <li key={i}>
+                          {tip}
+                          {p.tipsBn?.[i] && <span className="mt-0.5 block pl-4 text-emerald-700">{p.tipsBn[i]}</span>}
+                        </li>
                       ))}
                     </ul>
                   </div>
