@@ -4,6 +4,7 @@ import type { CefrLevel, GrammarTopic } from '../types'
 import { GRAMMAR_TOPICS, grammarTopic } from '../data/grammar'
 import { CASE_TABLE } from '../data/caseTable'
 import { VERB_TYPE_TABLE } from '../data/verbTypeTable'
+import { VERB_TENSE_TABLE } from '../data/verbTenseTable'
 import LevelPill from '../components/LevelPill'
 import { useFinnishSpeech } from '../lib/tts'
 
@@ -29,6 +30,7 @@ export default function Grammar() {
   const [openId, setOpenId] = useState<string | null>(deepLinkId)
   const [showCaseTable, setShowCaseTable] = useState(true)
   const [showVerbTable, setShowVerbTable] = useState(false)
+  const [showTenseTable, setShowTenseTable] = useState(false)
   const { play, speaking, supported } = useFinnishSpeech()
 
   useEffect(() => {
@@ -217,6 +219,91 @@ export default function Grammar() {
                       <td className="py-2 pr-3 text-slate-600">
                         {row.rule}
                         <span className="block text-emerald-700">{row.ruleBn}</span>
+                      </td>
+                      <td className="py-2">
+                        <button
+                          onClick={() => jumpToTopic(row.topicId)}
+                          className="whitespace-nowrap rounded-full bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-700 hover:bg-violet-100"
+                        >
+                          Selitys →
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <button
+          onClick={() => setShowTenseTable((s) => !s)}
+          className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
+        >
+          <span>
+            <span className="font-semibold text-slate-900">Aikamuotojen ja tapaluokkien vertailutaulukko</span>
+            <span className="ml-2 text-xs text-slate-400">Tense &amp; mood comparison table — {VERB_TENSE_TABLE.length} muotoa</span>
+          </span>
+          <span className="text-slate-400">{showTenseTable ? '−' : '+'}</span>
+        </button>
+        {showTenseTable && (
+          <div className="border-t border-slate-100 px-4 py-4">
+            <p className="mb-1 text-xs text-slate-500">
+              Kaikki keskeiset aikamuodot ja tapaluokat rinnakkain samasta verbistä (puhua) taivutettuna — eri asia
+              kuin yllä oleva verbityyppitaulukko: jokainen verbi, tyypistä riippumatta, esiintyy kaikissa näistä.
+              All the core tenses and moods inflected from the same verb, side by side — a different axis from the
+              verb-TYPE table above: every verb, whatever its type, appears in all of these.
+            </p>
+            <p className="mb-3 text-xs text-emerald-700">
+              "Milloin käytetään" kertoo, koska valita tämä aikamuoto; "Poikkeukset" nostaa esiin yleisimmät
+              sudenkuopat. "Selitys →" avaa täyden selityksen esimerkkeineen alta.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[820px] border-collapse text-left text-sm">
+                <thead>
+                  <tr className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-400">
+                    <th className="py-2 pr-3">Aikamuoto / Tapaluokka</th>
+                    <th className="py-2 pr-3">Muodostus</th>
+                    <th className="py-2 pr-3">Esimerkki (puhua)</th>
+                    <th className="py-2 pr-3">Milloin käytetään / When to use</th>
+                    <th className="py-2 pr-3">Poikkeukset / Exceptions</th>
+                    <th className="py-2"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {VERB_TENSE_TABLE.map((row) => (
+                    <tr key={row.fi} className="border-b border-slate-100 align-top">
+                      <td className="py-2 pr-3 font-medium text-slate-900">
+                        {row.fi}
+                        <span className="block text-xs font-normal text-slate-400">{row.en}</span>
+                        <span className="block text-xs font-normal text-emerald-700">{row.termBn}</span>
+                      </td>
+                      <td className="py-2 pr-3 font-mono text-xs text-violet-700">{row.formation}</td>
+                      <td className="py-2 pr-3">
+                        <span className="inline-flex items-center gap-1">
+                          <span className="font-medium text-slate-800">{row.example}</span>
+                          {supported && (
+                            <button
+                              onClick={() => play(row.example)}
+                              disabled={speaking}
+                              aria-label="Kuuntele ääntäminen"
+                              title="Kuuntele ääntäminen"
+                              className="rounded-full bg-blue-50 px-1 py-0.5 text-[10px] text-blue-700 hover:bg-blue-100 disabled:opacity-50"
+                            >
+                              🔊
+                            </button>
+                          )}
+                        </span>
+                      </td>
+                      <td className="py-2 pr-3 text-slate-600">
+                        {row.usage}
+                        <span className="block text-emerald-700">{row.usageBn}</span>
+                      </td>
+                      <td className="py-2 pr-3 text-slate-600">
+                        {row.exceptions}
+                        <span className="block text-emerald-700">{row.exceptionsBn}</span>
                       </td>
                       <td className="py-2">
                         <button
