@@ -522,6 +522,99 @@ const ROWS: Row[] = [
   ['ranta', 'shore / beach', 'সৈকত / তীর', 'Kävelemme rannalla illalla.', 'We walk on the beach in the evening.', 'আমরা সন্ধ্যায় সৈকতে হাঁটি।', 'nature', 'A1'],
   ['saari', 'island', 'দ্বীপ', 'Suomessa on tuhansia saaria.', 'Finland has thousands of islands.', 'ফিনল্যান্ডে হাজার হাজার দ্বীপ আছে।', 'nature', 'A2'],
   ['vuori', 'mountain', 'পর্বত', "Lapissa on tuntureita, ei korkeita vuoria.", "Lapland has fells, not high mountains.", 'ল্যাপল্যান্ডে পাহাড় আছে, উঁচু পর্বত নেই।', 'nature', 'B1'],
+  ['puu', 'tree / wood', 'গাছ', 'Puutarhassa kasvaa iso puu.', 'A big tree grows in the garden.', 'বাগানে একটি বড় গাছ জন্মে।', 'nature', 'A1'],
+
+  // body (more)
+  ['nenä', 'nose', 'নাক', 'Minulla on tukkoinen nenä.', 'I have a stuffy nose.', 'আমার নাক বন্ধ হয়ে আছে।', 'body more', 'A1'],
+  ['suu', 'mouth', 'মুখ', 'Avaa suusi, kiitos.', 'Open your mouth, please.', 'আপনার মুখ খুলুন, দয়া করে।', 'body more', 'A1'],
+  ['hiukset', 'hair', 'চুল', 'Hänellä on pitkät hiukset.', 'He/she has long hair.', 'তার লম্বা চুল আছে।', 'body more', 'A1'],
+  ['sormi', 'finger', 'আঙুল', 'Löin sormeni oveen.', 'I hit my finger on the door.', 'আমি দরজায় আঙুল লাগিয়েছি।', 'body more', 'A2'],
+  ['varvas', 'toe', 'পায়ের আঙুল', 'Varpaani ovat kylmät.', 'My toes are cold.', 'আমার পায়ের আঙুল ঠান্ডা।', 'body more', 'B1'],
+  ['polvi', 'knee', 'হাঁটু', 'Loukkasin polveni juostessa.', 'I injured my knee while running.', 'দৌড়ানোর সময় আমি হাঁটুতে আঘাত পেয়েছি।', 'body more', 'A2'],
+  ['olkapää', 'shoulder', 'কাঁধ', 'Kannan reppua olkapäällä.', 'I carry the backpack on my shoulder.', 'আমি কাঁধে ব্যাগ বহন করি।', 'body more', 'A2'],
+  ['vatsa', 'stomach', 'পেট', 'Vatsaani sattuu.', 'My stomach hurts.', 'আমার পেট ব্যথা করছে।', 'body more', 'A1'],
+  ['kaula', 'neck', 'ঘাড়', 'Käärin huivin kaulaani.', 'I wrap the scarf around my neck.', 'আমি গলায় স্কার্ফ জড়াই।', 'body more', 'A2'],
+  ['leuka', 'chin', 'চিবুক', 'Hänellä on pieni arpi leuassa.', 'He/she has a small scar on the chin.', 'তার চিবুকে একটি ছোট দাগ আছে।', 'body more', 'B1'],
+
+  // animals (more)
+  ['lehmä', 'cow', 'গরু', 'Maatilalla on kymmenen lehmää.', 'There are ten cows on the farm.', 'খামারে দশটি গরু আছে।', 'animals', 'A1'],
+  ['sika', 'pig', 'শূকর', 'Sika makaa mudassa.', 'The pig lies in the mud.', 'শূকরটি কাদায় শুয়ে আছে।', 'animals', 'A2'],
+  ['kana', 'chicken / hen', 'মুরগি', 'Kana muni kolme munaa.', 'The hen laid three eggs.', 'মুরগিটি তিনটি ডিম পেড়েছে।', 'animals', 'A1'],
+  ['lammas', 'sheep', 'ভেড়া', 'Lampaat syövät ruohoa niityllä.', 'The sheep eat grass in the meadow.', 'ভেড়াগুলো মাঠে ঘাস খায়।', 'animals', 'A2'],
+  ['hiiri', 'mouse', 'ইঁদুর', 'Kissa jahtasi hiirtä.', 'The cat chased a mouse.', 'বিড়ালটি একটি ইঁদুর তাড়া করেছিল।', 'animals', 'A2'],
+  ['käärme', 'snake', 'সাপ', 'Käärme luikerteli ruohikossa.', 'The snake slithered in the grass.', 'সাপটি ঘাসের মধ্যে হেলেদুলে চলছিল।', 'animals', 'B1'],
+  ['perhonen', 'butterfly', 'প্রজাপতি', 'Perhonen lensi kukalta kukalle.', 'The butterfly flew from flower to flower.', 'প্রজাপতিটি এক ফুল থেকে আরেক ফুলে উড়ে গেল।', 'animals', 'A2'],
+  ['mehiläinen', 'bee', 'মৌমাছি', 'Mehiläinen kerää mettä kukista.', 'The bee gathers nectar from flowers.', 'মৌমাছি ফুল থেকে মধু সংগ্রহ করে।', 'animals', 'A2'],
+  ['kettu', 'fox', 'শিয়াল', 'Näimme ketun metsän reunalla.', 'We saw a fox at the edge of the forest.', 'আমরা বনের ধারে একটি শিয়াল দেখেছি।', 'animals', 'B1'],
+  ['orava', 'squirrel', 'কাঠবিড়ালি', 'Orava kiipesi puuhun nopeasti.', 'The squirrel climbed the tree quickly.', 'কাঠবিড়ালিটি দ্রুত গাছে উঠে গেল।', 'animals', 'A2'],
+
+  // transport (more)
+  ['auto', 'car', 'গাড়ি', 'Ajan autolla töihin.', 'I drive to work by car.', 'আমি গাড়িতে করে কাজে যাই।', 'transport', 'A1'],
+  ['polkupyörä', 'bicycle', 'সাইকেল', 'Kuljen polkupyörällä kesällä.', 'I get around by bicycle in summer.', 'গ্রীষ্মকালে আমি সাইকেলে চলাচল করি।', 'transport', 'A1'],
+  ['lentokone', 'airplane', 'বিমান', 'Lentokone laskeutuu kohta.', 'The airplane will land soon.', 'বিমানটি শীঘ্রই অবতরণ করবে।', 'transport', 'A2'],
+  ['laiva', 'ship', 'জাহাজ', 'Matkustimme laivalla Ruotsiin.', 'We traveled by ship to Sweden.', 'আমরা জাহাজে করে সুইডেনে ভ্রমণ করেছি।', 'transport', 'A2'],
+  ['taksi', 'taxi', 'ট্যাক্সি', 'Tilasin taksin lentokentälle.', 'I ordered a taxi to the airport.', 'আমি বিমানবন্দরের জন্য একটি ট্যাক্সি ডেকেছি।', 'transport', 'A1'],
+  ['metro', 'metro / subway', 'মেট্রো', 'Otan metron keskustaan.', 'I take the metro downtown.', 'আমি শহরের কেন্দ্রে যেতে মেট্রো নিই।', 'transport', 'A2'],
+  ['raitiovaunu', 'tram', 'ট্রাম', 'Raitiovaunu pysähtyy tässä.', 'The tram stops here.', 'ট্রামটি এখানে থামে।', 'transport', 'A2'],
+  ['matkalippu', 'ticket (for travel)', 'টিকিট', 'Osta matkalippu automaatista.', 'Buy a ticket from the machine.', 'মেশিন থেকে টিকিট কিনুন।', 'transport', 'A2'],
+
+  // kitchen & tableware
+  ['astiat', 'dishes', 'বাসনপত্র', 'Pesen astiat illalla.', 'I wash the dishes in the evening.', 'আমি সন্ধ্যায় বাসনপত্র ধুই।', 'kitchen', 'A1'],
+  ['veitsi', 'knife', 'ছুরি', 'Leikkaan leipää veitsellä.', 'I cut bread with a knife.', 'আমি ছুরি দিয়ে রুটি কাটি।', 'kitchen', 'A1'],
+  ['lusikka', 'spoon', 'চামচ', 'Syön keiton lusikalla.', 'I eat the soup with a spoon.', 'আমি চামচ দিয়ে স্যুপ খাই।', 'kitchen', 'A1'],
+  ['haarukka', 'fork', 'কাঁটাচামচ', 'Käytän haarukkaa salaatin syömiseen.', 'I use a fork to eat the salad.', 'আমি সালাদ খেতে কাঁটাচামচ ব্যবহার করি।', 'kitchen', 'A1'],
+  ['lautanen', 'plate', 'প্লেট', 'Ruoka on lautasella.', 'The food is on the plate.', 'খাবার প্লেটে আছে।', 'kitchen', 'A1'],
+  ['kuppi', 'cup', 'কাপ', 'Kaadan kahvia kuppiin.', 'I pour coffee into the cup.', 'আমি কাপে কফি ঢালি।', 'kitchen', 'A1'],
+  ['kattila', 'pot', 'হাঁড়ি', 'Keitän keiton isossa kattilassa.', 'I cook soup in a big pot.', 'আমি বড় হাঁড়িতে স্যুপ রান্না করি।', 'kitchen', 'A2'],
+  ['jääkaappi', 'fridge', 'ফ্রিজ', 'Maito on jääkaapissa.', 'The milk is in the fridge.', 'দুধ ফ্রিজে আছে।', 'kitchen', 'A1'],
+  ['liesi', 'stove', 'চুলা', 'Ruoka on liedellä.', 'The food is on the stove.', 'খাবার চুলায় আছে।', 'kitchen', 'A2'],
+  ['mikroaaltouuni', 'microwave', 'মাইক্রোওয়েভ', 'Lämmitän ruoan mikroaaltouunissa.', 'I heat the food in the microwave.', 'আমি মাইক্রোওয়েভে খাবার গরম করি।', 'kitchen', 'A2'],
+
+  // professions
+  ['sairaanhoitaja', 'nurse', 'নার্স', 'Sairaanhoitaja auttoi potilasta.', 'The nurse helped the patient.', 'নার্স রোগীকে সাহায্য করেছিলেন।', 'professions', 'A2'],
+  ['insinööri', 'engineer', 'প্রকৌশলী', 'Hän työskentelee insinöörinä.', 'He/she works as an engineer.', 'সে একজন প্রকৌশলী হিসেবে কাজ করে।', 'professions', 'A2'],
+  ['myyjä', 'salesperson', 'বিক্রয়কর্মী', 'Myyjä auttoi minua kaupassa.', 'The salesperson helped me in the store.', 'দোকানে বিক্রয়কর্মী আমাকে সাহায্য করেছিল।', 'professions', 'A1'],
+  ['poliisi', 'police officer', 'পুলিশ', 'Poliisi ohjasi liikennettä.', 'The police officer directed traffic.', 'পুলিশ ট্রাফিক নিয়ন্ত্রণ করছিল।', 'professions', 'A1'],
+  ['kokki', 'cook / chef', 'বাবুর্চি', 'Kokki valmistaa herkullista ruokaa.', 'The chef prepares delicious food.', 'বাবুর্চি সুস্বাদু খাবার তৈরি করেন।', 'professions', 'A2'],
+  ['taksinkuljettaja', 'taxi driver', 'ট্যাক্সিচালক', 'Taksinkuljettaja ajoi meidät kotiin.', 'The taxi driver drove us home.', 'ট্যাক্সিচালক আমাদের বাড়িতে পৌঁছে দিলেন।', 'professions', 'A2'],
+  ['siivooja', 'cleaner', 'পরিচ্ছন্নতাকর্মী', 'Siivooja siivoaa toimiston aamuisin.', 'The cleaner cleans the office in the mornings.', 'পরিচ্ছন্নতাকর্মী সকালে অফিস পরিষ্কার করেন।', 'professions', 'A2'],
+  ['yrittäjä', 'entrepreneur', 'উদ্যোক্তা', 'Hän perusti oman yrityksen yrittäjänä.', 'He/she started their own company as an entrepreneur.', 'সে একজন উদ্যোক্তা হিসেবে নিজের কোম্পানি শুরু করেছে।', 'professions', 'B1'],
+  ['kirjanpitäjä', 'accountant', 'হিসাবরক্ষক', 'Kirjanpitäjä hoitaa yrityksen laskut.', "The accountant handles the company's invoices.", 'হিসাবরক্ষক কোম্পানির বিল পরিচালনা করেন।', 'professions', 'B1'],
+  ['asianajaja', 'lawyer', 'আইনজীবী', 'Asianajaja edustaa asiakastaan oikeudessa.', "The lawyer represents their client in court.", 'আইনজীবী আদালতে তার মক্কেলের প্রতিনিধিত্ব করেন।', 'professions', 'B1'],
+
+  // sports
+  ['jalkapallo', 'football / soccer', 'ফুটবল', 'Pelaamme jalkapalloa joka viikko.', 'We play football every week.', 'আমরা প্রতি সপ্তাহে ফুটবল খেলি।', 'sports', 'A1'],
+  ['jääkiekko', 'ice hockey', 'আইস হকি', 'Suomalaiset rakastavat jääkiekkoa.', 'Finns love ice hockey.', 'ফিনরা আইস হকি ভালোবাসে।', 'sports', 'A1'],
+  ['uinti', 'swimming', 'সাঁতার', 'Uinti on hyvää liikuntaa.', 'Swimming is good exercise.', 'সাঁতার একটি ভালো ব্যায়াম।', 'sports', 'A1'],
+  ['hiihto', 'skiing', 'স্কিইং', 'Hiihto on suosittua talvella.', 'Skiing is popular in winter.', 'শীতকালে স্কিইং জনপ্রিয়।', 'sports', 'A2'],
+  ['juoksu', 'running', 'দৌড়', 'Aloitan päiväni lyhyellä juoksulla.', 'I start my day with a short run.', 'আমি ছোট দৌড় দিয়ে দিন শুরু করি।', 'sports', 'A1'],
+  ['pyöräily', 'cycling', 'সাইক্লিং', 'Pyöräily on nopea tapa liikkua kaupungissa.', 'Cycling is a fast way to get around the city.', 'সাইক্লিং শহরে চলাচলের একটি দ্রুত উপায়।', 'sports', 'A2'],
+  ['salibandy', 'floorball', 'ফ্লোরবল', 'Salibandy on suosittu laji Suomessa.', 'Floorball is a popular sport in Finland.', 'ফ্লোরবল ফিনল্যান্ডে একটি জনপ্রিয় খেলা।', 'sports', 'B1'],
+  ['voimistelu', 'gymnastics', 'জিমন্যাস্টিকস', 'Tytär harrastaa voimistelua.', 'My daughter does gymnastics.', 'আমার মেয়ে জিমন্যাস্টিকস অনুশীলন করে।', 'sports', 'A2'],
+
+  // shapes
+  ['pyöreä', 'round', 'গোলাকার', 'Pöytä on pyöreä.', 'The table is round.', 'টেবিলটি গোলাকার।', 'shapes', 'A2'],
+  ['neliö', 'square', 'বর্গক্ষেত্র', 'Piirrä neliö paperille.', 'Draw a square on the paper.', 'কাগজে একটি বর্গক্ষেত্র আঁকো।', 'shapes', 'A2'],
+  ['kolmio', 'triangle', 'ত্রিভুজ', 'Kolmiolla on kolme kulmaa.', 'A triangle has three corners.', 'একটি ত্রিভুজের তিনটি কোণ থাকে।', 'shapes', 'A2'],
+  ['suorakulmio', 'rectangle', 'আয়তক্ষেত্র', 'Ovi on suorakulmion muotoinen.', 'The door is rectangle-shaped.', 'দরজাটি আয়তক্ষেত্র আকৃতির।', 'shapes', 'B1'],
+  ['ympyrä', 'circle', 'বৃত্ত', 'Piirrä ympyrä keskelle sivua.', 'Draw a circle in the middle of the page.', 'পৃষ্ঠার মাঝখানে একটি বৃত্ত আঁকো।', 'shapes', 'A2'],
+
+  // materials
+  ['metalli', 'metal', 'ধাতু', 'Sormus on tehty metallista.', 'The ring is made of metal.', 'আংটিটি ধাতু দিয়ে তৈরি।', 'materials', 'B1'],
+  ['muovi', 'plastic', 'প্লাস্টিক', 'Pullo on tehty muovista.', 'The bottle is made of plastic.', 'বোতলটি প্লাস্টিক দিয়ে তৈরি।', 'materials', 'A2'],
+  ['lasi', 'glass', 'কাচ', 'Ikkuna on lasia.', 'The window is glass.', 'জানালাটি কাচের তৈরি।', 'materials', 'A2'],
+  ['paperi', 'paper', 'কাগজ', 'Kirjoitan muistiinpanot paperille.', 'I write notes on paper.', 'আমি কাগজে নোট লিখি।', 'materials', 'A1'],
+  ['kangas', 'fabric', 'কাপড়', 'Mekko on tehty pehmeästä kankaasta.', 'The dress is made of soft fabric.', 'জামাটি নরম কাপড় দিয়ে তৈরি।', 'materials', 'B1'],
+  ['kivi', 'stone', 'পাথর', 'Talo on rakennettu kivestä.', 'The house is built of stone.', 'বাড়িটি পাথর দিয়ে নির্মিত।', 'materials', 'A2'],
+
+  // food: meals & drinks
+  ['aamiainen', 'breakfast', 'সকালের নাস্তা', 'Syön aamiaisen kello seitsemän.', 'I eat breakfast at seven.', 'আমি সাতটায় সকালের নাস্তা খাই।', 'food', 'A1'],
+  ['lounas', 'lunch', 'দুপুরের খাবার', 'Lounas maksaa kymmenen euroa.', 'Lunch costs ten euros.', 'দুপুরের খাবারের দাম দশ ইউরো।', 'food', 'A1'],
+  ['päivällinen', 'dinner', 'রাতের খাবার', 'Valmistan päivällisen perheelle.', 'I make dinner for the family.', 'আমি পরিবারের জন্য রাতের খাবার তৈরি করি।', 'food', 'A1'],
+  ['kahvi', 'coffee', 'কফি', 'Juon kupin kahvia aamulla.', 'I drink a cup of coffee in the morning.', 'আমি সকালে এক কাপ কফি পান করি।', 'food', 'A1'],
+  ['tee', 'tea', 'চা', 'Hän juo mieluummin teetä kuin kahvia.', 'He/she prefers to drink tea rather than coffee.', 'সে কফির চেয়ে চা পান করতে বেশি পছন্দ করে।', 'food', 'A1'],
+  ['vesi', 'water', 'পানি', 'Juon paljon vettä päivässä.', 'I drink a lot of water per day.', 'আমি প্রতিদিন অনেক পানি পান করি।', 'food', 'A1'],
+  ['mehu', 'juice', 'জুস', 'Lapset juovat omenamehua.', 'The children drink apple juice.', 'বাচ্চারা আপেলের জুস পান করে।', 'food', 'A1'],
 ]
 
 export const VOCAB_BANK: VocabItem[] = ROWS.map(([fi, en, bn, example, exampleEn, exampleBn, theme, level], i) => ({
