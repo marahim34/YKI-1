@@ -4,6 +4,8 @@ import LevelPill from '../components/LevelPill'
 import BookVocabQuiz from '../components/BookVocabQuiz'
 import FillInDrill from '../components/FillInDrill'
 import GrammarPanel from '../components/GrammarPanel'
+import MatchGame from '../components/MatchGame'
+import { bookVocabToItems } from '../lib/bookVocabAdapter'
 
 export default function BookPractice() {
   const [book, setBook] = useState<string>(BOOK_NAMES[0])
@@ -58,6 +60,16 @@ export default function BookPractice() {
                     <h3 className="mb-2 text-sm font-semibold text-slate-800">Sanastotesti</h3>
                     <BookVocabQuiz items={chapter.vocabQuiz} />
                   </div>
+                  {(() => {
+                    const matchItems = bookVocabToItems(chapter.vocabQuiz, chapter.id, chapter.topic, chapter.level)
+                    if (matchItems.length < 2) return null
+                    return (
+                      <div>
+                        <h3 className="mb-2 text-sm font-semibold text-slate-800">Yhdistämispeli</h3>
+                        <MatchGame items={matchItems} />
+                      </div>
+                    )
+                  })()}
                   <div>
                     <h3 className="mb-2 text-sm font-semibold text-slate-800">Kielioppiharjoitus</h3>
                     <FillInDrill instructions={chapter.grammarDrill.instructions} items={chapter.grammarDrill.items} />

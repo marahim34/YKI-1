@@ -166,11 +166,16 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <section className="grid gap-3 sm:grid-cols-3">
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Link to="/vocab" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">🧠</p>
           <p className="mt-1 font-semibold text-slate-900">Sanaston kertaus</p>
           <p className="text-sm text-slate-500">{dueCount} sanaa odottaa kertausta juuri nyt.</p>
+        </Link>
+        <Link to="/daily" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
+          <p className="text-2xl">🎲</p>
+          <p className="mt-1 font-semibold text-slate-900">Sekoitettu harjoitus</p>
+          <p className="text-sm text-slate-500">20 satunnaista sanaa kaikista aihepiireistä — vaihtelua joka päivälle.</p>
         </Link>
         <Link to="/my-books" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">📚</p>
