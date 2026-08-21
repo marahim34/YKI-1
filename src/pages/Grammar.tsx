@@ -115,6 +115,7 @@ export default function Grammar() {
                       <td className="py-2 pr-3 font-medium text-slate-900">
                         {row.fi}
                         <span className="block text-xs font-normal text-slate-400">{row.en}</span>
+                        <span className="block text-xs font-normal text-emerald-700">{row.termBn}</span>
                       </td>
                       <td className="py-2 pr-3 font-mono text-xs text-violet-700">{row.ending}</td>
                       <td className="py-2 pr-3">
