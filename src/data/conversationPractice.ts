@@ -9,8 +9,8 @@ import type { ConversationChapter } from '../types'
 export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
   {
     id: 'conv-ch1',
-    titleFi: 'Luku 1: Juhlat, kehut ja ihmissuhteet',
-    titleEn: 'Chapter 1: Parties, compliments and relationships',
+    titleFi: 'Luku 1: Ihminen ja lähipiiri',
+    titleEn: 'Chapter 1: People and close circle',
     level: 'B1',
     vocabQuiz: [
       { question: "Mikä sana tarkoittaa 'stylish'?", options: ['tyylikäs', 'ruma', 'tylsä', 'vanha'], correctIndex: 0 },
@@ -596,8 +596,8 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
   },
   {
     id: 'conv-ch2',
-    titleFi: 'Luku 2: Ostokset, palvelut ja arki',
-    titleEn: 'Chapter 2: Shopping, services and everyday life',
+    titleFi: 'Luku 2: Arkielämä',
+    titleEn: 'Chapter 2: Everyday life',
     level: 'B1',
     warmup: [
       { id: 'w-1', scenarioFi: 'Mitä normaalisti ostat kaupasta?', scenarioEn: 'What do you normally buy from the store?', sampleFi: 'Normaalisti ostan ruokaa, kuten leipää, maitoa, juustoa, hedelmiä ja vihanneksia. Ostan myös kahvia ja teetä. Joskus ostan makeisia, jos tekee mieli jotain hyvää.' },
@@ -2263,8 +2263,715 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
   },
   {
     id: 'conv-ch6',
-    titleFi: 'Luku 6: Yhteiskunta',
-    titleEn: 'Chapter 6: Society',
+    titleFi: 'Luku 6: Vapaa-aika ja harrastukset',
+    titleEn: 'Chapter 6: Free time and hobbies',
+    level: 'B1',
+    warmup: [
+      {
+        id: 'w-1',
+        scenarioFi: 'Käytkö sinä usein kirjastossa? Miksi / miksi et?',
+        scenarioEn: 'Do you often go to the library? Why/why not?',
+        sampleFi:
+          'Käyn kirjastossa noin kerran kuukaudessa. Lainaan sieltä kirjoja ja joskus elokuvia. Pidän kirjastossa käymisestä, koska siellä on rauhallista ja voi lukea. Joskus menen kirjastoon myös opiskelemaan.',
+      },
+      {
+        id: 'w-2',
+        scenarioFi: 'Mitä mieltä olet suomalaisesta kirjastosta?',
+        scenarioEn: 'What do you think about the Finnish library?',
+        sampleFi:
+          'Suomalainen kirjasto on erinomainen. Siellä on paljon kirjoja, lehtiä, elokuvia ja musiikkia. Kirjastot ovat moderneja, ja niissä on hyvät tilat opiskeluun. Kirjastokortti on ilmainen, mikä on hienoa.',
+      },
+      {
+        id: 'w-3',
+        scenarioFi: 'Onko kirjasto sinulle tärkeä paikka? Miksi / miksi ei?',
+        scenarioEn: 'Is the library an important place for you? Why/why not?',
+        sampleFi:
+          'Kyllä, kirjasto on minulle tärkeä paikka. Se on ilmainen ja tarjoaa paljon tietoa. Kirjastossa voin lukea, opiskella ja lainata materiaaleja. Se on myös hyvä paikka rentoutua.',
+      },
+      {
+        id: 'w-4',
+        scenarioFi: 'Osaatko etsiä informaatiota kirjastosta itse?',
+        scenarioEn: 'Can you find information in the library yourself?',
+        sampleFi:
+          'Kyllä, osaan etsiä kirjoja ja tietoa kirjaston tietokannasta. Kirjastossa on myös automaatteja, joilla voi lainata ja palauttaa kirjoja. Jos tarvitsen apua, kysyn henkilökunnalta.',
+      },
+      {
+        id: 'w-5',
+        scenarioFi: 'Mitä mieltä olet – perinteinen kirja vai e-kirja? Kumpi on parempi?',
+        scenarioEn: 'What do you think – traditional book or e-book? Which is better?',
+        sampleFi:
+          'Pidän enemmän perinteisistä kirjoista. Ne tuntuvat hyvältä kädessä, ja niitä on mukava lukea. E-kirjat ovat käteviä, koska niitä voi lukea puhelimella tai tabletilla. Molemmilla on hyvät ja huonot puolensa.',
+      },
+      {
+        id: 'w-6',
+        scenarioFi: 'Kumpi on parempi – ostaa kirja vai lainata se? Miksi?',
+        scenarioEn: 'Which is better – buy a book or borrow it? Why?',
+        sampleFi:
+          'Lainan mieluummin kirjoja, koska se on ilmaista ja säästää rahaa. Ostan kirjan vain, jos se on todella hyvä ja haluan lukea sen uudelleen. Kirjaston valikoima on niin laaja, että sieltä löytyy melkein kaikki.',
+      },
+      {
+        id: 'w-7',
+        scenarioFi: 'Luetko paljon?',
+        scenarioEn: 'Do you read a lot?',
+        sampleFi: 'Kyllä, luen paljon. Luen noin 1-2 kirjaa kuukaudessa. Tykkään lukea romaaneja, dekkareita ja tietokirjoja. Lukeminen on minulle tärkeä harrastus.',
+      },
+      {
+        id: 'w-8',
+        scenarioFi: 'Millaisia tekstejä luet / kuuntelet / katsot? Mistä asioista olet kiinnostunut?',
+        scenarioEn: 'What kind of texts do you read/listen to/watch? What are you interested in?',
+        sampleFi:
+          'Luen kaunokirjallisuutta, erityisesti romaaneja ja dekkareita. Kuuntelen äänikirjoja kävellessäni. Katson dokumentteja ja uutisia. Olen kiinnostunut historiasta, psykologiasta ja matkailusta.',
+      },
+      {
+        id: 'w-9',
+        scenarioFi: 'Oliko sinun pakko lukea paljon kirjoja koulussa? Mitä mieltä olet siitä?',
+        scenarioEn: 'Did you have to read a lot of books at school? What do you think about that?',
+        sampleFi:
+          'Kyllä, koulussa piti lukea paljon kirjoja. Se oli joskus pakkopullaa, mutta jälkikäteen ajateltuna se oli hyvä asia. Opin paljon ja kehitin lukutaitoa. Nyt luen vapaaehtoisesti.',
+      },
+      {
+        id: 'w-10',
+        scenarioFi: 'Oletko lukenut vielä kirjaa suomeksi?',
+        scenarioEn: 'Have you read a book in Finnish yet?',
+        sampleFi:
+          'Olen lukenut muutaman lastenkirjan ja yhden dekkarin suomeksi. Se on vielä vaikeaa, mutta harjoittelen koko ajan. Toivottavasti pystyn lukemaan lisää suomeksi tulevaisuudessa.',
+      },
+      {
+        id: 'w-11',
+        scenarioFi: 'Kuka kirjailija (tai muu taiteilija) on sinulle tärkeä ja miksi?',
+        scenarioEn: 'Which writer (or other artist) is important to you and why?',
+        sampleFi:
+          'Minulle tärkeä kirjailija on [name]. Hänen kirjansa ovat koskettavia ja ajatuksia herättäviä. Hän kirjoittaa inhimillisistä asioista, ja hänen tyylinsä on kaunista. Hänen kirjansa ovat vaikuttaneet minuun syvästi.',
+      },
+      {
+        id: 'w-12',
+        scenarioFi: 'Selitä sana: "lainata"',
+        scenarioEn: 'to borrow',
+        sampleFi: 'Ottaa kirja tai muu materiaali kirjastosta lainaan. Pitää palauttaa tietyssä ajassa.',
+      },
+      {
+        id: 'w-13',
+        scenarioFi: 'Selitä sana: "palauttaa"',
+        scenarioEn: 'to return',
+        sampleFi: 'Viedä lainattu kirja takaisin kirjastoon.',
+      },
+      {
+        id: 'w-14',
+        scenarioFi: 'Selitä sana: "myöhästymismaksu"',
+        scenarioEn: 'late fee',
+        sampleFi: 'Maksu, jonka joutuu maksamaan, jos palauttaa kirjan myöhässä.',
+      },
+      {
+        id: 'w-15',
+        scenarioFi: 'Selitä sana: "varaus"',
+        scenarioEn: 'reservation/hold',
+        sampleFi: 'Pyyntö, että tietty kirja varataan itselle, kun se palautuu.',
+      },
+      {
+        id: 'w-16',
+        scenarioFi: 'Selitä sana: "kirjailija"',
+        scenarioEn: 'author/writer',
+        sampleFi: 'Henkilö, joka kirjoittaa kirjoja.',
+      },
+      {
+        id: 'w-17',
+        scenarioFi: 'Selitä sana: "teos"',
+        scenarioEn: 'work (of art/literature)',
+        sampleFi: 'Taiteellinen tai tieteellinen tuotos, esimerkiksi kirja, maalaus tai sävellys.',
+      },
+      {
+        id: 'w-18',
+        scenarioFi: 'Selitä sana: "uutuus"',
+        scenarioEn: 'new release',
+        sampleFi: 'Uusi kirja tai tuote, joka on juuri ilmestynyt.',
+      },
+      {
+        id: 'w-19',
+        scenarioFi: 'Selitä sana: "sanomalehti"',
+        scenarioEn: 'newspaper',
+        sampleFi: 'Päivittäinen tai viikoittainen lehti, jossa on uutisia ja artikkeleita.',
+      },
+      {
+        id: 'w-20',
+        scenarioFi: 'Selitä sana: "dekkari"',
+        scenarioEn: 'crime novel / thriller',
+        sampleFi: 'Jännityskirja, jossa on rikos tai murha.',
+      },
+      {
+        id: 'w-21',
+        scenarioFi: 'Selitä sana: "runo"',
+        scenarioEn: 'poem',
+        sampleFi: 'Lyyrinen teksti, joka usein on säkeissä ja sisältää kielikuvia.',
+      },
+      {
+        id: 'w-22',
+        scenarioFi: 'Selitä sana: "satu"',
+        scenarioEn: 'fairy tale',
+        sampleFi: 'Kertomus, joka on tarkoitettu lapsille, usein taianomaisia tapahtumia.',
+      },
+      {
+        id: 'w-23',
+        scenarioFi: 'Selitä sana: "romanni"',
+        scenarioEn: 'novel',
+        sampleFi: 'Pitkä kaunokirjallinen teos, jossa on juoni ja henkilöhahmoja.',
+      },
+      {
+        id: 'w-24',
+        scenarioFi: 'Selitä sana: "musiikkiosasto"',
+        scenarioEn: 'music section',
+        sampleFi: 'Kirjaston osasto, jossa on musiikkia, kuten levyjä ja nuotteja.',
+      },
+      {
+        id: 'w-25',
+        scenarioFi: 'Selitä sana: "tulostaa"',
+        scenarioEn: 'to print',
+        sampleFi: 'Tehdä paperikopio tietokoneen tiedostosta.',
+      },
+      {
+        id: 'w-26',
+        scenarioFi: 'Selitä sana: "laina-aika"',
+        scenarioEn: 'loan period',
+        sampleFi: 'Aika, jonka kirja on lainassa, esimerkiksi 4 viikkoa.',
+      },
+      {
+        id: 'w-27',
+        scenarioFi: 'Selitä sana: "kirjastokortti"',
+        scenarioEn: 'library card',
+        sampleFi: 'Kortti, jolla voi lainata kirjastosta.',
+      },
+      {
+        id: 'w-28',
+        scenarioFi: 'Selitä sana: "tiedonhaku"',
+        scenarioEn: 'information search',
+        sampleFi: 'Tiedon etsimistä esimerkiksi kirjastosta tai internetistä.',
+      },
+      {
+        id: 'w-29',
+        scenarioFi: 'Milloin viimeksi nukuit pitkään?',
+        scenarioEn: 'When was the last time you slept long?',
+        sampleFi: 'Nukuin pitkään viime lauantaina, kun heräsin vasta kello 11.',
+      },
+      {
+        id: 'w-30',
+        scenarioFi: 'Milloin viimeksi katsoit elokuvaa?',
+        scenarioEn: 'When was the last time you watched a movie?',
+        sampleFi: 'Katsoin elokuvan eilen illalla. Se oli hyvä komedia.',
+      },
+      {
+        id: 'w-31',
+        scenarioFi: 'Milloin viimeksi kävit kirjastossa?',
+        scenarioEn: 'When was the last time you went to the library?',
+        sampleFi: 'Kävin kirjastossa viime viikolla lainaamassa uuden kirjan.',
+      },
+      {
+        id: 'w-32',
+        scenarioFi: 'Milloin viimeksi olit teatterissa?',
+        scenarioEn: 'When was the last time you were at the theater?',
+        sampleFi: 'Olin teatterissa kuukausi sitten katsomassa näytelmää.',
+      },
+      {
+        id: 'w-33',
+        scenarioFi: 'Milloin viimeksi kävit konsertissa?',
+        scenarioEn: 'When was the last time you went to a concert?',
+        sampleFi: 'Kävin konsertissa viime kesänä. Se oli ulkoilmakonsertti.',
+      },
+      {
+        id: 'w-34',
+        scenarioFi: 'Milloin viimeksi pelasit jotain peliä?',
+        scenarioEn: 'When was the last time you played a game?',
+        sampleFi: 'Pelasin korttia viime viikonloppuna ystävien kanssa.',
+      },
+      {
+        id: 'w-35',
+        scenarioFi: 'Milloin viimeksi urheilit?',
+        scenarioEn: 'When was the last time you exercised?',
+        sampleFi: 'Urheilin tänään aamulla kävin lenkillä.',
+      },
+      {
+        id: 'w-36',
+        scenarioFi: 'Milloin viimeksi kävit baarissa?',
+        scenarioEn: 'When was the last time you went to a bar?',
+        sampleFi: 'Kävin baarissa viime perjantaina kavereiden kanssa.',
+      },
+    ],
+    dialogues: [
+      {
+        id: 'd1',
+        titleFi: 'Muistutusmaksu kirjastosta',
+        titleEn: 'Library overdue notice',
+        turns: [
+          { speaker: 'Virkailija', fi: 'Kummilan kirjasto, miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Soitin, koska sain muistutusmaksun kirjasta, jota en ole lainannut.' },
+          { speaker: 'Virkailija', fi: 'Oho, onpa erikoista. Sanotko vielä sun sukunimen uudelleen?' },
+          { speaker: 'Sinä', fi: 'Sukunimeni on [name]. En ymmärrä, miten tämä on mahdollista.' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Joo, kiitos, löysin tiedot. Joo, täällä on tällainen suomen kielen oppikirja lainassa sun nimellä. Tämä on lainattu kaksi viikkoa sitten.',
+          },
+          {
+            speaker: 'Sinä',
+            fi: 'Ihanko totta? Onpa mielenkiintoista. Sitten tässä täytyy olla jokin virhe. Onko mahdollista, että joku muu on käyttänyt sun kirjastokorttia?',
+          },
+          {
+            speaker: 'Virkailija',
+            fi: 'Hmmm… Mun pitää nyt selvittää tätä asiaa vähän lisää. Mä katson tuon päivän lainat ja soitan sulle takaisin. Voinko soittaa tähän numeroon?',
+          },
+          { speaker: 'Sinä', fi: 'Kyllä, tähän numeroon voi soittaa. Odotan soittoasi.' },
+          { speaker: 'Virkailija', fi: 'Kiitos soitosta. Toivottavasti asia selviää.' },
+          { speaker: 'Sinä', fi: 'Kiitos avusta! Toivottavasti tämä selviää nopeasti.' },
+        ],
+      },
+      {
+        id: 'd2',
+        titleFi: 'Baarissa - narikkalappu hukassa',
+        titleEn: 'At the bar - lost coat check ticket',
+        turns: [
+          { speaker: 'Portsari', fi: 'Juu-u, tuttua tarinaa. Katoitko kaikki taskut?' },
+          { speaker: 'Sinä', fi: 'Hei! Mä en löydä narikkalappua. Tarviin apua.' },
+          { speaker: 'Portsari', fi: 'Kenen kanssa ja mihin aikaan sä tulit?' },
+          { speaker: 'Sinä', fi: 'Tulin kaverini kanssa kello 21. Meillä oli pöytä nurkassa.' },
+          {
+            speaker: 'Portsari',
+            fi: 'No nyt sun täytyy pystyä kertomaan tosi tarkasti, millainen se sun takki oli, että mä voin antaa sen sulle.',
+          },
+          { speaker: 'Sinä', fi: 'Takki on musta, pitkä nahkatakki. Siinä on metalliset vetoketjut ja karvakaulus.' },
+          { speaker: 'Portsari', fi: 'Joo, oota vähän... onks se tää?' },
+          { speaker: 'Sinä', fi: 'Kyllä, juuri se! Kiitos paljon!' },
+          { speaker: 'Portsari', fi: 'Ens kerralla sitten kato tarkkaan, mihin laitat sen lapun. Mä en sais antaa näitä ilman lappua.' },
+          { speaker: 'Sinä', fi: 'Kiitos! Lupaan katsoa tarkemmin ensi kerralla.' },
+        ],
+      },
+      {
+        id: 'd3',
+        titleFi: 'Neuvo laihdutukseen',
+        titleEn: 'Advice on losing weight',
+        turns: [
+          { speaker: 'Ystävä', fi: '[Ystävä soittaa]', en: 'Friend calls', isPlaceholder: true },
+          { speaker: 'Sinä', fi: 'Hei! Miten menee?' },
+          { speaker: 'Ystävä', fi: 'Hei! Mä oon yrittänyt laihtua, mutta en tiedä, miten. Mitä sä suosittelisit?' },
+          { speaker: 'Sinä', fi: 'Ensinnäkin, älä stressaa siitä. Aloita pienillä muutoksilla: syö enemmän kasviksia ja juo vettä.' },
+          { speaker: 'Ystävä', fi: 'Mutta mä tykkään niin paljon makeisista! Onko pakko luopua niistä?' },
+          { speaker: 'Sinä', fi: 'Ei tarvitse luopua kokonaan, mutta vähennä niitä. Syö makeisia vaikka kerran viikossa herkkupäivänä.' },
+          { speaker: 'Ystävä', fi: 'Entä liikunta? Riittääkö kävely?' },
+          { speaker: 'Sinä', fi: 'Kävely on hyvä alku. Kokeile myös juoksua, pyöräilyä tai uimista. Liiku vähintään 30 minuuttia päivässä.' },
+          { speaker: 'Ystävä', fi: 'Kiitos! Milloin voisimme mennä yhdessä lenkille?' },
+          { speaker: 'Sinä', fi: 'Miten olisi lauantaina kello 10? Mennään puistoon kävelylle.' },
+          { speaker: 'Ystävä', fi: 'Kuulostaa hyvältä! Nähdään lauantaina!' },
+          { speaker: 'Sinä', fi: 'Nähdään! Tsemppiä!' },
+        ],
+      },
+      {
+        id: 'd4',
+        titleFi: 'Valitus hotellihuoneesta',
+        titleEn: 'Hotel room complaint',
+        turns: [
+          { speaker: 'Virkailija', fi: 'Hotelli Hyvä Olo vastaanotto. Miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Olen juuri saapunut huoneeseen 205, ja siellä on ongelmia.' },
+          { speaker: 'Virkailija', fi: 'Ahaa, sepä ikävä kuulla. Kerrotko, mikä on huoneen numero?' },
+          { speaker: 'Sinä', fi: 'Huone 205. Ilmastointi ei toimi, ja huone on todella kuuma.' },
+          { speaker: 'Virkailija', fi: 'Kiitos. Tämä on kovin ikävää, mutta yritämme korjata asian heti.' },
+          { speaker: 'Sinä', fi: 'Haluaisin vaihtaa huonetta, koska tässä on mahdoton nukkua.' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Valitettavasti hotellimme on aivan täynnä tällä hetkellä, joten en voi antaa teille toista huonetta. Sopisiko, että tarjoamme teille kahden hengen illallisen hotellimme parhaassa ravintolassa?',
+          },
+          { speaker: 'Sinä', fi: 'Se on hyvä, mutta haluaisin myös jonkinlaisen alennuksen hinnasta, koska huone ei vastaa odotuksia.' },
+          {
+            speaker: 'Virkailija',
+            fi: 'Ymmärrän ja olen kovin pahoillani, että huone ei vastannut odotuksianne. Minun täytyy kysyä lupa tähän korvaukseen. Voisitteko tulla tähän vastaanottoon keskustelemaan esimieheni kanssa?',
+          },
+          { speaker: 'Sinä', fi: 'Kyllä, tulen heti vastaanottoon. Odotan ratkaisua.' },
+        ],
+      },
+      {
+        id: 'd5',
+        titleFi: 'Kysymys junalähdöstä',
+        titleEn: 'Asking about train departure',
+        turns: [
+          { speaker: 'Virkailija', fi: '[Sinä lähestyt tiskiä]', en: 'You approach the counter', isPlaceholder: true },
+          { speaker: 'Sinä', fi: 'Anteeksi, voisitteko auttaa? Olen matkalla Tampereelle. Mistä laiturilta juna lähtee?' },
+          { speaker: 'Virkailija', fi: 'Juna Tampereelle lähtee laiturilta 3 kello 14.15.' },
+          { speaker: 'Sinä', fi: 'Mutta kellohan on jo 14.10! Mihin aikaan juna oikeasti lähtee?' },
+          { speaker: 'Virkailija', fi: 'Valitettavasti juna on myöhässä noin 30 minuuttia. Se lähtee kello 14.45.' },
+          { speaker: 'Sinä', fi: 'Tämä on todella huono juttu! Minulla on tärkeä tapaaminen, enkä voi odottaa. Miksi juna on myöhässä?' },
+          { speaker: 'Virkailija', fi: 'Myöhästyminen johtuu teknillisestä viasta. Olemme pahoillamme.' },
+          { speaker: 'Sinä', fi: 'Saanko korvausta myöhästymisestä? Tämä aiheuttaa minulle ongelmia.' },
+          { speaker: 'Virkailija', fi: 'Korvauksia voi hakea verkkosivuiltamme. Tässä on asiakaspalvelun sähköpostiosoite.' },
+          { speaker: 'Sinä', fi: 'Kiitos. Annatteko sen osoitteen?' },
+          { speaker: 'Virkailija', fi: 'Tässä on osoite: asiakaspalvelu@vr.fi.' },
+          { speaker: 'Sinä', fi: 'Kiitos avusta!' },
+        ],
+      },
+      {
+        id: 'd6',
+        titleFi: 'Mielipidekysely puhelimessa',
+        titleEn: 'Opinion poll over the phone',
+        turns: [
+          {
+            speaker: 'Tutkija',
+            fi: 'Hei! Täällä tutkimuslaitos. Teemme kyselyä suomalaisten vapaa-ajasta. Onko sinulla hetki aikaa?',
+          },
+          { speaker: 'Sinä', fi: 'Kyllä, voin vastata hetken.' },
+          { speaker: 'Tutkija', fi: 'Kiitos! Haluaisimme tietää, mitä teet vapaa-ajallasi?' },
+          { speaker: 'Sinä', fi: 'Miksi tätä tutkitaan? Onko tämä jokin virallinen tutkimus?' },
+          { speaker: 'Tutkija', fi: 'Kyllä, tämä on Tilastokeskuksen tekemä tutkimus. Tuloksia käytetään suunnittelussa.' },
+          { speaker: 'Sinä', fi: 'Selvä. Vapaa-ajallani luen, urheilen ja tapaan ystäviä.' },
+          { speaker: 'Tutkija', fi: 'Kuinka usein urheilet viikossa?' },
+          { speaker: 'Sinä', fi: 'Urheilen noin 3-4 kertaa viikossa. Käyn salilla ja juoksen.' },
+          { speaker: 'Tutkija', fi: 'Mitä muita harrastuksia sinulla on?' },
+          { speaker: 'Sinä', fi: 'Luen kirjoja, katson elokuvia ja matkustan. Tykkään myös kokata.' },
+          { speaker: 'Tutkija', fi: 'Kiitos vastauksistasi! Entä kuinka paljon aikaa vietät sosiaalisessa mediassa?' },
+          { speaker: 'Sinä', fi: 'Käytän somea noin tunti päivässä. Oho, nyt bussi tulee! Anteeksi, minun täytyy mennä. Kiitos!' },
+        ],
+      },
+      {
+        id: 'd7',
+        titleFi: 'Teatterilippujen vaihto',
+        titleEn: 'Exchanging theater tickets',
+        turns: [
+          { speaker: 'Nainen', fi: 'Kaupunginteatterin lippupiste, Sari Pöyhiä.' },
+          { speaker: 'Sinä', fi: 'Hei, tässä [name]. Soitin, koska haluaisin vaihtaa lippuni toiselle päivälle.' },
+          { speaker: 'Nainen', fi: 'Joo, millä nimellä ja mille päivälle liput oli varattu?' },
+          { speaker: 'Sinä', fi: 'Liput ovat varattu nimellä [name] lauantaille 15.5. kello 19.' },
+          {
+            speaker: 'Nainen',
+            fi: 'Selvä. Sulla on vähän kalliimmat eturivin liput, mutta eturivissä ei enää ole paikkoja vapaana. Uudet paikat ovat riviltä 12.',
+          },
+          { speaker: 'Sinä', fi: 'Mutta se on kauempana. Onko mahdollista saada lähempää paikkoja?' },
+          { speaker: 'Nainen', fi: 'Valitettavasti ei. Ainoat vapaat paikat ovat rivillä 12.' },
+          { speaker: 'Sinä', fi: 'Voisinko saada erotuksen takaisin? Liput olivat kalliimmat.' },
+          {
+            speaker: 'Nainen',
+            fi: 'Joo, ymmärrän toki. Valitettavasti emme voi antaa rahaa takaisin, mutta voidaan tarjota kyllä pullat ja kahvit väliajalla. Miltä se kuulostaa?',
+          },
+          { speaker: 'Sinä', fi: 'Se on hyvä. Kiitos! Vaihdetaan liput.' },
+          { speaker: 'Nainen', fi: 'Selvä, liput on vaihdettu. Nähdään!' },
+          { speaker: 'Sinä', fi: 'Kiitos ja nähdään!' },
+        ],
+      },
+      {
+        id: 'd8',
+        titleFi: 'Ilmoittautuminen kansalaisopiston kurssille',
+        titleEn: 'Enrolling in a course at the adult education center',
+        turns: [
+          { speaker: 'Sihteeri', fi: 'Kojon kansalaisopiston toimisto, miten voin auttaa?' },
+          { speaker: 'Sinä', fi: 'Hei! Haluaisin ilmoittautua kielikurssille. Onko vielä vapaita paikkoja?' },
+          { speaker: 'Sihteeri', fi: 'Kyllä sille vielä on vapaita paikkoja. Millä nimellä varaan paikan?' },
+          { speaker: 'Sinä', fi: 'Nimeni on [name]. Haluaisin kysyä myös kurssin hintaa.' },
+          {
+            speaker: 'Sihteeri',
+            fi: 'Kurssin hinta on kakskytviis euroa lukukausi, mutta jos ostat samalla koko vuoden, se on yhteensä nelkyt euroa.',
+          },
+          { speaker: 'Sinä', fi: 'Miten voin maksaa? Voinko maksaa verkkopankissa?' },
+          {
+            speaker: 'Sihteeri',
+            fi: 'Sä voit maksaa sen käteisellä ensimmäisellä kerralla, mutta ota mukaan tasaraha. Oletko ennen ollut meillä opiskelijana?',
+          },
+          { speaker: 'Sinä', fi: 'En, tämä on ensimmäinen kerta. Missä kurssi pidetään?' },
+          {
+            speaker: 'Sihteeri',
+            fi: 'Selvä juttu. Meillä on nyt uusi toimipiste ja osoite on Ahtokatu 4. Jos tulet autolla, tuossa pihalla on ilmainen parkkipaikka.',
+          },
+          { speaker: 'Sinä', fi: 'Kiitos paljon! Tulen kurssille maanantaina.' },
+        ],
+      },
+    ],
+    reactions: [
+      {
+        id: 'r1',
+        scenarioFi: 'Haluat palauttaa kirjan kirjastoon, mutta se on mennyt rikki. Selitä, mitä tapahtui.',
+        sampleFi: 'Hei, haluaisin palauttaa kirjan, mutta valitettavasti se on mennyt rikki. Kesällä kastuin ja kirja kastui. Olen todella pahoillani. Miten voin korvata tämän?',
+      },
+      {
+        id: 'r2',
+        scenarioFi: 'Luet kirjaa kirjastossa, kun joku puhuu kovaan ääneen puhelimessa. Huomauta hänelle asiasta.',
+        sampleFi: 'Anteeksi, voisitteko puhua hiljempaa? Tämä on kirjasto, ja yritän lukea. Muutkin yrittävät keskittyä.',
+      },
+      {
+        id: 'r3',
+        scenarioFi: 'Olet odottanut kauan palvelua baaritiskillä. Viereesi tulee mies, joka saa heti palvelua. Mitä sanot baarimikolle?',
+        sampleFi: 'Anteeksi, minä olen odottanut tässä jo 10 minuuttia. Miksi hän sai palvelua ennen minua? Voisitteko palvella minua nyt?',
+      },
+      {
+        id: 'r4',
+        scenarioFi: 'Portsari ei päästä sinua sisälle ja sanoo, että näytät alaikäiseltä. Mitä sanot?',
+        sampleFi: 'Olen kyllä 23-vuotias, tässä on henkilöllisyystodistus. Näytän nuoremmalta, mutta ikäni on todellinen. Saanko tulla sisään?',
+      },
+      {
+        id: 'r5',
+        scenarioFi: 'Kaverisi haluaa aloittaa uuden liikuntaharrastuksen. Ehdota hänelle sopivaa lajia.',
+        sampleFi: 'Hei! Jos haluat aloittaa uuden harrastuksen, suosittelen uintia tai salilla käymistä. Se on hyvää liikuntaa ja sopii kaikille. Voisimme mennä yhdessä!',
+      },
+      {
+        id: 'r6',
+        scenarioFi: 'Yritit mennä kuntosalille aikaisin aamulla, mutta sinun korttisi ei toiminut. Ilmoita asiasta kuntosalille.',
+        sampleFi: 'Hei, yritin mennä salille tänä aamuna, mutta mun kortti ei toiminut. Onko se vanhentunut vai onko joku ongelma? Voisitteko tarkistaa?',
+      },
+      {
+        id: 'r7',
+        scenarioFi: 'Olet unohtanut jotakin kuntosalille. Kerro, mitä ja milloin unohdit.',
+        sampleFi: 'Hei, unohdin eilen kuntosalille vesipullon. Se on sininen ja siinä on tarra. Onko se löytynyt? Voisinko hakea sen?',
+      },
+      {
+        id: 'r8',
+        scenarioFi: 'Haluat varata taksin lentokentälle. Pyydä apua vastaanotosta. Kerro, milloin ja mihin lento lähtee.',
+        sampleFi: 'Hei, voisinko varata taksin? Lento lähtee huomenna kello 8, joten tarvitsen taksin kello 5.30. Onko mahdollista?',
+      },
+      {
+        id: 'r9',
+        scenarioFi: 'Olet junassa. Sinulla on paikkalippu, mutta joku istuu siinä.',
+        sampleFi: 'Anteeksi, tämä on minun paikkani. Tässä on minun lippu. Voisitteko siirtyä toiselle paikalle? Kiitos.',
+      },
+      {
+        id: 'r10',
+        scenarioFi: 'Olet kaverin kanssa. Hän katsoo koko ajan puhelinta, eikä puhu sinun kanssa. Mitä sanot?',
+        sampleFi: 'Hei, voisitko laittaa puhelimen pois? Olemme yhdessä, ja haluaisin jutella kanssasi. Puhelin voi odottaa.',
+      },
+      {
+        id: 'r11',
+        scenarioFi: 'Matkustat bussissa. Sinun vieressä istuu nuori, joka soittaa musiikkia kovaa. Sinun päätä särkee. Mitä sanot nuorelle?',
+        sampleFi: 'Anteeksi, voisitko laittaa musiikin hiljemmalle tai käyttää kuulokkeita? Minulla on pääkipu ja musiikki on todella kovalla.',
+      },
+      {
+        id: 'r12',
+        scenarioFi: 'Ystävälläsi on 50-vuotissyntymäpäivä. Annat hänelle lahjaksi taidetta (keksi itse, mitä). Mitä sanot, kun annat lahjan?',
+        sampleFi: 'Hyvää syntymäpäivää! Tämä on sinulle. Se on maalaus, jonka tein itse. Toivottavasti pidät siitä. Se on minun lahja sinulle.',
+      },
+      {
+        id: 'r13',
+        scenarioFi: 'Olet elokuvateatterissa ja vieruskaverisi naksuttelee popcorneja äänekkäästi.',
+        sampleFi: 'Anteeksi, voisitko olla vähän hiljempaa? Yritän kuunnella elokuvaa. Popcornien naksuttelu häiritsee.',
+      },
+      {
+        id: 'r14',
+        scenarioFi: 'Autosi on rikki ja tiedät, että naapurisi menee samaan paikkaan kuin sinä. Pyydä kyytiä.',
+        sampleFi: 'Hei! Mä tiedän, että sä olet menossa keskustaan. Mun auto on rikki. Pääsisitkö mukaan? Voin maksaa bensat.',
+      },
+      {
+        id: 'r15',
+        scenarioFi:
+          'Näet pienen koululaisen kahvilassa. Koululainen katsoo tabletilta ohjelmaa, joka ei sovi hänelle. Kerro hänelle, miksi ohjelma on huono ja miksi hänen ei pitäisi katsoa sitä.',
+        sampleFi: 'Hei, tuo ohjelma ei ole sinun ikäisellesi sopiva. Siinä on väkivaltaa ja pelottavia asioita. Katso vaikka lastenohjelmia tai piirrettyjä. Ne ovat paljon parempia sinulle.',
+      },
+      {
+        id: 'r16',
+        scenarioFi: 'Olet ostanut urheiluliikkeestä jonkin tuotteen (keksi itse, minkä). Tuotteessa on jokin vika. Palauta tuote kauppaan ja kerro, miksi haluat palauttaa sen.',
+        sampleFi: 'Hei, ostin täältä juoksukengät viikko sitten. Ne ovat jo menneet rikki: pohja on irronnut. Haluan palauttaa ne ja saada rahat takaisin tai uudet kengät.',
+      },
+      {
+        id: 'r17',
+        scenarioFi: 'Kävelet kaupungilla, kun toimittaja kysyy sinulta, mitä mieltä olet kotikaupungistasi. Mitä sanot hänelle?',
+        sampleFi: 'Olen asunut tässä kaupungissa kolme vuotta, ja pidän siitä. Täällä on kauniita puistoja ja hyviä palveluita. Miinuksena on korkeat hinnat ja ruuhkat.',
+      },
+      {
+        id: 'r18',
+        scenarioFi:
+          'Näet lähipuistossasi nuoria, jotka ovat siellä joka päivä koulun jälkeen. Nuoret roskaavat puistoa ja pitävät kovaa meteliä. Ehdota nuorille, mitä muuta he voisivat tehdä kuin olla puistossa.',
+        sampleFi: 'Hei! Te olette täällä joka päivä, ja se on ok, mutta voisitteko siivota roskat ja olla vähän hiljempaa? Voisitte mennä vaikka urheilemaan, pelaamaan koripalloa tai jalkapalloa kentälle.',
+      },
+    ],
+    longSpeaking: [
+      {
+        id: 'k-a',
+        titleFi: 'Tärkeä teos',
+        titleEn: 'Important work',
+        instructionsFi: 'Valitse yksi teos (kirja, näytelmä, elokuva, runo...) joka on sinulle tärkeä. Kerro: Mikä teos se on? Kuka sen on tehnyt? Millainen teos se on? Miksi se on sinulle tärkeä?',
+        sampleFi:
+          "Minulle tärkeä teos on kirja 'Sinuhe egyptiläinen', jonka on kirjoittanut Mika Waltari. Se on historiallinen romaani, joka kertoo egyptiläisestä lääkäristä.\n\nKirja on pitkä ja mukaansatempaava. Se kuvaa muinaista Egyptiä ja ihmisen elämää, rakkautta ja kuolemaa. Kirjassa on paljon filosofiaa ja syvällisiä ajatuksia.\n\nTämä teos on minulle tärkeä, koska luin sen ensimmäisen kerran nuorena. Se avasi silmäni sille, että kirjat voivat olla paljon muutakin kuin vain viihdettä. Kirja sai minut ajattelemaan elämän isoja kysymyksiä. Olen lukenut sen useita kertoja, ja jokaisella kerralla löydän siitä jotain uutta.",
+      },
+      {
+        id: 'k-b',
+        titleFi: 'Baarikulttuuri',
+        titleEn: 'Bar culture',
+        instructionsFi: 'Käytkö joskus baarissa? Miksi / miksi et? Minkä ikäisille baarikulttuuri sopii? Miksi? Mitä hyvää ja huonoa on siinä, että ihmiset käyvät baarissa?',
+        sampleFi:
+          'Käyn baarissa silloin tällöin, ehkä kerran kuukaudessa. Menen yleensä kavereiden kanssa viettämään aikaa. Baarissa on hyvä tunnelma, ja siellä voi jutella rennosti.\n\nBaarikulttuuri sopii mielestäni aikuisille, noin 20-60-vuotiaille. Nuoremmat eivät ehkä osaa käyttäytyä vastuullisesti. Baarissa pitää osata juoda kohtuudella.\n\nHyvää baarissa on, että siellä tapaa ihmisiä ja voi rentoutua. Huonoa on, että alkoholi voi aiheuttaa ongelmia, kuten humalajuomista, riitoja ja tappeluita. Liiallinen baarissa käynti voi olla kallista ja epäterveellistä.',
+      },
+      {
+        id: 'k-c',
+        titleFi: 'Ulkonäkö - kaunis vai ruma?',
+        titleEn: 'Appearance - beautiful or ugly?',
+        instructionsFi: 'Mitä ulkonäkö sinulle merkitsee? Miten pidät huolta itsestäsi? Miksi ulkonäkö on / ei ole sinulle tärkeää? Ajattelevatko ihmiset liian paljon ulkonäköä?',
+        sampleFi:
+          'Ulkonäkö on minulle tärkeä, mutta ei tärkein asia. Haluan näyttää siistiltä ja huolitellulta. Pidän huolta itsestäni peseytymällä, hoitamalla ihoani ja pukeutumalla sopivasti.\n\nUlkonäkö on tärkeää, koska se vaikuttaa ensivaikutelmaan. Kuitenkaan ulkonäkö ei kerro ihmisen sisimmästä. Kauneus on sisäistä.\n\nMielestäni ihmiset ajattelevat liikaa ulkonäköä. Sosiaalinen media ja mainonta luovat paineita. Tärkeämpää on olla terve, onnellinen ja hyvä ihminen.',
+      },
+      {
+        id: 'k-d',
+        titleFi: 'Hyvä loma',
+        titleEn: 'Good holiday',
+        instructionsFi: 'Millainen on hyvä loma? Mitä silloin teet? Milloin sinulla viimeksi oli loma? Mitä teit? Onko hyvä loma kotona vai matkalla? Miksi?',
+        sampleFi:
+          'Hyvä loma on rentouttava. Silloin voi nukkua pitkään, lukea kirjoja, käydä luonnossa ja viettää aikaa perheen ja ystävien kanssa. Loman pitäisi olla stressitön.\n\nMinulla oli viimeksi loma joulukuussa. Menin mökille ja vietin aikaa perheen kanssa. Teimme ruokaa, saunoimme ja kävelimme metsässä. Se oli rentouttavaa.\n\nHyvä loma voi olla kotona tai matkalla. Kotona loma on halvempi ja helpompi, mutta matkalla näkee uusia paikkoja. Molemmat ovat hyviä, riippuen siitä, mitä haluaa.',
+      },
+      {
+        id: 'k-e',
+        titleFi: 'Mökillä on mukavaa',
+        titleEn: 'The cottage is nice',
+        instructionsFi: 'Onko sinulla / perheellä / tuttavalla mökki? Missä? Millainen? Kuinka usein sinä käyt mökillä? Mikä mökillä on mukavaa? Mikä on kamalaa?',
+        sampleFi:
+          'Perheelläni on mökki järven rannalla noin kahden tunnin ajomatkan päässä kaupungista. Mökki on pieni, mutta siellä on kaikki tarvittava: keittiö, sauna ja terassi.\n\nKäyn mökillä noin 4-5 kertaa vuodessa, erityisesti kesällä ja jouluna. Mökillä on mukavaa: sauna, uinti, grillaaminen, hiljaisuus ja luonto. Siellä voi rentoutua ja unohtaa arjen kiireet.\n\nKamalaa mökillä on hyttyset! Ne ovat todella ärsyttäviä. Myös ulkohuussi on talvella kylmä.',
+      },
+      {
+        id: 'k-f',
+        titleFi: 'Rahankäyttö matkalla',
+        titleEn: 'Spending money while traveling',
+        instructionsFi: 'Mihin rahat menevät matkalla? Kuka päättää, mihin matkaraha käytetään? Onko tärkeää, että matkalla on paljon rahaa? Tykkäätkö shoppailla vai seikkailla? Miksi?',
+        sampleFi:
+          'Matkalla rahat menevät majoitukseen, ruokaan, matkustukseen, nähtävyyksiin ja matkamuistoihin. Yleensä suunnittelen budjetin etukäteen.\n\nPäätän itse, mihin rahaa käytän. Minulla on tietty summa, jonka voin käyttää. Yritän säästää siellä, missä voin, esimerkiksi syömällä edullisesti.\n\nOn tärkeää, että matkalla on riittävästi rahaa, mutta ei tarvitse olla varakas. Tärkeintä on kokea uusia asioita.\n\nTykkään enemmän seikkailla kuin shoppailla. Haluan nähdä paikkoja, tutustua kulttuuriin ja kokea uusia asioita. Matkamuistoja ostan harvoin.',
+      },
+      {
+        id: 'k-g',
+        titleFi: 'Minä ja sosiaalinen media',
+        titleEn: 'Me and social media',
+        instructionsFi: 'Mitä sosiaalisia medioita käytät ja kuinka paljon? Mitä hyviä ja huonoja puolia on sosiaalisessa mediassa? Miksi pidät / et pidä sosiaalisesta mediasta?',
+        sampleFi:
+          'Käytän Facebookia, Instagramia ja WhatsAppia. Vietän somessa noin 1-2 tuntia päivässä. Tykkään katsoa kuvia ja pitää yhteyttä ystäviin ja sukulaisiin.\n\nHyviä puolia somessa on, että se yhdistää ihmisiä. Voin olla yhteydessä ulkomailla asuviin ystäviin. Huonoja puolia on, että some voi viedä aikaa ja aiheuttaa vertailua ja mustasukkaisuutta.\n\nPidän somesta, koska se on kätevä tapa kommunikoida. Yritän kuitenkin rajoittaa sen käyttöä, jotta se ei vie liikaa aikaani.',
+      },
+      {
+        id: 'k-h',
+        titleFi: 'Lemmikkieläimet',
+        titleEn: 'Pets',
+        instructionsFi: 'Onko sinulla lemmikki? Mikä? Kerro siitä. Miksi ihmisillä on lemmikki? Miksi lemmikki on usein tärkeä? Mitä lemmikki voi opettaa lapselle?',
+        sampleFi:
+          'Minulla on koira, nimeltään Nala. Se on kultainennoutaja, ja se on 3-vuotias. Nala on todella ystävällinen, leikkisä ja uskollinen. Kävelen sen kanssa kolme kertaa päivässä.\n\nIhmisillä on lemmikkejä, koska ne tuovat iloa, seuraa ja rakkautta. Lemmikki on usein perheenjäsen, joka on aina luotettava.\n\nLemmikki voi opettaa lapselle vastuullisuutta, empatiaa ja hoivaamista. Lapsi oppii, että eläin tarvitsee ruokaa, hoitoa ja huomiota. Lemmikin kanssa on helppo oppia myös rakkaudesta ja surusta.',
+      },
+      {
+        id: 'k-i',
+        titleFi: 'Minun harrastus',
+        titleEn: 'My hobby',
+        instructionsFi: 'Mikä on harrastuksesi? Kuinka kauan olet sitä harrastanut? Mitä hyviä ja huonoja puolia siinä on? Mitä välineitä tarvitset? Kenelle suosittelisit sitä?',
+        sampleFi:
+          'Harrastan valokuvausta. Olen harrastanut sitä noin viisi vuotta. Tykkään kuvata luontoa, maisemia ja kaupunkeja.\n\nHyviä puolia valokuvauksessa on, että se on luovaa ja rentouttavaa. Se auttaa näkemään kauneutta arjessa. Huonoja puolia on, että hyvät kamerat ja varusteet ovat kalliita. Myös keliolosuhteet voivat olla haasteellisia.\n\nTarvitsen kameran, objektiivit, jalustan ja kuvankäsittelyohjelman.\n\nSuosittelisin valokuvausta kaikille, jotka tykkäävät luovuudesta ja luonnosta. Se on harrastus, jota voi tehdä missä tahansa.',
+      },
+    ],
+    opinions: [
+      {
+        id: 'm-a',
+        titleFi: 'Liikunta on pakko, ei vaihtoehto',
+        titleEn: 'Exercise is a must, not an option',
+        instructionsFi:
+          'Tykkäätkö sinä liikkua? Miksi / miksi et? Mitä hyötyä liikunnasta on? Voiko siitä olla haittaa? Voiko ihmistä pakottaa liikkumaan? Miten ihmisiä voidaan kannustaa liikkumaan?',
+        sampleFi:
+          'Tykkään liikkua, koska se on hyväksi terveydelle. Liikunta antaa energiaa ja parantaa mielialaa. Se auttaa myös nukkumaan paremmin.\n\nLiikunnasta on paljon hyötyä: se pitää kehon kunnossa, ehkäisee sairauksia ja vähentää stressiä. Haitat ovat, että liiallinen liikunta voi aiheuttaa vammoja.\n\nIhmistä ei voi pakottaa liikkumaan, mutta häntä voi kannustaa. Lääkäri, perhe tai ystävät voivat kannustaa. Pomo voisi järjestää työpaikalla liikuntamahdollisuuksia.\n\nIhmisiä voidaan kannustaa liikkumaan tarjoamalla edullisia liikuntamahdollisuuksia, kuten kuntosaleja ja ryhmäliikuntaa. Myös sosiaalinen tuki ja yhteisöllisyys auttavat.',
+      },
+      {
+        id: 'm-b',
+        titleFi: 'Suomi on hyvä matkailumaa',
+        titleEn: 'Finland is a good tourist country',
+        instructionsFi: 'Mitä nähtävää Suomessa on turisteille? Kenelle suosittelet Suomea matkakohteena? Käykö Suomessa mielestäsi riittävästi turisteja?',
+        sampleFi:
+          'Suomessa on paljon nähtävää turisteille: luontoa, kansallispuistoja, järviä, saaria ja talvella revontulia. Myös kaupungit, kuten Helsinki, Turku ja Rovaniemi, ovat kiinnostavia. Rovaniemellä on Joulupukin kylä.\n\nSuosittelisin Suomea luonnonystäville, rauhallisista kohteista pitäville ja perheille. Suomessa on turvallista ja puhdasta.\n\nSuomessa käy mielestäni aika paljon turisteja, mutta voisi käydä enemmän. Suomi on vähän syrjässä, ja matkustaminen voi olla kallista. Kuitenkin luonto ja rauhallisuus houkuttelevat monia.',
+      },
+      {
+        id: 'm-c',
+        titleFi: 'Vanhempien täytyy valvoa lasten internetin käyttöä',
+        titleEn: "Parents must monitor children's internet use",
+        instructionsFi:
+          'Mitä lapset voivat tehdä internetissä? Voiko internet olla vaarallinen lapsille? Millä tavalla? Kuinka paljon lapsi voi pelata / surffata? Mitä hyötyä ja haittaa netin käyttämisestä on lapsille?',
+        sampleFi:
+          'Lapset voivat internetissä pelata, katsoa videoita, surffata, opiskella ja olla yhteydessä ystäviin. Internet on hyödyllinen tiedonlähde.\n\nInternet voi olla vaarallinen lapsille. Siellä voi olla sopimatonta sisältöä, kuten väkivaltaa tai pornografiaa. Lapsi voi myös joutua nettikiusaamisen uhriksi tai tavata vaarallisia ihmisiä.\n\nLapsi voi pelata tai surffata enintään 1-2 tuntia päivässä. Tärkeää on, että lapsi viettää aikaa myös ulkona ja liikkuu.\n\nHyötyjä netin käytöstä on, että lapsi oppii uusia taitoja ja saa tietoa. Haitat ovat, että liiallinen ruutuaika voi vahingoittaa silmiä, unta ja sosiaalisia taitoja. Vanhempien pitää valvoa lasten netin käyttöä.',
+      },
+      {
+        id: 'm-d',
+        titleFi: 'Mielipiteeni taiteesta Suomessa verrattuna taiteeseen kotimaassani',
+        titleEn: 'My opinion on art in Finland compared to art in my home country',
+        instructionsFi: 'Millaisesta taiteesta pidät? Miksi? Seuraatko aktiivisesti taidemaailmaa? Miten suomalainen taide eroaa kotimaasi taiteesta?',
+        sampleFi:
+          'Pidän erityisesti maalaustaiteesta ja valokuvauksesta. Arvostan realistista ja tunnelmallista taidetta. Taide koskettaa ja herättää ajatuksia.\n\nEn seuraa aktiivisesti taidemaailmaa, mutta käyn silloin tällöin näyttelyissä ja museoissa. Pidän siitä, että taide on monimuotoista.\n\nSuomalainen taide on usein minimalistista, luonnonläheistä ja tunnelmallista. Siinä on paljon hiljaisuutta ja melankoliaa. Kotimaani taide on värikkäämpää, iloisempaa ja usein abstraktimpaa. Molemmilla on oma kauneutensa.',
+      },
+      {
+        id: 'm-e',
+        titleFi: 'Lapsi saa itse päättää, mitä harrastaa',
+        titleEn: 'A child gets to decide what to do as a hobby',
+        instructionsFi: 'Saako lapsi harrastaa mielestäsi, mitä haluaa? Mikä on mielestäsi hyvä harrastus lapselle? Kuinka paljon lapsi voi harrastaa? Voiko harrastuksesta olla haittaa?',
+        sampleFi:
+          'Mielestäni lapsi saa päättää, mitä harrastaa, mutta vanhemmat voivat ohjata. Lapsen pitää saada kokeilla erilaisia harrastuksia ja löytää oma intohimonsa.\n\nHyvä harrastus lapselle on liikunnallinen, kuten jalkapallo, uinti tai tanssi. Myös musiikki, kuten soittaminen tai laulaminen, on hyvä. Harrastuksen pitää olla hauska ja kehittävä.\n\nLapsi voi harrastaa 1-3 kertaa viikossa, ei liikaa. Tärkeää on, että lapsella on aikaa levätä ja olla kavereiden kanssa.\n\nHarrastuksesta voi olla haittaa, jos siitä tulee liian kilpailullinen tai stressaava. Lapsi voi väsyä tai loukkaantua. Tärkeintä on, että harrastus on lapsen oma valinta ja tuo iloa.',
+      },
+    ],
+    writingTasks: [
+      {
+        id: 'w1',
+        titleFi: 'Viesti',
+        instructionsFi: 'Haluat kutsua ystäväsi elokuviin / teatteriin / konserttiin / taidenäyttelyyn. Kirjoita viesti, jossa kerrot:',
+        bulletsFi: ['mihin haluat mennä hänen kanssa?', 'miksi haluat hänet mukaan?', 'milloin menette?'],
+        sampleFi:
+          'Hei [name]!\n\nMulla on loistoidea! Uusi Marvel-elokuva tulee teattereihin ensi viikolla. Haluaisitko tulla katsomaan se mun kanssa? Olen kuullut, että se on todella hyvä!\n\nHaluaisin sinut mukaan, koska tiedän, että tykkäät samanlaisista elokuvista. Olisi kiva nähdä sinua ja jutella elokuvan jälkeen.\n\nElokuva alkaa ensi lauantaina kello 19. Voisimme mennä syömään ennen elokuvaa, jos haluat.\n\nKerro, pääsetkö! Varaan liput etukäteen.\n\nTerveisin,\n[Your name]',
+      },
+      {
+        id: 'w2',
+        titleFi: 'Sähköpostiviesti',
+        instructionsFi:
+          'Olet ilmoittautunut kurssille (keksi itse, mille). Et kuitenkaan pääse paikalle ensimmäisellä kerralla. Lähetä opettajalle viesti, jossa:',
+        bulletsFi: [
+          'ilmoittaudut kurssille',
+          'kerrot, miksi et voi tulla ensimmäiselle tunnille',
+          'ehdotat, miten voisit korvata poissaolon',
+          'kuvailet lyhyesti taitojasi kurssin teemasta',
+        ],
+        sampleFi:
+          'Hei [teacher\'s name]!\n\nOlen ilmoittautunut suomen kielen jatkokurssille, joka alkaa ensi maanantaina. Valitettavasti en pääse paikalle ensimmäiselle tunnille, koska minulla on työmatka.\n\nHaluaisin korvata poissaolon tekemällä kotitehtäviä etukäteen tai tulemalla toiselle kurssille korvaamaan. Voin myös kysyä materiaalit sähköpostilla.\n\nOlen opiskellut suomea noin kaksi vuotta. Puhun suomea arjessa ja töissä. Osaan lukea ja kirjoittaa aika hyvin. Haluan parantaa erityisesti sujuvuuttani ja sanastoani.\n\nKiitos, ja toivottavasti näemme toisella tunnilla!\n\nTerveisin,\n[Your name]',
+      },
+      {
+        id: 'w3',
+        titleFi: 'Mielipide',
+        instructionsFi:
+          'Taide vai urheilu? Lapsesi koulussa halutaan järjestää koulun jälkeen taidekerho tai liikuntakerho. Kirjoita mielipiteesi vanhempien chattiin siitä, kumpi kerho on mielestäsi tärkeämpi ja miksi.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei kaikki vanhemmat!\n\nOlen miettinyt, kumpi kerho olisi tärkeämpi lapsille: taidekerho vai liikuntakerho. Mielestäni molemmat ovat tärkeitä, mutta jos minun pitäisi valita, kannustaisin liikuntakerhoa.\n\nLiikunta on tärkeää lasten terveydelle. Lapsilla on nykyään liian vähän liikuntaa, ja se näkyy kunnossa. Liikuntakerho auttaa lapsia pysymään kunnossa, oppimaan uusia lajeja ja tekemään yhteistyötä.\n\nTaide on tietysti myös tärkeää. Se kehittää luovuutta, ilmaisua ja hienomotoriikkaa. Uskon, että molempia tarvitaan.\n\nEhdotan, että koulu järjestäisi molempia kerhoja eri päivinä, jotta lapset voivat valita. Jos vain yksi kerho on mahdollinen, äänestän liikuntakerhoa, koska liikunta on perustana terveelle elämälle.\n\nMitä mieltä te olette?\n\nTerveisin,\n[Your name]',
+      },
+    ],
+    vocabSummary: [
+      { fi: 'vapaa-aika', en: 'free time' },
+      { fi: 'harrastus', en: 'hobby' },
+      { fi: 'kirjasto', en: 'library' },
+      { fi: 'kirjailija', en: 'author/writer' },
+      { fi: 'romaani', en: 'novel' },
+      { fi: 'dekkari', en: 'crime novel' },
+      { fi: 'runo', en: 'poem' },
+      { fi: 'satu', en: 'fairy tale' },
+      { fi: 'sanomalehti', en: 'newspaper' },
+      { fi: 'teos', en: 'work (of art/literature)' },
+      { fi: 'uutuus', en: 'new release' },
+      { fi: 'lainata', en: 'to borrow' },
+      { fi: 'palauttaa', en: 'to return' },
+      { fi: 'myöhästymismaksu', en: 'late fee' },
+      { fi: 'varaus', en: 'reservation/hold' },
+      { fi: 'kirjastokortti', en: 'library card' },
+      { fi: 'tiedonhaku', en: 'information search' },
+      { fi: 'musiikkiosasto', en: 'music section' },
+      { fi: 'tulostaa', en: 'to print' },
+      { fi: 'baari', en: 'bar' },
+      { fi: 'narikka', en: 'coat check' },
+      { fi: 'portsari', en: 'bouncer' },
+      { fi: 'hotelli', en: 'hotel' },
+      { fi: 'vastaanotto', en: 'reception' },
+      { fi: 'liput', en: 'tickets' },
+      { fi: 'teatteri', en: 'theater' },
+      { fi: 'konsertti', en: 'concert' },
+      { fi: 'elokuva', en: 'movie' },
+      { fi: 'kurssi', en: 'course' },
+      { fi: 'kansalaisopisto', en: 'adult education center' },
+      { fi: 'ilmoittautua', en: 'to enroll' },
+      { fi: 'liikunta', en: 'exercise' },
+      { fi: 'urheilu', en: 'sports' },
+      { fi: 'ulkonäkö', en: 'appearance' },
+      { fi: 'loma', en: 'holiday/vacation' },
+      { fi: 'mökki', en: 'cottage' },
+      { fi: 'lemmikki', en: 'pet' },
+      { fi: 'some / sosiaalinen media', en: 'social media' },
+      { fi: 'valokuvaus', en: 'photography' },
+      { fi: 'matkustaminen', en: 'traveling' },
+      { fi: 'taide', en: 'art' },
+      { fi: 'hyttyset', en: 'mosquitoes' },
+      { fi: 'sauna', en: 'sauna' },
+      { fi: 'grillaaminen', en: 'grilling/BBQ' },
+    ],
+  },
+  {
+    id: 'conv-ch7',
+    titleFi: 'Luku 7: Yhteiskunta',
+    titleEn: 'Chapter 7: Society',
     level: 'B1',
     warmup: [
       {
