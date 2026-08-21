@@ -53,6 +53,18 @@ export default function Grammar() {
 
   const grouped = useMemo(() => groupByCategory(topics), [topics])
 
+  function jumpToTopic(id: string) {
+    if (!grammarTopic(id)) return
+    setLevelFilter('all')
+    setCategoryFilter('all')
+    setQuery('')
+    setOpenId(id)
+    // Wait a tick for the filter reset to re-render the (now unfiltered) topic list before scrolling.
+    requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+  }
+
   return (
     <div className="space-y-5">
       <div>
@@ -77,19 +89,24 @@ export default function Grammar() {
         </button>
         {showCaseTable && (
           <div className="border-t border-slate-100 px-4 py-4">
-            <p className="mb-3 text-xs text-slate-500">
+            <p className="mb-1 text-xs text-slate-500">
               Kaikki keskeiset sijamuodot rinnakkain samasta sanasta (talo) taivutettuna — helpottaa samankaltaisten
               sijojen erottamista toisistaan. All the core cases inflected from the same word, side by side, to make
               similar-looking cases easier to tell apart.
             </p>
+            <p className="mb-3 text-xs text-emerald-700">
+              তালিকা শুধু দ্রুত রেফারেন্সের জন্য — প্রতিটি সারির শেষে "Selitys →" বোতাম চাপলে সেই সিজার বিস্তারিত ব্যাখ্যা, উদাহরণ ও
+              টিপস সহ নিচে খুলে যাবে।
+            </p>
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+              <table className="w-full min-w-[720px] border-collapse text-left text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-400">
                     <th className="py-2 pr-3">Sija</th>
                     <th className="py-2 pr-3">Pääte</th>
                     <th className="py-2 pr-3">Esimerkki</th>
-                    <th className="py-2">Käyttö / Use case</th>
+                    <th className="py-2 pr-3">Käyttö / Use case</th>
+                    <th className="py-2"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -116,9 +133,17 @@ export default function Grammar() {
                           )}
                         </span>
                       </td>
-                      <td className="py-2 text-slate-600">
+                      <td className="py-2 pr-3 text-slate-600">
                         {row.usage}
                         <span className="block text-emerald-700">{row.usageBn}</span>
+                      </td>
+                      <td className="py-2">
+                        <button
+                          onClick={() => jumpToTopic(row.topicId)}
+                          className="whitespace-nowrap rounded-full bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-700 hover:bg-violet-100"
+                        >
+                          Selitys →
+                        </button>
                       </td>
                     </tr>
                   ))}
