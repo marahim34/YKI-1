@@ -195,14 +195,16 @@ export default function YkiPrep() {
             </div>
           </div>
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa</h2>
-            <div className="space-y-4">
-              {chapter.reading.testPassages.map((p) => (
-                <YkiPassageCard key={p.id} passage={p} />
-              ))}
+          {chapter.reading.testPassages.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa</h2>
+              <div className="space-y-4">
+                {chapter.reading.testPassages.map((p) => (
+                  <YkiPassageCard key={p.id} passage={p} />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
 
@@ -245,29 +247,37 @@ export default function YkiPrep() {
                   <p className="text-sm font-semibold text-slate-900">{t.titleFi}</p>
                   <p className="mt-1 text-sm text-slate-700">{t.instructionsFi}</p>
                   {t.starterFi && <p className="mt-2 text-sm italic text-slate-500">{t.starterFi}</p>}
+                  {t.exampleFi && (
+                    <div className="mt-3 rounded-lg bg-slate-50 p-3">
+                      {t.exampleTitleFi && <p className="mb-1 text-xs font-semibold text-slate-500">{t.exampleTitleFi}</p>}
+                      <p className="whitespace-pre-line text-sm text-slate-700">{t.exampleFi}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
-            <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
-              <table className="w-full text-xs">
-                <thead>
-                  <tr className="border-b border-slate-100 bg-slate-50 text-left uppercase tracking-wide text-slate-400">
-                    <th className="px-3 py-2">Harrastuskaveri</th>
-                    <th className="px-3 py-2">Naapurit</th>
-                    <th className="px-3 py-2">Molemmat</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {chapter.writing.practiceShareTable.map((row) => (
-                    <tr key={row.category} className="border-b border-slate-50 last:border-0">
-                      <td className="px-3 py-2 text-slate-700">{row.hobbyBuddy}</td>
-                      <td className="px-3 py-2 text-slate-700">{row.neighbors}</td>
-                      <td className="px-3 py-2 text-slate-700">{row.both}</td>
+            {chapter.writing.practiceShareTable && chapter.writing.practiceShareTable.length > 0 && (
+              <div className="mt-3 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="border-b border-slate-100 bg-slate-50 text-left uppercase tracking-wide text-slate-400">
+                      <th className="px-3 py-2">Harrastuskaveri</th>
+                      <th className="px-3 py-2">Naapurit</th>
+                      <th className="px-3 py-2">Molemmat</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                    {chapter.writing.practiceShareTable.map((row) => (
+                      <tr key={row.category} className="border-b border-slate-50 last:border-0">
+                        <td className="px-3 py-2 text-slate-700">{row.hobbyBuddy}</td>
+                        <td className="px-3 py-2 text-slate-700">{row.neighbors}</td>
+                        <td className="px-3 py-2 text-slate-700">{row.both}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
 
           <YkiTip tip={chapter.writing.openingClosingTip} />
@@ -318,17 +328,31 @@ export default function YkiPrep() {
         <div className="space-y-5">
           <YkiTip tip={chapter.listening.tip} />
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-4">
-            <p className="text-sm font-semibold text-slate-800">Lämmittele: Kuuntele podcastia</p>
-            <p className="mt-1 text-sm text-slate-600">{chapter.listening.podcastWarmup.instructionsFi}</p>
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {chapter.listening.podcastWarmup.keywords.map((k) => (
-                <span key={k} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">
-                  {k}
-                </span>
-              ))}
+          {chapter.listening.podcastWarmup && (
+            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+              <p className="text-sm font-semibold text-slate-800">Lämmittele: Kuuntele podcastia</p>
+              <p className="mt-1 text-sm text-slate-600">{chapter.listening.podcastWarmup.instructionsFi}</p>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {chapter.listening.podcastWarmup.keywords.map((k) => (
+                  <span key={k} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">
+                    {k}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
+
+          {chapter.listening.repeatSentences && (
+            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+              <p className="text-sm font-semibold text-slate-800">Lämmittele: Kuuntele ja toista lauseita</p>
+              <p className="mt-1 text-sm text-slate-600">{chapter.listening.repeatSentences.instructionsFi}</p>
+              <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-slate-700">
+                {chapter.listening.repeatSentences.sentences.map((s, i) => (
+                  <li key={i}>{s}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div>
             <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele</h2>
@@ -352,32 +376,34 @@ export default function YkiPrep() {
 
       {tab === 'puhuminen' && (
         <div className="space-y-5">
-          <YkiTip tip={chapter.speaking.tip} />
+          {chapter.speaking.tip && <YkiTip tip={chapter.speaking.tip} />}
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-4">
-            <p className="text-sm font-semibold text-slate-800">Lämmittele yksin: Kertominen itsestä</p>
-            <p className="mt-1 text-sm text-slate-600">{chapter.speaking.selfIntro.instructionsFi}</p>
-            <div className="mt-3 overflow-x-auto rounded-xl border border-slate-100">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-slate-100 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-400">
-                    <th className="px-3 py-2">Puhekieli</th>
-                    <th className="px-3 py-2">Kirjakieli</th>
-                    <th className="px-3 py-2">English</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {chapter.speaking.selfIntro.qa.map((row) => (
-                    <tr key={row.spoken} className="border-b border-slate-50 last:border-0">
-                      <td className="px-3 py-2 text-slate-700">{row.spoken}</td>
-                      <td className="px-3 py-2 text-slate-700">{row.written}</td>
-                      <td className="px-3 py-2 text-slate-400">{row.en}</td>
+          {chapter.speaking.selfIntro && (
+            <div className="rounded-2xl border border-slate-200 bg-white p-4">
+              <p className="text-sm font-semibold text-slate-800">Lämmittele yksin: Kertominen itsestä</p>
+              <p className="mt-1 text-sm text-slate-600">{chapter.speaking.selfIntro.instructionsFi}</p>
+              <div className="mt-3 overflow-x-auto rounded-xl border border-slate-100">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-slate-100 bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-400">
+                      <th className="px-3 py-2">Puhekieli</th>
+                      <th className="px-3 py-2">Kirjakieli</th>
+                      <th className="px-3 py-2">English</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {chapter.speaking.selfIntro.qa.map((row) => (
+                      <tr key={row.spoken} className="border-b border-slate-50 last:border-0">
+                        <td className="px-3 py-2 text-slate-700">{row.spoken}</td>
+                        <td className="px-3 py-2 text-slate-700">{row.written}</td>
+                        <td className="px-3 py-2 text-slate-400">{row.en}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
+          )}
 
           <div className="rounded-2xl border border-slate-200 bg-white p-4">
             <p className="text-sm font-semibold text-slate-800">Lämmittele yhdessä kaverin kanssa</p>
@@ -389,23 +415,53 @@ export default function YkiPrep() {
             </ul>
           </div>
 
-          <YkiTip tip={chapter.speaking.truthTip} />
+          {chapter.speaking.truthTip && <YkiTip tip={chapter.speaking.truthTip} />}
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele: Kertominen</h2>
-            <LongSpeakingTaskCard task={chapter.speaking.practiceLongTask} />
-            <p className="mt-2 text-sm text-slate-600">
-              <span className="font-semibold">Reflektoi:</span> {chapter.speaking.practiceLongTask.reflectionPrompt}
-            </p>
-            <div className="mt-2">
-              <YkiTip tip={chapter.speaking.practiceLongTask.speakDontWriteTip} />
+          {chapter.speaking.practiceLongTask && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele: Kertominen</h2>
+              <LongSpeakingTaskCard task={chapter.speaking.practiceLongTask} />
+              {chapter.speaking.practiceLongTask.reflectionPrompt && (
+                <p className="mt-2 text-sm text-slate-600">
+                  <span className="font-semibold">Reflektoi:</span> {chapter.speaking.practiceLongTask.reflectionPrompt}
+                </p>
+              )}
+              {chapter.speaking.practiceLongTask.speakDontWriteTip && (
+                <div className="mt-2">
+                  <YkiTip tip={chapter.speaking.practiceLongTask.speakDontWriteTip} />
+                </div>
+              )}
             </div>
-          </div>
+          )}
 
-          <div>
-            <h2 className="mb-2 text-sm font-semibold text-slate-800">VINKKI: Keskustelutehtävien sanastoa</h2>
-            <VocabGrid items={chapter.speaking.conversationVocab} />
-          </div>
+          {chapter.speaking.practiceSituationalTasks && chapter.speaking.practiceSituationalTasks.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">Harjoittele: Tilannetehtävät</h2>
+              <div className="space-y-3">
+                {chapter.speaking.practiceSituationalTasks.map((t) => (
+                  <div key={t.id} className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                    <p className="text-sm text-slate-700">{t.scenarioFi}</p>
+                    <SequentialTimer steps={[{ label: '🔴 Puhu nyt', seconds: t.seconds }]} idleLabel={`Aloita (${t.seconds} s)`} />
+                    {t.modelAnswerFi && (
+                      <details className="text-sm">
+                        <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+                        <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.modelAnswerFi}</p>
+                      </details>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {chapter.speaking.dontMemorizeTip && <YkiTip tip={chapter.speaking.dontMemorizeTip} />}
+
+          {chapter.speaking.conversationVocab && chapter.speaking.conversationVocab.length > 0 && (
+            <div>
+              <h2 className="mb-2 text-sm font-semibold text-slate-800">VINKKI: Keskustelutehtävien sanastoa</h2>
+              <VocabGrid items={chapter.speaking.conversationVocab} />
+            </div>
+          )}
 
           <div>
             <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa: Kertominen</h2>
@@ -439,12 +495,19 @@ export default function YkiPrep() {
           <div>
             <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa: Tilannetehtävät</h2>
             <div className="space-y-3">
-              {chapter.speaking.situationalTasks.map((t) => (
-                <div key={t.id} className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-                  <p className="text-sm text-slate-700">{t.scenarioFi}</p>
-                  <SequentialTimer steps={[{ label: '🔴 Puhu nyt', seconds: t.seconds }]} idleLabel={`Aloita (${t.seconds} s)`} />
-                </div>
-              ))}
+              {chapter.speaking.situationalTasks.map((t, i) => {
+                const prevLabel = i > 0 ? chapter.speaking.situationalTasks[i - 1].setLabel : undefined
+                const showLabel = t.setLabel && t.setLabel !== prevLabel
+                return (
+                  <div key={t.id}>
+                    {showLabel && <p className="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400">{t.setLabel}</p>}
+                    <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                      <p className="text-sm text-slate-700">{t.scenarioFi}</p>
+                      <SequentialTimer steps={[{ label: '🔴 Puhu nyt', seconds: t.seconds }]} idleLabel={`Aloita (${t.seconds} s)`} />
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
 

@@ -768,6 +768,713 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       ],
     },
   },
+  {
+    id: 'yki-ch2',
+    number: 2,
+    titleFi: 'Koti ja asuminen',
+    titleEn: 'Home and Housing',
+    pages: '44-70',
+    theme: 'Koti, asuminen, asumismuodot, naapurusto ja asumiseen liittyvät palvelut',
+    reading: {
+      vocabWarmup: {
+        instructionsFi:
+          'Osaatko asumisen sanastoa? Selvitä, mitä seuraavat sanat tarkoittavat. Ovatko sanat tärkeitä, jos asut kerrostalossa, rivitalossa, omakotitalossa vai näissä kaikissa?',
+        items: [
+          { fi: 'hissi', en: 'elevator (kerrostalo)' },
+          { fi: 'parveke', en: 'balcony (kerrostalo, rivitalo)' },
+          { fi: 'piha', en: 'yard (kaikissa)' },
+          { fi: 'autotalli', en: 'garage (omakotitalo, rivitalo)' },
+          { fi: 'kellari', en: 'basement (kaikissa)' },
+          { fi: 'sauna', en: 'sauna (kaikissa)' },
+          { fi: 'keittiö', en: 'kitchen (kaikissa)' },
+          { fi: 'olohuone', en: 'living room (kaikissa)' },
+          { fi: 'makuuhuone', en: 'bedroom (kaikissa)' },
+          { fi: 'kylpyhuone', en: 'bathroom (kaikissa)' },
+          { fi: 'vuokra', en: 'rent (kaikissa)' },
+          { fi: 'vastike', en: 'maintenance fee (omistusasunto)' },
+          { fi: 'remontti', en: 'renovation (kaikissa)' },
+          { fi: 'isännöitsijä', en: 'property manager (kerrostalo, rivitalo)' },
+          { fi: 'taloyhtiö', en: 'housing company (kaikissa)' },
+          { fi: 'naapuri', en: 'neighbor (kaikissa)' },
+          { fi: 'talkoot', en: 'volunteer work together (kaikissa)' },
+        ],
+        note: {
+          title: 'VINKKI: Lue kysymys tai väite tarkasti',
+          body: [
+            'YKI-lukemisen tehtävissä on usein vastausvaihtoehtoja, jotka vaikuttavat oikeilta, mutta ovat itse asiassa vääriä.',
+            'Tärkeää: sama sana kysymyksessä ja tekstissä ei automaattisesti tarkoita, että vaihtoehto on oikein. Oikea vastaus voi käyttää eri sanoja, jotka tarkoittavat samaa asiaa.',
+            'Esimerkki: Teksti sanoo "Polkupyörävarastossa ja käytössä olevat pyörät on merkittävä. Huonokuntoiset ja hylätyt pyörät heitetään pihatalkoissa roskalavalle." Väite "Polkupyörävarastossa on merkittävä määrä huonokuntoisia pyöriä" → Väärin (B), koska teksti ei kerro pyörien määrästä – se kertoo, että käytössä olevat pyörät merkitään ja huonokuntoiset heitetään pois.',
+          ],
+        },
+      },
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Onnistuneet pihatalkoot',
+          titleEn: 'Successful Yard Work Events',
+          textFi:
+            'Keväisin ja syksyisin taloyhtiöissä järjestetään pihatalkoita. Yhdessä puuhastellen laitetaan pihaa kesäkuntoon. Vaikka talkoissa keskitytäänkin puutarhatöihin, vähintäänkin yhtä tärkeää on seurustelu ja naapureihin tutustuminen. Kun tullaan tutuiksi, kaikenlaisista asioista on helpompi puhua.\n\nYhteisöllisyys lisääntyy, yhteishenki vahvistuu ja kiinnostus yhteisten asioiden hoitoon sekä päätöksentekoon kasvaa. Kun asioista puhutaan, on taloyhtiössä kaikkien mukava asua ja elää.\n\nOn tärkeää muistaa, että talkoot perustuvat aina vapaaehtoisuuteen. Ketään ei voida velvoittaa tekemään "omaa osuuttaan", jos ei syystä tai toisesta voi tai halua osallistua. Suuremmat remontit kannattaakin teettää alan ihmisillä, jottei niiden tekeminen kuormita liikaa talkoisiin osallistuvia. Turvallisuussyistä myös kiipeily katoilla ja tikkailta kannattaa jättää ammattilaisille.\n\nMonilla taloyhtiöillä on hyviä kokemuksia yhteisöllisyyden lisääntymisestä. Mitä kaikkea teidän taloyhtiönne voisi keksiä tänä vuonna? Jos et ole vielä kertaakaan osallistunut taloyhtiön talkoisiin, mitäpä jos tänä vuonna kokeilisit? Saatat yllättyä positiivisesti!',
+          trueFalse: [
+            {
+              id: 'rp1-tf1',
+              statementFi: 'Osallistuminen talkoisiin on tärkeää, koska talkoissa voi tutustua naapureihin.',
+              answer: true,
+              explanation: 'Teksti sanoo: "vähintäänkin yhtä tärkeää on seurustelu ja naapureihin tutustuminen".',
+            },
+            {
+              id: 'rp1-tf2',
+              statementFi: 'Talkoissa tehdään taloyhtiön pieniä töitä.',
+              answer: true,
+              explanation:
+                'Teksti sanoo, että talkoissa "keskitytäänkin puutarhatöihin" ja "suuremmat remontit kannattaakin teettää alan ihmisillä" – tämä viittaa siihen, että talkoot ovat pienempiä töitä varten.',
+            },
+            {
+              id: 'rp1-tf3',
+              statementFi: 'Talkoot ovat pakollisia kaikille.',
+              answer: false,
+              explanation: 'Teksti sanoo: "talkoot perustuvat aina vapaaehtoisuuteen".',
+            },
+            {
+              id: 'rp1-tf4',
+              statementFi: 'Talkoot ovat hyvä tapa tehdä myös isoja remontteja.',
+              answer: false,
+              explanation: 'Teksti sanoo: "Suuremmat remontit kannattaakin teettää alan ihmisillä".',
+            },
+          ],
+        },
+        {
+          id: 'reading-practice-2',
+          titleFi: 'Auto- ja kuljetusalan lakon vaikutukset jäteastioiden tyhjennyksiin',
+          titleEn: 'Effects of a Transport Strike on Waste Collection',
+          textFi:
+            'Keskiviikkona 15.2. alkanut auto- ja kuljetusalan lakko vaikuttaa alueemme jätehuoltoon merkittävästi, sillä arvion mukaan ainakin puolet asuinkiinteistöjen jäteastioista voi jäädä päivittäin tyhjentämättä. Lakon aikana varmistetaan jätehuollon toimivuus ensisijaisesti yhteiskunnallisesti tärkeissä kohteissa, kuten sairaaloissa. Jätekuljetuksia koskevan lakon on määrä loppua 21.2.\n\nJotta kiinteistöjemme jäteastiat eivät yllättyisi, pyydämme asukkaita säilyttämään hajuttomat ja pilaantumattomat jätteet, kuten kartongit ja muovit, kotona. Roskapussit voi nostaa myös parvekkeelle, kunhan huolehditaan siitä, etteivät esim. linnut pääse niihin käsiksi. Lakon aikana jätettä ei ole välttämätöntä lajitella, vaan esimerkiksi sekajäteastioihin voi laittaa niihin normaalisti kuulumattomia vaarattomia jätteitä, jos niissä on tilaa.\n\nYhteistyöterveisin isännöitsijä',
+          trueFalse: [
+            {
+              id: 'rp2-tf1',
+              statementFi: 'Auto- ja kuljetusalan lakon vuoksi jätehuollon astiat täytyy merkitä.',
+              answer: false,
+              explanation: 'Teksti ei mainitse jäteastioiden merkitsemistä; se puhuu jätteiden säilyttämisestä kotona.',
+            },
+            {
+              id: 'rp2-tf2',
+              statementFi: 'Lakon aikana pyritään tyhjentämään ainakin sairaaloiden jäteastiat.',
+              answer: true,
+              explanation: 'Teksti sanoo: "varmistetaan jätehuollon toimivuus ensisijaisesti... sairaaloissa".',
+            },
+            {
+              id: 'rp2-tf3',
+              statementFi: 'Asukkaita pyydetään säilyttämään ainakin osaa jätteistään kotona.',
+              answer: true,
+              explanation: 'Teksti sanoo: "pyydämme asukkaita säilyttämään hajuttomat ja pilaantumattomat jätteet... kotona".',
+            },
+            {
+              id: 'rp2-tf4',
+              statementFi: 'Lakon aikana lajittelu on erityisen tärkeää.',
+              answer: false,
+              explanation: 'Teksti sanoo: "Lakon aikana jätettä ei ole välttämätöntä lajitella".',
+            },
+          ],
+        },
+        {
+          id: 'reading-practice-3',
+          titleFi: 'Lämmityspattereiden ilmaaminen',
+          titleEn: 'Radiator Bleeding',
+          textFi:
+            'Hyvät taloyhtiö Tammenkolon asukkaat!\n\nTaloyhtiön lämmitysjärjestelmässä tehtyjen korjausten jälkitoimena ilmaamme vesikiertoiset lämmityspatterit ti 22.4. - pe 29.4. Huoltomiehillä tulee tällöin olla esteetön pääsy huoneistoihin. Jos asukas ei ole kotona, käytetään yleisavainta.\n\nMikäli teillä on lemmikkejä tai teidän on muista syistä tiedettävä tarkemmin, milloin omassa asunnossanne käydään, ottakaa pikimmiten yhteyttä huoltoesihenkilö Jaakko Paajaseen, jonka tavoitatte numerosta 045 356 2578.\n\nHuomioittehan myös, että lämmityspattereiden luo täytyy päästä vaivatta. Jos asunnossanne on esimerkiksi huonekaluja lähellä pattereita, siirrättehän ne valmiiksi.\n\nJos teillä on kysymyksiä, voitte kääntyä huoltoesihenkilön puoleen. Kiitos yhteistyöstä!\n\nTerveisin Kiinteistöhuolto Korpela Oy',
+          open: [
+            {
+              id: 'rp3-o1',
+              questionFi: 'Miksi huoltomiesten täytyy päästä kaikkiin asuntoihin?',
+              sampleAnswerFi: 'Koska he ilmaavat lämmityspatterit.',
+            },
+            {
+              id: 'rp3-o2',
+              questionFi: 'Mitä asukkaan täytyy tehdä, jos hänellä on lemmikkejä?',
+              sampleAnswerFi: 'Ottaa yhteyttä huoltoesihenkilöön.',
+            },
+            {
+              id: 'rp3-o3',
+              questionFi: 'Mistä jokaisen asukkaan täytyy huolehtia, jotta huoltomiehet pääsevät tekemään työnsä?',
+              sampleAnswerFi: 'Siirtää huonekalut pattereiden läheltä.',
+            },
+          ],
+        },
+      ],
+      testPassages: [],
+    },
+    writing: {
+      tip: {
+        title: 'VINKKI: Tekstin suunnittelu on tärkeä osa kirjoittamista',
+        body: [
+          'Lämmittelytehtävissä sinulla on runsaasti aikaa suunnitella tekstiäsi. YKI-testissä aikaa ei ole paljon – etsi oma nopea ja tehokas tapa suunnitella.',
+          'Luonnos on tekstisi alku, suunnitelmasi ensimmäinen versio.',
+          'Kokeile eri suunnittelutapoja: miellekarttoja, listoja, vapaata kirjoittamista. Kokeile menetelmiä, joita et ole aiemmin käyttänyt.',
+        ],
+      },
+      freewrite: {
+        instructionsFi: 'Tee miellekartta tai lista asumiseen liittyvästä sanastosta. Käytä esimerkiksi näitä kategorioita:',
+        rules: [],
+        topics: [
+          'asumismuoto (housing type): kerrostalo, rivitalo, omakotitalo, paritalo',
+          'asunnon ja talon eri tilat (rooms and spaces): olohuone, keittiö, makuuhuone, kylpyhuone, sauna, parveke, kellari, varasto',
+          'asumiskustannukset (housing costs): vuokra, vastike, sähkö, vesi, lämmitys, jätemaksu, vakuutus',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Vaihda luonnoksesi luokkatoverin kanssa ja anna palautetta:',
+        questions: [
+          'Lue toistenne luonnokset.',
+          'Kysy kysymyksiä luonnoksista.',
+          'Ehdota, mitä voisi lisätä.',
+          'Kerro, jos jokin ei tunnu liittyvän aiheeseen.',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Uuden vuokra-asunnon etsiminen',
+          instructionsFi:
+            'Etsit uutta vuokra-asuntoa. Kirjoita viesti, jossa esittelet itsesi lyhyesti mahdolliselle vuokranantajalle. Kysy ainakin kaksi kysymystä asunnosta. Käytä lämmittelytehtävässä tekemääsi luonnosta.',
+          exampleTitleFi: 'Lue tämä muodollinen viesti mallina:',
+          exampleFi:
+            'Hei, Annikki!\n\nHuomasin asuntoilmoituksesi Facebookin Asuntoja vuokrataan -ryhmässä.\n\nOlen ammatiltani psykoterapeutti. Olen osa-aikaisesti palkkatöissä, minkä lisäksi teen töitä omassa yrityksessäni. Etsin hiljaista ja rauhallista asuntoa vuosiksi eteenpäin. Vuokralaisena olen siisti ja luotettava, ja minulla on luottotiedot kunnossa.\n\nOlisiko mahdollista tulla katsomaan asuntoa lähipäivinä?\n\nYstävällisin terveisin Ella Smith',
+        },
+      ],
+      openingClosingTip: {
+        title: 'VINKKI: Muodollisen tervehdyksen tyyli',
+        body: [
+          'Suomeksi muodollinen viesti alkaa yleensä sanoilla: Hei tai Hei!',
+          'Muodollisen kirjoittamisen säännöt: käytä kirjakieltä; pronominit (minä, sinä, me, te) voi usein jättää pois; kohteliaisuuden lisäämiseksi voi käyttää teitittelyä; käytä omistusliitteitä, kuten "asuntomme", "puhelinnumeroni".',
+          'Sopivia lopetuksia: Ystävällisin terveisin, Terveisin (hieman vähemmän muodollinen).',
+        ],
+      },
+      informalTasks: [
+        {
+          id: 'writing-test-informal-1',
+          titleFi: 'Tuparikutsu ystäville',
+          instructionsFi: 'Olet juuri muuttanut uuteen asuntoon. Kirjoita kutsu ystävillesi.',
+        },
+        {
+          id: 'writing-test-informal-2',
+          titleFi: 'Ohjeet ystävälle',
+          instructionsFi: 'Lähdet viikoksi matkalle. Ystäväsi jää asuntoosi ja huolehtii lemmikeistäsi ja kasveistasi. Kirjoita sähköposti, jossa annat ohjeet.',
+        },
+        {
+          id: 'writing-test-informal-3',
+          titleFi: 'Viesti naapureille',
+          instructionsFi:
+            'Asut rivitalossa. Lumityöt on jaettu tasan naapureiden kesken. Sinun vuorosi on kahden viikon päästä, mutta olet silloin matkalla. Kirjoita naapureille, selitä tilanne ja pyydä vaihtamaan vuoroa.',
+        },
+        {
+          id: 'writing-test-informal-4',
+          titleFi: 'Viesti alueelliseen some-ryhmään',
+          instructionsFi:
+            'Harkitset muuttamista alueelle, jota et tunne. Kirjoita alueen some-ryhmään ja kysy alueesta – turvallisuudesta, palveluista, harrastusmahdollisuuksista.',
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-test-formal-1',
+          titleFi: 'Viesti huoltoyhtiölle',
+          instructionsFi: 'Asunnossasi on ongelma. Kirjoita huoltoyhtiölle, selitä ongelma ja pyydä korjausta mahdollisimman pian.',
+        },
+        {
+          id: 'writing-test-formal-2',
+          titleFi: 'Valitusviesti huoltoyhtiöön',
+          instructionsFi: 'Polkupyörävaraston ovi ei lukitu. Kirjoita valitus, jossa selität, miksi tämä on ongelma.',
+        },
+        {
+          id: 'writing-test-formal-3',
+          titleFi: 'Viesti isännöitsijälle',
+          instructionsFi:
+            'Naapurisi tupakoi parvekkeellaan, ja savu tulee sinun asuntoosi. Olet pyytänyt häntä lopettamaan, mutta hän jatkaa. Kirjoita ja ehdota, että taloyhtiön kokouksessa laadittaisiin tupakointisäännöt.',
+        },
+        {
+          id: 'writing-test-formal-4',
+          titleFi: 'Vastaus kyselyyn',
+          instructionsFi:
+            'Kaupunki haluaa kehittää alueesi palveluja. Mielestäsi osa leikkivälineistä on huonossa kunnossa. Kirjoita ja selitä tilanne sekä ehdota korjauksia.',
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Asuinpaikka ja asumismuoto',
+          options: ['A. Kumpi on parempi asuinpaikka, kaupunki vai maaseutu?', 'B. Vuokra- vai omistusasunto?'],
+        },
+        {
+          id: 'writing-opinion-2',
+          titleFi: 'Pääkaupunkiseudun hintataso',
+          options: ['Onko tavallisilla ihmisillä varaa asua pääkaupunkiseudulla?'],
+        },
+        {
+          id: 'writing-opinion-3',
+          titleFi: 'Muita aiheita',
+          options: [
+            'Iso koti on parempi kuin pieni',
+            'Kaikilla ihmisillä pitäisi olla oma kesämökki',
+            'Kaikilla asuinalueilla pitäisi olla samanlaiset palvelut',
+          ],
+        },
+      ],
+    },
+    listening: {
+      tip: {
+        title: 'VINKKI: Ääntämisen harjoittelu',
+        body: [
+          'Ääntämisen harjoittelu auttaa sekä puhumisessa että kuullun ymmärtämisessä. Harjoittele vähän mutta usein – esimerkiksi viisi minuuttia viitenä päivänä viikossa.',
+          '3 + 1 -harjoitus: kuulet lauseen kolme kertaa, sitten sanot sen kerran itse.',
+        ],
+      },
+      repeatSentences: {
+        instructionsFi: 'Kuuntele lause kolme kertaa, sano se sitten kerran itse.',
+        sentences: [
+          'Mulla on huonoja uutisia.',
+          'Meidän kellarikomeroon on murtauduttu.',
+          'Oliks teillä soittimia siellä?',
+          'Meidän ois varmaan hyvä tehdä rikosilmoitukset.',
+          'Soitin jo poliisille.',
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Kellarikomeromurto',
+          titleEn: 'Storage Room Break-in',
+          textFi: NO_TRANSCRIPT_NOTE,
+          predictVocab: [
+            { fi: 'kellari', en: 'basement' },
+            { fi: 'komero', en: 'storage room' },
+            { fi: 'murto', en: 'break-in' },
+            { fi: 'rikosilmoitus', en: 'police report' },
+            { fi: 'varkaat', en: 'thieves' },
+            { fi: 'ovi', en: 'door' },
+            { fi: 'lukko', en: 'lock' },
+            { fi: 'poliisi', en: 'police' },
+            { fi: 'kellarikomero', en: 'storage room in basement' },
+            { fi: 'on murtauduttu', en: 'has been broken into' },
+            { fi: 'rikosilmoitukset', en: 'police reports' },
+            { fi: 'kätevästi', en: 'conveniently' },
+            { fi: 'netissä', en: 'online' },
+            { fi: 'saa', en: 'one can / is allowed' },
+            { fi: 'jo', en: 'already' },
+            { fi: 'siivota', en: 'to clean' },
+          ],
+          open: [
+            { id: 'lp1-o1', questionFi: 'Mitä on tapahtunut?', sampleAnswerFi: 'Kellarikomeroon on murtauduttu.' },
+            { id: 'lp1-o2', questionFi: 'Mitä on varastettu?', sampleAnswerFi: 'Soittimia on varastettu.' },
+            { id: 'lp1-o3', questionFi: 'Mitä asukkaiden on hyvä tehdä?', sampleAnswerFi: 'Asukkaiden on hyvä tehdä rikosilmoitukset.' },
+            { id: 'lp1-o4', questionFi: 'Missä voi tehdä rikosilmoituksen?', sampleAnswerFi: 'Rikosilmoituksen voi tehdä netissä.' },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'listening-test-1',
+          titleFi: 'Annin ja Konstan keskustelu',
+          textFi: NO_TRANSCRIPT_NOTE,
+          mcq: [
+            {
+              id: 'lt1-q1',
+              question: 'Anni opiskelee',
+              options: ['ammattikoulussa', 'yliopistossa', 'lukiossa'],
+              correctIndex: 0,
+              explanation: 'Vastaus: ammattikoulussa.',
+            },
+            {
+              id: 'lt1-q2',
+              question: 'Nyt Anni kulkee kouluun',
+              options: ['metrolla', 'kävellen', 'bussilla'],
+              correctIndex: 1,
+              explanation: 'Vastaus: kävellen.',
+            },
+            {
+              id: 'lt1-q3',
+              question: 'Konsta olisi halunnut',
+              options: ['lähteä kesällä merelle', 'muuttaa uuteen asuntoon', 'pysyä vanhassa koulussa'],
+              correctIndex: 2,
+              explanation: 'Vastaus: pysyä vanhassa koulussa.',
+            },
+            {
+              id: 'lt1-q4',
+              question: 'Anni haluaisi kutsua Siljan kylään, kun hän on',
+              options: ['ostanut uuden asunnon', 'saanut uudet huonekalut', 'käynyt ensin elokuvissa'],
+              correctIndex: 1,
+              explanation: 'Vastaus: saanut uudet huonekalut.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-2',
+          titleFi: 'Kimppakämppä',
+          titleEn: 'Shared Apartment',
+          textFi: NO_TRANSCRIPT_NOTE,
+          trueFalse: [
+            { id: 'lt2-tf1', statementFi: 'Vanhat ystävät tapaavat sattumalta.', answer: true, explanation: 'Vanhat ystävät tapaavat sattumalta.' },
+            {
+              id: 'lt2-tf2',
+              statementFi: 'Molemmat asuvat tapaamispaikan lähellä.',
+              answer: true,
+              explanation: 'Molemmat asuvat tapaamispaikan lähellä.',
+            },
+            { id: 'lt2-tf3', statementFi: 'Liisa etsii uutta asuntoa.', answer: true, explanation: 'Liisa etsii uutta asuntoa.' },
+            {
+              id: 'lt2-tf4',
+              statementFi: 'Marko on myymässä asuntoa.',
+              answer: false,
+              explanation: 'Marko vuokraa asuntoa, ei myy sitä.',
+            },
+            {
+              id: 'lt2-tf5',
+              statementFi: 'Kimppakämpän asukkaat ovat helppoja ja mukavia ihmisiä.',
+              answer: true,
+              explanation: 'Kimppakämpän asukkaat ovat helppoja ja mukavia ihmisiä.',
+            },
+            {
+              id: 'lt2-tf6',
+              statementFi: 'Asunnossa on 5 huonetta, keittiö ja kylpyhuone.',
+              answer: false,
+              explanation: 'Asunnossa on 3 huonetta, ei 5.',
+            },
+            {
+              id: 'lt2-tf7',
+              statementFi: 'Marko ja Liisa sopivat tapaamisajan seuraavalle viikolle.',
+              answer: false,
+              explanation: 'He sopivat tapaavansa jo samana päivänä.',
+            },
+            {
+              id: 'lt2-tf8',
+              statementFi: 'Markon puhelinnumero on 040 726 4620.',
+              answer: true,
+              explanation: 'Markon puhelinnumero on 040 726 4620.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-3',
+          titleFi: 'Kotihäpeä',
+          titleEn: 'Home Shame',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            {
+              id: 'lt3-o1',
+              questionFi: 'Mitä tarkoittaa kotihäpeä?',
+              sampleAnswerFi: 'Kotihäpeä tarkoittaa, että ihminen häpeää omaa kotiaan ja sen sotkuisuutta.',
+            },
+            {
+              id: 'lt3-o2',
+              questionFi: 'Mitä ihminen, joka tuntee kotihäpeää, ajattelee omasta kodistaan?',
+              sampleAnswerFi: 'Hän ajattelee, että koti on liian sotkuinen ja että muut näkevät sen.',
+            },
+            {
+              id: 'lt3-o3',
+              questionFi: 'Miten Siiri reagoi yllätysvieraisiin?',
+              sampleAnswerFi: 'Siiri alkaa siivota kiireesti tai ei halua päästää vieraita sisään.',
+            },
+            {
+              id: 'lt3-o4',
+              questionFi: 'Miksi ihmiset pelkäävät, että joku näkee heidän sotkuisen kotinsa?',
+              sampleAnswerFi: 'He pelkäävät, että muut ajattelevat heistä huonosti.',
+            },
+            {
+              id: 'lt3-o5',
+              questionFi: 'Miksi monet luulevat, että kaikilla muilla on aina siistiä?',
+              sampleAnswerFi: 'Koska sosiaalisessa mediassa ja kuvissa näytetään vain siistejä koteja.',
+            },
+          ],
+        },
+      ],
+    },
+    speaking: {
+      groupIntro: {
+        instructionsFi: 'Keskustele asumisesta parin tai pienen ryhmän kanssa. Puhukaa:',
+        questions: [
+          'Millaisia teidän nykyiset asuinalueenne ovat?',
+          'Missä ja miten asuisitte, jos voisitte vapaasti valita?',
+          'Mikä teille on tärkeää, kun valitsette asuinpaikkaa?',
+        ],
+      },
+      practiceLongTask: {
+        id: 'speaking-practice-1',
+        titleFi: 'Asuinpaikastani kertominen',
+        titleEn: 'Telling about my home',
+        prepSeconds: 60,
+        speakSeconds: 180,
+        questions: [
+          'Missä asut? Millainen paikka se on?',
+          'Mitä hyviä ja huonoja puolia asuinpaikassasi on?',
+          'Mitä asuinalueesi ympäristössä on?',
+        ],
+      },
+      practiceSituationalTasks: [
+        {
+          id: 'speaking-practice-situation-1',
+          scenarioFi: 'Naapurisi koira haukkuu päivällä, kun omistaja on poissa. Se häiritsee sinua. Mene naapurin ovelle ja kerro asiasta.',
+          seconds: 30,
+          modelAnswerFi:
+            'Moi! Mä asun tässä naapurissa. Teidän koira haukkuu joka päivä monta tuntia putkeen, ja se häiritsee meidän lasten päiväunia tosi pahasti. Mä yritän yleensä opiskella silloin, kun lapset nukkuvat, eikä sekään oikein onnistu. Onkohan teidän koiralla kaikki hyvin?',
+        },
+        {
+          id: 'speaking-practice-situation-2',
+          scenarioFi: 'Vuokraat asuntoa, ja astianpesukone on rikki. Soita vuokranantajalle.',
+          seconds: 30,
+          modelAnswerFi:
+            'Moi, tässä Ellen Levy Postitie 3 B:stä. Meidän tiskikone on valitettavasti rikki, vesi vaan jää sinne pohjalle eikä poistu koneesta kunnolla. Olisikohan sitä mahdollista korjata?',
+        },
+        {
+          id: 'speaking-practice-situation-3',
+          scenarioFi: 'On satanut paljon lunta. Tehdessäsi lumitöitä tapaat naapurin, joka tekee samaa. Kommentoi säätä.',
+          seconds: 10,
+          modelAnswerFi: 'Moikka! Kylläpä tätä lunta nyt tulee ja tulee. Mä kyllä tykkään lumesta, mutta tää alkaa jo olla vähän liikaa.',
+        },
+        {
+          id: 'speaking-practice-situation-4',
+          scenarioFi: 'Vessasi on rikki. Soita putkimiehelle, kuvaile ongelma ja pyydä häntä tulemaan.',
+          seconds: 30,
+          modelAnswerFi:
+            'Saara Nykänen täällä hei. Meidän vessa on mennyt jotenkin rikki. Vettä valuu lattialle joka kerta, kun vessa vedetään. Pääsisitkö sä katsomaan sitä? Millaisella aikataululla voisi onnistua?',
+        },
+        {
+          id: 'speaking-practice-situation-5',
+          scenarioFi: 'Tapaat naapurin porraskäytävässä. Hän tervehtii ja valittaa taas rikkinäisestä lasista ulko-ovessa. Vastaa.',
+          seconds: 20,
+          modelAnswerFi: 'Moikka! Joo, tosi ärsyttävää, että kaikki pitää aina rikkoa. Juurihan se korjattiin!',
+        },
+      ],
+      dontMemorizeTip: {
+        title: 'VINKKI: Älä opettele mallivastauksia ulkoa',
+        body: [
+          'Et voi opetella mallivastauksia ulkoa – sinun täytyy vastata itse, omin sanoin.',
+          'Testissä et onnistu pelkästään vastauksia ulkoa opettelemalla. Harjoittele aina vastaamista omin sanoin!',
+        ],
+      },
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Elämäni paras koti',
+          titleEn: "The best home I've ever lived in",
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: ['Missä se on?', 'Milloin asuit siellä?', 'Millainen paikka se on?', 'Miksi se on mielestäsi paras koti?', 'Mikä tekee kodista hyvän?'],
+        },
+        {
+          id: 'speaking-test-2',
+          titleFi: 'Hyvä asuinalue',
+          titleEn: 'A good residential area',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Mitä alueella täytyy olla?',
+            'Mitä palveluita hyvällä asuinalueella on?',
+            'Millaiset liikenneyhteydet ovat hyvät?',
+            'Mikä tekee asuinalueesta hyvän?',
+            'Mikä on sinulle tärkeää, kun valitset asuinaluetta?',
+          ],
+        },
+        {
+          id: 'speaking-test-3',
+          titleFi: 'Naapurit',
+          titleEn: 'Neighbors',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Tunnetko naapurisi?',
+            'Onko sinulle tärkeää tutustua naapureihin?',
+            'Onko sinulla joskus ollut erityisen hyvä tai erityisen huono naapuri?',
+            'Mitä taloyhtiöt voivat tehdä, jotta naapurit oppisivat tuntemaan toisensa paremmin?',
+          ],
+        },
+      ],
+      conversationTasks: [
+        {
+          id: 'speaking-conv-1',
+          titleFi: 'Asunnon vuokraaminen',
+          scenarioFi: 'Lähdet kolmen kuukauden matkalle ja etsit vuokralaista. Joku soittaa kysyäkseen asiasta.',
+          turns: [
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 30 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 15 },
+            { instructionFi: 'Hyvästele.', seconds: 10 },
+          ],
+        },
+        {
+          id: 'speaking-conv-2',
+          titleFi: 'Saunavuoron varaaminen',
+          scenarioFi: 'Asut kerrostalossa ja haluat varata saunavuoron. Soita isännöitsijälle.',
+          turns: [
+            { instructionFi: 'Esittele itsesi ja kerro asiasi.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
+            { instructionFi: 'Kerro, minkä päivän haluat.', seconds: 15 },
+            { instructionFi: 'Vastaa kysymykseen kieltävästi ja kerro miksi.', seconds: 20 },
+            { instructionFi: 'Kerro, minkä ajan haluat.', seconds: 15 },
+            { instructionFi: 'Vastaa kysymykseen ja kysy saunan hintaa.', seconds: 20 },
+            { instructionFi: 'Kysy jokin kysymys.', seconds: 30 },
+            { instructionFi: 'Kiitä ja lopeta puhelu.', seconds: 10 },
+          ],
+        },
+      ],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1-1',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Tapaat naapurin pihalla. Hän kysyy, tuletko lauantain talkoisiin. Vastaa.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-1-2',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Olet juuri muuttanut uuteen asuntoon ja haluat tietää, miten kerhohuoneen voi varata. Kysy naapurilta.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-3',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Olet varannut pesutuvan, mutta kun saavut, naapuri on jo siellä pesemässä pyykkiä. Kerro, mitä ajattelet ja mitä toivoisit hänen tekevän.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-4',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Etsit uutta vuokra-asuntoa ja löysit kiinnostavan ilmoituksen. Soita omistajalle ja kerro hieman itsestäsi.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-5',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Sinulla on juhlat. Naapuri soittaa ovikelloa ja valittaa metelistä. Pyydä kohteliaasti anteeksi.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-1',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Huomaat, että ikääntynyt naapurisi on loukannut itsensä ja liikkuu vaikeasti. Kysy, tarvitseeko hän apua, ja tarjoudu tekemään jotain hyödyllistä.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-2',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Huomaat, että roska-astiat ovat aivan täynnä. Soita jätehuoltoon.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-3',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Naapuri on hankkinut lapselleen pianon. He kysyvät, häiritseekö harjoittelun ääni sinua. Vastaa.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-4',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Naapuri remontoi, ja meteli alkaa hyvin aikaisin aamulla. Soita hänen ovikelloaan ja valita metelistä.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-5',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Naapuri on pysäköinyt autonsa väärään paikkaan. Pyydä häntä siirtämään sen.',
+          seconds: 30,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Paras tapa asua',
+          titleEn: 'The best way to live',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Mikä on mielestäsi paras tapa asua?',
+            'Mitä hyviä ja huonoja puolia on kerrostalossa?',
+            'Mitä hyviä ja huonoja puolia on omakotitalossa?',
+            'Haluaisitko asua mieluummin maalla vai kaupungissa?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-2',
+          titleFi: 'Asumisen hinta',
+          titleEn: 'The cost of housing',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Onko Suomessa asuminen mielestäsi liian kallista?',
+            'Kuinka paljon rahaa itse haluaisit käyttää asumiseen kuukaudessa?',
+            'Millaisia asumisen kulut ovat muissa sinulle tutuissa maissa?',
+            'Pitäisikö ihmisten saada valtiolta asumistukea?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-3',
+          titleFi: 'Omistusasuminen ja lapsiperheiden asuminen',
+          titleEn: 'Owner-occupied housing and families with children',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Valitse A tai B.'],
+          subChoices: [
+            {
+              label: 'A. Kannattaako ostaa oma asunto?',
+              questions: [
+                'Mitä hyviä ja huonoja puolia on omistusasumisessa?',
+                'Mitä hyviä ja huonoja puolia on vuokra-asumisessa?',
+                'Asutko itse omistusasunnossa vai vuokralla?',
+                'Missä elämäntilanteessa kannattaa ostaa oma asunto?',
+              ],
+            },
+            {
+              label: 'B. Lapsiperhe ei voi asua kaupungin keskustassa',
+              questions: [
+                'Millainen on hyvä asuinpaikka lapsiperheelle?',
+                'Voiko lapsiperhe asua kaupungin keskustassa?',
+                'Mitä hyviä ja huonoja puolia keskustassa asumisessa on lapsiperheelle?',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'asuminen', en: 'living / housing' },
+      { fi: 'koti', en: 'home' },
+      { fi: 'asunto', en: 'apartment' },
+      { fi: 'kerrostalo', en: 'apartment building' },
+      { fi: 'rivitalo', en: 'row house / townhouse' },
+      { fi: 'omakotitalo', en: 'detached house' },
+      { fi: 'vuokrata', en: 'to rent' },
+      { fi: 'ostaa', en: 'to buy' },
+      { fi: 'vuokra', en: 'rent' },
+      { fi: 'vastike', en: 'maintenance fee' },
+      { fi: 'isännöitsijä', en: 'property manager' },
+      { fi: 'huoltoyhtiö', en: 'maintenance company' },
+      { fi: 'naapuri', en: 'neighbor' },
+      { fi: 'talkoot', en: 'volunteer work together' },
+      { fi: 'kellari', en: 'basement' },
+      { fi: 'parveke', en: 'balcony' },
+      { fi: 'sauna', en: 'sauna' },
+      { fi: 'keittiö', en: 'kitchen' },
+      { fi: 'olohuone', en: 'living room' },
+      { fi: 'makuuhuone', en: 'bedroom' },
+      { fi: 'kylpyhuone', en: 'bathroom' },
+      { fi: 'remontti', en: 'renovation' },
+      { fi: 'hissi', en: 'elevator' },
+      { fi: 'piha', en: 'yard' },
+      { fi: 'autotalli', en: 'garage' },
+      { fi: 'pesutupa', en: 'laundry room' },
+    ],
+    usefulPhrases: [
+      { fi: 'Asun...', en: 'I live in...' },
+      { fi: 'Olen muuttanut...', en: 'I have moved to...' },
+      { fi: 'Minulla on asunto...', en: 'I have an apartment...' },
+      { fi: 'Haluaisin vuokrata...', en: 'I would like to rent...' },
+      { fi: 'Asunnossa on...', en: 'The apartment has...' },
+      { fi: 'Kotona on...', en: 'At home there is...' },
+      { fi: 'Naapurini on...', en: 'My neighbor is...' },
+      { fi: 'Taloyhtiössä on...', en: 'The housing company has...' },
+      { fi: 'Tarvitsen huoltomiehen.', en: 'I need a maintenance man.' },
+      { fi: 'Haluaisin ilmoittaa viasta.', en: 'I would like to report a fault.' },
+      { fi: 'Milloin pääsen katsomaan?', en: 'When can I come to view (it)?' },
+    ],
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {

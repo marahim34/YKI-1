@@ -349,6 +349,8 @@ export interface YkiWritingPrompt {
   instructionsFi: string
   bulletsFi?: string[]
   starterFi?: string
+  exampleTitleFi?: string
+  exampleFi?: string
 }
 
 export interface YkiOpinionTopic {
@@ -383,6 +385,8 @@ export interface YkiSituationalTask {
   id: string
   scenarioFi: string
   seconds: number
+  setLabel?: string
+  modelAnswerFi?: string
 }
 
 export interface YkiSubtestReading {
@@ -396,7 +400,7 @@ export interface YkiSubtestWriting {
   freewrite: YkiFreewriteTask
   groupIntro: YkiGroupTask
   practiceTasks: YkiWritingPrompt[]
-  practiceShareTable: { category: string; hobbyBuddy: string; neighbors: string; both: string }[]
+  practiceShareTable?: { category: string; hobbyBuddy: string; neighbors: string; both: string }[]
   openingClosingTip: YkiTipBox
   informalTasks: YkiWritingPrompt[]
   formalTasks: YkiWritingPrompt[]
@@ -405,7 +409,8 @@ export interface YkiSubtestWriting {
 
 export interface YkiSubtestListening {
   tip: YkiTipBox
-  podcastWarmup: { instructionsFi: string; keywords: string[] }
+  podcastWarmup?: { instructionsFi: string; keywords: string[] }
+  repeatSentences?: { instructionsFi: string; sentences: string[] }
   practicePassages: YkiPassage[]
   testPassages: YkiPassage[]
 }
@@ -418,12 +423,14 @@ export interface YkiAgeVocabTip {
 }
 
 export interface YkiSubtestSpeaking {
-  tip: YkiTipBox
-  selfIntro: YkiSpeakingSelfIntro
+  tip?: YkiTipBox
+  selfIntro?: YkiSpeakingSelfIntro
   groupIntro: YkiGroupTask
-  truthTip: YkiTipBox
-  practiceLongTask: YkiSpeakingLongTask & { reflectionPrompt: string; speakDontWriteTip: YkiTipBox }
-  conversationVocab: { fi: string; en: string }[]
+  truthTip?: YkiTipBox
+  practiceLongTask?: YkiSpeakingLongTask & { reflectionPrompt?: string; speakDontWriteTip?: YkiTipBox }
+  practiceSituationalTasks?: YkiSituationalTask[]
+  dontMemorizeTip?: YkiTipBox
+  conversationVocab?: { fi: string; en: string }[]
   testLongTasks: YkiSpeakingLongTask[]
   conversationTasks: YkiConversationTask[]
   situationalTasks: YkiSituationalTask[]
