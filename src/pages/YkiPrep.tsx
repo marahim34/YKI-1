@@ -297,7 +297,7 @@ export default function YkiPrep() {
             )}
           </div>
 
-          <YkiTip tip={chapter.writing.openingClosingTip} />
+          {chapter.writing.openingClosingTip && <YkiTip tip={chapter.writing.openingClosingTip} />}
 
           <div>
             <h2 className="mb-2 text-sm font-semibold text-slate-800">Testaa: Epämuodollinen viesti</h2>

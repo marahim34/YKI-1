@@ -3020,6 +3020,795 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       ],
     },
   },
+  {
+    id: 'yki-ch5',
+    number: 5,
+    titleFi: 'Matkustaminen',
+    titleEn: 'Traveling',
+    pages: '138-165',
+    theme: 'Matkustaminen, liikenne, turismi, reitit ja matkailuun liittyvät palvelut',
+    reading: {
+      vocabWarmup: {
+        instructionsFi: 'Osaatko liikenteeseen liittyvää sanastoa? Selvitä, mitä seuraavat sanat tarkoittavat.',
+        items: [
+          { fi: 'juna', en: 'train' },
+          { fi: 'bussi', en: 'bus' },
+          { fi: 'lentokone', en: 'airplane' },
+          { fi: 'laiva', en: 'ship/ferry' },
+          { fi: 'auto', en: 'car' },
+          { fi: 'polkupyörä', en: 'bicycle' },
+          { fi: 'metro', en: 'subway' },
+          { fi: 'raitiovaunu', en: 'tram' },
+          { fi: 'lippu', en: 'ticket' },
+          { fi: 'aikataulu', en: 'schedule' },
+          { fi: 'asema', en: 'station' },
+          { fi: 'lentokenttä', en: 'airport' },
+          { fi: 'satama', en: 'harbor/port' },
+          { fi: 'matkustaa', en: 'to travel' },
+          { fi: 'matka', en: 'trip/journey' },
+          { fi: 'reitti', en: 'route' },
+          { fi: 'vaihto', en: 'transfer/change' },
+          { fi: 'myöhässä', en: 'late/delayed' },
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Eksyminen vaelluksella tai retkellä',
+          titleEn: 'Getting Lost While Hiking',
+          textFi:
+            'Jos huomaat, että olet eksynyt tai olet epävarma sijainnistasi, rauhoitu, syö ja juo ensin kunnolla ja varmista, että olet mahdollisimman hyvävointinen. Mikäli on pimeää tai huono ilma, leiriydy ja nuku hyvät yöunet ennen kuin yrität päästä takaisin kartalle. Levänneenä ja kylläisenä teet parempia päätöksiä.\n\nSiinä tapauksessa, ettet levon ja syömisenkään jälkeen löytäisi takaisin reitillesi, on tärkeää, että mahdollinen etsintäpartio tai pelastushenkilöstö tietää, mistä etsiä. Autiotupien vieraskirjat ovat tärkeitä tiedonlähteitä siitä, missä olet viimeksi varmuudella ollut. Muista siis merkitä vieraskirjaan oma nimesi ja päivämäärä, vaikka pysähtyisit vain kahville ja lämmittelemään etkä jäisi tupaan yöksi.\n\nOn myös tärkeää jutella mahdollisten vastaantulijoiden kanssa ja kertoa heille, mistä olet tulossa ja mihin olet menossa, jotta hekin voivat tarvittaessa auttaa etsinnöissä. Muista myös aina kertoa jollekin ihmiselle ennen matkaasi mahdollisimman tarkasti reittisi ja päivämäärä, jolloin oletat saapuvasi määränpäähän. Näin hän voi tarvittaessa hälyttää apua.',
+          mcq: [
+            {
+              id: 'rp1-q1',
+              question: 'Jos eksyy metsässä,',
+              options: ['kannattaa levätä ja pitää evästauko', 'on syytä mennä nopeasti autiotupaan', 'on paras jatkaa matkaa pysähtymättä'],
+              correctIndex: 0,
+              explanation: '"rauhoitu, syö ja juo ensin kunnolla" (calm down, eat and drink properly first).',
+            },
+            {
+              id: 'rp1-q2',
+              question: 'Kun vierailee autiotuvassa, on tärkeää',
+              options: ['syödä hyvin ja juoda kahvia', 'kuivata märät vaatteet', 'kirjoittaa vieraskirjaan'],
+              correctIndex: 2,
+              explanation: '"Muista siis merkitä vieraskirjaan oma nimesi" (remember to write your name in the guestbook).',
+            },
+            {
+              id: 'rp1-q3',
+              question: 'Jos retken aikana tapaat muita, kerro heille,',
+              options: ['mitä sinulle kuuluu', 'mikä on lähtöpisteesi ja määränpääsi', 'mistä olet kotoisin'],
+              correctIndex: 1,
+              explanation: '"kertoa heille, mistä olet tulossa ja mihin olet menossa" (tell them where you\'re coming from and where you\'re going).',
+            },
+            {
+              id: 'rp1-q4',
+              question: 'Ennen matkalle lähtöä kerro jollekin,',
+              options: ['mikä on matkasuunnitelmasi', 'millä ja miten matkustat', 'kenen kanssa olet matkalla'],
+              correctIndex: 0,
+              explanation: '"kertoa jollekin mahdollisimman tarkasti reittisi" (tell someone your route as precisely as possible).',
+            },
+          ],
+        },
+        {
+          id: 'reading-practice-2',
+          titleFi: 'Maaseudun bussiliikenne loppuu',
+          titleEn: 'Rural Bus Traffic Is Ending',
+          source: 'Outi Kokko, is.fi 24.10.2014 (lyhennetty ja muokattu)',
+          textFi:
+            'Maaseudun bussiliikenteen tulevaisuus on karu. Koiviston Auton johtaja Antti Norrlin uskoo, että bussiliikenne maaseudulla loppuu pikkuhiljaa kokonaan. Kuntaliiton insinöörin Silja Siltalan mukaan tulevaisuudessa bussireittejä ja -vuoroja karsitaan entistä enemmän ja yhä useammalla kylällä kulkevat pian vain koulukyydit ja palvelulinjat.\n\nKunnissa pyritään järjestämään kutsubusseja ja muuta joukkoliikennettä ainakin niille, joille se lakisääteisesti kuuluu. Näitä ovat esimerkiksi koululaiset, vanhemmat ja eräät muut vammaispalvelu- ja sosiaalihuoltolakien määrittelemät ryhmät. Muun muassa vanhuksia varten yli 250 kunnassa on järjestetty palvelulinjoja. Sen sijaan terveen, työikäisen aikuisen ihmisen kulkemista laki ei turvaa.\n\nPitkän matkan bussit kulkevat vastaisuudessakin, mutta reitit ja aikataulut hiotaan mahdollisimman kannattaviksi. Päätetäit huristavat pikavuorot eivät poikkea pikkuteille eivätkä pysähdy joka kirkonkylässä.\n\nKoska haja-asutusalueen maanteillä on vähän bussinkäyttäjiä, lipputulot eivät riitä kattamaan kustannuksia ja liikennettä on tuettu julkisin varoin. Kun kustannukset nousevat, rahat eivät enää riitä kaikkeen entiseen ja siksi palvelut ja liikenneyhteydet väkisinkin heikkenevät. Tämän vuoksi maalla ei enää kovin helposti pärjää ilman autoa.',
+          mcq: [
+            {
+              id: 'rp2-q1',
+              question: 'Mitkä vähenevät maaseudulla?',
+              options: ['koulubussit', 'bussivuorot', 'palvelulinjat'],
+              correctIndex: 1,
+              explanation: '"bussireittejä ja -vuoroja karsitaan" (bus routes and schedules are being cut).',
+            },
+            {
+              id: 'rp2-q2',
+              question: 'Kenelle kunnat järjestävät joukkoliikennettä?',
+              options: ['vanhemmille', 'työntekijöille', 'ikäihmisille'],
+              correctIndex: 0,
+              explanation: '"koululaiset, vanhemmat ja eräät muut... ryhmät" (pupils, the elderly and certain other groups).',
+            },
+            {
+              id: 'rp2-q3',
+              question: 'Pikavuorobussit kulkevat pääasiassa',
+              options: ['pienillä teillä', 'kyläteillä', 'pääteillä'],
+              correctIndex: 2,
+              explanation: '"eivät poikkea pikkuteille" (don\'t deviate onto small roads).',
+            },
+            {
+              id: 'rp2-q4',
+              question: 'Miksi maaseudun liikenneyhteydet huononevat?',
+              options: ['Matkustajia on liian vähän.', 'Kustannuksia on liian vähän.', 'Omia autoja on liian vähän.'],
+              correctIndex: 0,
+              explanation: '"haja-asutusalueen maanteillä on vähän bussinkäyttäjiä" (on rural roads there are few bus users).',
+            },
+          ],
+        },
+        {
+          id: 'reading-practice-3',
+          titleFi: 'Minna kiertää maailmaa junalla',
+          titleEn: 'Minna Travels the World by Train',
+          source: 'Marjoanne Zitting, iltalehti.fi 23.1.2021 (lyhennetty ja muokattu)',
+          textFi:
+            'Minna Perokorpi-Sulin ja hänen miehensä menettivät sydämensä junamatkailulle jokunen vuosi sitten. Nuorempana kumpikaan ei päässyt interreilaamaan, mutta nyt 54-vuotias Minna ja hänen melkein eläkeikäinen puolisonsa matkustavat paljon junalla.\n\nEnnen pariskunta reissasi toisella tavalla: lasten ollessa pieniä he kävivät rantalomilla ja vierastivat kaupunkikohteita. Nyt Minna kokee, että rantalomat on nähty.\n\n"Junalla matkustaessa pääsee kokemaan niin paljon enemmän", hän kertoo.\n\n"En halua ajaa itse autolla isoissa kaupungeissa, ja myös ekologisuus on yksi syy suosia junaa", hän sanoo.\n\nEnnen kaikkea junalla liikkuminen Euroopassa on Minnan mukaan helppoa. Yhteyksiä löytyy hyvin, eikä nopeuskaan häviä paljoa lentämiselle. Junalla pääsee kaupungin keskustaan, eikä asemalle tarvitse lentokentän tavoin tulla tunteja ennen lähtöä.\n\n"Matkustus junassa on mukavampaa kuin lentokoneessa, ja matkatavarollekin on hyvin tilaa. Aikataulut löytyvät hyvin netistä, lippujen ostaminen on helppoa ja junat ovat hyvässä kunnossa", Minna kertoo.\n\nMinnan mukaan junalla liikkuminen Euroopassa on siis edullista, helppoa ja mukavaa. Löytyykö matkustustavasta mitään moitittavaa?\n\n"Ravintolavaunujen tarjonta ei ole samalla tasolla kuin suomalaisissa junissa", hän myöntää.\n\n"Mukaan kannattaa siis aivan ehdottomasti pakata omat eväät!"',
+          trueFalse: [
+            {
+              id: 'rp3-tf1',
+              statementFi: 'Minna on harrastanut junamatkailua nuoresta asti.',
+              answer: false,
+              explanation: '"Nuorempana kumpikaan ei päässyt interreilaamaan" (neither of them got to Interrail when younger).',
+            },
+            {
+              id: 'rp3-tf2',
+              statementFi: 'Minna matkustaa junalla mieluiten rantalomille.',
+              answer: false,
+              explanation: '"Ennen pariskunta reissasi... rantalomilla... Nyt Minna kokee, että rantalomat on nähty."',
+            },
+            {
+              id: 'rp3-tf3',
+              statementFi: 'Minnalle on tärkeää, että matkailu on ympäristöystävällistä.',
+              answer: true,
+              explanation: '"ekologisuus on yksi syy suosia junaa" (ecology is one reason to prefer the train).',
+            },
+            {
+              id: 'rp3-tf4',
+              statementFi: 'Minnan mielestä junalla matkustaminen on yksinkertaista.',
+              answer: true,
+              explanation: '"junalla liikkuminen Euroopassa on Minnan mukaan helppoa" (traveling by train in Europe is easy in Minna\'s opinion).',
+            },
+            {
+              id: 'rp3-tf5',
+              statementFi: 'Minnan mielestä junassa saa aina hyvää ruokaa.',
+              answer: false,
+              explanation: '"Ravintolavaunujen tarjonta ei ole samalla tasolla kuin suomalaisissa junissa."',
+            },
+          ],
+        },
+        {
+          id: 'reading-practice-4',
+          titleFi: 'Hae tuetulle lomalle',
+          titleEn: 'Apply for a Supported Holiday',
+          source: 'Maaseudun Terveys- ja Lomahuolto ry',
+          textFi:
+            'Maaseudun Terveys- ja Lomahuolto ry järjestää tuettua lomatoimintaa eri kohderyhmille. Voit hakea tuettua lomaa, jos asut Suomessa vakituisesti eikä sinulla ole varaa maksaa koko lomaa itse. Jos sinulla on terveydellisiä tai sosiaalisia haasteita, ne ovat myös perusteita loman tarpeelle. Voit hakea tuettua lomaa yksin, perheen tai ystävän kanssa.\n\nTee hakemus verkossa tai täytä paperinen hakemus. Voit tilata paperisen hakemuksen ja lomaesitteen myös puhelinpalvelustamme.\n\nKenelle tuettu loma voidaan myöntää? Tuetut lomat on suunnattu ihmisille, joiden olisi muuten taloudellisesti haastavaa tai mahdotonta päästä lomalle. Taloudellisia perusteluita loman tarpeelle ovat esimerkiksi pienet tulot, isot velat, sairaudenhoitokulut tai asumiskulut.\n\nLoman myöntämiseen vaikuttaa myös aikaisempi myönnetty lomatuki. Tuettua lomaa ei myönnetä samalle hakijalle joka vuosi tai toistuvasti. Ensi kertaa lomaa hakevat ovat etusijalla.\n\nSosiaalisia perusteita loman tarpeelle ovat esimerkiksi työttömyys, lomautus, yksinäisyys, omaishoitajuus, perheongelmat tai vaikea elämäntilanne. Terveydellisiä perusteita ovat puolestaan vammaisuus tai fyysiset ja psyykkiset sairaudet.\n\nLoman omavastuuosuus aikuisilta ja 17 vuotta täyttäneiltä on 125 € / 5 vrk. Lomailija maksaa itse matkakulunsa lomakohteeseen. Alle 17-vuotiaat lomailevat maksutta. Erityistapauksissa on omavastuusta mahdollista saada huojennusta.\n\nLomaan sisältyy majoitus kahden hengen huoneissa tai perhelomilla perhekoon mukaisissa huoneissa/huoneistoissa, täysihoitoruokailut (aamainen, lounas, päivällinen sekä perhelomilla iltapala) ja lomaohjelma.',
+          open: [
+            {
+              id: 'rp4-o1',
+              questionFi: 'Ketkä voivat hakea tuettua lomaa? Mainitse kaksi asiaa.',
+              sampleAnswerFi: 'Suomessa vakituisesti asuvat, joilla ei ole varaa maksaa lomaa itse, tai joilla on terveydellisiä/sosiaalisia haasteita.',
+            },
+            {
+              id: 'rp4-o2',
+              questionFi: 'Miten tuettua lomaa haetaan? Mainitse kaksi eri tapaa.',
+              sampleAnswerFi: 'Verkossa tai paperisella hakemuksella. Paperisen voi tilata puhelinpalvelusta.',
+            },
+            {
+              id: 'rp4-o3',
+              questionFi: 'Millaisia taloudellisia ongelmia tuetun loman saajilla usein on? Mainitse kaksi asiaa.',
+              sampleAnswerFi: 'Pienet tulot, isot velat, sairaudenhoitokulut tai asumiskulut.',
+            },
+            {
+              id: 'rp4-o4',
+              questionFi: 'Millaisia hakijan sosiaalisia tai terveydellisiä ongelmia lomapäätöksessä otetaan huomioon? Mainitse kolme asiaa.',
+              sampleAnswerFi: 'Työttömyys, lomautus, yksinäisyys, omaishoitajuus, perheongelmat, vaikea elämäntilanne, vammaisuus, sairaudet.',
+            },
+            {
+              id: 'rp4-o5',
+              questionFi: 'Mitä kuluja yli 17-vuotias loman saaja joutuu maksamaan itse? Mainitse kaksi asiaa.',
+              sampleAnswerFi: 'Omavastuuosuus (125 € / 5 vrk) ja matkakulut lomakohteeseen.',
+            },
+            {
+              id: 'rp4-o6',
+              questionFi: 'Mitä kaikkea lomaan kuuluu? Mainitse vähintään kaksi asiaa.',
+              sampleAnswerFi: 'Majoitus, täysihoitoruokailut (aamiainen, lounas, päivällinen) ja lomaohjelma.',
+            },
+          ],
+        },
+      ],
+      testPassages: [],
+    },
+    writing: {
+      tip: {
+        title: 'VINKKI: Luonnostelu',
+        body: [
+          'Kun luonnostelet, unohda itsekritiikki. Anna ajatusten virrata vapaasti. Kirjoita vain yksittäisiä sanoja ja keskeneräisiä ideoita.',
+          'Luonnos on kuin muistilista siitä, mitä haluat sanoa ja mitä sanoja/fraaseja tarvitset.',
+        ],
+      },
+      freewrite: {
+        instructionsFi: 'Osaatko reklamaation tekemisen sanastoa? Selvitä, mitä seuraavat sanat tarkoittavat.',
+        rules: [],
+        topics: [
+          'reklamaatio (complaint)',
+          'valitus (complaint)',
+          'hyvitys (compensation)',
+          'korvaus (compensation)',
+          'viallinen (faulty/defective)',
+          'palautus (return)',
+          'kuitti (receipt)',
+          'takuu (warranty)',
+          'asiakaspalvelu (customer service)',
+          'virhe (error/mistake)',
+          'pettymys (disappointment)',
+          'haitta (inconvenience)',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Keskustele reklamaatiokokemuksista luokkatovereiden kanssa:',
+        questions: [
+          'Kertokaa toisillenne jostakin tilanteesta, jossa tuote tai palvelu ei ollut sellainen kuin olisi pitänyt.',
+          'Valititteko asiasta? Miten valitukseen vastattiin?',
+          'Jos ette valittaneet, kertokaa miten valittaisitte nyt.',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Luonnostele ja kirjoita valitusviesti lentoyhtiölle',
+          instructionsFi:
+            'Olet matkustanut lentokoneella lomamatkalle. Lentomatkalla sait tylyä ja huonoa palvelua, ja lisäksi lento oli myöhässä. Kirjoita valitusviesti lentoyhtiölle ja kerro, miten asia pitäisi sinun mielestäsi korjata.',
+          bulletsFi: [
+            'Millaisesta viestistä on kyse? (Valitusviesti)',
+            'Miksi lähetät viestin ja kenelle? (Lentoyhtiölle)',
+            'Mitä haluat ja ehdotat? (Korvausta)',
+          ],
+          exampleTitleFi: 'Luonnoksen tarkistuslista:',
+          exampleFi:
+            'Oma nimi ja yhteystiedot\nLennon tiedot (päivämäärä, numero, reitti)\nHuono palvelu\nMyöhästyminen\nToivottu korvaus\n\nAloita: "Hei, [yhtiön nimi]." Kerro selkeästi lennon tiedot ja ongelma. Ehdota, miten ongelma voitaisiin korjata. Lopeta: "Ystävällisin terveisin" tai "Terveisin".',
+          sampleFi:
+            'Hei!\n\nMatkustin lentoyhtiöllänne lennolla [flight number] [date] [route]. Valitettavasti lentomatkanne oli erittäin epämiellyttävä. Lennon henkilökunta oli tylyä ja palvelu oli huonoa. Lisäksi lento oli myöhässä yli kaksi tuntia, mikä aiheutti minulle ongelmia.\n\nToivoisin saavani hyvitystä huonosta palvelusta ja myöhästymisestä.\n\nYstävällisin terveisin,\n[Your name]',
+        },
+      ],
+      informalTasks: [
+        {
+          id: 'writing-test-informal-1',
+          titleFi: 'Viesti ystävälle',
+          instructionsFi: 'Matkustit vahingossa ilman lippua ja sait sakon. Kerro ystävällesi, miten tämä tapahtui ja mitä sitten kävi.',
+        },
+        {
+          id: 'writing-test-informal-2',
+          titleFi: 'Avunpyyntö sukulaiselle',
+          instructionsFi:
+            'Olet menossa ulkomaille ja tarvitset matkavakuutuksen. Eri vakuutusten vertailu on vaikeaa, koska et ymmärrä ehtoja. Kirjoita ystävälle/sukulaiselle ja pyydä apua.',
+        },
+        {
+          id: 'writing-test-informal-3',
+          titleFi: 'Kiitosviesti naapurille',
+          instructionsFi:
+            'Lapsesi huomasi bussiin noustessa, ettei matkakortilla ollut saldoa. Samassa bussissa ollut naapuri osti ystävällisesti lapsellesi lipun. Kirjoita kiitosviesti.',
+        },
+        {
+          id: 'writing-test-informal-4',
+          titleFi: 'Kysymys kaverille',
+          instructionsFi:
+            'Matkustat viikonlopuksi toiseen kaupunkiin. Haluaisit kokeilla kotimajoituspalvelua, mutta et ole käyttänyt sitä aiemmin. Kysy neuvoa kaverilta, joka matkustaa paljon.',
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-test-formal-1',
+          titleFi: 'Viesti hotelliin',
+          instructionsFi:
+            'Yövyit hotellissa ja unohdit jotain tärkeää. Kirjoita viesti, jossa kerrot, milloin olit siellä ja mitä unohdit. Kuvaile esine ja miten haluaisit saada sen takaisin.',
+        },
+        {
+          id: 'writing-test-formal-2',
+          titleFi: 'Kysymys lentoyhtiölle',
+          instructionsFi:
+            'Olet varaamassa lentoja perheellesi, ja teillä on kissa. Nettisivulla ei voi varata lentoa lemmikille. Kysy, miten pitäisi toimia.',
+        },
+        {
+          id: 'writing-test-formal-3',
+          titleFi: 'Reklamaatio laivayhtiölle',
+          instructionsFi: 'Olit viikonloppuristeilyllä ystävien kanssa. Et ollut tyytyväinen hyttiin. Kirjoita reklamaatio ja ehdota hyvitystä.',
+        },
+        {
+          id: 'writing-test-formal-4',
+          titleFi: 'Viesti bussiyhtiölle',
+          instructionsFi:
+            'Matkustat päivittäin kahdella eri bussilla. Aikataulut eivät kohtaa hyvin, mikä aiheuttaa pitkiä odotuksia. Ehdota aikataulumuutoksia.',
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Polttomoottori- ja sähköautot',
+          options: ['A. Polttomoottoriautot pitäisi kieltää', 'B. Tavallisilla ihmisillä ei ole varaa ostaa sähköautoa'],
+        },
+        {
+          id: 'writing-opinion-2',
+          titleFi: 'Turismi',
+          options: ['Tuhoaako turismi maapallon?'],
+        },
+        {
+          id: 'writing-opinion-3',
+          titleFi: 'Muita aiheita',
+          options: [
+            'Junaliput ovat liian kalliita Suomessa',
+            'Yksityisautoilijoiden pitäisi maksaa ruuhkamaksuja',
+            'Matkailu auttaa ymmärtämään muita kulttuureja',
+            'Ratikoita saatava kaikkiin isoihin kaupunkeihin',
+            'Autoilun verotuksessa ei huomioida maaseudulla asuvia',
+          ],
+        },
+      ],
+    },
+    listening: {
+      tip: {
+        title: 'VINKKI: Synonyymejä',
+        body: [
+          'YKI-testin kuuntelu- ja lukutehtävissä oikea vastaus on yleensä muotoiltu hieman eri tavalla kuin tekstissä/äänitteellä. Sinun täytyy ymmärtää, mitkä asiat tarkoittavat samaa.',
+          'Yleisiä synonyymejä: yleensä, tavallisesti, useimmiten. Aamuisin, joka aamu. Hienosti, hyvin. Alle 10 %, vähemmän kuin 10 %. Suurin osa, enemmistö. Joka toinen, puolet, 50 %.',
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Lyhyitä kuulutuksia',
+          titleEn: 'Short Announcements',
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            {
+              id: 'lp1-o1',
+              questionFi: 'Mitä juna-asemalla tapahtuu pian? (a) Yöjuna numero 1 lähtee. b) Lippuautomaatti sulkeutuu. c) Matkakeskus menee kiinni.)',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o2',
+              questionFi: 'Kuinka kauan retki kestää? (a) kaksi tuntia b) koko päivän c) ruokailuun asti)',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o3',
+              questionFi:
+                'Jos matkustajan täytyy päästä Lepokalliolle, hänen täytyy... (a) ajaa ensin Tenholaan b) vaihtaa kakkosen ratikkaan c) jäädä pois tällä tai seuraavalla pysäkillä)',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o4',
+              questionFi:
+                'Jos lentomatkustaja on menossa Malagan lennolle, hänen pitää... (a) mennä pian portille 32 b) odottaa viimeistä kuulutusta c) olla portilla viimeistään kello 7.20)',
+              sampleAnswerFi: 'Tämä vastaus riippuu kuunneltavasta äänitteestä – kirjan oma malli ei anna tähän tarkkaa vastausta.',
+            },
+            {
+              id: 'lp1-o5',
+              questionFi: 'Miten junamatkalla saa ruokaa? Mainitse kaksi asiaa.',
+              sampleAnswerFi: 'Ravintolavaunusta tai omista eväistä.',
+            },
+            {
+              id: 'lp1-o6',
+              questionFi: 'Mitä matkustajia pyydetään tekemään ja miksi?',
+              sampleAnswerFi: 'Siirtämään matkatavaroita, jotta muut pääsevät istumaan.',
+            },
+            {
+              id: 'lp1-o7',
+              questionFi: 'Mitä tässä junassa olevan täytyy tehdä, jos hän haluaa jatkaa matkaa Toukolaan?',
+              sampleAnswerFi: 'Vaihtaa toiseen junaan.',
+            },
+            {
+              id: 'lp1-o8',
+              questionFi: 'Mitä bussinkuljettaja pyytää matkustajia tekemään ja miksi?',
+              sampleAnswerFi: 'Istumaan, koska bussi lähtee.',
+            },
+          ],
+        },
+        {
+          id: 'listening-practice-2',
+          titleFi: 'Suomalaisten työmatkat',
+          titleEn: 'Finnish Commutes',
+          textFi: NO_TRANSCRIPT_NOTE,
+          mcq: [
+            {
+              id: 'lp2-q1',
+              question: 'Lähes puolet suomalaisista työmatkoista on pituudeltaan',
+              options: ['enintään 7 kilometriä', 'keskimäärin 10-50 kilometriä', 'yli 50 kilometriä'],
+              correctIndex: 0,
+              explanation: 'Vastaus: enintään 7 kilometriä. Synonyymejä: lähes puolet = melkein 50 %; enintään = korkeintaan, alle; keskimäärin = noin, suunnilleen; yli = enemmän kuin.',
+            },
+            {
+              id: 'lp2-q2',
+              question: 'Jos työmatka on korkeintaan 7 kilometriä, kaupungissa sen',
+              options: ['pyöräilee alle puolessa tunnissa', 'kulkee nopeimmin bussilla, metrolla tai ratikalla', 'voi matkustaa omalla autolla'],
+              correctIndex: 0,
+              explanation:
+                'Vastaus: pyöräilee alle puolessa tunnissa. "korkeintaan" = enintään; bussi, metro, ratikka = joukkoliikenne.',
+            },
+            {
+              id: 'lp2-q3',
+              question: 'Tilastot kertovat, että jos työmatka on 10-50 kilometriä, se matkustetaan tavallisesti',
+              options: ['polkupyörällä', 'joukkoliikenteellä', 'jalkaisin'],
+              correctIndex: 1,
+              explanation: 'Vastaus: joukkoliikenteellä. "tilastot kertovat" = tutkimusten mukaan; "tavallisesti" = yleensä.',
+            },
+          ],
+        },
+      ],
+      testPassages: [
+        {
+          id: 'listening-test-1',
+          titleFi: 'Interrail vireäille',
+          titleEn: 'Interrail for the Active',
+          textFi: NO_TRANSCRIPT_NOTE,
+          mcq: [
+            {
+              id: 'lt1-q1',
+              question: 'Kiinteähintaisella Interrail-lipulla voi',
+              options: ['tehdä vain tietyn verran matkoja', 'matkustaa rajoittamattoman ajanjakson ajan', 'matkustaa Euroopassa'],
+              correctIndex: 2,
+              explanation: 'Vastaus: matkustaa Euroopassa.',
+            },
+            {
+              id: 'lt1-q2',
+              question: 'Alennukset koskevat',
+              options: ['alle 27-vuotiaita ja yli 60-vuotiaita', 'kaikenikäisiä ihmisiä', 'vain nuoria'],
+              correctIndex: 0,
+              explanation: 'Vastaus: alle 27-vuotiaita ja yli 60-vuotiaita.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-2',
+          titleFi: 'Vietä viikonloppu Suur-Saimaalla',
+          titleEn: 'Spend the Weekend on Lake Saimaa',
+          textFi: NO_TRANSCRIPT_NOTE,
+          trueFalse: [
+            {
+              id: 'lt2-tf1',
+              statementFi: 'Lomakylä sijaitsee veden äärellä.',
+              answer: true,
+              explanation: 'Lomakylä sijaitsee veden äärellä.',
+            },
+            {
+              id: 'lt2-tf2',
+              statementFi: 'Ravintola tarjoaa kansainvälistä ruokaa ja musiikkia.',
+              answer: false,
+              explanation: 'Ravintola tarjoaa paikallista/alueellista ruokaa, ei kansainvälistä.',
+            },
+            {
+              id: 'lt2-tf3',
+              statementFi: 'Savusaunaa voi käyttää maksutta.',
+              answer: true,
+              explanation: 'Savusauna on maksuton.',
+            },
+            {
+              id: 'lt2-tf4',
+              statementFi: 'Koirat saavat majoittua kaikissa mökeissä.',
+              answer: false,
+              explanation: 'Koirat eivät saa majoittua kaikissa mökeissä.',
+            },
+          ],
+        },
+        {
+          id: 'listening-test-3',
+          titleFi: 'Marko ja Anna lomasta',
+          titleEn: "Marko and Anna's Holiday",
+          textFi: NO_TRANSCRIPT_NOTE,
+          open: [
+            {
+              id: 'lt3-o1',
+              questionFi: 'Mitä Marko teki lomalla? Mainitse vähintään kolme asiaa.',
+              sampleAnswerFi: 'Esimerkiksi: kävi ulkona, tapasi ystäviä, rentoutui.',
+            },
+            {
+              id: 'lt3-o2',
+              questionFi: 'Miksi Markon perhe ei halunnut lähteä ulkomaille?',
+              sampleAnswerFi: 'Esimerkiksi: halusivat säästää rahaa, kotimaassa oli nähtävää.',
+            },
+            {
+              id: 'lt3-o3',
+              questionFi: 'Miksi Anna halusi ulkomaille?',
+              sampleAnswerFi: 'Esimerkiksi: halusi nähdä uusia paikkoja, kaipasi lämpöä.',
+            },
+            {
+              id: 'lt3-o4',
+              questionFi: 'Millainen Annan perheen lomapaikka oli? Mainitse kaksi asiaa.',
+              sampleAnswerFi: 'Esimerkiksi: lähellä rantaa, rauhallinen.',
+            },
+            {
+              id: 'lt3-o5',
+              questionFi: 'Miksi Anna ei halua olla lomalla paljon kotona?',
+              sampleAnswerFi: 'Esimerkiksi: haluaa vaihtelua, kotona on tylsää.',
+            },
+          ],
+        },
+      ],
+    },
+    speaking: {
+      groupIntro: {
+        instructionsFi: 'Keskustelkaa matkustamisesta parin tai pienen ryhmän kanssa:',
+        questions: [
+          'Mitä kulkuvälineitä käytätte arjessanne?',
+          'Kuinka paljon matkustatte arjessanne?',
+          'Matkustatteko vapaa-ajallanne?',
+          'Miten matkustamisenne on muuttunut?',
+          'Valitkaa yksi matka ja kertokaa siitä.',
+        ],
+      },
+      phraseTable: {
+        titleFi: 'VINKKI: -ko/-kö-kysymyksen eri versiot',
+        rows: [
+          { spoken: 'Voitsä toistaa? / Voiksä toistaa?', written: 'Voitko toistaa?', en: 'Can you repeat?' },
+          { spoken: 'Voitsä toistaa?', written: 'Voit sinä toistaa?', en: 'Can you repeat? (literal)' },
+        ],
+      },
+      practiceLongTask: {
+        id: 'speaking-practice-1',
+        titleFi: 'Harjoittele spontaania puhumista',
+        titleEn: 'Practice Spontaneous Speaking',
+        prepSeconds: 30,
+        speakSeconds: 300,
+        questions: [
+          'Valitse yksi matka, jonka olet tehnyt. Se voi olla läheinen tai kaukainen: tavallinen matka kotoa töihin tai lomamatka jonnekin kauas.',
+          'Yritä puhua koko ajan ja pysyä aiheessa. On normaalia, että syntyy pitkiä taukoja ja sanoja unohtuu. Kun näin käy, palaa aiheeseen mahdollisimman pian.',
+        ],
+      },
+      practiceSituationalTasks: [
+        {
+          id: 'speaking-practice-situation-1',
+          scenarioFi:
+            'Olet vieraassa kaupungissa Suomessa ja haluat mennä linja-autoasemalle. Puhelimestasi on akku loppu, eikä sinulla ole kaupungin karttaa. Pyydä apua vastaantulijalta.',
+          seconds: 30,
+          modelAnswerFi:
+            'Hei anteeks, tota, mä tarttisin niinku vähän apua. Mulla on tota noin niin puhelimesta akku loppu eikä mulla oo karttaa, ja tää kaupunki on mulle ihan vieras. Mun pitäis löytää toi linja-autoasema. Osaisitsä auttaa? Joo, öö, niin, tää on muuten aivan ihana kaupunki!',
+        },
+      ],
+      dontMemorizeTip: {
+        title: 'VINKKI: Täytesanat',
+        body: [
+          'Täytesanat ovat pieniä sanoja, jotka ovat hyödyllisiä, kun haluat puhua sujuvasti. Ne voi jättää pois muuttamatta merkitystä. Puhe kuulostaa luonnollisemmalta ja sujuvammalta, kun käytät täytesanoja.',
+          'Yleisiä täytesanoja: öö, tota, niinku, no niin, tavallaan, tuota, tuota noin.',
+        ],
+      },
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Tärkeä matka',
+          titleEn: 'Important Trip',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Mistä mihin matkustit ja milloin?',
+            'Miksi matkustit?',
+            'Kenen kanssa matkustit?',
+            'Millainen matka oli?',
+            'Miksi matka oli sinulle tärkeä?',
+          ],
+        },
+        {
+          id: 'speaking-test-2',
+          titleFi: 'Matkustamisen merkitys minulle',
+          titleEn: 'The Meaning of Travel for Me',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Matkustatko usein vapaa-ajalla tai töissä?',
+            'Miksi yleensä matkustat?',
+            'Millä kulkuvälineellä matkustat mieluiten?',
+            'Pidätkö matkustamisesta? Miksi?',
+            'Mitä hyviä ja huonoja puolia matkustamisessa on?',
+          ],
+        },
+        {
+          id: 'speaking-test-3',
+          titleFi: 'Lomamatka, joka meni pieleen',
+          titleEn: 'Vacation That Went Wrong',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Miksi lomamatka oli epäonnistunut?',
+            'Milloin matkustit, mihin ja kenen kanssa?',
+            'Mitä ongelmia matkalla oli?',
+            'Miten ongelmat olisi voinut korjata?',
+            'Matkustaisitko tähän paikkaan uudestaan?',
+          ],
+        },
+      ],
+      conversationTasks: [
+        {
+          id: 'speaking-conv-1',
+          titleFi: 'Junalla Lappiin',
+          scenarioFi:
+            'Olet menossa Lappiin (Kolariin) perheesi kanssa ja haluat varata yöjunan isolle ryhmälle (4 aikuista, 4 lasta) ja kahdelle autolle.',
+          turns: [
+            { instructionFi: 'Kerro nimesi ja mihin kaupunkiin haluaisit matkustaa.', seconds: 15 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa, keksi itse päivä.', seconds: 20 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            { instructionFi: 'Vastaa: 4 aikuista ja 4 lasta.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
+            { instructionFi: 'Vastaa myöntävästi ja kerro, että teillä on mukana kaksi autoa.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+            { instructionFi: 'Vastaa kieltävästi ja hyvästele.', seconds: 10 },
+          ],
+        },
+        {
+          id: 'speaking-conv-2',
+          titleFi: 'Valitus hotellihuoneesta',
+          scenarioFi: 'Yövyit hotellissa etkä ole tyytyväinen huoneeseen. Mene vastaanottoon.',
+          turns: [
+            { instructionFi: 'Kerro, mikä ongelma huoneessasi on.', seconds: 30 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+            { instructionFi: 'Kiitä.', seconds: 5 },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
+          ],
+        },
+      ],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1-1',
+          setLabel: 'Tilanteet 1',
+          scenarioFi:
+            'Juoksit ehtiäksesi bussiin ja pääsit juuri ja juuri mukaan. Bussissa huomaat, ettet ole varma, oletko oikeassa bussissa, etkä pysty tarkistamaan sitä. Kysy toiselta matkustajalta.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-1-2',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Haluat käyttää kaupunkipyörää ensimmäistä kertaa. Et saa selvää, miten pyörän irrottaa. Kysy lähellä olevalta henkilöltä, joka on palauttamassa pyörää.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-1-3',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Ystäväsi lainasi autoasi. Kun saat sen takaisin, huomaat naarmun. Ystäväsi ei maininnut siitä. Kerro, mitä ajattelet.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-4',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Olet linja-autoasemalla odottamassa ja kuulet kuulutuksen. Vieressä oleva iäkäs henkilö kysyy, mitä siinä sanottiin. Selitä.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-1-5',
+          setLabel: 'Tilanteet 1',
+          scenarioFi: 'Ystäväsi suunnittelee matkaa Lappiin ja miettii, mikä vuodenaika olisi paras. Kerro, milloin itse menisit ja miksi.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-1',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Olet junassa matkalla Helsingistä Turkuun. Konduktööri tulee tarkistamaan liput. Sinulla on lippu, mutta et löydä sitä. Selitä tilanne.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-2',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Työkaverisi miettii, matkustaisiko Ouluun junalla vai lentäen. Anna neuvoja.',
+          seconds: 30,
+        },
+        {
+          id: 'speaking-situation-2-3',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Ystäväsi haluaa lainata polkupyörääsi. Kieltäydy kohteliaasti ja anna syy.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-4',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Haluat lainata ystäväsi autoa. Pyydä sitä ja selitä, miksi tarvitset sitä.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2-5',
+          setLabel: 'Tilanteet 2',
+          scenarioFi: 'Toisesta kaupungista tuleva ystävä haluaa vierailla kotikaupungissasi. Hän haluaa tietää, mitä nähdä ja tehdä. Anna neuvoja.',
+          seconds: 30,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Turismin hyvät ja huonot puolet',
+          titleEn: 'Pros and Cons of Tourism',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Käykö kotipaikkakunnallasi paljon turisteja?',
+            'Haluaisitko, että siellä kävisi enemmän tai vähemmän?',
+            'Mitä hyviä puolia turismissa on?',
+            'Miten turismi vaikuttaa yhteiskuntaan?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-2',
+          titleFi: 'Joukkoliikenteen pitäisi olla ilmaista',
+          titleEn: 'Public Transport Should Be Free',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: [
+            'Mitä kulkuvälineitä käytät itse?',
+            'Kuinka paljon liput maksavat? Onko hinta sopiva?',
+            'Mitä hyviä puolia ilmaisessa joukkoliikenteessä olisi?',
+            'Mitä huonoja puolia siinä olisi?',
+          ],
+        },
+        {
+          id: 'speaking-opinion-3',
+          titleFi: 'Omalla autolla vai polkupyörällä? / Suomi matkailumaana',
+          titleEn: 'Car or Bicycle? / Finland as a Tourist Destination',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Valitse A tai B.'],
+          subChoices: [
+            {
+              label: 'A. Omalla autolla vai polkupyörällä?',
+              questions: [
+                'Liikutko mieluummin autolla vai pyörällä?',
+                'Mitä hyviä ja huonoja puolia autoilussa on?',
+                'Mitä hyviä ja huonoja puolia pyöräilyssä on?',
+              ],
+            },
+            {
+              label: 'B. Suomi matkailumaana',
+              questions: [
+                'Oletko matkustanut Suomessa vapaa-ajalla tai työn takia?',
+                'Mikä matkakohde Suomessa on tehnyt vaikutuksen?',
+                'Mitä hyviä puolia Suomessa on matkailijan kannalta?',
+                'Mitä suomalaista matkakohdetta suosittelisit?',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'matkustaa', en: 'to travel' },
+      { fi: 'matka', en: 'trip/journey' },
+      { fi: 'juna', en: 'train' },
+      { fi: 'bussi', en: 'bus' },
+      { fi: 'lentokone', en: 'airplane' },
+      { fi: 'laiva', en: 'ship/ferry' },
+      { fi: 'auto', en: 'car' },
+      { fi: 'polkupyörä', en: 'bicycle' },
+      { fi: 'lippu', en: 'ticket' },
+      { fi: 'aikataulu', en: 'schedule' },
+      { fi: 'asema', en: 'station' },
+      { fi: 'lentokenttä', en: 'airport' },
+      { fi: 'satama', en: 'harbor' },
+      { fi: 'myöhässä', en: 'late/delayed' },
+      { fi: 'reitti', en: 'route' },
+      { fi: 'vaihto', en: 'transfer/change' },
+      { fi: 'matkavakuutus', en: 'travel insurance' },
+      { fi: 'matkatavarat', en: 'luggage' },
+      { fi: 'turismi', en: 'tourism' },
+      { fi: 'loma', en: 'holiday/vacation' },
+    ],
+    usefulPhrases: [
+      { fi: 'Milloin juna lähtee?', en: 'When does the train leave?' },
+      { fi: 'Tämä on minun paikkani.', en: 'This is my seat.' },
+      { fi: 'Olen eksynyt.', en: "I'm lost." },
+      { fi: 'Voitteko auttaa minua?', en: 'Can you help me?' },
+      { fi: 'Onko tämä oikea bussi?', en: 'Is this the right bus?' },
+      { fi: 'Paljonko lippu maksaa?', en: 'How much does the ticket cost?' },
+      { fi: 'Minulla on matkavakuutus.', en: 'I have travel insurance.' },
+      { fi: 'Haluaisin varata lipun.', en: 'I would like to book a ticket.' },
+      { fi: 'Lento oli myöhässä.', en: 'The flight was delayed.' },
+      { fi: 'Haluaisin tehdä reklamaation.', en: 'I would like to make a complaint.' },
+    ],
+    learnEverywhereTip: {
+      title: 'VINKKI: Kuuntelun harjoittelu',
+      body: [
+        '1. Kuuntele kuin kuuntelisit musiikkia – anna sen virrata aivojesi läpi. Aivosi ovat kielenoppimiskone, joka kerää tietoa, vaikka et ymmärtäisi.',
+        '2. Kuuntele suomalaista musiikkia. Sanojen ympärillä oleva musiikki auttaa muistamista.',
+        '3. Kuuntele radiota tai podcasteja ruoanlaiton tai kotitöiden aikana.',
+        '4. Katso lastenohjelmia – niissä puhutaan selkeästi.',
+        '5. Katso suomalaisia elokuvia ja sarjoja suomenkielisillä tekstityksillä tai ilman.',
+        '6. "Salakuuntele" ihmisiä bussissa, junassa tai kahvilassa. Yritä poimia avainsanoja.',
+        '7. Tee monenlaisia asioita, joissa kuulet suomea – tapahtumia, harrastuksia.',
+        '8. Harjoittele kuuntelemista meluisissa paikoissa, kuten kahviloissa. Testissäkin on taustamelua.',
+        '9. Tee kuuntelemisesta luonnollinen osa päivittäistä rutiiniasi.',
+        '10. Rentoudu! Kuuntele kuin kelluisit vedessä. Sinun ei tarvitse olla täydellinen.',
+        'Muista: kun kuuntelet paljon, opit myös puhumaan paremmin. Lapsi oppii kuuntelemalla – niin voit sinäkin.',
+      ],
+    },
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {

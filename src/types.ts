@@ -402,7 +402,7 @@ export interface YkiSubtestWriting {
   groupIntro: YkiGroupTask
   practiceTasks: YkiWritingPrompt[]
   practiceShareTable?: { category: string; hobbyBuddy: string; neighbors: string; both: string }[]
-  openingClosingTip: YkiTipBox
+  openingClosingTip?: YkiTipBox
   informalTasks: YkiWritingPrompt[]
   formalTasks: YkiWritingPrompt[]
   opinionTopics: YkiOpinionTopic[]
