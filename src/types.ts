@@ -360,6 +360,7 @@ export interface YkiOpinionTopic {
   id: string
   titleFi: string
   options: string[]
+  modelAnswerFi?: string
 }
 
 export interface YkiSpeakingSelfIntro {
@@ -375,13 +376,14 @@ export interface YkiSpeakingLongTask {
   speakSeconds: number
   questions: string[]
   subChoices?: { label: string; questions: string[] }[]
+  modelAnswerFi?: string
 }
 
 export interface YkiConversationTask {
   id: string
   titleFi: string
   scenarioFi: string
-  turns: { instructionFi: string; seconds: number }[]
+  turns: { instructionFi: string; seconds: number; modelResponseFi?: string }[]
 }
 
 export interface YkiSituationalTask {

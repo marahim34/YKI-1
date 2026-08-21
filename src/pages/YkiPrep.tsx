@@ -74,6 +74,12 @@ function LongSpeakingTaskCard({ task }: { task: YkiSpeakingLongTask }) {
         ]}
         idleLabel="Aloita ajastin"
       />
+      {task.modelAnswerFi && (
+        <details className="text-sm">
+          <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+          <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{task.modelAnswerFi}</p>
+        </details>
+      )}
     </div>
   )
 }
@@ -376,6 +382,12 @@ export default function YkiPrep() {
                       ))}
                     </ul>
                   )}
+                  {t.sampleFi && (
+                    <details className="mt-3 text-sm">
+                      <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+                      <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.sampleFi}</p>
+                    </details>
+                  )}
                 </div>
               ))}
             </div>
@@ -395,6 +407,12 @@ export default function YkiPrep() {
                       ))}
                     </ul>
                   )}
+                  {t.sampleFi && (
+                    <details className="mt-3 text-sm">
+                      <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+                      <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.sampleFi}</p>
+                    </details>
+                  )}
                 </div>
               ))}
             </div>
@@ -411,6 +429,12 @@ export default function YkiPrep() {
                       <li key={i}>{o}</li>
                     ))}
                   </ul>
+                  {t.modelAnswerFi && (
+                    <details className="mt-3 text-sm">
+                      <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+                      <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.modelAnswerFi}</p>
+                    </details>
+                  )}
                 </div>
               ))}
             </div>
@@ -606,6 +630,21 @@ export default function YkiPrep() {
                       ))}
                     </ul>
                     <SequentialTimer steps={t.turns.map((turn) => ({ label: turn.instructionFi, seconds: turn.seconds }))} idleLabel="Aloita keskustelu" />
+                    {t.turns.some((turn) => turn.modelResponseFi) && (
+                      <details className="text-sm">
+                        <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaukset →</summary>
+                        <ul className="mt-2 space-y-1 border-t border-slate-100 pt-2 text-slate-700">
+                          {t.turns.map(
+                            (turn, i) =>
+                              turn.modelResponseFi && (
+                                <li key={i}>
+                                  <span className="font-medium text-slate-500">{turn.instructionFi}:</span> {turn.modelResponseFi}
+                                </li>
+                              ),
+                          )}
+                        </ul>
+                      </details>
+                    )}
                   </div>
                 ))}
               </div>
@@ -661,6 +700,21 @@ export default function YkiPrep() {
                       ))}
                     </ul>
                     <SequentialTimer steps={t.turns.map((turn) => ({ label: turn.instructionFi, seconds: turn.seconds }))} idleLabel="Aloita keskustelu" />
+                    {t.turns.some((turn) => turn.modelResponseFi) && (
+                      <details className="text-sm">
+                        <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaukset →</summary>
+                        <ul className="mt-2 space-y-1 border-t border-slate-100 pt-2 text-slate-700">
+                          {t.turns.map(
+                            (turn, i) =>
+                              turn.modelResponseFi && (
+                                <li key={i}>
+                                  <span className="font-medium text-slate-500">{turn.instructionFi}:</span> {turn.modelResponseFi}
+                                </li>
+                              ),
+                          )}
+                        </ul>
+                      </details>
+                    )}
                   </div>
                 ))}
               </div>
@@ -679,6 +733,12 @@ export default function YkiPrep() {
                     <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                       <p className="text-sm text-slate-700">{t.scenarioFi}</p>
                       <SequentialTimer steps={[{ label: '🔴 Puhu nyt', seconds: t.seconds }]} idleLabel={`Aloita (${t.seconds} s)`} />
+                      {t.modelAnswerFi && (
+                        <details className="text-sm">
+                          <summary className="cursor-pointer text-xs font-semibold text-blue-700 hover:underline">Näytä mallivastaus →</summary>
+                          <p className="mt-2 whitespace-pre-line border-t border-slate-100 pt-2 text-slate-700">{t.modelAnswerFi}</p>
+                        </details>
+                      )}
                     </div>
                   </div>
                 )

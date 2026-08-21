@@ -276,26 +276,36 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-informal-1',
           titleFi: 'Viesti parhaalle ystävälle',
           instructionsFi: 'Sinulla on uusi kumppani. Paras ystäväsi haluaa tietää, millainen hän on. Kirjoita viesti, jossa kuvailet häntä. Kerro ainakin viisi asiaa.',
+          sampleFi:
+            'Hei! Kerron vähän uudesta kumppanistani. Hän on kotoisin Turusta ja työskentelee sairaanhoitajana. Hän on todella huumorintajuinen ja rauhallinen ihminen, ja hän harrastaa intohimoisesti valokuvausta. Tapasimme yhteisen ystävän juhlissa, ja olemme olleet yhdessä nyt kolme kuukautta. Toivottavasti pääsette tapaamaan pian – tiedän, että tulisitte hyvin toimeen!',
         },
         {
           id: 'writing-test-informal-2',
           titleFi: 'Viesti sukulaiselle',
           instructionsFi: 'Olet aloittanut uuden harrastuksen. Kerro siitä sukulaisellesi ja ehdota, että hän liittyisi mukaan. Selitä, miksi hänen kannattaisi kokeilla sitä.',
+          sampleFi:
+            'Hei! Arvaa mitä – aloitin viime kuussa kalliokiipeilyn ja olen ihan innoissani siitä. Se on yllättävän hyvä tapa purkaa stressiä, ja samalla tulee hikoiltua kunnolla. Ajattelin, että sinäkin voisit tykätä siitä, koska pidät haasteista ja olet aina liikkunut paljon. Lähtisitkö kokeilemaan kanssani ensi viikonloppuna? Ensimmäinen kerta on ilmainen!',
         },
         {
           id: 'writing-test-informal-3',
           titleFi: 'Onnitteluviesti ystävälle',
           instructionsFi: 'Ystävällesi on tapahtunut jotain tärkeää (keksi itse, mitä). Kirjoita viesti, jossa onnittelet häntä. Kerro myös, mitä sinulle kuuluu.',
+          sampleFi:
+            'Hei! Kuulin juuri, että sait sen unelmatyöpaikan – onneksi olkoon! Olen tosi iloinen puolestasi, tiedän kuinka kovasti olet sitä odottanut. Itselläni menee ihan hyvin, olen vain ollut kiireinen muutosta uuteen asuntoon. Järjestetäänkö pian juhlat, jotta pääsemme juhlistamaan kunnolla?',
         },
         {
           id: 'writing-test-informal-4',
           titleFi: 'Viesti työkavereille',
           instructionsFi: 'Työkaveri on vaihtamassa työpaikkaa. Kirjoita viesti, jossa ehdotat läksiäisjärjestelyjä.',
+          sampleFi:
+            'Hei kaikki! Kuten tiedätte, Liisa lähtee ensi viikolla uuteen työpaikkaan. Ajattelin, että voisimme järjestää hänelle pienet läksiäiset perjantaina työpäivän jälkeen. Voisimme mennä yhdessä siihen pizzeriaan kadun toisella puolella ja kerätä hänelle lahjan. Ilmoittakaa, jos tämä sopii teille!',
         },
         {
           id: 'writing-test-informal-5',
           titleFi: 'Viesti harrastusryhmään',
           instructionsFi: 'Olet aloittanut uuden harrastuksen. Et tiedä hyviä paikkoja sitä varten. Kirjoita harrastusryhmälle ja pyydä vinkkejä.',
+          sampleFi:
+            'Hei kaikki! Aloitin juuri lautapelien pelaamisen harrastuksena, mutta en vielä tunne hyviä paikkoja, joissa voisi pelata muiden kanssa. Onko teillä vinkata jotain kahvilaa tai kerhoa täällä kaupungissa? Otan mielelläni vastaan myös peliehdotuksia aloittelijalle!',
         },
       ],
       formalTasks: [
@@ -303,21 +313,29 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-formal-1',
           titleFi: 'Viesti kansalaisopistoon',
           instructionsFi: 'Haluat osallistua kurssille. Kirjoita viesti, jossa kysyt ainakin kolme kysymystä. Kerro kaksi tärkeää asiaa itsestäsi.',
+          sampleFi:
+            'Hyvä vastaanottaja, olen kiinnostunut keramiikkakurssistanne, joka alkaa syyskuussa. Minulla ei ole aiempaa kokemusta keramiikasta, mutta olen aina ollut kiinnostunut käsitöistä. Kysyisin muutaman asian: Sopiiko kurssi täysin aloittelijalle? Sisältyykö hintaan materiaalit? Onko kurssilla vielä vapaita paikkoja? Kiitos etukäteen vastauksestanne.',
         },
         {
           id: 'writing-test-formal-2',
           titleFi: 'Viesti liikuntapaikkaan',
           instructionsFi: 'Haluat aloittaa uuden ohjatun lajin. Ennen ilmoittautumista haluat varmistaa, että se sopii sinulle. Kirjoita ja pyydä heidän arviotaan.',
+          sampleFi:
+            'Hyvä vastaanottaja, olen kiinnostunut aloittamaan ohjatun kehonhuoltoryhmänne. Minulla on lievä selkävaiva, joten haluaisin varmistaa etukäteen, sopiiko laji minulle. Onko ryhmässä huomioitu erilaiset fyysiset lähtötasot? Voisitteko kertoa, millaisia liikkeitä tunnilla yleensä tehdään? Odotan vastaustanne mielenkiinnolla.',
         },
         {
           id: 'writing-test-formal-3',
           titleFi: 'Viesti koirankasvattajalle',
           instructionsFi: 'Olet päättänyt hankkia koiran. Kirjoita kasvattajalle. Kerro, millaisen koiran haluat ja mihin tarkoitukseen.',
+          sampleFi:
+            'Hyvä vastaanottaja, olen kiinnostunut mahdollisesta pentueestanne. Etsin rauhallista ja perheystävällistä koiraa, joka soveltuisi lenkkiseuraksi ja kotikoiraksi lapsiperheeseen. Onko teillä tällä hetkellä pentuja saatavilla, ja milloin seuraava pentue on suunnitteilla? Kertoisitteko myös, minkä ikäisenä pennut siirtyvät uuteen kotiin?',
         },
         {
           id: 'writing-test-formal-4',
           titleFi: 'Viesti nimiasioista vastaavaan virastoon',
           instructionsFi: 'Sukunimesi kirjoitetaan usein väärin virallisessa postissa. Kirjoita virastolle ja selitä ongelma.',
+          sampleFi:
+            'Hyvä vastaanottaja, sukunimeni on toistuvasti kirjoitettu väärin virallisissa asiakirjoissa, jotka olen teiltä saanut. Oikea kirjoitusasu on rekisterissänne, mutta se ei näytä siirtyneen kaikkiin järjestelmiinne oikein. Voisitteko tarkistaa ja korjata tiedot? Liitän mukaan kopion henkilöllisyystodistuksestani varmistukseksi.',
         },
       ],
       opinionTopics: [
@@ -325,11 +343,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Ystävät ja harrastukset',
           options: ['A. Kuinka monta ystävää ihminen tarvitsee?', 'B. Kaikilla pitäisi olla harrastus'],
+          modelAnswerFi:
+            'Mielestäni ystävien määrä ei ole yhtä tärkeä kuin niiden laatu. Muutama läheinen ystävä, joihin voi luottaa vaikeinakin aikoina, on arvokkaampi kuin kymmenet pinnalliset tuttavuudet. Toisaalta on hyvä olla myös laajempi tuttavapiiri, sillä eri ihmiset tuovat elämään erilaisia näkökulmia. Kaiken kaikkiaan uskon, että tasapaino muutaman läheisen ystävän ja laajemman sosiaalisen verkoston välillä on paras ratkaisu.',
         },
         {
           id: 'writing-opinion-2',
           titleFi: 'Kotityöt',
           options: ['Miten kotityöt pitäisi jakaa?'],
+          modelAnswerFi:
+            'Olen sitä mieltä, että kotityöt pitäisi jakaa tasan kaikkien perheenjäsenten kesken heidän ikänsä ja aikataulunsa mukaan. Ei ole reilua, jos yksi ihminen tekee suurimman osan siivouksesta ja ruoanlaitosta muiden ollessa vapaa-ajalla. Toisaalta jako ei aina tarkoita täsmälleen puolet-puolet, vaan sitä, että jokainen ottaa vastuuta omista tehtävistään. Kaiken kaikkiaan avoin keskustelu ja selkeä työnjako tekevät kotielämästä sujuvampaa kaikille.',
         },
         {
           id: 'writing-opinion-3',
@@ -340,6 +362,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Iso perhe – paras perhe?',
             'Sopiva ikä jäädä eläkkeelle',
           ],
+          modelAnswerFi:
+            'Otan kantaa aiheeseen "Kenen tehtävä on huolehtia ikäihmisistä?". Mielestäni vastuu jakautuu sekä perheelle että yhteiskunnalle. Perheenjäsenet voivat tarjota emotionaalista tukea ja seuraa, mutta kaikilla ei ole mahdollisuutta tai osaamista antaa varsinaista hoivaa. Siksi yhteiskunnan pitäisi tarjota riittävät palvelut, kuten kotihoitoa ja hoivakoteja, jotta ikäihmiset saavat tarvitsemaansa apua perheen taustatuesta riippumatta. Sama rakenne (oma mielipide + perustelu + toinen näkökulma + yhteenveto) toimii mihin tahansa näistä aiheista.',
         },
       ],
     },
@@ -535,6 +559,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
         ],
         reflectionPrompt:
           'Mitä olisit voinut sanoa paremmin? Unohditko sanoja? Kokeile uudelleen: aseta ajastin 1,5 minuuttiin ja yritä puhua koko ajan. Voit nauhoittaa vastauksesi, jos haluat.',
+        modelAnswerFi:
+          'Haluan kertoa siskostani Sarasta. Hän asuu Tampereella ja on kolme vuotta minua vanhempi. Hän on todella huolehtivainen ja aina valmis auttamaan, ja hänellä on hyvä huumorintaju. Soitamme toisillemme lähes joka viikko, ja tapaamme kasvotusten muutaman kerran vuodessa. Otan häneen yhteyttä varsinkin silloin, kun tarvitsen neuvoja tai kaipaan jonkun kuuntelevan. Pidän hänestä, koska hän ymmärtää minua paremmin kuin kukaan muu.',
         speakDontWriteTip: {
           title: 'VINKKI: Puhu, älä kirjoita',
           body: [
@@ -567,6 +593,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 60,
           speakSeconds: 90,
           questions: ['Missä se on?', 'Miksi se on sinulle tärkeä?', 'Kenen kanssa käyt siellä?', 'Mitä siellä voi tehdä?', 'Millainen paikka se on?'],
+          modelAnswerFi:
+            'Minulle tärkeä paikka on mökki järven rannalla, jossa perheeni on käynyt kesäisin lapsuudestani asti. Se on tärkeä, koska siellä olen viettänyt parhaat kesämuistoni sukulaisteni kanssa. Käyn siellä yleensä vanhempieni ja sisarusteni kanssa. Siellä voi uida, kalastaa ja istua nuotion ääressä iltaisin. Se on rauhallinen ja luonnonläheinen paikka, jossa arjen kiireet unohtuvat helposti.',
         },
         {
           id: 'speaking-test-2',
@@ -575,6 +603,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 60,
           speakSeconds: 90,
           questions: ['Mikä sinua kiinnostaa? Miksi?', 'Mitä tykkäät tehdä vapaa-ajalla?', 'Onko sinulla harrastuksia?', 'Miten ja missä rentoudut parhaiten?'],
+          modelAnswerFi:
+            'Minua kiinnostavat erityisesti liikunta ja musiikki, koska ne auttavat minua irtautumaan arjen kiireestä. Vapaa-ajalla tykkään lenkkeillä ja kuunnella podcasteja. Harrastan myös kitaransoittoa, jota olen opetellut pari vuotta. Rentoudun parhaiten luonnossa, kaukana kaupungin melusta.',
         },
         {
           id: 'speaking-test-3',
@@ -588,6 +618,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mikä teki päivästä erityisen?',
             'Kenen kanssa olit?',
           ],
+          modelAnswerFi:
+            'Yksi elämäni hienoimmista päivistä oli, kun valmistuin koulusta. Sinä päivänä koko perheeni tuli paikalle juhlistamaan minua, ja illalla järjestimme yhdessä pienet juhlat kotona. Mikä teki päivästä erityisen, oli se, että sain vihdoin nähdä pitkän työn tuloksen ja jakaa sen hetken läheisimpieni kanssa. Olin siellä vanhempieni, sisarusteni ja parhaan ystäväni kanssa, ja muistan yhä, kuinka ylpeä ja onnellinen tunsin oloni.',
         },
       ],
       conversationTasks: [
@@ -596,11 +628,11 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Puhelu kaverilta',
           scenarioFi: 'Uusi ystävä soittaa sinulle.',
           turns: [
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
-            { instructionFi: 'Hyvästele.', seconds: 5 },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10, modelResponseFi: 'Joo, tänään sopii hyvin, mitä ajattelit tehdä?' },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5, modelResponseFi: 'Joo, ehdottomasti, kuulostaa kivalta!' },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10, modelResponseFi: 'Voi ei, mikä ikävä juttu — oletko kunnossa?' },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5, modelResponseFi: 'Onneksi meni hyvin loppujen lopuksi!' },
+            { instructionFi: 'Hyvästele.', seconds: 5, modelResponseFi: 'Nähdään pian, hei hei!' },
           ],
         },
         {
@@ -608,11 +640,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Kahvilla ystävän kanssa',
           scenarioFi: 'Olet kahvilassa odottamassa ystävää, joka on 10 minuuttia myöhässä.',
           turns: [
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa kysymykseen ja kysy, mitä kaverillesi kuuluu.', seconds: 30 },
-            { instructionFi: 'Kehu kaveriasi.', seconds: 10 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10, modelResponseFi: 'Ei se mitään, ehdin juuri tilata kahvin tässä välissä.' },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 5, modelResponseFi: 'Ei, en ole odottanut kauan.' },
+            {
+              instructionFi: 'Vastaa kysymykseen ja kysy, mitä kaverillesi kuuluu.',
+              seconds: 30,
+              modelResponseFi: 'Minulla menee ihan hyvin, olen vain ollut kiireinen töissä. Entä sinulle, mitä kuuluu?',
+            },
+            { instructionFi: 'Kehu kaveriasi.', seconds: 10, modelResponseFi: 'Sinulla näyttää menevän tosi hyvin, olet ihan säteilevä!' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20, modelResponseFi: 'Viikonloppuna en ole vielä suunnitellut mitään, mutta voisimme tehdä jotain yhdessä, jos sinulla on aikaa.' },
           ],
         },
       ],
@@ -622,31 +658,37 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           scenarioFi:
             'Olet löytänyt kiinnostavan suomen kielen kurssin. Soita opettajalle ja kysy, sopiiko kurssi sinulle. Opettaja kysyy, kuinka kauan ja missä olet opiskellut suomea. Vastaa.',
           seconds: 30,
+          modelAnswerFi: 'Olen opiskellut suomea kaksi vuotta, sekä kielikurssilla että itsenäisesti. Sopisiko tämä kurssi minun tasolleni?',
         },
         {
           id: 'speaking-situation-2',
           scenarioFi: 'Olet aloittanut uuden työpaikan. Taukohuoneessa joku kysyy, kuka olet. Vastaa.',
           seconds: 20,
+          modelAnswerFi: 'Hei, olen uusi työntekijä, aloitin tässä viime viikolla. Mukava tavata!',
         },
         {
           id: 'speaking-situation-3',
           scenarioFi: 'Olet lounaalla uuden työkaverin kanssa. Hän kertoo pyöräilystä ja kysyy sinun harrastuksistasi. Vastaa.',
           seconds: 20,
+          modelAnswerFi: 'Itse harrastan lähinnä juoksemista ja lukemista, mutta pyöräily kuulostaa kivalta, ehkä minunkin pitäisi kokeilla sitä.',
         },
         {
           id: 'speaking-situation-4',
           scenarioFi: 'Ystävä kysyy, haluatko lähteä elokuviin. Kieltäydy kohteliaasti, pahoittele ja anna syy.',
           seconds: 20,
+          modelAnswerFi: 'Voi, olisi kiva, mutta valitettavasti en pääse tällä kertaa — minulla on jo suunnitelmat sille illalle. Mennäänkö ensi viikolla?',
         },
         {
           id: 'speaking-situation-5',
           scenarioFi: 'Juot kahvia uuden luokkatoverin kanssa. Hän kertoo perheestään ja haluaa tietää sinun perheestäsi. Kerro jotain perheestäsi.',
           seconds: 20,
+          modelAnswerFi: 'Minun perheeni on aika pieni — vanhempani ja yksi vanhempi sisko. Emme asu samassa kaupungissa, mutta puhumme puhelimessa usein.',
         },
         {
           id: 'speaking-situation-6',
           scenarioFi: 'Ystäväsi kertoo olevansa raskaana. Onnittele ja kysy ainakin yksi kysymys.',
           seconds: 20,
+          modelAnswerFi: 'Voi, onneksi olkoon, ihania uutisia! Milloin lapsen on tarkoitus syntyä?',
         },
       ],
       opinionTasks: [
@@ -663,6 +705,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä hyviä ja huonoja puolia on lapsuudessa, aikuisuudessa ja vanhuudessa?',
             'Minkä ikäisiä ihmisiä yhteiskunta arvostaa mielestäsi eniten?',
           ],
+          modelAnswerFi:
+            'Olen nyt kolmekymmentäkaksi vuotta vanha. Mielestäni paras aika elämässäni on ollut juuri tämä, koska minulla on jo vakaa työ ja hyvä ystäväpiiri, mutta silti paljon energiaa ja aikaa uusille kokemuksille. En odota mitään tiettyä ikää erityisesti, sillä jokaisessa elämänvaiheessa on omat hyvät puolensa. Lapsuudessa on huoletonta, mutta ei paljon vapautta; aikuisuudessa on vapautta, mutta myös vastuuta; vanhuudessa taas on elämänkokemusta, vaikka terveys voi heiketä. Yhteiskunta arvostaa mielestäni eniten työikäisiä aikuisia, mikä on mielestäni harmi, koska myös lapsilla ja vanhuksilla on paljon annettavaa.',
         },
         {
           id: 'speaking-opinion-2',
@@ -676,6 +720,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä hyvää ja mitä huonoa kiireessä on?',
             'Miten kiirettä voi vähentää?',
           ],
+          modelAnswerFi:
+            'Mielestäni monilla ihmisillä on nykyään todella liian kiire, koska työ, perhe ja harrastukset pitäisi sovittaa samaan aikatauluun. Itsekin olen välillä liian kiireinen, varsinkin viikon alussa. Kiireessä on toisaalta hyvääkin — se pitää elämän aktiivisena ja auttaa saamaan asioita valmiiksi. Huonoa siinä on, että se aiheuttaa stressiä ja vie aikaa läheisiltä ihmisiltä. Kiirettä voisi vähentää priorisoimalla tärkeimmät asiat ja opettelemalla sanomaan ei turhille velvoitteille.',
         },
         {
           id: 'speaking-opinion-3',
@@ -684,6 +730,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Valitse A tai B.'],
+          modelAnswerFi:
+            'Valitsen aiheen A, hyvän vanhuuden. Mielestäni vastuu vanhusten hoidosta kuuluu sekä perheelle että yhteiskunnalle yhdessä. Vanhusten pitäisi mielestäni saada itse päättää, asuvatko he omassa kodissaan avun turvin vai palvelutalossa — molemmat voivat olla hyviä ratkaisuja tilanteesta riippuen. Itse haluaisin vanhana asua mahdollisimman pitkään omassa kodissani, mutta lähellä perhettäni. Hyvä vanhuus tarkoittaa minulle terveyttä, sosiaalisia suhteita ja mahdollisuutta olla edelleen aktiivinen. Sama rakenne toimisi myös aiheeseen B, lasten kasvatukseen.',
           subChoices: [
             {
               label: 'A. Millainen on hyvä vanhuus?',
@@ -958,23 +1006,31 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-informal-1',
           titleFi: 'Tuparikutsu ystäville',
           instructionsFi: 'Olet juuri muuttanut uuteen asuntoon. Kirjoita kutsu ystävillesi.',
+          sampleFi:
+            'Hei kaikki! Muutin viime viikolla uuteen asuntoon, ja ajattelin, että voisimme juhlia sitä yhdessä. Tulisitteko tupaantuliaisiin lauantaina kello 18? Osoite on Puistokatu 12. Tuokaa hyvä fiilis mukaan, muusta ei tarvitse huolehtia!',
         },
         {
           id: 'writing-test-informal-2',
           titleFi: 'Ohjeet ystävälle',
           instructionsFi: 'Lähdet viikoksi matkalle. Ystäväsi jää asuntoosi ja huolehtii lemmikeistäsi ja kasveistasi. Kirjoita sähköposti, jossa annat ohjeet.',
+          sampleFi:
+            'Hei! Kiitos vielä, että lupauduit hoitamaan kotia matkani aikana. Kissalle pitää antaa ruokaa kahdesti päivässä, aamulla ja illalla, ja vettä pitää vaihtaa joka päivä. Kukkia täytyy kastella keskiviikkona ja lauantaina. Avain on postilaatikossa. Soita, jos tulee kysyttävää!',
         },
         {
           id: 'writing-test-informal-3',
           titleFi: 'Viesti naapureille',
           instructionsFi:
             'Asut rivitalossa. Lumityöt on jaettu tasan naapureiden kesken. Sinun vuorosi on kahden viikon päästä, mutta olet silloin matkalla. Kirjoita naapureille, selitä tilanne ja pyydä vaihtamaan vuoroa.',
+          sampleFi:
+            'Hei kaikki! Huomasin, että minun lumityövuoroni on kahden viikon päästä lauantaina, mutta olen silloin valitettavasti työmatkalla. Voisiko joku vaihtaa vuoroa kanssani? Voin ottaa jonkun toisen vuoron tilalle, mikä tahansa sopii. Kiitos jo etukäteen!',
         },
         {
           id: 'writing-test-informal-4',
           titleFi: 'Viesti alueelliseen some-ryhmään',
           instructionsFi:
             'Harkitset muuttamista alueelle, jota et tunne. Kirjoita alueen some-ryhmään ja kysy alueesta – turvallisuudesta, palveluista, harrastusmahdollisuuksista.',
+          sampleFi:
+            'Hei! Harkitsen muuttamista tälle alueelle enkä tunne sitä vielä kovin hyvin. Millainen alue tämä on asua – onko täällä turvallista liikkua myös iltaisin? Löytyykö läheltä kauppoja ja muita palveluita? Entä onko alueella hyviä harrastusmahdollisuuksia, esimerkiksi kuntosaleja tai puistoja? Kiitos etukäteen vinkeistä!',
         },
       ],
       formalTasks: [
@@ -982,23 +1038,31 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-formal-1',
           titleFi: 'Viesti huoltoyhtiölle',
           instructionsFi: 'Asunnossasi on ongelma. Kirjoita huoltoyhtiölle, selitä ongelma ja pyydä korjausta mahdollisimman pian.',
+          sampleFi:
+            'Hyvä vastaanottaja, asunnossani (Puistokatu 12 A 5) keittiön hana vuotaa jatkuvasti, vaikka se on kiinni. Tämä tuhlaa vettä ja aiheuttaa jo kosteusjälkiä tiskipöydän alle. Pyydän, että korjaisitte vian mahdollisimman pian. Olen tavoitettavissa arkisin klo 9–17.',
         },
         {
           id: 'writing-test-formal-2',
           titleFi: 'Valitusviesti huoltoyhtiöön',
           instructionsFi: 'Polkupyörävaraston ovi ei lukitu. Kirjoita valitus, jossa selität, miksi tämä on ongelma.',
+          sampleFi:
+            'Hyvä vastaanottaja, polkupyörävaraston ovi ei ole lukittunut kunnolla enää parin viikon aikana. Tämä on huolestuttavaa, sillä varastossa on useiden asukkaiden arvokkaita pyöriä, eikä turvallisuudesta voida tällä hetkellä varmistua. Pyydän, että lukko korjataan mahdollisimman pian, ennen kuin jotain katoaa.',
         },
         {
           id: 'writing-test-formal-3',
           titleFi: 'Viesti isännöitsijälle',
           instructionsFi:
             'Naapurisi tupakoi parvekkeellaan, ja savu tulee sinun asuntoosi. Olet pyytänyt häntä lopettamaan, mutta hän jatkaa. Kirjoita ja ehdota, että taloyhtiön kokouksessa laadittaisiin tupakointisäännöt.',
+          sampleFi:
+            'Hyvä isännöitsijä, naapurini tupakoi säännöllisesti parvekkeellaan, ja savu kulkeutuu avoimen ikkunan kautta minun asuntooni. Olen puhunut asiasta naapurilleni suoraan, mutta tilanne ei ole parantunut. Ehdottaisin, että taloyhtiön seuraavassa kokouksessa keskusteltaisiin yhteisistä tupakointisäännöistä, jotta tällaiset tilanteet voitaisiin jatkossa välttää.',
         },
         {
           id: 'writing-test-formal-4',
           titleFi: 'Vastaus kyselyyn',
           instructionsFi:
             'Kaupunki haluaa kehittää alueesi palveluja. Mielestäsi osa leikkivälineistä on huonossa kunnossa. Kirjoita ja selitä tilanne sekä ehdota korjauksia.',
+          sampleFi:
+            'Hyvä vastaanottaja, kiitos mahdollisuudesta kertoa mielipiteeni alueemme kehittämisestä. Haluaisin nostaa esiin, että lähipuiston leikkivälineet ovat osittain huonokuntoisia – esimerkiksi keinut narisevat ja liukumäen pinta on rikkoutunut. Ehdottaisin, että nämä korjattaisiin mahdollisimman pian, sillä alueella on paljon pieniä lapsia, joille turvallisuus on tärkeää.',
         },
       ],
       opinionTopics: [
@@ -1006,11 +1070,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Asuinpaikka ja asumismuoto',
           options: ['A. Kumpi on parempi asuinpaikka, kaupunki vai maaseutu?', 'B. Vuokra- vai omistusasunto?'],
+          modelAnswerFi:
+            'Mielestäni kaupunki ja maaseutu sopivat eri elämänvaiheisiin. Kaupungissa palvelut, työpaikat ja julkinen liikenne ovat lähellä, mikä helpottaa arkea huomattavasti. Toisaalta maaseudulla on enemmän rauhaa, tilaa ja luontoa lähellä. Itse valitsisin tällä hetkellä kaupungin, koska tarvitsen hyviä kulkuyhteyksiä työhön, mutta voisin kuvitella muuttavani maalle myöhemmin elämässäni.',
         },
         {
           id: 'writing-opinion-2',
           titleFi: 'Pääkaupunkiseudun hintataso',
           options: ['Onko tavallisilla ihmisillä varaa asua pääkaupunkiseudulla?'],
+          modelAnswerFi:
+            'Mielestäni pääkaupunkiseudun asumiskustannukset ovat nousseet niin korkeiksi, että monella tavallisella palkansaajalla on vaikeuksia löytää kohtuuhintaista asuntoa. Toisaalta seudulla on myös eniten työmahdollisuuksia, mikä houkuttelee ihmisiä muuttamaan sinne korkeista hinnoista huolimatta. Uskon, että lisärakentaminen ja parempi julkinen liikenne lähialueille voisivat helpottaa tilannetta pitkällä aikavälillä.',
         },
         {
           id: 'writing-opinion-3',
@@ -1020,6 +1088,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Kaikilla ihmisillä pitäisi olla oma kesämökki',
             'Kaikilla asuinalueilla pitäisi olla samanlaiset palvelut',
           ],
+          modelAnswerFi:
+            'Otan kantaa aiheeseen "Kaikilla asuinalueilla pitäisi olla samanlaiset palvelut". Olen osittain samaa mieltä, sillä jokaisella pitäisi olla tasavertainen pääsy peruspalveluihin, kuten terveydenhuoltoon ja kouluihin, asuinpaikasta riippumatta. Toisaalta on epärealistista odottaa, että aivan kaikilla alueilla olisi täsmälleen samat palvelut, koska väestömäärä ja tarpeet vaihtelevat. Kaiken kaikkiaan tärkeintä olisi varmistaa, ettei kukaan jää ilman välttämättömiä palveluita.',
         },
       ],
     },
@@ -1210,6 +1280,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           'Mitä hyviä ja huonoja puolia asuinpaikassasi on?',
           'Mitä asuinalueesi ympäristössä on?',
         ],
+        modelAnswerFi:
+          'Asun kaksiossa kerrostalossa lähellä keskustaa. Se on melko pieni, mutta valoisa ja kodikas asunto. Parasta asuinpaikassani on se, että kaikki palvelut ovat kävelymatkan päässä, mutta huonoa puolta on ajoittainen liikenteen melu. Alueella on kauppoja, puisto ja hyvät bussiyhteydet, joten arki sujuu vaivattomasti.',
       },
       practiceSituationalTasks: [
         {
@@ -1261,6 +1333,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 60,
           speakSeconds: 90,
           questions: ['Missä se on?', 'Milloin asuit siellä?', 'Millainen paikka se on?', 'Miksi se on mielestäsi paras koti?', 'Mikä tekee kodista hyvän?'],
+          modelAnswerFi:
+            'Elämäni paras koti oli pieni opiskelija-asunto, jossa asuin yliopistovuosinani. Asuin siellä noin kolme vuotta. Se oli vaatimaton, mutta se sijaitsi aivan kampuksen vieressä ja siellä oli mukava yhteisö muiden opiskelijoiden kanssa. Se oli paras koti, koska sinä aikana solmin monta läheistä ystävyyssuhdetta. Mielestäni hyvän kodin tekee ennen kaikkea tunne siitä, että sinne on kiva palata.',
         },
         {
           id: 'speaking-test-2',
@@ -1275,6 +1349,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mikä tekee asuinalueesta hyvän?',
             'Mikä on sinulle tärkeää, kun valitset asuinaluetta?',
           ],
+          modelAnswerFi:
+            'Mielestäni hyvällä asuinalueella täytyy olla ainakin kauppa ja terveyspalveluita lähellä. Hyviä palveluita ovat myös kirjasto, puisto ja hyvät koulut lapsiperheille. Hyvät liikenneyhteydet tarkoittavat, että bussi tai juna kulkee usein ja keskustaan pääsee nopeasti. Asuinalueesta tekee hyvän ennen kaikkea turvallisuus ja rauhallisuus. Itselleni tärkeintä on lyhyt työmatka ja hyvät kulkuyhteydet.',
         },
         {
           id: 'speaking-test-3',
@@ -1288,6 +1364,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Onko sinulla joskus ollut erityisen hyvä tai erityisen huono naapuri?',
             'Mitä taloyhtiöt voivat tehdä, jotta naapurit oppisivat tuntemaan toisensa paremmin?',
           ],
+          modelAnswerFi:
+            'Tunnen naapurini vain vähän, lähinnä tervehdimme toisiamme portaikossa. Minulle olisi kyllä tärkeää tutustua heihin paremmin, koska hyvät naapurisuhteet tekevät asumisesta mukavampaa. Minulla on ollut erityisen hyvä naapuri edellisessä asunnossani – autoimme toisiamme usein pienissä asioissa. Taloyhtiöt voisivat järjestää yhteisiä talkoita tai pihajuhlia, jotta naapurit oppisivat tuntemaan toisensa paremmin.',
         },
       ],
       conversationTasks: [
@@ -1296,12 +1374,16 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Asunnon vuokraaminen',
           scenarioFi: 'Lähdet kolmen kuukauden matkalle ja etsit vuokralaista. Joku soittaa kysyäkseen asiasta.',
           turns: [
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 30 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 15 },
-            { instructionFi: 'Hyvästele.', seconds: 10 },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 5, modelResponseFi: 'Joo, asunto on vielä vapaa!' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15, modelResponseFi: 'Se on kaksio, noin viisikymmentä neliötä, ja siinä on oma parveke.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10, modelResponseFi: 'Vuokra on 750 euroa kuukaudessa, sähkö ei sisälly hintaan.' },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 30,
+              modelResponseFi: 'Vuokra-aika olisi kolme kuukautta, kesäkuun alusta elokuun loppuun, koska olen itse matkoilla silloin.',
+            },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 15, modelResponseFi: 'Kuulostaa hyvältä, voisimme sopia näyttöajan tällä viikolla.' },
+            { instructionFi: 'Hyvästele.', seconds: 10, modelResponseFi: 'Selvä, nähdään silloin, hei hei!' },
           ],
         },
         {
@@ -1309,14 +1391,18 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Saunavuoron varaaminen',
           scenarioFi: 'Asut kerrostalossa ja haluat varata saunavuoron. Soita isännöitsijälle.',
           turns: [
-            { instructionFi: 'Esittele itsesi ja kerro asiasi.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
-            { instructionFi: 'Kerro, minkä päivän haluat.', seconds: 15 },
-            { instructionFi: 'Vastaa kysymykseen kieltävästi ja kerro miksi.', seconds: 20 },
-            { instructionFi: 'Kerro, minkä ajan haluat.', seconds: 15 },
-            { instructionFi: 'Vastaa kysymykseen ja kysy saunan hintaa.', seconds: 20 },
-            { instructionFi: 'Kysy jokin kysymys.', seconds: 30 },
-            { instructionFi: 'Kiitä ja lopeta puhelu.', seconds: 10 },
+            { instructionFi: 'Esittele itsesi ja kerro asiasi.', seconds: 20, modelResponseFi: 'Hei, tässä asukas C-rapusta, haluaisin varata saunavuoron ensi viikolle.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15, modelResponseFi: 'Asun huoneistossa C 14.' },
+            { instructionFi: 'Kerro, minkä päivän haluat.', seconds: 15, modelResponseFi: 'Haluaisin varata torstain, jos se on mahdollista.' },
+            {
+              instructionFi: 'Vastaa kysymykseen kieltävästi ja kerro miksi.',
+              seconds: 20,
+              modelResponseFi: 'Ei, keskiviikko ei valitettavasti sovi minulle, koska olen silloin töissä myöhään.',
+            },
+            { instructionFi: 'Kerro, minkä ajan haluat.', seconds: 15, modelResponseFi: 'Haluaisin vuoron kello 19–20 illalla.' },
+            { instructionFi: 'Vastaa kysymykseen ja kysy saunan hintaa.', seconds: 20, modelResponseFi: 'Joo, se sopii hyvin. Paljonko saunavuoro maksaa?' },
+            { instructionFi: 'Kysy jokin kysymys.', seconds: 30, modelResponseFi: 'Täytyykö minun tuoda omat pyyhkeet, vai onko saunassa niitä valmiina?' },
+            { instructionFi: 'Kiitä ja lopeta puhelu.', seconds: 10, modelResponseFi: 'Kiitos paljon avusta, hyvää päivänjatkoa!' },
           ],
         },
       ],
@@ -1326,60 +1412,70 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Tapaat naapurin pihalla. Hän kysyy, tuletko lauantain talkoisiin. Vastaa.',
           seconds: 20,
+          modelAnswerFi: 'Joo, tulen kyllä mukaan, jos vain kerkeän aamupäivällä. Mihin aikaan talkoot alkavat?',
         },
         {
           id: 'speaking-situation-1-2',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Olet juuri muuttanut uuteen asuntoon ja haluat tietää, miten kerhohuoneen voi varata. Kysy naapurilta.',
           seconds: 30,
+          modelAnswerFi: 'Anteeksi, olen juuri muuttanut tänne — tiedätkö, miten kerhohuoneen voi varata? Onko siitä joku lista tai varauskalenteri?',
         },
         {
           id: 'speaking-situation-1-3',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Olet varannut pesutuvan, mutta kun saavut, naapuri on jo siellä pesemässä pyykkiä. Kerro, mitä ajattelet ja mitä toivoisit hänen tekevän.',
           seconds: 30,
+          modelAnswerFi: 'Anteeksi, mutta minulla pitäisi olla varaus juuri tähän aikaan. Voisitko tarkistaa vuoron, ja jatkaisimmeko sitten vuorotellen?',
         },
         {
           id: 'speaking-situation-1-4',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Etsit uutta vuokra-asuntoa ja löysit kiinnostavan ilmoituksen. Soita omistajalle ja kerro hieman itsestäsi.',
           seconds: 30,
+          modelAnswerFi: 'Hei, soitan asuntoilmoituksenne johdosta. Olen vakituisessa työsuhteessa ja etsin rauhallista yksiötä. Onko asunto vielä vapaa?',
         },
         {
           id: 'speaking-situation-1-5',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Sinulla on juhlat. Naapuri soittaa ovikelloa ja valittaa metelistä. Pyydä kohteliaasti anteeksi.',
           seconds: 20,
+          modelAnswerFi: 'Voi anteeksi, en ollut ajatellut, että ääni kuuluu noin hyvin. Hiljennämme heti musiikkia.',
         },
         {
           id: 'speaking-situation-2-1',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Huomaat, että ikääntynyt naapurisi on loukannut itsensä ja liikkuu vaikeasti. Kysy, tarvitseeko hän apua, ja tarjoudu tekemään jotain hyödyllistä.',
           seconds: 30,
+          modelAnswerFi: 'Voi, oletko kunnossa? Tarvitsetko apua? Voin vaikka hakea kauppa-asioita puolestasi, jos liikkuminen on vaikeaa.',
         },
         {
           id: 'speaking-situation-2-2',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Huomaat, että roska-astiat ovat aivan täynnä. Soita jätehuoltoon.',
           seconds: 20,
+          modelAnswerFi: 'Hei, soitan koska taloyhtiömme roska-astiat ovat täysin täynnä. Voisitteko tyhjentää ne mahdollisimman pian?',
         },
         {
           id: 'speaking-situation-2-3',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Naapuri on hankkinut lapselleen pianon. He kysyvät, häiritseekö harjoittelun ääni sinua. Vastaa.',
           seconds: 20,
+          modelAnswerFi: 'Ei se häiritse minua ollenkaan, kuulostaa oikeastaan ihan mukavalta! Harjoitelkaa vain rauhassa.',
         },
         {
           id: 'speaking-situation-2-4',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Naapuri remontoi, ja meteli alkaa hyvin aikaisin aamulla. Soita hänen ovikelloaan ja valita metelistä.',
           seconds: 20,
+          modelAnswerFi: 'Hei, anteeksi että häiritsen, mutta remonttimeteli alkaa aika aikaisin aamulla ja herättää minut. Voisitteko aloittaa hieman myöhemmin?',
         },
         {
           id: 'speaking-situation-2-5',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Naapuri on pysäköinyt autonsa väärään paikkaan. Pyydä häntä siirtämään sen.',
           seconds: 30,
+          modelAnswerFi: 'Anteeksi, mutta autosi on parkkeerattu minun paikalleni. Voisitko siirtää sen, kun sinulle sopii?',
         },
       ],
       opinionTasks: [
@@ -1395,6 +1491,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä hyviä ja huonoja puolia on omakotitalossa?',
             'Haluaisitko asua mieluummin maalla vai kaupungissa?',
           ],
+          modelAnswerFi:
+            'Mielestäni paras tapa asua riippuu elämäntilanteesta, mutta itse pidän tällä hetkellä eniten kerrostaloasumisesta. Kerrostalossa on hyvää se, että kaikki palvelut ovat lähellä ja huoltoyhtiö hoitaa suuremmat korjaukset. Huonoa puolta on vähäinen tila ja naapureiden äänet. Omakotitalossa taas on enemmän tilaa ja yksityisyyttä, mutta se vaatii enemmän ylläpitoa ja rahaa. Haluaisin asua mieluummin kaupungissa, koska arvostan hyviä kulkuyhteyksiä ja lyhyttä työmatkaa.',
         },
         {
           id: 'speaking-opinion-2',
@@ -1408,6 +1506,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Millaisia asumisen kulut ovat muissa sinulle tutuissa maissa?',
             'Pitäisikö ihmisten saada valtiolta asumistukea?',
           ],
+          modelAnswerFi:
+            'Mielestäni asuminen on Suomessa kallista varsinkin suurimmissa kaupungeissa, vaikka pienemmillä paikkakunnilla hinnat ovat kohtuullisempia. Itse haluaisin käyttää asumiseen korkeintaan kolmasosan tuloistani kuukaudessa. Muissa tuntemissani maissa asumiskulut vaihtelevat paljon – joissakin ne ovat halvempia, toisissa vielä kalliimpia kuin Suomessa. Mielestäni valtion pitäisi tukea asumista niille, joilla on siihen todellinen tarve, jotta kenenkään ei tarvitse jäädä asunnottomaksi.',
         },
         {
           id: 'speaking-opinion-3',
@@ -1416,6 +1516,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Valitse A tai B.'],
+          modelAnswerFi:
+            'Valitsen aiheen A, kannattaako ostaa oma asunto. Omistusasumisen etuna on, että vuokra ei "katoa" kuukausittain, vaan raha jää lopulta itselle asunnon arvon muodossa. Toisaalta vuokra-asuminen on joustavampaa, jos elämäntilanne muuttuu usein. Itse asun tällä hetkellä vuokralla, koska en ole vielä valmis sitoutumaan yhteen paikkaan. Uskon, että omistusasunnon ostaminen kannattaa erityisesti silloin, kun elämäntilanne on vakaa ja aikoo asua samalla alueella pitkään. Sama pohdintarakenne toimisi myös aiheeseen B.',
           subChoices: [
             {
               label: 'A. Kannattaako ostaa oma asunto?',
@@ -1739,22 +1841,30 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-informal-1',
           titleFi: 'Suositteluviesti ystävälle',
           instructionsFi: 'Alueellesi on avattu uusi parturi-kampaamo. Kävit siellä ja olit todella tyytyväinen. Kirjoita viesti, jossa suosittelet sitä. Kerro, miksi pidit siitä.',
+          sampleFi:
+            'Hei! Kävin viime viikolla siinä uudessa parturi-kampaamossa keskustassa, ja olin tosi tyytyväinen. Kampaaja kuunteli tarkasti, mitä halusin, ja lopputulos oli juuri sitä. Hinnatkin olivat ihan kohtuulliset. Suosittelen lämpimästi, jos etsit uutta paikkaa!',
         },
         {
           id: 'writing-test-informal-2',
           titleFi: 'Kysymys perheenjäsenelle',
           instructionsFi:
             'Olet pyytänyt tarjouksia kotivakuutuksesta useilta vakuutusyhtiöiltä. Yllätyit isoista eroista. Kirjoita perheenjäsenelle, kerro mielipiteesi ja kysy hänen mielipidettään.',
+          sampleFi:
+            'Hei! Pyysin tarjouksia kotivakuutuksesta muutamalta eri yhtiöltä, ja hinnat vaihtelivat todella paljon – halvin ja kallein erosivat lähes sadalla eurolla vuodessa. Ihmettelen, miten sama vakuutus voi maksaa niin eri hintaa. Onko sinulla kokemusta jostain tietystä yhtiöstä, jota voisit suositella?',
         },
         {
           id: 'writing-test-informal-3',
           titleFi: 'Avunpyyntö sukulaiselle',
           instructionsFi: 'Olet vaihtanut puhelinta, etkä saa pankkisovellusta toimimaan. Kirjoita teknologiaa hyvin osaavalle sukulaiselle.',
+          sampleFi:
+            'Hei! Ostin uuden puhelimen, mutta en saa pankkisovellusta toimimaan mitenkään – se antaa koko ajan virheilmoituksen. Tiedän, että olet hyvä tällaisissa jutuissa. Voisitko auttaa minua, kun sinulla on aikaa? Voin tulla käymään milloin vain.',
         },
         {
           id: 'writing-test-informal-4',
           titleFi: 'Viesti kaverille',
           instructionsFi: 'Käyt usein uimahallissa kaverisi kanssa. Luit, että kertamaksu nousee merkittävästi. Kirjoita kaverille asiasta.',
+          sampleFi:
+            'Hei! Luin juuri, että uimahallin kertamaksu nousee ensi kuusta alkaen aika paljon. Ajattelin, että kannattaisi ehkä ostaa kausikortti ennen hinnannousua, niin säästettäisiin. Mitä mieltä olet?',
         },
       ],
       formalTasks: [
@@ -1763,24 +1873,32 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Reklamaatio ruokakauppaan',
           instructionsFi:
             'Ostit riisiä kaupasta. Viikko myöhemmin huomasit, että riisikoisia oli levinnyt kaappiisi. Nyt kaappi on täynnä hyönteisiä. Kirjoita valitus. Kerro, mitä ja milloin ostit. Kuvaile ongelma ja pyydä hyvitystä.',
+          sampleFi:
+            'Hyvä vastaanottaja, ostin myymälästänne riisipussin viime viikon tiistaina. Kotona huomasin myöhemmin, että pussista oli levinnyt riisikoisia koko keittiökaappiini, ja nyt kaappi on täynnä hyönteisiä. Tämä on aiheuttanut minulle paljon ylimääräistä siivousta ja muiden elintarvikkeiden hävittämistä. Pyydän hyvitystä tuotteesta sekä aiheutuneesta haitasta. Liitän mukaan kuitin.',
         },
         {
           id: 'writing-test-formal-2',
           titleFi: 'Valitus verkkokauppaan',
           instructionsFi:
             'Ostit vaatteita verkosta. Kotona huomasit vian. Keksi itse, mikä vika on. Kerro, milloin ja mistä ostit, tuotteen nimi, merkki ja malli.',
+          sampleFi:
+            'Hyvä vastaanottaja, tilasin verkkokaupastanne viime viikolla takin (merkki Nordic Wear, malli City Coat). Kun avasin paketin kotona, huomasin, että vetoketju on rikki eikä sulkeudu kunnolla. Haluaisin vaihtaa tuotteen ehjään kappaleeseen tai saada rahat takaisin. Liitän mukaan kuvan viasta ja tilausnumeron.',
         },
         {
           id: 'writing-test-formal-3',
           titleFi: 'Palaute hierojalle',
           instructionsFi:
             'Ikääntynyt sukulaisesi kävi hierojalla ja oli erittäin tyytyväinen. Hänellä on huono näkö ja hän liikkuu epävarmasti, mutta hieroja otti tämän hyvin huomioon. Kirjoita positiivinen palaute hänen puolestaan.',
+          sampleFi:
+            'Hyvä vastaanottaja, kirjoitan äitini puolesta, joka kävi vastaanotollanne viime viikolla. Hänellä on huono näkö ja hän liikkuu epävarmasti, mutta hierojanne otti tämän erinomaisesti huomioon koko käynnin ajan – hän avusti häntä huoneeseen ja selitti kaiken rauhallisesti. Äitini oli todella tyytyväinen sekä hoitoon että saamaansa kohteluun. Kiitos hyvästä palvelusta!',
         },
         {
           id: 'writing-test-formal-4',
           titleFi: 'Varausviesti ravintolaan',
           instructionsFi:
             'Teet varauksen isänpäivälounaalle. Yhdellä perheenjäsenellä on ruokarajoitteita. Kirjoita viesti, jossa kerrot, milloin tulette, kuinka monta ja rajoitteet.',
+          sampleFi:
+            'Hyvä vastaanottaja, haluaisin varata pöydän isänpäivälounaalle sunnuntaiksi kello 13. Meitä olisi yhteensä viisi henkilöä. Yhdellä perheenjäsenellä on gluteeniallergia, joten toivoisimme, että tämä huomioidaan ruokatarjonnassa. Kiitos jo etukäteen!',
         },
       ],
       opinionTopics: [
@@ -1788,11 +1906,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Kauppojen asiakaspalvelu ja aukiolot',
           options: ['A. Itsepalvelukassojen hyödyt ja haitat', 'B. Pitääkö kauppojen olla yölläkin auki?'],
+          modelAnswerFi:
+            'Otan kantaa itsepalvelukassoihin. Niiden etuna on nopeus – jonoja ei synny yhtä helposti, ja asiointi käy omaan tahtiin. Toisaalta itsepalvelukassat vähentävät henkilökohtaista asiakaspalvelua, mikä voi olla hankalaa esimerkiksi ikäihmisille tai teknologiaa vieroksuville. Mielestäni molempia vaihtoehtoja pitäisi olla tarjolla rinnakkain, jotta jokainen voi valita itselleen sopivamman tavan asioida.',
         },
         {
           id: 'writing-opinion-2',
           titleFi: 'Pankkipalvelut',
           options: ['Riittääkö verkkopankki, vai tarvitaanko vielä pankkikonttoreita?'],
+          modelAnswerFi:
+            'Mielestäni verkkopankki riittää useimpiin päivittäisiin asioihin, kuten laskujen maksuun ja tilin seurantaan. Kuitenkin monimutkaisemmissa asioissa, kuten lainaneuvotteluissa tai ikäihmisten asioinnissa, kasvokkainen palvelu on edelleen tärkeää. Siksi uskon, että ainakin muutamia pankkikonttoreita tarvitaan yhä, vaikka suurin osa asioinnista siirtyykin verkkoon.',
         },
         {
           id: 'writing-opinion-3',
@@ -1802,6 +1924,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Pitääkö Suomessa saada palvelua suomeksi?',
             'Suomalaiset asiakaspalvelijat ovat epäkohteliaita',
           ],
+          modelAnswerFi:
+            'Otan kantaa aiheeseen "Kannattaako ottaa vakuutus?". Mielestäni vakuutus kannattaa lähes aina, koska se suojaa yllättäviltä ja kalliilta tilanteilta, kuten tulipalolta tai varkaudelta. Toisaalta vakuutusmaksut voivat tuntua turhalta menolta, jos mitään ei koskaan tapahdu. Silti riski on mielestäni liian suuri otettavaksi ilman suojaa, joten suosittelen vakuutuksen ottamista varsinkin kodin ja terveyden osalta.',
         },
       ],
     },
@@ -2079,11 +2203,19 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Rikkinäinen puhelin',
           scenarioFi: 'Ostit uuden, kalliin puhelimen, mutta se ei toimi kunnolla. Soita elektroniikkaliikkeeseen.',
           turns: [
-            { instructionFi: 'Esittäydy ja kuvaile ongelma.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
-            { instructionFi: 'Vastaa myöntävästi ja kerro, milloin tulet käymään.', seconds: 15 },
-            { instructionFi: 'Reagoi sopivalla tavalla ja hyvästele.', seconds: 15 },
+            {
+              instructionFi: 'Esittäydy ja kuvaile ongelma.',
+              seconds: 20,
+              modelResponseFi: 'Hei, ostin teiltä viime viikolla puhelimen, ja se sammuu itsestään koko ajan.',
+            },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20, modelResponseFi: 'Ostin sen viime tiistaina, ja kuitti on vielä tallella.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20, modelResponseFi: 'Se on malliltaan sama, jonka näytimme myymälässä, uusin musta versio.' },
+            {
+              instructionFi: 'Vastaa myöntävästi ja kerro, milloin tulet käymään.',
+              seconds: 15,
+              modelResponseFi: 'Joo, sopii hyvin, voisin tulla huomenna iltapäivällä kello kolmen jälkeen.',
+            },
+            { instructionFi: 'Reagoi sopivalla tavalla ja hyvästele.', seconds: 15, modelResponseFi: 'Selvä, kiitos avusta, nähdään huomenna!' },
           ],
         },
       ],
@@ -2100,6 +2232,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Miksi se on sinulle tärkeä?',
             'Mikä on paras asia tässä paikassa? Miksi?',
           ],
+          modelAnswerFi:
+            'Minulle tärkeä paikka on lähikirjasto, joka sijaitsee kymmenen minuutin kävelymatkan päässä kotoani. Käyn siellä noin kerran viikossa lainaamassa kirjoja ja joskus vain lukemassa rauhassa. Se on minulle tärkeä, koska se on ilmainen ja rauhallinen paikka opiskella ja rentoutua. Parasta siinä on ystävällinen henkilökunta, joka auttaa aina mielellään, jos etsin jotain tiettyä.',
         },
         {
           id: 'speaking-test-2',
@@ -2108,6 +2242,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 60,
           speakSeconds: 90,
           questions: ['Mitä tapahtui?', 'Miksi kokemus oli huono?', 'Mitä asiakaspalvelijan olisi pitänyt tehdä toisella tavalla?'],
+          modelAnswerFi:
+            'Kerran soitin puhelinoperaattorille, koska laskussani oli virhe. Jouduin odottamaan puhelinlinjalla yli tunnin, ja lopulta asiakaspalvelija ei osannut auttaa minua ollenkaan. Kokemus oli huono, koska en saanut ongelmaani ratkaistua ja menetin paljon aikaa turhaan. Asiakaspalvelijan olisi pitänyt joko ratkaista ongelma tai ohjata minut oikealle henkilölle heti alussa, sen sijaan että jätti minut odottamaan turhaan.',
         },
         {
           id: 'speaking-test-3',
@@ -2122,6 +2258,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitkä palvelut ovat sinulle kaikkein tärkeimpiä?',
             'Mitä palveluita pitäisi olla jokaisen kodin lähellä?',
           ],
+          modelAnswerFi:
+            'Käyn säännöllisesti ruokakaupassa ja apteekissa, jotka molemmat ovat lähellä kotiani. Asuinalueellani on hyvin peruspalveluita, mutta lähin pankkikonttori puuttuu kokonaan. Käytän verkossa lähinnä verkkopankkia ja erilaisia tilauspalveluita. Tärkeimpiä palveluita minulle ovat terveyspalvelut ja ruokakauppa. Mielestäni jokaisen kodin lähellä pitäisi olla ainakin kauppa, apteekki ja julkinen liikenne.',
         },
       ],
       conversationTasks: [
@@ -2130,14 +2268,14 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Puhelu pankkiin',
           scenarioFi: 'Soitat pankkiin avataksesi uuden tilin.',
           turns: [
-            { instructionFi: 'Kerro, kuka olet ja miksi soitat.', seconds: 15 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
-            { instructionFi: 'Kysy hintaa.', seconds: 15 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
-            { instructionFi: 'Hyvästele.', seconds: 5 },
+            { instructionFi: 'Kerro, kuka olet ja miksi soitat.', seconds: 15, modelResponseFi: 'Hei, nimeni on Sara Lindqvist, ja haluaisin avata uuden pankkitilin.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10, modelResponseFi: 'Kyllä, minulla on jo asiakkuus teillä, mutta haluan lisätilin.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 15, modelResponseFi: 'Tarvitsen tilin lähinnä säästämistä varten.' },
+            { instructionFi: 'Kysy hintaa.', seconds: 15, modelResponseFi: 'Paljonko tilin avaaminen ja ylläpito maksavat?' },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10, modelResponseFi: 'Selvä, se kuulostaa ihan kohtuulliselta.' },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 10, modelResponseFi: 'Ei, minulla ei ole muita kysymyksiä tällä hetkellä.' },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5, modelResponseFi: 'Kiitos avusta!' },
+            { instructionFi: 'Hyvästele.', seconds: 5, modelResponseFi: 'Hyvää päivänjatkoa, näkemiin!' },
           ],
         },
         {
@@ -2145,11 +2283,19 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Kadonnut kirjaston kirja',
           scenarioFi: 'Lainasit kirjaston kirjan ja hukkasit sen. Mene kirjastoon.',
           turns: [
-            { instructionFi: 'Kerro, mitä on tapahtunut.', seconds: 25 },
-            { instructionFi: 'Vastaa kieltävästi ja kerro, miksi.', seconds: 25 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
+            {
+              instructionFi: 'Kerro, mitä on tapahtunut.',
+              seconds: 25,
+              modelResponseFi: 'Hei, lainasin täältä kirjan pari viikkoa sitten, mutta valitettavasti hukkasin sen enkä löydä sitä mistään.',
+            },
+            {
+              instructionFi: 'Vastaa kieltävästi ja kerro, miksi.',
+              seconds: 25,
+              modelResponseFi: 'Ei, en usko, että se on enää löydettävissä — olen etsinyt sitä kotoa moneen kertaan.',
+            },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10, modelResponseFi: 'Voi, selvä, ymmärrän — maksan kyllä korvauksen mielelläni.' },
+            { instructionFi: 'Vastaa myöntävästi.', seconds: 10, modelResponseFi: 'Joo, se sopii minulle hyvin.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10, modelResponseFi: 'Kirjan nimi oli "Suomen luonto", jos se auttaa.' },
           ],
         },
       ],
@@ -2159,30 +2305,35 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Kadotit pankkikorttisi. Soita pankkiin ja selitä asia.',
           seconds: 20,
+          modelAnswerFi: 'Hei, soitan koska hukkasin pankkikorttini tänään. Voisitteko sulkea sen ja tilata minulle uuden?',
         },
         {
           id: 'speaking-situation-1-2',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Haluat uuden matkavakuutuksen, koska vanha ei riitä. Soita vakuutusyhtiöön.',
           seconds: 30,
+          modelAnswerFi: 'Hei, nykyinen matkavakuutukseni ei kata pitkiä matkoja, joten haluaisin kysyä laajemmasta vakuutuksesta. Mitä vaihtoehtoja teillä on?',
         },
         {
           id: 'speaking-situation-1-3',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Haluat varata työtilan kirjastosta harrastustasi varten. Kerro kirjastonhoitajalle, millaisen tilan tarvitset ja kuinka monelle hengelle.',
           seconds: 30,
+          modelAnswerFi: 'Hei, haluaisin varata pienen ryhmätyötilan neljälle hengelle ensi lauantaiksi käsityöharrastustamme varten. Onko sellainen vapaana?',
         },
         {
           id: 'speaking-situation-1-4',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Haluat varata pöydän ravintolasta pientä juhlaa varten. Soita ravintolaan.',
           seconds: 30,
+          modelAnswerFi: 'Hei, haluaisin varata pöydän kahdeksalle hengelle perjantai-illaksi kello seitsemäksi pientä juhlaa varten. Onnistuisiko se?',
         },
         {
           id: 'speaking-situation-1-5',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Olet erittäin tyytyväinen ravintolaan, jossa pidit juhlat. Anna palautetta.',
           seconds: 20,
+          modelAnswerFi: 'Haluaisin antaa kiitosta — ruoka oli herkullista ja henkilökunta todella ystävällistä. Suosittelen teitä varmasti muille!',
         },
         {
           id: 'speaking-situation-2-1',
@@ -2190,30 +2341,35 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           scenarioFi:
             'Olet ravintolassa kaverin kanssa. Pyydä tarjoilijaa tuomaan lasku. Kun sinulta kysytään, oliko ruoka hyvää, kerro, mikä oli hyvää ja mistä et pitänyt.',
           seconds: 20,
+          modelAnswerFi: 'Saisimmeko laskun, kiitos? Ruoka oli muuten todella hyvää, mutta kastike oli mielestäni hieman liian suolainen.',
         },
         {
           id: 'speaking-situation-2-2',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Haluat liittyä kaupan kanta-asiakasohjelmaan. Kysy infopisteeltä, miten se onnistuu.',
           seconds: 20,
+          modelAnswerFi: 'Hei, haluaisin liittyä kanta-asiakasohjelmaanne. Miten se onnistuu, tarvitsenko jotain tiettyjä tietoja mukaan?',
         },
         {
           id: 'speaking-situation-2-3',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Haluat ajokortin, mutta et voi maksaa autokoulua kerralla. Kysy osamaksusta.',
           seconds: 30,
+          modelAnswerFi: 'Hei, olisin kiinnostunut ajokortista, mutta en pysty maksamaan koko summaa kerralla. Onko teillä mahdollisuutta osamaksuun?',
         },
         {
           id: 'speaking-situation-2-4',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Palautat pulloja pullonpalautusautomaattiin. Painat kuittinappia, mutta kuittia ei tule. Selitä asia kassalle.',
           seconds: 20,
+          modelAnswerFi: 'Anteeksi, palautin juuri pulloja automaattiin, mutta kuittia ei tullut ollenkaan. Voisitteko auttaa?',
         },
         {
           id: 'speaking-situation-2-5',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Ostat ison huonekalun. Sinulla ei ole autoa. Kysy kotiinkuljetuksesta.',
           seconds: 30,
+          modelAnswerFi: 'Hei, haluaisin ostaa tämän sohvan, mutta minulla ei ole autoa sen kuljettamiseen. Onko teillä kotiinkuljetuspalvelua?',
         },
       ],
       opinionTasks: [
@@ -2230,6 +2386,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Miten voit säästää rahaa?',
             'Mitä hyviä ja huonoja puolia on korkeissa hinnoissa? Matalissa hinnoissa?',
           ],
+          modelAnswerFi:
+            'Mielestäni ruoka ja vaatteet maksavat nykyään aika paljon, varsinkin verrattuna muutaman vuoden takaiseen. Ajattelen näin, koska huomaan omassa arjessani, että sama ostoskori maksaa enemmän kuin ennen. Eniten rahaa minulla kuluu ruokaan ja asumiseen. Säästän rahaa suunnittelemalla ostokseni etukäteen ja vertailemalla hintoja. Korkeissa hinnoissa on huonoa se, että kaikilla ei ole varaa kaikkeen, mutta ne voivat toisaalta kertoa laadusta.',
         },
         {
           id: 'speaking-opinion-2',
@@ -2243,6 +2401,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä hyviä puolia on käytetyn tavaran ostamisessa?',
             'Onko sinun helppo löytää sopivia tavaroita käytettynä?',
           ],
+          modelAnswerFi:
+            'Ostan nykyään mieluummin käytettyjä tavaroita, kun se on mahdollista. Uuden tavaran ostamisessa hyvää on se, että tuote on varmasti ehjä ja usein sillä on takuu. Käytetyn tavaran ostaminen taas on ympäristöystävällisempää ja edullisempaa. Minulle on yleensä melko helppo löytää sopivia vaatteita käytettynä, mutta esimerkiksi elektroniikkaa on vaikeampi löytää hyväkuntoisena.',
         },
         {
           id: 'speaking-opinion-3',
@@ -2251,6 +2411,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Valitse A tai B.'],
+          modelAnswerFi:
+            'Valitsen aiheen A, asiakaspalvelun. Kokemukseni asiakaspalvelusta Suomessa ovat pääosin olleet hyviä – palvelu on usein ystävällistä, joskin melko asiallista ja vähän vähäeleisempää kuin joissain muissa maissa. Hyvä palvelu on mielestäni sitä, että asiakasta kuunnellaan ja ongelma ratkaistaan nopeasti. Asiakaspalvelijoiden pitäisi mielestäni pystyä palvelemaan sekä suomeksi että englanniksi. Sinuttelu tuntuu minusta luontevammalta kuin teitittely, mutta ymmärrän, että se riippuu tilanteesta. Sama rakenne toimisi myös aiheeseen B, kirjastoihin.',
           subChoices: [
             {
               label: 'A. Asiakaspalvelu',
@@ -2509,22 +2671,30 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-informal-1',
           titleFi: 'Kysymys ystävälle',
           instructionsFi: 'Haluat järjestää naamiaisjuhlat halloweeniksi. Tiedät, että yksi ystävistäsi tykkää järjestää juhlia. Kysy, järjestäisikö hän ne kanssasi.',
+          sampleFi:
+            'Hei! Ajattelin, että olisi kiva järjestää naamiaisjuhlat halloweeniksi. Tiedän, että olet aina hyvä tällaisten juhlien suunnittelussa. Järjestäisitkö ne kanssani? Voisimme pyytää kaikki tuomaan omat naamiaisasunsa.',
         },
         {
           id: 'writing-test-informal-2',
           titleFi: 'Ehdotus sukulaiselle',
           instructionsFi: 'Ehdota sukulaiselle, että menisitte yhdessä katsomaan urheilutapahtumaa, teatteriesitystä tai konserttia. Keksi itse, mitä, missä ja milloin.',
+          sampleFi:
+            'Hei! Huomasin, että kaupunginteatterissa on uusi näytelmä ensi kuussa. Lähtisitkö katsomaan sitä kanssani lauantaina 14. päivä? Voisimme mennä ensin syömään ennen esitystä.',
         },
         {
           id: 'writing-test-informal-3',
           titleFi: 'Suosittelu ystävälle',
           instructionsFi: 'Olet juuri katsonut useita jaksoja tv-sarjasta, joka on todella hyvä. Keksi, millainen sarja se on, ja suosittele sitä.',
+          sampleFi:
+            'Hei! Aloitin viime viikolla uuden dekkarisarjan ja olen ihan koukussa siihen. Se kertoo salapoliisista, joka tutkii vanhoja ratkaisemattomia rikoksia pienessä kaupungissa. Suosittelen todella lämpimästi, jos tykkäät jännityksestä!',
         },
         {
           id: 'writing-test-informal-4',
           titleFi: 'Viesti naapurille',
           instructionsFi:
             'Haluaisit antaa lapsesi opettajalle pienen joululahjan, mutta et tiedä, millaisia lahjoja opettajille yleensä annetaan. Kysy naapurilta, jolla on samanikäisiä lapsia.',
+          sampleFi:
+            'Hei! Haluaisin antaa lapseni opettajalle pienen joululahjan, mutta en tiedä, mikä olisi sopiva. Sinullahan on samanikäinen lapsi – mitä te yleensä annatte opettajille? Otan mielelläni vinkkejä vastaan.',
         },
       ],
       formalTasks: [
@@ -2532,23 +2702,31 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-formal-1',
           titleFi: 'Viesti tapahtumajärjestäjälle',
           instructionsFi: 'Kävit konsertissa ja olit pettynyt joihinkin järjestelyihin. Kirjoita järjestäjälle, kerro mitä tapahtui ja ehdota parannuksia.',
+          sampleFi:
+            'Hyvä vastaanottaja, kävin viime viikonloppuna järjestämässänne konsertissa ja olin pettynyt muutamiin asioihin. Erityisesti äänentoisto oli paikoin epäselvä, ja jonotus sisäänkäynnillä kesti todella pitkään. Ehdottaisin, että jatkossa varattaisiin enemmän aikaa sisäänpääsyyn ja äänentoisto tarkistettaisiin huolellisemmin ennen tapahtuman alkua.',
         },
         {
           id: 'writing-test-formal-2',
           titleFi: 'Kysymys kuntosalille',
           instructionsFi:
             'Sinulla on kuukausittainen kuntosalijäsenyys, mutta lääkäri on kieltänyt liikunnan kuudeksi viikoksi. Haluaisit siirtää jäsenyyden perheenjäsenelle. Kysy, onko se mahdollista.',
+          sampleFi:
+            'Hyvä vastaanottaja, minulla on kuukausittainen jäsenyytenne, mutta lääkäri on kieltänyt liikunnan kuudeksi viikoksi loukkaantumisen vuoksi. Olisiko mahdollista siirtää jäsenyyteni tänä aikana perheenjäsenelleni, jotta se ei menisi hukkaan? Kiitos etukäteen vastauksestanne.',
         },
         {
           id: 'writing-test-formal-3',
           titleFi: 'Poissaoloviesti opettajalle',
           instructionsFi: 'Olet ilmoittautunut suomalaisen perinneruoan kurssille, mutta et pääse ensimmäiselle kerralle. Kirjoita opettajalle.',
+          sampleFi:
+            'Hyvä opettaja, olen ilmoittautunut suomalaisen perinneruoan kurssillenne, mutta valitettavasti en pääse osallistumaan ensimmäiselle kerralle työesteen vuoksi. Onko mahdollista saada tietoa käsitellyistä asioista jälkikäteen, jotta pysyn mukana seuraavilla kerroilla?',
         },
         {
           id: 'writing-test-formal-4',
           titleFi: 'Viesti museon asiakaspalveluun',
           instructionsFi:
             'Olet menossa taidenäyttelyyn vanhaan museorakennukseen pyörätuolia käyttävän ystäväsi kanssa. Et tiedä, onko rakennus esteetön. Kysy asiakaspalvelusta.',
+          sampleFi:
+            'Hyvä vastaanottaja, olemme tulossa näyttelyynne ensi viikolla pyörätuolia käyttävän ystäväni kanssa. Onko rakennuksenne esteetön – löytyykö sieltä hissi tai luiska sisäänkäynnille? Kiitos etukäteen tiedosta.',
         },
       ],
       opinionTopics: [
@@ -2559,11 +2737,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'A. Kulttuuri- ja liikuntaseteleistä on paljon hyötyä',
             'B. Kulttuuri- ja liikuntasetelit ilahduttavat vain hyväosaisia',
           ],
+          modelAnswerFi:
+            'Olen sitä mieltä, että kulttuuri- ja liikuntaseteleistä on paljon hyötyä työntekijöille. Ne kannustavat liikkumaan ja harrastamaan kulttuuria, mikä parantaa sekä fyysistä että henkistä hyvinvointia. Toisaalta on totta, että setelit hyödyttävät lähinnä niitä, joilla on jo työpaikka ja siten mahdollisuus saada tällainen etu. Silti näen setelit myönteisenä asiana, koska ne madaltavat kynnystä aloittaa uusi harrastus.',
         },
         {
           id: 'writing-opinion-2',
           titleFi: 'Elokuvateatterien ruoka- ja juomakulttuuri',
           options: ['Lopettakaa elokuvateatterissa syöminen!'],
+          modelAnswerFi:
+            'Ymmärrän turhautumisen, mutta en ole täysin samaa mieltä siitä, että syöminen elokuvateatterissa pitäisi lopettaa kokonaan. Popcornin rapina tai juoman ääni voi häiritä muita katsojia, mikä on totta. Toisaalta monelle napostelu kuuluu olennaisesti elokuvakokemukseen. Mielestäni parempi ratkaisu olisi rajoittaa erityisen äänekkäitä tai voimakastuoksuisia ruokia, ei kieltää syömistä kokonaan.',
         },
         {
           id: 'writing-opinion-3',
@@ -2575,6 +2757,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'E-urheilu: onko tietokonepelien pelaaminen urheilua?',
             'Yhteiskunnan pitäisi tukea taiteilijoita',
           ],
+          modelAnswerFi:
+            'Otan kantaa aiheeseen "Yhteiskunnan pitäisi tukea taiteilijoita". Mielestäni tuki on tärkeää, koska taide ja kulttuuri rikastuttavat koko yhteiskuntaa, vaikka niitä ei aina voi mitata suoraan rahassa. Toisaalta on ymmärrettävää, että rajallisia verovaroja pitää jakaa harkiten monen tarpeen välillä. Kaiken kaikkiaan uskon, että kohtuullinen tuki taiteilijoille kannattaa, koska elinvoimainen kulttuurielämä hyödyttää meitä kaikkia pitkällä aikavälillä.',
         },
       ],
     },
@@ -2786,6 +2970,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'YKI-taitotaso 4 (B2): tärkeää puhua aiheesta myös yhteiskunnallisella ja abstraktilla tasolla. Viimeiset apukysymykset auttavat tässä eniten. Älä käytä liikaa aikaa helppoihin kysymyksiin – aloita helposta, mutta siirry nopeasti vaikeampiin.',
           ],
         },
+        modelAnswerFi:
+          'Kuuntelen suomalaista musiikkia silloin tällöin, varsinkin suomalaista iskelmää ja rockia. Yleensä tykkään musiikista, jossa on selkeä melodia ja koskettavat sanat. Musiikista tekee hyvää mielestäni aitous – se, että laulaja tai bändi tuntuu välittävän aiheesta oikeasti. Olen valmis maksamaan musiikista, koska haluan tukea muusikoiden työtä. Uskon myös, että yhteiskunnan kannattaa tukea musiikkia verorahoilla, sillä kulttuuri rikastuttaa koko yhteiskuntaa eikä pelkästään yksittäisiä kuuntelijoita.',
       },
       testLongTasks: [
         {
@@ -2802,6 +2988,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Miksi hän on sinulle tärkeä?',
             'Pitäisikö muidenkin seurata häntä?',
           ],
+          modelAnswerFi:
+            'Yksi minulle tärkeä julkkis on suomalainen laulaja, jonka musiikkia olen kuunnellut nuoresta asti. Hän tekee omaperäistä musiikkia ja kirjoittaa itse kappaleensa sanoituksia. Hän on kuuluisa rehellisistä ja koskettavista teksteistään. Hänen faninsa ovat pääasiassa nuoria aikuisia, jotka arvostavat aitoutta musiikissa. Hän on minulle tärkeä, koska hänen musiikkinsa on auttanut minua vaikeina aikoina. Suosittelisin häntä kaikille, jotka tykkäävät tunteikkaasta musiikista.',
         },
         {
           id: 'speaking-test-2',
@@ -2817,6 +3005,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Kenelle muulle se on tärkeä?',
             'Millainen historia ja yhteiskunnallinen merkitys tällä juhlalla on?',
           ],
+          modelAnswerFi:
+            'Kerron juhannuksesta. Sitä vietetään kesäkuun lopussa keskikesän kunniaksi, ja monet suomalaiset viettävät sitä mökillä perheen tai ystävien kanssa. Itse vietän juhannusta yleensä saunomalla ja grillaamalla ystävien kanssa. Se on minulle tärkeä, koska se on ainoa hetki vuodesta, jolloin kaikki läheiseni ovat yhtä aikaa vapaita. Juhannuksella on pitkä historia suomalaisessa kulttuurissa, ja se yhdistää yhä nykyäänkin suomalaisia yhteiseen perinteeseen.',
         },
         {
           id: 'speaking-test-3',
@@ -2831,6 +3021,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Miksi se on sinulle tärkeä?',
             'Kenelle suosittelisit sitä?',
           ],
+          modelAnswerFi:
+            'Kerron lempipodcastistani, joka käsittelee historiaa. Se kertoo eri aikakausien tapahtumista mielenkiintoisella ja helposti ymmärrettävällä tavalla. Kuuntelen sitä yleensä työmatkalla bussissa. Se on minulle tärkeä, koska opin sen avulla uusia asioita ilman, että se tuntuu raskaalta. Suosittelisin sitä kaikille, jotka ovat kiinnostuneita historiasta mutta eivät jaksa lukea paksuja kirjoja.',
         },
       ],
       conversationTasks: [
@@ -2839,14 +3031,22 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Haastattelu matkamessuilla',
           scenarioFi: 'Sinua haastatellaan matkamessuilla.',
           turns: [
-            { instructionFi: 'Tervehdi ja vastaa myöntävästi.', seconds: 10 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 5 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi ja kerro, millaisissa tapahtumissa käyt.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa kysymykseen. Keksi syy itse.', seconds: 20 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
+            { instructionFi: 'Tervehdi ja vastaa myöntävästi.', seconds: 10, modelResponseFi: 'Hei! Joo, mielelläni vastaan muutamaan kysymykseen.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 5, modelResponseFi: 'Matkustan noin kaksi kertaa vuodessa.' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10, modelResponseFi: 'Pidän eniten kaupunkimatkoista, joissa voi tutustua historiaan ja kulttuuriin.' },
+            {
+              instructionFi: 'Vastaa myöntävästi ja kerro, millaisissa tapahtumissa käyt.',
+              seconds: 20,
+              modelResponseFi: 'Joo, käyn usein erilaisissa messuissa ja kulttuuritapahtumissa, kuten musiikkifestivaaleilla ja taidenäyttelyissä.',
+            },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 10, modelResponseFi: 'Suunnittelen yleensä matkani muutama kuukausi etukäteen.' },
+            { instructionFi: 'Vastaa kieltävästi.', seconds: 5, modelResponseFi: 'Ei, en ole vielä käynyt Aasiassa.' },
+            {
+              instructionFi: 'Vastaa kysymykseen. Keksi syy itse.',
+              seconds: 20,
+              modelResponseFi: 'Haluaisin matkustaa sinne, koska kulttuuri ja ruoka kiinnostavat minua kovasti, ja olen kuullut niin paljon hyvää.',
+            },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5, modelResponseFi: 'Kiitos, oli kiva jutella!' },
           ],
         },
         {
@@ -2854,11 +3054,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Keskustelu kaverin kanssa',
           scenarioFi: 'Ystäväsi on yrittänyt tavoittaa sinua, mutta et ole vastannut. Soita hänelle takaisin.',
           turns: [
-            { instructionFi: 'Tervehdi ja kerro, miksi soitat.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi ja kysy, mitä hänelle kuuluu.', seconds: 10 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
-            { instructionFi: 'Kerro, että olet kiinnostunut, mutta et vielä ole varma, pääsetkö. Kerro myös, miksi et vielä tiedä.', seconds: 20 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
+            { instructionFi: 'Tervehdi ja kerro, miksi soitat.', seconds: 10, modelResponseFi: 'Hei! Näin, että soitit — anteeksi, etten vastannut aiemmin.' },
+            { instructionFi: 'Vastaa myöntävästi ja kysy, mitä hänelle kuuluu.', seconds: 10, modelResponseFi: 'Joo, minulla menee hyvin, kiitos! Entä sinulle, mitä kuuluu?' },
+            { instructionFi: 'Vastaa kysymykseen.', seconds: 20, modelResponseFi: 'Olin vain kiireinen töissä koko viikon, siksi en ehtinyt vastata puhelimeen.' },
+            {
+              instructionFi: 'Kerro, että olet kiinnostunut, mutta et vielä ole varma, pääsetkö. Kerro myös, miksi et vielä tiedä.',
+              seconds: 20,
+              modelResponseFi: 'Kuulostaa tosi kivalta, olisin kiinnostunut, mutta en ole vielä varma, pääsenkö — minulla saattaa olla se sama viikonloppu jo varattu.',
+            },
+            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10, modelResponseFi: 'Selvä, ilmoitan sulle heti kun tiedän varmasti!' },
           ],
         },
       ],
@@ -2868,60 +3072,70 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Olet naapurisi ovella tuomassa joulukukkaa. He ovat iloisia ja kutsuvat sinut sisään kahville. Sinulla on kiire, joten kieltäydy kohteliaasti.',
           seconds: 15,
+          modelAnswerFi: 'Kiitos kutsusta, mutta minulla on valitettavasti kiire juuri nyt. Ehkä ensi kerralla!',
         },
         {
           id: 'speaking-situation-1-2',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Kutsu ystäväsi urheilutapahtumaan. Keksi itse, mitä, milloin ja missä.',
           seconds: 30,
+          modelAnswerFi: 'Hei, lähtisitkö katsomaan jääkiekko-ottelua lauantaina areenalle? Ottelu alkaa kello 18.',
         },
         {
           id: 'speaking-situation-1-3',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Ystäväsi kysyy, millaisista elokuvista pidät. Vastaa.',
           seconds: 30,
+          modelAnswerFi: 'Pidän eniten draamaelokuvista ja historiallisista elokuvista. En niinkään tykkää kauhuelokuvista.',
         },
         {
           id: 'speaking-situation-1-4',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Kutsu ystäväsi tupaantuliaisiin uuteen kotiisi. Kerro, millaiset juhlat ovat ja mitä he voisivat tuoda mukanaan.',
           seconds: 30,
+          modelAnswerFi: 'Hei, muutin juuri uuteen asuntoon ja järjestän pienet tupaantuliaiset lauantaina. Tulisitko mukaan? Muuta ei tarvitse tuoda kuin hyvä fiilis.',
         },
         {
           id: 'speaking-situation-1-5',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Olet juhlissa, joissa tarjoillaan suomalaisia perinneruokia. Joku kysyy, mitä mieltä olet suomalaisesta ruokakulttuurista. Vastaa.',
           seconds: 30,
+          modelAnswerFi: 'Pidän suomalaisesta ruokakulttuurista, varsinkin marjoista ja kalaruoista. Se on yksinkertaista mutta maukasta.',
         },
         {
           id: 'speaking-situation-2-1',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Työkaverisi on nähnyt kesäteatteriesityksen, joka kiinnostaa sinua. Kysy, kannattaako se nähdä.',
           seconds: 30,
+          modelAnswerFi: 'Kuulin, että kävit katsomassa sen kesäteatteriesityksen — kannattaako se nähdä? Millainen se oli?',
         },
         {
           id: 'speaking-situation-2-2',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Sinut on kutsuttu hautajaisiin, mutta et ole varma, miten kirkkoon kuuluu pukeutua. Kysy neuvoa ystävältä.',
           seconds: 30,
+          modelAnswerFi: 'Minut on kutsuttu hautajaisiin ensi viikolla, enkä ole varma, miten sinne kuuluu pukeutua. Osaatko neuvoa?',
         },
         {
           id: 'speaking-situation-2-3',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Kävit konsertissa, joka teki sinuun suuren vaikutuksen. Kuvaile sitä ystävälle.',
           seconds: 30,
+          modelAnswerFi: 'Kävin viime viikolla konsertissa, joka teki minuun ihan valtavan vaikutuksen — tunnelma oli sähköinen ja äänentoisto täydellinen.',
         },
         {
           id: 'speaking-situation-2-4',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Saat lahjakortin lippuihin tapahtumaan. Kiitä lahjan antajaa ja kerro, mihin tapahtumaan käytät sen.',
           seconds: 30,
+          modelAnswerFi: 'Kiitos paljon lahjakortista! Käytän sen varmaan siihen musiikkifestivaaliin, josta olen puhunut niin paljon.',
         },
         {
           id: 'speaking-situation-2-5',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Olet ravintolassa ystävän kanssa ja haluat maksaa molempien ateriat. Kun ystäväsi sanoo voivansa maksaa itse, selitä, miksi haluat maksaa.',
           seconds: 30,
+          modelAnswerFi: 'Ei se mitään, annan minä tällä kertaa — halusin kutsua sinut, koska sinä autoit minua niin paljon viime viikolla.',
         },
       ],
       opinionTasks: [
@@ -2938,6 +3152,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä ajattelet suomalaisesta juhlakulttuurista?',
             'Monissa perheissä uskonnolla on tärkeä rooli perhejuhlissa. Mitä ajattelet tästä?',
           ],
+          modelAnswerFi:
+            'Olen ollut muutamissa suomalaisissa perhejuhlissa, esimerkiksi syntymäpäivillä. En ole täysin samaa mieltä siitä, että ne olisivat tylsiä – ne ovat vain rauhallisempia ja vähemmän äänekkäitä kuin joissain muissa kulttuureissa. Muissa tuntemissani maissa perhejuhlat ovat usein suurempia ja äänekkäämpiä, paljon musiikkia ja tanssia. Suomalaisessa juhlakulttuurissa arvostetaan mielestäni rauhaa ja läsnäoloa enemmän kuin näyttävyyttä. Uskonnolla on monissa perheissä edelleen tärkeä rooli, ja mielestäni se on kaunis tapa pitää perinteitä yllä, vaikkei itse olisikaan uskonnollinen.',
         },
         {
           id: 'speaking-opinion-2',
@@ -2952,6 +3168,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Onko suomalainen ruokakulttuuri vaikuttanut sinun ruokailutottumuksiisi?',
             'Mitä eroja olet huomannut eri maiden ruokakulttuurien välillä?',
           ],
+          modelAnswerFi:
+            'Syön tavallisesti melko yksinkertaista ruokaa, kuten kasviksia, kalaa ja täysjyväviljaa. Mielestäni hyvä ruoka on sellaista, joka on sekä terveellistä että maukasta. Pidän suomalaisesta ruoasta, erityisesti marjoista ja ruisleivästä. Suomalainen ruokakulttuuri on vaikuttanut minuun siten, että syön nykyään enemmän kausituotteita kuin ennen. Olen huomannut, että eri maiden ruokakulttuureissa mausteiden käyttö vaihtelee paljon – suomalainen ruoka on yleensä mietoa verrattuna esimerkiksi aasialaiseen ruokaan.',
         },
         {
           id: 'speaking-opinion-3',
@@ -2960,6 +3178,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Valitse A tai B.'],
+          modelAnswerFi:
+            'Valitsen aiheen B, museoiden pitäisikö olla ilmaisia. Käyn museoissa silloin tällöin, kun uusi mielenkiintoinen näyttely avautuu. Mielestäni kaikkien ei tarvitse käydä museoissa säännöllisesti, mutta mahdollisuuden pitäisi olla helposti saatavilla kaikille. Taidemuseoiden ilmaisuus lisäisi mielestäni kulttuurin saavutettavuutta, varsinkin pienituloisille. Uskon, että yhteiskunnan kannattaa tukea museoita, koska ne säilyttävät historiaa ja kulttuuria tuleville sukupolville. Sama pohdintarakenne toimisi myös aiheeseen A.',
           subChoices: [
             {
               label: 'A. Maailman paras urheilulaji',
@@ -3275,24 +3495,32 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-informal-1',
           titleFi: 'Viesti ystävälle',
           instructionsFi: 'Matkustit vahingossa ilman lippua ja sait sakon. Kerro ystävällesi, miten tämä tapahtui ja mitä sitten kävi.',
+          sampleFi:
+            'Hei! Kuvittele, sain eilen sakon bussissa, koska matkakorttini oli tyhjä enkä huomannut sitä ajoissa. Tarkastaja tuli juuri, kun olin nousemassa pois. Jouduin maksamaan aika ison sakon paikan päällä. Muista ainakin sinä tarkistaa korttisi saldo säännöllisesti!',
         },
         {
           id: 'writing-test-informal-2',
           titleFi: 'Avunpyyntö sukulaiselle',
           instructionsFi:
             'Olet menossa ulkomaille ja tarvitset matkavakuutuksen. Eri vakuutusten vertailu on vaikeaa, koska et ymmärrä ehtoja. Kirjoita ystävälle/sukulaiselle ja pyydä apua.',
+          sampleFi:
+            'Hei! Olen lähdössä kolmeksi viikoksi ulkomaille ja yritän löytää sopivan matkavakuutuksen, mutta ehdot ovat aika sekavia enkä oikein ymmärrä eroja. Sinähän olet matkustanut paljon – voisitko auttaa minua vertailemaan vaihtoehtoja?',
         },
         {
           id: 'writing-test-informal-3',
           titleFi: 'Kiitosviesti naapurille',
           instructionsFi:
             'Lapsesi huomasi bussiin noustessa, ettei matkakortilla ollut saldoa. Samassa bussissa ollut naapuri osti ystävällisesti lapsellesi lipun. Kirjoita kiitosviesti.',
+          sampleFi:
+            'Hei! Halusin vielä kiittää sinua eilisestä – oli todella ystävällistä, että ostit lapselleni lipun, kun hänen korttinsa oli tyhjä. Se helpotti tilannetta paljon. Kiitos vielä kerran, se oli tosi kiva ele!',
         },
         {
           id: 'writing-test-informal-4',
           titleFi: 'Kysymys kaverille',
           instructionsFi:
             'Matkustat viikonlopuksi toiseen kaupunkiin. Haluaisit kokeilla kotimajoituspalvelua, mutta et ole käyttänyt sitä aiemmin. Kysy neuvoa kaverilta, joka matkustaa paljon.',
+          sampleFi:
+            'Hei! Olen menossa viikonlopuksi Ouluun ja ajattelin kokeilla kotimajoitusta ensimmäistä kertaa. Sinähän olet käyttänyt sitä aiemmin – mitä kannattaa ottaa huomioon? Onko sinulla vinkkejä hyvän paikan löytämiseen?',
         },
       ],
       formalTasks: [
@@ -3301,23 +3529,31 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Viesti hotelliin',
           instructionsFi:
             'Yövyit hotellissa ja unohdit jotain tärkeää. Kirjoita viesti, jossa kerrot, milloin olit siellä ja mitä unohdit. Kuvaile esine ja miten haluaisit saada sen takaisin.',
+          sampleFi:
+            'Hyvä vastaanottaja, yövyin hotellissanne viime lauantaina huoneessa 214. Huomasin kotiin päästyäni, että olin unohtanut laturini pistorasiaan sängyn viereen. Se on musta, ja siinä on valkoinen tarra kyljessä. Olisiko mahdollista, että lähettäisitte sen minulle postitse, tai voisinko noutaa sen henkilökohtaisesti?',
         },
         {
           id: 'writing-test-formal-2',
           titleFi: 'Kysymys lentoyhtiölle',
           instructionsFi:
             'Olet varaamassa lentoja perheellesi, ja teillä on kissa. Nettisivulla ei voi varata lentoa lemmikille. Kysy, miten pitäisi toimia.',
+          sampleFi:
+            'Hyvä vastaanottaja, olemme varaamassa lentoja perheellemme, ja meillä on mukana kissa. Nettisivullanne ei ole mahdollista lisätä lemmikkiä varaukseen. Miten meidän tulisi toimia, jotta voimme ottaa kissan mukaan lentoon? Kiitos etukäteen ohjeista.',
         },
         {
           id: 'writing-test-formal-3',
           titleFi: 'Reklamaatio laivayhtiölle',
           instructionsFi: 'Olit viikonloppuristeilyllä ystävien kanssa. Et ollut tyytyväinen hyttiin. Kirjoita reklamaatio ja ehdota hyvitystä.',
+          sampleFi:
+            'Hyvä vastaanottaja, olin viime viikonloppuna risteilyllä laivallanne ystävieni kanssa. Hyttimme oli valitettavasti erittäin meluisa, eikä ilmastointi toiminut kunnolla koko matkan aikana. Tämä vaikutti merkittävästi matkakokemukseemme. Toivoisin, että harkitsisitte jonkinlaista hyvitystä, esimerkiksi alennusta seuraavasta matkasta.',
         },
         {
           id: 'writing-test-formal-4',
           titleFi: 'Viesti bussiyhtiölle',
           instructionsFi:
             'Matkustat päivittäin kahdella eri bussilla. Aikataulut eivät kohtaa hyvin, mikä aiheuttaa pitkiä odotuksia. Ehdota aikataulumuutoksia.',
+          sampleFi:
+            'Hyvä vastaanottaja, matkustan päivittäin töihin kahdella eri bussilla, mutta aikataulut eivät kohtaa hyvin – joudun usein odottamaan vaihtopysäkillä yli kaksikymmentä minuuttia. Ehdottaisin, että vuorojen aikatauluja tarkistettaisiin, jotta vaihto sujuisi ilman pitkää odotusta. Kiitos, että otatte asian huomioon.',
         },
       ],
       opinionTopics: [
@@ -3325,11 +3561,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Polttomoottori- ja sähköautot',
           options: ['A. Polttomoottoriautot pitäisi kieltää', 'B. Tavallisilla ihmisillä ei ole varaa ostaa sähköautoa'],
+          modelAnswerFi:
+            'Otan kantaa aiheeseen B. Mielestäni on totta, että sähköautot ovat vielä monelle liian kalliita, mikä tekee siirtymästä epätasa-arvoista. Toisaalta hinnat ovat laskeneet viime vuosina, ja käytettyjen sähköautojen markkina kasvaa jatkuvasti. Uskon, että yhteiskunnan pitäisi tukea siirtymää esimerkiksi verohelpotuksilla, jotta myös pienituloisilla olisi mahdollisuus hankkia sähköauto tulevaisuudessa.',
         },
         {
           id: 'writing-opinion-2',
           titleFi: 'Turismi',
           options: ['Tuhoaako turismi maapallon?'],
+          modelAnswerFi:
+            'Mielestäni turismi voi olla sekä hyödyllistä että haitallista riippuen siitä, miten sitä harjoitetaan. Massaturismi kuluttaa luontoa ja lisää päästöjä, mikä on todellinen ongelma. Toisaalta matkailu tuo monille alueille tärkeitä tuloja ja työpaikkoja. Uskon, että vastuullinen ja kestävä matkailu on ratkaisu – ei turismin lopettaminen kokonaan, vaan sen tekeminen ympäristöystävällisemmäksi.',
         },
         {
           id: 'writing-opinion-3',
@@ -3341,6 +3581,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Ratikoita saatava kaikkiin isoihin kaupunkeihin',
             'Autoilun verotuksessa ei huomioida maaseudulla asuvia',
           ],
+          modelAnswerFi:
+            'Otan kantaa aiheeseen "Matkailu auttaa ymmärtämään muita kulttuureja". Olen vahvasti samaa mieltä, sillä matkustaessa näkee omin silmin, miten muut ihmiset elävät ja ajattelevat, mikä lisää suvaitsevaisuutta. Toisaalta pelkkä matkustaminen ei automaattisesti tarkoita syvällistä kulttuurin ymmärtämistä, jos aikaa viettää vain turistikohteissa. Kaiken kaikkiaan uskon, että avoimin mielin tehty matkailu on yksi parhaista tavoista oppia ymmärtämään maailmaa.',
         },
       ],
     },
@@ -3552,6 +3794,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           'Valitse yksi matka, jonka olet tehnyt. Se voi olla läheinen tai kaukainen: tavallinen matka kotoa töihin tai lomamatka jonnekin kauas.',
           'Yritä puhua koko ajan ja pysyä aiheessa. On normaalia, että syntyy pitkiä taukoja ja sanoja unohtuu. Kun näin käy, palaa aiheeseen mahdollisimman pian.',
         ],
+        modelAnswerFi:
+          'Kerron matkasta, jonka tein viime kesänä junalla Rovaniemelle. Matkaan meni noin kahdeksan tuntia, ja se oli pisin junamatka, jonka olen koskaan tehnyt Suomessa. Lähdin liikkeelle aikaisin aamulla, koska halusin ehtiä perille jo iltapäivällä. Junassa oli mukava istua ikkunan vieressä ja katsella, miten maisema muuttui vähitellen: ensin kaupunkeja ja peltoja, myöhemmin yhä enemmän metsää ja järviä. Otin mukaan kirjan ja välipaloja, koska tiesin matkan olevan pitkä. Junassa tapasin myös mukavan matkaseuran, toisen matkustajan, jonka kanssa juttelimme koko loppumatkan. Kun pääsin lopulta Rovaniemelle, olin väsynyt mutta hyvällä tuulella, koska matka itsessään oli ollut niin rentouttava. Mielestäni juna on paras tapa matkustaa pitkiä matkoja Suomessa, koska sen aikana ehtii sekä levätä että nauttia maisemista.',
       },
       practiceSituationalTasks: [
         {
@@ -3584,6 +3828,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Millainen matka oli?',
             'Miksi matka oli sinulle tärkeä?',
           ],
+          modelAnswerFi:
+            'Matkustin pari vuotta sitten Bangladeshista Suomeen syksyllä, kun muutin tänne opiskelemaan. Matkustin yksin, mikä jännitti minua paljon, koska en ollut koskaan aiemmin lentänyt näin pitkää matkaa. Matka kesti melkein vuorokauden, ja välillä oli vaihto toisessa Euroopan kaupungissa. Kun lopulta saavuin Suomeen, tunsin sekä helpotusta että jännitystä uuden elämän alkamisesta. Tämä matka oli minulle erittäin tärkeä, koska se oli käännekohta elämässäni: se muutti sekä arkeni että tulevaisuuteni suunnan kokonaan.',
         },
         {
           id: 'speaking-test-2',
@@ -3598,6 +3844,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Pidätkö matkustamisesta? Miksi?',
             'Mitä hyviä ja huonoja puolia matkustamisessa on?',
           ],
+          modelAnswerFi:
+            'Matkustan sekä vapaa-ajalla että töiden takia, mutta useammin vapaa-ajalla. Matkustan yleensä siksi, että haluan nähdä uusia paikkoja ja tavata sukulaisia, jotka asuvat kaukana. Mieluiten matkustan junalla, koska se on rauhallinen ja ympäristöystävällinen tapa liikkua, ja matkan aikana ehtii lukea tai levätä. Pidän matkustamisesta erittäin paljon, sillä se avartaa maailmankuvaa ja opettaa uusia asioita eri kulttuureista. Toisaalta matkustamisessa on myös huonoja puolia: se voi olla kallista ja väsyttävää, ja joskus matkasuunnitelmat menevät pieleen esimerkiksi myöhästyneiden lentojen takia. Kaiken kaikkiaan uskon, että matkustamisen hyödyt ovat suuremmat kuin haitat.',
         },
         {
           id: 'speaking-test-3',
@@ -3612,6 +3860,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Miten ongelmat olisi voinut korjata?',
             'Matkustaisitko tähän paikkaan uudestaan?',
           ],
+          modelAnswerFi:
+            'Lomamatkani epäonnistui pari vuotta sitten, kun matkustin ystäväni kanssa etelään lomailemaan viikoksi. Heti ensimmäisenä päivänä lentomme myöhästyi useita tunteja, minkä takia menetimme hotellin ensimmäisen yön. Sen lisäksi matkatavaramme katosivat pariksi päiväksi, joten jouduimme ostamaan uudet vaatteet paikan päältä. Nämä ongelmat olisi voitu välttää, jos olisimme varanneet suoran lennon ja pitäneet tärkeimmät tavarat mukana käsimatkatavarassa. Näistä vastoinkäymisistä huolimatta matkustaisin samaan paikkaan uudestaan, koska maisemat ja ihmiset olivat todella mukavia, eikä yksi epäonninen matka muuta mielikuvaani koko kohteesta.',
         },
       ],
       conversationTasks: [
@@ -3621,16 +3871,56 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           scenarioFi:
             'Olet menossa Lappiin (Kolariin) perheesi kanssa ja haluat varata yöjunan isolle ryhmälle (4 aikuista, 4 lasta) ja kahdelle autolle.',
           turns: [
-            { instructionFi: 'Kerro nimesi ja mihin kaupunkiin haluaisit matkustaa.', seconds: 15 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa, keksi itse päivä.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa: 4 aikuista ja 4 lasta.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa myöntävästi ja kerro, että teillä on mukana kaksi autoa.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Vastaa kieltävästi ja hyvästele.', seconds: 10 },
+            {
+              instructionFi: 'Kerro nimesi ja mihin kaupunkiin haluaisit matkustaa.',
+              seconds: 15,
+              modelResponseFi: 'Hei, nimeni on Maria, ja haluaisin varata yöjunan Kolariin.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 5,
+              modelResponseFi: 'Kyllä, yöjuna sopii meille hyvin.',
+            },
+            {
+              instructionFi: 'Vastaa, keksi itse päivä.',
+              seconds: 20,
+              modelResponseFi: 'Haluaisimme matkustaa ensi perjantaina, eli 14. päivä, jos siihen on vielä tilaa junassa.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 10,
+              modelResponseFi: 'Kyllä, tarvitsemme makuuhytin, koska matkustamme yön yli.',
+            },
+            {
+              instructionFi: 'Vastaa: 4 aikuista ja 4 lasta.',
+              seconds: 10,
+              modelResponseFi: 'Meitä on yhteensä kahdeksan: neljä aikuista ja neljä lasta.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 5,
+              modelResponseFi: 'Kyllä, tarvitsemme useamman hytin, koska olemme iso ryhmä.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi ja kerro, että teillä on mukana kaksi autoa.',
+              seconds: 10,
+              modelResponseFi: 'Kyllä, meillä on mukana myös kaksi autoa, jotka haluaisimme kuljettaa samalla junalla.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 5,
+              modelResponseFi: 'Kyllä, se sopii meille hyvin, kiitos.',
+            },
+            {
+              instructionFi: 'Reagoi sopivalla tavalla.',
+              seconds: 10,
+              modelResponseFi: 'Ai, hinta on siis noin sen verran? Selvä, se käy meille.',
+            },
+            {
+              instructionFi: 'Vastaa kieltävästi ja hyvästele.',
+              seconds: 10,
+              modelResponseFi: 'Ei, muuta en tarvitse tällä kertaa. Kiitos paljon avusta ja hyvää päivänjatkoa!',
+            },
           ],
         },
         {
@@ -3638,12 +3928,37 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Valitus hotellihuoneesta',
           scenarioFi: 'Yövyit hotellissa etkä ole tyytyväinen huoneeseen. Mene vastaanottoon.',
           turns: [
-            { instructionFi: 'Kerro, mikä ongelma huoneessasi on.', seconds: 30 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Kiitä.', seconds: 5 },
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 5 },
+            {
+              instructionFi: 'Kerro, mikä ongelma huoneessasi on.',
+              seconds: 30,
+              modelResponseFi:
+                'Hei, anteeksi että häiritsen, mutta huoneessani numero 214 on ongelma: lämmitys ei toimi ollenkaan, ja huoneessa on todella kylmä. En pystynyt nukkumaan yöllä sen takia.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 10,
+              modelResponseFi: 'Kyllä, olen valmis vaihtamaan huonetta, jos siihen on mahdollisuus.',
+            },
+            {
+              instructionFi: 'Reagoi sopivalla tavalla.',
+              seconds: 10,
+              modelResponseFi: 'Selvä, se kuulostaa hyvältä ratkaisulta. Kiitos, että hoidatte asian nopeasti.',
+            },
+            {
+              instructionFi: 'Kiitä.',
+              seconds: 5,
+              modelResponseFi: 'Kiitos paljon avustanne.',
+            },
+            {
+              instructionFi: 'Vastaa kieltävästi.',
+              seconds: 10,
+              modelResponseFi: 'Ei, muuta ongelmaa ei ole, tämä riittää hyvin.',
+            },
+            {
+              instructionFi: 'Reagoi sopivalla tavalla.',
+              seconds: 5,
+              modelResponseFi: 'Kiitos vielä kerran, mukavaa päivänjatkoa teillekin!',
+            },
           ],
         },
       ],
@@ -3654,60 +3969,80 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           scenarioFi:
             'Juoksit ehtiäksesi bussiin ja pääsit juuri ja juuri mukaan. Bussissa huomaat, ettet ole varma, oletko oikeassa bussissa, etkä pysty tarkistamaan sitä. Kysy toiselta matkustajalta.',
           seconds: 20,
+          modelAnswerFi:
+            'Anteeksi, kun häiritsen, mutta olisiko tämä bussi numero 15, joka menee keskustaan? Juoksin tänne enkä ehtinyt tarkistaa kylttiä. Kiitos avusta!',
         },
         {
           id: 'speaking-situation-1-2',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Haluat käyttää kaupunkipyörää ensimmäistä kertaa. Et saa selvää, miten pyörän irrottaa. Kysy lähellä olevalta henkilöltä, joka on palauttamassa pyörää.',
           seconds: 20,
+          modelAnswerFi:
+            'Hei, anteeksi, tämä on ensimmäinen kertani käyttää kaupunkipyörää enkä saa irrotettua sitä telineestä. Osaisitko näyttää, miten se toimii? Kiitos paljon avusta!',
         },
         {
           id: 'speaking-situation-1-3',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Ystäväsi lainasi autoasi. Kun saat sen takaisin, huomaat naarmun. Ystäväsi ei maininnut siitä. Kerro, mitä ajattelet.',
           seconds: 30,
+          modelAnswerFi:
+            'Hei, kiitos kun toit auton takaisin. Huomasin kuitenkin, että kyljessä on uusi naarmu, jota siinä ei ollut aiemmin. Olisin toivonut, että olisit kertonut siitä heti, kun se tapahtui, koska nyt en tiedä, mitä oikeasti tapahtui. Ymmärrän, että vahinkoja sattuu, mutta olisi ollut rehellisempää mainita asiasta suoraan.',
         },
         {
           id: 'speaking-situation-1-4',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Olet linja-autoasemalla odottamassa ja kuulet kuulutuksen. Vieressä oleva iäkäs henkilö kysyy, mitä siinä sanottiin. Selitä.',
           seconds: 30,
+          modelAnswerFi:
+            'Kuulutuksessa sanottiin, että bussi numero 42 Tampereelle myöhästyy noin kaksikymmentä minuuttia teknisen vian takia. Uusi lähtöaika on siis noin kello kaksi. Kannattaa odottaa laiturilla, sillä bussi tulee sieltä, kun se on valmis.',
         },
         {
           id: 'speaking-situation-1-5',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Ystäväsi suunnittelee matkaa Lappiin ja miettii, mikä vuodenaika olisi paras. Kerro, milloin itse menisit ja miksi.',
           seconds: 30,
+          modelAnswerFi:
+            'Minun mielestäni paras aika matkustaa Lappiin on talvella, tammi-helmikuussa, koska silloin voi nähdä revontulet ja lunta on varmasti paljon. Toisaalta jos haluat kokea keskiyön auringon ja vaeltaa tuntureilla, kesäkuu on parempi valinta. Itse menisin mieluummin talvella, koska pidän lumesta ja talviaktiviteeteista, kuten hiihdosta ja poroajelusta.',
         },
         {
           id: 'speaking-situation-2-1',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Olet junassa matkalla Helsingistä Turkuun. Konduktööri tulee tarkistamaan liput. Sinulla on lippu, mutta et löydä sitä. Selitä tilanne.',
           seconds: 20,
+          modelAnswerFi:
+            'Anteeksi, minulla on kyllä lippu, ostin sen puhelimeeni sovelluksesta, mutta en jostain syystä löydä sitä juuri nyt. Voisitteko odottaa hetken, kun etsin sitä? Se pitäisi olla tässä sovelluksessa jossain.',
         },
         {
           id: 'speaking-situation-2-2',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Työkaverisi miettii, matkustaisiko Ouluun junalla vai lentäen. Anna neuvoja.',
           seconds: 30,
+          modelAnswerFi:
+            'Riippuu vähän siitä, mikä sinulle on tärkeintä. Jos haluat säästää rahaa ja ehtiä tehdä töitä matkalla, kannattaisi valita juna: se on halvempi ja mukavampi, vaikka matka kestää pidempään. Jos taas kiire on suuri, lentäminen on nopeampi vaihtoehto, vaikka se on kalliimpi eikä yhtä ympäristöystävällinen. Itse valitsisin junan, koska pidän siitä, että ehdin rentoutua matkan aikana.',
         },
         {
           id: 'speaking-situation-2-3',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Ystäväsi haluaa lainata polkupyörääsi. Kieltäydy kohteliaasti ja anna syy.',
           seconds: 20,
+          modelAnswerFi:
+            'Voi, valitettavasti en voi lainata pyörääni juuri nyt, koska tarvitsen sitä itse huomenna töihin ja jarrutkin ovat vähän huonossa kunnossa. Ehkä voisit kysyä toiselta kaverilta, tai lainaan sen sinulle mielelläni ensi viikolla, kun olen huoltanut sen.',
         },
         {
           id: 'speaking-situation-2-4',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Haluat lainata ystäväsi autoa. Pyydä sitä ja selitä, miksi tarvitset sitä.',
           seconds: 20,
+          modelAnswerFi:
+            'Hei, voisinko mahdollisesti lainata autoasi ensi viikonloppuna? Minun pitäisi hakea huonekaluja kaupasta, eikä minulla itselläni ole autoa. Tuon sen tietysti takaisin heti, kun olen käyttänyt sitä, ja täytän tankin.',
         },
         {
           id: 'speaking-situation-2-5',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Toisesta kaupungista tuleva ystävä haluaa vierailla kotikaupungissasi. Hän haluaa tietää, mitä nähdä ja tehdä. Anna neuvoja.',
           seconds: 30,
+          modelAnswerFi:
+            'Kannattaa ehdottomasti käydä katsomassa keskustan vanha kirkko ja kävellä rantapuistossa, jos sää on hyvä. Suosittelen myös käymään paikallisessa kahvilassa, jossa on todella hyvää pullaa. Jos aikaa jää, kannattaa vierailla myös taidemuseossa, joka on yksi kaupunkimme parhaista nähtävyyksistä. Voin mielelläni tulla mukaan näyttämään paikkoja!',
         },
       ],
       opinionTasks: [
@@ -3723,6 +4058,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä hyviä puolia turismissa on?',
             'Miten turismi vaikuttaa yhteiskuntaan?',
           ],
+          modelAnswerFi:
+            'Kotipaikkakunnallani käy melko paljon turisteja, erityisesti kesäisin, kun luonto on kauneimmillaan. Mielestäni tämä on hyvä asia, sillä turismi tuo alueelle rahaa ja työpaikkoja, ja monet pienet yritykset, kuten kahvilat ja käsityöliikkeet, elävät suurelta osin turistien varassa. Toisaalta turismilla on myös huonoja puolia: ruuhkat lisääntyvät, luonto voi kärsiä ja hinnat nousevat paikallisille asukkaille. Mielestäni turismia voisi silti olla hieman enemmän, kunhan se toteutetaan kestävällä tavalla, esimerkiksi rajoittamalla kävijämääriä herkimmillä luontokohteilla. Kaiken kaikkiaan uskon, että turismin hyödyt ovat suurempia kuin haitat, jos sitä hallitaan järkevästi.',
         },
         {
           id: 'speaking-opinion-2',
@@ -3736,6 +4073,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä hyviä puolia ilmaisessa joukkoliikenteessä olisi?',
             'Mitä huonoja puolia siinä olisi?',
           ],
+          modelAnswerFi:
+            'Käytän itse pääasiassa bussia ja junaa, ja liput maksavat mielestäni melko paljon, varsinkin jos matkustaa usein. Kuukausilippu vie ison osan kuukausibudjetista. Uskon, että ilmainen joukkoliikenne toisi monia hyötyjä: yhä useampi ihminen jättäisi oman auton kotiin, mikä vähentäisi ruuhkia ja päästöjä, ja myös pienituloiset ihmiset pääsisivät liikkumaan helpommin. Toisaalta huono puoli olisi, että joukkoliikenteen rahoitus pitäisi kerätä jotain muuta kautta, esimerkiksi verojen kautta, mikä voisi tuntua epäreilulta niiltä, jotka eivät käytä bussia tai junaa lainkaan. Mielestäni ratkaisu voisi olla puolittain ilmainen joukkoliikenne, esimerkiksi hyvin edullinen hinta kaikille.',
         },
         {
           id: 'speaking-opinion-3',
@@ -3763,6 +4102,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
               ],
             },
           ],
+          modelAnswerFi:
+            'Valitsen aiheen A: Omalla autolla vai polkupyörällä? Liikun itse mieluummin pyörällä lyhyillä matkoilla, koska se on terveellistä ja ilmaista, eikä pyöräilyyn tarvitse etsiä parkkipaikkaa. Autoilussa hyvä puoli on nopeus ja mukavuus, erityisesti pitkillä matkoilla tai huonolla säällä, mutta huono puoli on ruuhkat, polttoainekulut ja päästöt. Pyöräilyssä huono puoli taas on se, ettei se sovi kaikkiin sääolosuhteisiin eikä pitkiin matkoihin. Jos valitsisin aiheen B, käyttäisin samaa rakennetta: kertoisin ensin omista matkakokemuksistani Suomessa, sitten yhden vaikuttavan matkakohteen ja lopuksi suosittelisin sitä perustellen, miksi juuri se kannattaa nähdä.',
         },
       ],
     },
@@ -4045,26 +4386,36 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-informal-1',
           titleFi: 'Avunpyyntö ystävälle',
           instructionsFi: 'Olet sairas ja tarvitset apua. Kirjoita viesti, jossa kerrot, mikä on vialla ja miten ystäväsi voisi auttaa.',
+          sampleFi:
+            'Hei! Toivottavasti sulla menee hyvin. Mulla on ollut pari päivää kova kuume ja yskä, enkä ole päässyt sängystä ylös juuri ollenkaan. Kotona ei ole enää ruokaa eikä kuumelääkettä, ja apteekkiin on aika pitkä matka. Voisitko käydä ostamassa mulle vähän ruokaa ja lääkettä, jos sulla sattuu olemaan aikaa? Olisin todella kiitollinen. Kiitos jo etukäteen!',
         },
         {
           id: 'writing-test-informal-2',
           titleFi: 'Kysymys työkaverille',
           instructionsFi: 'Olet aloittanut uuden työpaikan etkä tiedä työterveyshuollosta. Kysy asiasta työkaverilta, joka työskentelee samassa yrityksessä.',
+          sampleFi:
+            'Hei! Aloitin just täällä töissä ja mietin, miten työterveyshuolto oikein toimii meidän yrityksessä. Onko meillä oma työterveysasema vai pitääkö varata aika jonkun tietyn palveluntarjoajan kautta? Ja tarviiko sairauslomasta ilmoittaa jotenkin erikseen esihenkilölle? Kiitos etukäteen avusta, olisi kiva tietää tämä ennen kuin sitä tarvitsee!',
         },
         {
           id: 'writing-test-informal-3',
           titleFi: 'Viesti sairaalle naapurille',
           instructionsFi: 'Olet kuullut, että naapuri on sairaana kotona. Kirjoita ja kysy, miten hänellä menee, ja tarjoa apua.',
+          sampleFi:
+            'Hei! Kuulin, että olet ollut sairaana pari päivää. Miten voit nyt, onko parempi olo? Jos tarvitset jotain kaupasta tai apteekista, kerro vain rohkeasti, käyn mielelläni hakemassa. Voin myös tuoda sulle vähän lämmintä keittoa, jos siltä tuntuu. Toivottavasti tervehdyt pian!',
         },
         {
           id: 'writing-test-informal-4',
           titleFi: 'Kysymys sukulaiselle',
           instructionsFi: 'Sinulla on unihäiriöitä ja tiedät, että sukulaisesi kävi unipoliklinikalla. Kysy siitä.',
+          sampleFi:
+            'Hei! Muistelin, että kävit joskus unipoliklinikalla unihäiriöiden takia. Mulla on ollut viime aikoina tosi vaikea nukkua, ja mietin, olisiko kannattavaa hakeutua sinne itsekin. Miten sinne pääsee, tarvitseeko lähetteen lääkäriltä? Ja auttoiko käynti sua lopulta paljon? Kiitos jo etukäteen vinkeistä!',
         },
         {
           id: 'writing-test-informal-5',
           titleFi: 'Viesti harrastuskaverille',
           instructionsFi: 'Kävit hierojalla, joka auttoi niska- ja hartiakipuihisi. Suosittele häntä ystävälle.',
+          sampleFi:
+            'Hei! Tiedätkö, kävin viime viikolla hierojalla, koska niska ja hartiat olivat olleet kipeät jo pitkään. Se auttoi tosi paljon, ja kipu on melkein kokonaan poissa nyt! Ajattelin, että sä voisit myös hyötyä käynnistä, kun oot valitellut samanlaisia vaivoja. Voin lähettää sulle hierojan yhteystiedot, jos kiinnostaa kokeilla.',
         },
       ],
       formalTasks: [
@@ -4072,21 +4423,29 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-test-formal-1',
           titleFi: 'Viesti esihenkilölle',
           instructionsFi: 'Sinulla on tärkeä kokous, mutta olet sairas. Kirjoita ja selitä, miksi et pääse paikalle ja kuinka pitkään olet poissa.',
+          sampleFi:
+            'Hei, valitettavasti en pääse osallistumaan tämänpäiväiseen kokoukseen, koska sairastuin eilen illalla korkeaan kuumeeseen. Lääkäri suositteli minulle noin kolmen päivän sairauslomaa, joten palaan töihin arviolta torstaina, mikäli vointi sen sallii. Pahoittelen tästä aiheutuvaa haittaa ja toivon, että kokouksen muistio lähetetään minulle myöhemmin luettavaksi.',
         },
         {
           id: 'writing-test-formal-2',
           titleFi: 'Viesti terveydenhuollon sähköiseen asiointiin',
           instructionsFi: 'Sinulla on ei-kiireellinen terveysongelma. Kuvaile oireet selkeästi, milloin ne alkoivat, ja kysy ainakin yksi kysymys.',
+          sampleFi:
+            'Hyvä terveydenhuollon henkilökunta, olen kokenut noin kahden viikon ajan lievää selkäkipua, joka pahenee erityisesti pitkän istumisen jälkeen. Kipu ei ole estänyt arjen toimintoja, mutta se on jatkunut pidempään kuin toivoisin. Voisitteko kertoa, kannattaako minun varata aika fysioterapeutille vai riittääkö aluksi yleislääkärin vastaanotto? Kiitos jo etukäteen vastauksesta.',
         },
         {
           id: 'writing-test-formal-3',
           titleFi: 'Valitus terveydenhuollon toiminnasta',
           instructionsFi: 'Sait huonoa hoitoa terveysasemalla. Kirjoita ja selitä, mitä tapahtui ja miten haluaisit asian korjattavan.',
+          sampleFi:
+            'Hyvä vastaanottaja, haluan tuoda tietoonne kokemukseni viime viikon käynniltä terveysasemallanne. Odotin vastaanottoa yli kaksi tuntia varatusta ajasta huolimatta, eikä kukaan tullut kertomaan viivästyksen syytä. Lisäksi lääkäri ei mielestäni kuunnellut oireitani riittävän tarkasti. Toivon, että asiaan kiinnitetään huomiota jatkossa ja että potilaita informoidaan viivästyksistä paremmin. Odotan vastaustanne ja mahdollista uutta ajanvarausta.',
         },
         {
           id: 'writing-test-formal-4',
           titleFi: 'Hammaslääkäriajan peruminen',
           instructionsFi: 'Sait muistutuksen hammaslääkäriajasta, joka ei sovi sinulle. Peru aika ja kerro haluavasi uuden ajan.',
+          sampleFi:
+            'Hyvä vastaanotto, sain muistutuksen ensi tiistain hammaslääkäriajastani, mutta valitettavasti minulla on samaan aikaan este töissä, enkä pääse paikalle. Haluaisin perua tämän ajan ja varata uuden ajan mieluiten seuraavalle viikolle iltapäivisin, mikäli mahdollista. Kiitos ymmärryksestä ja pahoittelen viime hetken muutosta.',
         },
       ],
       opinionTopics: [
@@ -4094,11 +4453,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Terveydenhuollon palvelut',
           options: ['A. Suomalaisen terveydenhuollon hyvät ja huonot puolet', 'B. Hammaslääkärille pitäisi päästä nopeammin'],
+          modelAnswerFi:
+            'Valitsen aiheen A. Suomalaisessa terveydenhuollossa on mielestäni monia hyviä puolia: julkinen terveydenhuolto on kaikkien saatavilla eikä hoito ole kohtuuttoman kallista verrattuna moniin muihin maihin. Toisaalta jonot ovat usein pitkiä, ja kiireettömään hoitoon voi joutua odottamaan viikkoja tai jopa kuukausia. Mielestäni järjestelmää tulisi kehittää lisäämällä resursseja terveysasemille, jotta hoitoon pääsisi nopeammin ilman, että laatu kärsii.',
         },
         {
           id: 'writing-opinion-2',
           titleFi: 'Terveellinen elämä',
           options: ['Terveelliset elämäntavat opitaan kotona'],
+          modelAnswerFi:
+            'Olen samaa mieltä siitä, että terveelliset elämäntavat opitaan pääasiassa kotona. Lapsi omaksuu jo pienestä pitäen vanhempiensa tavat syödä, liikkua ja levätä, ja nämä tavat seuraavat usein aikuisikään asti. Jos kotona syödään säännöllisesti terveellistä ruokaa ja liikutaan yhdessä, lapselle muodostuu luonnollinen suhde terveellisiin valintoihin. Toisaalta myös koulu ja ystäväpiiri vaikuttavat asiaan, mutta uskon, että kodin merkitys on kaikkein suurin, koska tavat opitaan jo ennen kouluikää.',
         },
         {
           id: 'writing-opinion-3',
@@ -4110,6 +4473,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Kaikkien ihmisten pitäisi viettää paljon aikaa luonnossa',
             'Kaikkien ihmisten pitäisi käydä kuntosalilla',
           ],
+          modelAnswerFi:
+            'Valitsen aiheen "Liikunta on paras lääke". Olen vahvasti samaa mieltä tästä väitteestä, sillä säännöllinen liikunta parantaa sekä fyysistä että henkistä terveyttä monin tavoin. Liikunta ehkäisee monia sairauksia, kuten sydän- ja verisuonitauteja, ja se myös vähentää stressiä ja parantaa unenlaatua. Mielestäni liikunnan ei tarvitse olla raskasta kuntosaliharjoittelua, vaan jo päivittäinen kävely tai pyöräily riittää tuomaan merkittäviä terveyshyötyjä. Uskon, että jos ihmiset liikkuisivat enemmän, monet terveysongelmat vähenisivät huomattavasti.',
         },
       ],
     },
@@ -4299,16 +4664,57 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Mitä sanot, jos et ymmärrä',
           scenarioFi: 'Sinulla on todella paha selkäkipu. Olet fysioterapeutilla. Jos et ymmärrä jotain, käytä lämmittelytehtävän fraaseja.',
           turns: [
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
-            { instructionFi: 'Kerro selkäkivusta.', seconds: 20 },
-            { instructionFi: 'Vastaa. Keksi itse.', seconds: 20 },
-            { instructionFi: 'Vastaa. Keksi itse.', seconds: 15 },
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
-            { instructionFi: 'Vastaa. Keksi itse.', seconds: 20 },
-            { instructionFi: 'Vastaa. Keksi itse.', seconds: 20 },
-            { instructionFi: 'Vastaa.', seconds: 20 },
-            { instructionFi: 'Vastaa.', seconds: 15 },
+            {
+              instructionFi: 'Vastaa kieltävästi.',
+              seconds: 5,
+              modelResponseFi: 'Ei, tämä on ensimmäinen kertani täällä.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 10,
+              modelResponseFi: 'Kyllä, minulla on ollut aika paha selkäkipu jo pari viikkoa.',
+            },
+            {
+              instructionFi: 'Kerro selkäkivusta.',
+              seconds: 20,
+              modelResponseFi:
+                'Kipu on pahin aamulla, kun nousen sängystä, ja se säteilee alaselästä oikeaan jalkaan asti. Istuminen pahentaa kipua entisestään, joten työpäivät ovat olleet raskaita.',
+            },
+            {
+              instructionFi: 'Vastaa. Keksi itse.',
+              seconds: 20,
+              modelResponseFi: 'En ole vielä käyttänyt särkylääkkeitä säännöllisesti, vain silloin tällöin kun kipu on pahimmillaan.',
+            },
+            {
+              instructionFi: 'Vastaa. Keksi itse.',
+              seconds: 15,
+              modelResponseFi: 'Työni on aika istumapainotteista, istun tietokoneella suurimman osan päivästä.',
+            },
+            {
+              instructionFi: 'Vastaa kieltävästi.',
+              seconds: 10,
+              modelResponseFi: 'Ei, en ole aiemmin loukannut selkääni.',
+            },
+            {
+              instructionFi: 'Vastaa. Keksi itse.',
+              seconds: 20,
+              modelResponseFi: 'Voisin varmasti tehdä venyttelyä useammin ja pitää lyhyitä taukoja istumisesta työpäivän aikana.',
+            },
+            {
+              instructionFi: 'Vastaa. Keksi itse.',
+              seconds: 20,
+              modelResponseFi: 'Kyllä, olen valmis tulemaan uudestaan seurantakäynnille, jos se auttaa toipumista.',
+            },
+            {
+              instructionFi: 'Vastaa.',
+              seconds: 20,
+              modelResponseFi: 'Kiitos ohjeista, yritän muistaa tehdä liikkeet päivittäin.',
+            },
+            {
+              instructionFi: 'Vastaa.',
+              seconds: 15,
+              modelResponseFi: 'Selvä, varaan seuraavan ajan pariksi viikoksi eteenpäin. Kiitos avusta!',
+            },
           ],
         },
       ],
@@ -4320,6 +4726,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 60,
           speakSeconds: 90,
           questions: ['Miten pidät huolta hyvinvoinnistasi?', 'Mikä auttaa sinua voimaan hyvin?', 'Haluaisitko muuttaa elämäntapojasi?'],
+          modelAnswerFi:
+            'Pidän huolta hyvinvoinnistani liikkumalla säännöllisesti, nukkumalla riittävästi ja yrittämällä syödä monipuolisesti. Minua auttaa voimaan hyvin erityisesti ulkoilu ja luonnossa liikkuminen, koska se rauhoittaa mieltä ja vähentää stressiä. Haluaisin kuitenkin muuttaa elämäntapojani niin, että nukkuisin säännöllisemmin, koska työkiireiden takia unirytmini menee usein sekaisin. Uskon, että pienetkin muutokset arjessa voivat vaikuttaa hyvinvointiin merkittävästi.',
         },
         {
           id: 'speaking-test-2',
@@ -4332,6 +4740,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Millainen kokemus se oli?',
             'Oletko huomannut eroja Suomen ja muiden maiden välillä?',
           ],
+          modelAnswerFi:
+            'Olen käynyt Suomessa sekä lääkärissä että apteekissa muutaman kerran. Kokemukseni ovat olleet pääosin hyviä: henkilökunta on ollut ystävällistä ja ammattitaitoista, vaikka joskus jonot ovat olleet pitkiä. Olen huomannut selvän eron kotimaani ja Suomen välillä: Suomessa terveydenhuolto on paljon järjestelmällisempää, ja kaikki toimii pääosin ajanvarauksen kautta, kun taas kotimaassani voi usein mennä suoraan vastaanotolle ilman ajanvarausta. Molemmissa järjestelmissä on omat hyvät ja huonot puolensa.',
         },
         {
           id: 'speaking-test-3',
@@ -4344,6 +4754,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Millainen on mielestäsi hyvä lääkäri?',
             'Mitä tarvitaan, jotta lääkäri voi tehdä työnsä hyvin?',
           ],
+          modelAnswerFi:
+            'Minulla on ollut yksi lääkäri, joka teki minuun erityisen vaikutuksen, koska hän kuunteli tarkasti ja selitti asiat niin, että ymmärsin ne helposti. Mielestäni hyvä lääkäri on ennen kaikkea hyvä kuuntelija, joka ei kiirehdi vastaanottoa, vaan antaa potilaalle aikaa kertoa oireistaan kunnolla. Lisäksi hyvältä lääkäriltä vaaditaan ammattitaitoa ja kykyä selittää asiat ymmärrettävästi ilman liikaa lääketieteellistä ammattikieltä. Jotta lääkäri voi tehdä työnsä hyvin, hän tarvitsee myös riittävästi aikaa jokaista potilasta kohtaan, mikä vaatii terveydenhuoltojärjestelmältä hyviä resursseja.',
         },
       ],
       conversationTasks: [
@@ -4352,13 +4764,42 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Terveystarkastuksessa',
           scenarioFi: 'Olet terveystarkastuksessa.',
           turns: [
-            { instructionFi: 'Reagoi sopivalla tavalla.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 30 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 15 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 20 },
+            {
+              instructionFi: 'Reagoi sopivalla tavalla.',
+              seconds: 10,
+              modelResponseFi: 'Hyvää päivää, kiitos kun otitte minut vastaan.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 5,
+              modelResponseFi: 'Kyllä, olen valmis aloittamaan tarkastuksen.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 30,
+              modelResponseFi:
+                'Voin hyvin pääosin, mutta olen tuntenut olevani väsynyt viime aikoina ja nukkunut huonosti. Muuten en ole huomannut mitään erityisiä oireita.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 15,
+              modelResponseFi: 'Liikun noin kolmesti viikossa, yleensä kävelemällä tai lenkkeilemällä.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 20,
+              modelResponseFi: 'Ruokavalioni on melko monipuolinen, mutta syön ehkä liian vähän vihanneksia arkena.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 20,
+              modelResponseFi: 'En tupakoi enkä käytä alkoholia kuin harvoin, joskus juhlissa.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 20,
+              modelResponseFi: 'Kiitos neuvoista, yritän parantaa unirytmiäni ja lisätä vihannesten syöntiä.',
+            },
           ],
         },
         {
@@ -4366,15 +4807,52 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Soitto hätänumeroon',
           scenarioFi: 'Soitat numeroon 112, koska olet ensimmäisenä onnettomuuspaikalla - autokolarissa.',
           turns: [
-            { instructionFi: 'Kerro, kuka olet, missä olet ja miksi soitat.', seconds: 20 },
-            { instructionFi: 'Vastaa kysymykseen.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 5 },
-            { instructionFi: 'Vastaa kieltävästi.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi. Pyydä lisäohjeita.', seconds: 15 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
-            { instructionFi: 'Vastaa myöntävästi.', seconds: 10 },
-            { instructionFi: 'Sano, että ymmärsit, ja kysy vielä ohjeita verenvuodon suhteen.', seconds: 20 },
-            { instructionFi: 'Reagoi sopivalla tavalla ja hyvästele.', seconds: 10 },
+            {
+              instructionFi: 'Kerro, kuka olet, missä olet ja miksi soitat.',
+              seconds: 20,
+              modelResponseFi:
+                'Hei, nimeni on Ali. Olen Mannerheimintiellä lähellä keskustaa, ja täällä on juuri tapahtunut autokolari. Soitan, koska tarvitsemme apua paikalle heti.',
+            },
+            {
+              instructionFi: 'Vastaa kysymykseen.',
+              seconds: 10,
+              modelResponseFi: 'Kaksi autoa on törmännyt suoraan risteyksessä.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 5,
+              modelResponseFi: 'Kyllä, ainakin yksi henkilö näyttää loukkaantuneen.',
+            },
+            {
+              instructionFi: 'Vastaa kieltävästi.',
+              seconds: 10,
+              modelResponseFi: 'Ei, hän ei ole tajuton, mutta hän valittaa kovaa kipua kädessään.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi. Pyydä lisäohjeita.',
+              seconds: 15,
+              modelResponseFi: 'Kyllä, olen ihan lähellä häntä. Mitä minun kannattaisi tehdä hänen auttamisekseen sillä aikaa?',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 10,
+              modelResponseFi: 'Kyllä, pidän hänet rauhallisena ja pysyn hänen vierellään.',
+            },
+            {
+              instructionFi: 'Vastaa myöntävästi.',
+              seconds: 10,
+              modelResponseFi: 'Kyllä, ambulanssi saa tulla suoraan tähän risteykseen, tie on selvästi näkyvissä.',
+            },
+            {
+              instructionFi: 'Sano, että ymmärsit, ja kysy vielä ohjeita verenvuodon suhteen.',
+              seconds: 20,
+              modelResponseFi: 'Selvä, ymmärsin ohjeet. Yksi asia vielä: hänen käsivarrestaan vuotaa verta, miten minun pitäisi toimia sen kanssa?',
+            },
+            {
+              instructionFi: 'Reagoi sopivalla tavalla ja hyvästele.',
+              seconds: 10,
+              modelResponseFi: 'Selvä, painan haavaa kankaalla niin kuin sanoitte. Kiitos avusta, näkemiin!',
+            },
           ],
         },
       ],
@@ -4384,6 +4862,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Sinulla on työpäivä, mutta heräät sairaana. Soita töihin ja selitä.',
           seconds: 15,
+          modelAnswerFi:
+            'Hei, olen pahoillani, mutta heräsin tänä aamuna kovaan kuumeeseen ja yskään, enkä pysty tulemaan tänään töihin. Ilmoitan heti, kun tiedän tarkemmin, milloin pääsen takaisin.',
         },
         {
           id: 'speaking-situation-1-2',
@@ -4391,54 +4871,71 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           scenarioFi:
             'Olet terveysasemalla. Sinulla on aika kello 9.20, mutta et tiedä lääkärin nimeä tai huonetta. Kysy työntekijältä.',
           seconds: 15,
+          modelAnswerFi:
+            'Anteeksi, minulla pitäisi olla aika kello 9.20, mutta en tiedä kenen lääkärin luo minun pitäisi mennä enkä missä huoneessa. Voisitteko tarkistaa sen minulle?',
         },
         {
           id: 'speaking-situation-1-3',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Odotat laboratoriossa. Vieressäsi istuva henkilö valittaa pitkästä jonotuksesta. Vastaa.',
           seconds: 10,
+          modelAnswerFi: 'Niinpä, minäkin olen odottanut jo puoli tuntia. Toivottavasti se ei kestä enää kovin kauan.',
         },
         {
           id: 'speaking-situation-1-4',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Käyt hammaslääkärillä. Selitä ongelmasi.',
           seconds: 30,
+          modelAnswerFi:
+            'Minulla on ollut kova särky yhdessä alahampaassa jo pari päivää, ja se pahenee erityisesti syödessä kylmää tai kuumaa ruokaa. En ole aiemmin huomannut vastaavaa oiretta tässä hampaassa, joten haluaisin, että katsotte, mistä kipu johtuu.',
         },
         {
           id: 'speaking-situation-1-5',
           setLabel: 'Tilanteet 1',
           scenarioFi: 'Lääkäri kysyy, onko sinulla stressiä. Vastaa.',
           seconds: 30,
+          modelAnswerFi:
+            'Kyllä, olen tuntenut viime kuukausina melko paljon stressiä työkiireiden takia. Se näkyy erityisesti nukkumisvaikeuksina ja väsymyksenä päivisin. Yritän vähentää stressiä liikkumalla, mutta se ei aina riitä.',
         },
         {
           id: 'speaking-situation-2-1',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Sinulla on terveysongelma ja tarvitset lääkettä. Pyydä apua apteekista.',
           seconds: 15,
+          modelAnswerFi:
+            'Hei, minulla on ollut päänsärkyä ja kurkkukipua pari päivää. Voisitteko suositella jotain reseptivapaata lääkettä, joka voisi auttaa?',
         },
         {
           id: 'speaking-situation-2-2',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Ystäväsi on juuri muuttanut Suomeen ja tarvitsee lääkäriajan. Hän ei tiedä, miten se onnistuu. Neuvo häntä.',
           seconds: 30,
+          modelAnswerFi:
+            'Ensimmäiseksi kannattaa selvittää, mikä terveysasema kuuluu sinun asuinalueellesi, koska julkinen terveydenhuolto toimii yleensä alueen mukaan. Voit varata ajan joko soittamalla suoraan terveysasemalle tai käyttämällä verkkopalvelua, jos sinulla on suomalaiset pankkitunnukset. Jos kyseessä on kiireellinen asia, voit myös mennä päivystykseen ilman ajanvarausta.',
         },
         {
           id: 'speaking-situation-2-3',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Työkaveri kertoo kärsivänsä unettomuudesta. Hän pyytää vinkkejä. Neuvo häntä.',
           seconds: 20,
+          modelAnswerFi:
+            'Kannattaisi kokeilla mennä nukkumaan ja herätä joka päivä suunnilleen samaan aikaan, se auttaa säätämään unirytmiä. Kannattaa myös välttää puhelimen käyttöä juuri ennen nukkumaanmenoa, koska näyttöjen valo voi häiritä nukahtamista. Jos unettomuus jatkuu pitkään, kannattaa harkita lääkärikäyntiä.',
         },
         {
           id: 'speaking-situation-2-4',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Ystäväsi kertoo olevansa raskaana. Onnittele ja kysy jokin kysymys.',
           seconds: 20,
+          modelAnswerFi:
+            'Voi, miten ihanaa! Onneksi olkoon teille! Milloin lasketaan olevan aikaa synnyttää? Ja oletteko jo miettineet, tiedättekö vielä, onko tulossa poika vai tyttö?',
         },
         {
           id: 'speaking-situation-2-5',
           setLabel: 'Tilanteet 2',
           scenarioFi: 'Sinulla on kova hammassärky. Soita hammaslääkäripäivystykseen. Kerro, milloin se alkoi ja millaista se on.',
           seconds: 30,
+          modelAnswerFi:
+            'Hei, minulla on todella kova hammassärky, joka alkoi eilen illalla ja on vain pahentunut yön aikana. Kipu on jomottavaa ja tuntuu erityisesti pahalta, kun syön tai juon jotain kylmää. Pääsisinkö tulemaan päivystykseen mahdollisimman pian?',
         },
       ],
       opinionTasks: [
@@ -4454,6 +4951,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Pitäisikö terveydenhoidon olla ilmaista?',
             'Mitä palveluita yhteiskunnan pitäisi tarjota kaikille?',
           ],
+          modelAnswerFi:
+            'Itse maksan terveydenhoidosta melko vähän, koska käytän julkisia palveluita, mutta esimerkiksi hammashoito ja lääkkeet voivat tulla kalliiksi. Mielestäni terveydenhoito ei ole täysin ilmaista Suomessakaan, vaikka se onkin edullisempaa kuin monissa muissa maissa. En usko, että kaiken terveydenhoidon pitäisi olla täysin ilmaista, koska se voisi johtaa palveluiden väärinkäyttöön, mutta perusterveydenhuollon ja hätätapausten tulisi mielestäni olla kaikkien saatavilla ilman suuria kustannuksia. Yhteiskunnan pitäisi taata ainakin peruslääkärinpalvelut, hätäensiapu ja lasten terveydenhuolto kaikille tulotasosta riippumatta.',
         },
         {
           id: 'speaking-opinion-2',
@@ -4466,6 +4965,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Pitäisikö ruutuaikaa vähentää?',
             'Mikä on sopiva ruutuaika lapselle? Aikuiselle?',
           ],
+          modelAnswerFi:
+            'Älylaitteista on kiistatta paljon hyötyä: ne helpottavat yhteydenpitoa, tiedonhakua ja työntekoa. Toisaalta liiallinen ruutuaika voi haitata unta, keskittymiskykyä ja jopa ihmissuhteita, jos puhelin vie huomion pois läsnäolosta muiden kanssa. Olen samaa mieltä siitä, että monen ihmisen, myös itseni, ruutuaikaa voisi vähentää, erityisesti sosiaalisen median selailua. Lapsille sopiva ruutuaika riippu iästä, mutta se pitäisi mielestäni rajoittaa muutamaan tuntiin päivässä, kun taas aikuisille sopiva määrä riippuu enemmän siitä, kuinka paljon ruutuaika liittyy työhön verrattuna vapaa-aikaan.',
         },
         {
           id: 'speaking-opinion-3',
@@ -4493,6 +4994,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
               ],
             },
           ],
+          modelAnswerFi:
+            'Valitsen aiheen A: Ihmisten pitäisi nukkua enemmän. Itse nukun yleensä noin kuusi tuntia yössä, mikä on mielestäni liian vähän, koska suositeltu määrä aikuiselle on seitsemästä yhdeksään tuntiin. Olen samaa mieltä siitä, että moni ihminen nukkuu liian vähän, koska työ ja vapaa-aika täyttävät helposti koko päivän. Uskon, että unta ei arvosteta tarpeeksi nyky-yhteiskunnassa: usein ajatellaan, että vähällä unella pärjää, vaikka se vaikuttaa negatiivisesti sekä terveyteen että jaksamiseen pitkällä aikavälillä. Sama ajatus pätisi myös aiheeseen B: liikuntaakin arvostetaan usein vasta, kun terveys pettää.',
         },
       ],
     },
@@ -4656,6 +5159,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Sairauspoissaoloilmoitus esihenkilölle',
             'Onnittelu työkaverille',
           ],
+          sampleFi:
+            'Hei! Onnittelut uudesta tiiminvetäjän pestistä, todella ansaittua! Olet aina ollut tosi auttavainen ja osaava, joten tiedän, että tulet olemaan hyvä siinä roolissa. Toivottavasti päästään pian juhlistamaan asiaa yhdessä, vaikka kahvitauolla. Onnea vielä kerran!',
         },
       ],
       formalTasks: [
@@ -4664,6 +5169,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Muodolliset viestiaiheet',
           instructionsFi: 'Tämän luvun muodollisissa viesteissä harjoitellaan esimerkiksi:',
           bulletsFi: ['Työhakemukset', 'Kyselyt avoimista työpaikoista', 'Viestit HR:lle palkasta tai sopimuksista', 'Irtisanoutumiskirjeet'],
+          sampleFi:
+            'Hyvä vastaanottaja, kirjoitan tiedustellakseni, onko yrityksessänne tällä hetkellä avoimia työpaikkoja asiakaspalvelun alalla. Minulla on kolmen vuoden kokemus vastaavista tehtävistä sekä hyvä suomen ja englannin kielen taito. Olisin kiitollinen, jos voisitte kertoa mahdollisista avoimista tehtävistä tai lähettää minulle lisätietoa rekrytointiprosessistanne. Liitän mukaan ansioluetteloni. Kiitos jo etukäteen vastauksestanne.',
         },
       ],
       opinionTopics: [
@@ -4671,6 +5178,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Mielipideaiheita',
           options: ['Työn ja vapaa-ajan tasapaino', 'Etätyön hyvät ja huonot puolet', 'Urakehitys ja elinikäinen oppiminen', 'Työkulttuurien erot'],
+          modelAnswerFi:
+            'Valitsen aiheen "Etätyön hyvät ja huonot puolet". Etätyössä on monia hyviä puolia: se säästää aikaa työmatkoihin ja antaa työntekijälle enemmän joustavuutta oman päivän suunnittelussa. Toisaalta etätyö voi myös eristää työntekijän muusta työyhteisöstä, ja rajan vetäminen työn ja vapaa-ajan välille voi olla vaikeampaa kotona. Mielestäni paras ratkaisu monelle olisi hybridimalli, jossa yhdistyvät sekä etätyön joustavuus että toimistolla tapahtuvan yhteistyön hyödyt.',
         },
       ],
     },
@@ -4728,6 +5237,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 60,
           speakSeconds: 90,
           questions: ['Millainen on sinun työsi?', 'Mitä teet työssäsi?', 'Mistä pidät työssäsi? Mistä et?', 'Millaisia työkavereita sinulla on?'],
+          modelAnswerFi:
+            'Työskentelen tällä hetkellä asiakaspalvelijana, ja työni koostuu pääosin asiakkaiden auttamisesta puhelimitse ja sähköpostitse. Tehtäviini kuuluu myös tilausten käsittely ja pienten ongelmien ratkominen yhdessä tiimin kanssa. Pidän työssäni erityisesti siitä, että saan olla tekemisissä erilaisten ihmisten kanssa ja auttaa heitä konkreettisesti. En sen sijaan pidä siitä, että työ on välillä kiireistä ja stressaavaa, varsinkin ruuhka-aikoina. Työkaverini ovat mukavia ja avuliaita, ja tunnen, että voin aina kysyä heiltä apua, jos jokin asia mietityttää.',
         },
       ],
       conversationTasks: [],
@@ -4781,21 +5292,28 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'speaking-situation-1',
           scenarioFi: 'Soita esihenkilöllesi sairauspoissaolosta.',
           seconds: 20,
+          modelAnswerFi: 'Hei, tässä on [nimi]. Soitan, koska olen sairastunut yön aikana enkä pääse tänään töihin. Menen aamulla lääkäriin ja ilmoitan heti, kun tiedän tarkemmin, kuinka pitkä sairausloma tulee.',
         },
         {
           id: 'speaking-situation-2',
           scenarioFi: 'Kysy esihenkilöltäsi mahdollisuudesta muuttaa työaikaasi.',
           seconds: 20,
+          modelAnswerFi:
+            'Voisinko keskustella kanssasi hetken työajastani? Perhetilanteeni takia toivoisin, että voisin aloittaa työpäiväni nykyistä myöhemmin, esimerkiksi kello yhdeksän sijaan kymmeneltä. Olisiko tämä jotenkin mahdollista järjestää?',
         },
         {
           id: 'speaking-situation-3',
           scenarioFi: 'Pyydä esihenkilöltäsi palkankorotusta.',
           seconds: 30,
+          modelAnswerFi:
+            'Haluaisin keskustella kanssasi palkastani. Olen työskennellyt täällä nyt kaksi vuotta, ja koen ottaneeni vastuulleni koko ajan enemmän tehtäviä, muun muassa uusien työntekijöiden perehdyttämisen. Toivoisin, että voisimme keskustella mahdollisesta palkankorotuksesta, joka vastaisi paremmin nykyistä työnkuvaani.',
         },
         {
           id: 'speaking-situation-4',
           scenarioFi: 'Kerro ystävällesi uudesta työpaikastasi.',
           seconds: 30,
+          modelAnswerFi:
+            'Arvaa mitä, sain juuri uuden työpaikan! Aloitan ensi kuussa asiakaspalvelupäällikkönä isommassa yrityksessä. Olen tosi innoissani, koska tehtävät ovat mielenkiintoisempia ja palkkakin on parempi kuin nykyisessä työssäni. Vähän jännittää tietysti aloittaa jotain uutta, mutta uskon, että tulen viihtymään siellä hyvin.',
         },
       ],
       opinionTasks: [
@@ -4811,6 +5329,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mitä tapahtuu, jos työtä on liikaa?',
             'Pitäisikö työnantajien auttaa työntekijöitä löytämään tasapaino?',
           ],
+          modelAnswerFi:
+            'Minusta on erittäin tärkeää, että työ ja vapaa-aika pysyvät tasapainossa, koska ilman riittävää lepoa ihminen väsyy ja alkaa jaksaa huonommin sekä työssä että muussa elämässä. Itse pidän huolta tasapainosta rajaamalla työajan selvästi ja välttämällä työsähköpostien lukemista illalla tai viikonloppuisin. Jos työtä on liikaa pitkään, seurauksena voi olla uupumus, stressi ja jopa terveysongelmia. Mielestäni työnantajien tulisi kannustaa työntekijöitä pitämään taukoja ja lomia sekä huolehtia siitä, ettei työmäärä kasva kohtuuttomaksi.',
         },
         {
           id: 'speaking-opinion-2',
@@ -4819,6 +5339,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Etätyö vs. toimistotyö', 'Pitäisikö työn olla hauskaa?', 'Miten löytää unelmien työ?'],
+          modelAnswerFi:
+            'Valitsen aiheen "Pitäisikö työn olla hauskaa?". Olen sitä mieltä, että työn ei tarvitse olla jatkuvasti hauskaa, mutta sen tulisi olla merkityksellistä ja mielekästä, jotta jaksaa tehdä sitä pitkään. Uskon, että motivaatio syntyy useimmiten siitä, että näkee oman työnsä tuloksia ja tuntee olevansa hyödyksi, ei pelkästä hauskuudesta. Toisaalta mukava työilmapiiri ja hyvät työkaverit voivat tehdä työstä paljon mukavampaa, vaikka itse tehtävät eivät olisi jatkuvasti viihdyttäviä.',
         },
       ],
     },
@@ -5007,6 +5529,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Epämuodolliset viestiaiheet',
           instructionsFi: 'Tämän luvun epämuodollisissa viesteissä harjoitellaan esimerkiksi:',
           bulletsFi: ['Viesti ystävälle ympäristöteoista', 'Kierrätys- tai energiansäästövinkkien ehdottaminen'],
+          sampleFi:
+            'Hei! Ajattelin vinkata sulle yhden helpon tavan säästää energiaa: vaihdoin viime kuussa kaikki kodin lamput led-lamppuihin, ja sähkölasku on jo pienentynyt huomattavasti. Kannattaisiko sunkin kokeilla samaa? Se on pieni muutos, mutta säästää sekä rahaa että ympäristöä pitkällä aikavälillä.',
         },
       ],
       formalTasks: [
@@ -5015,6 +5539,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Muodolliset viestiaiheet',
           instructionsFi: 'Tämän luvun muodollisissa viesteissä harjoitellaan esimerkiksi:',
           bulletsFi: ['Valitus ympäristöongelmista naapurustossa', 'Ehdotus kaupungille ympäristöparannuksista'],
+          sampleFi:
+            'Hyvä vastaanottaja, haluan tuoda tietoonne huolestuttavan havainnon asuinalueellani: puistoon on viime aikoina kertynyt paljon roskia, eikä roska-astioita ole riittävästi. Toivoisin, että kaupunki lisäisi roska-astioiden määrää alueella ja tyhjentäisi niitä useammin. Uskon, että tämä parantaisi sekä alueen viihtyisyyttä että ympäristön siisteyttä. Kiitos, kun otatte asian huomioon.',
         },
       ],
       opinionTopics: [
@@ -5022,6 +5548,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'writing-opinion-1',
           titleFi: 'Mielipideaiheita',
           options: ['Pitäisikö kaikkien kierrättää?', 'Ilmastonmuutos - mitä voimme tehdä?', 'Ovatko sähköautot ratkaisu?', 'Pitäisikö muovipussit kieltää?'],
+          modelAnswerFi:
+            'Valitsen aiheen "Pitäisikö kaikkien kierrättää?". Olen vahvasti sitä mieltä, että kierrättäminen tulisi olla jokaisen velvollisuus, sillä se vähentää merkittävästi jätteen määrää ja säästää luonnonvaroja. Vaikka yksittäisen ihmisen kierrätys saattaa tuntua pieneltä teolta, suuressa mittakaavassa sillä on todellinen vaikutus ympäristöön. Ymmärrän, että kierrättäminen voi tuntua aluksi hankalalta tai vaivalta vaativalta, mutta mielestäni yhteiskunnan tulisi tehdä siitä mahdollisimman helppoa esimerkiksi lisäämällä kierrätyspisteitä. Kaiken kaikkiaan uskon, että kierrättäminen on pieni hinta paremmasta tulevaisuudesta.',
         },
       ],
     },
@@ -5070,6 +5598,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Miksi kierrätys on tärkeää?',
             'Haluaisitko tehdä enemmän ympäristön hyväksi?',
           ],
+          modelAnswerFi:
+            'Kyllä, lajittelen jätteitä kotona melko tarkasti. Erottelen biojätteen, muovin, kartongin, lasin ja paperin omiin astioihinsa, ja vien ne säännöllisesti lähimpään kierrätyspisteeseen. Kierrätys on mielestäni tärkeää, koska se vähentää kaatopaikalle päätyvän jätteen määrää ja säästää luonnonvaroja, kun materiaaleja voidaan käyttää uudelleen. Haluaisin kyllä tehdä vielä enemmän ympäristön hyväksi, esimerkiksi vähentää lentomatkustamista ja ostaa enemmän lähiruokaa, mutta muutokset vievät aikaa ja totuttelua.',
         },
       ],
       conversationTasks: [],
@@ -5078,11 +5608,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'speaking-situation-1',
           scenarioFi: 'Kerro naapurille, miten jätteet lajitellaan.',
           seconds: 20,
+          modelAnswerFi:
+            'Hei! Meidän taloyhtiössä jätteet lajitellaan neljään eri astiaan: biojäte, muovi, kartonki ja sekajäte. Lasi ja paristot viedään erilliseen kierrätyspisteeseen. Jos olet epävarma jostain, ohjeet löytyvät roskakatoksen seinältä. Autan mielelläni, jos jokin jää epäselväksi!',
         },
         {
           id: 'speaking-situation-2',
           scenarioFi: 'Ehdota ystävälle, miten voi säästää energiaa.',
           seconds: 20,
+          modelAnswerFi:
+            'Yksi helppo tapa säästää energiaa on vaihtaa tavalliset lamput led-lamppuihin, ne kuluttavat paljon vähemmän sähköä. Kannattaa myös muistaa sammuttaa valot ja laitteet, kun poistut huoneesta, ja pitää lämpötila kotona kohtuullisena talvella. Nämä pienet muutokset näkyvät myös sähkölaskussa!',
         },
       ],
       opinionTasks: [
@@ -5093,6 +5627,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Oletko samaa mieltä?', 'Miksi ilmastonmuutos on vaarallinen?', 'Mitä ihmiset voivat tehdä?', 'Pitäisikö hallitusten tehdä enemmän?'],
+          modelAnswerFi:
+            'Olen samaa mieltä siitä, että ilmastonmuutos on yksi suurimmista uhista maapallolle, vaikka muitakin vakavia ongelmia toki on. Ilmastonmuutos on vaarallinen, koska se aiheuttaa sään ääri-ilmiöitä, merenpinnan nousua ja luonnon monimuotoisuuden vähenemistä, mikä vaikuttaa lopulta koko ihmiskuntaan. Yksittäiset ihmiset voivat tehdä paljon: vähentää lentomatkustamista, käyttää julkista liikennettä, kierrättää ja suosia kasvipohjaista ruokaa. Uskon kuitenkin, että pelkät yksilön teot eivät riitä, vaan hallitusten tulisi tehdä huomattavasti enemmän, esimerkiksi tukemalla uusiutuvaa energiaa ja säätämällä tiukempia päästörajoituksia teollisuudelle.',
         },
       ],
     },
@@ -5249,6 +5785,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Epämuodolliset viestiaiheet',
           instructionsFi: 'Tämän luvun epämuodollisissa viesteissä harjoitellaan esimerkiksi:',
           bulletsFi: ['Viesti äänestämisestä tai poliittisista asioista', 'Keskustelu sosiaalipalveluista'],
+          sampleFi:
+            'Hei! Oletko muuten hakenut jo Kelan asumistukea? Mulla kesti pitkään tajuta, miten hakemus tehdään verkossa, mutta lopulta se oli yllättävän helppoa. Voin näyttää sulle, miten se toimii, jos haluat. Muistathan muuten äänestää ensi viikon vaaleissa - se on tosi tärkeää!',
         },
       ],
       formalTasks: [
@@ -5257,6 +5795,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           titleFi: 'Muodolliset viestiaiheet',
           instructionsFi: 'Tämän luvun muodollisissa viesteissä harjoitellaan esimerkiksi:',
           bulletsFi: ['Viesti Kelaan tai Migriin', 'Valitus julkisista palveluista', 'Hakemus kansalaisuudesta tai etuuksista'],
+          sampleFi:
+            'Hyvä vastaanottaja, kirjoitan tiedustellakseni Suomen kansalaisuuden hakuprosessista. Olen asunut Suomessa yhtäjaksoisesti useita vuosia ja täyttäisin mielestäni asumisajan vaatimuksen. Voisitteko kertoa, mitä liitteitä hakemukseen tarvitaan ja kuinka kauan käsittelyaika tällä hetkellä keskimäärin kestää? Kiitos jo etukäteen vastauksestanne.',
         },
       ],
       opinionTopics: [
@@ -5269,6 +5809,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Pitäisikö maahanmuuttoa helpottaa?',
             'Verot - liian korkeat vai tarpeellisia?',
           ],
+          modelAnswerFi:
+            'Valitsen aiheen "Onko Suomi tasa-arvoinen maa?". Mielestäni Suomi on monella tapaa yksi maailman tasa-arvoisimmista maista: koulutus on ilmaista kaikille, terveydenhuolto on kohtuuhintaista, ja naisilla ja miehillä on lain edessä samat oikeudet. Toisaalta täydellistä tasa-arvoa ei ole vielä saavutettu, sillä esimerkiksi maahanmuuttajat kohtaavat edelleen syrjintää työnhaussa, ja sukupuolten välinen palkkaero on olemassa monilla aloilla. Uskon, että Suomi on hyvällä tiellä, mutta yhteiskunnan tulisi jatkaa aktiivisesti työtä tasa-arvon parantamiseksi kaikilla elämänalueilla.',
         },
       ],
     },
@@ -5320,6 +5862,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
             'Mikä on mielestäsi hyvää Suomessa?',
             'Mikä voisi olla paremmin?',
           ],
+          modelAnswerFi:
+            'Suomi on demokraattinen hyvinvointivaltio, jossa kansalaisilla on laajat oikeudet ja julkiset palvelut kattavat suuren osan elämän eri alueista. Suomessa on esimerkiksi ilmainen koulutus, kohtuuhintainen terveydenhuolto ja sosiaaliturvajärjestelmä, joka auttaa työttömiä ja vähävaraisia. Mielestäni parasta Suomessa on juuri tämä turvaverkko: kukaan ei jää täysin yksin vaikeassa elämäntilanteessa. Toisaalta byrokratia voi olla joskus hidasta ja monimutkaista, ja esimerkiksi maahanmuuttajien kotoutumista voisi mielestäni tukea vielä paremmin esimerkiksi tarjoamalla enemmän kielikursseja.',
         },
       ],
       conversationTasks: [],
@@ -5328,11 +5872,15 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           id: 'speaking-situation-1',
           scenarioFi: 'Kysy tietoa Kelasta.',
           seconds: 20,
+          modelAnswerFi:
+            'Hei, minulla olisi kysyttävää lapsilisästä. Olen juuri saanut lapsen, enkä ole varma, pitääkö minun hakea lapsilisää itse vai tuleeko se automaattisesti. Voisitteko kertoa, miten asia hoidetaan?',
         },
         {
           id: 'speaking-situation-2',
           scenarioFi: 'Keskustele naapurin kanssa yhteiskunnallisista asioista.',
           seconds: 20,
+          modelAnswerFi:
+            'Oletko muuten seurannut, mitä eduskunnassa on viime aikoina päätetty verotuksesta? Minusta tuntuu, että verot ovat aika korkeat, mutta toisaalta saamme niiden vastineeksi hyvät julkiset palvelut, joten en oikein tiedä, mitä mieltä olla asiasta.',
         },
       ],
       opinionTasks: [
@@ -5343,6 +5891,8 @@ export const YKI_CHAPTERS: YkiChapter[] = [
           prepSeconds: 120,
           speakSeconds: 120,
           questions: ['Oletko samaa mieltä?', 'Miksi äänestäminen on tärkeää?', 'Mitä tapahtuu, jos ihmiset eivät äänestä?', 'Pitäisikö äänestämisen olla pakollista?'],
+          modelAnswerFi:
+            'Olen samaa mieltä siitä, että jokaisen äänioikeutetun tulisi äänestää, vaikka en usko pakollisen äänestämisen olevan paras ratkaisu. Äänestäminen on tärkeää, koska se on kansalaisten tärkein tapa vaikuttaa siihen, millaisia päätöksiä yhteiskunnassa tehdään. Jos ihmiset eivät äänestä, valta keskittyy helposti pienelle, äänekkäälle joukolle, eikä hallitus välttämättä edusta koko kansan tahtoa. En kuitenkaan kannata äänestämisen tekemistä pakolliseksi, koska mielestäni on tärkeämpää lisätä ihmisten kiinnostusta politiikkaan esimerkiksi paremman kansalaiskasvatuksen avulla kuin pakottaa heitä äänestämään.',
         },
       ],
     },
