@@ -146,6 +146,35 @@ export const WRITING_TEMPLATES: WritingTemplate[] = [
     ],
   },
   {
+    id: 'kysely',
+    taskType: 'Kysely / tiedustelu',
+    taskTypeBn: 'জিজ্ঞাসা / তথ্য অনুসন্ধান',
+    whenUsed:
+      'Kun tehtävä pyytää ottamaan yhteyttä viralliseen tahoon (Kela, työnantaja, koulu, palveluntarjoaja) saadaksesi tietoa — et valita etkä pyydä lupaa, vaan haluat vain vastauksen kysymykseen.',
+    opening: 'Kerro lyhyesti, kuka olet ja miksi kirjoitat: "Kirjoitan, koska minulla on kysymys..." / "Haluaisin tiedustella...".',
+    body: 'Anna yksi lause taustaa, joka auttaa vastaanottajaa ymmärtämään tilanteesi, ja esitä sitten kysymyksesi selvästi (1-2 kysymystä riittää — liian moni tekee vastaamisesta vaikeaa).',
+    closing: 'Kiitä etukäteen ja kerro, että odotat vastausta: "Kiitos jo etukäteen vastauksestanne" / "Odotan vastaustanne mielenkiinnolla."',
+    swaps: [
+      {
+        topic: 'Kysymys Kelalta asumistuesta',
+        topicBn: 'কেলার কাছে বাসস্থান ভাতা সম্পর্কে প্রশ্ন',
+        filled:
+          'Kirjoitan, koska minulla on kysymys asumistuesta. Muutin viime kuussa uuteen, hieman kalliimpaan asuntoon, enkä ole varma, vaikuttaako se nykyiseen tukeeni. Pitääkö minun ilmoittaa muutosta erikseen, vai päivittyykö tieto automaattisesti? Kiitos jo etukäteen vastauksestanne.',
+      },
+      {
+        topic: 'Kysymys koulusta lapsen aloittamisesta',
+        topicBn: 'সন্তানের স্কুল শুরু সম্পর্কে বিদ্যালয়ে প্রশ্ন',
+        filled:
+          'Haluaisin tiedustella lapseni koulun aloittamisesta ensi syksynä. Olemme juuri muuttaneet alueelle, emmekä tunne vielä ilmoittautumiskäytäntöjä. Mihin mennessä ilmoittautuminen pitää tehdä, ja tarvitaanko siihen jokin tietty liite? Odotan vastaustanne mielenkiinnolla.',
+      },
+    ],
+    tips: [
+      'Rajaa kysymykset 1-2 kappaleeseen — silloin vastaanottajan on helpompi vastata täsmällisesti, ja tekstisi pysyy selkeänä.',
+      'Yksi lause taustaa ennen kysymystä ("Muutin äskettäin...", "Olemme juuri muuttaneet...") auttaa vastaanottajaa antamaan osuvamman vastauksen.',
+      'Tämä eroaa hakemuksesta siinä, ettet pyydä lupaa mihinkään — haluat vain tietoa. Vältä siis "pyydän lupaa" -tyyppisiä muotoiluja.',
+    ],
+  },
+  {
     id: 'hakemus',
     taskType: 'Hakemus / anomus',
     taskTypeBn: 'আবেদনপত্র',
@@ -277,6 +306,38 @@ export const SPEAKING_PATTERNS: SpeakingPattern[] = [
     tips: [
       '"Tämä johtuu siitä, että..." on turvallinen, luonnollinen tapa aloittaa mikä tahansa syy-selitys.',
       'Kaksi syytä ("Lisäksi...") riittää hyvään vastaukseen — ei tarvitse keksiä montaa.',
+    ],
+  },
+  {
+    id: 'tilannetehtava',
+    patternName: 'Tilannetehtävä (nopea reagointi)',
+    patternNameBn: 'পরিস্থিতি অনুশীলন (দ্রুত প্রতিক্রিয়া)',
+    recognizeBy: ['Kysy...', 'Pyydä...', 'Selitä tilanne...', 'Mitä sanot tässä tilanteessa?'],
+    answerTemplate:
+      'Aloita tilanteeseen sopivalla tervehdyksellä tai anteeksipyynnöllä ("Anteeksi, kun häiritsen..."). Kerro pääasia yhdessä-kahdessa lauseessa. Lisää yksi konkreettinen yksityiskohta. Päätä kohteliaasti ("Kiitos avusta", "Olisiko mahdollista?").',
+    filledExample:
+      'Anteeksi, kun häiritsen, mutta tarvitsisin apua. Olen etsimässä lähintä apteekkia enkä löydä sitä kartasta. Osaisitteko neuvoa, mihin suuntaan pitäisi mennä? Kiitos paljon avusta!',
+    filledExampleBn: 'দুঃখিত, বিরক্ত করার জন্য, কিন্তু আমার একটু সাহায্য দরকার। আমি নিকটতম ফার্মেসি খুঁজছি কিন্তু মানচিত্রে খুঁজে পাচ্ছি না। আপনি কি বলতে পারবেন কোন দিকে যেতে হবে? সাহায্যের জন্য অনেক ধন্যবাদ!',
+    tips: [
+      'Tilannetehtävässä aikaa on vähän — älä mieti täydellistä lausetta, vaan aloita heti sopivalla fraasilla (pyyntö, anteeksipyyntö, kysymys sen mukaan, mitä tilanne vaatii).',
+      'Sama nelivaiheinen runko (aloitus → pääasia → yksityiskohta → kohtelias lopetus) toimii pyynnöissä, valituksissa, neuvoissa ja tiedon antamisessa — vain sävy ja sanat vaihtuvat tilanteen mukaan.',
+      'Jos et heti keksi täydellistä sanaa, käytä täytesanoja (öö, tota, niinku) ja jatka lausetta — katkonaisuus haittaa vähemmän kuin pitkä hiljaisuus.',
+    ],
+  },
+  {
+    id: 'keskustelutehtava',
+    patternName: 'Keskustelutehtävä (vuoropuhelu)',
+    patternNameBn: 'কথোপকথন অনুশীলন (সংলাপ)',
+    recognizeBy: ['Vastaa myöntävästi', 'Vastaa kieltävästi', 'Vastaa kysymykseen', 'Reagoi sopivalla tavalla', 'Vastaa. Keksi itse.'],
+    answerTemplate:
+      'Vastaa suoraan siihen, mitä ohje pyytää (kyllä/ei/tieto), ja lisää yksi täydentävä lause, jotta vastaus ei jää liian lyhyeksi. Kun ohje sanoo "keksi itse", keksi rohkeasti uskottava yksityiskohta (aika, määrä, syy) — vastauksen ei tarvitse olla totta, vain sujuva.',
+    filledExample:
+      'Ohje: "Vastaa myöntävästi ja kerro yksi syy." → Kyllä, olen kiinnostunut asiasta. Se sopisi hyvin aikatauluuni ensi viikolla, joten voisimme sopia tapaamisen silloin.',
+    filledExampleBn: 'নির্দেশ: "হ্যাঁ বলুন এবং একটি কারণ জানান।" → হ্যাঁ, আমি এতে আগ্রহী। এটি আগামী সপ্তাহে আমার সময়সূচির সাথে ভালোভাবে মানানসই, তাই আমরা তখন সাক্ষাতের সময় ঠিক করতে পারি।',
+    tips: [
+      'Keskustelutehtävässä jokainen ohje on eri kysymys — vastaa aina täsmälleen siihen, mitä juuri kyseinen ohje pyytää (myöntävästi/kieltävästi/tieto), älä palaa edelliseen vuoroon.',
+      '"Keksi itse" -ohje on lupa improvisoida: yksi konkreettinen keksitty yksityiskohta (kellonaika, määrä, nimi) kuulostaa aina uskottavammalta kuin yleinen "en tiedä" tai pitkä tauko.',
+      'Pidä vastaukset lyhyinä ja luontevina — tämä on nopeatempoinen osa, jossa sujuvuus ja tilanteeseen sopiva reagointi painavat enemmän kuin täydellinen kielioppi.',
     ],
   },
 ]
