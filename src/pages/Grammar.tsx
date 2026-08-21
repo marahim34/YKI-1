@@ -168,25 +168,33 @@ export default function Grammar() {
         </button>
         {showVerbTable && (
           <div className="border-t border-slate-100 px-4 py-4">
-            <p className="mb-3 text-xs text-slate-500">
+            <p className="mb-1 text-xs text-slate-500">
               Kaikki kuusi verbityyppiä rinnakkain: tunnista tyyppi infinitiivin päätteestä, niin tiedät heti, miten
               preesens muodostetaan. All six verb types side by side: recognize the type from the infinitive ending
               and you immediately know how to build the present tense.
             </p>
+            <p className="mb-3 text-xs text-emerald-700">
+              তালিকা শুধু দ্রুত রেফারেন্সের জন্য — "Selitys →" বোতাম চাপলে ছয়টি ধরনেরই বিস্তারিত ব্যাখ্যা, উদাহরণ ও টিপস সহ নিচে খুলে
+              যাবে।
+            </p>
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+              <table className="w-full min-w-[720px] border-collapse text-left text-sm">
                 <thead>
                   <tr className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-400">
                     <th className="py-2 pr-3">Tyyppi</th>
                     <th className="py-2 pr-3">Infinitiivin pääte</th>
                     <th className="py-2 pr-3">Esimerkki</th>
-                    <th className="py-2">Sääntö / Rule</th>
+                    <th className="py-2 pr-3">Sääntö / Rule</th>
+                    <th className="py-2"></th>
                   </tr>
                 </thead>
                 <tbody>
                   {VERB_TYPE_TABLE.map((row) => (
                     <tr key={row.type} className="border-b border-slate-100 align-top">
-                      <td className="py-2 pr-3 font-medium text-slate-900">{row.type}</td>
+                      <td className="py-2 pr-3 font-medium text-slate-900">
+                        {row.type}
+                        <span className="block text-xs font-normal text-emerald-700">{row.typeBn}</span>
+                      </td>
                       <td className="py-2 pr-3 font-mono text-xs text-violet-700">{row.ending}</td>
                       <td className="py-2 pr-3">
                         <span className="inline-flex items-center gap-1">
@@ -206,9 +214,17 @@ export default function Grammar() {
                           )}
                         </span>
                       </td>
-                      <td className="py-2 text-slate-600">
+                      <td className="py-2 pr-3 text-slate-600">
                         {row.rule}
                         <span className="block text-emerald-700">{row.ruleBn}</span>
+                      </td>
+                      <td className="py-2">
+                        <button
+                          onClick={() => jumpToTopic(row.topicId)}
+                          className="whitespace-nowrap rounded-full bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-700 hover:bg-violet-100"
+                        >
+                          Selitys →
+                        </button>
                       </td>
                     </tr>
                   ))}
