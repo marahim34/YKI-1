@@ -287,3 +287,162 @@ export interface BookPracticeChapter {
   grammarTopicIds: string[]
   sampleAnswer?: BookPracticeSampleAnswer
 }
+
+// --- YKI-valmennus: exam-prep chapters built around the YKI test's 9
+// official themes and 4 subtests (reading/writing/listening/speaking), each
+// following the book's own lämmittele -> harjoittele -> testaa (warm-up ->
+// practice -> test) progression. Distinct from Keskusteluharjoitukset, which
+// is free-form speaking/writing practice not tied to the exam's task types.
+export interface YkiTipBox {
+  title: string
+  body: string[]
+}
+
+export interface TrueFalseQuestion {
+  id: string
+  statementFi: string
+  statementEn?: string
+  answer: boolean
+  explanation?: string
+}
+
+export interface OpenQuestion {
+  id: string
+  questionFi: string
+  questionEn?: string
+  sampleAnswerFi: string
+}
+
+export interface YkiPassage {
+  id: string
+  titleFi: string
+  titleEn?: string
+  source?: string
+  textFi: string
+  tip?: YkiTipBox
+  predictVocab?: { fi: string; en: string }[]
+  mcq?: McqQuestion[]
+  trueFalse?: TrueFalseQuestion[]
+  open?: OpenQuestion[]
+}
+
+export interface YkiVocabWarmup {
+  instructionsFi: string
+  items: { fi: string; en: string }[]
+  note?: YkiTipBox
+}
+
+export interface YkiFreewriteTask {
+  instructionsFi: string
+  rules: string[]
+  topics: string[]
+}
+
+export interface YkiGroupTask {
+  instructionsFi: string
+  questions: string[]
+}
+
+export interface YkiWritingPrompt {
+  id: string
+  titleFi: string
+  instructionsFi: string
+  bulletsFi?: string[]
+  starterFi?: string
+}
+
+export interface YkiOpinionTopic {
+  id: string
+  titleFi: string
+  options: string[]
+}
+
+export interface YkiSpeakingSelfIntro {
+  instructionsFi: string
+  qa: { spoken: string; written: string; en: string }[]
+}
+
+export interface YkiSpeakingLongTask {
+  id: string
+  titleFi: string
+  titleEn?: string
+  prepSeconds: number
+  speakSeconds: number
+  questions: string[]
+  subChoices?: { label: string; questions: string[] }[]
+}
+
+export interface YkiConversationTask {
+  id: string
+  titleFi: string
+  scenarioFi: string
+  turns: { instructionFi: string; seconds: number }[]
+}
+
+export interface YkiSituationalTask {
+  id: string
+  scenarioFi: string
+  seconds: number
+}
+
+export interface YkiSubtestReading {
+  vocabWarmup: YkiVocabWarmup
+  practicePassages: YkiPassage[]
+  testPassages: YkiPassage[]
+}
+
+export interface YkiSubtestWriting {
+  tip: YkiTipBox
+  freewrite: YkiFreewriteTask
+  groupIntro: YkiGroupTask
+  practiceTasks: YkiWritingPrompt[]
+  practiceShareTable: { category: string; hobbyBuddy: string; neighbors: string; both: string }[]
+  openingClosingTip: YkiTipBox
+  informalTasks: YkiWritingPrompt[]
+  formalTasks: YkiWritingPrompt[]
+  opinionTopics: YkiOpinionTopic[]
+}
+
+export interface YkiSubtestListening {
+  tip: YkiTipBox
+  podcastWarmup: { instructionsFi: string; keywords: string[] }
+  practicePassages: YkiPassage[]
+  testPassages: YkiPassage[]
+}
+
+export interface YkiAgeVocabTip {
+  title: string
+  pairs: { person: string; stage: string }[]
+  note: string
+  phrases: string[]
+}
+
+export interface YkiSubtestSpeaking {
+  tip: YkiTipBox
+  selfIntro: YkiSpeakingSelfIntro
+  groupIntro: YkiGroupTask
+  truthTip: YkiTipBox
+  practiceLongTask: YkiSpeakingLongTask & { reflectionPrompt: string; speakDontWriteTip: YkiTipBox }
+  conversationVocab: { fi: string; en: string }[]
+  testLongTasks: YkiSpeakingLongTask[]
+  conversationTasks: YkiConversationTask[]
+  situationalTasks: YkiSituationalTask[]
+  opinionTasks: YkiSpeakingLongTask[]
+  ageVocabTip?: YkiAgeVocabTip
+}
+
+export interface YkiChapter {
+  id: string
+  number: number
+  titleFi: string
+  titleEn: string
+  pages: string
+  theme: string
+  reading: YkiSubtestReading
+  writing: YkiSubtestWriting
+  listening: YkiSubtestListening
+  speaking: YkiSubtestSpeaking
+  vocabSummary: { fi: string; en: string }[]
+  usefulPhrases: { fi: string; en: string }[]
+  learnEverywhereTip?: YkiTipBox
+}
