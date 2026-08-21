@@ -14,6 +14,7 @@ import Templates from './pages/Templates'
 import Numbers from './pages/Numbers'
 import BasicVocab from './pages/BasicVocab'
 import DailyPractice from './pages/DailyPractice'
+import ConversationPractice from './pages/ConversationPractice'
 import Reading from './pages/exercises/Reading'
 import Listening from './pages/exercises/Listening'
 import Writing from './pages/exercises/Writing'
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/numbers" element={<Numbers />} />
         <Route path="/basics" element={<BasicVocab />} />
         <Route path="/daily" element={<DailyPractice />} />
+        <Route path="/conversations" element={<ConversationPractice />} />
         <Route path="/exam" element={<MockExam />} />
         <Route path="/progress" element={<Progress />} />
       </Route>

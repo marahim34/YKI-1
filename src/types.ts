@@ -219,6 +219,59 @@ export interface BookPracticeSampleAnswer {
   textEn: string
 }
 
+export interface DialogueTurn {
+  speaker: string
+  fi: string
+  en?: string
+  isPlaceholder?: boolean
+}
+
+export interface DialogueScenario {
+  id: string
+  titleFi: string
+  titleEn: string
+  turns: DialogueTurn[]
+}
+
+export interface ReactionPrompt {
+  id: string
+  scenarioFi: string
+  scenarioEn?: string
+  sampleFi: string
+}
+
+export interface EssayTask {
+  id: string
+  titleFi: string
+  titleEn?: string
+  instructionsFi: string
+  sampleFi: string
+}
+
+export interface WritingTask {
+  id: string
+  titleFi: string
+  instructionsFi: string
+  bulletsFi: string[]
+  sampleFi: string
+}
+
+export interface ConversationChapter {
+  id: string
+  titleFi: string
+  titleEn: string
+  level: CefrLevel
+  vocabQuiz: BookPracticeVocabItem[]
+  discussionQuestions: { fi: string; en: string }[]
+  crossword: BookPracticeDrillItem[]
+  dialogues: DialogueScenario[]
+  reactions: ReactionPrompt[]
+  longSpeaking: EssayTask[]
+  opinions: EssayTask[]
+  writingTasks: WritingTask[]
+  vocabSummary: { fi: string; en: string }[]
+}
+
 export interface BookPracticeChapter {
   id: string
   book: string

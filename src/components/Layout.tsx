@@ -16,6 +16,7 @@ const MORE_NAV = [
   { to: '/numbers', label: 'Numerot', icon: '🔢' },
   { to: '/basics', label: 'Perussanasto', icon: '🌻' },
   { to: '/daily', label: 'Sekoitettu harjoitus', icon: '🎲' },
+  { to: '/conversations', label: 'Keskusteluharjoitukset', icon: '💬' },
   { to: '/templates', label: 'Mallipohjat', icon: '📋' },
   { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
   { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
