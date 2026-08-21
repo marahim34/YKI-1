@@ -5,6 +5,7 @@ import { GRAMMAR_TOPICS, grammarTopic } from '../data/grammar'
 import { CASE_TABLE } from '../data/caseTable'
 import { VERB_TYPE_TABLE } from '../data/verbTypeTable'
 import { VERB_TENSE_TABLE } from '../data/verbTenseTable'
+import { GRAMMAR_MINI_TABLES } from '../data/grammarTables'
 import LevelPill from '../components/LevelPill'
 import { useFinnishSpeech } from '../lib/tts'
 
@@ -31,6 +32,8 @@ export default function Grammar() {
   const [showCaseTable, setShowCaseTable] = useState(true)
   const [showVerbTable, setShowVerbTable] = useState(false)
   const [showTenseTable, setShowTenseTable] = useState(false)
+  const [showMiniTables, setShowMiniTables] = useState(false)
+  const [miniTableId, setMiniTableId] = useState(GRAMMAR_MINI_TABLES[0].id)
   const { play, speaking, supported } = useFinnishSpeech()
 
   useEffect(() => {
@@ -320,6 +323,86 @@ export default function Grammar() {
             </div>
           </div>
         )}
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <button
+          onClick={() => setShowMiniTables((s) => !s)}
+          className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
+        >
+          <span>
+            <span className="font-semibold text-slate-900">Muut kielioppitaulukot</span>
+            <span className="ml-2 text-xs text-slate-400">More grammar tables — {GRAMMAR_MINI_TABLES.length} taulukkoa</span>
+          </span>
+          <span className="text-slate-400">{showMiniTables ? '−' : '+'}</span>
+        </button>
+        {showMiniTables &&
+          (() => {
+            const activeTable = GRAMMAR_MINI_TABLES.find((t) => t.id === miniTableId) ?? GRAMMAR_MINI_TABLES[0]
+            return (
+              <div className="border-t border-slate-100 px-4 py-4">
+                <p className="mb-3 text-xs text-slate-500">
+                  Persoonapronominit, omistusliitteet, kieltomuoto, astevaihtelu, komparointi, modaaliverbit ja
+                  kysymyssanat — valitse taulukko. Personal pronouns, possessive suffixes, negation, consonant
+                  gradation, comparison, modal verbs, and question words — pick a table below.
+                </p>
+                <div className="mb-4 flex flex-wrap gap-1.5">
+                  {GRAMMAR_MINI_TABLES.map((t) => (
+                    <button
+                      key={t.id}
+                      onClick={() => setMiniTableId(t.id)}
+                      className={`rounded-full px-2.5 py-1 text-xs font-medium ${
+                        miniTableId === t.id ? 'bg-violet-600 text-white' : 'bg-violet-50 text-violet-700 hover:bg-violet-100'
+                      }`}
+                    >
+                      {t.title}
+                    </button>
+                  ))}
+                </div>
+
+                <div>
+                  <p className="font-semibold text-slate-900">
+                    {activeTable.title} <span className="ml-1 text-xs font-normal text-emerald-700">{activeTable.titleBn}</span>
+                  </p>
+                  <p className="mt-1 text-xs text-slate-500">{activeTable.intro}</p>
+                  <p className="mt-1 text-xs text-emerald-700">{activeTable.introBn}</p>
+
+                  <div className="mt-3 overflow-x-auto">
+                    <table className="w-full min-w-[560px] border-collapse text-left text-sm">
+                      <thead>
+                        <tr className="border-b border-slate-200 text-xs uppercase tracking-wide text-slate-400">
+                          {activeTable.columns.map((col) => (
+                            <th key={col} className="py-2 pr-3">
+                              {col}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {activeTable.rows.map((row, i) => (
+                          <tr key={i} className="border-b border-slate-100 align-top">
+                            {row.cells.map((c, j) => (
+                              <td key={j} className="py-2 pr-3 text-slate-700">
+                                {c.fi}
+                                {c.bn && <span className="block text-xs text-emerald-700">{c.bn}</span>}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <button
+                    onClick={() => jumpToTopic(activeTable.topicId)}
+                    className="mt-3 whitespace-nowrap rounded-full bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-700 hover:bg-violet-100"
+                  >
+                    Selitys →
+                  </button>
+                </div>
+              </div>
+            )
+          })()}
       </section>
 
       <input
