@@ -309,6 +309,13 @@ export default function YkiPrep() {
                 <div key={t.id} className="rounded-lg border border-slate-200 bg-white p-3">
                   <p className="text-sm font-semibold text-slate-900">{t.titleFi}</p>
                   <p className="mt-1 text-sm text-slate-700">{t.instructionsFi}</p>
+                  {t.bulletsFi && t.bulletsFi.length > 0 && (
+                    <ul className="mt-1 list-inside list-disc text-sm text-slate-700">
+                      {t.bulletsFi.map((b, i) => (
+                        <li key={i}>{b}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>
@@ -321,6 +328,13 @@ export default function YkiPrep() {
                 <div key={t.id} className="rounded-lg border border-slate-200 bg-white p-3">
                   <p className="text-sm font-semibold text-slate-900">{t.titleFi}</p>
                   <p className="mt-1 text-sm text-slate-700">{t.instructionsFi}</p>
+                  {t.bulletsFi && t.bulletsFi.length > 0 && (
+                    <ul className="mt-1 list-inside list-disc text-sm text-slate-700">
+                      {t.bulletsFi.map((b, i) => (
+                        <li key={i}>{b}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>

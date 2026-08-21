@@ -5123,6 +5123,255 @@ export const YKI_CHAPTERS: YkiChapter[] = [
       { fi: 'Ilmastonmuutos on vakava ongelma.', en: 'Climate change is a serious problem.' },
     ],
   },
+  {
+    id: 'yki-ch9',
+    number: 9,
+    titleFi: 'Yhteiskunta',
+    titleEn: 'Society',
+    pages: '244-273',
+    theme: 'Yhteiskunta, kansalaisuus, hallitus, politiikka, sosiaalipalvelut ja yhteisö',
+    reading: {
+      vocabWarmup: {
+        instructionsFi: 'Osaatko yhteiskuntaan liittyvää sanastoa? Selvitä, mitä seuraavat sanat tarkoittavat.',
+        items: [
+          { fi: 'yhteiskunta', en: 'society' },
+          { fi: 'kansalainen', en: 'citizen' },
+          { fi: 'kansalaisuus', en: 'citizenship' },
+          { fi: 'äänestäminen', en: 'voting' },
+          { fi: 'vaalit', en: 'elections' },
+          { fi: 'politiikka', en: 'politics' },
+          { fi: 'poliitikko', en: 'politician' },
+          { fi: 'puolue', en: 'political party' },
+          { fi: 'hallitus', en: 'government' },
+          { fi: 'eduskunta', en: 'parliament' },
+          { fi: 'laki', en: 'law' },
+          { fi: 'oikeus', en: 'right / justice' },
+          { fi: 'velvollisuus', en: 'duty / obligation' },
+          { fi: 'tasa-arvo', en: 'equality' },
+          { fi: 'oikeudenmukaisuus', en: 'fairness/justice' },
+          { fi: 'yhdenvertaisuus', en: 'equality' },
+          { fi: 'demokratia', en: 'democracy' },
+          { fi: 'verot', en: 'taxes' },
+          { fi: 'sosiaaliturva', en: 'social security' },
+          { fi: 'Kela', en: 'Social Insurance Institution' },
+          { fi: 'maahanmuutto', en: 'immigration' },
+          { fi: 'kotoutuminen', en: 'integration' },
+          { fi: 'syrjintä', en: 'discrimination' },
+        ],
+      },
+      practicePassages: [
+        {
+          id: 'reading-practice-1',
+          titleFi: 'Yhteiskunnalliset aiheet',
+          titleEn: 'Societal Topics',
+          textFi: NO_ARTICLE_NOTE,
+          open: [
+            {
+              id: 'rp1-o1',
+              questionFi: 'Mitä tarkoittaa demokratia?',
+              sampleAnswerFi: 'Demokratia tarkoittaa, että kansalaiset saavat osallistua päätöksentekoon äänestämällä.',
+            },
+            {
+              id: 'rp1-o2',
+              questionFi: 'Miksi äänestäminen on tärkeää?',
+              sampleAnswerFi: 'Äänestäminen on tärkeää, koska se on tapa vaikuttaa yhteiskuntaan ja päättää, kuka tekee päätöksiä.',
+            },
+            {
+              id: 'rp1-o3',
+              questionFi: 'Mitä yhteiskunnan palveluita Suomessa on?',
+              sampleAnswerFi: 'Koulutus, terveydenhuolto, sosiaaliturva ja julkinen liikenne.',
+            },
+          ],
+        },
+      ],
+      testPassages: [],
+    },
+    writing: {
+      freewrite: {
+        instructionsFi: 'Kertaa yhteiskuntaan liittyvää sanastoa ennen kirjoittamista.',
+        rules: [],
+        topics: [
+          'kansalaisuus (citizenship)',
+          'äänestäminen (voting)',
+          'vaalit (elections)',
+          'hallitus (government)',
+          'laki (law)',
+          'tasa-arvo (equality)',
+          'demokratia (democracy)',
+          'sosiaaliturva (social security)',
+          'maahanmuutto (immigration)',
+          'kotoutuminen (integration)',
+        ],
+      },
+      groupIntro: {
+        instructionsFi: 'Tässä luvussa harjoitellaan näitä viestityyppejä:',
+        questions: [
+          'Epämuodollinen viesti: viesti äänestämisestä tai poliittisista asioista; keskustelu sosiaalipalveluista.',
+          'Muodollinen viesti: viesti Kelaan tai Migriin; valitus julkisista palveluista; hakemus kansalaisuudesta tai etuuksista.',
+          'Mielipide: Pitäisikö äänestämisen olla pakollista? Onko Suomi tasa-arvoinen maa? Pitäisikö maahanmuuttoa helpottaa? Verot - liian korkeat vai tarpeellisia?',
+        ],
+      },
+      practiceTasks: [
+        {
+          id: 'writing-practice-1',
+          titleFi: 'Viesti ystävälle: Äänestäminen',
+          instructionsFi: 'Kirjoita ystävällesi viesti äänestämisestä ja kutsu hänet mukaan äänestämään kanssasi.',
+          sampleFi:
+            'Hei [name]!\n\nTiedätkö, että meillä on pian vaalit? Mun mielestä on tärkeää, että jokainen äänestää. Se on tapa vaikuttaa yhteiskuntaan. Ajattelin mennä äänestämään ensi viikolla. Tuletko mukaan?\n\nTerveisin, [your name]',
+        },
+        {
+          id: 'writing-practice-2',
+          titleFi: 'Viesti Kelaan',
+          instructionsFi: 'Sinulla on kysymys asumistuesta. Kirjoita viesti Kelaan.',
+          sampleFi:
+            'Hei!\n\nOlen [name], henkilötunnus [number]. Kirjoitan, koska minulla on kysymys asumistuesta. Olen muuttanut uuteen asuntoon, ja haluaisin tietää, vaikuttaako se asumistukeen.\n\nYstävällisin terveisin,\n[Your name]',
+        },
+        {
+          id: 'writing-practice-3',
+          titleFi: 'Mielipide: Tasa-arvo Suomessa',
+          instructionsFi: 'Kirjoita mielipideteksti aiheesta: tasa-arvo Suomessa.',
+          sampleFi:
+            'Mielestäni Suomi on melko tasa-arvoinen maa. Täällä naisilla ja miehillä on samat oikeudet, koulutus on ilmaista, ja kaikilla on mahdollisuus terveydenhuoltoon.\n\nKuitenkin Suomessa on myös epätasa-arvoa. Esimerkiksi maahanmuuttajat voivat kohdata syrjintää työnhaussa. Myös palkkaerot naisten ja miesten välillä ovat olemassa.\n\nTasa-arvo ei ole itsestäänselvyys. Meidän kaikkien pitää tehdä töitä sen eteen, että yhteiskunta olisi oikeudenmukaisempi.',
+        },
+      ],
+      informalTasks: [
+        {
+          id: 'writing-informal-1',
+          titleFi: 'Epämuodolliset viestiaiheet',
+          instructionsFi: 'Tämän luvun epämuodollisissa viesteissä harjoitellaan esimerkiksi:',
+          bulletsFi: ['Viesti äänestämisestä tai poliittisista asioista', 'Keskustelu sosiaalipalveluista'],
+        },
+      ],
+      formalTasks: [
+        {
+          id: 'writing-formal-1',
+          titleFi: 'Muodolliset viestiaiheet',
+          instructionsFi: 'Tämän luvun muodollisissa viesteissä harjoitellaan esimerkiksi:',
+          bulletsFi: ['Viesti Kelaan tai Migriin', 'Valitus julkisista palveluista', 'Hakemus kansalaisuudesta tai etuuksista'],
+        },
+      ],
+      opinionTopics: [
+        {
+          id: 'writing-opinion-1',
+          titleFi: 'Mielipideaiheita',
+          options: [
+            'Pitäisikö äänestäminen olla pakollista?',
+            'Onko Suomi tasa-arvoinen maa?',
+            'Pitäisikö maahanmuuttoa helpottaa?',
+            'Verot - liian korkeat vai tarpeellisia?',
+          ],
+        },
+      ],
+    },
+    listening: {
+      practicePassages: [
+        {
+          id: 'listening-practice-1',
+          titleFi: 'Kuuntelutehtävien sanasto ja aiheet',
+          titleEn: 'Listening Task Vocabulary and Topics',
+          textFi:
+            'Tämän luvun kuuntelutehtäviä ei sisältynyt saatuun lähdemateriaaliin äänitteineen ja vastauksineen. Harjoittele omatoimisesti kuuntelemalla yhteiskuntaan liittyviä keskusteluja, esimerkiksi näistä aiheista: uutinen vaaleista, keskustelu maahanmuutosta, mainos sosiaalipalveluista, haastattelu poliitikon kanssa.',
+          predictVocab: [
+            { fi: 'kansalainen', en: 'citizen' },
+            { fi: 'ääni', en: 'vote' },
+            { fi: 'vaalit', en: 'elections' },
+            { fi: 'puolue', en: 'political party' },
+            { fi: 'hallitus', en: 'government' },
+            { fi: 'laki', en: 'law' },
+            { fi: 'oikeudet', en: 'rights' },
+            { fi: 'velvollisuudet', en: 'obligations' },
+            { fi: 'sosiaaliturva', en: 'social security' },
+            { fi: 'maahanmuuttaja', en: 'immigrant' },
+            { fi: 'kotoutuminen', en: 'integration' },
+          ],
+        },
+      ],
+      testPassages: [],
+    },
+    speaking: {
+      groupIntro: {
+        instructionsFi: 'Tässä luvussa harjoitellaan näitä puhumisen aihepiirejä:',
+        questions: [
+          'Kertominen: Kerro suomalaisesta yhteiskunnasta; Millainen on hyvä yhteiskunta?',
+          'Keskustelu: Keskustelu äänestämisestä; Keskustelu maahanmuutosta.',
+          'Tilannetehtävät: Kysy tietoa Kelasta; Keskustele naapurin kanssa yhteiskunnallisista asioista.',
+          'Mielipide: Pitäisikö äänestäminen olla pakollista?; Onko Suomi tasa-arvoinen maa?; Pitäisikö maahanmuuttoa helpottaa?',
+        ],
+      },
+      testLongTasks: [
+        {
+          id: 'speaking-test-1',
+          titleFi: 'Suomalainen yhteiskunta',
+          titleEn: 'Finnish Society',
+          prepSeconds: 60,
+          speakSeconds: 90,
+          questions: [
+            'Mitä tiedät Suomesta yhteiskuntana?',
+            'Millaisia palveluita Suomessa on?',
+            'Mikä on mielestäsi hyvää Suomessa?',
+            'Mikä voisi olla paremmin?',
+          ],
+        },
+      ],
+      conversationTasks: [],
+      situationalTasks: [
+        {
+          id: 'speaking-situation-1',
+          scenarioFi: 'Kysy tietoa Kelasta.',
+          seconds: 20,
+        },
+        {
+          id: 'speaking-situation-2',
+          scenarioFi: 'Keskustele naapurin kanssa yhteiskunnallisista asioista.',
+          seconds: 20,
+        },
+      ],
+      opinionTasks: [
+        {
+          id: 'speaking-opinion-1',
+          titleFi: 'Jokaisen pitäisi äänestää vaaleissa',
+          titleEn: 'Everyone Should Vote in Elections',
+          prepSeconds: 120,
+          speakSeconds: 120,
+          questions: ['Oletko samaa mieltä?', 'Miksi äänestäminen on tärkeää?', 'Mitä tapahtuu, jos ihmiset eivät äänestä?', 'Pitäisikö äänestämisen olla pakollista?'],
+        },
+      ],
+    },
+    vocabSummary: [
+      { fi: 'yhteiskunta', en: 'society' },
+      { fi: 'kansalainen', en: 'citizen' },
+      { fi: 'kansalaisuus', en: 'citizenship' },
+      { fi: 'äänestäminen', en: 'voting' },
+      { fi: 'vaalit', en: 'elections' },
+      { fi: 'politiikka', en: 'politics' },
+      { fi: 'poliitikko', en: 'politician' },
+      { fi: 'puolue', en: 'party' },
+      { fi: 'hallitus', en: 'government' },
+      { fi: 'eduskunta', en: 'parliament' },
+      { fi: 'laki', en: 'law' },
+      { fi: 'oikeus', en: 'right/justice' },
+      { fi: 'velvollisuus', en: 'duty' },
+      { fi: 'tasa-arvo', en: 'equality' },
+      { fi: 'yhdenvertaisuus', en: 'equality' },
+      { fi: 'demokratia', en: 'democracy' },
+      { fi: 'verot', en: 'taxes' },
+      { fi: 'sosiaaliturva', en: 'social security' },
+      { fi: 'maahanmuutto', en: 'immigration' },
+      { fi: 'kotoutuminen', en: 'integration' },
+      { fi: 'syrjintä', en: 'discrimination' },
+      { fi: 'oikeudenmukaisuus', en: 'fairness' },
+    ],
+    usefulPhrases: [
+      { fi: 'Olen Suomen kansalainen.', en: 'I am a Finnish citizen.' },
+      { fi: 'Haluaisin hakea kansalaisuutta.', en: 'I would like to apply for citizenship.' },
+      { fi: 'Äänestän vaaleissa.', en: 'I vote in elections.' },
+      { fi: 'On tärkeää, että kaikki äänestävät.', en: "It's important that everyone votes." },
+      { fi: 'Suomi on tasa-arvoinen maa.', en: 'Finland is an equal country.' },
+      { fi: 'Yhteiskunnan pitäisi auttaa heikommassa asemassa olevia.', en: 'Society should help those in need.' },
+      { fi: 'Tarvitsen apua Kelasta.', en: 'I need help from Kela.' },
+      { fi: 'Maahanmuuttajat rikastuttavat yhteiskuntaa.', en: 'Immigrants enrich society.' },
+    ],
+  },
 ]
 
 export function ykiChapter(id: string): YkiChapter | undefined {
