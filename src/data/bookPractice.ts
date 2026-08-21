@@ -932,9 +932,354 @@ export const BOOK_PRACTICE: BookPracticeChapter[] = [
     },
     grammarTopicIds: ['objektin-sijamuodot', 'verbien-rektio'],
   },
+
+  // ─────────────── Ykäänkö vai ykiinkö – Highway to hill ───────────────
+  // A YKI-testi speaking/writing drill book with no reading texts and no
+  // dedicated grammar section, organized by the seven themes typical of the
+  // YKI exam, with a strong emphasis on spoken-register Finnish (sä vs.
+  // sinä). The companion chapters below mirror that: light vocab per theme,
+  // plus a written→spoken (puhekieli) transformation drill instead of
+  // traditional grammar, since that's the book's actual character.
+  {
+    id: 'yvy-ch1',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 1: Arki ja vapaa-aika',
+    level: 'A2',
+    topic: 'Arki ja vapaa-aika',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'daily routine'?", options: ['arki', 'juhla', 'loma', 'matka'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'hobby'?", options: ['harrastus', 'työ', 'koulu', 'lepo'], correctIndex: 0 },
+      { question: 'Viikonloppuna minulla on ___ aikaa.', options: ['vapaa-aikaa', 'kiireaikaa', 'työaikaa', 'kouluaikaa'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to relax'?", options: ['rentoutua', 'kiirehtiä', 'väsyä', 'stressata'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi — näin YKI:n suullinen osio usein kuulostaa.',
+      items: [
+        { prompt: 'Minä olen väsynyt. → Puhekielellä: ___ oon väsynyt.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'Emme mene tänään ulos. → Puhekielellä: Me ___ mennä tänään ulos.', answer: 'ei', hint: 'passiivi korvaa me-muodon puhekielessä: me ei mennä' },
+        { prompt: 'Etkö sinä ole vapaana viikonloppuna? → Puhekielellä: ___ sä oo vapaana viikonloppuna?', answer: 'Etks', hint: 'etkö → etks' },
+        { prompt: 'Meillä ei ole aikaa. → Puhekielellä: ___ ei oo aikaa.', answer: 'Meil', hint: 'meillä → meil' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli'],
+  },
+  {
+    id: 'yvy-ch2',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 2: Työ ja opiskelu',
+    level: 'B1',
+    topic: 'Työ ja opiskelu',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'workplace'?", options: ['työpaikka', 'kotipaikka', 'oppilaitos', 'virasto'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'colleague'?", options: ['kollega', 'esimies', 'asiakas', 'kilpailija'], correctIndex: 0 },
+      { question: 'Aloitin uuden ___ viime kuussa.', options: ['työpaikan', 'lomani', 'harrastukseni', 'opintoni'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'deadline'?", options: ['määräaika', 'aikataulu', 'tauko', 'palaveri'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
+      items: [
+        { prompt: 'Minä olen töissä huomenna. → ___ oon töissä huomenna.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'Sinä olet hyvä työntekijä. → ___ oot hyvä työntekijä.', answer: 'Sä', hint: 'sinä → sä' },
+        { prompt: 'Me teemme projektin yhdessä. → Me ___ projektin yhdessä.', answer: 'tehdään', hint: 'passiivi korvaa me-muodon: me tehdään' },
+        { prompt: 'En minä tiedä vastausta. → En ___ tiedä vastausta.', answer: 'mä', hint: 'minä → mä kielteisessä lauseessa' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli', 'verbien-rektio'],
+  },
+  {
+    id: 'yvy-ch3',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 3: Asuminen ja koti',
+    level: 'A2',
+    topic: 'Asuminen ja koti',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'apartment'?", options: ['asunto', 'talo', 'huone', 'piha'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'rent (noun)'?", options: ['vuokra', 'lasku', 'palkka', 'hinta'], correctIndex: 0 },
+      { question: 'Muutin uuteen ___ viime viikolla.', options: ['asuntoon', 'kaupunkiin', 'maahan', 'kouluun'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'neighbor'?", options: ['naapuri', 'vieras', 'ystävä', 'sukulainen'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
+      items: [
+        { prompt: 'Minulla on uusi asunto. → ___ on uusi asunto.', answer: 'Mulla', hint: 'minulla → mulla' },
+        { prompt: 'Me emme ole kotona. → Me ei ___ kotona.', answer: 'olla', hint: 'emme ole → ei olla (puhekielen passiivimuoto)' },
+        { prompt: 'Onko sinulla uusi naapuri? → Onks ___ uusi naapuri?', answer: 'sul', hint: 'sinulla → sul' },
+        { prompt: 'Minä pidän tästä asunnosta. → ___ tykkään tästä asunnosta.', answer: 'Mä', hint: 'minä → mä; tykätä on puhekielinen synonyymi verbille pitää' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli', 'omistusrakenne'],
+  },
+  {
+    id: 'yvy-ch4',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 4: Terveys ja hyvinvointi',
+    level: 'B1',
+    topic: 'Terveys ja hyvinvointi',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'symptom'?", options: ['oire', 'lääke', 'hoito', 'kipu'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'stress'?", options: ['stressi', 'rentoutuminen', 'lepo', 'uni'], correctIndex: 0 },
+      { question: 'Minun täytyy levätä, koska olen ___.', options: ['väsynyt', 'iloinen', 'terve', 'vahva'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'well-being'?", options: ['hyvinvointi', 'sairaus', 'väsymys', 'huoli'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
+      items: [
+        { prompt: 'Minä nukun huonosti. → ___ nukun huonosti.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'Sinun pitäisi levätä enemmän. → ___ pitäis levätä enemmän.', answer: 'Sun', hint: 'sinun → sun' },
+        { prompt: 'He eivät voi hyvin. → Ne ei ___ hyvin.', answer: 'voi', hint: 'he → ne puhekielessä, verbi pysyy yksikkömuotoisena' },
+        { prompt: 'En minä jaksa enää. → En ___ jaksa enää.', answer: 'mä', hint: 'minä → mä kielteisessä lauseessa' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli'],
+  },
+  {
+    id: 'yvy-ch5',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 5: Yhteiskunta ja palvelut',
+    level: 'B1',
+    topic: 'Yhteiskunta ja palvelut',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'service'?", options: ['palvelu', 'laitos', 'virasto', 'toimisto'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'citizen'?", options: ['kansalainen', 'asukas', 'turisti', 'virkamies'], correctIndex: 0 },
+      { question: 'Kunnan ___ auttavat asukkaita monissa asioissa.', options: ['palvelut', 'lait', 'verot', 'vaalit'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'authority/office'?", options: ['virasto', 'yritys', 'koulu', 'sairaala'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
+      items: [
+        { prompt: 'Me tarvitsemme lisää tietoa. → Me ___ lisää tietoa.', answer: 'tarvitaan', hint: 'passiivi korvaa me-muodon puhekielessä' },
+        { prompt: 'He eivät tienneet säännöistä. → Ne ei ___ säännöistä.', answer: 'tienny', hint: 'tienneet → tienny (loppu-t katoaa, -ee- lyhenee)' },
+        { prompt: 'Minä asioin virastossa eilen. → ___ asioin virastossa eilen.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'Emmekö me saa apua? → ___ me saada apua?', answer: 'Eiks', hint: 'emmekö → eiks (kieltokysymys yksinkertaistuu puhekielessä)' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli', 'asiointikieli'],
+  },
+  {
+    id: 'yvy-ch6',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 6: Matkustaminen',
+    level: 'B1',
+    topic: 'Matkustaminen',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'trip/journey'?", options: ['matka', 'reitti', 'lippu', 'kartta'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to book (a trip)'?", options: ['varata', 'peruuttaa', 'odottaa', 'myöhästyä'], correctIndex: 0 },
+      { question: 'Lentomme ___ kaksi tuntia myöhässä.', options: ['oli', 'meni', 'tuli', 'ajoi'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'destination'?", options: ['kohde', 'lähtö', 'paluu', 'reitti'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
+      items: [
+        { prompt: 'Minä matkustan usein yksin. → ___ matkustan usein yksin.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'Emme ehtineet lentokentälle ajoissa. → Me ei ___ lentokentälle ajoissa.', answer: 'ehditty', hint: 'puhekielen passiivimuoto: emme ehtineet → me ei ehditty' },
+        { prompt: 'Sinulla on varmasti kiva matka. → ___ on varmasti kiva matka.', answer: 'Sul', hint: 'sinulla → sul' },
+        { prompt: 'He eivät löytäneet hotellia. → Ne ei ___ hotellia.', answer: 'löytäny', hint: 'löytäneet → löytäny' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli'],
+  },
+  {
+    id: 'yvy-ch7',
+    book: 'Ykäänkö vai ykiinkö – Highway to hill',
+    chapterLabel: 'Teema 7: Ihmissuhteet ja perhe',
+    level: 'B2',
+    topic: 'Ihmissuhteet ja perhe',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'relationship'?", options: ['suhde', 'sukulainen', 'ystävyys', 'perhe'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to trust'?", options: ['luottaa', 'epäillä', 'pelätä', 'unohtaa'], correctIndex: 0 },
+      { question: 'Meidän ___ on kestänyt jo kymmenen vuotta.', options: ['suhteemme', 'perheemme', 'kotimme', 'työmme'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'conflict/argument'?", options: ['riita', 'sopimus', 'juhla', 'vierailu'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Muuta kirjakielinen lause puhekieliseksi.',
+      items: [
+        { prompt: 'Minä rakastan perhettäni. → ___ rakastan perhettäni.', answer: 'Mä', hint: 'minä → mä' },
+        { prompt: 'Emme riitele usein. → Me ei ___ usein.', answer: 'riidellä', hint: 'emme riitele → me ei riidellä (puhekielen passiivimuoto)' },
+        { prompt: 'Luuletko sinä, että hän tulee? → Luuleks ___, että se tulee?', answer: 'sä', hint: 'luuletko sinä → luuleks sä; hän → se puhekielessä' },
+        { prompt: 'He eivät ymmärtäneet toisiaan. → Ne ei ___ toisiaan.', answer: 'ymmärtäny', hint: 'ymmärtäneet → ymmärtäny' },
+      ],
+    },
+    grammarTopicIds: ['puhekieli-vs-kirjakieli', 'liitepartikkelit'],
+  },
+
+  // ───────────────────────────── YKIä kohti ─────────────────────────────
+  // A reading/writing/listening/speaking exercise book for YKI-testi prep,
+  // also organized by the seven YKI themes, without a dedicated grammar
+  // section. Unlike the drill book above, these companion chapters use
+  // ordinary grammar drills tied to each theme (rather than a puhekieli
+  // focus), to feel like a genuinely distinct second book.
+  {
+    id: 'yk-ch1',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 1: Arki ja vapaa-aika',
+    level: 'A2',
+    topic: 'Arki ja vapaa-aika',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'weekday'?", options: ['arkipäivä', 'juhlapäivä', 'lomapäivä', 'pyhäpäivä'], correctIndex: 0 },
+      { question: "Mikä ilmaus tarkoittaa 'to hang out/spend time'?", options: ['viettää aikaa', 'kiirehtiä', 'stressata', 'väsyä'], correctIndex: 0 },
+      { question: 'Aamuisin minulla on kiire, mutta illat ovat ___.', options: ['rauhallisia', 'kiireisiä', 'meluisia', 'lyhyitä'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'routine'?", options: ['rutiini', 'yllätys', 'poikkeus', 'muutos'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause preesensillä tai sopivalla ajanilmauksella.',
+      items: [
+        { prompt: 'Yleensä minä ___ (herätä) kello seitsemän.', answer: 'herään', hint: 'preesens: herätä → herään' },
+        { prompt: 'Viikonloppuisin ___ (nukkua) pidempään.', answer: 'nukun', hint: 'preesens, minä-muoto' },
+        { prompt: 'Käyn lenkillä kolme kertaa ___ (viikko).', answer: 'viikossa', hint: 'sisäpaikallissija ajanilmauksessa: -ssa' },
+        { prompt: 'Vapaa-ajallani ___ (lukea) usein kirjoja.', answer: 'luen', hint: 'preesens, minä-muoto' },
+      ],
+    },
+    grammarTopicIds: ['preesens', 'kellonajat'],
+  },
+  {
+    id: 'yk-ch2',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 2: Työ ja opiskelu',
+    level: 'B1',
+    topic: 'Työ ja opiskelu',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'exam'?", options: ['tentti', 'luento', 'harjoitus', 'kurssi'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to graduate'?", options: ['valmistua', 'aloittaa', 'keskeyttää', 'hakea'], correctIndex: 0 },
+      { question: 'Opiskelen iltaisin, koska päivällä olen ___.', options: ['töissä', 'kotona', 'lomalla', 'koulussa'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'skill'?", options: ['taito', 'tieto', 'tehtävä', 'tavoite'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause imperfektillä tai konditionaalilla.',
+      items: [
+        { prompt: 'Viime vuonna minä ___ (opiskella) ranskaa.', answer: 'opiskelin', hint: 'imperfekti, minä-muoto' },
+        { prompt: 'Hän ___ (valmistua) yliopistosta kaksi vuotta sitten.', answer: 'valmistui', hint: 'imperfekti' },
+        { prompt: '___ (haluta) mieluummin opiskella kuin tehdä töitä juuri nyt.', answer: 'Haluaisin', hint: 'konditionaali' },
+        { prompt: 'Jos minulla ___ (olla) enemmän aikaa, opiskelisin lisää kieliä.', answer: 'olisi', hint: 'konditionaali ehtolauseessa' },
+      ],
+    },
+    grammarTopicIds: ['imperfekti', 'konditionaali'],
+  },
+  {
+    id: 'yk-ch3',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 3: Asuminen ja koti',
+    level: 'A2',
+    topic: 'Asuminen ja koti',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'furnished'?", options: ['kalustettu', 'tyhjä', 'remontoitu', 'vuokrattu'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'view (from a window)'?", options: ['näköala', 'ikkuna', 'ovi', 'seinä'], correctIndex: 0 },
+      { question: 'Asuntoni on pieni mutta ___.', options: ['kodikas', 'kylmä', 'pimeä', 'meluisa'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to decorate'?", options: ['sisustaa', 'siivota', 'remontoida', 'myydä'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause sisä- tai ulkopaikallissijalla.',
+      items: [
+        { prompt: 'Sohva on ___ (olohuone).', answer: 'olohuoneessa', hint: 'sisäpaikallissija: -ssa' },
+        { prompt: 'Laitan kirjat ___ (hylly).', answer: 'hyllylle', hint: 'ulkopaikallissija: -lle (mihin?)' },
+        { prompt: 'Asun kolmannessa ___ (kerros).', answer: 'kerroksessa', hint: 'sisäpaikallissija: -ssa' },
+        { prompt: 'Avaimet ovat ___ (pöytä).', answer: 'pöydällä', hint: 'ulkopaikallissija: -lla (missä?)' },
+      ],
+    },
+    grammarTopicIds: ['sisapaikallissijat', 'ulkopaikallissijat'],
+  },
+  {
+    id: 'yk-ch4',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 4: Terveys ja hyvinvointi',
+    level: 'B1',
+    topic: 'Terveys ja hyvinvointi',
+    vocabQuiz: [
+      { question: "Mikä ilmaus tarkoittaa 'balanced diet'?", options: ['monipuolinen ruokavalio', 'pikaruoka', 'ruokavalio ilman lihaa', 'ruokahalu'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'to exercise'?", options: ['liikkua', 'levätä', 'nukkua', 'syödä'], correctIndex: 0 },
+      { question: 'Terveellinen elämäntapa sisältää liikuntaa ja ___ unta.', options: ['riittävästi', 'vähän', 'liikaa', 'ei ollenkaan'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'mental health'?", options: ['mielenterveys', 'ruumiinlämpö', 'verenpaine', 'unettomuus'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause modaaliverbillä tai objektin oikealla sijamuodolla.',
+      items: [
+        { prompt: 'Sinun ___ (pitää) syödä monipuolisesti.', answer: 'pitää', hint: 'modaaliverbi + A-infinitiivi' },
+        { prompt: '___ (voida) me liikkua yhdessä useammin?', answer: 'Voisimmeko', hint: 'konditionaali + kysymysliite' },
+        { prompt: 'Syön joka päivä ___ (hedelmä).', answer: 'hedelmiä', hint: 'osaobjekti (partitiivi), määrittelemätön määrä' },
+        { prompt: 'Join koko ___ (vesi).', answer: 'veden', hint: 'kokonaisobjekti (akkusatiivi), tekeminen valmis' },
+      ],
+    },
+    grammarTopicIds: ['modaaliverbit', 'objektin-sijamuodot'],
+  },
+  {
+    id: 'yk-ch5',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 5: Yhteiskunta ja palvelut',
+    level: 'B1',
+    topic: 'Yhteiskunta ja palvelut',
+    vocabQuiz: [
+      { question: "Mikä sana tarkoittaa 'to vote'?", options: ['äänestää', 'valita', 'päättää', 'hallita'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'municipality'?", options: ['kunta', 'valtio', 'maakunta', 'seutu'], correctIndex: 0 },
+      { question: 'Kunnan palvelut ___ veronmaksajien rahoilla.', options: ['rahoitetaan', 'myydään', 'suljetaan', 'perutaan'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'equality'?", options: ['tasa-arvo', 'eriarvoisuus', 'köyhyys', 'rikkaus'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause passiivilla.',
+      items: [
+        { prompt: 'Suomessa ___ (äänestää) neljän vuoden välein.', answer: 'äänestetään', hint: 'passiivi, preesens' },
+        { prompt: 'Uusi kirjasto ___ (avata) ensi vuonna.', answer: 'avataan', hint: 'passiivi, preesens' },
+        { prompt: 'Palvelut ___ (rahoittaa) verovaroilla.', answer: 'rahoitetaan', hint: 'passiivi, preesens' },
+        { prompt: 'Kokous ___ (pitää) viime viikolla.', answer: 'pidettiin', hint: 'passiivi, imperfekti' },
+      ],
+    },
+    grammarTopicIds: ['passiivi-preesens', 'passiivi-imperfekti'],
+  },
+  {
+    id: 'yk-ch6',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 6: Matkustaminen',
+    level: 'B2',
+    topic: 'Matkustaminen',
+    vocabQuiz: [
+      { question: "Mikä ilmaus tarkoittaa 'to broaden one's horizons'?", options: ['avartaa maailmankuvaa', 'kaventaa näkemystä', 'unohtaa kotimaa', 'välttää uutta'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'culture shock'?", options: ['kulttuurishokki', 'koti-ikävä', 'matkapahoinvointi', 'aikaero'], correctIndex: 0 },
+      { question: 'Matkustaminen on opettanut minua ___.', options: ['sopeutumaan', 'unohtamaan', 'pelkäämään', 'kiirehtimään'], correctIndex: 0 },
+      { question: "Mikä sana tarkoittaa 'unforgettable'?", options: ['unohtumaton', 'tavallinen', 'lyhyt', 'kallis'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause perfektillä tai NUT-partisiipilla.',
+      items: [
+        { prompt: 'Olen ___ (matkustaa) monessa maassa.', answer: 'matkustanut', hint: 'perfekti: olla + NUT-partisiippi' },
+        { prompt: 'Emme ole koskaan ___ (käydä) Japanissa.', answer: 'käyneet', hint: 'perfekti, monikko' },
+        { prompt: 'Olen matkallani ___ (oppia) paljon uutta kulttuurista.', answer: 'oppinut', hint: 'perfekti' },
+        { prompt: 'En ole koskaan ___ (nähdä) niin kauniita maisemia.', answer: 'nähnyt', hint: 'perfekti, NUT-partisiippi' },
+      ],
+    },
+    grammarTopicIds: ['perfekti', 'nut-partisiippi'],
+  },
+  {
+    id: 'yk-ch7',
+    book: 'YKIä kohti',
+    chapterLabel: 'Teema 7: Ihmissuhteet ja perhe',
+    level: 'B2',
+    topic: 'Ihmissuhteet ja perhe',
+    vocabQuiz: [
+      { question: "Mikä ilmaus tarkoittaa 'mutual respect'?", options: ['molemminpuolinen kunnioitus', 'yksipuolinen rakkaus', 'jatkuva riita', 'täydellinen sopu'], correctIndex: 0 },
+      { question: "Mikä ilmaus tarkoittaa 'to compromise'?", options: ['tehdä kompromissi', 'väittää vastaan', 'antaa periksi kokonaan', 'jättää huomiotta'], correctIndex: 0 },
+      { question: 'Hyvä parisuhde vaatii ___ ja luottamusta.', options: ['viestintää', 'rahaa', 'aikaa yksin', 'kilpailua'], correctIndex: 0 },
+      { question: "Mikä ilmaus tarkoittaa 'to support each other'?", options: ['tukea toisiaan', 'kilpailla toistensa kanssa', 'unohtaa toisensa', 'välttää toisiaan'], correctIndex: 0 },
+    ],
+    grammarDrill: {
+      instructions: 'Täytä lause relatiivilauseella (joka/jotka) tai referoinnilla.',
+      items: [
+        { prompt: 'Minulla on ystävä, ___ auttaa minua aina.', answer: 'joka', hint: 'relatiivipronomini yksikössä' },
+        { prompt: 'Minulla on ystäviä, ___ tukevat minua.', answer: 'jotka', hint: 'relatiivipronomini monikossa' },
+        { prompt: 'Hän sanoi, ___ rakastaa perhettään yli kaiken.', answer: 'että', hint: 'epäsuora esitys: sanoi, että...' },
+        { prompt: 'Kysyin häneltä, ___ hän oli onnellinen.', answer: 'oliko', hint: 'epäsuora kysymys: -ko-liite siirtyy sivulauseeseen' },
+      ],
+    },
+    grammarTopicIds: ['relatiivilauseet', 'referointi'],
+  },
 ]
 
-export const BOOK_NAMES = ['Suomen Mestari 1', 'Suomen Mestari 2', 'Suomen Mestari 3', 'Oma Suomi 1', 'Oma Suomi 2'] as const
+export const BOOK_NAMES = [
+  'Suomen Mestari 1',
+  'Suomen Mestari 2',
+  'Suomen Mestari 3',
+  'Oma Suomi 1',
+  'Oma Suomi 2',
+  'Ykäänkö vai ykiinkö – Highway to hill',
+  'YKIä kohti',
+] as const
 
 export function chaptersForBook(book: string): BookPracticeChapter[] {
   return BOOK_PRACTICE.filter((c) => c.book === book)
