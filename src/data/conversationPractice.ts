@@ -1817,6 +1817,450 @@ export const CONVERSATION_CHAPTERS: ConversationChapter[] = [
       { fi: 'tasa-arvo', en: 'equality' },
     ],
   },
+  {
+    id: 'conv-ch5',
+    titleFi: 'Luku 5: Terveys ja hyvinvointi',
+    titleEn: 'Chapter 5: Health and wellbeing',
+    level: 'B1',
+    warmup: [
+      { id: 'w-1', scenarioFi: 'Mitä sulle kuuluu?', scenarioEn: 'How are you?', sampleFi: 'Kiitos hyvää! Entä sulle? / Ihan hyvää, vähän väsyttää vaan.' },
+      { id: 'w-2', scenarioFi: 'Miten sulla menee?', scenarioEn: "How's it going?", sampleFi: 'Hyvin menee, kiitos! / Ihan ok, on ollut kiireinen viikko.' },
+      { id: 'w-3', scenarioFi: 'Miten voit?', scenarioEn: 'How are you feeling?', sampleFi: 'Kiitos, hyvin! / Olen vähän flunssainen, mutta muuten ok.' },
+      { id: 'w-4', scenarioFi: 'Miltä sinusta tuntuu?', scenarioEn: 'How do you feel?', sampleFi: 'Tuntuu hyvältä! / Olen vähän väsynyt, mutta iloinen.' },
+      { id: 'w-5', scenarioFi: 'Mikä fiilis sulla on nyt?', scenarioEn: "What's your mood right now?", sampleFi: 'Hyvä fiilis! / Vähän stressaantunut olo, paljon töitä.' },
+      { id: 'w-6', scenarioFi: 'Olin flunssassa viime viikolla.', scenarioEn: 'I had the flu last week.', sampleFi: 'Voi ei! Oletko nyt terve? Levättiikö kunnolla?' },
+      { id: 'w-7', scenarioFi: 'Mun päätä särkee.', scenarioEn: 'I have a headache.', sampleFi: 'Voi harmi! Ota Buranaa tai lepää vähän. Haluatko lasillisen vettä?' },
+      { id: 'w-8', scenarioFi: 'Mennäänkö apteekkiin?', scenarioEn: 'Shall we go to the pharmacy?', sampleFi: 'Kyllä, hyvä idea! Mulla onkin loppunut särkylääke.' },
+      { id: 'w-9', scenarioFi: 'Mä oon todella väsynyt!', scenarioEn: "I'm really tired!", sampleFi: 'Sun pitää levätä! Mene ajoissa nukkumaan. Oletko nukkunut huonosti?' },
+      {
+        id: 'w-10',
+        scenarioFi: 'Mulla on kova selkäkipu. Mikä auttaa?',
+        scenarioEn: 'I have severe back pain. What helps?',
+        sampleFi: 'Lepää ja laita lämpötyyny selkään. Voit myös mennä hierontaan tai fysioterapeutille.',
+      },
+      { id: 'w-11', scenarioFi: 'Mihin Buranaa käytetään?', scenarioEn: 'What is Burana used for?', sampleFi: 'Buranaa käytetään kipuun, tulehdukseen ja kuumeeseen. Se on särkylääke.' },
+      { id: 'w-12', scenarioFi: 'Mulla on nenä tukossa.', scenarioEn: 'I have a stuffy nose.', sampleFi: 'Ota nenäsumutetta tai hengitä höyryä. Juo paljon vettä ja lepää.' },
+      { id: 'w-13', scenarioFi: 'Mulla on kuivat silmät.', scenarioEn: 'I have dry eyes.', sampleFi: 'Käytä silmätippoja. Vältä näyttöjä ja pidä taukoja.' },
+      {
+        id: 'w-14',
+        scenarioFi: 'Milloin ja mikä sua naurattaa?',
+        scenarioEn: 'When and what makes you laugh?',
+        sampleFi: 'Naurattaa, kun kuulen hyvän vitsin tai näen hauskan videon. Ystävien kanssa tulee usein naurettua.',
+      },
+      {
+        id: 'w-15',
+        scenarioFi: 'Milloin ja mikä sua itkettää?',
+        scenarioEn: 'When and what makes you cry?',
+        sampleFi: 'Itkettää, jos näen surullisen elokuvan tai jos joku läheinen on surullinen. Joskus itken ilosta.',
+      },
+      {
+        id: 'w-16',
+        scenarioFi: 'Mikä sua ärsyttää? Mikä sua ottaa päähän?',
+        scenarioEn: 'What annoys you? What pisses you off?',
+        sampleFi: 'Ärsyttää, kun ihmiset ovat myöhässä tai kun joku puhuu kovaa puhelimessa julkisessa paikassa.',
+      },
+      { id: 'w-17', scenarioFi: 'Mikä sua pelottaa?', scenarioEn: 'What scares you?', sampleFi: 'Pelottaa korkeat paikat ja hämähäkit. Myös sairaudet ja onnettomuudet pelottavat.' },
+      { id: 'w-18', scenarioFi: 'Piristääkö kahvi sinua?', scenarioEn: 'Does coffee perk you up?', sampleFi: 'Kyllä, kahvi piristää! Mutta jos juon liikaa, tulee hermostunut olo.' },
+      { id: 'w-19', scenarioFi: 'Mikä sua jännittää?', scenarioEn: 'What makes you nervous?', sampleFi: 'Jännittää työhaastattelut ja esiintymiset. Myös tärkeät tentit jännittävät.' },
+      { id: 'w-20', scenarioFi: 'Mikä sua hävettää?', scenarioEn: 'What embarrasses you?', sampleFi: 'Hävettää, jos sanon jotain tyhmää tai jos kaadun julkisella paikalla.' },
+      {
+        id: 'w-21',
+        scenarioFi: 'Mun koira kuoli eilen.',
+        scenarioEn: 'My dog died yesterday.',
+        sampleFi: 'Voi ei! Olen niin pahoillani! Se on varmasti todella surullista. Olen täällä sinua varten.',
+      },
+      { id: 'w-22', scenarioFi: 'Mun sisko sai vauvan!', scenarioEn: 'My sister had a baby!', sampleFi: 'Onneksi olkoon! Mahtava uutinen! Miten siskosi voi? Terve vauva?' },
+      { id: 'w-23', scenarioFi: 'Hei, sä oot myöhässä.', scenarioEn: "Hey, you're late.", sampleFi: 'Anteeksi! Olen todella pahoillani! Oli liikenneongelmia. Tulen nyt heti.' },
+      {
+        id: 'w-24',
+        scenarioFi: 'Neuvo ystävää: Häntä nukuttaa opettajan puhe.',
+        scenarioEn: "Advise a friend: He's sleepy during the teacher's speech.",
+        sampleFi: 'Yritä nukkua paremmin yöllä. Voit myös juoda vettä tai tehdä muistiinpanoja pysyäksesi hereillä.',
+      },
+      {
+        id: 'w-25',
+        scenarioFi: 'Neuvo ystävää: Häntä itkettää.',
+        scenarioEn: "Advise a friend: She's crying.",
+        sampleFi: 'Mitä tapahtui? Haluatko puhua? Olen täällä sinua varten. Itkeminen on ok, se helpottaa oloa.',
+      },
+      {
+        id: 'w-26',
+        scenarioFi: 'Neuvo ystävää: Häntä ärsyttää pomo töissä.',
+        scenarioEn: "Advise a friend: The boss is annoying him at work.",
+        sampleFi: 'Oletko puhunut pomollesi? Ehkä voisit keskustella rauhallisesti ongelmista. Jos ei auta, mieti, haluatko jatkaa siellä.',
+      },
+      {
+        id: 'w-27',
+        scenarioFi: 'Neuvo ystävää: Häntä huimaa ja päätä särkee.',
+        scenarioEn: 'Advise a friend: He feels dizzy and has a headache.',
+        sampleFi: 'Istu alas ja lepää. Juo vettä. Jos olo pahenee, mene lääkäriin.',
+      },
+      {
+        id: 'w-28',
+        scenarioFi: 'Neuvo ystävää: Hän tylsistyy työpaikalla.',
+        scenarioEn: "Advise a friend: She's bored at work.",
+        sampleFi: 'Kysy pomolta lisää haastavia tehtäviä. Voisit myös opiskella uusia taitoja työajalla tai harkita työpaikan vaihtoa.',
+      },
+      {
+        id: 'w-29',
+        scenarioFi: 'Neuvo ystävää: Häntä pelottaa kuolema.',
+        scenarioEn: "Advise a friend: He's scared of death.",
+        sampleFi: 'Se on ymmärrettävää. Kannattaa puhua tunteista. Elämä on arvokasta, yritä nauttia jokaisesta päivästä.',
+      },
+      {
+        id: 'w-30',
+        scenarioFi: 'Neuvo ystävää: Häntä janottaa, mutta ei ole juotavaa.',
+        scenarioEn: "Advise a friend: She's thirsty but has no drink.",
+        sampleFi: 'Mennään yhdessä ostamaan juomaa. Kaupassa on vettä tai mehua.',
+      },
+      {
+        id: 'w-31',
+        scenarioFi: 'Neuvo ystävää: Häntä suututtaa, että hän maksoi niin paljon.',
+        scenarioEn: "Advise a friend: He's angry that he paid so much.",
+        sampleFi: 'Ymmärrän, se on turhauttavaa. Kysy hyvitystä tai palauta tuote. Opimme virheistä.',
+      },
+      {
+        id: 'w-32',
+        scenarioFi: 'Neuvo ystävää: Häntä masentaa talvi.',
+        scenarioEn: 'Advise a friend: The winter depresses her.',
+        sampleFi: 'Talvi on vaikeaa monille. Kokeile kirkasvalohoitoa, liikuntaa ja D-vitamiinia. Muista, että kevät tulee pian.',
+      },
+      {
+        id: 'w-33',
+        scenarioFi: 'Neuvo ystävää: Hänellä on huono näkö.',
+        scenarioEn: 'Advise a friend: He has poor eyesight.',
+        sampleFi: 'Mene silmälääkärille tarkastukseen. Saatat tarvita silmälasit tai piilolinssit.',
+      },
+      {
+        id: 'w-34',
+        scenarioFi: 'Neuvo ystävää: Hänellä on miesflunssa.',
+        scenarioEn: 'Advise a friend: He has man flu.',
+        sampleFi: 'Haha, miesflunssa on paha! Lepää, juo lämmintä juomaa ja ota lääkettä. Olet kohta kunnossa!',
+      },
+      {
+        id: 'w-35',
+        scenarioFi: 'Neuvo ystävää: Hänellä on kova vatsa eli ummetusta.',
+        scenarioEn: 'Advise a friend: He has constipation.',
+        sampleFi: 'Juopahan enemmän vettä ja syö kuitua, kuten hedelmiä, vihanneksia ja täysjyväleipää. Liikunta auttaa.',
+      },
+      {
+        id: 'w-36',
+        scenarioFi: 'Neuvo ystävää: Hänellä on paljon ylipainoa.',
+        scenarioEn: 'Advise a friend: He has a lot of excess weight.',
+        sampleFi: 'Mene lääkäriin ja ravitsemusterapeutille. Terveellinen ruokavalio ja säännöllinen liikunta auttavat.',
+      },
+      {
+        id: 'w-37',
+        scenarioFi: 'Neuvo ystävää: Hän on menossa leikkaukseen.',
+        scenarioEn: "Advise a friend: She's going to surgery.",
+        sampleFi: 'Tsemppiä! Toivottavasti kaikki menee hyvin. Olen ajatellut sinua. Ota rauhallisesti, kyllä se menee hyvin.',
+      },
+    ],
+    dialogues: [
+      {
+        id: 'd1',
+        titleFi: 'Hätätilanne - nainen makaa kadulla',
+        titleEn: 'Emergency - woman lying on the street',
+        turns: [
+          { speaker: 'Virkailija', fi: 'Hätäkeskus, mikä on hätänne?' },
+          { speaker: 'Sinä', fi: 'Hei! Olen [nimi]. Näen naisen makaavan kadulla. Yritin herättää häntä, mutta hän ei vastaa.' },
+          { speaker: 'Virkailija', fi: 'Mikä on tarkka sijaintinne?' },
+          { speaker: 'Sinä', fi: 'Olen [osoite/risteys]. Nainen on maassa ja näyttää tajuttomalta.' },
+          { speaker: 'Virkailija', fi: 'Onko naisella näkyviä vammoja?' },
+          { speaker: 'Sinä', fi: 'Ei näy verta, mutta hän ei liiku. Hengittääkö hän? En ole varma.' },
+          { speaker: 'Virkailija', fi: '[Virkailija kysyy lisäkysymyksiä]', en: 'Operator asks more questions', isPlaceholder: true },
+          { speaker: 'Sinä', fi: 'Hän hengittää kyllä, mutta hyvin matalasti. Tarvitsen ambulanssin pian.' },
+          { speaker: 'Virkailija', fi: '[Virkailija kertoo, että apu on tulossa]', en: 'Operator says help is on the way', isPlaceholder: true },
+          { speaker: 'Sinä', fi: 'Kiitos! Jään tähän odottamaan ja pidän silmällä naista.' },
+        ],
+      },
+      {
+        id: 'd2',
+        titleFi: 'Ystävä on ollut onnettomuudessa',
+        titleEn: 'Friend has been in an accident',
+        turns: [
+          { speaker: 'Ystävä', fi: 'Maija.' },
+          { speaker: 'Sinä', fi: 'Hei Maija! Tässä [nimi]. Kuulin, että sinulle tapahtui onnettomuus. Mitä tapahtui?' },
+          { speaker: 'Ystävä', fi: 'No juu, niin olin. Mä olin menossa pyörällä töihin ja sitten siinä Leppäkadulla auto törmäsi muhun suojatiellä.' },
+          { speaker: 'Sinä', fi: 'Voi ei! Oletko kunnossa? Mitä lääkärit sanoivat?' },
+          {
+            speaker: 'Ystävä',
+            fi: 'No mä en tiedä vielä, mutta ainakin käsi on murtunut ja ilmeisesti selässä on myös jotain, koska se on tosi kipeä. Ne ottaa vielä magneettikuvat tänään. Onneksi mulla oli kypärä päässä.',
+          },
+          { speaker: 'Sinä', fi: 'Voi ei, kuulostaa kamalalta! Tarvitsetko jotain? Voinko tuoda sinulle vaikka ruokaa tai kirjoja sairaalaan?' },
+          { speaker: 'Ystävä', fi: 'No kiitos. Se olis kyllä mahtavaa. Sä olet tosi hyvä ystävä. Milloin sä voisit tulla käymään täällä?' },
+          { speaker: 'Sinä', fi: 'Mä tulen tänään iltapäivällä. Missä osastolla sinä olet?' },
+          { speaker: 'Ystävä', fi: 'Mä oon tässä yliopiston sairaalassa. Osasto 10. Kiitos tosi paljon ja nähdään pian.' },
+          { speaker: 'Sinä', fi: 'Nähdään pian! Tsemppiä!' },
+        ],
+      },
+      {
+        id: 'd3',
+        titleFi: 'Ystävä on eronnut',
+        titleEn: 'Friend has broken up',
+        turns: [
+          { speaker: 'Ystävä', fi: 'Nyt se sitten tapahtui. Viikonloppuna Markku pakkas kamat ja lähti.' },
+          { speaker: 'Sinä', fi: 'Voi ei! Olen niin pahoillani. Tämä on varmasti todella vaikeaa.' },
+          {
+            speaker: 'Ystävä',
+            fi: 'No eihän tää yllätyksenä tullut. Onhan tää meidän suhde ollut jo kauan vähän on-off, mutta kyllä se silti sitten järkyttää, kun toinen lähtee.',
+          },
+          { speaker: 'Sinä', fi: 'Miten sinä voit nyt? Haluatko puhua asiasta?' },
+          { speaker: 'Ystävä', fi: 'No suoraan sanoen ei kovin hyvältä tunnu. Nukuin tosi huonosti viime yönä, eikä itkusta tuu loppua.' },
+          { speaker: 'Sinä', fi: 'Haluatko, että tulen luoksesi? Voimme jutella tai vain olla hiljaa yhdessä.' },
+          { speaker: 'Ystävä', fi: 'Kiitos, se ois tosi kiva. On mun kuitenkin pakko jaksaa ihan jo lastenkin takia.' },
+          { speaker: 'Sinä', fi: 'Entä lapset? Miten he voivat? Millaista heillä on?' },
+          {
+            speaker: 'Ystävä',
+            fi: 'No ihan varmaksi me ei vielä sovittu, mutta kai ne sitten on viikon mun kanssa ja viikon isänsä kanssa. Markun pitää nyt vaan ensin löytää sellanen kämppä, että lapsetkin mahtuu sinne.',
+          },
+          { speaker: 'Sinä', fi: 'Minun täytyy nyt valitettavasti mennä, mutta soitan sinulle myöhemmin. Jaksamista!' },
+          { speaker: 'Ystävä', fi: 'Joo ei haittaa. Kiitos, että kuuntelit.' },
+          { speaker: 'Sinä', fi: 'Ole hyvä. Otan yhteyttä pian. Pidä huolta itsestäsi!' },
+        ],
+      },
+    ],
+    reactions: [
+      {
+        id: 'r1',
+        scenarioFi: 'Tarvitset apteekista jotain ja pyydät, että ystävä auttaa.',
+        scenarioEn: 'You need something from the pharmacy and ask a friend for help.',
+        sampleFi: 'Hei! Mä tarvitsisin särkylääkettä apteekista, mutta mulla on niin huono olo. Pääsisitkö hakemaan mulle Buranaa? Voin maksaa sinulle takaisin.',
+      },
+      {
+        id: 'r2',
+        scenarioFi: 'Olet nähnyt auto-onnettomuuden. Poliisi kysyy sinulta, mitä tapahtui. Vastaa poliisille.',
+        scenarioEn: 'You witnessed a car accident. The police ask what happened.',
+        sampleFi:
+          'Näin kun auto ajoi punaisia päin ja törmäsi toiseen autoon. Se tapahtui kello 14.30. Auto tuli vasemmalta ja nopeus oli aika kova. Soitin heti hätänumeroon.',
+      },
+      {
+        id: 'r3',
+        scenarioFi: 'Olet lenkillä ja näet, että nuori nainen makaa kadulla. Mitä sanot hänelle?',
+        scenarioEn: "While jogging, you see a young woman lying on the street. What do you say to her?",
+        sampleFi: 'Hei! Herätkää! Voitteko kuulla minua? Oletteko kunnossa? Soitan nyt ambulanssin. Älkää liikkuko, pysykää paikallanne.',
+      },
+      {
+        id: 'r4',
+        scenarioFi: 'Olet suojatiellä ja auto melkein törmää sinuun. Mitä sanot kuljettajalle?',
+        scenarioEn: "You're on a crosswalk and a car almost hits you. What do you say to the driver?",
+        sampleFi: 'Hei! Katsokaa tietä! Olen suojatiellä! Teidän pitää hidastaa! Tämä on todella vaarallista!',
+      },
+      {
+        id: 'r5',
+        scenarioFi: 'Menet laboratorioon, mutta pelkäät pistämistä.',
+        scenarioEn: "You're going to a lab for bloodwork but are afraid of needles.",
+        sampleFi: 'Anteeksi, mä pelkään todella paljon neuloja ja pistämistä. Voitteko olla varovainen? En halua nähdä neulaa. Voitteko puhua mulle samalla?',
+      },
+      {
+        id: 'r6',
+        scenarioFi: 'Näet ehkä 10-vuotiaan tytön polttamassa tupakkaa pihalla. Mitä sanot hänelle?',
+        scenarioEn: 'You see a girl of about 10 smoking. What do you say to her?',
+        sampleFi:
+          'Hei! Tupakka on todella haitallista, erityisesti lapsille. Et saa polttaa, olet liian nuori. Se vahingoittaa terveyttäsi. Kerrotko vanhemmillesi tästä?',
+      },
+      {
+        id: 'r7',
+        scenarioFi: 'Rattijuoppo tulee sinun kodin parkkipaikalle. Tunnistat henkilön. Soitat poliisille.',
+        scenarioEn: 'A drunk driver you recognize pulls into your parking lot. Call the police.',
+        sampleFi:
+          'Hei, tässä [nimi]. Haluan ilmoittaa rattijuoposta. Henkilö ajoi parkkipaikalle ja vaikuttaa humalaiselta. Henkilö on [nimi] ja auto on [rekisterinumero]. Osoite on [osoite].',
+      },
+      {
+        id: 'r8',
+        scenarioFi: 'Kuulet, että sinun ystävällä on rintasyöpä. Mitä sanot hänelle?',
+        scenarioEn: 'You hear a friend has breast cancer. What do you say?',
+        sampleFi: 'Voi ei! Olen niin pahoillani kuulla tämä. Olen täällä sinua varten. Milloin hoito alkaa? Tarvitsetko apua? Voimme yhdessä käydä lääkärissä.',
+      },
+      {
+        id: 'r9',
+        scenarioFi: 'Pelkäät, että sinulla on joku muistisairaus. Unohtelet asioita usein. Kysy aiheesta lisää terveydenhoitajalta.',
+        scenarioEn: "You're worried about memory loss. Ask a nurse for more information.",
+        sampleFi: 'Hei, mulla on ollut huoli. Olen unohtanut asioita usein viime aikoina. Pelkään, että mulla voi olla muistisairaus. Voitteko kertoa, millaisia testejä on tehtävissä?',
+      },
+      {
+        id: 'r10',
+        scenarioFi: 'Olet sopinut ystävän kanssa jotain, mutta olet sairas ja et voi tavata.',
+        scenarioEn: "You made plans with a friend but you're sick and can't meet.",
+        sampleFi: 'Hei, mulla on todella huono olo. Olen sairas, enkä voi tulla tapaamaan sinua. Voidaanko siirtää tapaaminen toiselle päivälle? Olen todella pahoillani.',
+      },
+      {
+        id: 'r11',
+        scenarioFi: 'Sinulla on kuumetta ja lapsi pitää hakea päiväkodista. Pyydä ystävältä apua.',
+        scenarioEn: "You have a fever and need to pick up your child from daycare. Ask a friend for help.",
+        sampleFi: 'Hei! Mulla on kova kuume ja mun pitäisi hakea lapsi päiväkodista. Pääsisitkö sä hakemaan hänet? Mä voin maksaa sulle bensat. Auta, mä oon ihan pihalla!',
+      },
+      {
+        id: 'r12',
+        scenarioFi: 'Olet vaa\'alla ja huomaat, että painosi on noussut 10 kg.',
+        scenarioEn: "You're on a scale and notice you've gained 10 kg.",
+        sampleFi: 'Voi ei! Paino on noussut 10 kiloa. Tämä on iso muutos. Mun täytyy aloittaa terveellisempi ruokavalio ja liikunta. Varaan ajan ravitsemusterapeutille.',
+      },
+      {
+        id: 'r13',
+        scenarioFi: 'Menet kuntosalille ja haluat dieetin ja kunto-ohjelman.',
+        scenarioEn: 'At the gym, you want a diet and fitness plan.',
+        sampleFi: 'Hei! Haluaisin aloittaa kunto-ohjelman ja dieetin. Tarvitsen apua. Olen lihonut, ja haluan laihtua terveellisesti. Voitteko tehdä minulle suunnitelman?',
+      },
+    ],
+    longSpeaking: [
+      {
+        id: 'k-a',
+        titleFi: 'Onnettomuus tai sairauskohtaus voi muuttaa koko elämän',
+        titleEn: 'An accident or illness can change your whole life',
+        instructionsFi:
+          'Onko sinulla tai läheisellä ollut sairauskohtaus tai onnettomuus? Mitä tapahtui? Miten onnettomuus tai sairaus voi muuttaa elämää? Pelkäätkö onnettomuuksia tai sairauksia? Miksi / miksi et?',
+        sampleFi:
+          'Isälläni oli sydänkohtaus kaksi vuotta sitten. Se tapahtui yllättäen työpäivän aikana. Onneksi joku soitti ambulanssin nopeasti, ja hän selvisi. Tämä muutti hänen elämäänsä: hän joutui muuttamaan ruokavaliota, aloittamaan liikunnan ja vähentämään stressiä.\n\nOnnettomuus tai sairaus voi muuttaa elämää monella tavalla. Se voi opettaa arvostamaan terveyttä ja elämää. Se voi myös muuttaa prioriteetteja.\n\nPelkään onnettomuuksia ja sairauksia, koska ne ovat arvaamattomia. Kuitenkin yritän elää terveellisesti ja nauttia elämästä. Terveys on tärkein asia.',
+      },
+      {
+        id: 'k-b',
+        titleFi: 'Vartaloni on temppeli',
+        titleEn: 'My body is a temple',
+        instructionsFi: 'Pidätkö huolta vartalostasi? Miten? Onko vartalo sinulle tärkeä? Miksi / miksi ei? Miten vartalosi on muuttunut elämäsi aikana?',
+        sampleFi:
+          'Pidän huolta vartalostani parhaani mukaan. Liikun säännöllisesti, syön terveellisesti ja nukun riittävästi. Vartalo on minulle tärkeä, koska ilman tervettä kehoa en voi tehdä asioita, joista pidän.\n\nVartaloni on muuttunut elämäni aikana. Nuorena olin hoikka ja energinen. Nyt aikuisena keho on muuttunut: olen lihonut vähän ja huomaan, että palautuminen on hitaampaa. Yritän hyväksyä itseni sellaisena kuin olen.\n\nVartalo on temppeli - se on ainoa paikka, jossa asumme. Siksi on tärkeää pitää siitä huolta.',
+      },
+      {
+        id: 'k-c',
+        titleFi: 'Minulle tärkein aisti',
+        titleEn: 'My most important sense',
+        instructionsFi:
+          'Mikä aisti (näkö, haju, maku, tunto, kuulo) on sinulle tärkein? Miksi? Millaisista asioista nautit aistien kautta? Jos joutuisit luopumaan jostakin aistista, mikä se olisi ja miksi?',
+        sampleFi:
+          'Minulle tärkein aisti on näkö. Sen avulla näen maailman kauniit värit, rakkaiden ihmisten kasvot ja luonnon maisemat. Ilman näköä elämä olisi todella vaikeaa.\n\nNautin aistien kautta monista asioista: hyvästä ruoasta (maku), musiikista (kuulo), kukkien tuoksusta (haju), auringon lämmöstä (tunto).\n\nJos joutuisin luopumaan jostain aistista, se olisi haju. Vaikka haju on tärkeä, pystyisin elämään ilman sitä. Näkö, kuulo ja maku ovat minulle tärkeämpiä.',
+      },
+      {
+        id: 'k-d',
+        titleFi: 'Aivot kaipaavat huoltoa',
+        titleEn: 'The brain needs maintenance',
+        instructionsFi: 'Miten pidät huolta aivoistasi? Milloin aivosi toimivat hyvin? Entä huonosti? Mikä on tärkeää aivojen hyvinvoinnille?',
+        sampleFi:
+          'Pidän huolta aivoistani monella tavalla. Luen paljon, opettelen uusia asioita ja teen ristikkotehtäviä. Myös liikunta ja hyvä uni auttavat aivoja.\n\nAivot toimivat hyvin, kun nukun tarpeeksi, syön terveellisesti ja liikun. Aivot toimivat huonosti, kun olen väsynyt, stressaantunut tai sairas.\n\nAivojen hyvinvoinnille tärkeitä ovat uni, liikunta, terveellinen ruoka ja henkinen hyvinvointi. Myös sosiaaliset suhteet ja uudet haasteet pitävät aivot aktiivisina.',
+      },
+      {
+        id: 'k-e',
+        titleFi: 'Minun hyvinvointi',
+        titleEn: 'My wellbeing',
+        instructionsFi: 'Miten pysyt terveenä? Miten hoidat terveyttäsi? Millainen on hyvä / terve elämä? Milloin olit viimeksi sairas?',
+        sampleFi:
+          'Pysyn terveenä liikkumalla, syömällä terveellisesti ja nukkumalla riittävästi. Käyn myös lääkärissä säännöllisissä tarkastuksissa.\n\nHoidan terveyttäni lenkkeilemällä, syömällä vihanneksia, juomalla vettä ja välttämällä liiallista stressiä.\n\nHyvä elämä on tasapainoista: on aikaa työlle, perheelle, ystäville ja itselle. Terve elämä tarkoittaa kohtuutta kaikessa.\n\nOlin viimeksi sairas kolme kuukautta sitten. Olin flunssassa ja lepäsin kotona muutaman päivän. Onneksi toivuin nopeasti.',
+      },
+      {
+        id: 'k-f',
+        titleFi: 'Terveellinen ruoka',
+        titleEn: 'Healthy food',
+        instructionsFi: 'Millainen ruoka on terveellistä? Miksi? Haluaisitko muuttaa jotain ruokavaliossasi? Mitä?',
+        sampleFi:
+          'Terveellinen ruoka on monipuolista ja ravinteikasta. Se sisältää paljon kasviksia, hedelmiä, täysjyväviljaa, proteiinia ja terveellisiä rasvoja. On tärkeää välttää liikaa sokeria, suolaa ja tyydyttyneitä rasvoja.\n\nHaluaisin muuttaa ruokavaliossani sitä, että söisin enemmän kalaa ja vähemmän punaista lihaa. Haluaisin myös vähentää sokerin käyttöä ja syödä enemmän kasviksia.\n\nTerveellinen ruoka antaa energiaa ja pitää kehon kunnossa. Se on tärkeä osa hyvinvointia.',
+      },
+    ],
+    opinions: [
+      {
+        id: 'm-a',
+        titleFi: 'Fyysinen terveys on tärkeää myös henkiselle terveydelle',
+        titleEn: 'Physical health is important for mental health',
+        instructionsFi:
+          'Onko fyysinen terveys ja henkinen terveys (psyyke) mielestäsi yhtä tärkeitä? Miten pidät huolta fyysisestä ja henkisestä terveydestä? Suomessa on paljon masennusta ja myös itsemurhia. Mistä ajattelet, että se johtuu?',
+        sampleFi:
+          'Mielestäni fyysinen ja henkinen terveys ovat yhtä tärkeitä. Ne vaikuttavat toisiinsa: jos fyysinen terveys on huono, se vaikuttaa mielialaan, ja jos henkinen terveys on huono, se vaikuttaa kehoon.\n\nPidän huolta fyysisestä terveydestä liikkumalla ja syömällä terveellisesti. Henkistä terveyttä hoidan rentoutumalla, juttelemalla ystävien kanssa ja tekemällä asioita, joista nautin.\n\nSuomessa on paljon masennusta ja itsemurhia. Syitä voivat olla pimeys, kylmyys, sosiaalinen eristyneisyys ja korkeat vaatimukset. Myös alkoholilla on osuutta asiaan.\n\nOn tärkeää puhua mielenterveysongelmista ja hakea apua ajoissa. Kukaan ei ole yksin ongelmiensa kanssa.',
+      },
+      {
+        id: 'm-b',
+        titleFi: 'Urheilu ja doping',
+        titleEn: 'Sports and doping',
+        instructionsFi: 'Mitä mieltä olet dopingista? Voiko huippu-urheilija pärjätä ilman dopingia?',
+        sampleFi:
+          'Olen ehdottomasti dopingia vastaan. Se on epäurheilijamaista, epäeettistä ja vaarallista terveydelle. Doping antaa epäreilun edun ja vääristää kilpailua.\n\nHuippu-urheilija voi pärjätä ilman dopingia. Parhaat urheilijat ovat lahjakkaita, ahkeria ja omistautuneita. Dopingia käyttävät ne, jotka eivät luota omaan kykyynsä.\n\nDoping voi aiheuttaa vakavia terveysongelmia, kuten sydänongelmia ja hormonaalisia häiriöitä. Sen käyttö pitäisi kieltää kokonaan, ja valvonnan pitäisi olla tiukempaa.',
+      },
+      {
+        id: 'm-c',
+        titleFi: 'Terveydenhuolto Suomessa',
+        titleEn: 'Healthcare in Finland',
+        instructionsFi:
+          'Millaista sairaanhoito on mielestäsi Suomessa? Mitä hyviä ja mitä huonoja puolia Suomen terveydenhuollossa on? Onko sairaaloissa ja terveyskeskuksissa riittävästi henkilökuntaa? Mikä on erilaista sinun kotimaassa?',
+        sampleFi:
+          'Suomen terveydenhuolto on mielestäni hyvä. Se on laadukasta, turvallista ja kaikille saatavilla. Julkinen terveydenhuolto on kohtuuhintaista.\n\nHyviä puolia ovat ammattitaitoinen henkilökunta, hyvät hoitotulokset ja ennaltaehkäisy. Huonoja puolia ovat pitkät jonot kiireettömiin hoitoihin ja henkilökunnan puute.\n\nSairaaloissa ja terveyskeskuksissa on ajoittain liian vähän henkilökuntaa. Tämä johtaa kiireeseen ja väsymykseen.\n\nKotimaassani terveydenhuolto on erilaista: siellä on yksityistä ja julkista hoitoa, mutta hinnat ovat usein korkeita. Suomessa terveydenhuolto on tasa-arvoisempaa.',
+      },
+      {
+        id: 'm-d',
+        titleFi: 'Päihteet Suomessa',
+        titleEn: 'Substances in Finland',
+        instructionsFi:
+          'Mitä ajattelet suomalaisten päihteiden käytöstä (päihteet = alkoholi, tupakka, huumeet, lääkkeiden väärinkäyttö)? Millaisissa tilanteissa päihteiden käyttö on sallittua? Millaisia ongelmia päihteistä voi tulla? Mitä mieltä olet alaikäisten (alle 18-vuotiaiden) päihteiden käytöstä?',
+        sampleFi:
+          'Suomalaiset käyttävät alkoholia melko paljon erityisesti viikonloppuisin. Tupakointi on vähentynyt, mutta sähkötupakka on yleistynyt. Huumeiden käyttö on lisääntynyt, mikä on huolestuttavaa.\n\nPäihteiden käyttö on sallittua aikuisille kohtuullisissa määrissä. Alkoholia saa käyttää yli 18-vuotiaana, ja tupakkaa yli 18-vuotiaana. Huumeet ovat laittomia.\n\nPäihteistä voi tulla vakavia ongelmia: riippuvuus, terveysongelmat, sosiaaliset ongelmat, taloudelliset ongelmat ja rikokset.\n\nAlaikäisten päihteiden käyttö on erittäin haitallista, koska keho ja aivot kehittyvät. Sitä pitäisi ehdottomasti estää. Vanhemmilla ja koululla on tärkeä rooli valistuksessa.',
+      },
+    ],
+    writingTasks: [
+      {
+        id: 'w1',
+        titleFi: 'Keskustelun aloitus nettipalstalla',
+        instructionsFi:
+          'Sinulla on jokin terveysongelma, johon tarvitset apua. Pyydät apua terveysnettipalstalla. Kirjoita keskustelun aloitus, jossa kerrot, millainen terveysongelma sinulla on, mitä oireita sinulla on, miten se haittaa arkielämää, ja miksi pyydät apua nettipalstalta.',
+        bulletsFi: [],
+        sampleFi:
+          'Otsikko: Selkäkipu vaivaa - mitä tehdä?\n\nHei kaikki!\n\nMinulla on ollut selkäkipua viimeiset kaksi viikkoa. Kipu on alaselässä ja se säteilee joskus vasempaan jalkaan. Kipu on erityisen paha aamuisin ja kun istun pitkään.\n\nOireita: Kipu on tylsää ja välillä terävää. Kipu pahenee, kun olen pitkään paikallaan. Aamulla selkä on jäykkä.\n\nTämä haittaa arkeani todella paljon. En pysty nukkumaan kunnolla, ja töissä istuminen on vaikeaa. Myös käveleminen on välillä kivuliasta.\n\nOlen käynyt lääkärissä, mutta hän sanoi, että se on todennäköisesti lihasjännitystä. Olen ottanut Buranaa ja levännyt, mutta kipu ei mene pois.\n\nOnko jollain ollut samanlaista? Mitä teitte? Olisiko hieronta tai fysioterapia hyvä idea? Kiitos avusta!\n\nTerveisin,\n[Nimi]',
+      },
+      {
+        id: 'w2',
+        titleFi: 'Viesti työkaverille',
+        instructionsFi:
+          'Työkaverisi on joutunut pitkälle sairauslomalle. Kirjoita hänelle viesti, jossa kerrot, mistä ja miten kuulit sairauslomasta, kysyt, mitä työkaverille on tapahtunut, kerrot, miten voit auttaa häntä töissä, ja tarjoat muuta apua työkaverille.',
+        bulletsFi: [],
+        sampleFi:
+          'Hei [nimi]!\n\nKuulin Maijalta, että olet joutunut sairauslomalle. Olen todella pahoillani kuulla tästä. Toivottavasti olet kunnossa ja paranet pian.\n\nVoitko kertoa, mitä on tapahtunut? Onko se vakavaa? Mietin, voinko auttaa sinua jotenkin.\n\nTöissä voin hoitaa sinun kiireellisimmät tehtävät, jos haluat. Voit lähettää minulle listan, mitä pitää tehdä. Voin myös vastata sähköposteihin puolestasi.\n\nJos tarvitset apua muuten, esimerkiksi ruuan hankinnassa tai lasten hoidossa, kerro rohkeasti! Olen täällä sinua varten.\n\nParanemisia ja ota yhteyttä, kun jaksat!\n\nTerveisin,\n[Nimesi]',
+      },
+      {
+        id: 'w3',
+        titleFi: 'Valitus',
+        instructionsFi:
+          'Sukulaisesi on saanut mielestäsi huonoa hoitoa sairaalassa. Et ole tyytyväinen hoitoon ja valitat potilasasiamiehelle. Kirjoita valitus, jossa kerrot, mitä sukua olet potilaalle, milloin ja miksi sukulaisesi oli sairaalassa, miksi hoito oli mielestäsi huonoa, ja mitä haluat, että asialle tehdään.',
+        bulletsFi: [],
+        sampleFi:
+          'Potilasasiamiehelle\n\nOlen [nimi], ja kirjoitan tämän valituksen äitini puolesta. Äitini, [äidin nimi], oli sairaalahoidossa [sairaalan nimi] 10.-20. maaliskuuta 2026 keuhkokuumeen vuoksi.\n\nHoito oli mielestäni huonoa seuraavista syistä:\n- Hoitajat olivat usein kiireisiä eivätkä vastanneet äitini soittokelloon ajoissa.\n- Lääkäri ei kertonut äidilleni riittävästi hoidon etenemisestä.\n- Ruoka oli huonoa, ja äiti ei pystynyt syömään sitä.\n- Huone oli meluisa eikä äiti saanut nukuttua.\n\nToivon, että asialle tehdään jotain:\n- Henkilökuntaa pitäisi olla enemmän, jotta potilaat saavat riittävästi huomiota.\n- Lääkäreiden pitäisi keskustella potilaiden kanssa selkeämmin hoidosta.\n- Ruuan laatua pitäisi parantaa.\n- Potilashuoneiden pitäisi olla rauhallisempia.\n\nToivon, että otatte tämän valituksen vakavasti ja parannatte hoitoa.\n\nYstävällisin terveisin,\n[Nimesi]\nPuhelinnumero: [numero]',
+      },
+    ],
+    vocabSummary: [
+      { fi: 'terveys', en: 'health' },
+      { fi: 'hyvinvointi', en: 'wellbeing' },
+      { fi: 'sairaus', en: 'illness/disease' },
+      { fi: 'oire', en: 'symptom' },
+      { fi: 'kipu', en: 'pain' },
+      { fi: 'pääkipu / päänsärky', en: 'headache' },
+      { fi: 'selkäkipu', en: 'back pain' },
+      { fi: 'flunssa', en: 'flu/cold' },
+      { fi: 'kuume', en: 'fever' },
+      { fi: 'väsymys', en: 'tiredness/fatigue' },
+      { fi: 'masennus', en: 'depression' },
+      { fi: 'ahdistus', en: 'anxiety' },
+      { fi: 'stressi', en: 'stress' },
+      { fi: 'uni', en: 'sleep' },
+      { fi: 'lepo', en: 'rest' },
+      { fi: 'lääke', en: 'medicine' },
+      { fi: 'särkylääke', en: 'painkiller' },
+      { fi: 'apteekki', en: 'pharmacy' },
+      { fi: 'sairaala', en: 'hospital' },
+      { fi: 'lääkäri', en: 'doctor' },
+      { fi: 'hoitaja', en: 'nurse' },
+      { fi: 'terveyskeskus', en: 'health center' },
+      { fi: 'hätätilanne', en: 'emergency' },
+      { fi: 'ambulanssi', en: 'ambulance' },
+      { fi: 'ensiapu', en: 'first aid' },
+      { fi: 'onnettomuus', en: 'accident' },
+      { fi: 'leikkaus', en: 'surgery' },
+      { fi: 'toipuminen', en: 'recovery' },
+      { fi: 'liikunta', en: 'exercise' },
+      { fi: 'ravinto', en: 'nutrition' },
+      { fi: 'ruokavalio', en: 'diet' },
+      { fi: 'päihteet', en: 'substances (alcohol, drugs, etc.)' },
+      { fi: 'terveellinen', en: 'healthy' },
+      { fi: 'henkinen terveys', en: 'mental health' },
+      { fi: 'fyysinen terveys', en: 'physical health' },
+      { fi: 'itsemurha', en: 'suicide' },
+      { fi: 'doping', en: 'doping' },
+    ],
+  },
 ]
 
 export function conversationChapter(id: string): ConversationChapter | undefined {
