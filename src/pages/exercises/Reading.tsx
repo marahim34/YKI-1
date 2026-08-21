@@ -1,6 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom'
 import { READING_BY_WEEK } from '../../data/content'
 import { getWeek } from '../../data/curriculum'
+import { routes } from '../../routes'
 import { useProgress } from '../../context/ProgressContext'
 import ExerciseHeader from '../../components/ExerciseHeader'
 import McqQuiz from '../../components/McqQuiz'
@@ -13,7 +14,7 @@ export default function Reading() {
   const { recordResult } = useProgress()
   const exercise = READING_BY_WEEK[Number(weekId)]
 
-  if (!exercise) return <Navigate to={`/week/${weekId}`} replace />
+  if (!exercise) return <Navigate to={routes.week(weekId ?? '')} replace />
 
   return (
     <div className="space-y-4">

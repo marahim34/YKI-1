@@ -1,6 +1,5 @@
 import { WEEKS } from '../data/curriculum'
-
-type WeekSkill = 'reading' | 'listening' | 'writing' | 'speaking'
+import { routes, type WeekSkill } from '../routes'
 
 const SKILL_ORDER: WeekSkill[] = ['reading', 'listening', 'writing', 'speaking']
 const SKILL_LABELS: Record<WeekSkill, string> = {
@@ -20,15 +19,15 @@ export function nextAfterSkill(weekId: number, skill: WeekSkill): { path: string
   const idx = SKILL_ORDER.indexOf(skill)
   if (idx < SKILL_ORDER.length - 1) {
     const nextSkill = SKILL_ORDER[idx + 1]
-    return { path: `/week/${weekId}/${nextSkill}`, label: `Seuraava: ${SKILL_LABELS[nextSkill]}` }
+    return { path: routes.weekSkill(weekId, nextSkill), label: `Seuraava: ${SKILL_LABELS[nextSkill]}` }
   }
   return nextAfterWeek(weekId)
 }
 
 export function nextAfterWeek(weekId: number): { path: string; label: string } {
   if (weekId >= LAST_WEEK_ID) {
-    return { path: '/exam', label: 'Koko polku suoritettu! Koekierros' }
+    return { path: routes.exam, label: 'Koko polku suoritettu! Koekierros' }
   }
   const nextWeek = WEEKS.find((w) => w.id === weekId + 1)
-  return { path: `/week/${weekId + 1}`, label: `Seuraava: Viikko ${weekId + 1}${nextWeek ? ` – ${nextWeek.titleFi}` : ''}` }
+  return { path: routes.week(weekId + 1), label: `Seuraava: Viikko ${weekId + 1}${nextWeek ? ` – ${nextWeek.titleFi}` : ''}` }
 }

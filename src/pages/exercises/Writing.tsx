@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { WRITING_BY_WEEK } from '../../data/content'
 import { getWeek } from '../../data/curriculum'
+import { routes } from '../../routes'
 import { useProgress } from '../../context/ProgressContext'
 import { loadJSON, saveJSON } from '../../lib/storage'
 import { useCountdown, formatSeconds } from '../../lib/timer'
@@ -32,7 +33,7 @@ export default function Writing() {
     saveJSON(draftKey, text)
   }, [text, draftKey, exercise])
 
-  if (!exercise) return <Navigate to={`/week/${weekId}`} replace />
+  if (!exercise) return <Navigate to={routes.week(weekId ?? '')} replace />
 
   const words = wordCount(text)
   const inRange = words >= exercise.minWords && words <= exercise.maxWords
@@ -57,7 +58,7 @@ export default function Writing() {
         <p className="mt-2 text-xs text-slate-500">
           Tavoitepituus: {exercise.minWords}–{exercise.maxWords} sanaa · Suositeltu aika: {exercise.timeMinutes} min
         </p>
-        <Link to="/templates" className="mt-2 inline-block text-xs font-semibold text-blue-700 hover:underline">
+        <Link to={routes.templates} className="mt-2 inline-block text-xs font-semibold text-blue-700 hover:underline">
           📋 Katso kirjoittamisen mallipohjat →
         </Link>
         <div className="mt-2 flex items-center gap-3">

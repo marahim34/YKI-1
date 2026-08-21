@@ -1,11 +1,19 @@
-import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { WEEKS, PHASE_INFO } from '../data/curriculum'
 import { weekHasFullContent } from '../data/content'
 import { useProgress } from '../context/ProgressContext'
 import LevelPill from '../components/LevelPill'
+import { routes } from '../routes'
 
 export default function Roadmap() {
   const { state } = useProgress()
+  const { hash } = useLocation()
+
+  useEffect(() => {
+    if (!hash) return
+    document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, [hash])
 
   return (
     <div className="space-y-8">
@@ -31,7 +39,7 @@ export default function Roadmap() {
               return (
                 <Link
                   key={week.id}
-                  to={`/week/${week.id}`}
+                  to={routes.week(week.id)}
                   className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-colors hover:border-blue-300"
                 >
                   <div className="flex items-center justify-between">

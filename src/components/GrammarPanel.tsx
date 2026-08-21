@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { grammarTopicsFor } from '../data/grammar'
+import { routes } from '../routes'
 import LevelPill from './LevelPill'
 
 export default function GrammarPanel({ topicIds, defaultOpen = false }: { topicIds: string[]; defaultOpen?: boolean }) {
@@ -13,7 +14,7 @@ export default function GrammarPanel({ topicIds, defaultOpen = false }: { topicI
     <section className="rounded-2xl border border-violet-200 bg-violet-50/60 p-4">
       <div className="flex items-center justify-between">
         <h2 className="flex items-center gap-1.5 text-sm font-semibold text-violet-900">📐 Kielioppi tällä viikolla</h2>
-        <Link to="/grammar" className="text-xs font-semibold text-violet-700 hover:underline">
+        <Link to={routes.grammar} className="text-xs font-semibold text-violet-700 hover:underline">
           Koko kielioppiopas →
         </Link>
       </div>

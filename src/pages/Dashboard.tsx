@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useMemo, useState } from 'react'
+import { routes, type WeekSkill } from '../routes'
 import { loadJSON, saveJSON } from '../lib/storage'
 import { useProgress } from '../context/ProgressContext'
 import { WEEKS, PHASE_INFO } from '../data/curriculum'
@@ -21,11 +22,11 @@ function pickGreeting(streak: number, dueCount: number, totalDone: number): stri
   return 'Moi taas! Jatketaan matkaa suomen kieleen yhdessä. 🇫🇮'
 }
 
-const SKILL_LABELS: Record<'reading' | 'listening' | 'writing' | 'speaking', { label: string; icon: string; path: string }> = {
-  reading: { label: 'Lukeminen', icon: '📖', path: 'reading' },
-  listening: { label: 'Kuunteleminen', icon: '🎧', path: 'listening' },
-  writing: { label: 'Kirjoittaminen', icon: '✍️', path: 'writing' },
-  speaking: { label: 'Puhuminen', icon: '🗣️', path: 'speaking' },
+const SKILL_LABELS: Record<WeekSkill, { label: string; icon: string }> = {
+  reading: { label: 'Lukeminen', icon: '📖' },
+  listening: { label: 'Kuunteleminen', icon: '🎧' },
+  writing: { label: 'Kirjoittaminen', icon: '✍️' },
+  speaking: { label: 'Puhuminen', icon: '🗣️' },
 }
 
 function weekSkillExerciseIds(weekId: number) {
@@ -83,28 +84,28 @@ export default function Dashboard() {
           </div>
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
             <Link
-              to="/roadmap"
+              to={routes.roadmap}
               className="rounded-lg border border-amber-300 bg-white p-3 text-sm hover:border-amber-500"
             >
               <span className="font-semibold text-slate-900">🗺️ Rakenna pohjasta asti</span>
               <span className="block text-slate-500">32 viikkoa, A1→B2. Aloita viikosta 1.</span>
             </Link>
             <Link
-              to="/yki-valmennus"
+              to={routes.ykiValmennus}
               className="rounded-lg border border-amber-300 bg-white p-3 text-sm hover:border-amber-500"
             >
               <span className="font-semibold text-slate-900">🎯 Suoraan kokeeseen</span>
               <span className="block text-slate-500">9 YKI-teemaa, valitse mikä tahansa.</span>
             </Link>
           </div>
-          <Link to="/how-to-use" className="mt-2 inline-block text-xs font-semibold text-amber-700 hover:underline">
+          <Link to={routes.howToUse} className="mt-2 inline-block text-xs font-semibold text-amber-700 hover:underline">
             Katso koko opas (kaikki osiot selitettynä) →
           </Link>
         </div>
       )}
       {!howToDismissed && totalDone > 0 && (
         <div className="flex items-center justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-800">
-          <Link to="/how-to-use" className="flex items-center gap-2 font-medium hover:underline">
+          <Link to={routes.howToUse} className="flex items-center gap-2 font-medium hover:underline">
             ❓ Uusi täällä? Katso, miten sovellus toimii · নতুন এসেছেন? অ্যাপটি কীভাবে ব্যবহার করবেন দেখুন →
           </Link>
           <button
@@ -160,7 +161,7 @@ export default function Dashboard() {
               return (
                 <Link
                   key={skill}
-                  to={`/week/${nextWeek.id}/${meta.path}`}
+                  to={routes.weekSkill(nextWeek.id, skill)}
                   className={`flex flex-col items-center gap-1 rounded-xl border p-3 text-center text-sm transition-colors ${
                     done ? 'border-emerald-200 bg-emerald-50 text-emerald-700' : 'border-slate-200 bg-slate-50 text-slate-700 hover:border-blue-300'
                   }`}
@@ -171,7 +172,7 @@ export default function Dashboard() {
               )
             })}
           </div>
-          <Link to={`/week/${nextWeek.id}`} className="mt-4 inline-block text-sm font-semibold text-blue-700 hover:underline">
+          <Link to={routes.week(nextWeek.id)} className="mt-4 inline-block text-sm font-semibold text-blue-700 hover:underline">
             Katso koko viikko →
           </Link>
         </section>
@@ -193,7 +194,7 @@ export default function Dashboard() {
             return (
               <Link
                 key={phase}
-                to={`/roadmap#phase-${phase}`}
+                to={routes.roadmapPhase(phase)}
                 className="rounded-xl border border-slate-200 p-3 hover:border-blue-300"
               >
                 <p className="text-sm font-semibold text-slate-800">{PHASE_INFO[phase].title}</p>
@@ -208,29 +209,29 @@ export default function Dashboard() {
 
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <Link
-          to="/yki-valmennus"
+          to={routes.ykiValmennus}
           className="rounded-2xl border-2 border-blue-300 bg-blue-50 p-4 shadow-sm hover:border-blue-400"
         >
           <p className="text-2xl">🎯</p>
           <p className="mt-1 font-semibold text-blue-900">YKI-valmennus</p>
           <p className="text-sm text-blue-700">Kokeen 9 teemaa: lämmittele, harjoittele, testaa.</p>
         </Link>
-        <Link to="/vocab" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
+        <Link to={routes.vocab} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">🧠</p>
           <p className="mt-1 font-semibold text-slate-900">Sanaston kertaus</p>
           <p className="text-sm text-slate-500">{dueCount} sanaa odottaa kertausta juuri nyt.</p>
         </Link>
-        <Link to="/daily" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
+        <Link to={routes.daily} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">🎲</p>
           <p className="mt-1 font-semibold text-slate-900">Sekoitettu harjoitus</p>
           <p className="text-sm text-slate-500">20 satunnaista sanaa kaikista aihepiireistä — vaihtelua joka päivälle.</p>
         </Link>
-        <Link to="/my-books" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
+        <Link to={routes.myBooks} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">📚</p>
           <p className="mt-1 font-semibold text-slate-900">Omat kirjat</p>
           <p className="text-sm text-slate-500">Lisää sanoja Suomen mestarista, Oma Suomesta tai muusta kirjastasi.</p>
         </Link>
-        <Link to="/templates" className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
+        <Link to={routes.templates} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm hover:border-blue-300">
           <p className="text-2xl">📋</p>
           <p className="mt-1 font-semibold text-slate-900">Mallipohjat</p>
           <p className="text-sm text-slate-500">Valmiit rungot kirjoittamiseen ja puhumiseen — vaihda vain aihe.</p>

@@ -1,27 +1,28 @@
 import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useProgress } from '../context/ProgressContext'
+import { routes } from '../routes'
 import FoxMascot from './FoxMascot'
 
 const PRIMARY_NAV = [
-  { to: '/', label: 'Koti', icon: '🏠' },
-  { to: '/yki-valmennus', label: 'YKI-valmennus', icon: '🎯' },
-  { to: '/roadmap', label: 'Polku', icon: '🗺️' },
-  { to: '/vocab', label: 'Sanasto', icon: '🧠' },
-  { to: '/progress', label: 'Edistyminen', icon: '📈' },
+  { to: routes.home, label: 'Koti', icon: '🏠' },
+  { to: routes.ykiValmennus, label: 'YKI-valmennus', icon: '🎯' },
+  { to: routes.roadmap, label: 'Polku', icon: '🗺️' },
+  { to: routes.vocab, label: 'Sanasto', icon: '🧠' },
+  { to: routes.progress, label: 'Edistyminen', icon: '📈' },
 ]
 
 const MORE_NAV = [
-  { to: '/how-to-use', label: 'Ohjeet', icon: '❓' },
-  { to: '/grammar', label: 'Kielioppi', icon: '📐' },
-  { to: '/exam', label: 'Koekierros', icon: '⏱️' },
-  { to: '/numbers', label: 'Numerot', icon: '🔢' },
-  { to: '/basics', label: 'Perussanasto', icon: '🌻' },
-  { to: '/daily', label: 'Sekoitettu harjoitus', icon: '🎲' },
-  { to: '/conversations', label: 'Keskusteluharjoitukset', icon: '💬' },
-  { to: '/templates', label: 'Mallipohjat', icon: '📋' },
-  { to: '/books', label: 'Kirjaharjoitukset', icon: '📖' },
-  { to: '/my-books', label: 'Omat kirjat', icon: '📚' },
+  { to: routes.howToUse, label: 'Ohjeet', icon: '❓' },
+  { to: routes.grammar, label: 'Kielioppi', icon: '📐' },
+  { to: routes.exam, label: 'Koekierros', icon: '⏱️' },
+  { to: routes.numbers, label: 'Numerot', icon: '🔢' },
+  { to: routes.basics, label: 'Perussanasto', icon: '🌻' },
+  { to: routes.daily, label: 'Sekoitettu harjoitus', icon: '🎲' },
+  { to: routes.conversations, label: 'Keskusteluharjoitukset', icon: '💬' },
+  { to: routes.templates, label: 'Mallipohjat', icon: '📋' },
+  { to: routes.books, label: 'Kirjaharjoitukset', icon: '📖' },
+  { to: routes.myBooks, label: 'Omat kirjat', icon: '📚' },
 ]
 
 const ALL_NAV = [...PRIMARY_NAV, ...MORE_NAV]
@@ -59,7 +60,7 @@ export default function Layout() {
         </div>
         <nav className="mx-auto hidden max-w-5xl flex-wrap gap-1 px-4 pb-2 sm:flex">
           {ALL_NAV.map((item) => (
-            <NavLink key={item.to} to={item.to} end={item.to === '/'} className={({ isActive }) => navLinkClass(isActive)}>
+            <NavLink key={item.to} to={item.to} end={item.to === routes.home} className={({ isActive }) => navLinkClass(isActive)}>
               <span>{item.icon}</span>
               <span>{item.label}</span>
             </NavLink>
@@ -97,7 +98,7 @@ export default function Layout() {
         )}
         <div className="flex gap-1 border-t border-slate-200 bg-white/95 px-2 py-1.5 backdrop-blur">
           {PRIMARY_NAV.map((item) => (
-            <NavLink key={item.to} to={item.to} end={item.to === '/'} onClick={() => setMoreOpen(false)} className={({ isActive }) => navLinkClass(isActive) + ' flex-1'}>
+            <NavLink key={item.to} to={item.to} end={item.to === routes.home} onClick={() => setMoreOpen(false)} className={({ isActive }) => navLinkClass(isActive) + ' flex-1'}>
               <span>{item.icon}</span>
               <span className="whitespace-nowrap">{item.label}</span>
             </NavLink>

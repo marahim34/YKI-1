@@ -6,6 +6,7 @@ import { useProgress } from '../context/ProgressContext'
 import { dueCardIds } from '../lib/srs'
 import type { Grade } from '../lib/srs'
 import { useFinnishSpeech } from '../lib/tts'
+import { routes } from '../routes'
 
 export default function Vocab() {
   const { state, gradeVocab } = useProgress()
@@ -71,7 +72,7 @@ export default function Vocab() {
       </div>
 
       <Link
-        to="/basics"
+        to={routes.basics}
         className="block rounded-lg bg-amber-50 px-3 py-2 text-center text-xs font-medium text-amber-800 hover:bg-amber-100"
       >
         🌻 Selaa perussanastoa kategorioittain (kuukaudet, värit, ruoka...) →

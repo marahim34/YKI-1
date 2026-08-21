@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { routes } from '../routes'
 
 interface Section {
   icon: string
@@ -12,7 +13,7 @@ const CORE_PATH_SECTIONS: Section[] = [
   {
     icon: '🏠',
     title: 'Koti (Dashboard)',
-    path: '/',
+    path: routes.home,
     body:
       'Etusivu näyttää putkesi (peräkkäiset opiskelupäivät), XP-pisteet, kuinka monta sanaa odottaa kertausta tänään, ja suosituksen sille, mitä viikkoa kannattaa jatkaa seuraavaksi. Aloita opiskelupäiväsi aina täältä.',
     bodyBn:
@@ -21,7 +22,7 @@ const CORE_PATH_SECTIONS: Section[] = [
   {
     icon: '🗺️',
     title: 'Polku (32 viikon opintopolku)',
-    path: '/roadmap',
+    path: routes.roadmap,
     body:
       'Koko 32 viikon suunnitelma kolmessa vaiheessa (A1→A2, A2→B1, B1→B2). Klikkaa viikkoa nähdäksesi sen kieliopin, sanaston ja neljä taito-osiota (lukeminen, kuunteleminen, kirjoittaminen, puhuminen). Voit edetä omaan tahtiisi — viikko ei "lukitu", joten voit hypätä eteen- tai taaksepäin. Tämä on yleiskielitaidon runko: rakentaa suomen kielen A1:stä B2:een asti, viikko viikolta.',
     bodyBn:
@@ -30,7 +31,7 @@ const CORE_PATH_SECTIONS: Section[] = [
   {
     icon: '🎯',
     title: 'YKI-valmennus (koeteemat)',
-    path: '/yki-valmennus',
+    path: routes.ykiValmennus,
     body:
       'Suora YKI-kokeeseen valmentava osio, järjestetty kokeen 9 virallisen teeman mukaan (Minä ja taustani, Koti ja asuminen, Kauppa ja palvelut, Kulttuuri, Matkustaminen, Terveys ja hyvinvointi, Työ, Ympäristö, Yhteiskunta). Jokainen teema etenee samalla kaavalla: lämmittele (sanasto ja tausta) → harjoittele (esimerkit ja mallit) → testaa (ajastettu, kokeen kaltainen tehtävä). Toisin kuin Polku, tämä ei etene viikko kerrallaan — voit hypätä suoraan siihen teemaan, joka tuntuu heikoimmalta tai on ajankohtaisin.',
     bodyBn:
@@ -39,7 +40,7 @@ const CORE_PATH_SECTIONS: Section[] = [
   {
     icon: '🧠',
     title: 'Sanasto (sanaston kertaus)',
-    path: '/vocab',
+    path: routes.vocab,
     body:
       'Muistikorttiharjoittelu (flashcards) käyttäen tilavälein toistuvaa kertausta (spaced repetition) — sovellus näyttää sanan juuri sopivalla hetkellä, jotta se jää paremmin mieleen. Napauta korttia nähdäksesi käännöksen (englanniksi ja bengaliksi), ja käytä 🔊-painiketta kuullaksesi ääntämisen. Arvioi itseäsi rehellisesti (Uudelleen / Hyvä / Helppo) — se ohjaa, milloin sana näytetään seuraavan kerran.',
     bodyBn:
@@ -48,7 +49,7 @@ const CORE_PATH_SECTIONS: Section[] = [
   {
     icon: '📐',
     title: 'Kielioppiopas',
-    path: '/grammar',
+    path: routes.grammar,
     body:
       'Koko suomen kielen kielioppi yhdellä sivulla, yli 50 aihetta A1-tasosta B2-tasolle: selitykset, runsaat esimerkit ja bengalinkieliset yhteenvedot. Ylhäällä on vertailutaulukoita (sijamuodot, verbityypit), jotka auttavat erottamaan samankaltaiset muodot toisistaan. Hae aiheita hakukentällä tai suodata tason/aihepiirin mukaan. Sekä Polku- että YKI-valmennus-sivuilla on suora "Kielioppi tässä luvussa" -linkki juuri niihin aiheisiin, jotka liittyvät kyseiseen viikkoon/teemaan.',
     bodyBn:
@@ -60,7 +61,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '📖',
     title: 'Kirjaharjoitukset',
-    path: '/books',
+    path: routes.books,
     body:
       'Alkuperäisiä lisäharjoituksia (sanastotestejä ja kielioppiaukkotehtäviä) Suomen mestari 1–3- ja Oma suomi 1–2 -kirjojen rinnalle, luku kerrallaan. Nämä eivät korvaa kirjaa — ne täydentävät sitä, kun luet omaa fyysistä kirjaasi.',
     bodyBn:
@@ -69,7 +70,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '📚',
     title: 'Omat kirjat',
-    path: '/my-books',
+    path: routes.myBooks,
     body:
       'Lisää tähän omia sanoja suoraan kirjoistasi tai mistä tahansa muualta: suomenkielinen sana, englanninkielinen ja bengalinkielinen käännös, esimerkkilause molemmilla kielillä, sekä mistä kirjasta/luvusta se on. Nämä sanat liittyvät automaattisesti samaan Sanasto-kertausjärjestelmään kuin sovelluksen valmis sanasto.',
     bodyBn:
@@ -78,7 +79,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '📋',
     title: 'Mallipohjat',
-    path: '/templates',
+    path: routes.templates,
     body:
       'Valmiit, uudelleenkäytettävät rungot kirjoitus- ja puhumistehtäviin: opit tunnistamaan tehtävätyypin (esim. valitusviesti, kutsu, mielipideteksti) ja käyttämään samaa rakennetta aina uudella aiheella. Sisältää myös lyhyen selityksen siitä, mitä YKI:n taitotasolla 4 tyypillisesti odotetaan.',
     bodyBn:
@@ -87,7 +88,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '🔢',
     title: 'Numerot',
-    path: '/numbers',
+    path: routes.numbers,
     body:
       'Kattava numerot-osio: peruslukusanat, järjestysluvut, kellonajat, päivämäärät, rahasummat ja niiden taivutus. Hyvä tarkistuspiste, jos numerot tuntuvat vielä epävarmoilta.',
     bodyBn:
@@ -96,7 +97,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '🌻',
     title: 'Perussanasto',
-    path: '/basics',
+    path: routes.basics,
     body:
       'Aivan perussanasto ryhmiteltynä aihepiireittäin (värit, ruoka, kehonosat, sää jne.) — hyvä paikka aloittaa, jos tunnet, että sanavarastossa on isoja aukkoja ennen kuin syvennyt viikkojen tai YKI-teemojen sanastoon.',
     bodyBn:
@@ -105,7 +106,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '🎲',
     title: 'Sekoitettu harjoitus',
-    path: '/daily',
+    path: routes.daily,
     body:
       '20 satunnaista sanaa kaikista aihepiireistä sekaisin — hyvä nopea päivittäinen kertaus, kun et halua valita mitään tiettyä aihetta.',
     bodyBn:
@@ -114,7 +115,7 @@ const EXTRA_PRACTICE_SECTIONS: Section[] = [
   {
     icon: '💬',
     title: 'Keskusteluharjoitukset',
-    path: '/conversations',
+    path: routes.conversations,
     body:
       'Vapaamuotoista puhumisen ja kirjoittamisen harjoittelua — dialogeja, reagointitehtäviä, mielipidekirjoituksia — joka ei ole sidottu tiettyyn kokeen tehtävätyyppiin, toisin kuin YKI-valmennus. Hyvä lisä sujuvuuden kasvattamiseen sen jälkeen, kun perusrakenteet ovat jo tuttuja.',
     bodyBn:
@@ -126,7 +127,7 @@ const TEST_TRACK_SECTIONS: Section[] = [
   {
     icon: '⏱️',
     title: 'Koekierros (mock-koe)',
-    path: '/exam',
+    path: routes.exam,
     body:
       'Harjoittele kaikki neljä YKI-osiota (lukeminen, kuunteleminen, kirjoittaminen, puhuminen) peräkkäin ajanotolla, aivan kuten oikeassa kokeessa. Valitse minkä viikon materiaalilla haluat harjoitella, tai valitse yksi valmiista koepaketeista. Käytä tätä silloin tällöin koko matkan ajan, älä vain aivan lopussa.',
     bodyBn:
@@ -135,7 +136,7 @@ const TEST_TRACK_SECTIONS: Section[] = [
   {
     icon: '📈',
     title: 'Edistyminen',
-    path: '/progress',
+    path: routes.progress,
     body:
       'Näet putken, XP:n, taitokohtaiset tilastot ja koekierrosten historian. Tärkeintä: kaikki tieto tallentuu vain tämän selaimen muistiin (localStorage) — vie tiedot säännöllisesti JSON-tiedostoksi ("Vie tiedot"), jotta et menetä edistymistäsi selainta vaihtaessa tai puhelinta resetoidessa. Voit palauttaa varmuuskopion "Tuo varmuuskopio" -painikkeella.',
     bodyBn:
@@ -177,11 +178,11 @@ export default function HowToUse() {
             <p className="font-semibold">1. Valitse polkusi — Choose your path — আপনার পথ বেছে নিন</p>
             <p className="mt-1 text-blue-800">
               Jos sinulla on aikaa rakentaa suomen kielesi pohjasta asti (A1→B2), aloita{' '}
-              <Link to="/roadmap" className="font-semibold underline">
+              <Link to={routes.roadmap} className="font-semibold underline">
                 Polku
               </Link>
               -sivulta, viikko 1. Jos YKI-koe on lähellä ja haluat harjoitella suoraan kokeen 9 teemaa, aloita{' '}
-              <Link to="/yki-valmennus" className="font-semibold underline">
+              <Link to={routes.ykiValmennus} className="font-semibold underline">
                 YKI-valmennus
               </Link>
               -sivulta. Voit myös tehdä molempia rinnakkain — ne eivät sulje toisiaan pois.
@@ -196,7 +197,7 @@ export default function HowToUse() {
           <li className="rounded-lg bg-white/70 p-3">
             <p className="font-semibold">2. Kertaa sanastoa joka päivä, 5–10 minuuttia — Review vocab daily — প্রতিদিন শব্দ পুনরালোচনা করুন</p>
             <p className="mt-1 text-blue-800">
-              Avaa <Link to="/vocab" className="font-semibold underline">Sanasto</Link> joka päivä, vaikka et tekisi
+              Avaa <Link to={routes.vocab} className="font-semibold underline">Sanasto</Link> joka päivä, vaikka et tekisi
               muuta. Pieni ja päivittäinen voittaa aina harvoin tehdyn pitkän session.
             </p>
             <p className="mt-1 text-emerald-700">
@@ -269,7 +270,7 @@ export default function HowToUse() {
         <h2 className="text-sm font-semibold text-slate-900">🎯 Tavoitteena taitotaso 4</h2>
         <p className="mt-1 text-sm text-slate-600">
           Sovellus on kalibroitu tähtäämään YKI:n taitotasoon 4 (suunnilleen B1.2–B2) — se on yleisin vaadittu taso mm.
-          työelämässä ja kansalaisuushakemuksissa. Katso <Link to="/templates" className="font-semibold text-blue-700 hover:underline">Mallipohjat</Link>-sivun
+          työelämässä ja kansalaisuushakemuksissa. Katso <Link to={routes.templates} className="font-semibold text-blue-700 hover:underline">Mallipohjat</Link>-sivun
           alusta lyhyt selitys siitä, mitä taitotasolla 4 tyypillisesti odotetaan, ja vertaa omia vastauksiasi sovelluksen
           mallivastauksiin.
         </p>

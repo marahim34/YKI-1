@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { CefrLevel } from '../types'
+import { routes } from '../routes'
 import LevelPill from './LevelPill'
 
 export default function ExerciseHeader({
@@ -15,7 +16,7 @@ export default function ExerciseHeader({
 }) {
   return (
     <div className="space-y-2">
-      <Link to={`/week/${weekId}`} className="text-sm text-blue-700 hover:underline">
+      <Link to={routes.week(weekId)} className="text-sm text-blue-700 hover:underline">
         ← Takaisin viikkoon {weekId}
       </Link>
       <div className="flex items-center justify-between gap-3">

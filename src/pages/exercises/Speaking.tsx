@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { SPEAKING_BY_WEEK } from '../../data/content'
 import { getWeek } from '../../data/curriculum'
+import { routes } from '../../routes'
 import { useProgress } from '../../context/ProgressContext'
 import { useCountdown, formatSeconds } from '../../lib/timer'
 import ExerciseHeader from '../../components/ExerciseHeader'
@@ -43,7 +44,7 @@ export default function Speaking() {
 
   const timer = useCountdown(exercise ? exercise.prepSeconds : 0, handleComplete)
 
-  if (!exercise) return <Navigate to={`/week/${weekId}`} replace />
+  if (!exercise) return <Navigate to={routes.week(weekId ?? '')} replace />
 
   async function startRecording() {
     if (!navigator.mediaDevices?.getUserMedia) return
@@ -97,7 +98,7 @@ export default function Speaking() {
             </span>
           ))}
         </div>
-        <Link to="/templates?tab=speaking" className="mt-3 inline-block text-xs font-semibold text-blue-700 hover:underline">
+        <Link to={routes.templatesTab('speaking')} className="mt-3 inline-block text-xs font-semibold text-blue-700 hover:underline">
           🗣️ Katso puhumisen kysymyskaavat ja vastausrungot →
         </Link>
       </div>

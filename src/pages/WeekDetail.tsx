@@ -9,6 +9,7 @@ import GrammarPanel from '../components/GrammarPanel'
 import VocabPracticeTabs from '../components/VocabPracticeTabs'
 import NextStepButton from '../components/NextStepButton'
 import { nextAfterWeek } from '../lib/learningPath'
+import { routes } from '../routes'
 
 const SKILLS = [
   { key: 'reading', label: 'Lukeminen', icon: '📖' },
@@ -23,7 +24,7 @@ export default function WeekDetail() {
   const week = getWeek(Number(weekId))
   const [gameOpen, setGameOpen] = useState(false)
 
-  if (!week) return <Navigate to="/roadmap" replace />
+  if (!week) return <Navigate to={routes.roadmap} replace />
 
   const hasContent = weekHasFullContent(week.id)
   const vocab = vocabForWeek(week.vocabThemes)
@@ -43,14 +44,14 @@ export default function WeekDetail() {
     return exercise && !state.completedExerciseIds.includes(exercise.id)
   })
   const continueTarget = firstIncomplete
-    ? { path: `/week/${week.id}/${firstIncomplete.key}`, label: `${anyDoneThisWeek ? 'Jatka' : 'Aloita'}: ${firstIncomplete.label}` }
+    ? { path: routes.weekSkill(week.id, firstIncomplete.key), label: `${anyDoneThisWeek ? 'Jatka' : 'Aloita'}: ${firstIncomplete.label}` }
     : hasContent
-      ? { path: `/week/${week.id}/${SKILLS[0].key}`, label: `Kertaa uudelleen: ${SKILLS[0].label}` }
+      ? { path: routes.weekSkill(week.id, SKILLS[0].key), label: `Kertaa uudelleen: ${SKILLS[0].label}` }
       : null
 
   return (
     <div className="space-y-6">
-      <Link to="/roadmap" className="text-sm text-blue-700 hover:underline">
+      <Link to={routes.roadmap} className="text-sm text-blue-700 hover:underline">
         ← Takaisin polkuun
       </Link>
 
@@ -73,10 +74,10 @@ export default function WeekDetail() {
             neljästä osa-alueesta ajanotolla. Käytä myös sanaston kertausta ja kielioppiopasta viimeistelyyn.
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
-            <Link to="/exam" className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">
+            <Link to={routes.exam} className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">
               Aloita koekierros →
             </Link>
-            <Link to="/grammar" className="rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-100">
+            <Link to={routes.grammar} className="rounded-lg border border-blue-300 px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-100">
               Kielioppiopas
             </Link>
           </div>
@@ -91,10 +92,10 @@ export default function WeekDetail() {
             halutessasi lyhyt koekierros nähdäksesi, missä olet vahva ja mitä kannattaa vielä harjoitella.
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
-            <Link to="/vocab" className="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700">
+            <Link to={routes.vocab} className="rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-700">
               Kertaa sanastoa →
             </Link>
-            <Link to="/exam" className="rounded-lg border border-amber-300 px-4 py-2 text-sm font-semibold text-amber-800 hover:bg-amber-100">
+            <Link to={routes.exam} className="rounded-lg border border-amber-300 px-4 py-2 text-sm font-semibold text-amber-800 hover:bg-amber-100">
               Koekierros
             </Link>
           </div>
@@ -104,7 +105,7 @@ export default function WeekDetail() {
       {!hasContent && !week.isReviewWeek && !week.isExamWeek && (
         <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
           Tämän viikon 4 taito-osion valmiit harjoitukset ovat vielä tulossa. Voit silti kerrata sanastoa alta, lukea
-          kielioppipainotukset, ja lisätä omaa materiaalia kirjoistasi <Link to="/my-books" className="font-semibold underline">Omat kirjat</Link> -sivulla.
+          kielioppipainotukset, ja lisätä omaa materiaalia kirjoistasi <Link to={routes.myBooks} className="font-semibold underline">Omat kirjat</Link> -sivulla.
         </div>
       )}
 
@@ -137,7 +138,7 @@ export default function WeekDetail() {
       <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
         <div className="flex items-center justify-between">
           <h2 className="text-sm font-semibold text-slate-800">Viikon sanasto ({vocab.length} sanaa)</h2>
-          <Link to="/vocab" className="text-xs font-semibold text-blue-700 hover:underline">
+          <Link to={routes.vocab} className="text-xs font-semibold text-blue-700 hover:underline">
             Kertaa sanastoa →
           </Link>
         </div>
@@ -180,7 +181,7 @@ export default function WeekDetail() {
           return (
             <Link
               key={key}
-              to={`/week/${week.id}/${key}`}
+              to={routes.weekSkill(week.id, key)}
               className={`rounded-xl border p-4 transition-colors ${
                 done ? 'border-emerald-200 bg-emerald-50' : 'border-slate-200 bg-white hover:border-blue-300'
               }`}

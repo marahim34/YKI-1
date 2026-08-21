@@ -10,6 +10,7 @@ import { computeAchievements } from '../lib/achievements'
 import type { ProgressState } from '../types'
 import ProgressBar from '../components/ProgressBar'
 import LevelPill from '../components/LevelPill'
+import { routes } from '../routes'
 
 const SKILL_META: Record<string, { label: string; icon: string }> = {
   reading: { label: 'Lukeminen', icon: '📖' },
@@ -143,7 +144,7 @@ export default function Progress() {
             {weakSpots.map((spot) => (
               <Link
                 key={spot.topicId}
-                to={`/grammar?topic=${spot.topicId}`}
+                to={routes.grammarTopic(spot.topicId)}
                 className="flex items-center gap-3 rounded-lg border border-slate-100 px-3 py-2 hover:border-blue-300"
               >
                 <LevelPill level={spot.level} />

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { LISTENING_BY_WEEK } from '../../data/content'
 import { getWeek } from '../../data/curriculum'
+import { routes } from '../../routes'
 import { useProgress } from '../../context/ProgressContext'
 import { useFinnishSpeech } from '../../lib/tts'
 import ExerciseHeader from '../../components/ExerciseHeader'
@@ -18,7 +19,7 @@ export default function Listening() {
   const [showTranscript, setShowTranscript] = useState(false)
   const [rate, setRateState] = useState(0.9)
 
-  if (!exercise) return <Navigate to={`/week/${weekId}`} replace />
+  if (!exercise) return <Navigate to={routes.week(weekId ?? '')} replace />
 
   return (
     <div className="space-y-4">

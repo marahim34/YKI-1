@@ -9,6 +9,7 @@ import SequentialTimer from '../components/SequentialTimer'
 import DialoguePractice from '../components/DialoguePractice'
 import GrammarPanel from '../components/GrammarPanel'
 import NextStepButton from '../components/NextStepButton'
+import { routes } from '../routes'
 
 type Tab = 'yleiskatsaus' | 'lukeminen' | 'kirjoittaminen' | 'kuunteleminen' | 'puhuminen' | 'sanasto'
 
@@ -96,7 +97,7 @@ export default function YkiPrep() {
             onClick: () => setChapterId(YKI_CHAPTERS[chapterIndex + 1].id),
             label: `Seuraava teema: ${YKI_CHAPTERS[chapterIndex + 1].number}. ${YKI_CHAPTERS[chapterIndex + 1].titleFi}`,
           }
-        : { path: '/exam', label: 'Kaikki 9 teemaa suoritettu! Koekierros' }
+        : { path: routes.exam, label: 'Kaikki 9 teemaa suoritettu! Koekierros' }
 
   return (
     <div className="space-y-5">
